@@ -135,7 +135,7 @@ If you are using a different load balancer, other than HAProxy, you may need to 
 
       curl -k -X GET \
       -user "$USERNAME:$PASSWORD" \
-      "https://{{icp_hostname}/v1/preauth/validateAuth"
+      "https://{{icp_hostname}}/v1/preauth/validateAuth"
 
       # the previous CURL request will return an auth token under "accessToken", that you will use as {icp_token} in the following payload logging request 
       # TODO: manually define and pass:
@@ -160,7 +160,7 @@ If you are using a different load balancer, other than HAProxy, you may need to 
         "deployment_id": "{{deployment_id}}"
       }]'
 
-      curl -k -X POST https://{{icp_hostname}/v1/data_marts/{{data_mart_id}}/scoring_payloads -d "$SCORING_PAYLOAD" \
+      curl -k -X POST https://{{icp_hostname}}/v1/data_marts/{{data_mart_id}}/scoring_payloads -d "$SCORING_PAYLOAD" \
       --header 'Content-Type: application/json' --header 'Accept: application/json' --header "Authorization: Bearer $ICP_TOKEN"
       ```
 
@@ -171,7 +171,7 @@ If you are using a different load balancer, other than HAProxy, you may need to 
 
       curl -k -X GET \
       --user "$USERNAME:$PASSWORD" \
-      "https://{{icp_hostname}/v1/preauth/validateAuth"
+      "https://{{icp_hostname}}/v1/preauth/validateAuth"
 
       # the previous CURL request will return an auth token under "accessToken" key that you will use as {icp_token} in the following payload logging request
       # TODO: manually define and pass:
@@ -187,7 +187,7 @@ If you are using a different load balancer, other than HAProxy, you may need to 
         "subscription_id": "{{subscription_id}}"
       }'
 
-      curl -k -X POST https://{{icp_hostname}/v1/data_marts/{{data_mart_id}}/feedback_payloads -d "$FEEDBACK_DATA" \
+      curl -k -X POST https://{{icp_hostname}}/v1/data_marts/{{data_mart_id}}/feedback_payloads -d "$FEEDBACK_DATA" \
       --header 'Content-Type: application/json' --header 'Accept: application/json' --header "Authorization: Bearer $ICP_TOKEN"
       ```
 
