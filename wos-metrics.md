@@ -71,6 +71,8 @@ tags = [Tag(name='region', description='customer geographical region')]
 
 my_monitor = client.data_mart.monitors.add(name='model performance', metrics=metrics, tags=tags)
 ```
+{: codeblock}
+{: python}
 
 To check how you're doing, run the `client.data_mart.monitors.list()
 ` command to see if your newly-created monitor and metrics are configured properly.
@@ -83,6 +85,8 @@ monitor_uid = my_monitor['metadata']['guid']
 
 print(monitor_uid)
 ```
+{: codeblock}
+{: python}
 
 For a more detailed look, run the following command:
 
@@ -90,6 +94,8 @@ For a more detailed look, run the following command:
 my_monitor = client.data_mart.monitors.get_details(monitor_uid=monitor_uid)
 print('monitor definition details', my_monitor)
 ```
+{: codeblock}
+{: python}
 
 
 ### Step 2: Enable custom monitor.
@@ -108,6 +114,8 @@ from ibm_ai_openscale.supporting_classes import Threshold
 thresholds = [Threshold(metric_uid='sensitivity', lower_limit=0.9)]
 subscription.monitoring.enable(monitor_uid=monitor_uid, thresholds=thresholds)
 ```
+{: codeblock}
+{: python}
 
 To check on your configuration details, use the `subscription.monitoring.get_details(monitor_uid=monitor_uid)` command.
 
@@ -126,6 +134,8 @@ metrics = {"specificity": 0.78, "sensitivity": 0.67, "region": "us-south"}
 
 subscription.monitoring.store_metrics(monitor_uid=monitor_uid, metrics=metrics)
 ```
+{: codeblock}
+{: python}
 
 ## Accessing and visualizing custom metrics
 {: #cst_mtrcs_viz}

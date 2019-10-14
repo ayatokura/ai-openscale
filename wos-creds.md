@@ -66,6 +66,8 @@ To create credentials for {{site.data.keyword.aios_short}}, complete the followi
     ibmcloud login --sso
     ibmcloud iam api-key-create 'my_key'
     ```
+    {: codeblock}
+    {: curl}
 
     The following information displays:
 
@@ -76,6 +78,8 @@ To create credentials for {{site.data.keyword.aios_short}}, complete the followi
     Locked       false
     UUID         ApiKey-xxxxxxxxx-afd7-xxxxx-b0e1-xxxxxxxxxxx
     ```
+    {: codeblock}
+    {: bash}
 
 2. Verify the Resource Group you are using in your {{site.data.keyword.cloud_notm}} account.
 
