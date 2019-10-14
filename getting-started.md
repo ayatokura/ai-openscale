@@ -124,8 +124,6 @@ If you haven't already, ensure that you provision {{site.data.keyword.aios_full}
 1.  Sign into your {{site.data.keyword.aios_short}} instance on {{site.data.keyword.Bluemix}}.
 1.  To automatically set up your {{site.data.keyword.aios_short}} instance by using sample data, click **Auto setup**.
 
-   ![Demo welcome](images/cloud-auto-setup.png)
-
    As the {{site.data.keyword.aios_short}} services are being provisioned, you can review the demo scenario. When provisioning is complete, click the **Start tour** button to tour the {{site.data.keyword.aios_short}} dashboard, and proceed with [Viewing results in the {{site.data.keyword.aios_short}} model monitor](#wos-open).
 
 
@@ -135,7 +133,7 @@ If you haven't already, ensure that you provision {{site.data.keyword.aios_full}
 To view insights into the fairness and accuracy of the model, details of data that is monitored, and explainability for an individual transaction, open the {{site.data.keyword.aios_short}} dashboard. Each deployment is shown as a tile. The tour configured a deployment called `GermanCreditRiskModel`, as shown in the following screen capture:
 
 
-   ![Demo Lets go](images/fastpath_demo_11.33.54.png)
+   ![demo data showing the German credit risk model tile with quality and bias issues](images/wos-faststart-model-tile.png)
 
 
 ### View insights
@@ -143,7 +141,7 @@ To view insights into the fairness and accuracy of the model, details of data th
 
 At a glance, the Insights page shows any issues with fairness and accuracy, as determined by the thresholds that are configured.
 
-   ![Demo Lets go](images/fastpath_demo_11.34.00.png)
+   ![tile detail shows quality at 69 %, fairness at 85%, and drift at 0%](images/wos-faststart-quality-fairness-drift.png)
 
 ### View monitoring data
 {: #wos-monitoring}
@@ -205,16 +203,16 @@ Set up an application in {{site.data.keyword.aios_short}} to monitor your busine
 ## Viewing insights in the application monitor
 {: #wos-open-config-appmon-insights}
 
-To view insights into the business application - performance of business KPIs and their correlation with deployed models, open the {{site.data.keyword.aios_short}} **Insights dashboard**. Each application displays as a tile. The tour configured an application called **Credit Risk Application**, as shown in the following screen capture:
+To view insights into the business application - performance of business KPIs and their correlation with deployed models, open the {{site.data.keyword.aios_short}} **Insights dashboard**. Each application displays as a tile. The tour configured an application called **Credit Risk Model Application**, as shown in the following screen capture:
 
-![an application tile that shows loan application KPIs](images/wos-tutorial-loan-apptile.png)
+![an application tile that shows loan application KPIs](images/wos-insights-dashboard-application-monitors-tile.png)
 
 ### View insights
 {: #wos-open-config-appmon-insights-dets}
 
 At a glance, the Insights page shows any issues with business KPIs, as determined by the thresholds that are configured.
 
-![The insights dashboard is shown with two tiles on the applications monitor tab](images/wos-tutorial-dashboard.png)
+![The insights dashboard is shown with one tile on the applications monitor tab](images/wos-insights-dashboard-application-monitors.png)
 
 ### View model metrics influencing KPI
 {: #wos-open-config-appmon-insights-kpi-dets}

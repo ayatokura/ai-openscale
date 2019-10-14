@@ -102,7 +102,7 @@ From the [{{site.data.keyword.aios_short}} dashboard](https://aiopenscale.cloud.
 
    - For information about interpreting the time series chart, see [Getting insights](/docs/services/ai-openscale?topic=ai-openscale-it-ov).
 
-    ![Monitor data is shown](images/setup02-0206.png)
+    ![Monitor data is shown](images/wos-fairness-age-payload-perturbed.png)
 
 3. To see details about `AGE` data monitoring, ensure that `AGE` is selected from the drop-down menu.
 
@@ -110,7 +110,7 @@ From the [{{site.data.keyword.aios_short}} dashboard](https://aiopenscale.cloud.
 
   - For information about interpreting the chart of the data points at a specific hour, see [Visualizing data for a specific hour](/docs/services/ai-openscale?topic=ai-openscale-it-vdet).
 
-    ![View details are shown](images/setup03-0206.png)
+    ![View details are shown](images/wos-fairness-age-debiased.png)
 
 ### View explainability
 {: #as-explain}
