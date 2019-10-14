@@ -108,11 +108,16 @@ You can also add your machine learning provider by using the Python SDK. For mor
 
     bindings_details = client.data_mart.bindings.get_details()
     ```
+    {: codeblock}
+    {: python}
+
   You can see your service binding with the following command:
 
     ```python
     client.data_mart.bindings.list()
     ```
+    {: codeblock}
+    {: python}
 
     ![SageMaker ML binding](images/ml-sagemaker-bind.png)
 
@@ -130,6 +135,8 @@ You can also add your machine learning provider by using the Python SDK. For mor
                                   label_column='<my_label_column_name>',
                                   prediction_column='Scored Labels'))
     ```
+    {: codeblock}
+    {: python}
 
 - Get subscription list
 
@@ -139,6 +146,8 @@ You can also add your machine learning provider by using the Python SDK. For mor
     subscriptions_uids = client.data_mart.subscriptions.get_uids()
     print(subscriptions_uids)
     ```
+    {: codeblock}
+    {: python}
 
 ### Enable payload logging
 {: #cml-smenlog}
@@ -148,12 +157,16 @@ You can also add your machine learning provider by using the Python SDK. For mor
     ```python
     subscription.payload_logging.enable()
     ```
+    {: codeblock}
+    {: python}
 
 - Get logging details
 
     ```python
     subscription.payload_logging.get_details()
     ```
+    {: codeblock}
+    {: python}
 
 ### Scoring and payload logging
 {: #cml-smscore}
@@ -172,6 +185,9 @@ You can also add your machine learning provider by using the Python SDK. For mor
 
     subscription.payload_logging.store(records=records_list)
     ```
+    {: codeblock}
+    {: python}
+
     **Note**: For languages other than Python, you can also perform payload logging directly, using a REST API.
 
     ```json

@@ -54,6 +54,8 @@ records_list = [
                  response_time=response_time)]
 subscription.payload_logging.store(records=records_list)
 ```
+{: codeblock}
+{: python}
 
 ### Previewing the payload logging table
 
@@ -84,6 +86,8 @@ req_response = requests.post(endpoint,
                              json=payload,
                              headers = headers)
 ```
+{: codeblock}
+{: python}
 
 ## Next steps
 

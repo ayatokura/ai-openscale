@@ -44,12 +44,16 @@ These file formats are defined by a schema, `training_data_schema`, which is ava
 ```
 subscription.get_details()['entity']['asset_properties']['training_data_schema']
 ```
+{: codeblock}
+{: python}
 
 To compare the training data schema to the feedback schema, you might want to view the feedback schema as well. To view the feedback schema, run the following command by using the Python API:
 
 ```
 subscription.feedback_logging.print_table_schema()
 ```
+{: codeblock}
+{: python}
 
 
 ### CSV format
