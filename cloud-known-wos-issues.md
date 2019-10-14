@@ -130,7 +130,7 @@ If you are using a different load balancer, other than HAProxy, you may need to 
 
       *Payload logging*
 
-      ```cURL
+      ```bash
       # Generate an ICP access token by passing an ICP username as $USERNAME, and ICP password as $PASSWORD in the following request
 
       curl -k -X GET \
@@ -166,7 +166,7 @@ If you are using a different load balancer, other than HAProxy, you may need to 
 
       *Feedback logging*
 
-      ```cURL
+      ```bash
       # Generate an ICP access token by passing an ICP username as $USERNAME, and ICP password as $PASSWORD in the following request
 
       curl -k -X GET \
