@@ -15,15 +15,25 @@ subcollection: ai-openscale
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 {:codeblock: .codeblock}
-{:download: .download}
-{:external: target="_blank" .external}
 {:screen: .screen}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
 {:python: .ph data-hd-programlang='python'}
+{:ruby: .ph data-hd-programlang='ruby'}
 {:swift: .ph data-hd-programlang='swift'}
+{:dotnet-standard: .ph data-hd-programlang='dotnet-standard'}
+{:unity: .ph data-hd-programlang='unity'}
+{:apikey: data-credential-placeholder='apikey'}
+{:url: data-credential-placeholder='url'}
+{:tooling-url: data-tooling-url-placeholder='tooling-url'}
+{:hide-dashboard: .hide-dashboard}
+{:hide-in-docs: .hide-in-docs}
+{:download: .download}
 {:faq: data-hd-content-type='faq'}
 
 # Known issues and limitations for {{site.data.keyword.aios_short}} for {{site.data.keyword.cloud_notm}}
@@ -163,6 +173,8 @@ If you are using a different load balancer, other than HAProxy, you may need to 
       curl -k -X POST https://{{icp_hostname}}/v1/data_marts/{{data_mart_id}}/scoring_payloads -d "$SCORING_PAYLOAD" \
       --header 'Content-Type: application/json' --header 'Accept: application/json' --header "Authorization: Bearer $ICP_TOKEN"
       ```
+      {: codeblock}
+      {: curl}
 
       *Feedback logging*
 
@@ -190,6 +202,8 @@ If you are using a different load balancer, other than HAProxy, you may need to 
       curl -k -X POST https://{{icp_hostname}}/v1/data_marts/{{data_mart_id}}/feedback_payloads -d "$FEEDBACK_DATA" \
       --header 'Content-Type: application/json' --header 'Accept: application/json' --header "Authorization: Bearer $ICP_TOKEN"
       ```
+      {: codeblock}
+      {: curl}
 
     - Java code snippet provided for debiasing endpoint is invalid. Correct code snippet is provided here:
 
@@ -219,6 +233,8 @@ If you are using a different load balancer, other than HAProxy, you may need to 
       byte[] res = Request.Post(URL).addHeader("Authorization", bearerToken).useExpectContinue().version(HttpVersion.HTTP_1_1)
                 .bodyString(payload, ContentType.APPLICATION_JSON).execute().returnContent().asBytes();
       ```
+      {: codeblock}
+      {: java}
 
 <p>&nbsp;</p>
 
