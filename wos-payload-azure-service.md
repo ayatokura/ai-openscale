@@ -47,6 +47,7 @@ binding_uid = client.data_mart.bindings.add('My Azure ML Service engine', AzureM
 bindings_details = client.data_mart.bindings.get_details()
 ```
 {: codeblock}
+{: python}
 
 You can see your service binding with the following command:
 
@@ -54,6 +55,7 @@ You can see your service binding with the following command:
 client.data_mart.bindings.list()
 ```
 {: codeblock}
+{: python}
 
 The sample output:
 
@@ -62,6 +64,7 @@ uid	                                   name	                      service_type	 
 410e730f-8462-45fe-8b41-a029d6d6043a	My Azure ML Service engine azure_machine_learning_service2019-06-10T22:10:29.398Z
 ```
 {: codeblock}
+{: python}
     
     
 ## Add Microsoft Azure ML Service subscription
@@ -79,6 +82,7 @@ client.data_mart.subscriptions.add(
                                 prediction_column='Scored Labels'))
 ```
 {: codeblock}
+{: python}
 
 Get subscription list
 
@@ -89,6 +93,7 @@ subscriptions_uids = client.data_mart.subscriptions.get_uids()
 print(subscriptions_uids)
 ```
 {: codeblock}
+{: python}
 
 ## Enable payload logging
 {: #cml-azsrvenlog}
@@ -99,6 +104,7 @@ Enable payload logging in subscription
 subscription.payload_logging.enable()
 ```
 {: codeblock}
+{: python}
 
 Get logging details
 
@@ -106,6 +112,7 @@ Get logging details
 subscription.payload_logging.get_details()
 ```
 {: codeblock}
+{: python}
 
 ## Scoring and payload logging
 {: #cml-azsrvscore}
@@ -167,4 +174,5 @@ req_response = requests.post(endpoint, json=payload, headers = headers)
 print("Request OK: " + str(req_response.ok))
 ```
 {: codeblock}
+{: python}
 

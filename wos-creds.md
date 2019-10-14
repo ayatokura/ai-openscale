@@ -66,6 +66,8 @@ To create credentials for {{site.data.keyword.aios_short}}, complete the followi
     ibmcloud login --sso
     ibmcloud iam api-key-create 'my_key'
     ```
+    {: codeblock}
+    {: curl}
 
     The following information displays:
 
@@ -76,6 +78,7 @@ To create credentials for {{site.data.keyword.aios_short}}, complete the followi
     Locked       false
     UUID         ApiKey-xxxxxxxxx-afd7-xxxxx-b0e1-xxxxxxxxxxx
     ```
+    {: codeblock}
 
 2. Verify the Resource Group you are using in your {{site.data.keyword.cloud_notm}} account.
 
@@ -87,7 +90,7 @@ To create credentials for {{site.data.keyword.aios_short}}, complete the followi
 
   If you are not using the `Default` resource group, then run the following command to get your credential for {{site.data.keyword.aios_short}}:
 
-   ```curl
+   ```bash
    ibmcloud target -g myResourceGroup
    ```
 
@@ -95,7 +98,7 @@ To create credentials for {{site.data.keyword.aios_short}}, complete the followi
 
 3. Retrieve your {{site.data.keyword.aios_short}} instance ID by running the following command:
 
-    ```curl
+    ```bash
     ibmcloud resource service-instance '<Your_Watson_OpenScale_instance_name>'
     ```
 

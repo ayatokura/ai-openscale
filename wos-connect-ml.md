@@ -51,6 +51,9 @@ You will need to have the training data of your model available in Db2 or {{site
 
     client = APIClient(service_credentials)
     ```
+    {: codeblock}
+    {: python}
+
   Credentials can be found by following the steps shown in the "[Creating credentials](/docs/services/ai-openscale?topic=ai-openscale-cred-create)" topic.
 
 - Create a schema name in your PostgreSQL database
@@ -62,6 +65,8 @@ You will need to have the training data of your model available in Db2 or {{site
 
     client.data_mart.get_details()
     ```
+    {: codeblock}
+    {: python}
 
 
 ## Next steps
