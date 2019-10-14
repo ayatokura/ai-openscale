@@ -301,15 +301,15 @@ To enable monitoring for accuracy, you must provide your model with feedback dat
 
 1.  In {{site.data.keyword.aios_short}}, click the **Insights** tab.
 
-    ![Insights](images/insight-dash-tab.png)
+    ![Insights](images/wos-insight-dash-tab.png)
 
 1.  Click the tile for your deployed model.
 
-    ![Insights tab - no data](images/gs-insight-overview.png)
+    ![Insights tab - no data](images/wos-insights-dashboard-model-monitors.png)
 
 1.  Then, click **Configure monitors**.
 
-    ![Edit icon displays](images/gs-insight-edit-icon.png)
+    ![Edit icon displays](images/wos-gs-insight-edit-icon.png)
 
 1.  Click **Accuracy**, and then click **Feedback**.
 1.  Click the **Add feedback data** button, and select the `credit_feedback_data.csv` file you downloaded and click **Open**. 
@@ -318,7 +318,7 @@ To enable monitoring for accuracy, you must provide your model with feedback dat
     File sizes are currently limited to 8 MB.
     {: note}
 
-    ![Accuracy delimiter](images/accuracy-delimit.png)
+    ![Accuracy delimiter](images/wos-accuracy-delimit.png)
 
 Adding the CSV file provides feedback data to your model.
 
