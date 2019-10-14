@@ -203,7 +203,7 @@ Set up an application in {{site.data.keyword.aios_short}} to monitor your busine
 ## Viewing insights in the application monitor
 {: #wos-open-config-appmon-insights}
 
-To view insights into the business application - performance of business KPIs and their correlation with deployed models, open the {{site.data.keyword.aios_short}} **Insights dashboard**. Each application displays as a tile. The tour configured an application called **Credit Risk Model Application**, as shown in the following screen capture:
+To view insights into the business application - performance of business KPIs and their correlation with deployed models, open the {{site.data.keyword.aios_short}} **Insights dashboard**. Each application displays as a tile. The tour configured an application called **GermanCreditRiskModel**, as shown in the following screen capture:
 
 ![an application tile that shows loan application KPIs](images/wos-insights-dashboard-application-monitors-tile.png)
 
@@ -231,7 +231,7 @@ For information about interpreting the time series chart, see [Getting applicati
 ### View KPI performance
 {: #wos-open-config-appmon-insights-kpi-perf}
 
-1. From the **Insights dashboard**, on the **Applications monitor** tab, click the **Credit Risk Application** tile to view details about the KPIs.
+1. From the **Insights dashboard**, on the **Applications monitor** tab, click the **GermanCreditRiskModel** tile to view details about the KPIs.
 1. Select **KPI**.
 1. Select the **Performance** tab
 1. Click and drag the marker across the chart to view a day and time period that shows data and then click the View details link. Alternatively, you can click different time periods in the chart to change the data that you see.
