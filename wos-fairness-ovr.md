@@ -112,7 +112,7 @@ The results of these determinations are available in the bias visualization, whi
    - Oldest record timestamp in the data frame for which bias has to be computed
    - Newest/latest record timestamp in the data frame for which bias has to be computed
 
-  ![example of payload plus perturbed](images/payload&perturbed.png)
+  ![example of payload plus perturbed](images/wos-fairness-age-payload-perturbed.png)
 
 
 
@@ -125,7 +125,7 @@ The results of these determinations are available in the bias visualization, whi
    - Newest/latest record timestamp in the data frame for which bias has to be computed
 
 
-  ![example of payload data](images/payload.png)
+  ![example of payload data](images/wos-fairness-age-payload.png)
 
 - **Training**: The training data records used to train the model.
 
@@ -134,7 +134,7 @@ The results of these determinations are available in the bias visualization, whi
    - Number of training data records. Training data is read one time, and distribution is stored in the `subscription/fairness_configuration` variable. While computing distribution we should also find the number of training data records and store it in the same distribution. Also when training data is changed, meaning if the `POST /data_distribution` command is run again, this value is updated in the `fairness_configuration/training_data_distribution` variable. While sending the metric, we should also send this value as well.
    - The time at which training data is last processed (first time and subsequent updates)
 
-  ![example of training data](images/training.png)
+  ![example of training data](images/wos-fairness-age-training.png)
    
 
    
@@ -152,7 +152,7 @@ The results of these determinations are available in the bias visualization, whi
       - The **after** accuracy is computed by taking the feedback data and sending it to the active debiasing API. This API returns the de-biased prediction. The feedback data also contains the manual label. The manual label is compared with the debiased prediction to compute the accuracy. This API returns the de-biased prediction. The feedback table also contains the manual label. The manual label is compared with the debiased prediction to compute the accuracy. 
       - The **before** accuracy is computed by using the same feedback data. For before accuracy computation, the feedback data is sent to the model to get its prediction and the predicted value is compared with the manual label to get the accuracy.
 
-  ![example of debiased data](images/debiased.png)
+  ![example of debiased data](images/wos-fairness-age-debiased.png)
   
 ### Example
 {: #mf-ex1}
@@ -177,11 +177,11 @@ For machine learning engines other than {{site.data.keyword.pm_full}}, fairness 
 
 You can review all metrics value over time on the {{site.data.keyword.aios_short}} dashboard:
 
-![fairness metrics chart showing drift lower than the set threshold](images/fairness_metrics_001.png)
+![fairness metrics chart showing drift lower than the set threshold](images/wos-fairness-sex.png)
 
 You can review related details, such as favourable and unfavourable outcomes:
 
-![fairness details](images/fairness_metrics_002.png)
+![fairness details](images/wos-fairness-sex-payload-perturbed.png)
 
 You can view detailed transactions:
 
