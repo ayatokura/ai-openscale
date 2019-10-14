@@ -88,7 +88,7 @@ In addition to {{site.data.keyword.aios_short}}, to complete this tutorial, you 
 
 1.  From the **Select model type** section, select **From sample** and the `Credit Risk` model, and then click **Create**.
 
-    ![the credit risk tile is shown](images/credit-sample-model.png)
+    ![the credit risk tile is shown](images/wos-credit-sample-model.png)
 
 ### Deploy the `Credit Risk` model
 {: #gs-depmod}
@@ -180,11 +180,9 @@ Before you can configure your monitors, you must generate at least one scoring r
 
 1.  Specify the feature that contains the answer that the model will predict. (In your database, which column from the table contains prediction values or labels?) In this case, the model predicts credit risk, so select the **Risk** column and click **Next**.
 
-    ![Prepare for monitoring](images/wos-select-model-deployment.png)
 
-1.  Next you will provide information about your model and training data. Click **Next**.
+1.  Next provide information about your model and training data. Click **Next**.
 
-    ![Prepare explanation](images/config-what-monitor.png)
 
 1.  From the **Data type** menu, select **Numeric/categorical** as the type of data your deployment analyzes, and click **Next**.
 
@@ -198,7 +196,7 @@ Before you can configure your monitors, you must generate at least one scoring r
 
     ![Binary](images/binary.png)
 
-1.  The location information for the sample data is pre-populated on the following screen. Select **Next** to continue.
+1.  If you ran the auto setup, the location information for the sample data is pre-populated on the following screen. Select **Next** to continue.
 
     ![Specify Db2 location of training data page](images/gs-config-train-db2-monitor.png)
 
