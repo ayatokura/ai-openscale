@@ -54,7 +54,7 @@ Specifically, from the **Select a transaction set from the chart or list below**
 
 - Transactions responsible for drop in accuracy
   
-  The following example shows transactions that are responsible for drop in accuracy and data consistency for the German Credit Risk sample model:
+  The following example shows transactions that are responsible for drop in accuracy for the German Credit Risk sample model:
   
   ![fairness metrics chart showing drift lower than the set threshold](images/wos-drift-detection-example-accuracy.png)
 
@@ -66,7 +66,7 @@ Specifically, from the **Select a transaction set from the chart or list below**
   
 - Transactions responsible for drop in data consistency
   
-  The following example shows transactions that are responsible for drop in accuracy and data consistency for the German Credit Risk sample model:
+  The following example shows transactions that are responsible for drop in data consistency for the German Credit Risk sample model:
   
   ![fairness metrics chart showing drift lower than the set threshold](images/wos-drift-detection-example-data.png)
 
