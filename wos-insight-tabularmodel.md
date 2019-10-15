@@ -57,7 +57,7 @@ subcollection: ai-openscale
 
 The following example of explainability shows a classification model that evaluates tabular data.
 
-![Explainability image classification chart is displayed. it shows confidence levels for the tabular data model](images/insight-explain-text.png)
+![Explainability image classification chart is displayed. it shows confidence levels for the tabular data model](images/wos-tabular-transactions.png)
 
 ## Tabular model example
 {: #ie-tabular-ntbkssample}
