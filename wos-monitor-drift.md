@@ -34,10 +34,14 @@ You must configure the {{site.data.keyword.aios_full}} drift monitor before it c
 You can train your model online by using {{site.data.keyword.aios_short}}
 if you use {{site.data.keyword.pm_full}} and your data does not exceed 500 MB. Otherwise, you must use a notebook to train the model.
 
+
+
 ## Requirements
 {: #behavior-drift-config-steps-wos-reqs}
 
-Throughout this process, {{site.data.keyword.aios_full}} analyzes your model and makes recommendations based on the most logical outcome. On the successive pages of the **Drift** tab, you must provide the following information:
+Throughout this process, {{site.data.keyword.aios_full}} analyzes your model and makes recommendations based on the most logical outcome. For the drift monitor to work properly, the data type of your prediction column in the training data must match the data type of the same column in the payload data. Assign matching string or numeric types to the prediction and label columns. Confirm data types in the Payload logging tab of the monitor configuration window. If for some reason you must redeploy the monitor to change the data types.
+
+On the successive pages of the **Drift** tab, you must provide the following information:
 
 ### Alert threshold
 {: #behavior-drift-config-steps-wos-reqs-alert}
