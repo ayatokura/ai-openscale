@@ -170,16 +170,25 @@ For information about finding and explaining transactions, see [Monitoring expla
 ## Continue setup by configuring the application monitor  ![beta tag](images/beta.png)
 {: #wos-open-config-appmon}
 
-Set up an application in {{site.data.keyword.aios_short}} to monitor your business KPIs and to find how deployed models influence these KPIs. The deployed models must be associated with the application; and, business KPIs must be defined based on the business events data. Business events data must be logged to {{site.data.keyword.aios_short}} either by manually uploading a file with events data or by using the REST API.
+{{site.data.keyword.aios_short}} gives you the ability to correlate business key performance indicators (KPIs) with the drift in model accuracy. In the next part of this tutorial, you will set up an application in {{site.data.keyword.aios_short}} to monitor your business KPIs and to find how deployed models influence these KPIs. The deployed models must be associated with the application; and, business KPIs must be defined based on the business events data. Business events data must be logged to {{site.data.keyword.aios_short}} either by manually uploading a file with events data or by using the REST API. For this scenario, we provide a .csv file with a week's worth of KPI data for you to use to populate the monitor.
 
 ### Steps
 {: #wos-open-config-appmon-steps}
 
 1. From the **Insights dashboard**, on the **Application monitors** tab, click the **Add to dashboard** button to create a new application.
-1. In the **Application name** field, type **Loan Application**, and then click **Configure**.
+
+   The application is represented by the tile on the dashboard and gathers together the information about the model that is associated with the KPIs that you will be adding.
+
+1. In the **Application name** field, type **German Credit Risk Model Application**, and then click **Configure**.
 1. In the **Associated models** section, click the **Add associated model** button.
-1. Select the **Credit Risk model** deployment, and then click **Save**.
+
+   You associate a model for which you have tracked KPIs.
+   
+1. Select the **German Credit Risk model** deployment, and then click **Save**.
 1. In the **Event details** section, click **Load event data from file**.
+
+   The event data corresponds to actual business transactions that represent the fluctuations of your key performance indicators. For example, the accepted credits and sums for the credit applicants. An important part of this file is the `transaction_id` field and the `timestamp` field. These two fields are necessary to make sure that the KPIs line up with the correct transactions in the model data.
+
 1. Download the [history_business_payloads_week.csv](https://raw.githubusercontent.com/pmservice/ai-openscale-tutorials/master/assets/historical_data/german_credit_risk/wos/history_business_payloads_week.csv) file.
 1. Select the downloaded file, and then click **Save**.
 1. In the **KPIs** section, click **Add KPI**.
@@ -217,7 +226,7 @@ At a glance, the Insights page shows any issues with business KPIs, as determine
 ### View model metrics influencing KPI
 {: #wos-open-config-appmon-insights-kpi-dets}
 
-1. From the **Insights** page, click the `Credit Risk Application` tile to view details about the KPIs.
+1. From the **Insights** page, click the **German Credit Risk Application** tile to view details about the KPIs.
 1. Click **KPI**.
 1. Click the **Correlations** tab.
    
