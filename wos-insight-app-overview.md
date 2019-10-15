@@ -31,6 +31,20 @@ subcollection: ai-openscale
 You can track all the business processes and applications that you are monitoring through the **Applications monitor** tab of the {{site.data.keyword.aios_full}} dashboard.
 {: shortdesc}
 
+There are a few use cases, where having the knowledge how KPIs are correlated with AI measures can be especially beneficial:
+
+- Use the correlation to decide where to invest and which problem, such as drift, fairness, or quality leads to the highest loss from a business perspective. It’s not enough to visualize model issues--{{site.data.keyword.aios_short}} enables you to see the estimate of their importance.
+- In cases where there is no correlation between KPIs and AI metrics, this can be cause for further analysis and might lead to questions of how AI is used and whether there is some gap in the process.
+
+The granularity at the transaction level is crucial for linking business events with the scoring payload. Each business event, or transaction, is a result of the business process that can include multiple scorings of different models. Having business events in the {{site.data.keyword.aios_short}} system means that you can slice business data by time or by clustering and link it with the corresponding scoring payload slices. Then measure KPIs on the business payload and AI metrics on the scoring payload. Finally correlate those metrics together.
+
+Your business event (transaction) data is sent independent of any the scoring payload. These two separate data sets are joined by a transaction ID, `transaction_id`, which is present in the business payload and has to be sent (only ID of transaction) in the scoring request as a standard or meta field value.
+
+Business event data is usually sent in batches, such as once per day. For that reason, the data processing time in usually not the event time.
+
+Business event properties are different fields that describe the event (transaction) like: region, segment, potential profit from the transaction, … Numerical fields can be used to calculate KPI values. Other for clustering purposes.
+
+
 ## Insights
 {: #io-app-ins}
 
