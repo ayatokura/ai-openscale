@@ -62,7 +62,7 @@ The {{site.data.keyword.aios_short}} service supports the following machine lear
 ## Next steps
 {: #in-next}
 
-- View the [API Reference material](https://{DomainName}/apidocs/ai-openscale){: external}.
+- View the [API Reference material](https://cloud.ibm.com/apidocs/ai-openscale){: external}.
 
 Still have questions? 
 

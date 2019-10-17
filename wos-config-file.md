@@ -187,4 +187,4 @@ The asset deployment is created and configured for use by {{site.data.keyword.ai
 
 See more complete information in the [{{site.data.keyword.aios_short}} Python client documentation](http://ai-openscale-python-client-dev.mybluemix.net/#subscriptions){: external}.
 
-You can also import and export configurations to {{site.data.keyword.aios_short}} using the [import subscription](https://{DomainName}/apidocs/ai-openscale#import-subscription){: external} and [export subscription](https://{DomainName}/apidocs/ai-openscale#export-subscription){: external} API methods.
+You can also import and export configurations to {{site.data.keyword.aios_short}} using the [import subscription](https://cloud.ibm.com/apidocs/ai-openscale#import-subscription){: external} and [export subscription](https://cloud.ibm.com/apidocs/ai-openscale#export-subscription){: external} API methods.

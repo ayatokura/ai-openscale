@@ -242,7 +242,7 @@ If you are using a different load balancer, other than HAProxy, you may need to 
 ### Browser support
 {: #abt-browser}
 
-The {{site.data.keyword.aios_short}} service tooling requires the same level of browser software as is required by {{site.data.keyword.cloud_notm}}. See the {{site.data.keyword.cloud_notm}} [Prerequisites](/docs/overview?topic=overview-prereqs-platform#browsers) topic for details.
+The {{site.data.keyword.aios_short}} service tooling requires the same level of browser software as is required by {{site.data.keyword.cloud_notm}}. See the {{site.data.keyword.cloud_notm}} [Prerequisites](https://cloud.ibm.com/docs/overview?topic=overview-prereqs-platform#browsers-platform) topic for details.
 
 <p>&nbsp;</p>
 
@@ -288,6 +288,6 @@ Drift configuration is started but never finishes and continues to show the spin
 {: #abt-next}
 
 - [Getting started](/docs/services/ai-openscale?topic=ai-openscale-gettingstarted)
-- View the [API Reference material](https://{DomainName}/apidocs/ai-openscale){: external}.
+- View the [API Reference material](https://cloud.ibm.com/apidocs/ai-openscale){: external}.
 - [What's new in {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-rn-relnotes)
 - [Contact IBM](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-watson){: external}.

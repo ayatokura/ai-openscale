@@ -143,7 +143,7 @@ In the notebook-based approach, you are expected to upload the statistics and ot
 ### What internet browser does {{site.data.keyword.aios_short}} support?
 {: #in-brw}
 
-The {{site.data.keyword.aios_short}} service tooling requires the same level of browser software as is required by {{site.data.keyword.cloud_notm}}. See the {{site.data.keyword.cloud_notm}} [Prerequisites](/docs/overview?topic=overview-prereqs-platform#browsers-platform){: external} topic for details.
+The {{site.data.keyword.aios_short}} service tooling requires the same level of browser software as is required by {{site.data.keyword.cloud_notm}}. See the {{site.data.keyword.cloud_notm}} [Prerequisites](https://cloud.ibm.com/docs/overview?topic=overview-prereqs-platform#browsers-platform){: external} topic for details.
 
 <p>&nbsp;</p>
 
