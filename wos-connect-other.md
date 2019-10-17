@@ -87,7 +87,7 @@ The following image shows the Custom environment support:
 
 You can also reference the following links:
 
-[{{site.data.keyword.aios_short}} payload logging API](https://{DomainName}/apidocs/ai-openscale#publish-scoring-payload){: external}
+[{{site.data.keyword.aios_short}} payload logging API](https://cloud.ibm.com/apidocs/ai-openscale){: external}
 
 [Custom deployment API](https://aiopenscale-custom-deployement-spec.mybluemix.net/){: external}
 
