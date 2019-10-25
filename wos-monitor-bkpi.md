@@ -68,7 +68,39 @@ To activate the application, along with any of the KPIs that you created, you mu
 2. Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
 3. A summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section. Otherwise, click **Save** to complete your configuration.
 
-### Next steps
+
+### Tutorial steps: Add KPIs for the German Credit Risk application monitor
+{: #wos-open-config-appmon-steps-kpis}
+
+After you configure the application monitor, you must add key performance indicators to your monitor. 
+
+1. In the **Event details** section, click **Load event data from file**.
+
+   The event data corresponds to actual business transactions that represent the fluctuations of your key performance indicators. For example, the accepted credits and sums for the credit applicants. An important part of this file is the `transaction_id` field and the `timestamp` field. These two fields are necessary to make sure that the KPIs line up with the correct transactions in the model data.
+
+1. Download the [history_business_payloads_week.csv](https://raw.githubusercontent.com/pmservice/ai-openscale-tutorials/master/assets/historical_data/german_credit_risk/wos/history_business_payloads_week.csv) file.
+1. Select the downloaded file, and then click **Save**.
+1. In the **KPIs** section, click **Add KPI**.
+1. In the **KPI name** field, type **Accepted Credits**, and then click **Next**.
+1. On the **Configure the KPI** window, click the **Accepted** tile, and then click **Next**.
+1. Make the following selections:
+
+   - In the **Calculation** drop-down box, select **Sum**
+   - In the **Sum to calculate** drop-down box, select **Daily Sum**
+   - Click the **Lower Threshold** radio button and type **500** in the field and click **Save**.
+
+1. Use the preceding steps to add another KPI with the following values:
+
+   - Credit Amount Granted
+   - Amount Granted
+   - Sum/DailySum/Lower Threshold = 1 000 000
+
+1. In the **Logging endpoint** section, click the **Activate the application** button and then upload the `history_business_payloads_week.csv` file by dragging it to the drop location.
+
+To see KPI transactions right away, you must click **Evaluate now**.
+{: note}
+
+## Next steps
 {: #kpi-next}
 
 - [View correlation charts](/docs/services/ai-openscale?topic=ai-openscale-app-perform-vdet).

@@ -31,6 +31,9 @@ subcollection: ai-openscale
 In {{site.data.keyword.aios_short}} application refers to either the business application or business process that uses AI models. Applications that are configured in {{site.data.keyword.aios_short}} enable you to monitor business KPIs as well as to understand the impact of model metrics, such as model drift on an application's business key performance indicators (KPIs).
 {: shortdesc}
 
+{{site.data.keyword.aios_short}} gives you the ability to correlate business key performance indicators (KPIs) with the drift in model accuracy. In the next part of [the interactive setup tutorial](), you will set up an application in {{site.data.keyword.aios_short}} to monitor your business KPIs and to find how deployed models influence these KPIs. The deployed models must be associated with the application; and, business KPIs must be defined based on the business events data. Business events data must be logged to {{site.data.keyword.aios_short}} either by manually uploading a file with events data or by using the REST API. 
+
+
 ## Steps
 {: #app-monitor-steps}
 
@@ -74,9 +77,32 @@ There is no possibility to edit activated monitor configuration in the current B
 {: note}
 
 
-### Next steps
+## Continue with the tutorial by configuring the German Credit Risk Model application monitor
+{: #wos-open-config-appmon}
+
+For the following tutorial scenario, we provide a .csv file with a week's worth of KPI data for you to use to populate the monitor.
+
+### Tutorial steps: Add a new application monitor for the German Credit Risk Model 
+{: #wos-open-config-appmon-steps}
+
+1. From the **Insights dashboard**, on the **Application monitors** tab, click the **Add to dashboard** button to create a new application.
+
+   The application is represented by the tile on the dashboard and gathers together the information about the model that is associated with the KPIs that you will be adding.
+
+1. In the **Application name** field, type **German Credit Risk Model Application**, and then click **Configure**.
+1. In the **Associated models** section, click the **Add associated model** button.
+
+   You associate a model for which you have tracked KPIs.
+   
+1. Select the **German Credit Risk model** deployment, and then click **Save**.
+
+
+
+
+## Next steps
 {: #app-next}
 
+- To continue with the tutorial, see [Tutorial steps: Add KPIs for the German Credit Risk application monitor](/docs/services/ai-openscale?topic=ai-openscale-wos-open-config-appmon-steps-kpis)
 - [Configure KPI metrics](/docs/services/ai-openscale?topic=ai-openscale-kpi-monitor)
 - Get insights into how your KPIs correlate to model drift. For more information, see [Getting application insights](/docs/services/ai-openscale?topic=ai-openscale-io-app-ov).
 - [View correlation charts](/docs/services/ai-openscale?topic=ai-openscale-app-perform-vdet).
