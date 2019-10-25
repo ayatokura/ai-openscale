@@ -336,6 +336,52 @@ To check the result immediately, from the **Insights** page, select a deployment
 
 To learn about interpreting the results, see [Getting insights](/docs/services/ai-openscale?topic=ai-openscale-io-ov)
 
+
+## Configure the application monitor  ![beta tag](images/beta.png)
+{: #wos-open-config-appmon}
+
+{{site.data.keyword.aios_short}} gives you the ability to correlate business key performance indicators (KPIs) with the drift in model accuracy. In the next part of this tutorial, you will set up an application in {{site.data.keyword.aios_short}} to monitor your business KPIs and to find how deployed models influence these KPIs. The deployed models must be associated with the application; and, business KPIs must be defined based on the business events data. Business events data must be logged to {{site.data.keyword.aios_short}} either by manually uploading a file with events data or by using the REST API. For this scenario, we provide a .csv file with a week's worth of KPI data for you to use to populate the monitor.
+
+### Steps
+{: #wos-open-config-appmon-steps}
+
+1. From the **Insights dashboard**, on the **Application monitors** tab, click the **Add to dashboard** button to create a new application.
+
+   The application is represented by the tile on the dashboard and gathers together the information about the model that is associated with the KPIs that you will be adding.
+
+1. In the **Application name** field, type **German Credit Risk Model Application**, and then click **Configure**.
+1. In the **Associated models** section, click the **Add associated model** button.
+
+   You associate a model for which you have tracked KPIs.
+   
+1. Select the **German Credit Risk model** deployment, and then click **Save**.
+1. In the **Event details** section, click **Load event data from file**.
+
+   The event data corresponds to actual business transactions that represent the fluctuations of your key performance indicators. For example, the accepted credits and sums for the credit applicants. An important part of this file is the `transaction_id` field and the `timestamp` field. These two fields are necessary to make sure that the KPIs line up with the correct transactions in the model data.
+
+1. Download the [history_business_payloads_week.csv](https://raw.githubusercontent.com/pmservice/ai-openscale-tutorials/master/assets/historical_data/german_credit_risk/wos/history_business_payloads_week.csv) file.
+1. Select the downloaded file, and then click **Save**.
+1. In the **KPIs** section, click **Add KPI**.
+1. In the **KPI name** field, type **Accepted Credits**, and then click **Next**.
+1. On the **Configure the KPI** window, click the **Accepted** tile, and then click **Next**.
+1. Make the following selections:
+
+   - In the **Calculation** drop-down box, select **Sum**
+   - In the **Sum to calculate** drop-down box, select **Daily Sum**
+   - Click the **Lower Threshold** radio button and type **500** in the field and click **Save**.
+
+1. Use the preceding steps to add another KPI with the following values:
+
+   - Credit Amount Granted
+   - Amount Granted
+   - Sum/DailySum/Lower Threshold = 1 000 000
+
+1. In the **Logging endpoint** section, click the **Activate the application** button and then upload the `history_business_payloads_week.csv` file by dragging it to the drop location.
+
+To see KPI transaction, you must click **Evaluate now**.
+{: note}
+
+
 ## Related information
 {: #wos-info}
 
