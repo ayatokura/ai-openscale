@@ -85,8 +85,8 @@ After you configure the application monitor, you must add key performance indica
 1. On the **Configure the KPI** window, click the **Accepted** tile, and then click **Next**.
 1. Make the following selections:
 
-   - In the **Calculation** drop-down box, select **Sum**
-   - In the **Sum to calculate** drop-down box, select **Daily Sum**
+   - In the **Calculation** drop-down box, select **Sum**.
+   - In the **Sum to calculate** drop-down box, select **Daily Sum**.
    - Click the **Lower Threshold** radio button and type **500** in the field and click **Save**.
 
 1. Use the preceding steps to add another KPI with the following values:
