@@ -102,7 +102,7 @@ For the following tutorial scenario, we provide a .csv file with a week's worth 
 ## Next steps
 {: #app-next}
 
-- To continue with the tutorial, see [Tutorial steps: Add KPIs for the German Credit Risk application monitor](/docs/services/ai-openscale?topic=ai-openscale-wos-open-config-appmon-steps-kpis)
+- To continue with the tutorial, see [Tutorial steps: Add KPIs for the German Credit Risk application monitor](/docs/services/ai-openscale?topic=ai-openscale-wos-open-config-appmon-steps-kpis#wos-open-config-appmon-steps-kpis)
 - [Configure KPI metrics](/docs/services/ai-openscale?topic=ai-openscale-kpi-monitor)
 - Get insights into how your KPIs correlate to model drift. For more information, see [Getting application insights](/docs/services/ai-openscale?topic=ai-openscale-io-app-ov).
 - [View correlation charts](/docs/services/ai-openscale?topic=ai-openscale-app-perform-vdet).
