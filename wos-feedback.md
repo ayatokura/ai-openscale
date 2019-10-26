@@ -29,7 +29,7 @@ subcollection: ai-openscale
 {: #fmt-upld-fdbk-data}
 
 Feedback data is essential to maintain an unbiased model. You must upload feedback data to the {{site.data.keyword.aios_full}} service on a regular basis to ensure that your model takes into account up-to-date data that may indicate changes in the context of your predictive application.  With a feedback loop, the system learns continuously by monitoring the effectiveness of predictions and retraining when needed. Monitoring and using the resulting feedback are at the core of machine learning. The following information is meant to help you with formatting and uploading your feedback data.
-(: shortdesc)
+{: shortdesc}
 
 ## Formatting feedback data
 {: #fmt-upld-fdbk-data-fmt}
