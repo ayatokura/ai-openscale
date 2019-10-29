@@ -57,6 +57,17 @@ The following limitations and known issues are common to both {{site.data.keywor
 
 - Explainability for unstructured text models is not supported for continuous script languages, such as Japanese, Chinese, and Korean, which don't use whitespace or punctuation characters to separate words.
 
+<p>&nbsp;</p>
+
+
+### Not all Db2 instances function identically
+{: #wos-limitations-db2-version}
+
+Although you can use a Db2 instance that's not created by using Db2 Warehouse, you must be aware of the following issues:
+
+- The syntax used to create tables is not compatible with Db2 v. 11.1.9 or later.
+- {{site.data.keyword.aios_short}} requires a tablespace with a page size of 32k or larger.
+
 
 <p>&nbsp;</p>
 
