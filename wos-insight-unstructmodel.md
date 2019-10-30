@@ -31,6 +31,8 @@ subcollection: ai-openscale
 {{site.data.keyword.aios_short}} supports explainability for unstructured text data.
 {: shortdesc}
 
+If you are using a Keras model that takes the input as byte array, you must create a deployable function in {{site.data.keyword.pm_full}} that accepts text as input. Creating a deployable function is part of the functionality that {{site.data.keyword.pm_full}} support. For more information, see [Passing payload data to model deployments](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-deploy-functions.html?linkInPage=true#models){: external}
+
 ## Working with unstructured text models
 {: #ie-unstruct-steps}
 
