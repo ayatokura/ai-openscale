@@ -31,9 +31,14 @@ subcollection: ai-openscale
 This document outlines new features for {{site.data.keyword.aios_full_notm}}.
 {: shortdesc}
 
-## 20 October 2019
-{: #rn-20oct2019}
+## 31 October 2019
+{: #rn-31oct2019}
 
+The following new features and changes to {{site.data.keyword.aios_short}} are available.
+
+- __*{{site.data.keyword.pm_full}} framework enhancements*__: {{site.data.keyword.aios_short}} now supports the native XGBoost frameworks on the {{site.data.keyword.pm_full}} engine.
+
+   For more information, see [{{site.data.keyword.pm_full}} frameworks](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-wml).
 
 
 ## 24 September 2019
