@@ -31,6 +31,11 @@ subcollection: ai-openscale
 This document outlines new features for {{site.data.keyword.aios_full_notm}}.
 {: shortdesc}
 
+## 20 October 2019
+{: #rn-20oct2019}
+
+
+
 ## 24 September 2019
 {: #rn-24sep2019}
 
