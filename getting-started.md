@@ -45,9 +45,11 @@ subcollection: ai-openscale
 
 Get a quick overview of {{site.data.keyword.aios_short}} by watching the following video.
 
+<iframe class="embed-responsive-item" id="WOS-bias-vid" title="Watson OpenScale Drift-Bias-Explainability Videos" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_22otz5jl&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+
 <p>
   <div class="embed-responsive embed-responsive-16by9">
-     <iframe class="embed-responsive-item" id="WOS-bias-vid" title="Watson OpenScale Drift-Bias-Explainability Videos" type="text/html" src="https://mediacenter.ibm.com/media/Watson+OpenScale+Drift-Bias-Explainability+Videos+Subtitled+6+mins/1_22otz5jl" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+     <iframe class="embed-responsive-item" id="WOS-bias-vid" title="Watson OpenScale Drift-Bias-Explainability Videos" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_22otz5jl&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
   </div>
 </p>
 
