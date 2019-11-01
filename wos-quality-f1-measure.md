@@ -47,7 +47,7 @@ F1-Measure gives the harmonic mean of precision and recall.
 ## Interpreting the display
 {: #quality_f1-measr-display}
 
-![the F1-Measure chart is displayed.](images/quality-f1-meas.png)
+![the F1-Measure chart is displayed.](images/wos-quality-f1-meas.png)
 
 ## Do the math
 {: #quality_f1-measr-math}

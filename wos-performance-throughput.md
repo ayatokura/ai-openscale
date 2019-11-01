@@ -46,4 +46,4 @@ Througput measures the average scoring requests per minute in a specific timefra
 
 The throughput chart displays the average number of requests per minute. You can use controls to choose the time frame, such as 
 
-![performance chart](images/performance_metrics_001.png)
+![performance chart](images/wos-performance_metrics_001.png)

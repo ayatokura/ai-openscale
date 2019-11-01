@@ -44,12 +44,12 @@ At this stage only the `BasicAuth` or `none` formats are supported.
 
 The following example shows the REST API endpoints specification:
 
-![The REST API endpoints specification is displayed from the swagger document](images/wosdeployments.png)
+![The REST API endpoints specification is displayed from the swagger document](images/wos-deployments.png)
 
 
 The following example shows the format for an input payload:
 
-![Input payload example is shown](images/wosinputdata.png)
+![Input payload example is shown](images/wos-inputdata.png)
 
 
 ## When is a custom machine learning engine the best choice for me?

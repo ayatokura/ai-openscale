@@ -48,11 +48,11 @@ You should have provisioned an {{site.data.keyword.pm_full}} instance in the sam
 2.  Select the {{site.data.keyword.pm_full}} tile. {{site.data.keyword.aios_short}} checks your {{site.data.keyword.Bluemix_notm}} account to locate any existing {{site.data.keyword.pm_full}} instances. 
 3. Select an instance from the **Watson Machine Learning service** drop-down menu.
 
-    ![Select {{site.data.keyword.pm_short}} service](images/gs-set-wml.png)
+    ![Select {{site.data.keyword.pm_short}} service](images/wos-gs-set-wml.png)
 
 4.  (Optional) You also have the option to **Select a different location**, to specify a machine learning location outside of your {{site.data.keyword.Bluemix_notm}} account. Provide credentials for your location as valid JSON:
 
-    ![Set {{site.data.keyword.pm_short}} instance](images/gs-get-wml.png)
+    ![Set {{site.data.keyword.pm_short}} instance](images/wos-gs-get-wml.png)
 
     Click **Save**.
 

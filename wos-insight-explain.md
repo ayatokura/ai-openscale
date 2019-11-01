@@ -44,7 +44,7 @@ Get a quick overview of explainability in {{site.data.keyword.aios_short}} by wa
 {: #ie-view}
 
 1. Click a deployment tile.
-2. Click the **Explain a transaction** tab ( ![Explain a transaction tab](images/insight-transact-tab.png) ) in the navigator.
+2. Click the **Explain a transaction** tab ( ![Explain a transaction tab](images/wos-insight-transact-tab.png) ) in the navigator.
 3. Type a transaction ID.
 
 Whenever data is sent to the model for scoring, it sets a transaction ID in the HTTP header by setting the `X-Global-Transaction-Id` field. This transaction ID gets stored in the payload table. To find an explanation of the model behavior for a particular scoring, specify the transaction ID associated with that scoring request. Please note that this behavior applies only to {{site.data.keyword.pm_full}} transactions, and is not applicable for non-WML transactions.
@@ -62,7 +62,7 @@ Whenever data is sent to the model for scoring, it sets a transaction ID in the 
 
   See the following sections for examples of explanations for different types of models.
 
-  ![Explainability transaction ID](images/insight-explain-trans-id.png)
+  ![Explainability transaction ID](images/wos-insight-explain-trans-id.png)
 
 ## Finding explanations through chart details
 {: #ie-view-ui}

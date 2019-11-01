@@ -47,7 +47,7 @@ Weighted precision gives the weighted mean of precision with weights equal to cl
 ## Interpreting the display
 {: #quality_wgth_prec-display}
 
-![the Weighted precision chart is displayed.](images/quality-precision.png)
+![the Weighted precision chart is displayed.](images/wos-quality-precision.png)
 
 ## Do the math
 {: #quality_wgth_prec-math}

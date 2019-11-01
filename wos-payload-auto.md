@@ -91,7 +91,7 @@ If the format of your payload cannot be changed, for example, if it would cause 
 
 The following flowchart shows the custom machine learning engine solution in which the custom machine learning engine handles the perturbation and discovery endpoints and translates it to your format:
 
-![REST API endpoints specification](images/woscustommlworkflow.png)
+![REST API endpoints specification](images/wos-custommlworkflow.png)
 
 To generate the drift detection model, you must use scikit-learn version 0.20.2 in notebooks. 
 {: note}

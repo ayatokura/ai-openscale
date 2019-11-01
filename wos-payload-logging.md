@@ -61,7 +61,7 @@ subscription.payload_logging.store(records=records_list)
 
 You can preview the content of your payload logging table either by directly connecting to the database or by using the Python SDK, which is shown in the following sample output. 
 
-![Python SDK sample output of payload logging table](images/wosntbok.png)
+![Python SDK sample output of payload logging table](images/wos-ntbok.png)
 
 
 ## Logging the payload with the REST API

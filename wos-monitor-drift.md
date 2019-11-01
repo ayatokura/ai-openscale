@@ -80,7 +80,7 @@ Reconfigure the drift monitor without re-training the drift model to update para
 
 2. Click the **Use the existing drift model** tile.
 
-   ![What is Drift? page](images/drift-config-2.png)
+   ![What is Drift? page](images/wos-drift-config-2.png)
 
 5. Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
 
@@ -115,7 +115,7 @@ To generate the drift detection model, you must use scikit-learn version 0.20.2 
    
 3. Upload the drift detection model and click **Next**.
 
-   ![What is Drift? page](images/drift-config-upload.png)
+   ![What is Drift? page](images/wos-drift-config-upload.png)
    
 5. Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
 

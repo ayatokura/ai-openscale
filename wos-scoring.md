@@ -46,7 +46,7 @@ To configure monitors, {{site.data.keyword.aios_short}} requires you to send a s
 The fields and values in the code snippets need to be substituted with your real values, as the ones provided are only examples.
 {: important}
 
-![Select database](images/config-send-scoring.png)
+![Select database](images/wos-config-send-scoring.png)
 
 After you run your payload logging, a checkmark appears in the **Ready to Monitor** column for the selected deployment. Click **Configure Monitors** to continue.
 

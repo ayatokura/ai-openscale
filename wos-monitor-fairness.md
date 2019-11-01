@@ -77,7 +77,7 @@ By setting a minimum sample size, you prevent measuring fairness until a minimum
 
 To start the configuration process, from the **Fairness** tab, on the **What is the Fairness monitor?** page, click **Begin**.
 
-![What is fairness? page](images/fair-what-is.png)
+![What is fairness? page](images/wos-fair-what-is.png)
 
 Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
 

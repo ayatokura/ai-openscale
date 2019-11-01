@@ -47,7 +47,7 @@ Get a quick overview of {{site.data.keyword.aios_short}} by watching the followi
 
 <p>
   <div class="embed-responsive embed-responsive-16by9">
-     <iframe class="embed-responsive-item" id="WOS-bias-vid" title="Mitigating AI Bias with IBM Watson OpenScale" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_1shu3261&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+     <iframe class="embed-responsive-item" id="WOS-bias-vid" title="Watson OpenScale Drift-Bias-Explainability Videos" type="text/html" src="https://mediacenter.ibm.com/media/Watson+OpenScale+Drift-Bias-Explainability+Videos+Subtitled+6+mins/1_22otz5jl" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
   </div>
 </p>
 
@@ -156,15 +156,15 @@ For information about interpreting the time series chart, see [Getting insights]
 
 To understand the factors that contribute when bias is present for a given time period, from the visualization screen shown in the previous section, click the **Biased transactions** radio button.
 
-   ![Demo Lets go](images/fastpath_demo_11.35.06.png)
+   ![Demo Lets go](images/cloud-fastpath_demo_11.35.06.png)
 
 Transaction IDs for the past hour are listed for those transactions that have bias. For the model used in this module, bias exists for requests that are available.
 
-   ![Demo Lets go](images/fastpath_demo_11.35.12.png)
+   ![Demo Lets go](images/cloud-fastpath_demo_11.35.12.png)
 
 For information about finding and explaining transactions, see [Monitoring explainability](/docs/services/ai-openscale?topic=ai-openscale-ie-ov).
 
-   ![Demo Lets go](images/fastpath_demo_11.35.50.png)
+   ![Demo Lets go](images/cloud-fastpath_demo_11.35.50.png)
 
 
 ## Viewing insights in the application monitor

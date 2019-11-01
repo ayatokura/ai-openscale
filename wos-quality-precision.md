@@ -47,7 +47,7 @@ Precision gives the proportion of correct predictions in predictions of positive
 ## Interpreting the display
 {: #quality_precision-display}
 
-![the Precision chart is displayed.](images/quality-precision.png)
+![the Precision chart is displayed.](images/wos-quality-precision.png)
 
 ## Do the math
 {: #quality_precision-math}

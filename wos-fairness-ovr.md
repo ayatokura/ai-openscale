@@ -185,11 +185,11 @@ You can review related details, such as favourable and unfavourable outcomes:
 
 You can view detailed transactions:
 
-![a chart on fairness showing a list of transactions](images/fairness_metrics_003.png)
+![a chart on fairness showing a list of transactions](images/wos-fairness_metrics_003.png)
 
 You can view the recommended debiased scoring endpoint:
 
-![details of the debiased scoring endpoint](images/fairness_metrics_004.png)
+![details of the debiased scoring endpoint](images/wos-fairness_metrics_004.png)
 
 ### Supported fairness metrics
 {: #anlz_metrics_supfairmets}

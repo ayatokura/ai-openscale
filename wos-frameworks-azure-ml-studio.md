@@ -84,7 +84,7 @@ You can also add your machine learning provider by using the Python SDK. For mor
 
 1.  Click the **Add machine learning provider** button, and then click the **Microsoft Azure ML Studio** tile.
 
-    ![Enter Azure ML Studio credentials](images/connect-azure-cred.png)
+    ![Enter Azure ML Studio credentials](images/wos-connect-azure-cred.png)
 
 1.  Enter and save your credentials:
 
@@ -126,7 +126,7 @@ You have successfully selected deployments.
     client.data_mart.bindings.list()
     ```
 
-    ![Azure ML binding](images/ml-azure-bind.png)
+    ![Azure ML binding](images/wos-ml-azure-bind.png)
 
 ### Add Microsoft Azure ML Studio subscription
 {: #cml-azsub}

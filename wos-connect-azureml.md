@@ -44,7 +44,7 @@ You can also add your machine learning provider by using the Python SDK. For mor
 
 1.  Click the **Microsoft Azure ML Studio** tile.
 
-    ![Enter Azure ML Studio credentials](images/connect-azure-cred.png)
+    ![Enter Azure ML Studio credentials](images/wos-connect-azure-cred.png)
 
 1.  Enter and save your credentials:
 
