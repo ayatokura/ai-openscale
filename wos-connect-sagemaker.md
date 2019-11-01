@@ -44,7 +44,7 @@ You can also add your machine learning provider by using the Python SDK. For mor
 
 1.  Click the **Amazon SageMaker** tile.
 
-    ![Enter Amazon SageMaker service credentials](images/connect-sage-cred.png)
+    ![Enter Amazon SageMaker service credentials](images/wos-connect-sage-cred.png)
 
 1.  Enter and save your credentials:
 

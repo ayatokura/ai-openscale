@@ -156,15 +156,15 @@ For information about interpreting the time series chart, see [Getting insights]
 
 To understand the factors that contribute when bias is present for a given time period, from the visualization screen shown in the previous section, click the **Biased transactions** radio button.
 
-   ![Demo Lets go](images/fastpath_demo_11.35.06.png)
+   ![Demo Lets go](images/cloud-fastpath_demo_11.35.06.png)
 
 Transaction IDs for the past hour are listed for those transactions that have bias. For the model used in this module, bias exists for requests that are available.
 
-   ![Demo Lets go](images/fastpath_demo_11.35.12.png)
+   ![Demo Lets go](images/cloud-fastpath_demo_11.35.12.png)
 
 For information about finding and explaining transactions, see [Monitoring explainability](/docs/services/ai-openscale?topic=ai-openscale-ie-ov).
 
-   ![Demo Lets go](images/fastpath_demo_11.35.50.png)
+   ![Demo Lets go](images/cloud-fastpath_demo_11.35.50.png)
 
 
 ## Viewing insights in the application monitor

@@ -83,7 +83,7 @@ To view insights into the fairness and accuracy of the model, details of data th
 ### View insights
 {: #as-insights}
 
-From the [{{site.data.keyword.aios_short}} dashboard](https://aiopenscale.cloud.ibm.com/aiopenscale/){: external}, click the **Insights** tab, which shows an overview of metrics for deployed models: ![Insights](images/insight-dash-tab.png)
+From the [{{site.data.keyword.aios_short}} dashboard](https://aiopenscale.cloud.ibm.com/aiopenscale/){: external}, click the **Insights** tab, which shows an overview of metrics for deployed models: ![Insights](images/wos_insight-dash-tab.png)
 
 - At a glance, the Insights page shows any issues with fairness and accuracy, as determined by the thresholds that are configured.
 
@@ -119,7 +119,7 @@ To understand the factors that contribute when bias is present for a given time 
 
 Transaction IDs for the past hour are listed for those transactions that have bias. For the model used in this module, no bias exists for requests that are available. Therefore, no transactions are shown for the time period in the following screen capture.
 
-  ![Transaction list with no transactions](images/setup06-0206.png)
+  ![Transaction list with no transactions](images/cloud-setup06-0206.png)
 
 For information about finding and explaining transactions, see [Explaining transactions](/docs/services/ai-openscale?topic=ai-openscale-ie-ov#ie-view).
 

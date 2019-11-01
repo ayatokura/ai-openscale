@@ -42,13 +42,13 @@ Your first step in the {{site.data.keyword.aios_short}} tool is to specify a ser
 
 2. Select the **Custom environment** tile.
 
-   ![Select custom](images/ml-custom-provider.png)
+   ![Select custom](images/wos-ml-custom-provider.png)
 
 3. Enter a name and description for your custom machine learning provider and click **Next**. 
 
 4. Choose whether to connect to your deployments [by requesting a list](/docs/services/ai-openscale?topic=ai-openscale-co-connect#co-config-request-list) or [by entering individual scoring endpoints](/docs/services/ai-openscale?topic=ai-openscale-co-connect#co-config-scoring-endpoints).
 
-   ![Select custom](images/ml-custom-connect-deployments.png)
+   ![Select custom](images/wos-ml-custom-connect-deployments.png)
     
 5. Click **Next**.
 
@@ -57,7 +57,7 @@ Your first step in the {{site.data.keyword.aios_short}} tool is to specify a ser
 
 1. If you selected the **Request the list of deployments** tile, enter your credentials and API Endpoint, then click **Save**.
 
-   ![Enter service credentials](images/connect-custom-cred.png)
+   ![Enter service credentials](images/wos-connect-custom-cred.png)
 
 2. After you save your machine learning setup, return to the **Dashboard**, click the **Insights** tab, and then click the **Add to dashboard** button.
 
@@ -83,7 +83,7 @@ You are now ready to configure monitors.
 
 The following image shows the Custom environment support:
 
-![How Custom works](images/custom-how-works.png)
+![How Custom works](images/wos-custom-how-works.png)
 
 You can also reference the following links:
 

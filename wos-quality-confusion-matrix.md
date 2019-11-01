@@ -33,7 +33,7 @@ As a detail of the quality metrics, you can view the records that the model anal
 
 To review related details, such as confusion matrix for binary and multi-class classification, which are available for some metrics, click the chart.
 
-![detail table of quality metrics](images/quality_metrics_002.png)
+![detail table of quality metrics](images/wos-quality_metrics_002.png)
 
 For binary problems, {{site.data.keyword.aios_full}} assigns the target category to  either the `positive` or `negative` level. For this, the confusion matrix output follows the convention where the label for the positive category is located in the second row or column.
 
@@ -43,17 +43,17 @@ For binary problems, {{site.data.keyword.aios_full}} assigns the target category
 
 1. From any of the **Quality** charts, such as **Accuracy** click on an hour/day in the chart.
     
-    ![Transaction list biased](images/Confusion_Matrix_040819.004.png)
+    ![Transaction list biased](images/wos-Confusion_Matrix_040819.004.png)
 
 1. A confusion matrix displays the false positives and false negatives. Click a cell to view the subset of feedback records.
 
-    ![Transaction list biased](images/Confusion_Matrix_040819.005.png)
+    ![Transaction list biased](images/wos-Confusion_Matrix_040819.005.png)
 
 1. Review the feedback records and request an explanation of the analysis against the feedback record.
 
-    ![Transaction list biased](images/Confusion_Matrix_040819.006.png)
+    ![Transaction list biased](images/wos-Confusion_Matrix_040819.006.png)
 
 1. Transactions appear inline.
 
-    ![Transaction list biased](images/Confusion_Matrix_040819.007.png)
+    ![Transaction list biased](images/wos-Confusion_Matrix_040819.007.png)
 

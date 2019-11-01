@@ -47,7 +47,7 @@ For a model that is not equivalent to {{site.data.keyword.pm_full}}, you must cr
 
 The following image shows the custom environment support:
 
-![How Custom works chart is displayed. It shows boxes for the custom environment with the client API and the Watson OpenScale API](images/custom-how-works.png)
+![How Custom works chart is displayed. It shows boxes for the custom environment with the client API and the Watson OpenScale API](images/wos-custom-how-works.png)
 
 You can also reference the following links:
 
@@ -217,13 +217,13 @@ Your first step in the {{site.data.keyword.aios_short}} tool is to specify a ser
 
 2. Click the **Add machine learning provider** button, and then click the **Custom environment** tile.
 
-   ![the custom machine learning provider configuration screen is shown with fields for credentials, instance name and description](images/ml-custom-provider.png)
+   ![the custom machine learning provider configuration screen is shown with fields for credentials, instance name and description](images/wos-ml-custom-provider.png)
 
 3. Enter a name and description for your custom machine learning provider and click **Next**. 
 
 4. Choose whether to connect to your deployments [by requesting a list](/docs/services/ai-openscale?topic=ai-openscale-co-connect#co-config-request-list) or [by entering individual scoring endpoints](/docs/services/ai-openscale?topic=ai-openscale-co-connect#co-config-scoring-endpoints).
 
-   ![The connect to deployments screen is shown with options for requesting a list of deployments or entering an individual scoreing endpoint](images/ml-custom-connect-deployments.png)
+   ![The connect to deployments screen is shown with options for requesting a list of deployments or entering an individual scoreing endpoint](images/wos-ml-custom-connect-deployments.png)
     
 5. Click **Next**.
 
@@ -232,7 +232,7 @@ Your first step in the {{site.data.keyword.aios_short}} tool is to specify a ser
 
 1. If you selected the **Request the list of deployments** tile, enter your credentials and API Endpoint, then click **Save**.
 
-   ![the list of deployments screen is shown with fields to enter service credentials and an API endpoint](images/connect-custom-cred.png)
+   ![the list of deployments screen is shown with fields to enter service credentials and an API endpoint](images/wos-connect-custom-cred.png)
 
 2. After you save your machine learning setup, return to the **Dashboard**, click the **Insights** tab, and then click the **Add to dashboard** button.
 
@@ -307,7 +307,7 @@ You can also find example of custom machine learning engine written in [Node.js 
     client.data_mart.bindings.list()
     ```
 
-    ![Generic ML binding](images/ml-generic-bind.png)
+    ![Generic ML binding](images/wos-ml-generic-bind.png)
 
 ### Add Custom subscription
 {: #cml-cussub}

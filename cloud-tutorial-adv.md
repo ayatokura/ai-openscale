@@ -95,7 +95,7 @@ Log in to your [{{site.data.keyword.cloud_notm}} account](https://{DomainName}){
 
 - [Provision an {{site.data.keyword.cos_short}} service](https://{DomainName}/catalog/services/cloud-object-storage){: external} if you do not already one associated with your account:
 
-  ![Object Storage tile is displayed](images/object_storage.png)
+  ![Object Storage tile is displayed](images/cloud-object_storage.png)
 
 - Give your service a name, choose the Lite (free) plan, and click the **Create** button.
 
@@ -104,7 +104,7 @@ Log in to your [{{site.data.keyword.cloud_notm}} account](https://{DomainName}){
 
 - [Provision a {{site.data.keyword.pm_short}} instance](https://{DomainName}/catalog/services/machine-learning){: external} if you do not already have one associated with your account:
 
-  ![Machine Learning tile is displayed](images/machine_learning.png)
+  ![Machine Learning tile is displayed](images/cloud-machine_learning.png)
 
 - Give your service a name, choose the Lite (free) plan, and click the **Create** button.
 
@@ -128,9 +128,9 @@ If you have a paid {{site.data.keyword.cloud_notm}} account, you may provision a
 
 - [Provision a Databases for PostgreSQL service](https://{DomainName}/catalog/services/databases-for-postgresql){: external} or [a Db2 Warehouse service](https://{DomainName}/catalog/services/db2-warehouse){: external} if you do not already have one associated with your account:
 
-  ![DB for Postgres tile is displayed](images/dbpostgres.png)
+  ![DB for Postgres tile is displayed](images/cloud-dbpostgres.png)
 
-  ![Db2 Warehouse tile is displayed](images/db2_warehouse.png)
+  ![Db2 Warehouse tile is displayed](images/cloud-db2_warehouse.png)
 
 - Give your service a name, choose the Standard plan (Databases for PostgreSQL) or Entry plan (Db2 Warehouse), and click the **Create** button.
 
@@ -139,7 +139,7 @@ If you have a paid {{site.data.keyword.cloud_notm}} account, you may provision a
 
 1. Log in to your [{{site.data.keyword.DSX}} account](https://dataplatform.ibm.com/){: external}. Click the {{site.data.keyword.avatar}} and verify that the account you are using is the same account you used to create your {{site.data.keyword.cloud_notm}} services:
 
-  ![Same Account](images/same_account.png)
+  ![Same Account](images/cloud-same_account.png)
 
 1. In {{site.data.keyword.DSX}}, begin by creating a new project. Click the **Create a project** tile.
 
@@ -163,15 +163,15 @@ If you have a paid {{site.data.keyword.cloud_notm}} account, you may provision a
 
 - From the **Assets** tab in your {{site.data.keyword.DSX}} project, click the **Add to project** button and select **Notebook** from the dropdown:
 
-  ![the choose asset type with a notebook tile highlighted is displayed](images/add_notebook.png)
+  ![the choose asset type with a notebook tile highlighted is displayed](images/cloud_add_notebook.png)
 
 - Select **From file**:
 
-  ![New Notebook Form](images/new_notebook_name.png)
+  ![New Notebook Form](images/cloud-new_notebook_name.png)
 
 - Then click the **Choose file** button, and select the "german_credit_lab.ipynb" notebook file that you downloaded:
 
-  ![New Notebook Form](images/new_notebook_name2a.png)
+  ![New Notebook Form](images/cloud-new_notebook_name2a.png)
 
 - In the **Select runtime** section, choose the latest Python with Spark option:
 
@@ -200,7 +200,7 @@ The `Working with Watson Machine Learning` notebook contains detailed instructio
 
 - Once you have provisioned your services and entered your credentials, your notebook is ready to run. Click the **Kernel** menu item, and select **Restart & Clear Output** from the menu:
 
-  ![Restart and Clear](images/restart_and_clear.png)
+  ![Restart and Clear](images/cloud-restart_and_clear.png)
 
 - Now, run each step of the notebook in sequence. Notice what is happening at each step, as described. Complete all the steps, up through and including the steps in the "Additional data to help debugging" section.
 
@@ -214,11 +214,11 @@ The net result is that you will have created, trained, and deployed the **Spark 
 
 Using the [{{site.data.keyword.aios_short}} dashboard](https://aiopenscale.cloud.ibm.com/aiopenscale/){: external}, click on the **Insights** tab:
 
-  ![Insights icon is displayed](images/insight-dash-tab.png)
+  ![Insights icon is displayed](images/wos_insight-dash-tab.png)
 
 The Insights page provides an overview of metrics for your deployed models. You can easily see alerts for Fairness or Accuracy metrics that exceed the threshold set when running the notebook. The data and settings used in this tutorial will have created Accuracy and Fairness metrics similar to the ones shown here.
 
-  ![Insight overview dashboard displays with a tile for the German Credit Risk model](images/insight-overview-adv-tutorial-2.png)
+  ![Insight overview dashboard displays with a tile for the German Credit Risk model](images/wos_insight-overview-adv-tutorial-2.png)
 
 ### View monitoring data for your deployment
 {: #crt-view-mon-data}
@@ -227,18 +227,18 @@ The Insights page provides an overview of metrics for your deployed models. You 
 2. Slide the marker across the chart to select data for a specific one-hour window. 
 3. Click the **View details** link.
 
-  ![Monitor data](images/insight-monitor-data2.png)
+  ![Monitor data](images/wos-insight-monitor-data2.png)
 
 Now, you can review the charts for the data you monitored. For this example, you can see that for the "Sex" feature, the group `female` received the favorable outcome "No Risk" less (68%) than the group `male` (78%).
 
-  ![Insight overview](images/insight-review-charts2.png)
+  ![Insight overview](images/wos-insight-review-charts2.png)
 
 ### View explainability for a model transaction
 {: #crt-view-explain}
 
 For each deployment, you can see explainability data for specific transactions.
 
-If you already know which transaction you want to view, there's a quick way to look it up with the transaction ID. After you click the deployment tile, from the navigator, click the **Explain a transaction** ![Explain a transaction tab](images/insight-transact-tab.png) icon, type the transaction ID, and press **Enter**.
+If you already know which transaction you want to view, there's a quick way to look it up with the transaction ID. After you click the deployment tile, from the navigator, click the **Explain a transaction** ![Explain a transaction tab](images/wos-insight-transact-tab.png) icon, type the transaction ID, and press **Enter**.
 {: tip}
 
 If you use the internal lite version of PostgreSQL, you might not be able to retrieve your database credentials. This might prevent you from seeing transactions.
@@ -246,17 +246,17 @@ If you use the internal lite version of PostgreSQL, you might not be able to ret
 
 1. From the charts for the latest biased data, click the **View transactions** button.
 
-  ![View transactions](images/view_transactions.png)
+  ![View transactions](images/wos-view_transactions.png)
 
   A list of transactions where the deployment has acted in a biased manner appears. 
   
 2. Select one of the transactions and, from the **ACTION** column, click the **Explain** link.
 
-  ![Transaction list](images/transaction_list_cr.png)
+  ![Transaction list](images/cloud-transaction_list_cr.png)
 
 You will now see an explanation of how the model arrived at its conclusion, including how confident the model was, the factors that contributed to the confidence level, and the attributes fed to the model.
 
-  ![View Transaction](images/view_transaction_cr.png)
+  ![View Transaction](images/cloud-view_transaction_cr.png)
   
 ## Next steps
 {: #crt-next-steps}

@@ -66,4 +66,4 @@ You need to add manually-labelled feedback data through the {{site.data.keyword.
 
 When there is data to support it, the accuracy is computed on both the original and de-biased model. {{site.data.keyword.aios_full_notm}} computes the accuracy for the de-biased output and stores it in the payload logging table as an additional column.
 
-![a model visualization appears with accuracy calculated for both the original and debiased models](images/debiased-accuracy.png)
+![a model visualization appears with accuracy calculated for both the original and debiased models](images/wos-debiased-accuracy.png)

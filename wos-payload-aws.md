@@ -50,7 +50,7 @@ subcollection: ai-openscale
     client.data_mart.bindings.list()
     ```
 
-    ![SageMaker ML binding](images/ml-sagemaker-bind.png)
+    ![SageMaker ML binding](images/wos-ml-sagemaker-bind.png)
 
 ## Add Amazon SageMaker ML subscription
 {: #cml-smsub}

@@ -382,7 +382,7 @@ You can upload feedback data from a CSV file directly in the {{site.data.keyword
 To upload a CSV file, use the **Add feedback data** button. To follow along with the following steps as part of the tutorial, open and copy the contents of the [`credit_feedback_data.csv`](https://raw.githubusercontent.com/watson-developer-cloud/doc-tutorial-downloads/master/ai-openscale/credit_feedback_data.csv){: external} file.
 
 1. From the {{site.data.keyword.aios_short}} dashboard, click the deployment tile.
-2. From the model deployment window, click **Configuration monitors** ![the deployment configuration button is shown](images/configure-deployment-button.png).
+2. From the model deployment window, click **Configuration monitors** ![the deployment configuration button is shown](images/wos-configure-deployment-button.png).
 3. In the navigation pane, click **Quality**.
 4. Click **Feedback** and then click the **Add feedback data** button.
 5. Select the CSV file that contains the feedback data, and click **Open**. For the tutorial, select the `credit_feedback_data.csv` file you downloaded.
@@ -400,7 +400,7 @@ Adding the CSV file provides feedback data to your model.
 2. Download the JSON file.
 1. From the **Deployments** tab of your {{site.data.keyword.DSX}} project, click the **model** link, click the **Test** tab, and select the JSON input icon.
 
-    ![JSON test](images/json_test02.png)
+    ![JSON test](images/wos-json_test02.png)
 
 1.  Now, open the JSON file you downloaded, and copy the contents to the JSON field in the **Test** tab. Click the **Predict** button to send and score training payloads to your model.
 

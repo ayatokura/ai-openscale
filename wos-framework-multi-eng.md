@@ -36,7 +36,7 @@ When you first set up {{site.data.keyword.aios_short}}, you may have used the us
 ## Using the dashboard to add providers
 {: #fmrk-workaround-multmleng-dashboard}
 
-1. After you open {{site.data.keyword.aios_short}}, from the **Configure** ![configuration icon is shown](images/insight-config-tab.png) tab, click the **Add machine learning provider** button.
+1. After you open {{site.data.keyword.aios_short}}, from the **Configure** ![configuration icon is shown](images/wos-insight-config-tab.png) tab, click the **Add machine learning provider** button.
 
    ![the add providers button is shown on the machine learning providers window](images/wos-configure-multi-providers.png)
 
@@ -48,7 +48,7 @@ After you save your configuration, you are ready to go to the dashboard to choos
 ## Editing machine learning providers
 {: #fmrk-workaround-editingproviders-dashboard}
 
-Do you need to make an edit to a machine learning provider? Click the tile menu ![the tile menu icon](images/v-three-dots.png) icon and then click **View & edit details**.
+Do you need to make an edit to a machine learning provider? Click the tile menu ![the tile menu icon](images/wos-v-three-dots.png) icon and then click **View & edit details**.
 
    ![the machine learning providers view and edit option is shown](images/wos-machine-learning-providers-edit.png)
 

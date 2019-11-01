@@ -34,7 +34,7 @@ You can track all the deployed models, also known as deployments, that you are m
 ## Insights
 {: #io-ins}
 
-The **Insights** ![Insight dashboard](images/insight-dash-tab.png) tab provides a high-level view of your deployment monitoring.
+The **Insights** ![Insight dashboard](images/wos-insight-dash-tab.png) tab provides a high-level view of your deployment monitoring.
 
   ![Insight dashboard](images/wos-insight-dashboard.png)
 
@@ -63,7 +63,7 @@ Select any of the individual deployment tiles to view more details about that de
 ## Explainability
 {: #io-tran}
 
-Use the **Explain a transaction** ![Explain a transaction tab](images/insight-transact-tab.png) tab to search a specific transaction ID to explain a particular transaction record.
+Use the **Explain a transaction** ![Explain a transaction tab](images/wos-insight-transact-tab.png) tab to search a specific transaction ID to explain a particular transaction record.
 
 - [Explaining transactions](/docs/services/ai-openscale?topic=ai-openscale-ie-ov)
 - [Explaining categorical models](/docs/services/ai-openscale?topic=ai-openscale-ie-class)

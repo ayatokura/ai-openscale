@@ -39,7 +39,7 @@ For proper monitoring purpose, every scoring request should be logged in {{site.
 
 You can review performance metrics value over time on the {{site.data.keyword.aios_short}} dashboard:
 
-![performance chart](images/performance_metrics_001.png)
+![performance chart](images/wos-performance_metrics_001.png)
 
 ## Supported performance metrics
 {: #anlz_metrics_performance_supp_quality_mets}

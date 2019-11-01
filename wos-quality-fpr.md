@@ -47,7 +47,7 @@ The false positive rate gives the proportion of incorrect predictions in positiv
 ## Interpreting the display
 {: #quality_fpr_false-display}
 
-![the False positive rate chart is displayed.](images/quality-fpr.png)
+![the False positive rate chart is displayed.](images/wos-quality-fpr.png)
 
 ## Do the math
 {: #quality_fpr_false-math}

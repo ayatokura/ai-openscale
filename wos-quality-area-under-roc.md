@@ -47,7 +47,7 @@ Area under receiver operating characteristic curve gives the area under recall a
 ## Interpreting the display
 {: #quality_roc-display}
 
-![the Area under ROC chart is displayed.](images/quality-area-under-roc.png)
+![the Area under ROC chart is displayed.](images/wos-quality-area-under-roc.png)
 
 ## Do the math
 {: #quality_roc-math}

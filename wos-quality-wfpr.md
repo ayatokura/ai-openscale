@@ -47,7 +47,7 @@ The Weighted False Positive Rate (wFPR) gives the weighted mean of class False P
 ## Interpreting the display
 {: #quality_wfpr_weighted-display}
 
-![the Weighted False Positive Rate chart is displayed.](images/quality-fpr.png)
+![the Weighted False Positive Rate chart is displayed.](images/wos-quality-fpr.png)
 
 ## Do the math
 {: #quality_wfpr_weighted-math}

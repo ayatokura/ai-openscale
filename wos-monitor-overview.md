@@ -55,7 +55,7 @@ For example, if you are using the **German Credit Risk** sample model for the in
 
 You must provide information about your model and training data. For more information about training data, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/services/ai-openscale?topic=ai-openscale-trainingdata#trainingdata) For the tutorial, in the **Data type** field, select **Numeric/categorical** and for the **Algorithm type**, select **Binary classification**.
 
-![The specify type of input screen is shown with selections for data type and algorithm type](images/config-what-monitor.png)
+![The specify type of input screen is shown with selections for data type and algorithm type](images/wos-config-what-monitor.png)
 
 - If you use an {{site.data.keyword.pm_full}} instance that is in the same region as your {{site.data.keyword.aios_short}} instance, although you must select Data type and Algorithm type, some payload logging information is configured automatically for you. 
 - Otherwise from the **Payload logging** tab and windows, you must enter information about your data and algorithm types and your payload logging. 
@@ -66,11 +66,11 @@ You must provide information about your model and training data. For more inform
    
 After you send the payload logging details, either by using the local {{site.data.keyword.pm_full}} method or by using the API, you must return to the **Payload logging** screen and click **I'm finished**.
 
-![payload logging screen is pictured](images/payload-logging-gosales001.png)
+![payload logging screen is pictured](images/wos-payload-logging-gosales001.png)
 
 If the scoring is sent correctly to {{site.data.keyword.aios_short}}, the following screen is shown after you click the **I'm finished** button. The button is hidden and you see the message, **Logging activated successfully**.
 
-![payload logging screen is pictured after a successful upload of data](images/payload-logging-gosales002.png)
+![payload logging screen is pictured after a successful upload of data](images/wos-payload-logging-gosales002.png)
 
 
 ### Provide model details
@@ -157,7 +157,7 @@ For numeric or categorical data, you need to provide information about the train
    - Run the notebook to generate a JSON-formatted configuration file.
    - Upload the JSON configuration file.
 
-     ![Upload config JSON](images/config-json-monitor.png)
+     ![Upload config JSON](images/wos-config-json-monitor.png)
 
 - {{site.data.keyword.aios_short}} locates your training data from the metadata stored with the model in {{site.data.keyword.pm_full}}. Choose the label column in the training data that contains your prediction values.
 - Select the columns used to train the model - these are the features that your model deployment expects in a request.
@@ -179,7 +179,7 @@ For numeric or categorical data, you need to provide information about the train
 
 Review your selection summary and click **Save** to continue.
 
-  ![Select data table](images/config-summary-monitor.png)
+  ![Select data table](images/wos-config-summary-monitor.png)
 
 ### Next steps
 {: #mo-next}

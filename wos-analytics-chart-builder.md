@@ -33,9 +33,9 @@ Use the {{site.data.keyword.aios_short}} chart builder to create custom visualiz
 
 For example, if you're familiar with our credit risk model from the tutorials, you can see the split in predicted classes for different ranges of the attribute Credit History. 
 
-   ![a chart that shows feature prediction for gender by the feature age](images/by_custom_chart.png)
+   ![a chart that shows feature prediction for gender by the feature age](images/wos_by_custom_chart.png)
       
    You can also see how confident the model is, when predicting for these ranges of Credit History. You can analyze the scoring payload that is sent to your deployment in the selected data range by custom chart (selecting between features, prediction classes and confidence).
 
-   ![a chart that shows feature prediction for gender by the feature age](images/by_custom_chart002.png)
+   ![a chart that shows feature prediction for gender by the feature age](images/wos_by_custom_chart002.png)
    

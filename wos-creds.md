@@ -49,11 +49,11 @@ To create an IBM Cloud API key, complete the following steps:
 Find your datamart, deployment, subscription, or binding IDs, on the {{site.data.keyword.aios_short}} **Payload logging** page, which is shown when selecting **Configure monitors** for a deployment.
 
 1. Click the model deployment tile. 
-2. Click **Configure monitors** ![the configure icon](images/configure-deployment-button.png).
+2. Click **Configure monitors** ![the configure icon](images/wos-configure-deployment-button.png).
 3. Click **Payload logging**.
 4. On the {{site.data.keyword.aios_short}} **Payload logging** page, in the **Details** pane, find the ID for which you are looking. For example, the **Datamart ID** field:
 
-    ![Data Mart ID](images/data-mart-id.png)
+    ![Data Mart ID](images/wos-data-mart-id.png)
 
 ## Creating service instance credentials by using the command console
 {: #cred-creds}

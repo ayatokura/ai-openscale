@@ -47,7 +47,7 @@ Weighted recall gives the weighted mean of recall with weights equal to class pr
 ## Interpreting the display
 {: #quality_weighted_recall-display}
 
-![the weighted recall chart is displayed](images/quality-recall.png)
+![the weighted recall chart is displayed](images/wos-quality-recall.png)
 
 ## Do the math
 {: #quality_weighted_recall-math}

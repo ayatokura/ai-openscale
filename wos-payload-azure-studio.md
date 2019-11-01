@@ -51,7 +51,7 @@ subcollection: ai-openscale
     client.data_mart.bindings.list()
     ```
 
-    ![Azure ML binding](images/ml-azure-bind.png)
+    ![Azure ML binding](images/wos-ml-azure-bind.png)
 
 ## Add Microsoft Azure ML Studio subscription
 {: #cml-azsub}

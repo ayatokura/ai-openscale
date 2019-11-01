@@ -47,7 +47,7 @@ The Weighted True Positive Rate gives the weighted mean of class TPR with weight
 ## Interpreting the display
 {: #quality-wtpr-display}
 
-![Weighted True Positive Rate is displayed](images/quality-tpr.png)
+![Weighted True Positive Rate is displayed](images/wos-quality-tpr.png)
 
 ## Do the math
 {: #quality-wtpr-math}

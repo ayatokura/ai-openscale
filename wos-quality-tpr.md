@@ -47,7 +47,7 @@ The True positive rate (TPR) gives the proportion of correct predictions in pred
 ## Interpreting the display
 {: #quality_tpr-display}
 
-![the True positive rate chart is displayed.](images/quality-tpr.png)
+![the True positive rate chart is displayed.](images/wos-quality-tpr.png)
 
 ## Do the math
 {: #quality_tpr-math}

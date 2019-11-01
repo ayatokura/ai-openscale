@@ -47,7 +47,7 @@ Weighted F1-Measure gives the weighted mean of F1-measure with weights equal to 
 ## Interpreting the display
 {: #quality_wght_f1-measure-display}
 
-![the Weighted F1-Measure chart is displayed.](images/quality-f1-meas.png)
+![the Weighted F1-Measure chart is displayed.](images/wos-quality-f1-meas.png)
 
 ## Do the math
 {: #quality_wght_f1-measure-math}

@@ -47,7 +47,7 @@ Logarithmic loss gives the mean of logarithms target class probabilities (confid
 ## Interpreting the display
 {: #quality_log_loss-display}
 
-![Logarithmic loss is displayed](images/quality-log-loss.png)
+![Logarithmic loss is displayed](images/wos-quality-log-loss.png)
 
 ### Fairness score
 {: #quality_log_loss-display-fairness-score}

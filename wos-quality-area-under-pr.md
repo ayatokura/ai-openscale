@@ -47,7 +47,7 @@ Area under Precision Recall gives the area under the precision and recall curve,
 ## Interpreting the display
 {: #quality-area-pr-display}
 
-![Area under PR is shown with metric trending downward](images/quality-area-under-pr.png)
+![Area under PR is shown with metric trending downward](images/wos-quality-area-under-pr.png)
 
 ### Fairness score
 {: #quality-area-pr-display-fairness-score}

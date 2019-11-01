@@ -51,11 +51,11 @@ In addition to {{site.data.keyword.aios_short}}, to complete this tutorial, you 
 
     - [{{site.data.keyword.pm_full}}](https://{DomainName}/catalog/services/machine-learning){: external}
 
-      ![Machine Learning](images/machine_learning.png)
+      ![Machine Learning](images/cloud-machine_learning.png)
 
     - [{{site.data.keyword.cos_full_notm}}](https://{DomainName}/catalog/services/cloud-object-storage){: external}
 
-      ![Object Storage](images/object_storage.png)
+      ![Object Storage](images/cloud-object_storage.png)
 
 
 ## Set up a Watson Studio project
@@ -76,7 +76,7 @@ In addition to {{site.data.keyword.aios_short}}, to complete this tutorial, you 
 
 1.  Open your {{site.data.keyword.DSX}} project and select the **Settings** tab. In the **Associated Services** section, click **Add service** and then click **Watson**.
 
-    ![Add Watson Service](images/add_watson_service.png)
+    ![Add Watson Service](images/cloud_add_watson_service.png)
 
 1.  Click the **Add** link on the **Machine Learning** tile.
 2.  On the **Existing** tab, from the **Existing Service Instance** drop-down, click the service you created previously.
@@ -128,7 +128,7 @@ Next, you need to choose a database. You have two options: the free database, or
    The free database has some important limitations. It is a hosted database that does not give you separate access to it. It gives {{site.data.keyword.aios_short}} acccess to your database and data. It is not GDPR-compliant. See more complete details about each of these options in the [Specifying a database](/docs/services/ai-openscale?topic=ai-openscale-connect-db) topic. The existing database can be a PostgreSQL database or a Db2 database.
     {: tip}
 
-   ![Select database](images/gs-set-lite-db2.png)
+   ![Select database](images/cloud-gs-set-lite-db2.png)
 
 1.  Review the summary data and click **Save**. Confirm and, when prompted, click the **Continue with Configuration** button.
 
@@ -143,7 +143,7 @@ Next, you need to choose a database. You have two options: the free database, or
     You also have the option to select a different {{site.data.keyword.pm_short}} location. See [Specifying an {{site.data.keyword.pm_full}} service instance](/docs/services/ai-openscale?topic=ai-openscale-wml-connect) for additional information.
     {: note}
 
-    ![Set {{site.data.keyword.pm_short}} instance](images/gs-set-wml.png)
+    ![Set {{site.data.keyword.pm_short}} instance](images/wos-gs-set-wml.png)
 
 You are now able to select the deployed models that will be monitored by {{site.data.keyword.aios_short}}.
 
@@ -157,11 +157,11 @@ Before you can configure your monitors, you must generate at least one scoring r
 
 1.  From the **Deployments** tab of your Watson Studio project, click the **credit-risk-deploy** link, click the **Test** tab, and select the JSON input icon.
 
-    ![JSON test](images/json_test02.png)
+    ![JSON test](images/wos-json_test02.png)
 
 1.  Now, open the `credit_payload_data.json` file you downloaded, and copy the contents to the JSON field in the **Test** tab. Click the **Predict** button to send and score training payloads to your model.
 
-    ![JSON predict](images/json_test03.png)
+    ![JSON predict](images/cloud-json_test03.png)
 
 ## Next steps
 {: #gs-next-steps-config}

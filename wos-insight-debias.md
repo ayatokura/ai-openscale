@@ -42,7 +42,7 @@ subcollection: ai-openscale
 
 Select the **Debiased Scoring Endpoint** link to find your de-biasing REST API endpoint
 
-![Debias API endpoint details screen is displayed with the cURL example showing in the code snippet box](images/insight-debias-api.png)
+![Debias API endpoint details screen is displayed with the cURL example showing in the code snippet box](images/wos-insight-debias-api.png)
 
 ## Next steps
 {: #it-dbo-nextsteps}

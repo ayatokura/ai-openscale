@@ -34,9 +34,9 @@ If you have problems or questions when using {{site.data.keyword.aios_full}}, yo
 ## Help tab
 {: #io-help}
 
-The Help tab ( ![help tab icon](images/insight-help-tab.png) ) provides additional information to assist you in using {{site.data.keyword.aios_short}}.
+The Help tab ( ![help tab icon](images/wos-insight-help-tab.png) ) provides additional information to assist you in using {{site.data.keyword.aios_short}}.
 
-![help panel](images/help-tab-flyout.png)
+![help panel](images/wos-help-tab-flyout.png)
 
 ## Asking questions
 {: #wos-get-help-forums}

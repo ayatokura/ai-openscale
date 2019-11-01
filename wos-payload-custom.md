@@ -50,7 +50,7 @@ subcollection: ai-openscale
     client.data_mart.bindings.list()
     ```
 
-    ![Generic ML binding](images/ml-generic-bind.png)
+    ![Generic ML binding](images/wos-ml-generic-bind.png)
 
 ## Add Custom subscription
 {: #cml-cussub}

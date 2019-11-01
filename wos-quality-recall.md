@@ -47,7 +47,7 @@ Recall gives the proportion of correct predictions in positive class.
 ## Interpreting the recall metric display
 {: #quality_recall-display}
 
-![the Recall chart is displayed.](images/quality-recall.png)
+![the Recall chart is displayed.](images/wos-quality-recall.png)
 
 ### Fairness score
 {: #quality_recall-display-fairness-score}

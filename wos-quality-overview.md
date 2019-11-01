@@ -42,12 +42,12 @@ For machine learning engines other than {{site.data.keyword.aios_short}}, such a
 
 You can review all metrics values over time on the {{site.data.keyword.aios_short}} dashboard:
 
-![quality metrics chart showing drift of area under ROC](images/quality_metrics_001.png)
+![quality metrics chart showing drift of area under ROC](images/wos-quality_metrics_001.png)
 
 
 To review related details, such as confusion matrix for binary and multi-class classification, which are available for some metrics, click the chart.
 
-![detail table of quality metrics](images/quality_metrics_002.png)
+![detail table of quality metrics](images/wos-quality_metrics_002.png)
 
 ## Supported quality metrics
 {: #anlz_metrics_supqualdets}
