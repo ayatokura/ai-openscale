@@ -220,3 +220,5 @@ After you finish the tour and the application setup, you can perform one of the 
 {: #gs-next}
 
 - Learn more about [viewing and interpreting the data](/docs/services/ai-openscale?topic=ai-openscale-it-ov) and [monitoring explainability](/docs/services/ai-openscale?topic=ai-openscale-ie-ov).
+
+- To learn more about Watson OpenScale in action, see [How AI picks the highlights from Wimbledon fairly and fast](https://www.ibmbigdatahub.com/blog/ai-picks-highlights-wimbledon-fairly-fast){: external}

@@ -30,6 +30,18 @@ subcollection: ai-openscale
 
 {{site.data.keyword.aios_short}} uses two types of de-biasing: passive and active. Passive de-biasing lets you know how you were biased, while active de-biasing prevents you from carrying that bias forward by changing the model in real time for the current application.
 
+Get a quick overview of de-biasing in {{site.data.keyword.aios_short}} by watching the following video.
+
+<p>
+  <div class="embed-responsive embed-responsive-16by9">
+     <iframe class="embed-responsive-item" id="WOS-bias-vid" title="Mitigating AI Bias" type="text/html" src="https://mediacenter.ibm.com/media/1_1shu3261" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+  </div>
+</p>
+
+<p>&nbsp;</p>
+
+
+
 - *Passive de-biasing* - Passive de-biasing is the work that OpenScale does by itself, automatically, every hour. It is considered passive because it happens without user intervention. When {{site.data.keyword.aios_short}} does bias checking, it also does a de-biasing of the data, by analyzing the behavior of the model, and identifying the data where the model is acting in a biased manner.
 
   {{site.data.keyword.aios_short}} then builds a machine learning model to predict whether the model is likely to act in a biased manner on a given, new data point. {{site.data.keyword.aios_short}} then analyzes the data which is received by the model, on an hourly basis, and finds the data points where {{site.data.keyword.aios_short}} believes the model is acting in a biased manner. For such data points, the fairness attribute is perturbed from minority to majority, and the perturbed data is sent to the original model for prediction. This prediction of the original model is used as the de-biased output.
