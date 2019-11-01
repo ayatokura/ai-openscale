@@ -33,7 +33,7 @@ subcollection: ai-openscale
 {:tooling-url: data-tooling-url-placeholder='tooling-url'}
 {:hide-dashboard: .hide-dashboard}
 {:hide-in-docs: .hide-in-docs}
-{:download: .download}
+
 {:faq: data-hd-content-type='faq'}
 
 # Known issues and limitations for {{site.data.keyword.aios_short}} for {{site.data.keyword.cloud_notm}}

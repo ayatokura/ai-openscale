@@ -17,7 +17,7 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-{:download: .download}
+
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -40,6 +40,7 @@ The following new features and changes to {{site.data.keyword.aios_short}} are a
 
    For more information, see [{{site.data.keyword.pm_full}} frameworks](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-wml).
 
+- __*{{site.data.keyword.aios_short}} supports Auto AI models created in {{site.data.keyword.pm_full}}*__: Models that are created by using the Auto AI feature of {{site.data.keyword.pm_full}} are now supported.
 
 ## 24 September 2019
 {: #rn-24sep2019}

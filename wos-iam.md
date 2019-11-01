@@ -18,7 +18,7 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-{:download: .download}
+
 {:table: .aria-labeledby="caption"}
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
