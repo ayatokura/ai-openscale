@@ -39,7 +39,7 @@ Drift is the degradation of predictive performance over time because of hidden c
 <p>
   <div class="embed-responsive embed-responsive-16by9">
 
-<iframe class="embed-responsive-item" id="WOS-ibm-drift-vid" title="Detecting and Correcting AI Model Drift " type="text/html" src="https://mediacenter.ibm.com/media/1_8tp11bp7" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+<iframe class="embed-responsive-item" id="WOS-ibm-drift-vid" title="Watch Watson OpenScale detect and mitigate drift" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&playerId=ibm-dynid-1_playercontainer&entry_id=1_8tp11bp7&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
 
   </div>
 </p>

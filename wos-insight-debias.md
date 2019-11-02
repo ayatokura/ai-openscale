@@ -34,7 +34,7 @@ Get a quick overview of de-biasing in {{site.data.keyword.aios_short}} by watchi
 
 <p>
   <div class="embed-responsive embed-responsive-16by9">
-     <iframe class="embed-responsive-item" id="WOS-bias-vid" title="Mitigating AI Bias" type="text/html" src="https://mediacenter.ibm.com/media/1_1shu3261" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+    <iframe class="embed-responsive-item" id="WOS-bias-vid" title="Mitigating AI Bias" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_1shu3261&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
   </div>
 </p>
 
