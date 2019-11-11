@@ -38,7 +38,7 @@ Table 1. Framework support details
 
 | Framework | Problem type | Data type |
 |:---|:---:|:---:|
-| AutoAI<sup>1</sup> | Classification | Structured |
+| AutoAI<sup>1</sup> | Classification (binary and multi classes) | Structured |
 | AutoAI | Regression | Structured or Unstructured (text only) |
 | Apache Spark MLlib | Classification | Structured |
 | Apache Spark MLLib | Regression | Structured |
