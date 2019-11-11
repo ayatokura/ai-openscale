@@ -38,10 +38,12 @@ Table 1. Framework support details
 
 | Framework | Problem type | Data type |
 |:---|:---:|:---:|
+| AutoAI<sup>1</sup> | Classification | Structured |
+| AutoAI | Regression | Structured or Unstructured (text only) |
 | Apache Spark MLlib | Classification | Structured |
 | Apache Spark MLLib | Regression | Structured |
-| Keras with TensorFlow<sup>1</sup><sup>&</sup><sup>2</sup> | Classification | Unstructured (image, text) |
-| Keras with TensorFlow<sup>1</sup><sup>&</sup><sup>2</sup> | Regression | Unstructured (image, text) |
+| Keras with TensorFlow<sup>2</sup><sup>&</sup><sup>3</sup> | Classification | Unstructured (image, text) |
+| Keras with TensorFlow<sup>2</sup><sup>&</sup><sup>3</sup> | Regression | Unstructured (image, text) |
 | Python function | Classification | Structured |
 | Python function | Regression | Structured |
 | scikit-learn | Classification | Structured |
@@ -50,11 +52,16 @@ Table 1. Framework support details
 | XGBoost | Regression | Structured |
 {: caption="Framework support details" caption-side="top"}
 
-<sup>1</sup>Keras support does not include support for fairness.
+<sup>1</sup>To learn more about AutoAI features, see [AutoAI implementation details](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html?audience=wdp&context=analytics){: external}. For models that have a fairness attribute of type boolean and where the training data is in Cloud Object Storage, there is no support for fairness attributes. However, if the training data is in Db2, {{site.data.keyword.aios_short}} supports fairness attributes that are boolean type.
 {: note}
 
-<sup>2</sup>Explainability is supported if your model / framework outputs prediction probabilities.
+<sup>2</sup>Keras support does not include support for fairness.
 {: note}
+
+<sup>3</sup>Explainability is supported if your model / framework outputs prediction probabilities.
+{: note}
+
+
 
 ## Specifying an {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.pm_short}} service instance
 {: #wml-connect}
