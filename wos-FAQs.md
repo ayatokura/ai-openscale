@@ -134,6 +134,7 @@ You must either provide {{site.data.keyword.aios_short}} access to training data
 
 - To generate contrastive explanations: To create explanations, access to statistics, such as median value, standard deviation, and distinct values from the training data is required.
 - To display training data statistics: To populate the bias details page, {{site.data.keyword.aios_short}} must have training data from which to generate statistics.
+- To build a drift detection model: The Drift monitor uses training data to create and calibrate drift detection.
 
 In the notebook-based approach, you are expected to upload the statistics and other information when configuring a deployment in {{site.data.keyword.aios_short}}. This implies that {{site.data.keyword.aios_short}} no longer has access to the training data outside the notebook, which is run in your environment. It only has access to the information uploaded during the configuration.
 
