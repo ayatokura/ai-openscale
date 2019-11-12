@@ -52,7 +52,7 @@ Table 1. Framework support details
 | XGBoost | Regression | Structured |
 {: caption="Framework support details" caption-side="top"}
 
-<sup>1</sup>To learn more about AutoAI features, see [AutoAI implementation details](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html?audience=wdp&context=analytics){: external}. For models that have a fairness attribute of type boolean and where the training data is in Cloud Object Storage, there is no support for fairness attributes. However, if the training data is in Db2, {{site.data.keyword.aios_short}} supports fairness attributes that are boolean type.
+<sup>1</sup>To learn more about AutoAI features, see [AutoAI implementation details](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html?audience=wdp&context=analytics){: external}. For models that have where the training data is in Cloud Object Storage, there is no support for fairness attributes of type boolean. However, if the training data is in Db2, Watson OpenScale supports fairness attributes that are boolean type.
 {: note}
 
 <sup>2</sup>Keras support does not include support for fairness.
