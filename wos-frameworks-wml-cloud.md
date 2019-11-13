@@ -48,7 +48,7 @@ Table 1. Framework support details
 | Python function | Regression | Structured |
 | scikit-learn | Classification | Structured |
 | scikit-learn | Regression | Structured |
-| XGBoost | Classification | Structured |
+| XGBoost<sup>4</sup> | Classification | Structured |
 | XGBoost | Regression | Structured |
 {: caption="Framework support details" caption-side="top"}
 
@@ -61,7 +61,8 @@ Table 1. Framework support details
 <sup>3</sup>Explainability is supported if your model / framework outputs prediction probabilities.
 {: note}
 
-
+<sup>4</sup>For XGBoost binary and multiple class models, you must update the model to return class labels.
+{: note}
 
 ## Specifying an {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.pm_short}} service instance
 {: #wml-connect}

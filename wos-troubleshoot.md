@@ -48,7 +48,10 @@ To fix the issue, you must determine which of the following conditions is causin
 
 - For all other cases, you must ensure that the training data column names match.
 
+### Native XGBoost multiclass classification does not return class labels
+{: #ts-trouble-common-xgboost-multiclass}
 
+For XGBoost binary and multiple class models, you must update the model to return class labels.
 
 ### Payload analytics does not display properly
 {: #ts-trouble-common-payloadfileformat}
