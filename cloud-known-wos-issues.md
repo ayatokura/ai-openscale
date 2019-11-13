@@ -56,6 +56,9 @@ The following limitations and known issues are common to both {{site.data.keywor
 {: #wos-limitations}
 
 - Explainability for unstructured text models is not supported for continuous script languages, such as Japanese, Chinese, and Korean, which don't use whitespace or punctuation characters to separate words.
+- {{site.data.keyword.aios_short}} does not support models where the data type of the model prediction is binary. You must change such models so that the data type of their prediction is a string data type.
+
+
 
 <p>&nbsp;</p>
 
