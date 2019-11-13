@@ -57,6 +57,7 @@ The following limitations and known issues are common to both {{site.data.keywor
 
 - Explainability for unstructured text models is not supported for continuous script languages, such as Japanese, Chinese, and Korean, which don't use whitespace or punctuation characters to separate words.
 - When using the AutoAI option, {{site.data.keyword.aios_short}} does not support models where the data type of the model prediction is binary. You must change such models so that the data type of their prediction is a string data type.
+- For a regression type model, the fairness transaction list does not indicate whether bias is detected.
 
 
 
