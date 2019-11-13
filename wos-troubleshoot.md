@@ -34,6 +34,14 @@ subcollection: ai-openscale
 
 The following issues are common for both {{site.data.keyword.aios_full}} on Cloud and {{site.data.keyword.wos4d_full}}.
 
+### AutoAI is automatically sets the data type of the prediction to binary
+{: #ts-trouble-common-autoai-binary}
+
+AutoAI automatically sets the data type of the prediction column to boolean. You can troubleshoot this situation by implementing one of the following solutions:
+
+- Change the label column values in the training data to 0/1.
+- Change the label column values in the training data to some strings, such as `A` and `B`.
+
 ### Issues configuring model details
 {: #ts-trouble-common-xgboost-wml-model-details}
 
