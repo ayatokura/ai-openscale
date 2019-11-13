@@ -71,7 +71,7 @@ When you use the active debias API, there is a limit of 1000 records that can be
 
 To avoid loss of data, you must use the active debias API to score in chunks of 1000 records or fewer.
 
-## Issues specific to {{site.data.keyword.wos4d_full_notm}}
+## Issues specific to IBM Watson OpenScale for IBM Cloud Pak for Data
 {: #ts-trouble-icp}
 
 The following issues are specific to {{site.data.keyword.wos4d_full}}:
