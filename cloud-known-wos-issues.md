@@ -56,8 +56,8 @@ The following limitations and known issues are common to both {{site.data.keywor
 {: #wos-limitations}
 
 - Explainability for unstructured text models is not supported for continuous script languages, such as Japanese, Chinese, and Korean, which don't use whitespace or punctuation characters to separate words.
-- {{site.data.keyword.aios_short}} does not support models where the data type of the model prediction is binary. You must change such models so that the data type of their prediction is a string data type.
-- For a regression type model, the fairness transaction list does not indicate whether bias is detected.
+- {{site.data.keyword.aios_short}} does not support models where the data type of the model prediction is binary. You must change such models so that the data type of their prediction is a string or integer data type.
+- For a regression model, the fairness transaction list does not indicate whether bias is detected.
 
 
 
@@ -67,11 +67,11 @@ The following limitations and known issues are common to both {{site.data.keywor
 ### Not all Db2 instances function identically
 {: #wos-limitations-db2-version}
 
-Although you can use a Db2 instance that's not created by using Db2 Warehouse, you must be aware of the following issues:
+{{site.data.keyword.aios_short}} supports Db2 Warehouse add-on, Db2 Advanced Enterprise Server Edition add-on, as well as Db2 Enterprise Server Edition (v. 11.1.9 or later) installation that is accessible to the cluster. Be aware of the following limitation:
 
-- The syntax used to create tables is not compatible with Db2 v. 11.1.9 or later.
 - {{site.data.keyword.aios_short}} requires a tablespace with a page size of 32k or larger.
 
+!<--MJS needs work here -->
 
 <p>&nbsp;</p>
 
@@ -79,7 +79,7 @@ Although you can use a Db2 instance that's not created by using Db2 Warehouse, y
 ### Drift configuration errors prevent configuration of drift monitor
 {: #wos-common-issues-mismatchdatatype}
 
-The flexibility of the model configuration screen can also lead to problems later on when you want to configure monitors, such as the drift detection monitor. Because you can choose the data types, you must ensure that your choices reflect what is original to the model. The following error may occur if the prediction column type is not properly selected:
+The flexibility of the model configuration screen can also lead to problems later on when you want to configure monitors, such as the drift detection monitor. Because you can choose the data types, you must ensure that your choices match the input schema of the model. The following error may occur if the prediction column type is not properly selected:
 
 ```
 "error": AIQDS2003E",
@@ -90,6 +90,8 @@ The following cases are the most-likely cause:
 
 - The `class` label is of string type and `modeling_role` **prediction** is assigned to the **prediction** column as a double type because that is how the output data schema is defined.
 - You select the **prediction** column of double type in the UI, which is not restricted.
+
+!<--MJS needs work here. Post to dev channel -->
 
 
 ### Payload formats
@@ -108,11 +110,11 @@ For proper processing of payload analytics, {{site.data.keyword.aios_short}} doe
 
 - __*Default input name must be used*__: In the Azure web service, the default input name is `"input1"`. Currently, this field is mandated for {{site.data.keyword.aios_short}} and, if it is missing, {{site.data.keyword.aios_short}} will not work.
 
-  If your Azure web service does not use the default name, change the input field name to `"input1"`, then the code will work.
+  If your Azure web service does not use the default name, change the input field name to `"input1"`, then redeploy your web service and reconfigure your OpenScale machine learning provider settings.
 
-- If calls to Microsoft Azure ML Studio to list the machine learning models causes the response to time out, for example when you have many web services, you must increase timeout values. For example, if you are using the HAProxy load balancer, you may need to work around this issue by issuing the following commands:
+- If calls to Microsoft Azure ML Studio to list the machine learning models causes the response to time out, for example when you have many web services, you must increase timeout values. You may need to work around this issue by changing the `/etc/haproxy/haproxy.cfg` configuration setting:
 
-   - Logging into the load balancer node and updating `/etc/haproxy/haproxy.cfg` to set the client and server timeout from `1m` to `5m`:
+   - Log into the load balancer node and update `/etc/haproxy/haproxy.cfg` to set the client and server timeout from `1m` to `5m`:
 
        ```bash
        timeout client           5m
@@ -125,10 +127,6 @@ If you are using a different load balancer, other than HAProxy, you may need to 
       {: note}
 
 - Of the two types of Azure Machine Learning web services, only the `New` type is supported by {{site.data.keyword.aios_short}}. The `Classic` type is not supported.
-
-- In the Azure web service, the default input name is `"input1"`. Currently, this field is mandated for {{site.data.keyword.aios_short}} and, if it is missing, Accuracy monitoring fails.
-
-   If your Azure web service does not use the default name, change the input field name to `"input1"`.
 
 <p>&nbsp;</p>
 
@@ -144,7 +142,7 @@ If you are using a different load balancer, other than HAProxy, you may need to 
 ### Custom machine learning service instance
 {: #wos-common-issues-custom}
 
-- The [Python module](/docs/services/ai-openscale?topic=ai-openscale-as-module) does not currently have Explainability working for the Custom service instance. This is because the Custom service instance requires a numerical prediction in the response data, which is not included with the module script.
+- The [{{site.data.keyword.aios_short}} Python Client SDK](/docs/services/ai-openscale?topic=ai-openscale-as-module) does not currently have Explainability working for the Custom serve engine. This is because the Custom serve engine requires a numerical prediction in the response data, which is not included with the module script.
 
 <p>&nbsp;</p>
 
@@ -168,6 +166,8 @@ If you are using a different load balancer, other than HAProxy, you may need to 
       # response - output from scored model in supported by {{site.data.keyword.aios_short}} format - replace sample fields and values with proper ones
       # - $SCORING_ID - ID of the scoring transaction
       # - $SCORING_TIME - Time (ms) taken to make prediction (for performance monitoring)
+
+!<-- Update to v 4 MJS -->
 
       SCORING_PAYLOAD='[{
         "scoring_id": "$SCORING_ID",
@@ -262,10 +262,10 @@ The {{site.data.keyword.aios_short}} service tooling requires the same level of 
 <p>&nbsp;</p>
 
 
-### Python client
+### {{site.data.keyword.aios_short}} Python Client
 {: #abt-python}
 
-The [{{site.data.keyword.aios_short}} Python client](http://ai-openscale-python-client.mybluemix.net/){: external} is a Python library that allows you to work directly with the {{site.data.keyword.aios_short}} service. You can use the Python client, instead of the {{site.data.keyword.aios_short}} client UI, to directly configure the datamart database, bind your machine learning engine, and select and monitor deployments. For examples using the Python client in this way, see the [{{site.data.keyword.aios_short}} sample notebooks](https://github.com/pmservice/ai-openscale-tutorials/tree/master/notebooks){: external}.
+The [{{site.data.keyword.aios_short}} Python Client](http://ai-openscale-python-client.mybluemix.net/){: external} is a Python library that allows you to work directly with the {{site.data.keyword.aios_short}} service. For development and automation purposes, you can optionally use the Python client to directly configure the datamart database, bind your machine learning engine, and select and monitor deployments. For examples using the Python client in this way, see the [{{site.data.keyword.aios_short}} sample notebooks](https://github.com/pmservice/ai-openscale-tutorials/tree/master/notebooks){: external}.
 
 
 ## Issues specific to {{site.data.keyword.aios_short}}
