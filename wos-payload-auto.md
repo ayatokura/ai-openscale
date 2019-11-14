@@ -89,7 +89,7 @@ If the format of your payload cannot be changed, for example, if it would cause 
 - custom ml engine with perturbation endpoint ({{site.data.keyword.aios_short}} format) and discovery endpoint. Perturbation endpoint wraps original scoring endpoint plus makes conversions from {{site.data.keyword.aios_short}} format to user’s one and from user’s output to {{site.data.keyword.aios_short}} one. This is required for {{site.data.keyword.aios_short}} to make correct scoring request and understand the output.
 - scoring endpoint wrapper with payload logging capability. This wrapper is consumed by downstream application instead of original scoring endpoint. Its logic has been extended with payload logging capability. Each time scoring request is executed the input and output are being converted to {{site.data.keyword.aios_short}} format and logged.
 
-The following flowchart shows the custom machine learning engine solution in which the custom machine learning engine handles the perturbation and discovery endpoints and translates it to your format:
+The following flowchart shows the custom machine learning engine solution in which the custom machine learning engine handles the perturbation and discovery endpoints and transforms it to your format:
 
 ![REST API endpoints specification](images/wos-custommlworkflow.png)
 
