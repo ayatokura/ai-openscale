@@ -108,7 +108,9 @@ AutoAI automatically prepares data, applies algorithms, or estimators, and build
 
 For more information, see [Provide model details](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets).
 
-When working with the AutoAI feature, you can provide access to the training data either by uploading the training data from a CSV format file or by establishing a connection to the Watson Machine Learning space, where the model was deployed.
+When working with the AutoAI feature, you can provide access to the training data either by uploading the training data from a CSV format file that you store in a Db2 instance, or by running a notebook that has access to the training data and can provide the necessary training data statistics. For more information, see [Numeric/categorical data](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-nuca)
+
+
 
 
 ## Next steps
