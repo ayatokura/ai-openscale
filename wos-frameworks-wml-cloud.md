@@ -98,6 +98,19 @@ You should have provisioned an {{site.data.keyword.pm_full}} instance in the sam
 
 1.  {{site.data.keyword.aios_short}} lists your deployed models; select the ones you want to monitor and click **Configure**.
 
+## AutoAI models and training data
+{: #wml-framework-autoai}
+
+AutoAI automatically prepares data, applies algorithms, or estimators, and builds model pipelines best suited for your data and use case. Because of the way that {{site.data.keyword.aios_short}} works with models to analyze and debias, there needs to be either a copy of or a connection to the underlying training data. For more information, see [Why does Watson OpenScale need access to my training data?](/docs/services/ai-openscale?topic=ai-openscale-wos-faqs#trainingdata). {{site.data.keyword.aios_short}} processes training data at the following locations:
+
+- The UI reads it to find the training data schema and display it in the GUI.
+- Bias/Explain/Drift reads the data to generate statistics and generate drift model, etc.
+
+For more information, see [Provide model details](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets).
+
+When working with the AutoAI feature, you can provide access to the training data either by uploading the training data from a CSV format file or by establishing a connection to the Watson Machine Learning space, where the model was deployed.
+
+
 ## Next steps
 {: #wml-next}
 
