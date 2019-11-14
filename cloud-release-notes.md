@@ -153,7 +153,7 @@ The following new features and changes to the service are available.
 
    For more information, see [Support for multiple machine learning engines](/docs/services/ai-openscale?topic=ai-openscale-fmrk-workaround-multmleng).
 
-- __*Internationalization Support*__: {{site.data.keyword.aios_short}} supports localized versions and includes processing data in supported languages. The {{site.data.keyword.aios_short}} user interface, documentation, and error messages are currently translated into the following languages: 
+- __*Internationalization Support*__: {{site.data.keyword.aios_short}} supports localized versions and includes processing data in supported languages. The {{site.data.keyword.aios_short}} user interface, documentation, and error messages are currently available in the following languages: 
     - German
     - French
     - Italian
