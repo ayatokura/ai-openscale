@@ -28,7 +28,7 @@ subcollection: ai-openscale
 # KPI performance ![beta tag](images/beta.png)
 {: #it-appkpi-vdet}
 
-{{site.data.keyword.aios_short}} provides you the ability to explore business KPI performance. Depending on KPI configuration, evaluation happens one time a day, week, or month. KPI evaluation is also triggered each time you upload business event data.
+{{site.data.keyword.aios_short}} provides you the ability to explore business KPI performance. Depending on KPI configuration, evaluation happens one time a day, week, or month. KPI evaluation is triggered by clicking the **Evaluate now** button.
 {: shortdesc}
 
 ## Step

@@ -61,6 +61,9 @@ The following example of explainability shows a classification model that evalua
 
 ![Explainability image classification chart is displayed. it shows confidence levels for the unstructured text](images/wos-insight-explain-text.png)
 
+Word highlighting is not supported for languages, such as Japanese, Chinese, and Korean that are not space-delimited.
+{: note}
+
 ## Unstructured text model example
 {: #ie-unstruct-ntbkssample}
 

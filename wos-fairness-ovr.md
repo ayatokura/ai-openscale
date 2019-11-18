@@ -17,7 +17,6 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -28,7 +27,7 @@ subcollection: ai-openscale
 # Fairness metrics overview
 {: #anlz_metrics_fairness}
 
-Use {{site.data.keyword.aios_full}} fairness monitoring to determine whether outcomes that are produced by your model are fair or not for monitored group. When fairness monitoring is enabled, it generates a set of metrics every hour by default. You can generate these metrics on demand by clicking the **Check quality now** button or by using the Python client.
+Use {{site.data.keyword.aios_full}} fairness monitoring to determine whether outcomes that are produced by your model are fair or not for monitored group. When fairness monitoring is enabled, it generates a set of metrics every hour by default. You can generate these metrics on demand by clicking the **Check fairness now** button or by using the Python client.
 {: shortdesc}
 
 {{site.data.keyword.aios_short}} automatically identifies whether any known protected attributes are present in a model. When {{site.data.keyword.aios_short}} detects these attributes, it automatically recommends configuring bias monitors for each attribute present, to ensure that bias against these potentially sensitive attributes is tracked in production. 
@@ -57,9 +56,9 @@ It is mandatory to specify the output schema for a model or function in {{site.d
 
 Before configuring the Fairness monitor, there a few key concepts that are critical to understand:
 
-- Fairness attributes are the model attributes for which the model is likely to exhibit bias. As an example, for the fairness attribute **`Gender`**, the model could be biased against specific gender values (`Female`, `Transgender`, etc.) Another example of a fairness attribute is **`Age`**, where the model could exhibit bias against people in an age group, like `18 to 25`.
+- Fairness attributes are the model attributes for which the model is likely to exhibit bias. As an example, for the fairness attribute **`Sex`**, the model could be biased against specific gender values (`Female`, `Non-binary`, etc.) Another example of a fairness attribute is **`Age`**, where the model could exhibit bias against people in an age group, such as `18 to 25`.
 
-- Reference and monitored values: The values of fairness attributes are split into two distinct categories: Reference and Monitored. The Monitored values are those which are likely to be discriminated against. In the case of a fairness attribute like **`Gender`**, the Monitored values could be `Female` and `Transgender`. For a numeric fairness attribute, such as **`Age`**, the Monitored values could be `[18-25]`. All other values for a given fairness attribute are then considered as Reference values, for example `Gender=Male` or `Age=[26,100]`.
+- Reference and monitored values: The values of fairness attributes are split into two distinct categories: Reference and Monitored. The Monitored values are those which are likely to be discriminated against. In the case of a fairness attribute like **`Sex`**, the Monitored values could be `Female` and `Non-binary`. For a numeric fairness attribute, such as **`Age`**, the Monitored values could be `[18-25]`. All other values for a given fairness attribute are then considered as Reference values, for example `Gender=Male` or `Age=[26,100]`.
 
 - Favorable and unfavorable outcomes: The output of the model is categorized as either Favorable or Unfavorable. As an example, if the model is predicting whether a person should get a loan or not, then the Favorable outcome could be `Loan Granted` or `Loan Partially Granted`, whereas the Unfavorable outcome might be `Loan Denied`. Thus, the Favorable outcome is one that is deemed as a positive outcome, while the Unfavorable outcome is deemed as being negative.
 
@@ -106,11 +105,9 @@ The results of these determinations are available in the bias visualization, whi
 
    Take note of the following payload and perturbed details:
 
-   - Number of records that are read in this hour from payload table
-   - Additional records that are read from previous hours (For example, if the `min_records` value in the fairness configuration is set to 1000, and between 2pm to 3pm only 10 records are added, to meet the minimum requirement, the system would read an additional 990 records from previous hours.)
-   - Perturbed records per fairness attribute
-   - Oldest record timestamp in the data frame for which bias has to be computed
-   - Newest/latest record timestamp in the data frame for which bias has to be computed
+   - Monitored groups with fairness score
+   - Reference groups with fairness score
+   - Source of bias
 
   ![example of payload plus perturbed](images/wos-fairness-age-payload-perturbed.png)
 
@@ -120,9 +117,9 @@ The results of these determinations are available in the bias visualization, whi
 
    Take note of the following payload details:
    
-   - Number of records that are read/on which debiased operation is performed from payload table
-   - Oldest record timestamp in the data frame for which bias has to be computed
-   - Newest/latest record timestamp in the data frame for which bias has to be computed
+   - Payload data with stacked bar chart
+   - Favorable and Unfavorable outcomes that correspond to the model labels
+   - The Date and Time that transactions were loaded
 
 
   ![example of payload data](images/wos-fairness-age-payload.png)
@@ -131,8 +128,8 @@ The results of these determinations are available in the bias visualization, whi
 
    Take note of the following training details:
    
-   - Number of training data records. Training data is read one time, and distribution is stored in the `subscription/fairness_configuration` variable. While computing distribution we should also find the number of training data records and store it in the same distribution. Also when training data is changed, meaning if the `POST /data_distribution` command is run again, this value is updated in the `fairness_configuration/training_data_distribution` variable. While sending the metric, we should also send this value as well.
-   - The time at which training data is last processed (first time and subsequent updates)
+   - Number of training data records. Training data is read one time, and distribution is stored in the `subscription/fairness_configuration` variable. While computing distribution, the number of training data records is also retrieved and stored in the same distribution. 
+   - When training data is changed, meaning if the `POST /data_distribution` command is run again, this value is updated in the `fairness_configuration/training_data_distribution` variable. While sending the metric, this value is sent as well.
 
   ![example of training data](images/wos-fairness-age-training.png)
    
@@ -143,21 +140,15 @@ The results of these determinations are available in the bias visualization, whi
 
    Take note of the following debiased details:
    
-   - Number of records that are read/on which the debiased operation is performed from payload table
-   - Additional records that are read to perform bias, and thereby de-biased as well. Same number as in the `Payload + Perturbed` selection
-   - Perturbed records per fairness attribute
-   - Oldest record timestamp in the data frame for which bias has to be computed
-   - Newest/latest record timestamp in the data frame for which bias has to be computed
-   - Before and after fairness values display in the header portion of the Debiased view. 
-      - The **after** accuracy is computed by taking the feedback data and sending it to the active debiasing API. This API returns the de-biased prediction. The feedback data also contains the manual label. The manual label is compared with the debiased prediction to compute the accuracy. This API returns the de-biased prediction. The feedback table also contains the manual label. The manual label is compared with the debiased prediction to compute the accuracy. 
-      - The **before** accuracy is computed by using the same feedback data. For before accuracy computation, the feedback data is sent to the model to get its prediction and the predicted value is compared with the manual label to get the accuracy.
+   - The result of debiasing the model
+   - For monitored groups, such as `age` and `sex` the before and after scores
 
   ![example of debiased data](images/wos-fairness-age-debiased.png)
   
 ### Example
 {: #mf-ex1}
 
-Consider a data point where, for `Gender=Male` (Reference value), the model predicts an Favorable outcome, but when the record is perturbed by changing `Gender` to `Female` (Monitored value), while keeping all other feature values the same, the model predicts an Unfavorable outcome. A model overall is said to exhibit bias if there are sufficient data points (across the last `N` records in the payload table, plus the perturbed data) where the model was acting in a biased manner.
+Consider a data point where, for `Sex=Male` (Reference value), the model predicts an Favorable outcome, but when the record is perturbed by changing `Sex` to `Female` (Monitored value), while keeping all other feature values the same, the model predicts an Unfavorable outcome. A model overall is said to exhibit bias if there are sufficient data points (across the last `N` records in the payload table, plus the perturbed data) where the model was acting in a biased manner.
 
 ### Supported models
 {: #mf-supmo}
@@ -175,7 +166,7 @@ For other machine learning engines, the payload data can be provided either by u
 For machine learning engines other than {{site.data.keyword.pm_full}}, fairness monitoring creates additional scoring requests on the monitored deployment.
 {: note}
 
-You can review all metrics value over time on the {{site.data.keyword.aios_short}} dashboard:
+You can review all metrics values over time on the {{site.data.keyword.aios_short}} dashboard:
 
 ![fairness metrics chart showing drift lower than the set threshold](images/wos-fairness-sex.png)
 
@@ -214,12 +205,5 @@ The following details for fairness metrics are supported by {{site.data.keyword.
 
 - The favorable percentages for each of groups
 - Fairness averages for all the fairness groups
-
-```
-                          (% of favorable outcome in monitored group
-Disparate Impact Ratio =  ____________________________________________
-                          (% of favorable outcome in reference group)
-```
-
 - Distribution of the data for each of the monitored groups
 - Distribution of payload data

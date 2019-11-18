@@ -28,22 +28,25 @@ subcollection: ai-openscale
 # Throughput ![beta tag](images/beta.png)
 {: #performance_mets_through}
 
-Througput measures the average scoring requests per minute in a specific timeframe.
+Throughput measures the average scoring requests per minute in a specific timeframe.
 {: shortdesc}
 
 ## Throughput at a glance
 {: #performance_mets_through-glance}
 
-- **Description**: Average scoring requests per minute in specific timeframe
+- **Description**: Average scoring requests per minute in a specific timeframe
 - **Default thresholds**: Not applicable
 - **Default recommendation**: Not applicable
 - **Problem type**: All
-- **Chart values**: Average value in the time frame
+- **Chart values**: Average value in the timeframe
 - **Metrics details available**: None
 
 ## Interpreting the display
 {: #performance_mets_through-display}
 
-The throughput chart displays the average number of requests per minute. You can use controls to choose the time frame, such as 
+The throughput chart displays the average number of requests per minute. You can use controls to choose the timeframe, such as daily, weekly, or monthly:
 
 ![performance chart](images/wos-performance_metrics_001.png)
+
+Throughput is not supported for Watson Machine Learning models with automatic payload logging.
+{: note}

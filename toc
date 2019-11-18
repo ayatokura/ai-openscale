@@ -47,6 +47,7 @@ Watson OpenScale
         wos-monitor-accuracy.md
         wos-monitor-fairness.md
         wos-monitor-drift.md
+        wos-monitor-unstruct.md
         wos-metrics.md
 
     {: .topicgroup}

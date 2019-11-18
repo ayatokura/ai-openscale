@@ -59,7 +59,9 @@ Each tile provides a summary of business KPIs for that application. Note that so
 
 To view details about a KPI, click the application tile, which displays the following information:
 
-- Correlation discovered by {{site.data.keyword.aios_short}} between this KPI and the associated model metrics. Note that for the beta version, only the **Drop in accuracy** metric is supported for model drift monitoring.
+- Correlation discovered by {{site.data.keyword.aios_short}} between this KPI and the associated model metrics:
+   - Drop in accuracy
+   - Drop in data consistency
 - Performance presented as a time series chart
 
 ## Next steps

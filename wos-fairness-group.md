@@ -17,7 +17,6 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -51,7 +50,7 @@ The Fairness for a group metric gives the model's propensity to deliver favourab
 ### sex
 {: #quality_group-sex}
 
-{{site.data.keyword.aios_short}} recommends that within the **Sex** attribute, the bias monitor be configured such that `Woman` and `Non-Binary` are the monitored values, and `Male` is the reference value. 
+{{site.data.keyword.aios_short}} recommends that within the **Sex** attribute, the bias monitor be configured such that `Female` and `Non-Binary` are the monitored values, and `Male` is the reference value. 
 
 ### ethnicity
 {: #quality_group-ethnicity}
@@ -66,7 +65,7 @@ The Fairness for a group metric gives the model's propensity to deliver favourab
 ### age
 {: #quality_group-age}
 
-{{site.data.keyword.aios_short}} recommends that within the **age** attribute, the bias monitor be configured such that the range of ages produces actionable de-biasing.
+{{site.data.keyword.aios_short}} recommends that within the **age** attribute, the bias monitor be configured such that the range of ages produces actionable de-biasing, for example `18-25` and `26-75`.
 
 ### zip code
 {: #quality_group-zip}
@@ -76,20 +75,43 @@ The Fairness for a group metric gives the model's propensity to deliver favourab
 ## Interpreting the display
 {: #quality_group-display}
 
+Fairness alerts display on the dashboard in tiles.
+
+![example of tile with fairness alert](images/wos-faststart-model-tile.png)
+
+You can review all metrics values over time on the {{site.data.keyword.aios_short}} dashboard:
+
+![fairness metrics chart showing drift lower than the set threshold](images/wos-fairness-sex.png)
+
 ### Fairness Score for a group
 {: #quality_group-display-fairnessscore}
 
+![fairness score panel with display of a violation for sex that is 13 percent below the threshold of 98 percent](images/wos-fairness-sex-scorepanel.png)
 
 
 ### Monitored Groups
 {: #quality_group-display-monitoredgroups}
 
+![monitored groups panel with display of average score and score for female group](images/wos-fairness-sex-monitored.png)
 
 
 ### Schedule
 {: #quality_group-display-schedule}
 
-The **Schedule** pane shows the 
+The **Schedule** pane shows the **Last evaluation** and **Next evaluation** times. Quality metrics are evaluated every hour. You can force evaluation by clicking **Check fairness now**. You can also add feedback by clicking **Make a scoring request**.
 
+![fairness schedule panel with display of last and next evaluations and links to check fairness now and make a scoring requests](images/wos-fairness-button.png)
+
+
+### Do the math
+{: #quality_group-display-disparate-imp-rat}
+
+
+
+```
+                          (% of favorable outcome in monitored group)
+Disparate Impact Ratio =  ____________________________________________
+                          (% of favorable outcome in reference group)
+```
 
 
