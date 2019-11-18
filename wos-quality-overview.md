@@ -54,15 +54,23 @@ To review related details, such as confusion matrix for binary and multi-class c
 
 The following quality metrics are supported by {{site.data.keyword.aios_short}}:
 
-- [Area under ROC](/docs/services/ai-openscale?topic=ai-openscale-quality_roc)
-- [Area under PR](/docs/services/ai-openscale?topic=ai-openscale-quality-area-pr)
-- [Accuracy](/docs/services/ai-openscale?topic=ai-openscale-accuracy-opener)
-- [True positive rate (TPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_tpr)
-- [False positive rate (FPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_fpr_false)
-- [Recall](/docs/services/ai-openscale?topic=ai-openscale-quality_recall)
-- [Precision](/docs/services/ai-openscale?topic=ai-openscale-quality_precision)
-- [F1-Measure](/docs/services/ai-openscale?topic=ai-openscale-quality_f1-measr)
-- [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-quality_log_loss)
+-  For binary classification problems:
+
+   - [True positive rate (TPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_tpr)
+   - [Area under ROC](/docs/services/ai-openscale?topic=ai-openscale-quality_roc)
+   - [Precision](/docs/services/ai-openscale?topic=ai-openscale-quality_precision)
+   - [F1-Measure](/docs/services/ai-openscale?topic=ai-openscale-quality_f1-measr)
+   - [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-quality_log_loss)
+   - [False positive rate (FPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_fpr_false)
+   - [Area under PR](/docs/services/ai-openscale?topic=ai-openscale-quality-area-pr)
+   - [Recall](/docs/services/ai-openscale?topic=ai-openscale-quality_recall)
+
+-  For mutliclass classification problems:
+
+   - [Accuracy](/docs/services/ai-openscale?topic=ai-openscale-accuracy-opener)
+   - [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-quality_log_loss)
+
+If the classification is binary, {{site.data.keyword.aios_short}} uses the **Area under ROC** metric as the measure to report violations. If the classification is multiclass, {{site.data.keyword.aios_short}} uses the **Accuracy** metric as the measure to report violations.
 
 ## Supported quality details
 {: #anlz_metrics_supqualdets_suppr_dets}
