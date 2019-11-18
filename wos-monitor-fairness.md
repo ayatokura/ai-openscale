@@ -39,11 +39,9 @@ Throughout this process, {{site.data.keyword.aios_full}} analyzes your model and
 ### Values that represent a favorable outcome for the model
 {: #mf-monitor-reqs-fave}
 
-Values are derived from the `label` column in the [training data](/docs/services/ai-openscale?topic=ai-openscale-trainingdata#trainingdata), if the model output schema contains a mapping column. In {{site.data.keyword.pm_full}}, the `prediction` column always has a double value. The mapping column is used to specify the mapping of this `prediction` value to the class label.
+Values are derived from the `label` column in the [training data](/docs/services/ai-openscale?topic=ai-openscale-trainingdata#trainingdata). By default the `predictedLabel` column is set as the `prediction` column.
 
-For example, if the `prediction` value is `1.0`, the mapping column could have a value of `Loan denied`; this implies that the prediction of the model is `Loan denied`. So, if the model output schema contains a mapping column, then specify Favorable and Unfavorable values using those present in the mapping column.
-
-If, however, the mapping column is not present in the model output schema, then the Favorable and Unfavorable values need to be specified using the value of the `prediction` column (`0.0`, `1.0`, etc.)
+Favorable and Unfavorable values need to be specified using the value of the `prediction` column as a string data type (`0.0`, `1.0`, etc.)
 
 ### Features to monitor
 {: #mf-monitor-reqs-feats}
@@ -86,7 +84,7 @@ You can also click **Add another feature** to return to the feature selection sc
 ### Understanding how de-biasing works
 {: #mf-debias}
 
-To check the debias endpoint, click the **Debias Endpoint** button. You can then view and copy the enpoint in different formats, such as cURL, Java, or Python. 
+To check the debias endpoint, click the **Debias Endpoint** button. You can then view and copy the endpoint in different formats, such as cURL, Java, or Python. 
 
 The de-biased scoring endpoint can be used exactly as the normal scoring endpoint of your deployed model. In addition to returning the response of your deployed model, it also returns the `debiased_prediction` and `debiased_probability` columns.
 
@@ -94,7 +92,7 @@ The de-biased scoring endpoint can be used exactly as the normal scoring endpoin
 
 - The `debiased_probability` column, on the other hand, represents the probability of the debiased prediction. This is an array of double value, where each value represents the probability of the de-biased prediction belonging to one of the prediction classes.
 
-One another column, `debiased_decoded_target`, is also returned, in case you have a column in your output schema that contains a column with `modeling-role` as `decoded-target`.
+On another column, `debiased_decoded_target`, is also returned, in case you have a column in your output schema that contains a column with `modeling-role` as `decoded-target`. The `debiased_decoded_target` column would still exist in the response and would contain 
 
 - The `debiased_decoded_target` column contains the string representation of the debiased prediction. In the previous example, where the prediction value was either "0.0" or "1.0", the `debiased_decoded_target` will contain either "Loan Granted" or "Loan Denied".
 

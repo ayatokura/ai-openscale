@@ -36,6 +36,11 @@ After you configure the application monitor, you must add key performance indica
 
 On the successive pages of the **Application** tab, you must provide the following information:
 
+### Event detail
+{: #kpi-config-reqs-eventdets}
+
+You must select one of the event details.
+
 ### KPI name and description
 {: #kpi-config-reqs-name}
 
@@ -64,7 +69,7 @@ To activate the application, along with any of the KPIs that you created, you mu
 ## Steps
 {: #kpi-config}
 
-1. To start the configuration process, from the 
+1. To start the configuration process, from the **Add monitor** screen, click **KPIs** > **Add KPI**.
 2. Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
 3. A summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section. Otherwise, click **Save** to complete your configuration.
 

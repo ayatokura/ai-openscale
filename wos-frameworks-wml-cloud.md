@@ -62,7 +62,7 @@ Table 1. Framework support details
 <sup>3</sup>Explainability is supported if your model / framework outputs prediction probabilities.
 {: note}
 
-<sup>4</sup>For XGBoost binary and multiple class models, you must update the model to return class labels.
+<sup>4</sup>For XGBoost binary and multiple class models, you must update the model to return prediction probability in the form of numerical values for binary models and a list of probabilities per class for multi-class models.
 {: note}
 
 ## Specifying an {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.pm_short}} service instance

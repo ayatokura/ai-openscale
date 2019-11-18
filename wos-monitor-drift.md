@@ -39,7 +39,7 @@ if you use {{site.data.keyword.pm_full}} and your data does not exceed 500 MB. O
 ## Requirements
 {: #behavior-drift-config-steps-wos-reqs}
 
-Throughout this process, {{site.data.keyword.aios_full}} analyzes your model and makes recommendations based on the most logical outcome. For the drift monitor to work properly, the data type of your prediction column in the training data must match the data type of the same column in the payload data. Assign matching string or numeric types to the prediction and label columns. Confirm data types in the Payload logging tab of the monitor configuration window. If for some reason you must redeploy the monitor to change the data types.
+Throughout this process, {{site.data.keyword.aios_full}} analyzes your model and makes recommendations based on the most logical outcome. For the drift monitor to work properly, the data type of your prediction column in the training data must match the data type of the same column in the payload data. Assign matching string or numeric types to the prediction and label columns. To confirm data types, go to **Model details** > **Edit** > **Select the lable column from the trianing data** or **Select the deployment prediction column**. This ensures that you have accurate information for the following configuration steps. If for some reason you must change data types, you must redeploy the monitor to effect the changes.
 
 On the successive pages of the **Drift** tab, you must provide the following information:
 
@@ -89,7 +89,7 @@ Reconfigure the drift monitor without re-training the drift model to update para
 ## Steps to configure drift by using a notebook
 {: #behavior-drift-config-steps-ntbk}
 
-Use a notebook to configure drift if you do not want to share the training data with {{site.data.keyword.aios_short}} or if you do not have a means to share the training data on Db2 or {{site.data.keyword.cos_full}}, which are the only two training data locations supported by {{site.data.keyword.aios_short}}. Same applies to WML models for which customers do not want to share the training data with us.
+Use a notebook to configure drift if you do not want to share the training data with {{site.data.keyword.aios_short}} or if you do not have a means to share the training data on Db2 or {{site.data.keyword.cos_full}}, which are the only two training data locations supported by {{site.data.keyword.aios_short}}. 
 
 This option is useful if the training data is not stored in Db2 or {{site.data.keyword.cos_full}}. Using a notebook, you must read the training data into a dataframe. The specialized notebook that you can download from {{site.data.keyword.aios_short}} then creates a specialized output that you can upload to {{site.data.keyword.aios_short}}.
 

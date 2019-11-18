@@ -48,13 +48,14 @@ Watson OpenScale
         wos-monitor-fairness.md
         wos-monitor-drift.md
         wos-monitor-unstruct.md
+        wos-monitor-imagemodel.md
         wos-metrics.md
 
     {: .topicgroup}
     Configuring application monitors
         wos-monitor-app-overview.md
-        wos-monitor-bkpi.md
         wos-monitor-event-details.md
+        wos-monitor-bkpi.md
 
     {: .topicgroup}
     Get model insights

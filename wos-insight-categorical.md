@@ -31,7 +31,7 @@ subcollection: ai-openscale
 This example of explainability is for a binary classification model that approves or denies insurance claims. You can see the factors that contributed positively or negatively to the final outcome of `DENIED` in this case.
 {: shortdesc}
 
-The feature *POLICY AGE* having a value of `<ai-open-scale-ibm-aios-scheduling  | 1 | Scheduling serviceyear` had the maximum impact in the model deciding a DENIED outcome. The other features that contributed to this outcome were *CLAIM FREQUENCY* (`High`) and *AGE* (`18`), with only a minor impact from *CAR VALUE* (`$50,000`).
+The feature *POLICY AGE* having a value of less than one had the maximum impact in the model deciding a DENIED outcome. The other features that contributed to this outcome were *CLAIM FREQUENCY* (`High`) and *AGE* (`18`), with only a minor impact from *CAR VALUE* (`$50,000`).
 
 ![Explainability binary classification displays with details about denied and approved claims](images/wos-insight-explain-binary.png)
 
@@ -42,7 +42,7 @@ Advanced explanations are not available for regression, image, and unstructured 
 
 The `Minimum changes for Approved outcome` tells us that, if the values of the features were changed to the values listed in this section, then the prediction of the model will change.
 
-Likewise, the `Minimum changes for this outcome` tells us that, even if the values of the features were changed to those listed in this section, the prediction of the model would not have changed.
+Likewise, the `Maximum changes allowed for the same outcome` tells us that, even if the values of the features were changed to those listed in this section, the prediction of the model would not have changed.
 
 Thus, these two values tell us the behavior of the model in the vicinity of the data point for which the explanation is being generated.
 
