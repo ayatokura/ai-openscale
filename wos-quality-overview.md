@@ -56,8 +56,10 @@ The following quality metrics are supported by {{site.data.keyword.aios_short}}:
 
 -  For binary classification problems:
 
-   - [True positive rate (TPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_tpr)
+   For binary models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level. For binary classification models, it will check the **Area under ROC** score which measures the model's ability to distinguish two classes. The higher the Area under ROC score, the better the model is at identifying class A as class A and class B as class B.
+
    - [Area under ROC](/docs/services/ai-openscale?topic=ai-openscale-quality_roc)
+   - [True positive rate (TPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_tpr)
    - [Precision](/docs/services/ai-openscale?topic=ai-openscale-quality_precision)
    - [F1-Measure](/docs/services/ai-openscale?topic=ai-openscale-quality_f1-measr)
    - [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-quality_log_loss)
@@ -67,10 +69,12 @@ The following quality metrics are supported by {{site.data.keyword.aios_short}}:
 
 -  For mutliclass classification problems:
 
+   For multi-classification models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level and checks the **Accuracy** score which is the percentage of predictions the model got right.
+
    - [Accuracy](/docs/services/ai-openscale?topic=ai-openscale-accuracy-opener)
    - [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-quality_log_loss)
 
-If the classification is binary, {{site.data.keyword.aios_short}} uses the **Area under ROC** metric as the measure to report violations. If the classification is multiclass, {{site.data.keyword.aios_short}} uses the **Accuracy** metric as the measure to report violations.
+-  For regression models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level and checks the R squared score. R squared measures correlation between predicted values and actual values. The higher the R squared score, the better the model fits to the actual values.
 
 ## Supported quality details
 {: #anlz_metrics_supqualdets_suppr_dets}
