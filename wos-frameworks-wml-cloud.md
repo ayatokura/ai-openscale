@@ -107,7 +107,7 @@ Because {{site.data.keyword.aios_short}} cannot detect the training data locatio
 - For the online method, you must provide the Cloud Object Storage or Db2 location details from which training data can be accessed .
 - For the custom notebook method, you can use the JSON file that is produced by running the notebook.
 
-For more information, see [Provide model details](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets)and [Numeric/categorical data](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-nuca).
+For more information, see [Provide model details](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets) and [Numeric/categorical data](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-nuca).
 
 
 
