@@ -54,43 +54,43 @@ To review related details, such as confusion matrix for binary and multi-class c
 
 The following quality metrics are supported by {{site.data.keyword.aios_short}}:
 
--  For binary classification problems:
+### Binary classification problems
+{: #anlz_metrics_supqualdets-binary}
 
-   For binary models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level. For binary classification models, it will check the **Area under ROC** score which measures the model's ability to distinguish two classes. The higher the Area under ROC score, the better the model is at identifying class A as class A and class B as class B.
+For binary models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level. For binary classification models, it will check the **Area under ROC** score which measures the model's ability to distinguish two classes. The higher the Area under ROC score, the better the model is at identifying class A as class A and class B as class B.
 
-   - [Area under ROC](/docs/services/ai-openscale?topic=ai-openscale-quality_roc)
-   - [True positive rate (TPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_tpr)
-   - [Precision](/docs/services/ai-openscale?topic=ai-openscale-quality_precision)
-   - [F1-Measure](/docs/services/ai-openscale?topic=ai-openscale-quality_f1-measr)
-   - [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-quality_log_loss)
-   - [False positive rate (FPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_fpr_false)
-   - [Area under PR](/docs/services/ai-openscale?topic=ai-openscale-quality-area-pr)
-   - [Recall](/docs/services/ai-openscale?topic=ai-openscale-quality_recall)
+- [Area under ROC](/docs/services/ai-openscale?topic=ai-openscale-quality_roc)
+- [True positive rate (TPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_tpr)
+- [Precision](/docs/services/ai-openscale?topic=ai-openscale-quality_precision)
+- [F1-Measure](/docs/services/ai-openscale?topic=ai-openscale-quality_f1-measr)
+- [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-quality_log_loss)
+- [False positive rate (FPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_fpr_false)
+- [Area under PR](/docs/services/ai-openscale?topic=ai-openscale-quality-area-pr)
+- [Recall](/docs/services/ai-openscale?topic=ai-openscale-quality_recall)
 
--  For mutliclass classification problems:
+### Regression classification problems
+{: #anlz_metrics_supqualdets-regression}
 
-   For multi-classification models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level and checks the **Accuracy** score which is the percentage of predictions the model got right.
+For regression models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level and checks the **R squared** score. R squared measures correlation between predicted values and actual values. The higher the R squared score, the better the model fits to the actual values.
 
-   - [Accuracy](/docs/services/ai-openscale?topic=ai-openscale-icp-accuracy-opener)
-   - [Weighted True Positive Rate (wTPR)
-](/docs/services/ai-openscale?topic=ai-openscale-icp-quality-wtpr)
-   - [Weighted False Positive Rate (wFPR)
-](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_wfpr_weighted)
-   - [Weighted recall](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_weighted_recall)
-   - [Weighted precision](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_wgth_prec)
-   - [Weighted F1-Measure](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_wght_f1-measure)
-   - [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_log_loss)
+- [R squared](/docs/services/ai-openscale?topic=ai-openscale-quality_r_squared)
+- [Proportion explained variance](/docs/services/ai-openscale?topic=ai-openscale-quality_var)
+- [Root of mean squared error](/docs/services/ai-openscale?topic=ai-openscale-supqualdets_squ_errors_mean)
+- [Mean absolute error](/docs/services/ai-openscale?topic=ai-openscale-quality_abserror)
+- [Mean squared error](/docs/services/ai-openscale?topic=ai-openscale-quality_squerror)
 
--  For regression classification problems:
+### Mutliclass classification problems
+{: #anlz_metrics_supqualdets-multiclass}
 
-   -  For regression models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level and checks the **R squared** score. R squared measures correlation between predicted values and actual values. The higher the R squared score, the better the model fits to the actual values.
+For multi-classification models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level and checks the **Accuracy** score which is the percentage of predictions the model got right.
 
-   - [R squared](/docs/services/ai-openscale?topic=ai-openscale-quality_r_squared)
-   - [Proportion explained variance](/docs/services/ai-openscale?topic=ai-openscale-quality_var)
-   - [Root of mean squared error](/docs/services/ai-openscale?topic=ai-openscale-supqualdets_squ_errors_mean)
-   - [Mean absolute error](/docs/services/ai-openscale?topic=ai-openscale-quality_abserror)
-   - [Mean squared error](/docs/services/ai-openscale?topic=ai-openscale-quality_squerror)
-
+- [Accuracy](/docs/services/ai-openscale?topic=ai-openscale-icp-accuracy-opener)
+- [Weighted True Positive Rate (wTPR)](/docs/services/ai-openscale?topic=ai-openscale-icp-quality-wtpr)
+- [Weighted False Positive Rate (wFPR)](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_wfpr_weighted)
+- [Weighted recall](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_weighted_recall)
+- [Weighted precision](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_wgth_prec)
+- [Weighted F1-Measure](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_wght_f1-measure)
+- [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_log_loss)
 
 
 
