@@ -74,7 +74,18 @@ The following quality metrics are supported by {{site.data.keyword.aios_short}}:
    - [Accuracy](/docs/services/ai-openscale?topic=ai-openscale-accuracy-opener)
    - [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-quality_log_loss)
 
--  For regression models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level and checks the R squared score. R squared measures correlation between predicted values and actual values. The higher the R squared score, the better the model fits to the actual values.
+-  For regression classification problems:
+
+   -  For regression models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level and checks the **R squared** score. R squared measures correlation between predicted values and actual values. The higher the R squared score, the better the model fits to the actual values.
+
+   - [R squared](/docs/services/ai-openscale?topic=ai-openscale-quality_r_squared)
+   - [Proportion explained variance](/docs/services/ai-openscale?topic=ai-openscale-quality_var)
+   - [Root of mean squared error](/docs/services/ai-openscale?topic=ai-openscale-supqualdets_squ_errors_mean)
+   - [Mean absolute error](/docs/services/ai-openscale?topic=ai-openscale-Mean absolute error)
+   - [Mean squared error](/docs/services/ai-openscale?topic=ai-openscale-quality_squerror)
+
+
+
 
 ## Supported quality details
 {: #anlz_metrics_supqualdets_suppr_dets}

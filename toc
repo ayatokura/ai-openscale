@@ -94,6 +94,11 @@ Watson OpenScale
         wos-quality-precision.md
         wos-quality-f1-measure.md
         wos-quality-logarithmic-loss.md
+        wos-quality-r-squared.md
+        wos-quality-root-of-mean-sq-error.md
+        wos-quality-prop-expl-variance.md
+        wos-quality-mean-abs-error.md
+        wos-quality-logarithmic-loss.md
 
     {: .topicgroup}
     Drift
