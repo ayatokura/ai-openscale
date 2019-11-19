@@ -52,7 +52,7 @@ Table 1. Framework support details
 | XGBoost | Regression | Structured |
 {: caption="Framework support details" caption-side="top"}
 
-<sup>1</sup>To learn more about AutoAI features, see [AutoAI implementation details](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html?audience=wdp&context=analytics){: external}. For models that have where the training data is in Cloud Object Storage, there is no support for fairness attributes of type boolean. However, if the training data is in Db2, {{site.data.keyword.aios_short}} supports fairness attributes that are boolean type. When using the AutoAI option, {{site.data.keyword.aios_short}} does not support models where the data type of the model prediction is binary. You must change such models so that the data type of their prediction is a string data type.
+<sup>1</sup>To learn more about AutoAI, see [AutoAI implementation details](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html?audience=wdp&context=analytics){: external}. For models that have where the training data is in Cloud Object Storage, there is no support for fairness attributes of type boolean. However, if the training data is in Db2, {{site.data.keyword.aios_short}} supports fairness attributes that are boolean type. When using the AutoAI option, {{site.data.keyword.aios_short}} does not support models where the data type of the model prediction is binary. You must change such models so that the data type of their prediction is a string data type.
 {: note}
 
 <sup>2</sup>Keras support does not include support for fairness.
@@ -100,7 +100,7 @@ You should have provisioned an {{site.data.keyword.pm_full}} instance in the sam
 ## AutoAI models and training data
 {: #wml-framework-autoai}
 
-AutoAI automatically prepares data, applies algorithms, or estimators, and builds model pipelines best suited for your data and use case. Because of the way that {{site.data.keyword.aios_short}} works with models to analyze and debias, there needs to be either a copy of or a connection to the underlying training data. For more information, see [Why does Watson OpenScale need access to my training data?](/docs/services/ai-openscale?topic=ai-openscale-wos-faqs#trainingdata). 
+AutoAI automatically prepares data, applies algorithms, or estimators, and builds model pipelines best suited for your data and use case. This requires either a copy of or a connection to the underlying training data. For more information, see [Why does Watson OpenScale need access to my training data?](/docs/services/ai-openscale?topic=ai-openscale-wos-faqs#trainingdata). 
 
 Because {{site.data.keyword.aios_short}} cannot detect the training data location for an AutoAI model like it can for a regular model, you must explicitly provide the needed details to access the training data location:
 
