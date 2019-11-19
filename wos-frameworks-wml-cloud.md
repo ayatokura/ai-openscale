@@ -100,12 +100,12 @@ You should have provisioned an {{site.data.keyword.pm_full}} instance in the sam
 ## AutoAI models and training data
 {: #wml-framework-autoai}
 
-AutoAI automatically prepares data, applies algorithms, or estimators, and builds model pipelines best suited for your data and use case. This requires either a copy of or a connection to the underlying training data. For more information, see [Why does Watson OpenScale need access to my training data?](/docs/services/ai-openscale?topic=ai-openscale-wos-faqs#trainingdata). 
+AutoAI automatically prepares data, applies algorithms, or estimators, and builds model pipelines best suited for your data and use case. {{site.data.keyword.aios_short}} requires access to the training data to analyze the model, for more information, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/services/ai-openscale?topic=ai-openscale-wos-faqs#trainingdata). 
 
 Because {{site.data.keyword.aios_short}} cannot detect the training data location for an AutoAI model like it can for a regular model, you must explicitly provide the needed details to access the training data location:
 
-- For the online method, you must provide the Cloud Object Storage or Db2 location details from which training data can be accessed .
-- For the custom notebook method, you can use the JSON file that is produced by running the notebook.
+- For the online path, you must provide the Cloud Object Storage or Db2 location details from which training data can be accessed .
+- For the custom notebook path, you can use the JSON file that is produced by running the notebook.
 
 For more information, see [Provide model details](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets) and [Numeric/categorical data](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-nuca).
 
