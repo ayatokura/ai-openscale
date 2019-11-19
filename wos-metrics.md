@@ -25,7 +25,7 @@ subcollection: ai-openscale
 {:swift: .ph data-hd-programlang='swift'}
 {:faq: data-hd-content-type='faq'}
 
-# Creating custom monitors and metrics ![beta tag](images/beta.png)
+# Creating custom monitors and metrics
 {: #cst_mtrcs}
 
 Custom monitors consolidate a set of custom metrics that enable you to track, in a quantitative way, any aspect of your model deployment and business application. You can define custom metrics, and use them alongside the standard metrics, such as model quality, performance, or fairness metrics that are monitored in {{site.data.keyword.aios_full}}.

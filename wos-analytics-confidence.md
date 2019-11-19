@@ -26,7 +26,7 @@ subcollection: ai-openscale
 {:faq: data-hd-content-type='faq'}
 
 
-# Predictions by confidence ![beta tag](images/beta.png)
+# Predictions by confidence
 {: #anlz_metrics_payload-confidence}
 
 You can analyze the scoring payload that is sent to your deployment in the selected data range by reviewing prediction classes and confidence distribution in each class

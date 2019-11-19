@@ -25,7 +25,7 @@ subcollection: ai-openscale
 {:swift: .ph data-hd-programlang='swift'}
 {:faq: data-hd-content-type='faq'}
 
-# Performance metrics overview ![beta tag](images/beta.png)
+# Performance metrics overview
 {: #anlz_metrics_performance}
 
 Use performance monitoring to know the velocity of data records processed by your deployment. You enable performance monitoring when you select the deployment to be tracked and monitored by {{site.data.keyword.aios_short}}.

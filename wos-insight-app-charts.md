@@ -25,7 +25,7 @@ subcollection: ai-openscale
 {:swift: .ph data-hd-programlang='swift'}
 {:faq: data-hd-content-type='faq'}
 
-# Viewing correlation charts ![beta tag](images/beta.png)
+# Viewing correlation charts
 {: #app-perform-vdet}
 
 Correlations show how business KPIs are influenced by associated models monitors. 

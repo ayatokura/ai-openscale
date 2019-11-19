@@ -25,7 +25,7 @@ subcollection: ai-openscale
 {:swift: .ph data-hd-programlang='swift'}
 {:faq: data-hd-content-type='faq'}
 
-# Chart builder ![beta tag](images/beta.png)
+# Chart builder
 {: #chart_builder}
 
 Use the {{site.data.keyword.aios_short}} chart builder to create custom visualizations, so you can better understand model predictions and inputs at runtime. The chart builder provides an ability to view the output of the model’s prediction against the features or data ranges that a business considers important. It helps uncover new trends in the data which may prompt the business and data science teams to consider changes to the AI model. 

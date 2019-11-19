@@ -25,7 +25,7 @@ subcollection: ai-openscale
 {:swift: .ph data-hd-programlang='swift'}
 {:faq: data-hd-content-type='faq'}
 
-# Throughput ![beta tag](images/beta.png)
+# Throughput
 {: #performance_mets_through}
 
 Throughput measures the average scoring requests per minute in a specific timeframe.
