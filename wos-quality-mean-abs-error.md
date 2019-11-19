@@ -44,10 +44,6 @@ Mean absolute error gives the mean of absolute difference between model predicti
 - **Chart values**: Last value in the time frame
 - **Metrics details available**: None
 
-## Interpreting the display
-{: #quality_abserror-display}
-
-![the Mean absolute error chart is displayed.](images/xxxx.png)
 
 ## Do the math
 {: #quality_abserror-math}

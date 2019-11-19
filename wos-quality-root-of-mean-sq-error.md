@@ -44,10 +44,6 @@ The root-mean-squared error (RMSE) view shows the difference between the predict
 - **Chart values**: Last value in the time frame
 - **Metrics details available**: None
 
-## Interpreting the display
-{: #supqualdets_squ_errors_mean-display}
-
-![the Root of mean squared error chart is displayed.](images/xxxx.png)
 
 ## Do the math
 {: #supqualdets_squ_errors_mean-math}

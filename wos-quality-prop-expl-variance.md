@@ -44,10 +44,7 @@ Proportion explained variance gives the ratio of explained variance and target v
 - **Chart values**: Last value in the time frame
 - **Metrics details available**: None
 
-## Interpreting the display
-{: #quality_var-display}
 
-![the Proportion explained variance chart is displayed.](images/xxxx.png)
 
 ## Do the math
 {: #quality_var-math}

@@ -44,10 +44,6 @@ R squared is the ratio of difference between target variance and variance for pr
 - **Chart values**: Last value in the time frame
 - **Metrics details available**: None
 
-## Interpreting the display
-{: #quality_r_squared-display}
-
-![the R squared chart is displayed.](images/xxxx.png)
 
 ## Do the math
 {: #quality_r_squared-math}

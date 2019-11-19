@@ -81,7 +81,7 @@ The following quality metrics are supported by {{site.data.keyword.aios_short}}:
    - [R squared](/docs/services/ai-openscale?topic=ai-openscale-quality_r_squared)
    - [Proportion explained variance](/docs/services/ai-openscale?topic=ai-openscale-quality_var)
    - [Root of mean squared error](/docs/services/ai-openscale?topic=ai-openscale-supqualdets_squ_errors_mean)
-   - [Mean absolute error](/docs/services/ai-openscale?topic=ai-openscale-Mean absolute error)
+   - [Mean absolute error](/docs/services/ai-openscale?topic=ai-openscale-quality_abserror)
    - [Mean squared error](/docs/services/ai-openscale?topic=ai-openscale-quality_squerror)
 
 

@@ -44,10 +44,6 @@ Mean squared error gives the mean of squared difference between model prediction
 - **Chart values**: Last value in the time frame
 - **Metrics details available**: None
 
-## Interpreting the display
-{: #quality_squerror-display}
-
-![the Mean squared error chart is displayed.](images/xxxx.png)
 
 ## Do the math
 {: #quality_squerror-math}
