@@ -71,8 +71,15 @@ The following quality metrics are supported by {{site.data.keyword.aios_short}}:
 
    For multi-classification models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level and checks the **Accuracy** score which is the percentage of predictions the model got right.
 
-   - [Accuracy](/docs/services/ai-openscale?topic=ai-openscale-accuracy-opener)
-   - [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-quality_log_loss)
+   - [Accuracy](/docs/services/ai-openscale?topic=ai-openscale-icp-accuracy-opener)
+   - [Weighted True Positive Rate (wTPR)
+](/docs/services/ai-openscale?topic=ai-openscale-icp-quality-wtpr)
+   - [Weighted False Positive Rate (wFPR)
+](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_wfpr_weighted)
+   - [Weighted recall](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_weighted_recall)
+   - [Weighted precision](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_wgth_prec)
+   - [Weighted F1-Measure](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_wght_f1-measure)
+   - [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-icp-quality_log_loss)
 
 -  For regression classification problems:
 
