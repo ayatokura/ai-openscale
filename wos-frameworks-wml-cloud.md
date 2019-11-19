@@ -104,8 +104,8 @@ AutoAI automatically prepares data, applies algorithms, or estimators, and build
 
 Because {{site.data.keyword.aios_short}} cannot detect the training data location for an AutoAI model like it can for a regular model, you must explicitly provide the needed details to access the training data location:
 
-- For the online path, you must provide the Cloud Object Storage or Db2 location details from which training data can be accessed .
-- For the custom notebook path, you can use the JSON file that is produced by running the notebook.
+- For the online path, where you manually configuring monitors, you must provide the Cloud Object Storage or Db2 location details from which training data can be accessed .
+- For the custom notebook path, where you upload training data distribution, you can use the JSON file that is produced by running the notebook.
 
 For more information, see [Provide model details](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets) and [Numeric/categorical data](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-nuca).
 
