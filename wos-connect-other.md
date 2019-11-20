@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-28"
+lastupdated: "2019-11-22"
 
 keywords: machine learning, services, ml, custom 
 

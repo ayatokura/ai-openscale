@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-09-09"
+lastupdated: "2019-11-22"
 
 keywords: fairness, fairness monitor, payload, perturbation, training data, debiased
 
