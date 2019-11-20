@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-09-09"
 
-keywords: supported frameworks, models, model types, limitations, limits
+keywords: supported frameworks, models, model types, limitations, limits, XGBoost, AutoAI, Keras, scikit-learn, Spark, Python
 
 subcollection: ai-openscale
 
@@ -61,7 +61,8 @@ Table 1. Framework support details
 <sup>3</sup>Explainability is supported if your model / framework outputs prediction probabilities.
 {: note}
 
-<sup>4</sup>For XGBoost binary and multiple class models, you must update the model to return prediction probability in the form of numerical values for binary models and a list of probabilities per class for multi-class models.
+<sup>4</sup>For XGBoost binary and multiple class models, you must update the model to return prediction probability in the form of numerical values for binary models and a list of probabilities per class for multi-class models. Support for the XGBoost framework has the following limitations for classification problems: For binary classification, {{site.data.keyword.aios_short}} supports the `binary:logistic` logistic regression function with an output as a probability of `True`. For multiclass classification, {{site.data.keyword.aios_short}} supports the `multi:softprob` function where the result contains the predicted probability of each data point belonging to each class.
+
 {: note}
 
 ## Specifying an {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.pm_short}} service instance
