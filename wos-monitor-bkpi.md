@@ -74,7 +74,7 @@ To activate the application, along with any of the KPIs that you created, you mu
 3. A summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section. Otherwise, click **Save** to complete your configuration.
 
 
-### Tutorial steps: Add KPIs for the German Credit Risk application monitor
+### Continue with the interactive tutorial: Add KPIs for the German Credit Risk application monitor
 {: #wos-open-config-appmon-steps-kpis}
 
 After you configure the application monitor, you must add key performance indicators to your monitor. 
@@ -108,5 +108,7 @@ To see KPI transactions right away, you must click **Evaluate now**.
 ## Next steps
 {: #kpi-next}
 
+- [Configure event details](/docs/services/ai-openscale?topic=ai-openscale-event-dets-monitor)
+- Get insights into how your KPIs correlate to model drift. See [Getting application insights](/docs/services/ai-openscale?topic=ai-openscale-io-app-ov).
 - [View correlation charts](/docs/services/ai-openscale?topic=ai-openscale-app-perform-vdet).
 - [View KPI performance](/docs/services/ai-openscale?topic=ai-openscale-it-appkpi-vdet).

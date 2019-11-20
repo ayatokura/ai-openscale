@@ -93,7 +93,6 @@ For multi-classification models, {{site.data.keyword.aios_short}} tracks when th
 - [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-quality_log_loss)
 
 
-
 ## Supported quality details
 {: #anlz_metrics_supqualdets_suppr_dets}
 
