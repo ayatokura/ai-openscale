@@ -34,8 +34,6 @@ You must configure the {{site.data.keyword.aios_full}} drift monitor before it c
 You can train your model online by using {{site.data.keyword.aios_short}}
 if you use {{site.data.keyword.pm_full}} and your data does not exceed 500 MB. Otherwise, you must use a notebook to train the model.
 
-
-
 ## Requirements
 {: #behavior-drift-config-steps-wos-reqs}
 
@@ -62,7 +60,7 @@ If you use {{site.data.keyword.pm_full}}, you have the option of using the {{sit
 
    ![What is Drift? page](images/wos-drift-config-1.png)
 
-2. Click the **Train in Watson OpenScale** tile.
+2. Click the **Analyze and train in Watson OpenScale** tile.
 
    ![What is Drift? page](images/wos-drift-config-1a.png)
 
@@ -84,8 +82,6 @@ Reconfigure the drift monitor without re-training the drift model to update para
 
 5. Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
 
-
-
 ## Steps to configure drift by using a notebook
 {: #behavior-drift-config-steps-ntbk}
 
@@ -96,7 +92,6 @@ This option is useful if the training data is not stored in Db2 or {{site.data.k
 To generate the drift detection model, you must use scikit-learn version 0.20.2 in notebooks. 
 {: note}
 
-
 1. Create a notebook to generate the drift detection model. Use [the sample notebook](https://github.com/IBM-Watson/aios-data-distribution/blob/master/training_statistics_notebook.ipynb){: external} that is available from the {{site.data.keyword.aios_short}} UI.
    
    The drift detection model is converted into a .tar.gz file for you.
@@ -105,7 +100,7 @@ To generate the drift detection model, you must use scikit-learn version 0.20.2 
 
    ![What is Drift? page](images/wos-drift-config-1.png)
 
-2. Click the **Train in a notebook** tile.
+2. Click the **Analyze and train in a notebook** tile.
 
    ![What is Drift? page](images/wos-drift-config-1a.png)
 

@@ -17,7 +17,6 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -41,6 +40,9 @@ Throughput measures the average scoring requests per minute in a specific timefr
 - **Chart values**: Average value in the timeframe
 - **Metrics details available**: None
 
+Throughput is not supported for the Watson Machine Learning models with automatic payload logging.
+{: note}
+
 ## Interpreting the display
 {: #performance_mets_through-display}
 
@@ -48,5 +50,3 @@ The throughput chart displays the average number of requests per minute. You can
 
 ![performance chart](images/wos-performance_metrics_001.png)
 
-Throughput is not supported for Watson Machine Learning models with automatic payload logging.
-{: note}

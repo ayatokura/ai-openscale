@@ -17,7 +17,6 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -33,11 +32,10 @@ In {{site.data.keyword.aios_short}} application refers to either the business ap
 
 {{site.data.keyword.aios_short}} gives you the ability to correlate business key performance indicators (KPIs) with the drift in model accuracy. In the next part of [the interactive setup tutorial](#wos-open-config-appmon), you will set up an application in {{site.data.keyword.aios_short}} to monitor your business KPIs and to find how deployed models influence these KPIs. The deployed models must be associated with the application; and, business KPIs must be defined based on the business events data. Business events data must be logged to {{site.data.keyword.aios_short}} either by manually uploading a file with events data or by using the REST API. 
 
-
 ## Steps
 {: #app-monitor-steps}
 
-1. To start the configuration process, from the **Insights** dashboard, on the Applications monitor tab, click Add to dashboard.
+1. To start the configuration process, from the **Insights** dashboard, on the Applications monitor tab, click **Add to dashboard**.
 2. Follow the prompts and enter required information. 
 3. Review the configuration. After you finish, a summary of your selections is presented. 
 4. To make changes, click the **Edit** icon for that section, otherwise, save your work. 
@@ -60,7 +58,6 @@ Only models with a defined `transaction_id` column can be associated with the ap
 
 Events represent a business transaction. Event data must contain all the data that is required to calculate your business KPIs. Each event must also contain timestamp information,such as `2019-09-03T10:44:13.000Z` as well as a business transaction ID. The business transaction ID must be the same as the `transaction_id` value in the scoring payload.
 
-
 ### KPIs
 {: #app-config-kpisss}
 
@@ -75,7 +72,6 @@ After you activate application monitoring is activated, you can log business eve
 
 There is no possibility to edit activated monitor configuration in the current Beta version.
 {: note}
-
 
 ## Continue with the interactive tutorial by configuring the German Credit Risk Model application monitor
 {: #wos-open-config-appmon}
@@ -95,9 +91,6 @@ For the following tutorial scenario, we provide a .csv file with a week's worth 
    You associate a model for which you have tracked KPIs.
    
 1. Select the **German Credit Risk model** deployment, and then click **Save**.
-
-
-
 
 ## Next steps
 {: #app-next}

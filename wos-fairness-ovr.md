@@ -40,14 +40,14 @@ Currently, {{site.data.keyword.aios_short}} detects and recommends monitors for 
 - age
 - zip code
 
-In addition to detecting protected attributes, {{site.data.keyword.aios_short}} recommends which values within each attribute should be set as the monitored and the reference values. So, for example, {{site.data.keyword.aios_short}} recommends that within the "Sex" attribute, the bias monitor be configured such that "Woman" and "Non-Binary" are the monitored values, and "Male" is the reference value. If you want to change any of the recommendations, you can edit them via the bias configuration panel. 
+In addition to detecting protected attributes, {{site.data.keyword.aios_short}} recommends which values within each attribute should be set as the monitored and the reference values. For example, {{site.data.keyword.aios_short}} recommends that within the `Sex` attribute, the bias monitor be configured such that `Female` and `Non-Binary` are the monitored values, and `Male` is the reference value. If you want to change any of the recommendations, you can edit them via the bias configuration panel. 
 
 Recommended bias monitors help to speed up configuration and ensure that you are checking your AI models for fairness against sensitive attributes. As regulators begin to turn a sharper eye on algorithmic bias, it is becoming more critical that organizations have a clear understanding of how their models are performing, and whether they are producing unfair outcomes for certain groups.
 
 ## Understanding Fairness
 {: #mf-understand}
 
-{{site.data.keyword.aios_short}} checks your deployed model for bias at runtime. To detect bias for a deployed model, you must define fairness attributes, such as Age or Gender, as detailed in the following [Configuring the Fairness monitor](#mf-config) section.
+{{site.data.keyword.aios_short}} checks your deployed model for bias at runtime. To detect bias for a deployed model, you must define fairness attributes, such as `Age` or `Sex`, as detailed in the following [Configuring the Fairness monitor](#mf-config) section.
 
 It is mandatory to specify the output schema for a model or function in {{site.data.keyword.pm_short}}, for bias checking to be enabled in {{site.data.keyword.aios_short}}. The output schema can be specified using the `client.repository.ModelMetaNames.OUTPUT_DATA_SCHEMA` property in the metadata part of the `store_model` API. For more information, see the [{{site.data.keyword.pm_full}} client documentation](http://wml-api-pyclient-dev.mybluemix.net/#repository){: external}.
 
@@ -56,9 +56,9 @@ It is mandatory to specify the output schema for a model or function in {{site.d
 
 Before configuring the Fairness monitor, there a few key concepts that are critical to understand:
 
-- Fairness attributes are the model attributes for which the model is likely to exhibit bias. As an example, for the fairness attribute **`Sex`**, the model could be biased against specific gender values (`Female`, `Non-binary`, etc.) Another example of a fairness attribute is **`Age`**, where the model could exhibit bias against people in an age group, such as `18 to 25`.
+- Fairness attributes are the model attributes for which the model is likely to exhibit bias. As an example, for the fairness attribute **`Sex`**, the model could be biased against specific values, such as `Female` or `Non-binary`. Another example of a fairness attribute is **`Age`**, where the model could exhibit bias against people in an age group, such as `18 to 25`.
 
-- Reference and monitored values: The values of fairness attributes are split into two distinct categories: Reference and Monitored. The Monitored values are those which are likely to be discriminated against. In the case of a fairness attribute like **`Sex`**, the Monitored values could be `Female` and `Non-binary`. For a numeric fairness attribute, such as **`Age`**, the Monitored values could be `[18-25]`. All other values for a given fairness attribute are then considered as Reference values, for example `Gender=Male` or `Age=[26,100]`.
+- Reference and monitored values: The values of fairness attributes are split into two distinct categories: Reference and Monitored. The Monitored values are those which are likely to be discriminated against. In the case of a fairness attribute like **`Sex`**, the Monitored values could be `Female` and `Non-binary`. For a numeric fairness attribute, such as **`Age`**, the Monitored values could be `[18-25]`. All other values for a given fairness attribute are then considered as Reference values, for example `Sex=Male` or `Age=[26,100]`.
 
 - Favorable and unfavorable outcomes: The output of the model is categorized as either Favorable or Unfavorable. As an example, if the model is predicting whether a person should get a loan or not, then the Favorable outcome could be `Loan Granted` or `Loan Partially Granted`, whereas the Unfavorable outcome might be `Loan Denied`. Thus, the Favorable outcome is one that is deemed as a positive outcome, while the Unfavorable outcome is deemed as being negative.
 
@@ -87,7 +87,7 @@ Disparate impact =   ___________________________________________________________
 
 where `num_positives` is the number of individuals in the group (either privileged=False, i.e. unprivileged, or privileged=True, i.e. privileged) who received a positive outcome, and num_instances is the total number of individuals in the group.
 
-The resulting number will be a percentage—i.e. the percentage that the rate at which unprivileged group receives the positive outcome is of the rate at which the privileged group receives the positive outcome. For instance, if a credit risk model assigns the “no risk” prediction to 80% of unprivileged applicants and to 100% of privileged applicants, that model would have a disparate impact (presented as the fairness score in {{site.data.keyword.aios_short}}) of 80%.
+The resulting number will be a percentage, which is the percentage that the rate at which unprivileged group receives the positive outcome is of the rate at which the privileged group receives the positive outcome. For instance, if a credit risk model assigns the “no risk” prediction to 80% of unprivileged applicants and to 100% of privileged applicants, that model would have a disparate impact (presented as the fairness score in {{site.data.keyword.aios_short}}) of 80%.
 
 In {{site.data.keyword.aios_short}}, the positive outcomes are designated as the favorable outcomes, and the negative outcomes are designated as the unfavorable outcomes. The privileged group is designated as the reference group, and the unprivileged group is designated as the monitored group.
 
@@ -111,8 +111,6 @@ The results of these determinations are available in the bias visualization, whi
 
   ![example of payload plus perturbed](images/wos-fairness-age-payload-perturbed.png)
 
-
-
 - **Payload**: The actual scoring requests received by the model for the selected hour.
 
    Take note of the following payload details:
@@ -120,7 +118,6 @@ The results of these determinations are available in the bias visualization, whi
    - Payload data with stacked bar chart
    - Favorable and Unfavorable outcomes that correspond to the model labels
    - The Date and Time that transactions were loaded
-
 
   ![example of payload data](images/wos-fairness-age-payload.png)
 
@@ -132,11 +129,8 @@ The results of these determinations are available in the bias visualization, whi
    - When training data is changed, meaning if the `POST /data_distribution` command is run again, this value is updated in the `fairness_configuration/training_data_distribution` variable. While sending the metric, this value is sent as well.
 
   ![example of training data](images/wos-fairness-age-training.png)
-   
 
-   
 - **Debiased**: The output of the debiasing algorithm after processing the runtime and perturbed data. Selecting the **De-biased** radio button shows you the changes in the de-biased model, versus the model in production. The chart reflects the improved outcome status for groups.
-
 
    Take note of the following debiased details:
    
@@ -144,7 +138,7 @@ The results of these determinations are available in the bias visualization, whi
    - For monitored groups, such as `age` and `sex` the before and after scores
 
   ![example of debiased data](images/wos-fairness-age-debiased.png)
-  
+
 ### Example
 {: #mf-ex1}
 
