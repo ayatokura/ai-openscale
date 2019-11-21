@@ -41,7 +41,7 @@ Throughout this process, {{site.data.keyword.aios_full}} analyzes your model and
 
 Values are derived from the `label` column in the [training data](/docs/services/ai-openscale?topic=ai-openscale-trainingdata#trainingdata). By default the `predictedLabel` column is set as the `prediction` column.
 
-Favorable and Unfavorable values need to be specified using the value of the `prediction` column as a string data type (`0.0`, `1.0`, etc.)
+Favorable and Unfavorable values need to be specified using the value of the `prediction` column as a string data type, such as `0` or `1`.
 
 ### Features to monitor
 {: #mf-monitor-reqs-feats}
@@ -88,11 +88,11 @@ To check the debias endpoint, click the **Debias Endpoint** button. You can then
 
 The de-biased scoring endpoint can be used exactly as the normal scoring endpoint of your deployed model. In addition to returning the response of your deployed model, it also returns the `debiased_prediction` and `debiased_probability` columns.
 
-- The `debiased_prediction` column contains the debiased prediction value. In the case of {{site.data.keyword.pm_full}}, this is an encoded representation of the prediction. For example, if the model prediction is either "Loan Granted" or "Loan Denied", {{site.data.keyword.pm_full}} can encode these two values to "0.0" and "1.0", respectively. The `debiased_prediction` column contains such an encoded representation of the debiased prediction.
+- The `debiased_prediction` column contains the debiased prediction value. In the case of {{site.data.keyword.pm_full}}, this is an encoded representation of the prediction. For example, if the model prediction is either "Loan Granted" or "Loan Denied", {{site.data.keyword.pm_full}} can encode these two values to "0.0" and "1.0", respectively. The `debiased_prediction` column contains such an encoded representation of the debiased prediction. If you specify a string column as prediction column, `debiased_prediction` column can also contain a string value.
 
 - The `debiased_probability` column, on the other hand, represents the probability of the debiased prediction. This is an array of double value, where each value represents the probability of the de-biased prediction belonging to one of the prediction classes.
 
-On another column, `debiased_decoded_target`, is also returned, in case you have a column in your output schema that contains a column with `modeling-role` as `decoded-target`. The `debiased_decoded_target` column would still exist in the response and would contain 
+- The `debiased_decoded_target` column still exists in the response, but it contains the same value as the one in the `debiased_prediction` column. Because there is no mapping set in the **Model details** wizard, you can now directly specify the string column as a prediction column.
 
 - The `debiased_decoded_target` column contains the string representation of the debiased prediction. In the previous example, where the prediction value was either "0.0" or "1.0", the `debiased_decoded_target` will contain either "Loan Granted" or "Loan Denied".
 

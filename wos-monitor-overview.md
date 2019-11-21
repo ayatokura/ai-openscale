@@ -44,8 +44,6 @@ For example, if you are using the **German Credit Risk** sample model for the in
 
 2. Click a model deployment and then click **Configure**.
 
-   If there are multiple deployments for a given model, then when you configure one deployment, all other deployments for the same model also get configured.
-
    After your selections are saved, you are ready to configure monitors, which include payload logging, accuracy, and fairness. 
 
 2. To get started, click **Configure monitors**.
@@ -119,36 +117,27 @@ The following sections give some specific information that you encounter dependi
 
 For numeric or categorical data, you need to provide information about the training data for your model, in order to configure the monitors.
 
-- **Manually configure monitors** - Requires you to provide connection information to your training data.
+- **Manually configure monitors** - Requires you to provide connection information to your training data. 
 
-    - Select the [algorithm type](/docs/services/ai-openscale?topic=ai-openscale-acc-monitor#acc-understand), and click **Next**:
+  The format of the training data must match the model. For example, if the model expects `M` and `F` for the feature `Gender`, then the training data should have `M` and `F`, not `Male` and `Female`.  The current release of {{site.data.keyword.aios_short}} supports only Db2 database or Cloud Object Storage locations.
 
-      The format of the training data must match the model. For example, if the model expects `M` and `F` for the feature `Gender`, then the training data should have `M` and `F`, not `Male` and `Female`.  The current release of {{site.data.keyword.aios_short}} supports only Db2 database or Cloud Object Storage locations.
-        {: important}
+  - Specify the Location (either `Db2` or `Cloud Object Storage`), then:
+      - For a Db2 database, enter the following information:
+          - Host name or IP address
+          - Port
+          - Database (name)
+          - Username
+          - Password
+      - For Cloud Object Storage, enter the following information:
+          - Login URL: The Login URL must match the region setting of the bucket where your training data is located. You will specify the training data bucket in the next step.
+          - Resource instance (ID)
+          - API key
+  - To ensure a valid connection, click the **Test** button to connect to the trainingdata.
+  - Specify the exact location in the Db2 database or Cloud Object Storage where thetraining data is located.
+      - For a Db2 database, select both a schema and a training table that includes columns expected by your model.
+      - For Cloud Object Storage, select a Bucket and a Data Set.
 
-    - Specify the Location (either `Db2` or `Cloud Object Storage`), then:
-
-        - For a Db2 database, enter the following information:
-
-            - Host name or IP address
-            - Port
-            - Database (name)
-            - Username
-            - Password
-
-        - For Cloud Object Storage, enter the following information:
-
-            - Login URL: The Login URL must match the region setting of the bucket where your training data is located. You will specify the training data bucket in the next step.
-            - Resource instance (ID)
-            - API key
-
-    - To ensure a valid connection, click the **Test** button to connect to the training data.
-    - Specify the exact location in the Db2 database or Cloud Object Storage where the training data is located.
-
-        - For a Db2 database, select both a schema and a training table that includes columns expected by your model.
-        - For Cloud Object Storage, select a Bucket and a Data Set.
-
-- **Upload a configuration file** - Choose this option if you prefer to keep your training data private. You can use a custom Python notebook to provide {{site.data.keyword.aios_short}} with information to analyze your training data without providing access to the training data itself.
+- **Upload a training data distribution file** - Choose this option if you prefer to keep your training data private. You can use a custom Python notebook to provide {{site.data.keyword.aios_short}} with information to analyze your training data without providing access to the training data itself.
 
   Running the Python notebook lets you capture distinct values in the schema columns, as well as the column names. In addition, you can use the notebook to pre-configure the Fairness monitor.
 
@@ -161,7 +150,7 @@ For numeric or categorical data, you need to provide information about the train
 
 - {{site.data.keyword.aios_short}} locates your training data from the metadata stored with the model in {{site.data.keyword.pm_full}}. Choose the label column in the training data that contains your prediction values.
 - Select the columns used to train the model - these are the features that your model deployment expects in a request.
-- Finally, select the columns that contained text, and have been converted to integers. For example, if the original training data contained `Male` and `Female` for `Gender`, and they have now been mapped to `0` and `1` respectively, the training data now contains `0` and `1` values for the `Gender` column. Identify such columns which now contain integers, but originally contained text values.
+- You can choose either a string column or a numeric column as the prediction column.
 
 ### Images and Unstructured text
 {: #mo-imun}
