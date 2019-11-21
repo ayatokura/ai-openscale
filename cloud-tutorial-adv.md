@@ -159,7 +159,7 @@ If you have a paid {{site.data.keyword.cloud_notm}} account, you may provision a
 
 - Access the following file. If you have a GitHub account, you can sign in to clone and download the file. Otherwise, you can view the raw version, by clicking the **Raw** button and copy the text of the file into a new file with a .ipynb extension.
 
-    - [Working with Watson Machine Learning](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20and%20Watson%20ML%20Engine.ipynb){: external}
+    - [Working with Watson Machine Learning (Watson OpenScale and Watson ML Engine.ipynb)](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20and%20Watson%20ML%20Engine.ipynb){: external}
 
 - From the **Assets** tab in your {{site.data.keyword.DSX}} project, click the **Add to project** button and select **Notebook** from the dropdown:
 
@@ -173,7 +173,10 @@ If you have a paid {{site.data.keyword.cloud_notm}} account, you may provision a
 
   ![New Notebook Form](images/cloud-new_notebook_name2a.png)
 
-- In the **Select runtime** section, choose the latest Python with Spark option:
+- In the **Select runtime** section, choose the latest Python with Spark option.
+
+  {{site.data.keyword.DSX}} does not offer a free environment with Python and Apache Spark. The only free runtime environment is for a Python-only environment.
+  {: note}
 
 - Click **Create Notebook**.
 
@@ -212,13 +215,11 @@ The net result is that you will have created, trained, and deployed the **Spark 
 ### View insights for your deployment
 {: #crt-view-insights}
 
-Using the [{{site.data.keyword.aios_short}} dashboard](https://aiopenscale.cloud.ibm.com/aiopenscale/){: external}, click on the **Insights** tab:
+Using the [Watson OpenScale dashboard](https://aiopenscale.cloud.ibm.com/aiopenscale/){: external}, click the **Insights** ![Insights icon is displayed](images/wos_insight-dash-tab.png) tab:
 
-  ![Insights icon is displayed](images/wos_insight-dash-tab.png)
+The Insights page provides an overview of metrics for your deployed models and KPI applications. You can easily see alerts for Fairness or Accuracy metrics that exceed the threshold set when running the notebook. The data and settings used in this tutorial will have created Accuracy and Fairness metrics similar to the ones shown here.
 
-The Insights page provides an overview of metrics for your deployed models. You can easily see alerts for Fairness or Accuracy metrics that exceed the threshold set when running the notebook. The data and settings used in this tutorial will have created Accuracy and Fairness metrics similar to the ones shown here.
-
-  ![Insight overview dashboard displays with a tile for the German Credit Risk model](images/wos_insight-overview-adv-tutorial-2.png)
+  ![Insight overview dashboard displays with a tile for the German Credit Risk model](images/wos-insights-dashboard-model-monitors.png)
 
 ### View monitoring data for your deployment
 {: #crt-view-mon-data}
@@ -227,11 +228,11 @@ The Insights page provides an overview of metrics for your deployed models. You 
 2. Slide the marker across the chart to select data for a specific one-hour window. 
 3. Click the **View details** link.
 
-  ![Monitor data](images/wos-insight-monitor-data2.png)
+  ![Monitor data](images/wos-fairness-age.png)
 
 Now, you can review the charts for the data you monitored. For this example, you can see that for the "Sex" feature, the group `female` received the favorable outcome "No Risk" less (68%) than the group `male` (78%).
 
-  ![Insight overview](images/wos-insight-review-charts2.png)
+  ![Insight overview](images/wos-fairness-age-payload-perturbed.png)
 
 ### View explainability for a model transaction
 {: #crt-view-explain}
@@ -252,11 +253,11 @@ If you use the internal lite version of PostgreSQL, you might not be able to ret
   
 2. Select one of the transactions and, from the **ACTION** column, click the **Explain** link.
 
-  ![Transaction list](images/cloud-transaction_list_cr.png)
+  ![Transaction list](images/wos-explain-all-transactions.png)
 
 You will now see an explanation of how the model arrived at its conclusion, including how confident the model was, the factors that contributed to the confidence level, and the attributes fed to the model.
 
-  ![View Transaction](images/cloud-view_transaction_cr.png)
+  ![View Transaction](images/wos-explain-transactions.png)
   
 ## Next steps
 {: #crt-next-steps}

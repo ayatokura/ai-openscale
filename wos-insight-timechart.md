@@ -17,7 +17,6 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -45,7 +44,7 @@ Next, click the chart and move the marker across the chart to see statistics for
 ![Time series chart detail is shown with a specific data point in the chart selected and a tooltip saying to click to view details](images/wos-insight-time-detail.png)
 
 - ***Fairness***: Two Fairness features, Sex and Age, met their set thresholds for approval.
-- ***Quality***: The **Aread under ROC** metric displays an alert because it was not within the configured treshold.
+- ***Quality***: The **Area under ROC** metric displays an alert because it was not within the configured treshold.
 - ***Avg. Reqs/Min***: Click the **Throughput** metric to see the number of records that were processed per minute between. The throughput is computed every minute, and its average value over the course of the hour is reported in the chart.
 
 
@@ -60,10 +59,10 @@ A list of transactions where the deployment has acted in a biased manner is list
 
 Select the **All transactions** view to see all transactions from the selected feature (in this example "AGE"), and the selected period (in this example "September 15, 2018 1:00 PM"):
 
-![Transaction lists all transactions for a specific data point](images/wos-transaction_list1.png)
+![Transaction lists all transactions for a specific data point](images/wos-explain-all-transactions.png)
 
 Select the **Biased transactions** view to see only the subset of transactions that received biased outcomes. Each biased transaction is compared to a similar-but-slightly-altered (perturbed) transaction that shows how changing the value of the monitored feature (AGE) will result in a favorable outcome for the biased transaction:
 
-![Transaction lists only biased transactions](images/wos-transaction_list2.png)
+![Transaction lists only biased transactions](images/wos-explain-debias-transactions.png)
 
 
