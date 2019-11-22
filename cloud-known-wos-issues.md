@@ -43,7 +43,6 @@ The following lists contains the known issues and limitation that are common for
 {: shortdesc}
 
 <p>&nbsp;</p>
-
 ## Common issues
 {: #wos-common-issues}
 
@@ -62,17 +61,16 @@ The following limitations and known issues are common to both {{site.data.keywor
 
 
 
+
 <p>&nbsp;</p>
 
 
 ### Not all Db2 instances function identically
 {: #wos-limitations-db2-version}
 
-{{site.data.keyword.aios_short}} supports Db2 Warehouse add-on, Db2 Advanced Enterprise Server Edition add-on, as well as Db2 Enterprise Server Edition (v. 11.1.9 or later) installation that is accessible to the cluster. Be aware of the following limitation:
+{{site.data.keyword.aios_short}} supports Db2 Warehouse add-on, Db2 Advanced Enterprise Server Edition add-on, as well as Db2 Enterprise Server Edition (v. 11.5.1 or later) installation that is accessible to the cluster. Be aware of the following limitation:
 
 - {{site.data.keyword.aios_short}} requires a tablespace with a page size of 32k or larger.
-
-!<--MJS needs work here -->
 
 <p>&nbsp;</p>
 
@@ -92,7 +90,6 @@ The following cases are the most-likely cause:
 - The `class` label is of string type and `modeling_role` **prediction** is assigned to the **prediction** column as a double type because that is how the output data schema is defined.
 - You select the **prediction** column of double type in the UI, which is not restricted.
 
-!<--MJS needs work here. Post to dev channel -->
 
 
 ### Payload formats
@@ -143,7 +140,7 @@ If you are using a different load balancer, other than HAProxy, you may need to 
 ### Custom machine learning service instance
 {: #wos-common-issues-custom}
 
-- The [{{site.data.keyword.aios_short}} Python Client SDK](/docs/services/ai-openscale?topic=ai-openscale-as-module) does not currently have Explainability working for the Custom serve engine. This is because the Custom serve engine requires a numerical prediction in the response data, which is not included with the module script.
+- The [{{site.data.keyword.aios_short}} Python Client SDK](/docs/services/ai-openscale-icp?topic=ai-openscale-icp-as-module) does not currently have Explainability working for the Custom serve engine. This is because the Custom serve engine requires a numerical prediction in the response data, which is not included with the module script.
 
 <p>&nbsp;</p>
 
@@ -159,16 +156,14 @@ If you are using a different load balancer, other than HAProxy, you may need to 
 
       curl -k -X GET \
       -user "$USERNAME:$PASSWORD" \
-      "https://{{icp_hostname}}/v1/preauth/validateAuth"
+      "https://$CP4D_HOSTNAME/v1/preauth/validateAuth"
 
-      # the previous CURL request will return an auth token under "accessToken", that you will use as {icp_token} in the following payload logging request 
+      # the previous CURL request returns an auth token under "accessToken", that you will use as {icp_token} in the following payload logging request 
       # TODO: manually define and pass:
       # request - input to scoring endpoint in supported by {{site.data.keyword.aios_short}} format - replace sample fields and values with proper ones
       # response - output from scored model in supported by {{site.data.keyword.aios_short}} format - replace sample fields and values with proper ones
       # - $SCORING_ID - ID of the scoring transaction
       # - $SCORING_TIME - Time (ms) taken to make prediction (for performance monitoring)
-
-!<-- Update to v 4 MJS -->
 
       SCORING_PAYLOAD='[{
         "scoring_id": "$SCORING_ID",
@@ -182,11 +177,11 @@ If you are using a different load balancer, other than HAProxy, you may need to 
         "values": [[28, "F", "LOW", "HIGH", 0.61, 0.026, [0.82, 0.07, 0.0, 0.05, 0.03], 0.0, "drugY"]]
         },
         "binding_id": "{{binding_id}}",
-        "subscription_id": "{{subscription_id}}",
-        "deployment_id": "{{deployment_id}}"
+        "subscription_id": "$SUBSCRIPTION_ID",
+        "deployment_id": "$DEPLOYMENT_ID"
       }]'
 
-      curl -k -X POST "https://{{icp_hostname}}/v1/data_marts/{{data_mart_id}}/scoring_payloads" -d "$SCORING_PAYLOAD" \
+      curl -k -X POST "https://$CP4D_HOSTNAME/v1/data_marts/$DATA_MART_ID/scoring_payloads" -d "$SCORING_PAYLOAD" \
       --header 'Content-Type: application/json' --header 'Accept: application/json' --header "Authorization: Bearer $ICP_TOKEN"
       ```
       {: codeblock}
@@ -195,13 +190,13 @@ If you are using a different load balancer, other than HAProxy, you may need to 
       *Feedback logging*
 
       ```sh
-      # Generate an ICP access token by passing an ICP username as $USERNAME, and ICP password as $PASSWORD in the following request
+      # Generate an ICP access token by passing an ICP username as $USERNAME, and ICP password as $PASSWORD in the following request:
 
       curl -k -X GET \
       --user "$USERNAME:$PASSWORD" \
-      "https://{{icp_hostname}}/v1/preauth/validateAuth"
+      "https://$CP4D_HOSTNAME/v1/preauth/validateAuth"
 
-      # the previous CURL request will return an auth token under "accessToken" key that you will use as {icp_token} in the following payload logging request
+      # the previous CURL request will return an auth token under "accessToken" key that you will use as {icp_token} in the following payload logging request:
       # TODO: manually define and pass:
       # fields - list of fields names - replace sample values with proper ones
       # values - feedback data records - replace sample values with proper ones
@@ -211,11 +206,11 @@ If you are using a different load balancer, other than HAProxy, you may need to 
       FEEDBACK_DATA='{
         "fields": ["AGE", "SEX", "BP", "CHOLESTEROL", "NA", "K", "DRUG"],
         "values": [[28, "F", "LOW", "HIGH", 0.61, 0.026, "drugB"]],
-        "binding_id": "{{binding_id}}",
-        "subscription_id": "{{subscription_id}}"
+        "binding_id": "$BINDING_ID",
+        "subscription_id": "$SUBSCRIPTION_ID"
       }'
 
-      curl -k -X POST "https://{{icp_hostname}}/v1/data_marts/{{data_mart_id}}/feedback_payloads" -d "$FEEDBACK_DATA" \
+      curl -k -X POST "https://$CP4D_HOSTNAME/v1/data_marts/$DATA_MART_ID/feedback_payloads" -d "$FEEDBACK_DATA" \
       --header 'Content-Type: application/json' --header 'Accept: application/json' --header "Authorization: Bearer $ICP_TOKEN"
       ```
       {: codeblock}
@@ -227,14 +222,14 @@ If you are using a different load balancer, other than HAProxy, you may need to 
 
       ```java
       /**
-      At runtime you need to replace values for the following
+      At runtime you need to replace values for the following variables:
 
-      <HOSTNAME> - Host Name eg: aiopenscale.test.cloud.ibm.com
-      <DATA_MART_ID> - DataMart id
-      <SERVICE_BINDING_ID> - Service Binding id
-      <ASSET_ID> - Asset id or the model id
-      <DEPLOYMENT_ID> - Deployment id
-      <TOKEN> - Bearer token
+      $HOSTNAME - Host Name, for example "aiopenscale.test.cloud.ibm.com"
+      $DATA_MART_ID - DataMart ID
+      $SERVICE_BINDING_ID - Service Binding ID
+      $ASSET_ID - Asset ID or the model ID
+      $DEPLOYMENT_ID - Deployment ID
+      $TOKEN - Bearer token
 
       */
       import org.apache.http.HttpVersion;
@@ -242,7 +237,7 @@ If you are using a different load balancer, other than HAProxy, you may need to 
       import org.apache.http.entity.ContentType;
 
       String bearerToken = "Bearer <TOKEN>";
-      String URL = "https://<HOSTNAME>/v1/data_marts/<DATA_MART_ID>/service_bindings/<SERVICE_BINDING_ID>/subscriptions/<ASSET_ID>/deployments/<DEPLOYMENT_ID>/online";
+      String URL = "https://$HOSTNAME/v1/data_marts/$DATA_MART_ID/service_bindings/$SERVICE_BINDING_ID/subscriptions/$ASSET_ID/deployments/$DEPLOYMENT_ID/online";
 
       String payload = "{ \"fields\": [ \"field1\", \"field2\", \"field3\" ], \"values\": [ [ \"field1Value1\", \"field2Value1\", \"field3Value1\" ], [ \"field1Value2\", \"field2Value2\", \"field3Value2\" ]] }";
 
