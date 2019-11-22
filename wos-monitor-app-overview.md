@@ -32,6 +32,11 @@ In {{site.data.keyword.aios_short}} application refers to either the business ap
 
 {{site.data.keyword.aios_short}} gives you the ability to correlate business key performance indicators (KPIs) with the drift in model accuracy. In the next part of [the interactive setup tutorial](#wos-open-config-appmon), you will set up an application in {{site.data.keyword.aios_short}} to monitor your business KPIs and to find how deployed models influence these KPIs. The deployed models must be associated with the application; and, business KPIs must be defined based on the business events data. Business events data must be logged to {{site.data.keyword.aios_short}} either by manually uploading a file with events data or by using the REST API. 
 
+## About the scenario
+{: #app-monitor-scenario}
+
+
+
 ## Steps
 {: #app-monitor-steps}
 

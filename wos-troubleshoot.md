@@ -29,6 +29,9 @@ subcollection: ai-openscale
 # Troubleshooting
 {: #ts-trouble}
 
+You can use the following techniques to work around problems with {{site.data.keyword.aios_full}}.
+{: shortdesc}
+
 ## Common issues for {{site.data.keyword.aios_short}}
 {: #ts-trouble-common}
 
