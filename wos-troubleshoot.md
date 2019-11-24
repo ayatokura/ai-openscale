@@ -132,7 +132,7 @@ The configuration service log might contain the following entry:
 ApiRequestFailure: Failure during payload logging setup. (PUT https://icpd-aios-cluster1.cpolab.ibm.com:31843/v1/data_marts/00000000-0000-0000-0000-000000000000/service_bindings/999/subscriptions/093ee84d-5a59-49fb-a367-1932ad3403df/configurations/payload_logging) Status code: 500, body: {“errors”:[{“code”:“AIQCS0046E”,“message”:“Action Create Payload Tables has failed: Invalid token”}], “trace”:“N2RmNWViMTItMTc4Zi00MWM5LTkyMmUtZDEwYzg1NGJmZDA0”}
 ```
 
-The payload logging, configuration, and data mart processes are experiencing a problem and need to be restarted.
+The access token used by the payload logging, configuration, and datamart processes has become invalid. Restarting these processes will generate a new, valid token.
 {: tsCauses}
 
 
