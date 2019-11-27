@@ -56,10 +56,11 @@ Area under Precision Recall gives the area under the precision and recall curve,
 
 Area under Precision Recall gives the total for both `Precision + Recall`.
 
-
+```
        n
 AveP = ∑ P(k)∆r(k)
       k=1
+```
 
 Precision (P) is defined as the number of true positives (Tp) over the number of true positives plus the number of false positives (Fp).
 
