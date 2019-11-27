@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-11-22"
 
-keywords: metrics, monitoring, custom metrics, thresholds, F1-Measure
+keywords: metrics, monitoring, custom metrics, thresholds, F1-Measure, score, schedule, recommendation
 
 subcollection: ai-openscale
 

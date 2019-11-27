@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-11-22"
 
-keywords: metrics, monitoring, custom metrics, thresholds
+keywords: metrics, monitoring, custom metrics, thresholds, score, schedule, recommendation
 
 subcollection: ai-openscale
 
@@ -37,7 +37,7 @@ The True positive rate (TPR) gives the proportion of correct predictions in pred
 - **Description**: Proportion of correct predictions in predictions of positive class
 - **Default thresholds**: lower limit = 80%
 - **Default recommendation**:
-   - **Upward trend**: An upward trend indicates that the metric is improving. This means that This means that model retraining is effective.
+   - **Upward trend**: An upward trend indicates that the metric is improving. This means that model retraining is effective.
    - **Downward trend**: A downward trend indicates that the metric is deteriorating. Feedback data is becoming significantly different than the training data.
    - **Erratic or irregular variation**: An erratic or irregular variation indicates that the feedback data is not consistent between evaluations. Increase the minimum sample size for the Quality monitor.
 - **Problem type**: Binary classification

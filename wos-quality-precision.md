@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-11-22"
 
-keywords: metrics, monitoring, custom metrics, thresholds, precision
+keywords: metrics, monitoring, custom metrics, thresholds, precision, score, schedule, recommendation
 
 subcollection: ai-openscale
 

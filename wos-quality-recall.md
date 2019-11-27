@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-11-22"
 
-keywords: metrics, monitoring, custom metrics, thresholds
+keywords: metrics, monitoring, custom metrics, thresholds, score, schedule, recommendation
 
 subcollection: ai-openscale
 
@@ -48,29 +48,6 @@ Recall gives the proportion of correct predictions in positive class.
 {: #quality_recall-display}
 
 ![the Recall chart is displayed.](images/wos-quality-recall.png)
-
-### Fairness score
-{: #quality_recall-display-fairness-score}
-
-For the recall metric, the following fairness score is displayed. 
-
-![the Recall score percentage is displayed.](images/wos-quality-recall-score.png)
-
-### Schedule
-{: #quality_recall-display-schedule}
-
-The **Schedule** pane shows the **Last evaluation** and **Next evaluation** times. Quality metrics are evaluated every hour. You can force evaluation by clicking **Check quality now**. You can also add feedback by clicking **Add feedback data**.
-
-![the schedule pane is displayed, which shows the last evaluation time and the next evaluation time](images/wos-quality-schedule.png)
-
-
-### Recommendation
-{: #quality_recall-display-recommendations}
-
-To help you interpret the chart, the **Recommendation** pane displays which trends indicate improving or deteriorating model effectiveness.
-
-![the recommendation pane is displayed.](images/wos-quality-positive-recommendation.png)
-
 
 
 

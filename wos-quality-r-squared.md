@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-11-22"
 
-keywords: metrics, monitoring, custom metrics, thresholds, R squared
+keywords: metrics, monitoring, custom metrics, thresholds, R squared, score, schedule, recommendation, r2
 
 subcollection: ai-openscale
 

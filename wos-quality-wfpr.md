@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-11-22"
 
-keywords: metrics, monitoring, custom metrics, thresholds, Weighted False Positive Rate, wFPR
+keywords: metrics, monitoring, custom metrics, thresholds, Weighted False Positive Rate, wFPR, score, schedule, recommendation
 
 subcollection: ai-openscale
 

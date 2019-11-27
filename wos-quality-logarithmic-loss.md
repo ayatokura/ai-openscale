@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-11-22"
 
-keywords: fairness, fairness monitor, payload, perturbation, training data, debiased, Logarithmic loss
+keywords: fairness, fairness monitor, payload, perturbation, training data, debiased, Logarithmic loss, score, schedule, recommendation
 
 subcollection: ai-openscale
 
@@ -48,30 +48,6 @@ Logarithmic loss gives the mean of logarithms target class probabilities (confid
 {: #quality_log_loss-display}
 
 ![Logarithmic loss is displayed](images/wos-quality-log-loss.png)
-
-### Fairness score
-{: #quality_log_loss-display-fairness-score}
-
-For the logarithmic loss metric, the following fairness score is displayed. 
-
-![the Recall score percentage is displayed.](images/wos-quality-logloss-score.png)
-
-### Schedule
-{: #quality_log_loss-display-schedule}
-
-The **Schedule** pane shows the **Last evaluation** and **Next evaluation** times. Quality metrics are evaluated every hour. You can force evaluation by clicking **Check quality now**. You can also add feedback by clicking **Add feedback data**.
-
-![the schedule pane is displayed, which shows the last evaluation time and the next evaluation time](images/wos-quality-schedule.png)
-
-
-### Recommendation
-{: #quality_log_loss-display-recommendations}
-
-To help you interpret the chart, the **Recommendation** pane displays which trends indicate improving or deteriorating model effectiveness.
-
-![the recommendation pane is displayed.](images/wos-quality-negative-recommendation.png)
-
-
 
 ## Do the math
 {: #quality_log_loss-math}
