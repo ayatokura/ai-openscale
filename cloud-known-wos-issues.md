@@ -48,7 +48,7 @@ The following limitations and known issues are common to both {{site.data.keywor
 - {{site.data.keyword.aios_short}} does not support models where the data type of the model prediction is binary. You must change such models so that the data type of their prediction is a string or integer data type.
 - For a regression model, the fairness transaction list does not indicate whether bias is detected.
 - Support for the XGBoost framework has the following limitations for classification problems: For binary classification, {{site.data.keyword.aios_short}} supports the `binary:logistic` logistic regression function with an output as a probability of `True`. For multiclass classification, {{site.data.keyword.aios_short}} supports the `multi:softprob` function where the result contains the predicted probability of each data point belonging to each class.
-
+- Fairness and drift metrics are not supported for unstructured (image or text) data types.
 
 
 

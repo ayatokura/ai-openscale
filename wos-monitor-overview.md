@@ -163,6 +163,9 @@ For numeric or categorical data, you need to provide information about the train
 
    For models that accept text as input, it is expected that the model accepts the entire text, and not a vectorized representation of the text.
 
+Fairness and drift metrics are not supported for unstructured (image or text) data types.
+{: note}
+
 ## Review and save configuration
 {: #mo-save}
 

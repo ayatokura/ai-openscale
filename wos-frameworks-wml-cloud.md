@@ -39,30 +39,33 @@ Table 1. Framework support details
 | Framework | Problem type | Data type |
 |:---|:---:|:---:|
 | AutoAI<sup>1</sup> | Classification (binary and multi classes) | Structured |
-| AutoAI | Regression | Structured or Unstructured (text only) |
+| AutoAI | Regression | Structured or Unstructured<sup>2</sup> (text only) |
 | Apache Spark MLlib | Classification | Structured |
 | Apache Spark MLLib | Regression | Structured |
-| Keras with TensorFlow<sup>2</sup><sup>&</sup><sup>3</sup> | Classification | Unstructured (image, text) |
-| Keras with TensorFlow<sup>2</sup><sup>&</sup><sup>3</sup> | Regression | Unstructured (image, text) |
+| Keras with TensorFlow<sup>3</sup><sup>&</sup><sup>4</sup> | Classification | Unstructured<sup>2</sup> (image, text) |
+| Keras with TensorFlow<sup>3</sup><sup>&</sup><sup>4</sup> | Regression | Unstructured<sup>2</sup> (image, text) |
 | Python function | Classification | Structured |
 | Python function | Regression | Structured |
 | scikit-learn | Classification | Structured |
 | scikit-learn | Regression | Structured |
-| XGBoost<sup>4</sup> | Classification | Structured |
+| XGBoost<sup>5</sup> | Classification | Structured |
 | XGBoost | Regression | Structured |
 {: caption="Framework support details" caption-side="top"}
 
 <sup>1</sup>To learn more about AutoAI, see [AutoAI implementation details](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html?audience=wdp&context=analytics){: external}. For models that have where the training data is in Cloud Object Storage, there is no support for fairness attributes of type boolean. However, if the training data is in Db2, {{site.data.keyword.aios_short}} supports fairness attributes that are boolean type. When using the AutoAI option, {{site.data.keyword.aios_short}} does not support models where the data type of the model prediction is binary. You must change such models so that the data type of their prediction is a string data type.
 {: note}
 
-<sup>2</sup>Keras support does not include support for fairness.
+<sup>2</sup>Fairness and drift metrics are not supported for unstructured (image or text) data types.
 {: note}
 
-<sup>3</sup>Explainability is supported if your model / framework outputs prediction probabilities.
+
+<sup>3</sup>Keras support does not include support for fairness.
 {: note}
 
-<sup>4</sup>For XGBoost binary and multiple class models, you must update the model to return prediction probability in the form of numerical values for binary models and a list of probabilities per class for multi-class models. Support for the XGBoost framework has the following limitations for classification problems: For binary classification, {{site.data.keyword.aios_short}} supports the `binary:logistic` logistic regression function with an output as a probability of `True`. For multiclass classification, {{site.data.keyword.aios_short}} supports the `multi:softprob` function where the result contains the predicted probability of each data point belonging to each class.
+<sup>4</sup>Explainability is supported if your model / framework outputs prediction probabilities.
+{: note}
 
+<sup>5</sup>For XGBoost binary and multiple class models, you must update the model to return prediction probability in the form of numerical values for binary models and a list of probabilities per class for multi-class models. Support for the XGBoost framework has the following limitations for classification problems: For binary classification, {{site.data.keyword.aios_short}} supports the `binary:logistic` logistic regression function with an output as a probability of `True`. For multiclass classification, {{site.data.keyword.aios_short}} supports the `multi:softprob` function where the result contains the predicted probability of each data point belonging to each class.
 {: note}
 
 ## Specifying an {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.pm_short}} service instance

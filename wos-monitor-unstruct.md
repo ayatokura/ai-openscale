@@ -47,3 +47,6 @@ subcollection: ai-openscale
 8. Configure explainability.
    9. Enable the explainability.
    10. Get explanations for the transactions.
+
+Fairness and drift metrics are not supported for unstructured (image or text) data types.
+{: note}
