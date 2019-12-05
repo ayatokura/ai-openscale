@@ -28,7 +28,7 @@ subcollection: ai-openscale
 # R squared
 {: #quality_r_squared}
 
-R squared is the ratio of difference between target variance and variance for prediction error to target variance. It can tell you how well the data that you used to create the model fits the regression.
+R squared is the ratio of difference between target variance and variance for prediction error to target variance. It can tell you how well the data that you used to create the model fits the regression. R squared measures how well the regression predictions approximate the actual values. The higher the R squared score, the better the model fits to the actual values.
 {: shortdesc}
 
 ## R squared at a glance
