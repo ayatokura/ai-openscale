@@ -38,6 +38,7 @@ Watson OpenScale
         wos-payload-auto.md
         wos-config-file.md
         wos-feedback.md
+        wos-training-data-schema.md
         wos-schema-definition.md
         cloud-upgrading.md
 
@@ -99,7 +100,11 @@ Watson OpenScale
         wos-quality-mean-squared-error.md
         wos-quality-r-squared.md
         wos-quality-root-of-mean-sq-error.md
-        wos-quality-wtpr.md        wos-quality-wfpr.md        wos-quality-wrecall.md        wos-quality-wprecision.md        wos-quality-wf1-measure.md
+        wos-quality-wtpr.md
+        wos-quality-wfpr.md
+        wos-quality-wrecall.md
+        wos-quality-wprecision.md
+        wos-quality-wf1-measure.md
 
     {: .topicgroup}
     Drift
