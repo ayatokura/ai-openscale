@@ -151,7 +151,7 @@ You are now able to select the deployed models that will be monitored by {{site.
 ### Provide a set of sample data to your model
 {: #gs-samp}
 
-Before you can configure your monitors, you must generate at least one scoring request against your model in order to generate payload logging that the monitors can consume. In this section, you will provide sample data to Watson Studio in the form of a JSON file to generate a scoring request.
+Before you configure your monitors, you can generate a scoring request against your model to test payload logging that the monitors can consume. In this section, you will provide sample data to Watson Studio in the form of a JSON file to generate a scoring request. You'll repeat this again, later in the tutorial, to provide the actual data to the Watson OpenScale monitors.
 
 1.  Download the [credit_payload_data.json](https://raw.githubusercontent.com/watson-developer-cloud/doc-tutorial-downloads/master/ai-openscale/credit_payload_data.json){: external} file.
 
