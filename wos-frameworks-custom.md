@@ -17,7 +17,6 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -38,6 +37,7 @@ Table 1. Framework support details
 | Framework | Problem type | Data type |
 |:---|:---:|:---:|
 | Equivalent to {{site.data.keyword.pm_full}} | Classification | Structured |
+| Equivalent to {{site.data.keyword.pm_full}} | Regression | Structured |
 {: caption="Framework support details" caption-side="top"}
 
 For a model that is not equivalent to {{site.data.keyword.pm_full}}, you must create a wrapper for the custom model that exposes the required REST API endpoints and bridge the input/output between {{site.data.keyword.aios_short}} and the actual custom machine learning engine.

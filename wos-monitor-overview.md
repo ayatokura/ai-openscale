@@ -17,7 +17,6 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -71,10 +70,10 @@ If the scoring is sent correctly to {{site.data.keyword.aios_short}}, the follow
 ![payload logging screen is pictured after a successful upload of data](images/wos-payload-logging-gosales002.png)
 
 
-### Provide model details
+## Provide model details
 {: #mo-work-model-dets}
 
-Provide information about your model so that {{site.data.keyword.aios_short}} can access the database and understand how the model is set up. For example, if you are using the **German Credit Risk model** for the interactive tutorial, many of the following fields are completed automatically for you.
+Provide information about your model so that {{site.data.keyword.aios_short}} can access the database and understand how the model is set up. 
 
 Specifically to configure monitors, you must provide the following information:
 
@@ -94,41 +93,45 @@ Specifically to configure monitors, you must provide the following information:
     - For a Db2 database, select both a schema and a training table that includes columns expected by your model.
     - For Cloud Object Storage, select a Bucket and a Data Set.
 
-### Continuing the interactive tutorial
+## Continuing the interactive tutorial
 {: #mo-work-model-dets-int-tut}
 
-You must enter the location of the training data. Training data must be stored in a Db2 database or Cloud Object Storage. Enter your connection information, then click Test to verify the connection. You do this by entering the location, hostname or IP address, the database name, and the authentication information from IBM Cloud.
+If you use the Lite plan option, the Db2 configuration information is provided within the sample model metadata. Optionally, if you want to use your own Db2 or Cloud Object Storage, you can continue with the following section, which shows how to set up the Cloud Object Storage instance that you created previously. 
 
-#### Location of training data
+You must enter the location of the training data. Training data must be stored in a Db2 database or Cloud Object Storage. Enter your connection information, then click **Test** to verify the connection. You do this by entering the location, hostname or IP address, the database name, and the authentication information from IBM Cloud.
+
+### Location of training data (tutorial example)
 {: #mo-work-model-dets-int-tut-train}
 
 For the interactive tutorial, use the Cloud Object Storage instance that you created and load the [training data](https://raw.githubusercontent.com/pmservice/ai-openscale-tutorials/master/assets/historical_data/german_credit_risk/wml/german_credit_data_biased_training.csv) into a bucket that you create. 
 
 You'll need the following information, which you can obtain by clicking the Cloud Object Storage instance from the IBM Cloud dashboard:
 
-- Login URL: This is the Service Endpoint. From the Navigation pane click **Endpoint**. Copy the `us-geo` public service endpoint and paste it into the Login URL box. Be sure to include the HTTPS:// at the beginning of your URL.  
+- **Login URL**: This is the Service Endpoint. From the Navigation pane click **Endpoint**. Copy the `us-geo` public service endpoint and paste it into the Login URL box. Be sure to include the HTTPS:// at the beginning of your URL.  
 
 For the following two items, from the Navigation pane, click **Service credentials** and then click the **New Credential** button. Retrieve the following two values from the JSON service credentails you just created:
 
-- Resource Instance ID: From the `resource_instance_id` field.
-- API Key: From the `apikey` field.
+- **Resource Instance ID**: From the `resource_instance_id` field.
+- **API Key**: From the `apikey` field.
 
   One of the automatic service credentials does not have enough access to support your training data. You must create your own service credentials to establish access.
   {: note}
 
-#### The training bucket and file
+### The training bucket and file (tutorial example)
 {: #mo-work-model-dets-int-tut-bucket}
 
 - From the drop-down boxes, select the bucket that you created and the `german_credit_data_biased_training.csv` file that you uploaded there.
 
-#### Information about the training data and model
+### Information about the training data and model (tutorial example)
 {: #mo-work-model-dets-int-tut-mods}
 
 - The label column from the training table: For example, for the tutorial, click the **Risk** tile.
 - The features that were used to train the AI deployment: For example, for the tutorial,select all features.
 - The text and categorical features: 
 - The deployment prediction column: For example, for the tutorial, click the **predictedLabel** tile.
-- The transaction ID column: Not required for the interactive setup tutorial, but required for the Application monitor tutorial. For example, for the Application monitor tutorial, click the **transaction_id** tile. The `transaction_id` value is required to connect a machine learning model with business applications and KPIs. Without a matching `transaction_id` column, it is impossible to track correlation between the two monitors.
+- The transaction ID column: Not required for the interactive setup tutorial (click Next to bypass this step), but required for the Application monitor tutorial. 
+   
+   For example, for the Application monitor tutorial, click the **transaction_id** tile. The `transaction_id` value is required to connect a machine learning model with business applications and KPIs. Without a matching `transaction_id` column, it is impossible to track correlation between the two monitors.
 
 
 When you finish providing all the required information, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
@@ -142,14 +145,14 @@ If there is no transaction ID column on the list, please either score your model
 The following sections give some specific information that you encounter depending on the type of model, either [Numeric/categorical data](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-datan) or [Images and Unstructured text](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-datai).
 
 
-### Numeric/categorical data
+## Numeric/categorical data
 {: #mo-nuca}
 
 For numeric or categorical data, you need to provide information about the training data for your model, in order to configure the monitors.
 
 - **Manually configure monitors** - Requires you to provide connection information to your training data. 
 
-  The format of the training data must match the model. For example, if the model expects `M` and `F` for the feature `Gender`, then the training data should have `M` and `F`, not `Male` and `Female`.  The current release of {{site.data.keyword.aios_short}} supports only Db2 database or Cloud Object Storage locations.
+  The format of the training data must match the model. For example, if the model expects `M` and `F` for the feature `Gender`, then the training data should have `M` and `F`, not `Male` and `Female`.  The current release of {{site.data.keyword.aios_short}} supports either Db2 or Cloud Object Storage locations.
 
   - Specify the Location (either `Db2` or `Cloud Object Storage`), then:
       - For a Db2 database, enter the following information:
@@ -182,7 +185,7 @@ For numeric or categorical data, you need to provide information about the train
 - Select the columns used to train the model - these are the features that your model deployment expects in a request.
 - You can choose either a string column or a numeric column as the prediction column.
 
-### Images and Unstructured text
+## Images and Unstructured text
 {: #mo-imun}
 
 - **Images**
@@ -203,7 +206,7 @@ Review your selection summary and click **Save** to continue.
 
   ![Select data table](images/wos-config-summary-monitor.png)
 
-### Next steps
+## Next steps
 {: #mo-next}
 
 To continue configuring monitors, click the **Quality** tab and click **Begin**. For more information, see [Configuring the Quality monitor](/docs/services/ai-openscale?topic=ai-openscale-acc-monitor).
