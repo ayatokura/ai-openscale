@@ -78,27 +78,57 @@ Provide information about your model so that {{site.data.keyword.aios_short}} ca
 
 Specifically to configure monitors, you must provide the following information:
 
-- The location of the training data
+- Specify the Location (either `Db2` or `Cloud Object Storage`), then:
+    - For a Db2 database, enter the following information:
+        - Host name or IP address
+        - Port
+        - Database (name)
+        - Username
+        - Password
+    - For Cloud Object Storage, enter the following information:
+        - Login URL: The Login URL must match the region setting of the bucket where your training data is located. You will specify the training data bucket in the next step.
+        - Resource instance (ID)
+        - API key
+- To ensure a valid connection, click the **Test** button to connect to the trainingdata.
+- Specify the exact location in the Db2 database or Cloud Object Storage wherethetraining data is located.
+    - For a Db2 database, select both a schema and a training table that includes columns expected by your model.
+    - For Cloud Object Storage, select a Bucket and a Data Set.
 
-  You do this by entering the location, hostname or IP address, the database name, and the authentication information.
+### Continuing the interactive tutorial
+{: #mo-work-model-dets-int-tut}
 
-- The training table
+You must enter the location of the training data. Training data must be stored in a Db2 database or Cloud Object Storage. Enter your connection information, then click Test to verify the connection. You do this by entering the location, hostname or IP address, the database name, and the authentication information from IBM Cloud.
 
-  You do this by selecting the schema and table.
+#### Location of training data
+{: #mo-work-model-dets-int-tut-train}
 
-- The label column from the training table 
+For the interactive tutorial, use the Cloud Object Storage instance that you created and load the [training data](https://raw.githubusercontent.com/pmservice/ai-openscale-tutorials/master/assets/historical_data/german_credit_risk/wml/german_credit_data_biased_training.csv) into a bucket that you create. 
 
-  For example, for the tutorial, click the **Risk** tile.
+You'll need the following information, which you can obtain by clicking the Cloud Object Storage instance from the IBM Cloud dashboard:
 
-- The features that were used to train the AI deployment
-- The text and categorical features
-- The deployment prediction column 
+- Login URL: This is the Service Endpoint. From the Navigation pane click **Endpoint**. Copy the `us-geo` public service endpoint and paste it into the Login URL box. Be sure to include the HTTPS:// at the beginning of your URL.  
 
-  For example, for the tutorial, click the **predictedLabel** tile.
+For the following two items, from the Navigation pane, click **Service credentials** and then click the **New Credential** button. Retrieve the following two values from the JSON service credentails you just created:
 
-- The transaction ID column
+- Resource Instance ID: From the `resource_instance_id` field.
+- API Key: From the `apikey` field.
 
-  For example, for the tutorial, click the **transaction_id** tile. The `transaction_id` value is required to connect a machine learning model with business applications and KPIs. Without a matching `transaction_id` column, it is impossible to track correlation between the two monitors.
+  One of the automatic service credentials does not have enough access to support your training data. You must create your own service credentials to establish access.
+  {: note}
+
+#### The training bucket and file
+{: #mo-work-model-dets-int-tut-bucket}
+
+- From the drop-down boxes, select the bucket that you created and the `german_credit_data_biased_training.csv` file that you uploaded there.
+
+#### Information about the training data and model
+{: #mo-work-model-dets-int-tut-mods}
+
+- The label column from the training table: For example, for the tutorial, click the **Risk** tile.
+- The features that were used to train the AI deployment: For example, for the tutorial,select all features.
+- The text and categorical features: 
+- The deployment prediction column: For example, for the tutorial, click the **predictedLabel** tile.
+- The transaction ID column: Not required for the interactive setup tutorial, but required for the Application monitor tutorial. For example, for the Application monitor tutorial, click the **transaction_id** tile. The `transaction_id` value is required to connect a machine learning model with business applications and KPIs. Without a matching `transaction_id` column, it is impossible to track correlation between the two monitors.
 
 
 When you finish providing all the required information, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
