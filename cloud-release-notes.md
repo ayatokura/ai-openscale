@@ -31,6 +31,16 @@ subcollection: ai-openscale
 This document outlines new features for {{site.data.keyword.aios_full_notm}}.
 {: shortdesc}
 
+## 20 January 2020
+{: #rn-20jan2020}
+
+The following new features and changes to {{site.data.keyword.aios_short}} are available.
+
+- __*Explainability for non-space delimited languages*__: {{site.data.keyword.aios_short}} now supports explainability for text models that use underlying data in Japanese, Korean, and Chinese.
+
+   For more information, see [Enabling non-space-delimited language support](/docs/services/ai-openscale?topic=ai-openscale-ie-unstruct-xplan-langsupport).
+
+
 ## 31 October 2019
 {: #rn-31oct2019}
 

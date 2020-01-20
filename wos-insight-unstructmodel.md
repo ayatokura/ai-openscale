@@ -61,8 +61,17 @@ The following example of explainability shows a classification model that evalua
 
 ![Explainability image classification chart is displayed. it shows confidence levels for the unstructured text](images/wos-insight-explain-text.png)
 
-Word highlighting is not supported for languages, such as Japanese, Chinese, and Korean that are not space-delimited.
-{: note}
+## Enabling non-space-delimited language support
+{: #ie-unstruct-xplan-langsupport}
+
+Explainability and the use of word highlighting is supported even for languages, such as Japanese, Chinese, and Korean that are not space-delimited. You have the ability to turn this feature on or off. You must enable this feature manually. Optionally, you can have the system auto-detect the language. With this feature enabled, expanations that are generated for non-whitespace languages such as Japanese, Chinese, or Korean properly indicate which characters influence the model's prediction. 
+
+1. From the **Configure** window, click **Explainability**.
+2. Click the **Language support** tile, and then set the **Word segmentation** to **On**. 
+3. After you enable word segementation, the **Language** drop-down field is enabled and the "Automatically detect" option is selected by default. To manually set the language, click the drop-down box and select the language from the list.
+4. Click the **Save** button.
+
+After you save your changes, the tile in the **Explainability** configuration reflects the changed state.
 
 ## Unstructured text model example
 {: #ie-unstruct-ntbkssample}

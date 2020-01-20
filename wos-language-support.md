@@ -50,7 +50,6 @@ Because this is the first phase of support for a fully-globalized product, langu
 - The {{site.data.keyword.aios_short}} API has not been globalized.
 - The installation mechanism for {{site.data.keyword.wos4d_full}} has not been globalized.
 - Bidirectional languages are not currently supported.
-- Explainability for unstructured text models is not supported for continuous script languages, such as Japanese, Chinese, and Korean, which don't use whitespace or punctuation characters to separate words.
 
 ## Limitations for {{site.data.keyword.aios_short}} documentation
 {: #sl-langs-limit-doc}
