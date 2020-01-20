@@ -44,7 +44,7 @@ The following issues are common for both {{site.data.keyword.aios_full}} on Clou
 {: #ts-trouble-common-autoai-binary}
 {: troubleshoot}
 
-You receive an error message about mismatched data when using AutoAI for binary classification.
+You receive an error message about mismatched data when using AutoAI for binary classification. Note that AutoAI is only supported in {{site.data.keyword.wos4d_full}}. 
 {: tsSymptoms} 
 
 For binary classification type, AutoAI automatically sets the data type of the prediction column to boolean. 

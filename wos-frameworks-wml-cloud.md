@@ -52,7 +52,7 @@ Table 1. Framework support details
 | XGBoost | Regression | Structured |
 {: caption="Framework support details" caption-side="top"}
 
-<sup>1</sup>To learn more about AutoAI, see [AutoAI implementation details](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html?audience=wdp&context=analytics){: external}. For models that have where the training data is in Cloud Object Storage, there is no support for fairness attributes of type boolean. However, if the training data is in Db2, {{site.data.keyword.aios_short}} supports fairness attributes that are boolean type. When using the AutoAI option, {{site.data.keyword.aios_short}} does not support models where the data type of the model prediction is binary. You must change such models so that the data type of their prediction is a string data type.
+<sup>1</sup>AutoAI is only supported in {{site.data.keyword.wos4d_full}}. To learn more about AutoAI, see [AutoAI implementation details](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html?audience=wdp&context=analytics){: external}. For models that have where the training data is in Cloud Object Storage, there is no support for fairness attributes of type boolean. However, if the training data is in Db2, {{site.data.keyword.aios_short}} supports fairness attributes that are boolean type. When using the AutoAI option, {{site.data.keyword.aios_short}} does not support models where the data type of the model prediction is binary. You must change such models so that the data type of their prediction is a string data type.
 {: note}
 
 <sup>2</sup>Fairness and drift metrics are not supported for unstructured (image or text) data types.
