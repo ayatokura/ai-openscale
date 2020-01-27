@@ -38,18 +38,18 @@ Table 1. Framework support details
 
 | Framework | Problem type | Data type |
 |:---|:---:|:---:|
-| AutoAI<sup>1</sup> | Classification (binary and multi classes) | Structured |
+| AutoAI<sup>1</sup> | Classification (binary and multi classes) | Structured (data, text) |
 | AutoAI | Regression | Structured or Unstructured<sup>2</sup> (text only) |
-| Apache Spark MLlib | Classification | Structured |
-| Apache Spark MLLib | Regression | Structured |
+| Apache Spark MLlib | Classification | Structured (data, text) |
+| Apache Spark MLLib | Regression | Structured (data, text) |
 | Keras with TensorFlow<sup>3</sup><sup>&</sup><sup>4</sup> | Classification | Unstructured<sup>2</sup> (image, text) |
 | Keras with TensorFlow<sup>3</sup><sup>&</sup><sup>4</sup> | Regression | Unstructured<sup>2</sup> (image, text) |
-| Python function | Classification | Structured |
-| Python function | Regression | Structured |
-| scikit-learn | Classification | Structured |
-| scikit-learn | Regression | Structured |
-| XGBoost<sup>5</sup> | Classification | Structured |
-| XGBoost | Regression | Structured |
+| Python function | Classification | Structured (data, text) |
+| Python function | Regression | Structured (data, text) |
+| scikit-learn | Classification | Structured (data, text) |
+| scikit-learn | Regression | Structured (data, text) |
+| XGBoost<sup>5</sup> | Classification | Structured (data, text) |
+| XGBoost | Regression | Structured (data, text) |
 {: caption="Framework support details" caption-side="top"}
 
 <sup>1</sup>AutoAI is only supported in {{site.data.keyword.wos4d_full}}. To learn more about AutoAI, see [AutoAI implementation details](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html?audience=wdp&context=analytics){: external}. For models that have where the training data is in Cloud Object Storage, there is no support for fairness attributes of type boolean. However, if the training data is in Db2, {{site.data.keyword.aios_short}} supports fairness attributes that are boolean type. When using the AutoAI option, {{site.data.keyword.aios_short}} does not support models where the data type of the model prediction is binary. You must change such models so that the data type of their prediction is a string data type.
