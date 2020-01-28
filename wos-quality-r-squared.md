@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2019-11-22"
+lastupdated: "2020-01-28"
 
 keywords: metrics, monitoring, custom metrics, thresholds, R squared, score, schedule, recommendation, r2
 

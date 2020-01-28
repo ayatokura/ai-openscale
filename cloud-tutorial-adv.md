@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2019-11-22"
+lastupdated: "2020-01-28"
 
 keywords: tutorial, Jupyter notebooks, Watson Studio projects, projects, models, deploy, 
 
