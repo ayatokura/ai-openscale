@@ -53,6 +53,34 @@ The following limitations and known issues are common to both {{site.data.keywor
 
 <p>&nbsp;</p>
 
+### Size limit of the feature column
+{: #wos-limitations-feat-col-size-limit}
+
+When working with text, the column can be very large and this may not fit into the database tables created by payload logging.
+
+The total size of all the input features for a model cannot exceed the width of the payload logging table in the datamart database (with some buffer for the internal-use columns that {{site.data.keyword.aios_short}} itself adds). In addition, apart from the width there is also a hard-coded limit of 1012 features.
+
+The following table summarizes what this means for models with different sizes of features:
+
+Table 1: Feature column limits
+
+Feature type | Feature # limit
+-|-
+int64 or float64 or string length 1-64 | 1012
+string length 65-2048 | 460
+string length 2059-32K | 29
+{: caption="Feature column limits" caption-side="top"}
+
+
+Because many models have features of mixed types, the following sample configurations can be used for planning purposes:
+
+- For int64 or float64 or strings of length 64 or less, count as 64.
+- For strings from 65 to 2048, count as 2048.
+- For strings from 2048 to 32K, count as 32K.
+- The total length of all features should be no more than ~900K.
+
+<p>&nbsp;</p>
+
 
 ### Not all Db2 instances function identically
 {: #wos-limitations-db2-version}
