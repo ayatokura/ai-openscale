@@ -33,6 +33,8 @@ Watson OpenScale
         wos-iam.md
         wos-connect-deploy.md
         wos-connect-db.md
+        wos-connect-other.md
+        cloud-connect-ml.md
         wos-scoring.md
         wos-payload-logging.md
         wos-connect-ml.md
