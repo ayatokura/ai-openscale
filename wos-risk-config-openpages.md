@@ -24,75 +24,11 @@ subcollection: ai-openscale
 {:swift: .ph data-hd-programlang='swift'}
 {:faq: data-hd-content-type='faq'}
 
-# Manage model risk ![beta tag](images/beta.png)
-{: #mrm-ovr}
+# Configure model governance with IBM OpenPages MRG ![beta tag](images/beta.png)
+{: #mrm-risk-config-openpages}
 
-Manage model risk with {{site.data.keyword.aios_short}}. Financial institutions manage many complex and integrated areas of risk. Management of model risk is critical to meet regulatory requirements and to protect institutions from operational and reputational risk.
+YYY
 {: shortdesc}
-
-## What is a Model?
-{: #mrm-ovr-model}
-
-The Federal Reserve and Office of the Comptroller of the Currency guidance SR Letter 11-7 defines a Model as “…a quantitative method, system, or approach that applies statistical, economic, financial, or mathematical theories, techniques, and assumptions to process input data into quantitative estimates.” 
-These types of models, either deterministic or probabilistic, raise different model risk management challenges.
-
-## What is Model Risk? 
-{: #mrm-ovr-model-risk}
-
-Model risk is a type of risk that occurs when a mathematical model is used in financial institutions to predict and measure quantitative information, and the model performs inadequately. This can lead to adverse outcomes for the firm and operational losses in millions. 
-
-## Model Development Cycle
-{: #mrm-ovr-model-dev-cycle}
-
-There are many challenges with machine learning and deep learning models. For example, you need to face the lack of knowledge of methods used by Model Developers / Vendors along with inconsistent documentation and increased volume of model change.
-
-Tests to be run on machine learning and deep learning models differ from straightforward application testing: 
-
-•	Drift: Any change in input data also known as Drift can cause the model to make inaccurate decisions, impacting business KPIs 
-•	Bias: Training data may be cleaned to be free from bias but runtime data may induce biased behavior of model 
-•	Explainability: Traditional statistical models are simpler to interpret and explain 
-•	Missing Validation/Test Data: Model training data sets may not capture the range of data or combinations that could be encountered in runtime 
-Validation and monitoring of AI models is necessary in addition to govern and manage risk.
-
-## Watson OpenScale
-{: #mrm-ovr-wos}
-
-IBM offers a model risk management solution for financial services with IBM Watson OpenScale. IBM Watson OpenScale monitors and measures outcomes from AI Models across its lifecycle and performs model validations. Specifically, you can use the following configurations:
-
-- Watson OpenScale
-
-  Use Watson OpenScale as a stand-alone solution. Enable the model risk management features to create pre-production and production repositories and compare models.
-
-- Watson OpenScale with IBM OpenPages MRG
-  
-  Use Watson OpenScale as part of an overall model risk governance solution by integrating with IBM OpenPages MRG.
-
-
-Set up your beta environment
-Let’s get started! Before you begin using the model risk management features, you’ll need to set up the following services on IBM Cloud:
-•	Watson OpenScale, which provides MRM features and metrics 
-•	Watson Machine Learning (2 separate instances, one for pre-prod and one for prod), which provides the engine for creating predictive models. This tutorial shows how to use Watson Machine Learning as model serving engine, but you can also use any other supported ML engine)
-•	Watson Studio, which provides the ability to run notebooks and secure assets. (This tutorial shows how to use Watson Studio to create the provided sample models, but you can also use any other IDE to build models)
-•	[Optional] Cloud Object Storage, which gives you a place to store model assets, such as training data. For the tutorial, you’ll use an internal database, however, you might want to set up Cloud Object Storage for your own work.
-Required file
-In addition to the previously mentioned services, you must also have the following sample file:
-•	IBM_Cloud_MRM.ipynb
-The file can be downloaded from the following Box folder: https://ibm.box.com/v/modelriskmanagement/
-Create an IBMid and IBM Cloud account
-In case you don't have an IBM Cloud account yet, you’ll need to start by creating one.
-1.	Point your web browser to the following URL: https://cloud.ibm.com/registration
-2.	Follow instructions to create an IBMid and IBM Cloud Account. 
-Add services to your IBM Cloud account
-As soon as you have an IBM Cloud account, you can use the dashboard to add the required services. For each service, you can choose the Lite or Free plan. You must have instances for the following services: Watson OpenScale, Watson Studio, and Watson Machine Learning (2 Instances).
-1.	From the Navigation Menu (    ), click Resource list.
-2.	Click the Create resource button.
-3.	Search for each of the required services by entering keywords, such as openscale, studio, or machine learning.
-Note: You might not be able to add two Lite plan instances of Watson Machine Learning to your account. Either create the second instance using the Watson Machine Learning Standard plan or create a second IBM Cloud Account that is linked to a separate email address to create the second Watson Machine Machine Learning instance (Link to register the second account: https://cloud.ibm.com/registration).
-Add a Cloud Object Storage instance  
-Use Cloud Object Storage to store training data. After you create an instance Cloud Object Storage, Watson Studio, Watson Machine Learning, and Watson OpenScale will be able to access the buckets that are created as part of the model creation process.
-1.	Use your primary IBMid to log into your IBM Cloud account.
-2.	From the IBM Cloud Dashboard, click the Add resource button, then click Storage.
-3.	Click the Object Storage tile, select the Lite plan, then click the Create button.
 
   Work in Watson Studio
 In IBM Watson Studio, you will create a project and run a notebook to perform most of the set-up tasks, including the following steps:
@@ -178,5 +114,5 @@ Watson OpenScale enables you to compare models by looking at the key metrics in 
 
 
 ## Next steps
-{: #mrm-next}
+{: #mrm-risk-config-openpages-next}
 
