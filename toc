@@ -62,6 +62,12 @@ Watson OpenScale
         wos-monitor-bkpi.md
 
     {: .topicgroup}
+    Configuring model risk manager
+        wos-risk-config-ovr.md
+        wos-risk-config-ovr-wos-only.md
+        wos-risk-config-openpages.md
+
+    {: .topicgroup}
     Get model insights
         wos-insight-overview.md
         wos-insight-timechart.md
@@ -79,6 +85,12 @@ Watson OpenScale
         wos-insight-app-overview.md
         wos-insight-app-performance_metrics.md
         wos-insight-app-charts.md
+
+    {: .topicgroup}
+    Model risk and governance
+        wos-risk-overview.md
+        wos-risk-wos-only.md
+        wos-risk-openpages-mrg.md
 
     {: .topicgroup}
     Fairness
