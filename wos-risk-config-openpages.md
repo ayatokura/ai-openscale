@@ -35,7 +35,9 @@ In IBM Watson Studio, you will create a project and run a notebook to perform mo
 •	create 2 machine models
 •	connect Watson OpenScale to IBM OpenPages
 •	create model deployments and configure monitors in Watson OpenScale
+
 Step 1: Create the pre-prod project in Watson Studio
+
 When you first start Watson Studio (hint: use the IBM Cloud dashboard, find your instance of Watson Studio and click the Get Started button) you have the option of taking a tour. Your first task is to create a project to which you associate the Watson Machine Learning instance that you created for your pre-production work.
 1.	Click the Create a project tile.
 2.	Click the Create an empty project tile. 
@@ -44,13 +46,16 @@ When you first start Watson Studio (hint: use the IBM Cloud dashboard, find your
 5.	Click the Create button.
 
 Step 2: Associate your new project with the Watson Machine Learning instance
+
 Now you need to associate your pre-prod instance of Watson Machine Learning to your project. You’ll do this by adding it as an associated service.
 1.	From the MRM – Pre-prod project screen, click the Settings tab.
 2.	In the Associated services pane, click the Add service button, and then click Watson.
 3.	Find the Watson Machine Learning tile and click Add.
 4.	From the Machine Learning configuration window, click the Existing tab.
 5.	From the Existing Service Instance drop-down box, select the Machine Learning-Pre-Prod instance and click the Select button.
+
 Step 3: Add the sample beta notebook to the project
+
 As part of your closed beta information package, you were given access to a Watson Studio notebook. You’ll use it to set up your connection between Watson OpenScale and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in Watson OpenScale. 
 1.	From the project page, click the Add to project button.
 2.	Click the Notebook tile.
