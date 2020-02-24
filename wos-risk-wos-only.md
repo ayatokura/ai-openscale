@@ -37,9 +37,9 @@ After you set up and activate the model risk management features, you can both s
 1. From the Insights dashboard, click the model deployment tile
 2. From the Actions drop-down box, click one of the following analysis options:
    
-   a. Past evaluations: Lists all the previous versions of the evaluation. 
-   b. Compare: Compare any of the models, but especially versions of the same model, for best performance.
-   c. Download report PDF: Generates the model summary report, which gives you all of the metrics and the explanation for why they were scored the way they were. 
+   1. Past evaluations: Lists all the previous versions of the evaluation. 
+   2. Compare: Compare any of the models, but especially versions of the same model, for best performance.
+   3. Download report PDF: Generates the model summary report, which gives you all of the metrics and the explanation for why they were scored the way they were. 
 
 ## Deploy a new model to production in Watson OpenScale
 

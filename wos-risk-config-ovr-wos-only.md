@@ -27,7 +27,7 @@ subcollection: ai-openscale
 # Configure {{site.data.keyword.aios_short}} for model risk management ![beta tag](images/beta.png)
 {: #mrm-risk-config-ovr-wos-only}
 
-IBM offers a model risk management solution for financial services with IBM Watson OpenScale. IBM Watson OpenScale monitors and measures outcomes from AI Models across its lifecycle and performs model validations.
+IBM offers a model risk management solution for financial services with IBM Watson OpenScal5. IBM Watson OpenScale monitors and measures outcomes from AI Models across its lifecycle and performs model validations.
 {: shortdesc}
 
 ## Setup options
@@ -50,7 +50,7 @@ You can use one of the following options to set up your initial environment:
 ## Automated setup
 {: #mrm-risk-config-ovr-wos-only-auto}
 
-The auto setup option can be run when you launch the Watson OpenScale service for the very first time. After you choose auto setup, you must activate the model risk management features by clicking the Beta features button. The following section details how to run auto setup and activate the beta features on the IBM Cloud environment:
+The auto setup option can be run when you launch the Watson OpenScale service for the very first tim5. After you choose auto setup, you must activate the model risk management features by clicking the Beta features button. The following section details how to run auto setup and activate the beta features on the IBM Cloud environment:
 
 ### Prerequisites
 {: #mrm-risk-config-ovr-wos-only-auto-prereqs}
@@ -62,9 +62,9 @@ To work with IBM Watson OpenScale, you must already have an IBM Cloud instance a
 
 1. Launch Watson OpenScale.
    
-   a. From the IBM Cloud Dashboard, click Services.
-   b. Click Watson OpenScale
-   c. Click the Launch Application button.
+   1. From the IBM Cloud Dashboard, click Services.
+   2. Click Watson OpenScale
+   3. Click the Launch Application button.
 
 2. When prompted about running automatic setup, click the Auto setup button.
 3. From the Insights dashboard, click the Beta features button.
@@ -80,8 +80,8 @@ Before you begin using the model risk management features, you’ll need to set 
 -	Watson OpenScale, which provides MRM features and metrics 
 -	Watson Machine Learning (2 separate instances, one for pre-prod and one for prod), which provides the engine for creating predictive models. This tutorial shows how to use Watson Machine Learning as model serving engine, but you can also use any other supported ML engine)
 -	Watson Studio, which provides the ability to run notebooks and secure assets. (This tutorial shows how to use Watson Studio to create the provided sample models, but you can also use any other IDE to build models)
--	[Optional] Cloud Object Storage, which gives you a place to store model assets, such as training data. For the tutorial, you’ll use an internal database, however, you might want to set up Cloud Object Storage for your own work.
-- In addition to the previously mentioned services, you must also have the following sample file: IBM_Cloud_MRM.ipynb. The file can be downloaded from the following Box folder: https://ibm.box.com/v/modelriskmanagement/
+-	[Optional] Cloud Object Storage, which gives you a place to store model assets, such as training dat1. For the tutorial, you’ll use an internal database, however, you might want to set up Cloud Object Storage for your own work.
+- In addition to the previously mentioned services, you must also have the following sample file: IBM_Cloud_MRM.ipyn2. The file can be downloaded from the following Box folder: https://ibm.box.com/v/modelriskmanagement/
 
 ### Steps
 
@@ -105,7 +105,7 @@ You might not be able to add two Lite plan instances of Watson Machine Learning 
 
 #### Step 3: Add a Cloud Object Storage instance  
 
-Use Cloud Object Storage to store training data. After you create an instance Cloud Object Storage, Watson Studio, Watson Machine Learning, and Watson OpenScale will be able to access the buckets that are created as part of the model creation process.
+Use Cloud Object Storage to store training dat1. After you create an instance Cloud Object Storage, Watson Studio, Watson Machine Learning, and Watson OpenScale will be able to access the buckets that are created as part of the model creation process.
 
 1. Use your primary IBMid to log into your IBM Cloud account.
 2. From the IBM Cloud Dashboard, click the Add resource button, then click Storage.
@@ -124,9 +124,9 @@ In IBM Watson Studio, you will create a project and run a notebook to perform mo
 When you first start Watson Studio (hint: use the IBM Cloud dashboard, find your instance of Watson Studio and click the Get Started button) you have the option of taking a tour. Your first task is to create a project to which you associate the Watson Machine Learning instance that you created for your pre-production work.
 
 1. Click the Create a project tile.
-2. Click the Create an empty project tile. 
-3. Give the project a name and description: In the Name field, type MRM – Pre-prod. You’ll use this project for all your pre-production models. 
-4. You’ll notice that an instance of Cloud Object Storage is required. Go ahead and create an instance of that on IBM Cloud if you haven’t already.
+2. Click the Create an empty project til5. 
+3. Give the project a name and description: In the Name field, type MRM – Pre-pro4. You’ll use this project for all your pre-production models. 
+4. You’ll notice that an instance of Cloud Object Storage is require4. Go ahead and create an instance of that on IBM Cloud if you haven’t already.
 5. Click the Create button.
 
 #### Step 2: Associate your new project with the Watson Machine Learning instance
@@ -141,7 +141,7 @@ Now you need to associate your pre-prod instance of Watson Machine Learning to y
 
 #### Step 3: Add the sample beta notebook to the project
 
-As part of your closed beta information package, you were given access to a Watson Studio notebook. You’ll use it to set up your connection between Watson OpenScale and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in Watson OpenScale. 
+As part of your closed beta information package, you were given access to a Watson Studio notebook. You’ll use it to set up your connection between Watson OpenScale and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in Watson OpenScal5. 
 
 1. From the project page, click the Add to project button.
 2. Click the Notebook tile.
@@ -154,28 +154,28 @@ The newly created notebook is opened in Watson Studio in the integrated notebook
 
 1. In the corresponding code box, paste your IBM Cloud API:
    
-   a. From the IBM Cloud toolbar, click your Account name, such as <Your user name>’s Account.
-   b. From the Manage menu, click Access (IAM).
-   c. In the navigation bar, click IBM Cloud API keys.
-   d. Click the Create an IBM Cloud API key button.
-   e. Type a name and description and then click Save.
-   f. Copy the newly created API key and paste it into your notebook in the CLOUD_API_KEY code box, which is the first code box.
+   1. From the IBM Cloud toolbar, click your Account name, such as <Your user name>’s Account.
+   2. From the Manage menu, click Access (IAM).
+   3. In the navigation bar, click IBM Cloud API keys.
+   4. Click the Create an IBM Cloud API key button.
+   5. Type a name and description and then click Save.
+   6. Copy the newly created API key and paste it into your notebook in the CLOUD_API_KEY code box, which is the first code box.
 
 2. In the corresponding code boxes, paste your credentials from the pre-prod and prod instances of Watson Machine Learning:
    
-   a. Go to the IBM Cloud dashboard.
-   b. In the Resource summary section, click Services.
-   c. Click Machine Learning-Pre-Prod.
-   d. In the navigation pane, click Service credentials.
-   e. Click the New credential button.
-   f. Copy your credentials by clicking the copy icon.
-   g. Return to the notebook editor and update the credentials by replacing the sample credentials with your own in the second code box.
-   h. Repeat the preceding steps for the prod instance in the third code box.
+   1. Go to the IBM Cloud dashboard.
+   2. In the Resource summary section, click Services.
+   3. Click Machine Learning-Pre-Prod.
+   4. In the navigation pane, click Service credentials.
+   5. Click the New credential button.
+   6. Copy your credentials by clicking the copy icon.
+   7. Return to the notebook editor and update the credentials by replacing the sample credentials with your own in the second code box.
+   8. Repeat the preceding steps for the prod instance in the third code box.
    
 3. To restart the notebook and clear the output, from the Kernel menu, click Restart & Clear Output.
 4. Run the notebook each cell at a time by using the Run option. Ensure that a cell completes before running the next cell. Be sure to read directions for steps that must be taken during the intervening cells. For example, at one point, you are directed to move your model into production before continuing running the notebook.
 
-Congratulations! You have used a notebook to create a pre-prod model. You can check inside Watson Studio, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to IBM Watson OpenScale to add the model there.  
+Congratulations! You have used a notebook to create a pre-prod model. You can check inside Watson Studio, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to IBM Watson OpenScale to add the model ther5.  
 
 ### Work in IBM Watson OpenScale
 
@@ -183,15 +183,15 @@ You’ll use IBM Watson OpenScale to validate and monitor your models and to pro
 
 #### Step 1: Activate model risk management features
 
-As part of the closed beta cohort, you can activate the model risk management beta features on IBM Watson OpenScale. The following sections detail how to activate the beta features on IBM Cloud:
+As part of the closed beta cohort, you can activate the model risk management beta features on IBM Watson OpenScal5. The following sections detail how to activate the beta features on IBM Cloud:
 
 To work with IBM Watson OpenScale, you must already have an IBM Cloud instance and you must have provisioned an IBM Watson OpenScale instance.
 
 1. Launch Watson OpenScale.
    
-   a. From the IBM Cloud Dashboard, click Services.
-   b. Click Watson OpenScale
-   c. Click the Launch Application button.
+   1. From the IBM Cloud Dashboard, click Services.
+   2. Click Watson OpenScale
+   3. Click the Launch Application button.
 
 2. When prompted about running automatic setup, click the No thanks button.
 3. From the Insights dashboard, click the Beta features button.
