@@ -30,7 +30,7 @@ subcollection: ai-openscale
 By using IBM OpenPages in conjunction with {{site.data.keyword.aios_short}} you can create an end-to-end model governance solution. Start by creating a new model in OpenPages, and then take the model through the candidate and development workflows in OpenPages, link the model to an example model OpenScale, explore the OpenScale features, export OpenScale metrics for the model to OpenPages as part of the pre-implementation validation process, and explore the ways to view and interpret these metrics.
 {: shortdesc}
 
-## Work in IBN OpenPages
+## Work in IBM OpenPages
 
 ### Step 1: Set up a New Model in OpenPages
 
