@@ -206,6 +206,5 @@ To work with IBM Watson OpenScale, you must already have an IBM Cloud instance a
 ## Next steps
 {: #mrm-risk-config-ovr-wos-only-next}
 
-Use the analysis of fairness to redefine the model, possibly by using a different algorithm. 
-Watson OpenScale enables you to compare models by looking at the key metrics in a side-by-side comparison. Use this feature to determine which version of a model is the best one to send to production or which model might need work:
-
+- [Model risk management and model governance](/docs/services/ai-openscale?topic=ai-openscale-mrm-ovr)
+- [Model risk management](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-wos-only)

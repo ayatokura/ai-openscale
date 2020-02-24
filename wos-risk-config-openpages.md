@@ -123,3 +123,5 @@ Use Cloud Object Storage to store training data. After you create an instance Cl
 ## Next steps
 {: #mrm-risk-config-openpages-next}
 
+- [Model risk management and model governance](/docs/services/ai-openscale?topic=ai-openscale-mrm-ovr)
+- [Model governance](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-openpages-mrg)
