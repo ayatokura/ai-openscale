@@ -192,13 +192,13 @@ Push the best model to production. Create a production record by importing from 
 2. Return to the sample beta notebook and run the cells to send the model to production.
 3. You can now view the production model deployment tile. In a regular production environment, it initially appears empty until enough data is gathered and time has passed for metric calculation to be triggered. For the beta, the notebook adds data and runs the monitors so that you can see the results right away.
 
+
+## Next steps
+{: #mrm-risk-openpages-mrg-next}
+
 Use the analysis of fairness to redefine the model, possibly by using a different algorithm. 
 Watson OpenScale enables you to compare models by looking at the key metrics in a side-by-side comparison. Use this feature to determine which version of a model is the best one to send to production or which model might need work:
 
 Because of the connection to Watson OpenScale, you can get alerts in IBM OpenPages for items that require attention or missing pieces of information: 
 
 You can set up a regular schedule for sending metrics to IBM OpenPages:
-
-## Next steps
-{: #mrm-risk-openpages-mrg-next}
-

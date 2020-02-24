@@ -33,6 +33,4 @@ Before you can use either the model risk managment or model governance features,
 - To set up model risk management using Watson OpenScale, see [Configure Watson OpenScale for model risk management](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only).
 - To set up model governance using Watson OpenScale and IBM OpenPages, see [Configure model governance with IBM OpenPages MRG](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-openpages).
 
-## Next steps
-{: #mrm-risk-config-ovr-next}
 

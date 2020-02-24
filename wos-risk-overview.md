@@ -66,9 +66,3 @@ IBM offers a model risk management solution for financial services with IBM Wats
 - [Model governance with Watson OpenScale and IBM OpenPages MRG](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-openpages-mrg)
   
   Use Watson OpenScale as part of an overall model risk governance solution by integrating with IBM OpenPages MRG.
-
-## Next steps
-{: #mrm-ovr-next}
-
-
-
