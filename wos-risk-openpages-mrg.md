@@ -65,8 +65,6 @@ For the closed beta, the typical workflow rules are relaxed to enable the same u
 4. Select Action “Assign to Developer”
 5. Select Action “Submit for Pre Implementation Review”
 
- 
-
 ## Work in Watson Studio
 
 In IBM Watson Studio, you will create a project and run a notebook to perform most of the set-up tasks, including the following steps:

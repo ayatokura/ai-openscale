@@ -24,7 +24,7 @@ subcollection: ai-openscale
 {:swift: .ph data-hd-programlang='swift'}
 {:faq: data-hd-content-type='faq'}
 
-# Manage model risk ![beta tag](images/beta.png)
+# Model risk management and model governance ![beta tag](images/beta.png)
 {: #mrm-ovr}
 
 Manage model risk with {{site.data.keyword.aios_short}}. Financial institutions manage many complex and integrated areas of risk. Management of model risk is critical to meet regulatory requirements and to protect institutions from operational and reputational risk.
@@ -48,22 +48,22 @@ There are many challenges with machine learning and deep learning models. For ex
 
 Tests to be run on machine learning and deep learning models differ from straightforward application testing: 
 
-•	Drift: Any change in input data also known as Drift can cause the model to make inaccurate decisions, impacting business KPIs 
-•	Bias: Training data may be cleaned to be free from bias but runtime data may induce biased behavior of model 
-•	Explainability: Traditional statistical models are simpler to interpret and explain 
-•	Missing Validation/Test Data: Model training data sets may not capture the range of data or combinations that could be encountered in runtime 
+- Drift: Any change in input data also known as Drift can cause the model to make inaccurate decisions, impacting business KPIs 
+- Bias: Training data may be cleaned to be free from bias but runtime data may induce biased behavior of model 
+- Explainability: Traditional statistical models are simpler to interpret and explain 
+- Missing Validation/Test Data: Model training data sets may not capture the range of data or combinations that could be encountered in runtime 
 Validation and monitoring of AI models is necessary in addition to govern and manage risk.
 
-## Watson OpenScale
+## Options
 {: #mrm-ovr-wos}
 
 IBM offers a model risk management solution for financial services with IBM Watson OpenScale. IBM Watson OpenScale monitors and measures outcomes from AI Models across its lifecycle and performs model validations. Specifically, you can use the following configurations:
 
-- Watson OpenScale
+- [Model risk management with Watson OpenScale](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-wos-only)
 
   Use Watson OpenScale as a stand-alone solution. Enable the model risk management features to create pre-production and production repositories and compare models.
 
-- Watson OpenScale with IBM OpenPages MRG
+- [Model governance with Watson OpenScale and IBM OpenPages MRG](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-openpages-mrg)
   
   Use Watson OpenScale as part of an overall model risk governance solution by integrating with IBM OpenPages MRG.
 
