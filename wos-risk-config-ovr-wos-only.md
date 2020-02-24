@@ -35,15 +35,15 @@ IBM offers a model risk management solution for financial services with IBM Wats
 
 You can use one of the following options to set up your initial environment:
 
-- [Automated setup]()
+- [Automated setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only#mrm-risk-config-ovr-wos-only-auto)
   
   Takes just a few minutes to create a workable system with sample data on a publically hosted lite system
 
-- [Notebook setup]()
+- [Notebook setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only#mrm-risk-config-ovr-wos-only-notebook)
   
   Enables you to control some of the setup parameters and can be used later for managing your own models
 
-- [Manual setup]()
+- [Manual setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only#manual-setup)
   
   Gives you the most control over resources and options
 

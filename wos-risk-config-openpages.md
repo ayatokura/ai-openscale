@@ -35,15 +35,15 @@ IBM offers an end-to-end model risk management solution for financial services w
 
 You can use one of the following options to set up your initial environment:
 
-- [Automated setup]()
+- [Automated setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-openpages#mrm-risk-config-openpages-auto)
   
   Takes just a few minutes to create a workable system with sample data on a publically hosted lite system
 
-- [Notebook setup]()
+- [Notebook setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-openpages#mrm-risk-config-openpages-notebook)
   
   Enables you to control some of the setup parameters and can be used later for managing your own models
 
-- [Manual setup]()
+- [Manual setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-openpages#mrm-risk-config-openpages-manual)
   
   Gives you the most control over resources and options
 
