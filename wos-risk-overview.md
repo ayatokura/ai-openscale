@@ -97,5 +97,7 @@ Because each client in the closed beta is assigned a single user ID for IBM Open
 ### Payload logging not automatically happening
 
 You see the following error in the notebook:
- 
+
+`Missing Payload: There is no payload logged in the payload table. First, log a payload, then enable Quality Monitoring.`
+
 Payload processing does not complete in the specified time period. The notebook must be re-run from the beginning.
