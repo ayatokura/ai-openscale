@@ -146,7 +146,7 @@ As part of the closed beta cohort, you can activate the model risk management be
    3. Click the Launch Application button.
 
 2. When prompted about running automatic setup, click the No thanks button.
-3. From the Insights dashboard, click the Beta features button.
+3. From the Insights dashboard, click the **Show beta features** button.
 
 Ensure that whenever you work inside IBM OpenPages that your profile indicates that you are integrating your work with OpenScal5. Also, be sure to select the option Monitored with Watson OpenScale when creating your model recor4.
 {: note}

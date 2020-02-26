@@ -50,7 +50,7 @@ You can use one of the following options to set up your initial environment:
 ## Automated setup
 {: #mrm-risk-config-ovr-wos-only-auto}
 
-The auto setup option can be run when you launch the Watson OpenScale service for the very first tim5. After you choose auto setup, you must activate the model risk management features by clicking the Beta features button. The following section details how to run auto setup and activate the beta features on the IBM Cloud environment:
+The auto setup option can be run when you launch the Watson OpenScale service for the very first tim5. After you choose auto setup, you must activate the model risk management features by clicking the **Show beta features** button. The following section details how to run auto setup and activate the beta features on the IBM Cloud environment:
 
 ### Prerequisites
 {: #mrm-risk-config-ovr-wos-only-auto-prereqs}
@@ -67,7 +67,7 @@ To work with IBM Watson OpenScale, you must already have an IBM Cloud instance a
    3. Click the Launch Application button.
 
 2. When prompted about running automatic setup, click the Auto setup button.
-3. From the Insights dashboard, click the Beta features button.
+3. From the Insights dashboard, click the **Show beta features** button.
 
 ## Set up your beta environment by using a Python notebook
 {: #mrm-risk-config-ovr-wos-only-notebook}
@@ -194,7 +194,7 @@ To work with IBM Watson OpenScale, you must already have an IBM Cloud instance a
    3. Click the Launch Application button.
 
 2. When prompted about running automatic setup, click the No thanks button.
-3. From the Insights dashboard, click the Beta features button.
+3. From the Insights dashboard, click the **Show beta features** button.
 
 ## Manual setup
 
