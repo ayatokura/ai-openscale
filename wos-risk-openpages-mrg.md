@@ -168,8 +168,10 @@ Ensure that whenever you work inside IBM OpenPages that your profile indicates t
 So that the two services can be fully integrated, you must add your IBM OpenPages URL and authentication credentials to Watson OpenScale.
 
 1. From the Watson OpenScale side bar, click the **Configure** ![configure icon is displayed](images/wos-configure-tab.png) icon.
-2. Click **Integrations** and then click the **Edit** icon.
+2. Click **Integrations** and then in the IBM OpenPages tile, click the **Edit** ![the edit icon is displayed](images/wos-edit-icon.png) icon.
 3. Type the URL, username, and password for the IBM OpenPages instance that you use with Watson OpenScale and click **Save**.
+
+![the OpenPages configuration screen with URL, username and password fields](images/wos-openpages-config.png).
 
 ### Step 3: Perform analysis in Watson OpenScale
 {: #mrm-risk-openpages-mrg-wosstep2}
