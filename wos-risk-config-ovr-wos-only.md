@@ -62,26 +62,27 @@ To work with IBM Watson OpenScale, you must already have an IBM Cloud instance a
 
 1. Launch Watson OpenScale.
    
-   1. From the IBM Cloud Dashboard, click Services.
-   2. Click Watson OpenScale
-   3. Click the Launch Application button.
+   1. From the **IBM Cloud Dashboard**, click **Services**.
+   2. Click **Watson OpenScale**.
+   3. Click the **Launch Application** button.
 
-2. When prompted about running automatic setup, click the Auto setup button.
-3. From the Insights dashboard, click the **Show beta features** button.
+2. When prompted about running automatic setup, click the **Auto setup** button.
+3. From the **Insights** dashboard, click the **Show beta features** button.
 
 ## Set up your beta environment by using a Python notebook
 {: #mrm-risk-config-ovr-wos-only-notebook}
 
+Many of the functions of the auto setup option, can be replicated by running a Python notebook in Watson Studio. Although the results are the same, by choosing to run a notebook, you can gain experience that can more readily be applied to your own data, models, and pre-prod or prod systems.
 
 ### Prerequisites
 
-Before you begin using the model risk management features, you’ll need to set up the following services on IBM Cloud:
+Before you begin using the model risk management (MRM) features, you’ll need to set up the following services on IBM Cloud:
 
 -	Watson OpenScale, which provides MRM features and metrics 
 -	Watson Machine Learning (2 separate instances, one for pre-prod and one for prod), which provides the engine for creating predictive models. This tutorial shows how to use Watson Machine Learning as model serving engine, but you can also use any other supported ML engine)
 -	Watson Studio, which provides the ability to run notebooks and secure assets. (This tutorial shows how to use Watson Studio to create the provided sample models, but you can also use any other IDE to build models)
 -	[Optional] Cloud Object Storage, which gives you a place to store model assets, such as training dat1. For the tutorial, you’ll use an internal database, however, you might want to set up Cloud Object Storage for your own work.
-- In addition to the previously mentioned services, you must also have the following sample file: IBM_Cloud_MRM.ipyn2. The file can be downloaded from the following Box folder: https://ibm.box.com/v/modelriskmanagement/
+- In addition to the previously mentioned services, you must also have the following sample file: IBM_Cloud_MRM.ipynb. The file can be downloaded from the following Box folder: https://ibm.box.com/v/modelriskmanagement/
 
 ### Steps
 
@@ -96,8 +97,8 @@ In case you don't have an IBM Cloud account yet, you’ll need to start by creat
 
 As soon as you have an IBM Cloud account, you can use the dashboard to add the required services. For each service, you can choose the Lite or Free plan. You must have instances for the following services: Watson OpenScale, Watson Studio, and Watson Machine Learning (2 Instances).
 
-1. From the Navigation Menu (    ), click Resource list.
-2. Click the Create resource button.
+1. From the Navigation Menu, click **Resource** list.
+2. Click the **Create resource** button.
 3. Search for each of the required services by entering keywords, such as openscale, studio, or machine learning.
 
 You might not be able to add two Lite plan instances of Watson Machine Learning to your account. Either create the second instance using the Watson Machine Learning Standard plan or create a second IBM Cloud Account that is linked to a separate email address to create the second Watson Machine Machine Learning instance (Link to register the second account: https://cloud.ibm.com/registration).
@@ -123,17 +124,17 @@ In IBM Watson Studio, you will create a project and run a notebook to perform mo
 
 When you first start Watson Studio (hint: use the IBM Cloud dashboard, find your instance of Watson Studio and click the Get Started button) you have the option of taking a tour. Your first task is to create a project to which you associate the Watson Machine Learning instance that you created for your pre-production work.
 
-1. Click the Create a project tile.
-2. Click the Create an empty project til5. 
-3. Give the project a name and description: In the Name field, type MRM – Pre-pro4. You’ll use this project for all your pre-production models. 
-4. You’ll notice that an instance of Cloud Object Storage is require4. Go ahead and create an instance of that on IBM Cloud if you haven’t already.
-5. Click the Create button.
+1. Click the **Create a project** tile.
+2. Click the **Create an empty project** tile. 
+3. Give the project a name and description: In the Name field, type `MRM – Pre-prod`. You’ll use this project for all your pre-production models. 
+4. You’ll notice that an instance of Cloud Object Storage is required. Go ahead and create an instance of that on IBM Cloud if you haven’t already.
+5. Click the **Create** button.
 
 #### Step 2: Associate your new project with the Watson Machine Learning instance
 
 Now you need to associate your pre-prod instance of Watson Machine Learning to your project. You’ll do this by adding it as an associated service.
 
-1. From the MRM – Pre-prod project screen, click the Settings tab.
+1. From the MRM – Pre-prod project screen, click the **Settings** tab.
 2. In the Associated services pane, click the Add service button, and then click Watson.
 3. Find the Watson Machine Learning tile and click Add.
 4. From the Machine Learning configuration window, click the Existing tab.
@@ -197,9 +198,14 @@ To work with IBM Watson OpenScale, you must already have an IBM Cloud instance a
 3. From the Insights dashboard, click the **Show beta features** button.
 
 ## Manual setup
+{: #mrm-risk-config-ovr-wos-only-manual}
 
+You can manually set up your entire Watson OpenScale model risk management service by completing the following steps. To successfully complete the steps, you must have detailed information about your machine learning provider, the database, and the data that is used for monitoring. 
 
+### Steps
+{: #mrm-risk-config-ovr-wos-only-manual-steps}
 
+1. 
 
 
 
