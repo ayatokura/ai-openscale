@@ -201,6 +201,11 @@ To work with IBM Watson OpenScale, you must already have an IBM Cloud instance a
 2. When prompted about running automatic setup, click the No thanks button.
 3. From the Insights dashboard, click the **Show beta features** button.
 
+## Manual setup
+{: #mrm-risk-config-ovr-wos-only-manual}
+
+You can manually set up your entire Watson OpenScale model risk management service by completing the following steps. To successfully complete the steps, you must have detailed information about your machine learning provider, the database, and the data that is used for monitoring.
+
 ### Steps
 {: #mrm-risk-config-ovr-wos-only-manual-steps}
 

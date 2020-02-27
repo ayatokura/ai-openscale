@@ -101,7 +101,7 @@ In case you don't have an IBM Cloud account yet, you’ll need to start by creat
 
 As soon as you have an IBM Cloud account, you can use the dashboard to add the required services. For each service, you can choose the Lite or Free plan. You must have instances for the following services: Watson OpenScale, Watson Studio, and Watson Machine Learning (2 Instances).
  
-1. From the Navigation Menu (    ), click Resource list.
+1. From the Navigation Menu, click Resource list.
 2. Click the Create resource button.
 3. Search for each of the required services by entering keywords, such as openscale, studio, or machine learning.
 
@@ -118,6 +118,17 @@ Use Cloud Object Storage to store training dat1. After you create an instance Cl
 
 ## Manual setup
 {: #mrm-risk-config-openpages-manual}
+
+You can manually set up your entire Watson OpenScale model risk management service by completing the following steps. To successfully complete the steps, you must have detailed information about your machine learning provider, the database, and the data that is used for monitoring.
+
+### Steps
+{: #mrm-risk-config-openpages-manual-steps}
+
+1. [Provision prerequisite IBM Cloud services](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-prps). You must set up two instances of Watson Machine Learning.
+2. [Set up Watson Studio projects](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-setup). You must set up projects for both pre-production and production models.
+2. [Configure Watson OpenScale](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
+2. [Next steps: Continue setting up the monitors and data logging](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-next-steps-config).
+
 
 
 ## Next steps
