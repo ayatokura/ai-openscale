@@ -75,6 +75,7 @@ To work with IBM Watson OpenScale, you must already have an IBM Cloud instance a
 Many of the functions of the auto setup option, can be replicated by running a Python notebook in Watson Studio. Although the results are the same, by choosing to run a notebook, you can gain experience that can more readily be applied to your own data, models, and pre-prod or prod systems.
 
 ### Prerequisites
+{: #mrm-risk-config-ovr-wos-only-notebook-prereq}
 
 Before you begin using the model risk management (MRM) features, you’ll need to set up the following services on IBM Cloud:
 
@@ -85,6 +86,7 @@ Before you begin using the model risk management (MRM) features, you’ll need t
 - In addition to the previously mentioned services, you must also have the following sample file: IBM_Cloud_MRM.ipynb. The file can be downloaded from the following Box folder: https://ibm.box.com/v/modelriskmanagement/
 
 ### Steps
+{: #mrm-risk-config-ovr-wos-only-notebook-steps}
 
 #### Step 1: Create an IBMid and IBM Cloud account
 
@@ -113,6 +115,7 @@ Use Cloud Object Storage to store training dat1. After you create an instance Cl
 3. Click the Object Storage tile, select the Lite plan, then click the Create button.
 
 ### Work in Watson Studio
+{: #mrm-risk-config-ovr-wos-only-dsx}
 
 In IBM Watson Studio, you will create a project and run a notebook to perform most of the set-up tasks, including the following steps:
 
@@ -179,6 +182,7 @@ The newly created notebook is opened in Watson Studio in the integrated notebook
 Congratulations! You have used a notebook to create a pre-prod model. You can check inside Watson Studio, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to IBM Watson OpenScale to add the model ther5.  
 
 ### Work in IBM Watson OpenScale
+{: #mrm-risk-config-ovr-wos-only-woswork}
 
 You’ll use IBM Watson OpenScale to validate and monitor your models and to process metrics and KPIs. First, you need to do some set up.
 
@@ -197,15 +201,13 @@ To work with IBM Watson OpenScale, you must already have an IBM Cloud instance a
 2. When prompted about running automatic setup, click the No thanks button.
 3. From the Insights dashboard, click the **Show beta features** button.
 
-## Manual setup
-{: #mrm-risk-config-ovr-wos-only-manual}
-
-You can manually set up your entire Watson OpenScale model risk management service by completing the following steps. To successfully complete the steps, you must have detailed information about your machine learning provider, the database, and the data that is used for monitoring. 
-
 ### Steps
 {: #mrm-risk-config-ovr-wos-only-manual-steps}
 
-1. 
+1. [Provision prerequisite IBM Cloud services](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-prps). You must set up two instances of Watson Machine Learning.
+2. [Set up Watson Studio projects](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-setup). You must set up projects for both pre-production and production models.
+2. [Configure Watson OpenScale](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
+2. [Next steps: Continue setting up the monitors and data logging](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-next-steps-config).
 
 
 
