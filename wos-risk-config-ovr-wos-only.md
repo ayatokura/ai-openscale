@@ -83,7 +83,7 @@ Before you begin using the model risk management (MRM) features, you’ll need t
 -	Watson Machine Learning (2 separate instances, one for pre-prod and one for prod), which provides the engine for creating predictive models. This tutorial shows how to use Watson Machine Learning as model serving engine, but you can also use any other supported ML engine)
 -	Watson Studio, which provides the ability to run notebooks and secure assets. (This tutorial shows how to use Watson Studio to create the provided sample models, but you can also use any other IDE to build models)
 -	[Optional] Cloud Object Storage, which gives you a place to store model assets, such as training dat1. For the tutorial, you’ll use an internal database, however, you might want to set up Cloud Object Storage for your own work.
-- In addition to the previously mentioned services, you must also have the following sample file: IBM_Cloud_MRM.ipynb. The file can be downloaded from the following Box folder: https://ibm.box.com/v/modelriskmanagement/
+- In addition to the previously mentioned services, you must also have the **OpenScale model risk management on IBM Cloud.ipynb** notebook file, which you can download from the https://github.com/pmservice/ai-openscale-tutorials GitHub repository.
 
 ### Steps
 {: #mrm-risk-config-ovr-wos-only-notebook-steps}
@@ -149,7 +149,7 @@ As part of your closed beta information package, you were given access to a Wats
 
 1. From the project page, click the Add to project button.
 2. Click the Notebook tile.
-3. Click the From file tab, click the Choose file button and then, select the IBM_Cloud_MRM.ipynb  notebook file that you can download from  https://ibm.box.com/v/modelriskmanagement/
+3. Click the From file tab, click the Choose file button and then, select the **OpenScale model risk management on IBM Cloud.ipynb** notebook file that you can download from the https://github.com/pmservice/ai-openscale-tutorials GitHub repository.
 4. Add a name and description and click the Create notebook button.
 
 #### Step 4: Run the sample beta notebook

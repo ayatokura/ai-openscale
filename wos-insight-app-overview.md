@@ -42,7 +42,7 @@ Your business event (transaction) data is sent independent of any the scoring pa
 
 Business event data is usually sent in batches, such as once per day. For that reason, the data processing time in usually not the event time.
 
-Business event properties are different fields that describe the event (transaction) like: region, segment, potential profit from the transaction, … Numerical fields can be used to calculate KPI values. Other for clustering purposes.
+Business event properties are different fields that describe the event (transaction), such as the following items: region, segment, potential profit from the transaction, Numerical fields can be used to calculate KPI values. Other for clustering purposes.
 
 
 ## Insights

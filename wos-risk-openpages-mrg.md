@@ -106,7 +106,7 @@ Now you need to associate your pre-prod instance of Watson Machine Learning to y
 As part of your closed beta information package, you were given access to a Watson Studio notebook. You’ll use it to set up your connection between Watson OpenScale and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in Watson OpenScal5. 
 1.	From the project page, click the Add to project button.
 2.	Click the Notebook tile.
-3.	Click the From file tab, click the Choose file button and then, select the IBM_CloudOP_MRM.ipynb notebook file that you can download from https://ibm.box.com/v/modelriskmanagement/
+3.	Click the From file tab, click the Choose file button and then, select the **OpenScale and OpenPages model risk management on IBM Cloud**.ipynb** notebook file that you can download from the https://github.com/pmservice/ai-openscale-tutorials GitHub repository.
 4.	Add a name and description and click the Create notebook button.
 
 ### Step 4: Run the sample beta notebook

@@ -84,11 +84,7 @@ For your instance of IBM OpenPages, you must have login credentials to use on an
   
 ### Required file
 
-In addition to the previously mentioned services, you must also have the following sample file:
-
-- IBM_CloudOP_MRM.ipynb
-
-The file can be downloaded from the following GitHub repository: https://ibm.box.com/v/modelriskmanagement/
+In addition to the previously mentioned services, you must also have the **OpenScale and OpenPages model risk management on IBM Cloud.ipynb** notebook file, which you can download from the https://github.com/pmservice/ai-openscale-tutorials GitHub repository.
 
 ### Create an IBMid and IBM Cloud account
 
