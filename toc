@@ -26,11 +26,16 @@ Watson OpenScale
         wos-framework-multi-eng.md
     {: .navgroup-end}
 
+    {: .topicgroup}
+    Security and privacy
+        wos-information-security.md
+        wos-iam.md
+        cloud-byok-config.md
+
     {: .navgroup id="howto"}
     {: .topicgroup}
     Configuring Watson OpenScale
         wos-creds.md
-        wos-iam.md
         wos-connect-deploy.md
         wos-connect-db.md
         wos-connect-other.md
@@ -147,7 +152,6 @@ Watson OpenScale
     [Python Client](http://ai-openscale-python-client.mybluemix.net/)
     wos-activity-tracker.md
     wos-language-support.md
-    wos-information-security.md
     [Watson GitHub repos](https://github.com/watson-developer-cloud/)
     {: .navgroup-end}
 
