@@ -283,7 +283,6 @@ You can also find example of custom machine learning engine written in [Node.js 
 [Code pattern](https://developer.ibm.com/patterns/monitor-custom-machine-learning-engine-with-ai-openscale){: external} showing end2end example of custom engine deployment and integration with {{site.data.keyword.aios_short}}.
 
 
-
 ## Next steps
 {: #fmrk-workaround-nxt-steps-over}
 

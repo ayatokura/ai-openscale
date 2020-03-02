@@ -28,6 +28,9 @@ subcollection: ai-openscale
 # Payload logging with the Custom machine learning engine
 {: #cml-cusconfig}
 
+To configure payload logging for a non-{{site.data.keyword.pm_full}} or custom machine learning engine, you must bind the ML engine as custom.
+{: shortdesc}
+
 ## Bind your Custom machine learning engine
 {: #cml-cusbind}
 
@@ -137,3 +140,9 @@ For more information, see [Payload logging]().
     print("Request OK: " + str(req_response.ok))
     ```
 
+## Next steps
+{: #cml-cuspid-nxt-steps-over}
+
+{{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+
+Implement your own solution by using one of these [Custom machine learning examples](/docs/services/ai-openscale?topic=ai-openscale-fmrk-workaround-cstmmlsengex).
