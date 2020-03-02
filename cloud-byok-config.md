@@ -5,7 +5,7 @@ copyright:
 lastupdated: "2020-01-28"
 
 
-keywords: identity and access management, authentication
+keywords: security, security keys, bring your own key, byok, byoe, 
 
 subcollection: ai-openscale
 
@@ -26,17 +26,40 @@ subcollection: ai-openscale
 {:swift: .ph data-hd-programlang='swift'}
 {:faq: data-hd-content-type='faq'}
 
-# {{site.data.keyword.aios_short}} Identity and Access Management 
-{: #iam-docs-template}
+# Protecting sensitive information in {{site.data.keyword.aios_short}}
+{: #byok-ovr}
 
+You can add a higher level of encryption protection and control to your data both when it is stored and transported by enabling integration with {{site.data.keyword.keymanagementservicefull}}. 
+{: shortdesc}
 
-Bring your own encryption (BYOE)—also called bring your own key (BYOK)—refers to a cloud computing security marketing model that purports to help cloud service customers to use their own encryption software and manage their own encryption keys.[1] BYOE allows cloud service customers to use a virtualized example of their own encryption software together with the business applications they are hosting in the cloud, in order to encrypt their data. The business applications hosted is then set up such that all its data will be processed by the encryption software, which then writes the ciphertext version of the data to the cloud service provider's physical data store, and readily decrypts ciphertext data upon retrieval requests.[2] This gives the enterprise the perceived control of its own keys and producing its own master key by relying on its own internal hardware security modules (HSM) that is then transmitted to the HSM within the cloud. Data owners may believe their data is secured because the master key lies in the enterprise's HSM and not that of the cloud service provider's.[3] When the data is no longer needed (i.e. when cloud users choose to abandon the cloud service), the keys can simply be deleted. That practice is called crypto-shredding.
+## What is Bring Your Own Key (BYOK)?
+{: #byok-ovr-byok}
 
-What is Bring Your Own Key (BYOK)?
-While cloud computing offers many advantages, a major disadvantage has been security, because data physically resides with the cloud service provider (CSP) and out of the direct control of the owner of the data. For enterprises that elect to use encryption to protect their data, securing their encryption keys is of paramount importance.
+Bring your own key (BYOK) or bring your own encryption (BYOE) refers to the infrastructure and method by which cloud service clients can manage their own encryption software and keys. This adds a layer of security that protects both data at rest and data in motion. 
 
-Bring Your Own Key (BYOK) allows enterprises to encrypt their data and retain control and management of their encryption keys. However, some BYOK plans upload the encryption keys to the CSP infrastructure. In these cases, the enterprise has once again forfeited control of its keys.
+## Why {{site.data.keyword.keymanagementservicefull}}?
+{: #byok-ovr-ikpfc}
 
-A best-practice solution to this "Bring Your Own Key" problem is for the enterprise to generate strong keys in a tamper-resistant hardware security module (HSM) and control the secure export of its keys to the cloud, thereby strengthening its key management practices.
+{{site.data.keyword.keymanagementservicefull}} helps secure your sensitive data from unauthorized access or inadvertent employee release while meeting compliance auditing standards. It provides mandatory control of user access requests to encryption keys and manages the entire lifecycle of keys from creation through application use, key archival, and key destruction. Offered as a Platform as a Service on the IBM Cloud™, Key Protect provisions and stores cryptographic keys using FIPS 140-2 Level 3 certified (Federal Information Processing Standard) hardware security module (HSM) devices located within secure IBM data centers.
 
+## Integrating {{site.data.keyword.aios_full}}
+{: #byok-ovr-wos}
 
+You can integrate {{site.data.keyword.aios_short}} with {{site.data.keyword.keymanagementservicefull}} by referring to the following tasks:
+
+- [Getting started tutorial](/docs/key-protect?topic=key-protect-getting-started-tutorial).
+  
+  {{site.data.keyword.keymanagementservicefull}} helps you provision encrypted keys for apps across IBM Cloud services. This tutorial shows you how to create and add existing cryptographic keys by using the Key Protect dashboard, so you can manage data encryption from one central location.
+  
+- [Integrating services](/docs/key-protect?topic=key-protect-integrate-services).
+  
+  {{site.data.keyword.keymanagementservicefull}} integrates with a number of IBM Cloud services to enable encryption with customer-managed keys for those services. Encryption with customer-managed encryption keys is sometimes called Bring Your Own Key (BYOK).
+  
+- [Integrating with IBM Cloud Object Storage](/docs/key-protect?topic=key-protect-integrate-cos).
+  
+  {{site.data.keyword.keymanagementservicefull}} and IBM® Cloud Object Storage work together to help you own the security of your at-rest data. Learn how to add advanced encryption to your IBM® Cloud Object Storage resources by using the IBM Key Protect service.
+  
+- [Provisioning the service](/docs/key-protect?topic=key-protect-provision).
+  
+  You can create an instance of {{site.data.keyword.keymanagementservicefull}} by using the IBM Cloud console or the IBM Cloud CLI.
+  

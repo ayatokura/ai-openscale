@@ -5,7 +5,7 @@ copyright:
 lastupdated: "2020-01-28"
 
 
-keywords: identity and access management, authentication
+keywords: identity and access management, authentication, security
 
 subcollection: ai-openscale
 
@@ -29,9 +29,10 @@ subcollection: ai-openscale
 # {{site.data.keyword.aios_short}} Identity and Access Management 
 {: #iam-docs-template}
 
-## Identity and Access Management roles and actions
-
 Access to {{site.data.keyword.aios_full}} service instances for users in your account is controlled by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Every user that accesses the {{site.data.keyword.aios_short}} service in your account must be assigned an access policy with an IAM role defined. The policy determines what actions a user can perform within the context of the service or instance that you select. The allowable actions are customized and defined by the {{site.data.keyword.Bluemix_notm}} service as operations that are allowed to be performed on the service. The actions are then mapped to IAM user roles.
+{: shortdesc}
+
+## Identity and Access Management roles and actions
 
 Policies enable access to be granted at different levels. Some of the options include the following: 
 

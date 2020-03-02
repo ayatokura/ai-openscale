@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-01-28"
 
-keywords: security, information security, GDPR, 
+keywords: security, information security, GDPR, CCPA
 
 subcollection: ai-openscale
 
