@@ -26,12 +26,6 @@ Watson OpenScale
         wos-framework-multi-eng.md
     {: .navgroup-end}
 
-    {: .topicgroup}
-    Security and privacy
-        wos-information-security.md
-        wos-iam.md
-        cloud-byok-config.md
-
     {: .navgroup id="howto"}
     {: .topicgroup}
     Configuring Watson OpenScale
@@ -153,6 +147,12 @@ Watson OpenScale
     wos-activity-tracker.md
     wos-language-support.md
     [Watson GitHub repos](https://github.com/watson-developer-cloud/)
+
+    {: .topicgroup}
+    Security and privacy
+        wos-information-security.md
+        wos-iam.md
+        cloud-byok-config.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
