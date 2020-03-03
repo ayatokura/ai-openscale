@@ -45,7 +45,30 @@ Bring your own key (BYOK) or bring your own encryption (BYOE) refers to the infr
 ## Integrating {{site.data.keyword.aios_full}}
 {: #byok-ovr-wos}
 
-You can integrate {{site.data.keyword.aios_short}} with {{site.data.keyword.keymanagementservicefull}} by referring to the following tasks:
+You can integrate {{site.data.keyword.aios_short}} with {{site.data.keyword.keymanagementservicefull}}.
+
+### Case 1: Key Protect during initial set up
+{: #byok-ovr-wos-scenario1}
+
+1. Provision a {{site.data.keyword.aios_short}} instance.
+2. After you provision an instance, but before you do any other configuration, you must complete the following steps:
+
+    1. Provision an instance of {{site.data.keyword.keymanagementservicefull}} and obtain the instance `CRN` value.
+    2. Make an API call to {{site.data.keyword.aios_short}} /v2/user_preferences, and specify the `{"user_root_key_crn": crn_from_step_1}` variable.
+
+3. Create a DataMart, for which a database configuration is created.
+4. The configuration service makes an API call to {{site.data.keyword.keymanagementservicefull}} specified by the `user_root_key_crn` property. The service returns a new encryption key in both a wrapped and unwrapped form. Use the unwrapped key form to encrypt the database password. The wrapped key form is persisted in instance properties. To decrypt a database password, use the wrapped key form to get the unwrapped key form either from cache or through API call to {{site.data.keyword.keymanagementservicefull}}. Then, decryption is done by using the unwrapped key.
+
+### Case 2: Key Protect after set up
+{: #byok-ovr-wos-scenario2}
+
+1. Provision a {{site.data.keyword.aios_short}} instance.
+2. After you provision an instance, initialize the system either by running the auto setup or by performing a manual configuration. In this scenario, the database configuration is created with a password that is not encrypted with the user's key protect root key.
+3. After configuration, you must provision an instance of {{site.data.keyword.keymanagementservicefull}} and get the instance `CRN` value.
+4. Make an API call to {{site.data.keyword.aios_short}} /v2/user_preferences, and specify the `{"user_root_key_crn": crn_from_step_1}` variable. When you specify the `user_root_key_crn` variable, all instance secrets are automatically re-encrypted by using {{site.data.keyword.keymanagementservicefull}. If you delete the  `user_root_key_crn` variable, all instance secrets are automatically re-encrypted by using global key. The actual re-encryption is the same as in the previous case, **Case 1**.
+
+
+For more details, see the following tasks:
 
 - [Getting started tutorial](/docs/key-protect?topic=key-protect-getting-started-tutorial).
   
