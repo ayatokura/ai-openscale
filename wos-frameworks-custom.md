@@ -148,7 +148,7 @@ You can also reference the following links:
 You can configure {{site.data.keyword.aios_short}} to work with a custom machine learning provider by using one of the following methods:
 
 - If this is the first time that you are adding a custom machine learning provider to {{site.data.keyword.aios_short}}, you can use the configuration interface. For more information, see [Specifying a custom machine learning instance](/docs/services/ai-openscale?topic=ai-openscale-co-connect).
-- You can also add your machine learning provider by using the Python SDK. You must use this method if you want to have more than one provider. For more information on performing this programmatically, see [Bind your custom machine learning engine](/docs/services/ai-openscale?topic=ai-openscale-cml-cusbind).
+- You can also add your machine learning provider by using the Python SDK. You must use this method if you want to have more than one provider. For more information on performing this programmatically, see [Bind your custom machine learning engine](/docs/services/ai-openscale?topic=ai-openscale-cml-cusconfig#cml-cusbind).
 
 
 ## Sample notebooks

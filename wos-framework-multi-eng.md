@@ -104,7 +104,7 @@ To view a list of all the bindings, run the `list` method:
 
 For information about specific machine learning engines, see the following topics:
 
-- [Bind your Custom machine learning engine](/docs/services/ai-openscale?topic=ai-openscale-cml-cusbind).
+- [Bind your Custom machine learning engine](/docs/services/ai-openscale?topic=ai-openscale-cml-cusconfig#cml-cusbind).
 - [Bind your Microsoft Azure machine learning studio engine](/docs/services/ai-openscale?topic=ai-openscale-cml-azbind#cml-azbind)
 - [Bind your Microsoft Azure machine learning service engine](/docs/services/ai-openscale?topic=ai-openscale-cml-azsrvconfig#cml-azsrvbind)
 - [Bind your Amazon SageMaker machine learning engine](/docs/services/ai-openscale?topic=ai-openscale-cml-smbind#cml-smbind)
