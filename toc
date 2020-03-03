@@ -37,7 +37,7 @@ Watson OpenScale
         wos-scoring.md
         wos-payload-logging.md
         wos-payload-custom.md
-        wos-connect-ml.md
+        wos-connect-wml.md
         wos-payload-auto.md
         wos-config-file.md
         wos-feedback.md
