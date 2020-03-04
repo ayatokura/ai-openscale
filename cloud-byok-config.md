@@ -45,7 +45,13 @@ Bring your own key (BYOK) or bring your own encryption (BYOE) refers to the infr
 ## Integrating {{site.data.keyword.aios_full}}
 {: #byok-ovr-wos}
 
-You can integrate {{site.data.keyword.aios_short}} with {{site.data.keyword.keymanagementservicefull}}.
+You can integrate {{site.data.keyword.aios_short}} with {{site.data.keyword.keymanagementservicefull}} through the use of the API by making `user_preferences` calls. The following parameters apply:
+
+- HTTP method: PUT
+- URL: https://aiopenscale.cloud.ibm.com/openscale/{service-instance-id}/v2/user_preferences/user_root_key_crn
+- Payload: {"user_root_key_crn": crn_from_step_1}
+
+
 
 ### Case 1: Key Protect during initial set up
 {: #byok-ovr-wos-scenario1}
@@ -67,7 +73,7 @@ You can integrate {{site.data.keyword.aios_short}} with {{site.data.keyword.keym
 3. After configuration, you must provision an instance of {{site.data.keyword.keymanagementservicefull}} and get the instance `CRN` value.
 4. Make an API call to {{site.data.keyword.aios_short}} /v2/user_preferences, and specify the `{"user_root_key_crn": crn_from_step_1}` variable. When you specify the `user_root_key_crn` variable, all instance secrets are automatically re-encrypted by using {{site.data.keyword.keymanagementservicefull}. If you delete the  `user_root_key_crn` variable, all instance secrets are automatically re-encrypted by using global key. The actual re-encryption is the same as in the previous case, **Case 1**.
 
-For more details, see the following tasks:
+For more details, see the following topics:
 
 - [Getting started tutorial](/docs/key-protect?topic=key-protect-getting-started-tutorial).
   
