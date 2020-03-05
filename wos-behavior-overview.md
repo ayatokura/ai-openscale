@@ -31,6 +31,19 @@ subcollection: ai-openscale
 {{site.data.keyword.aios_short}} detects both [drift in accuracy](/docs/services/ai-openscale?topic=ai-openscale-behavior-drift-ovr) and [drift in data](/docs/services/ai-openscale?topic=ai-openscale-behavior-anomalies). 
 {: shortdesc}
 
+## What is drift?
+{: #behavior-ovr-watsa-drift}
+
+{{site.data.keyword.aios_short}} creates the drift detection model by looking at the data that was used to train and test the model. For example, if the model has an accuracy of 90% on the test data, it means that it provides incorrect predictions on 10% of the test data.  {{site.data.keyword.aios_short}} builds a binary classification model that accepts a data point and predicts whether that data point is similar to the data that the model either incorrectly (10%) or accurately (90%) predicted. In addition to using all the same features as the client model, the drift detection model uses the following features:
+
+- the confidence of the client model on a given data point 
+- the difference in confidence of the client model on the top two classes that it predicts
+
+If the model confidence is low, then it is very likely to make an error. If the difference in client confidence for the top two classes that it has predicted is very less, then it is not confident of which of the two classes the data point belongs. Hence the possibility of an error are high.  
+ 
+After {{site.data.keyword.aios_short}} creates the drift detection model, at run time it scores this model by using all the data that the client model has received. For example, if the client model has received 1000 records in the past 3 hours, {{site.data.keyword.aios_short}} runs the drift detection model on those 1000 data points. It calculates how many of the records are similar to the 10% of records on which the model made an error when training. If 200 of these records are similar to the 10%, then it implies that the model accuracy is likely to be 80%.  As the model accuracy at training time was 90%, it means that there is an accuracy drift of 10% in the model.
+
+
 - [Drop in accuracy](/docs/services/ai-openscale?topic=ai-openscale-behavior-drift-ovr)
 
   Estimates the drop in accuracy of the model at runtime. Model accuracy drops if there is an increase in transactions that are similar to those that the model did not evaluate correctly in the training data. This type of drift is calculated for structured binary and multi-class classification models only.
