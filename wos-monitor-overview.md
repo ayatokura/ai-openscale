@@ -181,8 +181,8 @@ For numeric or categorical data, you need to provide information about the train
 
      ![Upload config JSON](images/wos-config-json-monitor.png)
 
-- {{site.data.keyword.aios_short}} locates your training data from the metadata stored with the model in {{site.data.keyword.pm_full}}. Choose the label column in the training data that contains your prediction values.
-- Select the columns used to train the model - these are the features that your model deployment expects in a request.
+- {{site.data.keyword.aios_short}} locates your training data from the metadata stored with the model in {{site.data.keyword.pm_full}}. 
+- Select the columns used to train the model - these are the features that your model deployment expects in a request. Do not select the label column.
 - You can choose either a string column or a numeric column as the prediction column.
 
 ## Images and Unstructured text
