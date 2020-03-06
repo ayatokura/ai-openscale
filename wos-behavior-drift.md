@@ -51,6 +51,11 @@ Drift is the degradation of predictive performance over time because of hidden c
 
 {{site.data.keyword.aios_short}} analyzes all transactions to find the ones that contribute to accuracy drift. It then groups the transactions based on the similarity of each feature's contribution to the drift in accuracy.
 
+{{site.data.keyword.aios_short}} creates the drift detection model by looking at the data that was used to train and test the model. For example, if the model has an accuracy of 90% on the test data, it means that it provides incorrect predictions on 10% of the test data.  {{site.data.keyword.aios_short}} builds a binary classification model that accepts a data point and predicts whether that data point is similar to the data that the model either incorrectly (10%) or accurately (90%) predicted.  
+ 
+After {{site.data.keyword.aios_short}} creates the drift detection model, at run time it scores this model by using all the data that the client model receives. For example, if the client model received 1000 records in the past 3 hours, {{site.data.keyword.aios_short}} runs the drift detection model on those same 1000 data points. It calculates how many of the records are similar to the 10% of records on which the model made an error when training. If 200 of these records are similar to the 10%, then it implies that the model accuracy is likely to be 80%. Because the model accuracy at training time was 90%, it means that there is an accuracy drift of 10% in the model.
+
+
 ### Do the math
 {: #behavior-drift-math}
 
