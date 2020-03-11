@@ -66,5 +66,5 @@ The {{site.data.keyword.aios_short}} service supports the following machine lear
 
 Still have questions? 
 
-- [What's new](/docs/services/ai-openscale?topic=ai-openscale-rn-relnotes)
+- [FAQs](/docs/services/ai-openscale?topic=ai-openscale-wos-faqs)
 - [Contact IBM](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-watson){: external}.
