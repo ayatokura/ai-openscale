@@ -56,10 +56,32 @@ Accuracy can mean different things depending on the type of the algorithm:
 
 - *Regression*: Regression algorithms are measured using the Coefficient of Determination, or R2. For more details, see [Regression model evaluation](https://spark.apache.org/docs/2.1.0/mllib-evaluation-metrics.html#regression-model-evaluation){: external} in the Apache Spark documentation.
 
+## Understanding the display
+{: #acc-display}
+
+![Area under PR is shown with metric trending downward](images/wos-quality-accuracy.png)
+
+
+## Do the math
+{: #acc-math}
+
+Accuracy is defined as the number of true positives and negatives divided by the sum of the true positives and negatives and the sum of false positives and negatives.
+
+```
+                                     number of true positives + number of true negatives
+Accuracy =   ________________________________________________________________________________________________________________
+
+              (number of true positives + number of true negatives + number of false positives + number of false negatives)
+```
+
+
+
+
 ### How it works
 {: #acc-works}
 
 You need to add manually-labelled feedback data through the {{site.data.keyword.aios_short}} UI as shown in the following examples, using a [Python client](http://ai-openscale-python-client.mybluemix.net/#feedbacklogging){: external} or [Rest API](https://cloud.ibm.com/apidocs/ai-openscale#post-feedback-payload){: external}.
+
 
 ### De-biased accuracy
 {: #acc-debias-view}
