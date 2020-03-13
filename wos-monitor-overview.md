@@ -127,7 +127,7 @@ For the following two items, from the Navigation pane, click **Service credentia
 
 - The label column from the training table: For example, for the tutorial, click the **Risk** tile.
 - The features that were used to train the AI deployment: For example, for the tutorial,select all features.
-- The text and categorical features: 
+- The text and categorical features: For example, for the tutorial, click 
 - The deployment prediction column: For example, for the tutorial, click the **predictedLabel** tile.
 - The transaction ID column: Not required for the interactive setup tutorial (click Next to bypass this step), but required for the Application monitor tutorial. 
    
