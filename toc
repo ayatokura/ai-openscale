@@ -143,10 +143,9 @@ Watson OpenScale
     {: .topicgroup}
     Enhancing security for Watson OpenScale
         wos-information-security.md
-        wos-iam.md
-        cloud-service-connection.md
-        cloud-data-security.md
-        cloud-byok-config.md
+        iam.md
+        service-connection.md
+        data-security.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
