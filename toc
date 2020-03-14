@@ -139,6 +139,14 @@ Watson OpenScale
         wos-analytics-chart-builder.md
 
     cloud-openscale-recovery.md
+
+    {: .topicgroup}
+    Enhancing security for Watson OpenScale
+        wos-information-security.md
+        wos-iam.md
+        cloud-service-connection.md
+        cloud-data-security.md
+        cloud-byok-config.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
@@ -148,12 +156,6 @@ Watson OpenScale
     wos-activity-tracker.md
     wos-language-support.md
     [Watson GitHub repos](https://github.com/watson-developer-cloud/)
-
-    {: .topicgroup}
-    Security and privacy
-        wos-information-security.md
-        wos-iam.md
-        cloud-byok-config.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
