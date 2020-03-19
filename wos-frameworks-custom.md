@@ -154,7 +154,7 @@ You can configure {{site.data.keyword.aios_short}} to work with a custom machine
 ## Sample notebooks
 {: #frmwrks-custom-smpl-ntbks}
 
-- [Creation of Custom Machine Learning engine using Kubernetes cluster](https://github.com/pmservice/ai-openscale-tutorials/tree/master/applications/custom-ml-engine-bluemix){: external}
+- [Creation of Custom Machine Learning engine using Kubernetes cluster](https://github.com/pmservice/ai-openscale-tutorials/tree/master/applications/custom-ml-engine-ibmcloud){: external}
 - [Data mart creation, model deployment monitoring and data analysis](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/AI%20OpenScale%20and%20Custom%20ML%20Engine.ipynb){: external}
 
 ## Explore further
@@ -264,13 +264,13 @@ Use the following examples to set up your own custom machine learning engine.
 ### Python and flask
 {: #fmrk-workaround-pandflask}
 
-The [Custom ML Engine example published on git](https://github.com/pmservice/ai-openscale-tutorials/tree/master/applications/custom-ml-engine-bluemix){: external} is using python and flask to serve scikit-learn model.
+The [Custom ML Engine example published on git](https://github.com/pmservice/ai-openscale-tutorials/tree/master/applications/custom-ml-engine-ibmcloud){: external} is using python and flask to serve scikit-learn model.
 
 To generate the drift detection model, you must use scikit-learn version 0.20.2 in notebooks. 
 {: note}
 
 
-The [README file](https://github.com/pmservice/ai-openscale-tutorials/tree/master/applications/custom-ml-engine-bluemix){: external} describes how the app can be deployed locally for testing purposes as well as cf application on IBM Cloud. The implementation of REST API endpoints can be found in [app.py file](https://github.com/pmservice/ai-openscale-tutorials/blob/master/applications/custom-ml-engine-bluemix/app.py){: external}.
+The [README file](https://github.com/pmservice/ai-openscale-tutorials/tree/master/applications/custom-ml-engine-ibmcloud){: external} describes how the app can be deployed locally for testing purposes as well as cf application on IBM Cloud. The implementation of REST API endpoints can be found in [app.py file](https://github.com/pmservice/ai-openscale-tutorials/blob/master/applications/custom-ml-engine-ibmcloud/app.py){: external}.
 
 ### Node.js
 {: #fmrk-workaround-nodejs}
