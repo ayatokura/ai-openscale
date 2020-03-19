@@ -57,7 +57,7 @@ You must provide information about your model and training data. For more inform
 - If you use an {{site.data.keyword.pm_full}} instance that is in the same region as your {{site.data.keyword.aios_short}} instance, although you must select Data type and Algorithm type, some payload logging information is configured automatically for you. 
 - Otherwise from the **Payload logging** tab and windows, you must enter information about your data and algorithm types and your payload logging. 
 
-- There are specific requirements depending on your selections. For more information, see [Numeric/categorical data](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-datan).
+- There are specific requirements depending on your selections. For more information, see [Numeric/categorical data](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
 
 - Before you configure your monitors, copy one of the code snippets to run to establish the connection to Watson Machine Learning. Run the cURL command in your client application or the Python command in your data science notebook. This provides a way to log model deployment requests and write response data into the payload database.
    
@@ -142,7 +142,7 @@ If there is no transaction ID column on the list, please either score your model
 {: note}
 
 
-The following sections give some specific information that you encounter depending on the type of model, either [Numeric/categorical data](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-datan) or [Images and Unstructured text](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-datai).
+The following sections give some specific information that you encounter depending on the type of model, either [Numeric/categorical data](#mo-nuca) or [Images and Unstructured text](#mo-imun).
 
 
 ## Numeric/categorical data

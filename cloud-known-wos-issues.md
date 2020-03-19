@@ -155,7 +155,7 @@ If you are using a different load balancer, other than HAProxy, you may need to 
 ### Custom machine learning service instance
 {: #wos-common-issues-custom}
 
-- The [{{site.data.keyword.aios_short}} Python Client SDK](/docs/services/ai-openscale-icp?topic=ai-openscale-icp-as-module) does not currently have Explainability working for the Custom serve engine. This is because the Custom serve engine requires a numerical prediction in the response data, which is not included with the module script.
+- The [{{site.data.keyword.aios_short}} Python Client SDK](/docs/services/ai-openscale-icp?topic=ai-openscale-as-module) does not currently have Explainability working for the Custom serve engine. This is because the Custom serve engine requires a numerical prediction in the response data, which is not included with the module script.
 
 <p>&nbsp;</p>
 

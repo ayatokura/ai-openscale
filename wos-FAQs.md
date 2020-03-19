@@ -86,7 +86,7 @@ When your ready to transition from the Lite plan, there's a **Standard** pricing
 ### All of my AI models are in Azure. Can I use Microsoft Azure ML engine with {{site.data.keyword.aios_short}}?
 {: #faq-azure}
 
-{{site.data.keyword.aios_short}} supports both Microsoft Azure ML Studio and Microsoft Azure ML Service engines. For more information, see [Microsoft Azure ML Studio frameworks](/docs/services/ai-openscale?topic=ai-openscale-icp-frmwrks-azure) and [Microsoft Azure ML Service frameworks](/docs/services/ai-openscale?topic=ai-openscale-icp-frmwrks-azure-service).
+{{site.data.keyword.aios_short}} supports both Microsoft Azure ML Studio and Microsoft Azure ML Service engines. For more information, see [Microsoft Azure ML Studio frameworks](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-azure) and [Microsoft Azure ML Service frameworks](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-azureservice).
 
 <p>&nbsp;</p>
 
@@ -94,7 +94,7 @@ When your ready to transition from the Lite plan, there's a **Standard** pricing
 ### All of my AI models are in Amazon. Can I use Amazon SageMaker ML engine with {{site.data.keyword.aios_short}}?
 {: #faq-sagemaker}
 
-{{site.data.keyword.aios_short}} supports Amazon SageMaker ML engine. For more information, see [Amazon SageMaker frameworks](/docs/services/ai-openscale?topic=ai-openscale-icp-frmwrks-aws-sage).
+{{site.data.keyword.aios_short}} supports Amazon SageMaker ML engine. For more information, see [Amazon SageMaker frameworks](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-aws-sage).
 
 <p>&nbsp;</p>
 
@@ -110,7 +110,7 @@ When your ready to transition from the Lite plan, there's a **Standard** pricing
 ### I want to run {{site.data.keyword.aios_short}} on my own servers. How much computer processing power should I allocate?
 {: #faq-sizing}
 
-There are specific guidelines for [hardware configuration](/docs/services/ai-openscale-icp?topic=ai-openscale-icp-inst-install-icp#inst-hwt) for three-node and six-node configurations. Your IBM Technical Sales team can also help you with sizing your specific configuration. Because {{site.data.keyword.aios_short}} run as an add-on to {{site.data.keyword.icp4dfull_notm}}, you need to consider the requirements for both software products.
+There are specific guidelines for hardware configuration for three-node and six-node configurations. Your IBM Technical Sales team can also help you with sizing your specific configuration. Because {{site.data.keyword.aios_short}} run as an add-on to {{site.data.keyword.icp4dfull_notm}}, you need to consider the requirements for both software products.
 
 <p>&nbsp;</p>
 

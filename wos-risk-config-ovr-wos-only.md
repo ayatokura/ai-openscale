@@ -43,7 +43,7 @@ You can use one of the following options to set up your initial environment:
   
   Enables you to control some of the setup parameters and can be used later for managing your own models
 
-- [Manual setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only#manual-setup)
+- [Manual setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only#mrm-risk-config-ovr-wos-only-manual)
   
   Gives you the most control over resources and options
 

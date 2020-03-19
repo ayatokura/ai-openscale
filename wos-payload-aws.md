@@ -145,3 +145,9 @@ subcollection: ai-openscale
     req_response = requests.post(endpoint, json=payload, headers = headers)
     print("Request OK: " + str(req_response.ok))
     ```
+
+## Next steps
+{: #csm-next-qws}
+
+- {{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+- [Monitor Sagemaker machine learning with Watson OpenScale](https://developer.ibm.com/patterns/monitor-amazon-sagemaker-machine-learning-models-with-ai-openscale//){: external}
