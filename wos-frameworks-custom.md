@@ -42,7 +42,7 @@ Table 1. Framework support details
 
 For a model that is not equivalent to {{site.data.keyword.pm_full}}, you must create a wrapper for the custom model that exposes the required REST API endpoints and bridge the input/output between {{site.data.keyword.aios_short}} and the actual custom machine learning engine.
 
-### How it works
+## How it works
 {: #co-works}
 
 The following image shows the custom environment support:
@@ -161,97 +161,6 @@ You can configure {{site.data.keyword.aios_short}} to work with a custom machine
 {: #frmwrks-custom-mediumblogs}
 
 [Monitor custom machine learning engine with Watson OpenScale](https://developer.ibm.com/patterns/monitor-custom-machine-learning-engine-with-ai-openscale/){: external}
-
-
-
-## Custom machine learning engine
-{: #fmrk-workaround-customengine}
-
-A custom machine learning engine provides the infrastructure and hosting capabilities for machine learning models and web applications. Custom machine learning engines that are supported by {{site.data.keyword.aios_short}} must conform to the following requirements:
-
-- Expose two types of REST API endpoints:
-
-   * discovery endpoint (GET list of deployments and details)
-   * scoring endpoints (online and real-time scoring)
-
-- All endpoints need to be compatible with [the swagger specification](https://aiopenscale-custom-deployement-spec.mybluemix.net/){: external} to be supported.
-
-- Input payload and output to or from the deployment must be compliant with the [JSON file format](https://aiopenscale-custom-deployement-spec.mybluemix.net/#/Deployments/post_v1_deployments__deployment_id__online){: external} that is described in the specification.
-
-At this stage only the `BasicAuth` or `none` formats are supported.
-{: Note}
-
-The following example shows the REST API endpoints specification:
-
-![The REST API endpoints specification is displayed from the swagger document](images/wos-deployments.png)
-
-
-The following example shows the format for an input payload:
-
-![Input payload example is shown](images/wos-inputdata.png)
-
-
-
-## When is a custom machine learning engine the best choice for me?
-{: #fmrk-workaround-enging-choice}
-
-A custom machine learning engine is the best choice when the following situations are true:
-
-- You are not using any available out-of-the-box products to serve your machine learning models. You have just developed your own system to do that. There is no, and will be no, direct support in {{site.data.keyword.aios_short}} for that.
-- The serving engine you are using from a 3rd-party supplier is not supported by {{site.data.keyword.aios_short}} yet. In this case, consider developing a custom machine learning engine as a wrapper to your original or native deployments.
-
-## Specifying a Custom ML service instance
-{: #co-connect}
-
-Your first step in the {{site.data.keyword.aios_short}} tool is to specify a service instance. Your service instance is where you store your AI models and deployments.
-{: shortdesc}
-
-## Connect your Custom service instance
-{: #co-config}
-
-{{site.data.keyword.aios_short}} connects to AI models and deployments in a service instance. You can connect a custom service
-
-1.  From the **Configure** tab, in the navigation pane, click **Machine learning providers**.
-
-   ![the select your machine learning service provider screen is shown with tiles for the supported machine learning engines](images/wos-machine-learning-providers-selection.png)
-
-2. Click the **Add machine learning provider** button, and then click the **Custom environment** tile.
-
-   ![the custom machine learning provider configuration screen is shown with fields for credentials, instance name and description](images/wos-ml-custom-provider.png)
-
-3. Enter a name and description for your custom machine learning provider and click **Next**. 
-
-4. Choose whether to connect to your deployments [by requesting a list](/docs/services/ai-openscale?topic=ai-openscale-co-connect#co-config-request-list) or [by entering individual scoring endpoints](/docs/services/ai-openscale?topic=ai-openscale-co-connect#co-config-scoring-endpoints).
-
-   ![The connect to deployments screen is shown with options for requesting a list of deployments or entering an individual scoreing endpoint](images/wos-ml-custom-connect-deployments.png)
-    
-5. Click **Next**.
-
-### Requesting the list of deployments
-{: #co-config-request-list}
-
-1. If you selected the **Request the list of deployments** tile, enter your credentials and API Endpoint, then click **Save**.
-
-   ![the list of deployments screen is shown with fields to enter service credentials and an API endpoint](images/wos-connect-custom-cred.png)
-
-2. After you save your machine learning setup, return to the **Dashboard**, click the **Insights** tab, and then click the **Add to dashboard** button.
-
-3. Select a deployment from the list and click **Configure**.
-
-You are now ready to configure monitors.
-
-### Providing individual scoring endpoints
-{: #co-config-scoring-endpoints}
-
-1. If you selected the **Enter individual scoring endpoints** tile, enter your credentials for the API Endpoint, then click **Save**.
-
-2. After you save your machine learning setup, return to the **Dashboard**, click the **Insights** tab, and then click the **Add to dashboard** button.
-
-3. Click the **Add Endpoint** button.
-
-4. From the drop-down menu, select the custom environment, type the deployment name and API endpoint, then click **Save**.
-
-You are now ready to configure monitors.
 
 
 

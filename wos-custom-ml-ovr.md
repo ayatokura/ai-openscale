@@ -29,6 +29,7 @@ subcollection: ai-openscale
 {: #fmrk-workaround-customengine}
 
 A custom machine learning engine provides the infrastructure and hosting capabilities for machine learning models and web applications. Custom machine learning engines that are supported by {{site.data.keyword.aios_short}} must conform to the following requirements:
+{: shortdesc}
 
 - Expose two types of REST API endpoints:
 

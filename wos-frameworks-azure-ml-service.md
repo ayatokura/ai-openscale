@@ -26,7 +26,7 @@ subcollection: ai-openscale
 {:faq: data-hd-content-type='faq'}
 
 # Microsoft Azure ML Service frameworks
-{: #frmwrks-azure-service}
+{: #frmwrks-azureservice}
 
 You can use Microsoft Azure ML Service to perform payload logging, feedback logging, and to measure performance accuracy, run-time bias detection, explainability, and auto-debias function in {{site.data.keyword.aios_full}}.
 {: shortdesc}
