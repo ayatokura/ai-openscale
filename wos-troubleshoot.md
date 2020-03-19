@@ -109,7 +109,7 @@ To avoid loss of data, you must use the active debias API to score in chunks of 
 {: tsResolve}
 
 ## Specific issues for {{site.data.keyword.wos4d_full}}
-{: #ts-trouble-common}
+{: #ts-trouble-icp4d-only}
 
 The following issues are specific to {{site.data.keyword.wos4d_full}}.
 

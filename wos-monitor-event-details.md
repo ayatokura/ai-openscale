@@ -67,7 +67,7 @@ Select a data type from the drop-down box. The data type that you select here mu
 Type a free-form label, such as USD or Euros to provide context to the data.
 
 ## Steps to manually create event details
-{: #event-dets-config}
+{: #event-dets-config-cr-evnt-dts}
 
 1. From the **Insights dashboard**, on the **Application monitors** tab, click the **Add to dashboard** button to create a new application.
 1. In the **Application name** field, type **the name of the application**, and then click **Configure**.
@@ -78,7 +78,7 @@ Type a free-form label, such as USD or Euros to provide context to the data.
 
 
 ## Steps to create event details by uploading a file
-{: #event-dets-config}
+{: #event-dets-config-cr-vent-dets-file-upld-mthd}
 
 1. From the **Insights dashboard**, on the **Application monitors** tab, click the **Add to dashboard** button to create a new application.
 1. In the **Application name** field, type **the name of the application**, and then click **Configure**.

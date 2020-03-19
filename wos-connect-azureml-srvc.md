@@ -55,6 +55,6 @@ You can also add your machine learning provider by using the Python SDK. For mor
 You have successfully selected deployments.
 
 ### Next steps
-{: #ca-next}
+{: #ca-next-azureservice}
 
 {{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).

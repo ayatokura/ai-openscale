@@ -338,7 +338,7 @@ print("Request OK: " + str(req_response.ok))
 
 
 ## Next steps
-{: #ca-next}
+{: #ca-next-azure-service}
 
 -{{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
 - [How does Azure Machine Learning service differ from Studio?](https://docs.microsoft.com/en-us/azure/machine-learning/service/overview-what-is-azure-ml#how-does-azure-machine-learning-service-differ-from-studio){: external}

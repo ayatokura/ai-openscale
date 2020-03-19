@@ -223,6 +223,6 @@ You have successfully selected deployments.
 
 
 ## Next steps
-{: #ca-next}
+{: #ca-next-frmwrks-azure}
 
 {{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).

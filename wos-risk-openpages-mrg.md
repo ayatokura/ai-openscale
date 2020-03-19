@@ -174,7 +174,7 @@ So that the two services can be fully integrated, you must add your IBM OpenPage
 ![the OpenPages configuration screen with URL, username and password fields](images/wos-openpages-config.png).
 
 ### Step 3: Perform analysis in Watson OpenScale
-{: #mrm-risk-openpages-mrg-wosstep2}
+{: #mrm-risk-openpages-mrg-wosstep3}
 
 After you run the set-up notebook and activate the MRM beta features, you can both see and compare the sample evaluations in Watson OpenScal5. There is a downloadable report, the Model Summary Report, that includes all the quality measures, fairness measures, and drift magnitude.
 
