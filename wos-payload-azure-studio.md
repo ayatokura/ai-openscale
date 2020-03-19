@@ -146,3 +146,7 @@ subcollection: ai-openscale
     print("Request OK: " + str(req_response.ok))
     ```
 
+## Next steps
+{: #ca-next-frmwrks-azure2}
+
+{{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
