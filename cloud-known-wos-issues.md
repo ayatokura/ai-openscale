@@ -311,7 +311,7 @@ Drift configuration is started but never finishes and continues to show the spin
 ## Next steps
 {: #abt-next}
 
-- [Getting started](/docs/services/ai-openscale?topic=ai-openscale-gettingstarted)
+- [Getting started](/docs/services/ai-openscale?topic=ai-openscale-getting-started)
 - View the [API Reference material](https://cloud.ibm.com/apidocs/ai-openscale){: external}.
 - [What's new in {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-rn-relnotes)
 - [Contact IBM](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-watson){: external}.

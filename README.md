@@ -69,7 +69,7 @@ FYI: Creating and publishing API docs for IBM Cloud
 
 ## OpenScale "regular" documentation doc sites
 
-- [IBM Cloud OpenScale doc](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-gettingstarted#gettingstarted)
+- [IBM Cloud OpenScale doc](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-getting-started)
 - [IBM Cloud OpenScale ICP4D doc](https://cloud.ibm.com/docs/services/ai-openscale-icp?topic=ai-openscale-icp-gs-get-started#gettingstarted)
 
 ## Other documentation and tools (not written by Content Design)

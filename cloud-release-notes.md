@@ -202,7 +202,7 @@ The following new features and changes to the service are available.
 
 {{site.data.keyword.aios_short}} features that have been added or enhanced since the previous release include:
 
-- __*New Credit Risk model*__: A new Credit Risk model example/tutorial is supported for all scoring engines. For more information see the [Getting started](/docs/services/ai-openscale?topic=ai-openscale-gettingstarted#gettingstarted) and [Additional resources](/docs/services/ai-openscale?topic=ai-openscale-arsc-ov#arsc-ov) topics.
+- __*New Credit Risk model*__: A new Credit Risk model example/tutorial is supported for all scoring engines. For more information see the [Getting started](/docs/services/ai-openscale?topic=ai-openscale-getting-started) and [Additional resources](/docs/services/ai-openscale?topic=ai-openscale-arsc-ov#arsc-ov) topics.
 
 - __*Computing debias*__: You can toggle between your production model and a de-biased model created by {{site.data.keyword.aios_short}}. See [Production model and De-biased model](/docs/services/ai-openscale?topic=ai-openscale-it-ov) and [Understanding how de-biasing works](/docs/services/ai-openscale?topic=ai-openscale-mf-monitor#mf-debias) for more information.
 

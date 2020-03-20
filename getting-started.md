@@ -33,7 +33,7 @@ subcollection: ai-openscale
 {:swift: .ph data-hd-programlang='swift'}
 
 # Getting started tutorial (automated setup)
-{: #gettingstarted}
+{: #getting-started}
 
 {{site.data.keyword.aios_full}} tracks and measures outcomes from your AI models, and helps ensure they remain fair, explainable and compliant wherever your models were built or are running. {{site.data.keyword.aios_short}} also detects and helps correct the drift in accuracy when an AI model is in production
 {: shortdesc}
@@ -99,7 +99,7 @@ To quickly see how {{site.data.keyword.aios_short}} monitors a model, run the de
 Before you begin the tour, you must have the following resources set up:
 
 - [{{site.data.keyword.ibmid}}](/docs/account?topic=account-signup){: external}
-- [{{site.data.keyword.aios_full}}](/docs/services/ai-openscale?topic=ai-openscale-gettingstarted#crt-wos-faststart)
+- [{{site.data.keyword.aios_full}}](/docs/services/ai-openscale?topic=ai-openscale-getting-started#crt-wos-faststart)
 
 The automated setup tour is designed to work with the least possible user interaction. It automatically makes the following decisions for you:
 

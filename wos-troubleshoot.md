@@ -28,6 +28,8 @@ subcollection: ai-openscale
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
 {:troubleshoot: data-hd-content-type='troubleshoot'}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Troubleshooting
 {: #ts-trouble}
@@ -43,6 +45,7 @@ The following issues are common for both {{site.data.keyword.aios_full}} on Clou
 ## When I use AutoAI, why am I getting an error about mismatched data?
 {: #ts-trouble-common-autoai-binary}
 {: troubleshoot}
+{: support}
 
 You receive an error message about mismatched data when using AutoAI for binary classification. Note that AutoAI is only supported in {{site.data.keyword.wos4d_full}}. 
 {: tsSymptoms} 
@@ -59,6 +62,7 @@ To fix this, implement one of the following solutions:
 ## Why am I getting errors during model configuration?
 {: #ts-trouble-common-xgboost-wml-model-details}
 {: troubleshoot}
+{: support}
 
 The following error messages appear when you are configuring model details: **Field `feature_fields` references column `<name>`, which is missing in `input_schema` of the model. Feature not found in input schema.**
 {: tsSymptoms} 
@@ -72,6 +76,7 @@ To fix the issue, you must determine which of the following conditions is causin
 ## Why are my class labels missing when I use XGBoost?
 {: #ts-trouble-common-xgboost-multiclass}
 {: troubleshoot}
+{: support}
 
 Native XGBoost multiclass classification does not return class labels.
 {: tsSymptoms} 
@@ -85,6 +90,7 @@ For XGBoost binary and multiple class models, you must update the model to retur
 ## Why are the payload analytics not displaying properly?
 {: #ts-trouble-common-payloadfileformat}
 {: troubleshoot}
+{: support}
 
 Payload analytics does not display properly and the following error message displays: **AIQDT0044E Forbidden character `"` in column name `<column name>`**
 {: tsSymptoms} 
@@ -98,6 +104,7 @@ Remove double quotation marks (") from the column names of the payload file.
 ## Why are some of my active debias records missing?
 {: #ts-trouble-common-payloadlogging-1000k-limit}
 {: troubleshoot}
+{: support}
 
 Active debias records do not reach the payload logging table.
 {: tsSymptoms}
@@ -116,6 +123,7 @@ The following issues are specific to {{site.data.keyword.wos4d_full}}.
 ## When creating a subscription, why do I get an error?
 {: #ts-trouble-icp4d-pod-restart}
 {: troubleshoot}
+{: support}
 
 The following error applies to {{site.data.keyword.wos4d_full}} version 2.1.0.2 and version 2.5.0. You may see the following error display: **Action Create Payload Tables has failed: Invalid token**.
 {: tsSymptoms}
