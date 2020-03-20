@@ -17,6 +17,8 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -26,6 +28,8 @@ subcollection: ai-openscale
 
 # Formatting and uploading training data in {{site.data.keyword.aios_short}}
 {: #fmt-upld-training_data_schema-ovr}
+{: help} 
+{: support}
 
 The quality and size of training data is essential to building accurate predictive machine learning and deep learning models. It is the initial, and hopefully representative, dataset that a data scientist uses to train the model. Typically, if you are dividing a pool of data into training, validation, and test sets, training will be the largest of the three. {{site.data.keyword.aios_short}} relies on the training data schema to ensure that the information that you enter to identify the data is accurate and corresponds to the way that {{site.data.keyword.aios_short}} understands the model. 
 

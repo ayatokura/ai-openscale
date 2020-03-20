@@ -17,7 +17,8 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -39,6 +40,8 @@ For {{site.data.keyword.aios_short}}, all transactions going to the deployed mod
 
 ## Logging the payload with Python SDK
 {: #cdb-payload-log-pythonsdk}
+{: help} 
+{: support}
 
 For an example of full working code, see the [AI Openscale and Custom ML Engine](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/AI%20OpenScale%20and%20Custom%20ML%20Engine.ipynb){: external} sample notebook.
 
@@ -66,6 +69,8 @@ You can preview the content of your payload logging table either by directly con
 
 ## Logging the payload with the REST API
 {: #cdb-payload-log-rest-api}
+{: help} 
+{: support}
 
 The following code sample shows how to log the payload by using the REST API:
 

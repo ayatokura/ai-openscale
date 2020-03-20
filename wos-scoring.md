@@ -17,7 +17,8 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -36,6 +37,8 @@ To configure monitors, {{site.data.keyword.aios_short}} requires you to send a s
 
 ## Steps for payload logging
 {: #cdb-score-apisteps}
+{: help} 
+{: support}
 
 1. From the {{site.data.keyword.aios_short}} dashboard, click a deployment tile.
 2. Click **Configure monitors** . 
@@ -52,6 +55,8 @@ After you run your payload logging, a checkmark appears in the **Ready to Monito
 
 ## Understanding the number of scoring requests
 {: #cdb-score-capacity}
+{: help} 
+{: support}
 
 Scoring requests are an integral part of {{site.data.keyword.aios_short}} processing. Each transaction record that you send to the model to be scored generates additional processing so that the {{site.data.keyword.aios_short}} service can perform perturbation and create explanations.
 

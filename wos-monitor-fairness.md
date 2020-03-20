@@ -17,6 +17,8 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -71,6 +73,8 @@ By setting a minimum sample size, you prevent measuring fairness until a minimum
 
 ## Steps
 {: #mf-config}
+{: help} 
+{: support}
 
 To start the configuration process, from the **Fairness** tab, on the **What is the Fairness monitor?** page, click **Begin**.
 

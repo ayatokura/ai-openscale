@@ -17,7 +17,8 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -27,6 +28,8 @@ subcollection: ai-openscale
 
 # Integrating 3rd-party ML engines with {{site.data.keyword.aios_short}}
 {: #fmrk-workaround}
+{: help} 
+{: support}
 
 {{site.data.keyword.aios_full}} integrates with external machine learning service engines, such as Microsoft Azure ML Studio, Microsoft Azure ML Service, and Amazon SageMaker.
 {: shortdesc}

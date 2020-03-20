@@ -18,6 +18,9 @@ subcollection: ai-openscale
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
+
 
 # Payload logging with the Custom machine learning engine
 {: #cml-cusconfig}
@@ -27,6 +30,8 @@ To configure payload logging for a non-{{site.data.keyword.pm_full}} or custom m
 
 ## Bind your Custom machine learning engine
 {: #cml-cusbind}
+{: help} 
+{: support}
 
 - A non-{{site.data.keyword.pm_full}} engine is bound as Custom, meaning that this is just metadata; there is no direct integration with the non-{{site.data.keyword.pm_full}} service. You can bind more than one machine learning engine to {{site.data.keyword.aios_short}} by using the `client.data_mart.bindings.add` method.
 

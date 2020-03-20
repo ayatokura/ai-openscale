@@ -17,7 +17,8 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -35,6 +36,8 @@ You can also add your machine learning provider by using the Python SDK. For mor
 
 ## Connect your Azure ML Studio instance
 {: #ca-connect}
+{: help} 
+{: support}
 
 {{site.data.keyword.aios_short}} connects to AI models and deployments in a Azure ML Studio instance.
 
@@ -60,7 +63,7 @@ You can also add your machine learning provider by using the Python SDK. For mor
 
 You have successfully selected deployments.
 
-### Next steps
+## Next steps
 {: #ca-next-azure}
 
 {{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).

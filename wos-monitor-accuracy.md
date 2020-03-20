@@ -17,6 +17,8 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -50,6 +52,8 @@ The maximum sample size helps better manage the time and effort it takes to eval
 
 ## Steps
 {: #acc-config}
+{: help} 
+{: support}
 
 To start the configuration process, from the **Quality** tab, on the **What the Quality monitor?** page, click **Begin**.
 

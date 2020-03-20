@@ -17,7 +17,8 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -53,6 +54,8 @@ By setting a minimum sample size, you prevent measuring drift until a minimum nu
 
 ## Steps to configure drift in {{site.data.keyword.aios_short}}
 {: #behavior-drift-config-steps-wos}
+{: help} 
+{: support}
 
 If you use {{site.data.keyword.pm_full}}, you have the option of using the {{site.data.keyword.aios_short}} user interface to configure drift detection.
 

@@ -23,6 +23,9 @@ subcollection: ai-openscale
 {:python: .ph data-hd-programlang='python'}
 {:swift: .ph data-hd-programlang='swift'}
 {:faq: data-hd-content-type='faq'}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
+
 
 # Model risk management and model governance ![beta tag](images/beta.png)
 {: #mrm-ovr}
@@ -56,6 +59,8 @@ Validation and monitoring of AI models is necessary in addition to govern and ma
 
 ## Options
 {: #mrm-ovr-wos}
+{: help} 
+{: support}
 
 IBM offers a model risk management solution for financial services with IBM Watson OpenScale. IBM Watson OpenScale monitors and measures outcomes from AI Models across its lifecycle and performs model validations. Specifically, you can use the following configurations:
 
