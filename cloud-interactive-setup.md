@@ -32,18 +32,18 @@ In this tutorial, you learn how to provision the required {{site.data.keyword.Bl
 {: shortdesc}
 
 1. [Provision {{site.data.keyword.Bluemix_notm}} machine learning and storage services](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-prps).
-2. [Set up a Watson Studio project, and create, train and deploy a machine learning model](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-setup).
-3. [Configure and explore trust, transparency and explainability for your model](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
+2. [Set up a Watson Studio project, and create, train, and deploy a machine learning model](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-setup).
+3. [Configure and explore trust, transparency, and explainability for your model](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
 
 ## Provision prerequisite {{site.data.keyword.Bluemix_notm}} services
 {: #gs-prps}
 
 In addition to {{site.data.keyword.aios_short}}, to complete this tutorial, you need the following accounts and services.
 
-**Important**: For best performance, it's recommended that the prerequisite services are created in the same region as {{site.data.keyword.aios_short}}. To view available locations for {{site.data.keyword.aios_short}}, see [Service availability](/docs/resources?topic=resources-services_region){: external}.
+**Important**: For best performance, create prerequisite services in the same region as {{site.data.keyword.aios_short}}. To view available locations for {{site.data.keyword.aios_short}}, see [Service availability](/docs/resources?topic=resources-services_region){: external}.
 
 1.  Log in to your [{{site.data.keyword.Bluemix_notm}} account](https://{DomainName}){: external} with your {{site.data.keyword.ibmid}}.
-1.  For each of the following services that you don't already have associated with your account, create an instance by clicking the link, giving the service a name, selecting the **Lite** (free) plan, and clicking the **Create** button:
+1.  For each of the following services, create an instance by clicking the link, giving the service a name, selecting the **Lite** (free) plan, and clicking the **Create** button:
 
     - [{{site.data.keyword.DSX}}](https://{DomainName}/catalog/services/watson-studio){: external}
 
@@ -51,7 +51,7 @@ In addition to {{site.data.keyword.aios_short}}, to complete this tutorial, you 
 
     - [{{site.data.keyword.pm_full}}](https://{DomainName}/catalog/services/machine-learning){: external}
 
-      ![Machine Learning](images/cloud-machine_learning.png)
+      ![Machine learning](images/cloud-machine_learning.png)
 
     - [{{site.data.keyword.cos_full_notm}}](https://{DomainName}/catalog/services/cloud-object-storage){: external}
 
@@ -78,8 +78,8 @@ In addition to {{site.data.keyword.aios_short}}, to complete this tutorial, you 
 
     ![Add Watson Service](images/cloud_add_watson_service.png)
 
-1.  Click the **Add** link on the **Machine Learning** tile.
-2.  On the **Existing** tab, from the **Existing Service Instance** drop-down, click the service you created previously.
+1.  Click the **Add** link on the **machine learning** tile.
+2.  On the **Existing** tab, from the **Existing Service Instance** drop-down, click the service that you created previously.
 3.  Click **Select**.
 
 ### Add the **Credit Risk** model
@@ -92,19 +92,19 @@ In addition to {{site.data.keyword.aios_short}}, to complete this tutorial, you 
 1.  On the **Import Model** page, in the **Select model type** section, click the **From sample** radio button.
 2.  Click the **Credit Risk** model tile, and then click **Import**.
 
-    ![the credit risk tile is shown](images/wos-credit-sample-model.png)
+    ![The credit risk tile is shown](images/wos-credit-sample-model.png)
 
 ### Deploy the **Credit Risk** model
 {: #gs-depmod}
 
-1.  From the the **Credit Risk** model page, click the **Deployments** tab, and then, click **Add Deployment**.
+1.  From the **Credit Risk** model page, click the **Deployments** tab, and then, click **Add Deployment**.
 1.  Type `credit-risk-deploy` as the name for your deployment, and select the **Web service** deployment type.
 1.  Click **Save**.
 
 ## Configure {{site.data.keyword.aios_short}}
 {: #gs-confaios}
 
-Now that the machine learning model has been deployed, you can configure {{site.data.keyword.aios_short}} to ensure trust and transparency with your models.
+Now that the machine learning model is deployed, you can configure {{site.data.keyword.aios_short}} to ensure trust and transparency with your models.
 
 ### Provision {{site.data.keyword.aios_short}}
 {: #gs-provaios}
@@ -115,7 +115,7 @@ Now that the machine learning model has been deployed, you can configure {{site.
 
 2.  Give your service a name, select the **Lite plan**, and click **Create**.
 
-1.  Select the **Manage** tab of your {{site.data.keyword.aios_short}} instance, and click the **Launch application** button. The **Welcome to {{site.data.keyword.aios_short}}** demo page opens.
+1.  Select the **Manage** tab of your {{site.data.keyword.aios_short}} instance, and click the **Launch application** button. The **Welcome to {{site.data.keyword.aios_short}}** demonstration page opens.
 2. For this tutorial, click **No Thanks**.
 
 ### Select a database
@@ -125,7 +125,7 @@ Next, you need to choose a database. You have two options: the free database, or
 
 2. For this tutorial, select the **Use the free Lite plan database** tile.
 
-   The free database has some important limitations. It is a hosted database that does not give you separate access to it. It gives {{site.data.keyword.aios_short}} acccess to your database and data. It is not GDPR-compliant. See more complete details about each of these options in the [Specifying a database](/docs/services/ai-openscale?topic=ai-openscale-connect-db) topic. The existing database can be a PostgreSQL database or a Db2 database.
+   The free database has some important limitations. It is a hosted database that does not give you separate access to it. It gives {{site.data.keyword.aios_short}} access to your database and data. It is not GDPR-compliant. See complete details about each of these options in the [Specifying a database](/docs/services/ai-openscale?topic=ai-openscale-connect-db) topic. The existing database can be a PostgreSQL database or a Db2 database.
     {: tip}
 
    ![Select database](images/cloud-gs-set-lite-db2.png)
@@ -145,7 +145,7 @@ Next, you need to choose a database. You have two options: the free database, or
 
     ![Set {{site.data.keyword.pm_short}} instance](images/wos-gs-set-wml.png)
 
-You are now able to select the deployed models that will be monitored by {{site.data.keyword.aios_short}}.
+You are now able to select the deployed models that you want to monitor by using {{site.data.keyword.aios_short}}.
 
 
 ### Provide a set of sample data to your model

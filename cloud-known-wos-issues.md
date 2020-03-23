@@ -29,7 +29,7 @@ subcollection: ai-openscale
 # Known issues and limitations for {{site.data.keyword.aios_short}} for {{site.data.keyword.cloud_notm}}
 {: #rn-12ki}
 
-The following lists contains the known issues and limitation that are common for {{site.data.keyword.aios_full}} for {{site.data.keyword.Bluemix}} and {{site.data.keyword.wos4d_full}} and also those that are specific to  {{site.data.keyword.aios_full}} for {{site.data.keyword.Bluemix}}.
+The following list contains the known issues and limitation that are common for {{site.data.keyword.aios_full}} for {{site.data.keyword.Bluemix}} and {{site.data.keyword.wos4d_full}} and specific to {{site.data.keyword.aios_full}} for {{site.data.keyword.Bluemix}}.
 {: shortdesc}
 
 <p>&nbsp;</p>
@@ -56,9 +56,9 @@ The following limitations and known issues are common to both {{site.data.keywor
 ### Limit on the number of features for a model
 {: #wos-limitations-feat-col-size-limit}
 
-Scoring payloads for a model must fit within the maximum width allowed for the table created by payload logging in the datamart database (with some buffer for the internal-use columns that Watson OpenScale itself adds). In addition, apart from the width there is also a hard-coded limit of 1012 features.
+Scoring payloads for a model must fit within the maximum width that is allowed for the table that is created by payload logging in the data mart database (with some buffer for the internal-use columns that Watson OpenScale itself adds). In addition, apart from the width there is also a hardcoded limit of 1012 features.
 
-The following table summarizes what this means for models with different sizes of features:
+The following table summarizes what this limit means for models with different sizes of features:
 
 Table 1: Feature column limits
 
@@ -74,8 +74,8 @@ Because many models have features of mixed types, the following sample configura
 
 - For int64 or float64 or strings of length 64 or less, count as 64.
 - For strings from 65 to 2048, count as 2048.
-- For strings from 2048 to 32K, count as 32K.
-- The total length of all features should be no more than ~900K.
+- For strings from 2048 to 32 K, count as 32 K.
+- The total length of all features must not exceed ~900K.
 
 <p>&nbsp;</p>
 
@@ -83,9 +83,9 @@ Because many models have features of mixed types, the following sample configura
 ### Not all Db2 instances function identically
 {: #wos-limitations-db2-version}
 
-{{site.data.keyword.aios_short}} supports Db2 Warehouse add-on, Db2 Advanced Enterprise Server Edition add-on, as well as Db2 Enterprise Server Edition (v. 11.5.1 or later) installation that is accessible to the cluster. Be aware of the following limitation:
+{{site.data.keyword.aios_short}} supports Db2 Warehouse add-on, Db2 Advanced Enterprise Server Edition add-on, and Db2 Enterprise Server Edition (v. 11.5.1 or later) installation that is accessible to the cluster. Be aware of the following limitation:
 
-- {{site.data.keyword.aios_short}} requires a tablespace with a page size of 32k or larger.
+- {{site.data.keyword.aios_short}} requires a table space with a page size of 32k or larger.
 
 <p>&nbsp;</p>
 
@@ -93,7 +93,7 @@ Because many models have features of mixed types, the following sample configura
 ### Drift configuration errors prevent configuration of drift monitor
 {: #wos-common-issues-mismatchdatatype}
 
-The flexibility of the model configuration screen can also lead to problems later on when you want to configure monitors, such as the drift detection monitor. Because you can choose the data types, you must ensure that your choices match the input schema of the model. The following error may occur if the prediction column type is not properly selected:
+The flexibility of the model configuration screen can also lead to problems later on when you want to configure monitors, such as the drift detection monitor. Because you can choose the data types, you must ensure that your choices match the input schema of the model. The following error might occur if the prediction column type is not properly selected:
 
 ```
 "error": AIQDS2003E",
@@ -110,7 +110,7 @@ The following cases are the most-likely cause:
 ### Payload formats
 {: #wos-common-issues-payloadformat}
 
-For proper processing of payload analytics, {{site.data.keyword.aios_short}} does not support column names with double quotation marks (") in the payload. This affects both scoring payload and feedback data in CSV and JSON formats.
+For proper processing of payload analytics, {{site.data.keyword.aios_short}} does not support column names with double quotation marks (") in the payload. This format limit affects both scoring payload and feedback data in CSV and JSON formats.
 
 <p>&nbsp;</p>
 
@@ -121,13 +121,13 @@ For proper processing of payload analytics, {{site.data.keyword.aios_short}} doe
 
 - Of the two types of Azure Machine Learning web services, only the `New` type is supported by {{site.data.keyword.aios_short}}. The `Classic` type is not supported.
 
-- __*Default input name must be used*__: In the Azure web service, the default input name is `"input1"`. Currently, this field is mandated for {{site.data.keyword.aios_short}} and, if it is missing, {{site.data.keyword.aios_short}} will not work.
+- __*Default input name must be used*__: In the Azure web service, the default input name is `"input1"`. Currently, this field is mandated for {{site.data.keyword.aios_short}} and, if it is missing, {{site.data.keyword.aios_short}} fails.
 
   If your Azure web service does not use the default name, change the input field name to `"input1"`, then redeploy your web service and reconfigure your OpenScale machine learning provider settings.
 
-- If calls to Microsoft Azure ML Studio to list the machine learning models causes the response to time out, for example when you have many web services, you must increase timeout values. You may need to work around this issue by changing the `/etc/haproxy/haproxy.cfg` configuration setting:
+- If calls to Microsoft Azure ML Studio to list the machine learning models causes the response to timeout, for example when you have many web services, you must increase timeout values. You might need to work around this issue by changing the `/etc/haproxy/haproxy.cfg` configuration setting:
 
-   - Log into the load balancer node and update `/etc/haproxy/haproxy.cfg` to set the client and server timeout from `1m` to `5m`:
+   - Log in to the load balancer node and update `/etc/haproxy/haproxy.cfg` to set the client and server timeout from `1m` to `5m`:
 
        ```bash
        timeout client           5m
@@ -136,7 +136,7 @@ For proper processing of payload analytics, {{site.data.keyword.aios_short}} doe
 
    - Running `systemctl restart haproxy` to restart the HAProxy load balancer.
 
-If you are using a different load balancer, other than HAProxy, you may need to adjust timeout values in a similar fashion.
+If you are using a different load balancer, other than HAProxy, you might need to adjust timeout values in a similar fashion.
       {: note}
 
 - Of the two types of Azure Machine Learning web services, only the `New` type is supported by {{site.data.keyword.aios_short}}. The `Classic` type is not supported.
@@ -155,14 +155,14 @@ If you are using a different load balancer, other than HAProxy, you may need to 
 ### Custom machine learning service instance
 {: #wos-common-issues-custom}
 
-- The [{{site.data.keyword.aios_short}} Python Client SDK](/docs/services/ai-openscale-icp?topic=ai-openscale-as-module) does not currently have Explainability working for the Custom serve engine. This is because the Custom serve engine requires a numerical prediction in the response data, which is not included with the module script.
+- The [{{site.data.keyword.aios_short}} Python Client SDK](/docs/services/ai-openscale-icp?topic=ai-openscale-as-module) does not currently support explainability features for the custom engine. This is because the Custom serve engine requires a numerical prediction in the response data, which is not included with the module script.
 
 <p>&nbsp;</p>
 
 
 - **Code snippets invalid**
 
-    - Both cURL and Python code snippets provided for monitor configuration are invalid. Correct code snippets are provided here:
+    - Both cURL and Python code snippets that are provided for monitor configuration are invalid. Correct code snippets are provided here:
 
       *Payload logging*
 
@@ -265,7 +265,7 @@ If you are using a different load balancer, other than HAProxy, you may need to 
 ### Browser support
 {: #abt-browser}
 
-The {{site.data.keyword.aios_short}} service tooling requires the same level of browser software as is required by {{site.data.keyword.cloud_notm}}. See the {{site.data.keyword.cloud_notm}} [Prerequisites](https://cloud.ibm.com/docs/overview?topic=overview-prereqs-platform#browsers-platform) topic for details.
+The {{site.data.keyword.aios_short}} service requires the same level of browser software as is required by {{site.data.keyword.cloud_notm}}. See the {{site.data.keyword.cloud_notm}} [Prerequisites](https://cloud.ibm.com/docs/overview?topic=overview-prereqs-platform#browsers-platform) topic for details.
 
 <p>&nbsp;</p>
 
@@ -273,7 +273,7 @@ The {{site.data.keyword.aios_short}} service tooling requires the same level of 
 ### {{site.data.keyword.aios_short}} Python Client
 {: #abt-python}
 
-The [{{site.data.keyword.aios_short}} Python Client](http://ai-openscale-python-client.mybluemix.net/){: external} is a Python library that allows you to work directly with the {{site.data.keyword.aios_short}} service. For development and automation purposes, you can optionally use the Python client to directly configure the datamart database, bind your machine learning engine, and select and monitor deployments. For examples using the Python client in this way, see the [{{site.data.keyword.aios_short}} sample notebooks](https://github.com/pmservice/ai-openscale-tutorials/tree/master/notebooks){: external}.
+The [{{site.data.keyword.aios_short}} Python Client](http://ai-openscale-python-client.mybluemix.net/){: external} is a Python library that works directly with the {{site.data.keyword.aios_short}} service. For development and automation purposes, you can optionally use the Python client to directly configure the datamart database, bind your machine learning engine, and select and monitor deployments. For examples using the Python client in this way, see the [{{site.data.keyword.aios_short}} sample notebooks](https://github.com/pmservice/ai-openscale-tutorials/tree/master/notebooks){: external}.
 
 <p>&nbsp;</p>
 
@@ -291,9 +291,9 @@ The following limitations and known issues are specific to {{site.data.keyword.a
 
 - The database and {{site.data.keyword.pm_full}} instance must be deployed in the same {{site.data.keyword.cloud_notm}} account.
 
-- {{site.data.keyword.aios_short}} uses a PostgreSQL or Db2 database to store model related data (feedback data, scoring payload) and calculated metrics. Lite Db2 plans are not currently supported.
+- {{site.data.keyword.aios_short}} uses a PostgreSQL or Db2 database to store model-related data (feedback data, scoring payload) and calculated metrics. Lite Db2 plans are not currently supported.
 
-- The free Lite plan database is not GDPR compliant. If your model processes personally identifiable information (PII), you must purchase a new database or use an existing database that does conform to GDPR rules.
+- The free Lite plan database is not GDPR-compliant. If your model processes personally identifiable information (PII), you must purchase a new database or use an existing database that does conform to GDPR rules.
 
 ### Known issues
 {: #cloud-known-unknowns-issues}
@@ -303,7 +303,7 @@ The following limitations and known issues are specific to {{site.data.keyword.a
 #### Drift configuration is started but never finishes
 {: #wos-common-issues-timeout}
 
-Drift configuration is started but never finishes and continues to show the spinner icon. Typically drift config takes about ten minutes but in cases when you see the spinner running for a very long time it is possible that the system is left in an inconsistent state. There is a workaround to this behavior: Edit the drift configuration. Then save it. The system should come out of this state and complete configuration. Contact IBM Support if this does not rectify the situation.
+Drift configuration is started but never finishes and continues to show the spinner icon. Typically drift config takes about ten minutes but in cases when you see the spinner running for a very long time it is possible that the system is left in an inconsistent state. There is a workaround to this behavior: Edit the drift configuration. Then, save it. The system should come out of this state and complete configuration. Contact IBM Support if this does not rectify the situation.
 
 
 

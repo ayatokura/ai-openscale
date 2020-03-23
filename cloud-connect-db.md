@@ -55,7 +55,7 @@ To proceed with using the free database, click **Use the free Lite plan database
 
   ![The database pop-up message is shown with the select provider button selected](images/wos-gs-config-database2.png)
   
-You can upgrade to another database from the free database, it is not possible to reconfigure a Compose for Postgres, Database for Postgres, or Db2 instance to the free database. After you upgrade,, it is impossible to return to using the free database. All the current data, such as the configuration, the scoring results, and explanations cannot be reused. By selecting another schema or database, the {{site.data.keyword.aios_short}} environment is reset.
+You can upgrade to another database from the free database. It is not possible to reconfigure a Compose for Postgres, Database for Postgres, or Db2 instance to the free database. After you upgrade,, it is impossible to return to using the free database. All the current data, such as the configuration, the scoring results, and explanations cannot be reused. By selecting another schema or database, the {{site.data.keyword.aios_short}} environment is reset.
 
 
 
@@ -73,7 +73,7 @@ You can upgrade to another database from the free database, it is not possible t
 
 1.  You can also click **Select a different location** to specify a database location outside of your {{site.data.keyword.Bluemix_notm}} account.
 
-    {{site.data.keyword.aios_short}} uses a PostgreSQL or Db2 database to store model related data (feedback data, scoring payload) and calculated metrics. Lite Db2 plans are not currently supported.
+    {{site.data.keyword.aios_short}} uses a PostgreSQL or Db2 database to store model-related data (feedback data, scoring payload) and calculated metrics. Lite Db2 plans are not currently supported.
     {: note}
 
     - Select the **Database Type** (`Compose for PostgreSQL`, `Database for PostgreSQL`, or `Db2`), then provide connection information:
