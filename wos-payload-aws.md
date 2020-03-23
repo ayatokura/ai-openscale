@@ -34,7 +34,7 @@ subcollection: ai-openscale
 {: help} 
 {: support}
 
-- A non-{{site.data.keyword.pm_full}} engine is bound as Custom, meaning that this is just metadata; there is no direct integration with the non-{{site.data.keyword.pm_full}} service.
+- A non-{{site.data.keyword.pm_full}} engine is bound as Custom by using metadata; there is no direct integration with the non-{{site.data.keyword.pm_full}} service.
 
     ```python
     SAGEMAKER_ENGINE_CREDENTIALS = {
@@ -97,7 +97,7 @@ subcollection: ai-openscale
 ## Scoring and payload logging
 {: #cml-smscore}
 
-- Score your model. For a full example, see the [Working with SageMaker Machine Learning Engine notebook](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/AI%20OpenScale%20and%20SageMaker%20ML%20Engine.ipynb){: external}.
+- Score your model. For a full example, see the [Working with SageMaker machine learning Engine notebook](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/AI%20OpenScale%20and%20SageMaker%20ML%20Engine.ipynb){: external}.
 
 
 - Store the request and response in the payload logging table:
@@ -111,7 +111,7 @@ subcollection: ai-openscale
 
     subscription.payload_logging.store(records=records_list)
     ```
-    **Note**: For languages other than Python, you can also perform payload logging directly, using a REST API.
+    **Note**: For languages other than Python, you can also log payload by using a REST API.
 
     ```json
     token_endpoint = "https://iam.cloud.ibm.com/identity/token"
@@ -153,4 +153,4 @@ subcollection: ai-openscale
 {: #csm-next-qws}
 
 - {{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
-- [Monitor Sagemaker machine learning with Watson OpenScale](https://developer.ibm.com/patterns/monitor-amazon-sagemaker-machine-learning-models-with-ai-openscale//){: external}
+- [Monitor SageMaker machine learning with Watson OpenScale](https://developer.ibm.com/patterns/monitor-amazon-sagemaker-machine-learning-models-with-ai-openscale//){: external}

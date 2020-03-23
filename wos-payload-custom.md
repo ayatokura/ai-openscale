@@ -33,7 +33,7 @@ To configure payload logging for a non-{{site.data.keyword.pm_full}} or custom m
 {: help} 
 {: support}
 
-- A non-{{site.data.keyword.pm_full}} engine is bound as Custom, meaning that this is just metadata; there is no direct integration with the non-{{site.data.keyword.pm_full}} service. You can bind more than one machine learning engine to {{site.data.keyword.aios_short}} by using the `client.data_mart.bindings.add` method.
+- A non-{{site.data.keyword.pm_full}} engine is bound as Custom by using metadata; there is no direct integration with the non-{{site.data.keyword.pm_full}} service. You can bind more than one machine learning engine to {{site.data.keyword.aios_short}} by using the `client.data_mart.bindings.add` method.
 
     ```python
     custom_engine_credentials = {
@@ -101,7 +101,7 @@ For more information, see [Payload logging]().
 
     subscription.payload_logging.store(records=records_list)
     ```
-    **Note**: For languages other than Python, you can also perform payload logging directly, using a REST API.
+    **Note**: For languages other than Python, you can also log payloads directly, by using a REST API.
 
     ```json
     token_endpoint = "https://iam.cloud.ibm.com/identity/token"

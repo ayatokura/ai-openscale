@@ -29,7 +29,7 @@ subcollection: ai-openscale
 # Payload and feedback logging in {{site.data.keyword.aios_short}}
 {: #cdb-payload}
 
-For {{site.data.keyword.aios_short}}, all transactions going to the deployed models must be logged as payload records in the {{site.data.keyword.aios_short}} data mart. The input and output payloads (requests and responses) need to be in the format required by {{site.data.keyword.aios_short}} as described in the specifications. 
+For {{site.data.keyword.aios_short}}, all transactions that are sent to the deployed models must be logged as payload records in the {{site.data.keyword.aios_short}} data mart. The input and output payloads (requests and responses) need to be in the format that is required by {{site.data.keyword.aios_short}} as described in the specifications. 
 {: shortdesc}
 
 {{site.data.keyword.aios_short}} supports payload and feedback logging through the following methods:
@@ -43,7 +43,7 @@ For {{site.data.keyword.aios_short}}, all transactions going to the deployed mod
 {: help} 
 {: support}
 
-For an example of full working code, see the [AI Openscale and Custom ML Engine](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/AI%20OpenScale%20and%20Custom%20ML%20Engine.ipynb){: external} sample notebook.
+For an example of full working code, see the [AI OpenScale and Custom ML Engine](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/AI%20OpenScale%20and%20Custom%20ML%20Engine.ipynb){: external} sample notebook.
 
 The following code sample shows how to log the payload by using the Python SDK:
 

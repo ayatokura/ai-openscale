@@ -48,7 +48,7 @@ You can integrate {{site.data.keyword.aios_short}} with 3rd-party engines in the
 
   Each input and output to the deployed model triggered by a user’s application must be stored in a payload store. The format of the payload records follows the same specification as mentioned in the preceding section on deployment subscription levels.
    
-   {{site.data.keyword.aios_short}} uses those records to calculate bias, explanations and others. It is not possible for {{site.data.keyword.aios_short}} to automatically store transactions that are executed on the user site, which is outside the {{site.data.keyword.aios_short}} system. This is one of the ways that {{site.data.keyword.aios_short}} safeguards proprietary information. Use the {{site.data.keyword.aios_short}} Rest API or Python SDK to work with secure data.
+   {{site.data.keyword.aios_short}} uses those records to calculate bias, explanations, and others. It is not possible for {{site.data.keyword.aios_short}} to automatically store transactions that run on the user site, which is outside the {{site.data.keyword.aios_short}} system. This method is one of the ways that {{site.data.keyword.aios_short}} safeguards proprietary information. Use the {{site.data.keyword.aios_short}} Rest API or Python SDK to work with secure data.
    
 ## Steps to implement this solution
 {: #fmrk-workaround-steps}
