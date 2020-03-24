@@ -36,22 +36,22 @@ You are responsible for understanding your configuration, customization, and usa
 ## High Availability 
 {: #openscale-high-availability}
 
-{{site.data.keyword.aios_short}} is deployed and available on **us-south** data centers with multiple zone routing (MZR) on three availability zones. At any time, if one zone is not available, the system will continue to be available in other availability zones. The global-load balancer and DNS server routes traffic to available zones without any user interruption.
+{{site.data.keyword.aios_short}} is deployed and available on **us-south** data centers with multiple zone routing (MZR) on three availability zones. At any time, if one zone is not available, the system continues to be available in other availability zones. The global-load balancer and DNS server routes traffic to available zones without any user interruption.
 
-Data that is stored in PostgreSQL databases is also highly available and exists in multiple availability zones. It is, however, the customer’s responsibility to back up data in support of a disaster recovery plan so that services can be re-created.
+Data that is stored in PostgreSQL databases is also highly available and exists in multiple availability zones. However, it is the customer’s responsibility to back up data in support of a disaster recovery plan so that services can be re-created.
 
-{{site.data.keyword.aios_short}} traffic is load-balanced across multiple zones in a region. Each zone is a data center in the same region. 
+{{site.data.keyword.aios_short}} traffic is balanced across multiple zones in a region. Each zone is a data center in the same region. 
 
-Compose databases, such as PostgreSQL and distributed <code>etc</code> directory (etcd) databases are backed up periodically to ensure high availability and, in the event of disaster, the {{site.data.keyword.aios_short}} operations team will be able to recover service within Recovery Point Objective (RPO).
+Compose databases, such as PostgreSQL and distributed <code>etc</code> directory (etcd) databases are backed up periodically to ensure high availability. If disaster strikes, the {{site.data.keyword.aios_short}} operations team can recover service within Recovery Point Objective (RPO).
  
-{{site.data.keyword.cloud_notm}} offers in-region data redundancy enabling high availability protection. IBM provides automatic data replication for client databases which contain training and/or custom model data at no additional cost. Replication is completed across in-region availability zones within {{site.data.keyword.cloud_notm}} data centers.
+{{site.data.keyword.cloud_notm}} offers in-region data redundancy that enables high availability protection. IBM provides automatic Data Replication for client databases that contain training or custom model data at no additional cost. Replication is completed across in-region availability zones within {{site.data.keyword.cloud_notm}} data centers.
  
-## Backup & Restore
+## Back up & Restore
 {: #openscale-restore}
 
-Clients are responsible for backing up and restoring their own data, including training and/or custom model data as well as any Client generated custom models. For client backup and restore instructions, please see the {{site.data.keyword.cloud_notm}} documentation.
+Clients are responsible for backing up and restoring their own data, including training or custom model data as well as any Client-generated custom models. For client backup and restore instructions, please see the {{site.data.keyword.cloud_notm}} documentation.
  
 ## Disaster Recovery
 {: #openscale-disaster-recovery}
 
-In-region Business Continuity is completed by leveraging the automatic replication across in-region availability zones within {{site.data.keyword.cloud_notm}} data centers. Clients are responsible for multi-region Disaster Recovery. The responsibilities include backing up, restoring and synching of their own security policies, training and/or custom model data as well as any client generated custom models. In addition, the client is responsible for routing and/or load balancing across the regions. For client backup and restore instructions, see the {{site.data.keyword.cloud_notm}} documentation.
+In-region Business Continuity is completed by using the automatic replication across in-region availability zones within {{site.data.keyword.cloud_notm}} data centers. Clients are responsible for multi-region Disaster Recovery. The responsibilities include backing up, restoring and syncing of their own security policies, training and custom model data as well as any client-generated custom models. In addition, the client is responsible for routing and balancing traffic across the regions. For client backup and restore instructions, see the {{site.data.keyword.cloud_notm}} documentation.

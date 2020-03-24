@@ -53,21 +53,21 @@ The following new features and changes to {{site.data.keyword.aios_short}} are a
 ## 24 September 2019
 {: #rn-24sep2019}
 
-A new version of the {{site.data.keyword.aios_short}} Python SDK, ibm_ai_openscale-2.1.16, has been released. In addition to bug fixes, such as addressing the {{site.data.keyword.icpfull}} timeout issue the new version contains drift monitoring (including status messaging) and the ability to get a count of payload records. 
+A new version of the {{site.data.keyword.aios_short}} Python SDK, ibm_ai_openscale-2.1.16, was released. In addition to bug fixes, such as addressing the {{site.data.keyword.icpfull}} timeout issue the new version contains drift monitoring (including status messaging) and the ability to get a count of payload records. 
 
 ## 9 August 2019
 {: #rn-9aug2019}
 
 The following new features and changes to {{site.data.keyword.aios_short}} are available.
 
-- __*Drift detection GA*__:
+- __*Drift detection general availability (GA)*__:
   
   Drift detection is now in GA and includes both drift in accuracy and drift in data.
   For more information, see [Drift detection](/docs/services/ai-openscale?topic=ai-openscale-behavior-ovr).
   
-- __*Business KPIs*__:  ![beta tag](images/beta.png)
+- __*Business KPIs*__:  ![Beta tag](images/beta.png)
 
-  Through an application monitor, you can monitor business KPIs as well as understand the impact of model metrics, such as model drift on an application’s business key performance indicators (KPIs).
+  Through an application monitor, you can monitor business KPIs and understand the impact of model metrics, such as model drift on an application’s business key performance indicators (KPIs).
   
   For more information, see [Configuring the application monitor](/docs/services/ai-openscale?topic=ai-openscale-app-monitor).
 
@@ -86,7 +86,7 @@ The following new features and changes to {{site.data.keyword.aios_short}} are a
 
 The following new features and changes to {{site.data.keyword.aios_short}} are available.
 
-- __*Drift detection*__: ![beta tag](images/beta.png)
+- __*Drift detection*__: ![Beta tag](images/beta.png)
 
   {{site.data.keyword.aios_short}} now supports drift detection.
 
@@ -96,7 +96,7 @@ The following new features and changes to {{site.data.keyword.aios_short}} are a
 
    For more information, see [Microsoft Azure ML Service frameworks](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-azureservice).
 
-- __*Improved work flow*__: {{site.data.keyword.aios_short}} has been busy improving the workflow so that you can speed through your work with fewer clicks and more explainability. The navigation panel lets you see where you are and makes it easy to jump back and forth between configuration tasks.
+- __*Improved work flow*__: {{site.data.keyword.aios_short}} is busy improving the workflow so that you can speed through your work with fewer clicks and more explainability. The navigation pane displays where you are and makes it easy to jump back and forth between configuration tasks.
 
    For more information, see [Prepare model for monitoring](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
 
@@ -104,7 +104,7 @@ The following new features and changes to {{site.data.keyword.aios_short}} are a
 
    For more information, see [Support for multiple machine learning engines](/docs/services/ai-openscale?topic=ai-openscale-fmrk-workaround-multmleng).
 
-- __*More out-of-the-box metrics*__: With this version of {{site.data.keyword.aios_short}}, there are many new fairness, quality, behavior, performance, and analytics metrics. We're going to need a bigger box!
+- __*More out-of-the-box metrics*__: With this version of {{site.data.keyword.aios_short}}, there are many new metrics for fairness, quality, behavior, performance, and analytics. We're going to need a bigger box!
 
    For more information, see [Quality metrics overview](/docs/services/ai-openscale?topic=ai-openscale-anlz_metrics) and then start clicking around to visit the others: [Fairness](/docs/services/ai-openscale?topic=ai-openscale-anlz_metrics_fairness), [Performance](/docs/services/ai-openscale?topic=ai-openscale-performance_mets_through), [Analytics](/docs/services/ai-openscale?topic=ai-openscale-anlz_metrics_payload), and [Behavior](/docs/services/ai-openscale?topic=ai-openscale-behavior-ovr).
 
@@ -117,10 +117,10 @@ The following new features and changes to {{site.data.keyword.aios_short}} are a
 
 The following new features and changes to the service are available.
 
-- __*Updated Dashboard functionality*__: The {{site.data.keyword.aios_short}} Dashboard has undergone several revisions. This new version contains the following improvements:
+- __*Updated Dashboard functions*__: The {{site.data.keyword.aios_short}} Dashboard has several revisions. This new version contains the following improvements:
 
-    - A new help panel makes it easier to find resources, such as StackOverflow, IBM Support, and 
-    - Globalization has been enabled for the dashboard
+    - A new help pane gives you quick access to resources, such as StackOverflow, IBM Support, and 
+    - Globalization is enabled for the dashboard
     - Usability enhancements
 
 ## 7 June 2019
@@ -128,10 +128,10 @@ The following new features and changes to the service are available.
 
 The following new features and changes to the service are available.
 
-- __*Enhanced command line interface*__: The command line interface, ibm-ai-openscale-cli, has been updated and version 0.2.148 is now released. This new version contains the following improvements:
+- __*Enhanced command-line interface*__: The command-line interface, ibm-ai-openscale-cli, has an update and version 0.2.148 is now released. This new version contains the following improvements:
 
     - Updated the quality metrics history to include the full range of new quality metrics supported by OpenScale
-    - Support for specifying an SSL certificate directly when using IBM DB2
+    - Support for specifying an SSL certificate directly when you use IBM Db2
     - Support for the new ibm-ai-openscale 2.1.8 Python SDK
     - Other bug fixes and stability improvements
 
@@ -142,12 +142,12 @@ The following new features and changes to the service are available.
 
 The following new features and changes to the service are available.
 
-- __*Bias Visualization Enhancements*__: ![beta tag](images/beta.png) The bias visualization includes the following views: 
+- __*Bias Visualization Enhancements*__: ![Beta tag](images/beta.png) The bias visualization includes the following views: 
 
-    - Payload + Perturbed: Includes the scoring request received for the selected hour plus additional records from previous hours if the minimum number of records required for evaluation was not met. Includes additional perturbed/synthesized records used to test the model's response when the value of the monitored feature changes.
+    - Payload + Perturbed: Includes the scoring request that is received for the selected hour plus records from previous hours if the minimum number of records that are required for evaluation was not met. Includes more perturbed and synthesized records that were used to test the model's response when the value of the monitored feature changes.
     - Payload: The actual scoring requests received by the model for the selected hour.
     - Training: The training data records used to train the model.
-    - Debiased: The output of the debiasing algorithm after processing the runtime and perturbed data.
+    - Debiased: The output of the debiasing algorithm after the runtime and perturbed data is processed.
 
    For more information, see [Bias visualization](/docs/services/ai-openscale?topic=ai-openscale-mf-monitor-bias-viz).
 
@@ -184,7 +184,7 @@ The following new features and changes to the service are available.
 In addition to usability improvements and security updates, our developers have been busy with new features. {{site.data.keyword.aios_short}} features that have been added or enhanced over the preceding several weeks include:
 
 - __*Automated setup tour*__: A new tour-led way to set up your {{site.data.keyword.aios_short}} environment. Use the [Automated setup](/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start) to provision services and download and configure a model. You will notice this option when you have a new instance of {{site.data.keyword.aios_short}}.
-- __*Switch to beta*__: ![beta tag](images/beta.png) A new toggle, **Explore the new beta version**, enables you to work in our beta environment, where you can check out all the latest features and new functionality. Don't like what you see? Just switch back by clicking **Go back to the original version**. Your configuration and monitors are unaffected. The following capabilities are part of the current beta program:
+- __*Switch to beta*__: ![Beta tag](images/beta.png) A new toggle, **Explore the new beta version**, enables you to work in our beta environment, where you can check out all the latest features and new functionality. Don't like what you see? Just switch back by clicking **Go back to the original version**. Your configuration and monitors are unaffected. The following capabilities are part of the current beta program:
     - __*Confusion matrix*__: A [confusion matrix displays](/docs/services/ai-openscale?topic=ai-openscale-it-conf-mtx) the false positives and false negatives. Click a cell to view the subset of feedback records.
 
 ## 10 April 2019
@@ -200,7 +200,7 @@ In addition to usability improvements and security updates, our developers have 
 
 The following new features and changes to the service are available.
 
-{{site.data.keyword.aios_short}} features that have been added or enhanced since the previous release include:
+{{site.data.keyword.aios_short}} features that are added or enhanced since the previous release include:
 
 - __*New Credit Risk model*__: A new Credit Risk model example/tutorial is supported for all scoring engines. For more information see the [Getting started](/docs/services/ai-openscale?topic=ai-openscale-getting-started) and [Additional resources](/docs/services/ai-openscale?topic=ai-openscale-arsc-ov#arsc-ov) topics.
 
