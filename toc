@@ -70,9 +70,9 @@ Watson OpenScale
 
     {: .topicgroup}
     Configuring model risk manager
-        wos-risk-config-ovr.md
-        wos-risk-config-ovr-wos-only.md
-        wos-risk-config-openpages.md
+        cloud-risk-config-ovr.md
+        cloud-risk-config-ovr-wos-only.md
+        cloud-risk-config-openpages.md
 
     {: .topicgroup}
     Get model insights
@@ -95,9 +95,9 @@ Watson OpenScale
 
     {: .topicgroup}
     Model risk and governance
-        wos-risk-overview.md
-        wos-risk-wos-only.md
-        wos-risk-openpages-mrg.md
+        cloud-risk-overview.md
+        cloud-risk-wos-only.md
+        cloud-risk-openpages-mrg.md
 
     {: .topicgroup}
     Fairness
