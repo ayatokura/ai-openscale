@@ -90,9 +90,9 @@ The Program includes some or all of the following works licensed under the [Crea
 - [glob v7.1.3](http://registry.npmjs.org/glob/-/glob-7.1.3.tgz)
 - [glob v7.1.4](http://registry.npmjs.org/glob/-/glob-7.1.4.tgz)
 - [Gnome Symbolic Icons (gdk-pixbuf)](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer)
-		
-		
-The Program includes some or all of the following works licensed under the [SIL Open Font license 1.1}(https://opensource.org/licenses/OFL-1.1)
+
+
+The Program includes some or all of the following works licensed under the [SIL Open Font license 1.1](https://opensource.org/licenses/OFL-1.1)
 
 - STIX FONT [matplotlib]
 - AMSFONTS [matplotlib]
