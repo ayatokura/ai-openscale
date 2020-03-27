@@ -22,9 +22,6 @@ Watson OpenScale
         wos-frameworks-aws-sagemaker.md
         wos-frameworks-custom.md
         wos-framework-workaround.md
-        wos-custom-ml-ovr.md
-        wos-custom-ml-examples.md
-        wos-framework-multi-eng.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}

@@ -44,6 +44,14 @@ Table 1. Framework support details
 
 For a model that is not equivalent to {{site.data.keyword.pm_full}}, you must create a wrapper for the custom model that exposes the required REST API endpoints and bridge the input/output between {{site.data.keyword.aios_short}} and the actual custom machine learning engine.
 
+## When is a custom machine learning engine the best choice for me?
+{: #fmrk-workaround-enging-choice}
+
+A custom machine learning engine is the best choice when the following situations are true:
+
+- You are not using any available out-of-the-box products to serve your machine learning models. You have just developed your own system to do that. There is no, and will be no, direct support in {{site.data.keyword.aios_short}} for that.
+- The serving engine you are using from a 3rd-party supplier is not supported by {{site.data.keyword.aios_short}} yet. In this case, consider developing a custom machine learning engine as a wrapper to your original or native deployments.
+
 ## How it works
 {: #co-works}
 
@@ -144,6 +152,36 @@ You can also reference the following links:
 
   The preceding scoring output should be accessible from a live scoring endpoint which {{site.data.keyword.aios_short}} could call over REST. For AzureML, SageMaker, and {{site.data.keyword.pm_full}}, {{site.data.keyword.aios_short}} directly connects to the native scoring endpoints, (so you don’t have to worry about implementing the scoring spec).
 
+## Custom machine learning engine
+{: #fmrk-workaround-customengine}
+
+A custom machine learning engine provides the infrastructure and hosting capabilities for machine learning models and web applications. Custom machine learning engines that are supported by {{site.data.keyword.aios_short}} must conform to the following requirements:
+
+- Expose two types of REST API endpoints:
+
+   * discovery endpoint (GET list of deployments and details)
+   * scoring endpoints (online and real-time scoring)
+
+- All endpoints need to be compatible with the swagger specification to be supported.
+
+- Input payload and output to or from the deployment must be compliant with the JSON file format that is described in the specification.
+
+At this stage only the `BasicAuth` or `none` formats are supported.
+{: Note}
+
+The following example shows the REST API endpoints specification:
+
+![The REST API endpoints specification is displayed from the swagger document](images/wos-deployments.png)
+
+
+The following example shows the format for an input payload:
+
+![Input payload example is shown](images/wos-inputdata.png)
+
+
+
+
+
 ## Adding a custom machine learning engine to {{site.data.keyword.aios_short}}
 {: #frmwrks-custom-add}
 
@@ -193,11 +231,9 @@ If you selected the **Request the list of deployments** tile, enter your credent
 If you selected the **Enter individual scoring endpoints** tile, enter your credentials for the API Endpoint, then save your configuration.
 
 
-
 You are now ready to select deployed models and configure your monitors. {{site.data.keyword.aios_short}} lists your deployed models on the **Insights** dashboard where you can click the **Add to dashboard** button. Select the deployments you want to monitor and click **Configure**.
 
 For more information, see [Configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
-
 
 ## Custom machine learning engine examples
 {: #fmrk-workaround-cstmmlsengex}
@@ -205,26 +241,27 @@ For more information, see [Configure monitors](/docs/services/ai-openscale?topic
 Use the following examples to set up your own custom machine learning engine.
 {: shortdesc}
 
-### Python and flask
+## Python and flask
 {: #fmrk-workaround-pandflask}
 
-The [Custom ML Engine example published on git](https://github.com/pmservice/ai-openscale-tutorials/tree/master/applications/custom-ml-engine-ibmcloud){: external} is using python and flask to serve scikit-learn model.
+The [Custom ML Engine example published on git](https://github.com/pmservice/ai-openscale-tutorials/tree/master/applications/custom-ml-engine-ibmcloud) is using python and flask to serve scikit-learn model.
 
-To generate the drift detection model, you must use scikit-learn version 0.20.2 in notebooks. 
+To generate the drift detection model, you must use scikit-learn version 0.20.2 in the notebook. 
 {: note}
 
+The [README file](https://github.com/pmservice/ai-openscale-tutorials/tree/master/applications/custom-ml-engine-ibmcloud) describes how the app can be deployed locally for testing purposes as well as cf application on IBM Cloud. The implementation of REST API endpoints can be found in [app.py file](https://github.com/pmservice/ai-openscale-tutorials/blob/master/applications/custom-ml-engine-ibmcloud/app.py).
 
-The [README file](https://github.com/pmservice/ai-openscale-tutorials/tree/master/applications/custom-ml-engine-ibmcloud){: external} describes how the app can be deployed locally for testing purposes as well as cf application on IBM Cloud. The implementation of REST API endpoints can be found in [app.py file](https://github.com/pmservice/ai-openscale-tutorials/blob/master/applications/custom-ml-engine-ibmcloud/app.py){: external}.
-
-### Node.js
+## Node.js
 {: #fmrk-workaround-nodejs}
 
-You can also find example of custom machine learning engine written in [Node.js here](https://github.com/pmservice/ai-openscale-tutorials/tree/master/applications/custom-ml-engine-nodejs){: external}.
+You can also find example of custom machine learning engine written in [Node.js here](https://github.com/pmservice/ai-openscale-tutorials/tree/master/applications/custom-ml-engine-nodejs).
 
-### End2end code pattern
+## End2end code pattern
 {: #fmrk-workaround-e2ecode}
 
-[Code pattern](https://developer.ibm.com/patterns/monitor-custom-machine-learning-engine-with-ai-openscale){: external} showing end2end example of custom engine deployment and integration with {{site.data.keyword.aios_short}}.
+[Code pattern](https://developer.ibm.com/patterns/monitor-custom-machine-learning-engine-with-ai-openscale) showing end2end example of custom engine deployment and integration with {{site.data.keyword.aios_short}}.
+
+
 
 
 ## Payload logging with the Custom machine learning engine
@@ -344,8 +381,7 @@ For more information, see [Payload logging]().
     ```
 
 ## Next steps
-{: #cml-cuspid-nxt-steps-over}
+{: #fmrk-workaround-nxt-steps-over}
 
 {{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
 
-Implement your own solution by using one of these [Custom machine learning examples](/docs/services/ai-openscale?topic=ai-openscale-fmrk-workaround-cstmmlsengex).
