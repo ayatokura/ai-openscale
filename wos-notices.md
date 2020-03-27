@@ -33,7 +33,7 @@ subcollection: ai-openscale
 
 The offering includes some or all of the following works licensed under the [Creative Commons Attribution 2.0 Generic license](https://creativecommons.org/licenses/by/2.0/legalcode){: external}:
 
-- [scikit_learn (python){: external} v0.22.2](https://pypi.org/project/scikit-learn/0.22.2/){: external}
+- [scikit_learn (python) v0.22.2](https://pypi.org/project/scikit-learn/0.22.2/){: external}
 - [pillow v5.4.1](https://pypi.org/project/Pillow/5.4.1/){: external}
 - [pillow v6.1.0](https://pypi.org/project/Pillow/6.1.0/){: external}
 		
@@ -99,12 +99,12 @@ The offering includes some or all of the following works licensed under the [SIL
 - FONT-AWESOME-IE7.MIN.CSS [Jetty]
 - FONTS [pillow]
 - IBM/PLEX
-- NotoNastaliqUrdu-Regular.ttf (pillow){: external}
+- NotoNastaliqUrdu-Regular.ttf (pillow)
 - AMSFONTS [matplotlib]
 - CARLOGO [matplotlib]
 
 
 The offering includes some or all of the following works licensed under the [Ubuntu Font license Version 1.0](https://ubuntu.com/legal/font-licence){: external}
 
-- Font_license (Werkzeug){: external}
+- Font_license (Werkzeug)
 
