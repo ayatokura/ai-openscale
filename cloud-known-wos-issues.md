@@ -65,8 +65,8 @@ Table 1: Feature column limits
 Feature type | Feature # limit
 -|-
 int64 or float64 or string length 1-64 | 1012
-string length 65-2048 | 460
-string length 2059-32K | 29
+string length 65-2048 | 444
+string length 2059-32K | 28
 {: caption="Feature column limits" caption-side="top"}
 
 
