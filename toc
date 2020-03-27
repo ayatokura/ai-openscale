@@ -33,19 +33,10 @@ Watson OpenScale
         wos-creds.md
         wos-connect-deploy.md
         cloud-connect-db.md
-        wos-connect-other.md
-        wos-connect-azureml-srvc.md
-        wos-connect-azureml.md
-        wos-connect-sagemaker.md
         cloud-connect-ml.md
         wos-scoring.md
         wos-payload-logging.md
-        wos-payload-custom.md
-        wos-connect-wml.md
         wos-payload-auto.md
-        wos-payload-aws.md
-        wos-payload-azure-service.md
-        wos-payload-azure-studio.md
         wos-config-file.md
         wos-feedback.md
         wos-training-data-schema.md

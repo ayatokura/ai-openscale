@@ -16,8 +16,9 @@ subcollection: ai-openscale
 {:important: .important}
 {:note: .note}
 {:pre: .pre}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -32,7 +33,6 @@ You can use {{site.data.keyword.pm_full}} to perform payload logging, feedback l
 {: shortdesc}
 
 {{site.data.keyword.aios_full}} fully supports the following {{site.data.keyword.pm_full}} frameworks: 
-{: shortdesc}
 
 Table 1. Framework support details
 
@@ -76,13 +76,34 @@ AutoAI automatically prepares data, applies algorithms, or estimators, and build
 
 Because {{site.data.keyword.aios_short}} cannot detect the training data location for an AutoAI model like it can for a regular model, you must explicitly provide the needed details to access the training data location:
 
-- For the online path, where you manually configuring monitors, you must provide the Cloud Object Storage or Db2 location details from which training data can be accessed .
+- For the online path, where you manually configuring monitors, you must provide the database details from which training data can be accessed .
 - For the custom notebook path, where you upload training data distribution, you can use the JSON file that is produced by running the notebook.
 
 For more information, see [Provide model details](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets) and [Numeric/categorical data](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-nuca).
 
 
-## Next steps
-{: #ns-frmks-wml-mleng}
+## Specifying an {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.pm_short}} service instance
+{: #wml-connect}
 
-- [Specify an IBM Watson Machine Learning service instance]()
+Your first step in the {{site.data.keyword.aios_short}} tool is to specify an {{site.data.keyword.pm_full}} instance. Your {{site.data.keyword.pm_short}} instance is where you store your AI models and deployments.
+
+## Prerequisites
+{: #wml-prereq}
+
+You should have provisioned an {{site.data.keyword.pm_full}} instance in the same account or cluster where the {{site.data.keyword.aios_short}} service instance is present. If you have provisioned a {{site.data.keyword.pm_full}} instance in some other account or cluster, then you will not be able to configure that instance with automatic payload logging with {{site.data.keyword.aios_short}}.
+
+## Connect your {{site.data.keyword.pm_short}} service instance
+{: #wml-config}
+
+{{site.data.keyword.aios_short}} connects to AI models and deployments in an {{site.data.keyword.pm_full}} instance. To connect your service to {{site.data.keyword.aios_short}}, go to the **Configure** ![The configuration tab icon](/images/wos-config-tab.png) tab, add a machine learning provider, and click the **Edit** ![The edit icon](/images/wos-edit-icon.png) icon. In addition to a name and description and whether this is a **Pre-production** or **Production** environment type, you must provide the following information that is specific to this type of service instance:
+
+- If you have an instance of {{site.data.keyword.pm_full}}, {{site.data.keyword.aios_short}} detects it, along with the configuration information.
+- To specify a machine learning location outside of your account, choose the **Other** option. Provide credentials for your location by pasting valid JSON credentials.
+
+
+### Next steps
+{: #wml-next}
+
+You are now ready to select deployed models and configure your monitors. {{site.data.keyword.aios_short}} lists your deployed models on the **Insights** dashboard where you can click the **Add to dashboard** button. Select the deployments you want to monitor and click **Configure**.
+
+For more information, see [Configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).

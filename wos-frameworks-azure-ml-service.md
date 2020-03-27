@@ -16,8 +16,9 @@ subcollection: ai-openscale
 {:important: .important}
 {:note: .note}
 {:pre: .pre}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -50,8 +51,8 @@ To generate the drift detection model, you must use scikit-learn version 0.20.2 
 
 You can configure {{site.data.keyword.aios_short}} to work with Microsoft Azure ML Service by using one of the following methods:
 
-- If this is the first time that you are adding a machine learning provider to {{site.data.keyword.aios_short}}, you can use the configuration interface. For more information, see [Specifying a Microsoft Azure ML Service instance](/docs/services/ai-openscale?topic=ai-openscale-connect-azureservice).
-- You can also add your machine learning provider by using the Python SDK. You must use this method if you want to have more than one provider. For more information on performing this programmatically, see [Bind your Microsoft Azure machine learning engine](/docs/services/ai-openscale?topic=ai-openscale-cml-azsrvconfig#cml-azsrvbind).
+- If this is the first time that you are adding a machine learning provider to {{site.data.keyword.aios_short}}, you can use the configuration interface. For more information, see [Specifying a Microsoft Azure ML Service instance](#connect-azureservice).
+- You can also add your machine learning provider by using the Python SDK. You must use this method if you want to have more than one provider. For more information on performing this programmatically, see [Bind your Microsoft Azure machine learning engine](#cml-azsrvbind).
 
 
 {{site.data.keyword.aios_short}} calls various REST endpoints that are needed to interact with the Azure ML Service. To do this, you must bind the Azure Machine Learning Service {{site.data.keyword.aios_short}}.
@@ -156,14 +157,25 @@ The following notebooks show how to work with Microsoft Azure ML Service:
 - [MS Azure Service model scoring examples](https://dataplatform.cloud.ibm.com/analytics/notebooks/v2/0d4ebd8d-87cb-4c38-8ba8-37f5623df131/view?access_token=fcb2c411aed913bf94f86f434184db67aef1a6b304824b86b4ad63686e4890be){: external}
 
 
+
 ## Specifying a Microsoft Azure ML Service instance
 {: #connect-azureservice}
 
-Your first step in the {{site.data.keyword.aios_short}} tool is to [specify a Microsoft Azure ML Service instance](/docs/services/ai-openscale?topic=ai-openscale-ca-connect-azureservice). Your Azure ML Service instance is where you store your AI models and deployments.
-{: shortdesc}
+Your first step in the {{site.data.keyword.aios_short}} tool is to specify a Microsoft Azure ML Service instance. Your Azure ML Service instance is where you store your AI models and deployments.
 
-You can also add your machine learning provider by using the Python SDK. For more information on performing this programmatically, see [Bind your Microsoft Azure Service machine learning engine](/docs/services/ai-openscale?topic=ai-openscale-cml-azsrvconfig#cml-azsrvbind).
+{{site.data.keyword.aios_short}} connects to AI models and deployments in a Azure ML Service instance. To connect your service to {{site.data.keyword.aios_short}}, go to the **Configure** ![The configuration tab icon](/images/wos-config-tab.png) tab, add a machine learning provider, and click the **Edit** ![The edit icon](/images/wos-edit-icon.png) icon. In addition to a name and description and whether this is a **Pre-production** or **Production** environment type, you must provide the following information that is specific to this type of service instance:
 
+- Client ID: The actual string value of your client ID, whichverifies who you are and authenticates and authorizes callsthat you make to Azure Service.
+- Client Secret: The actual string value of the secret, whichverifies who you are and authenticates and authorizes callsthat you make to Azure Service.
+- Tenant: Your tenant ID corresponds to your organization andis a dedicated instance of Azure AD. To find the tenant ID,hover over your account name to get the directory / tenant ID,or select Azure Active Directory > Properties > Directory ID inthe Azure portal.
+- Subscription ID: Subscription credentials which uniquelyidentify your Microsoft Azure subscription. The subscription IDforms part of the URI for every service call.
+
+See [How to: Use the portal to create an Azure AD applicationand service principal that can access resources](https://docsmicrosoft.com/en-us/azure/active-directory/develophowto-create-service-principal-portal){: external} for instructions about how to get your Microsoft Azure credentials.
+{: note}
+
+You are now ready to select deployed models and configure your monitors. {{site.data.keyword.aios_short}} lists your deployed models on the **Insights** dashboard where you can click the **Add to dashboard** button. Select the deployments you want to monitor and click **Configure**.
+
+For more information, see [Configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
 
 
 ## Payload logging with the Microsoft Azure ML Service engine

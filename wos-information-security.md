@@ -16,6 +16,8 @@ subcollection: ai-openscale
 {:important: .important}
 {:note: .note}
 {:pre: .pre}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
