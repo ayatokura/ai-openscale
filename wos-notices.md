@@ -20,10 +20,10 @@ subcollection: ai-openscale
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 {:screen: .screen}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:swift: .ph data-hd-programlang='swift'}
+{:javascript: .ph data-hd-offeringlang='javascript'}
+{:java: .ph data-hd-offeringlang='java'}
+{:python: .ph data-hd-offeringlang='python'}
+{:swift: .ph data-hd-offeringlang='swift'}
 {:faq: data-hd-content-type='faq'}
 
 # Notices
@@ -31,19 +31,19 @@ subcollection: ai-openscale
 
 
 
-The Program includes some or all of the following works licensed under the [Creative Commons Attribution 2.0 Generic license](https://creativecommons.org/licenses/by/2.0/legalcode){: external}:
+The offering includes some or all of the following works licensed under the [Creative Commons Attribution 2.0 Generic license](https://creativecommons.org/licenses/by/2.0/legalcode){: external}:
 
-- [scikit_learn (python){: external} v0.20.2](https://pypi.io/packages/source/s/scikit_learn/scikit_learn-0.20.2.tar.gz){: external}
-- [pillow v5.4.1](https://pypi.io/packages/source/p/pillow/pillow-5.4.1.tar.gz){: external}
-- [pillow v6.1.0](https://pypi.io/packages/source/p/pillow/pillow-6.1.0.tar.gz){: external}
+- [scikit_learn (python){: external} v0.22.2](https://pypi.org/project/scikit-learn/0.22.2/){: external}
+- [pillow v5.4.1](https://pypi.org/project/Pillow/5.4.1/){: external}
+- [pillow v6.1.0](https://pypi.org/project/Pillow/6.1.0/){: external}
 		
-The Program includes some or all of the following works licensed under the [Creative Commons Attribution 2.5 Generic license](https://creativecommons.org/licenses/by/2.5/legalcode){: external}:
+The offering includes some or all of the following works licensed under the [Creative Commons Attribution 2.5 Generic license](https://creativecommons.org/licenses/by/2.5/legalcode){: external}:
 
 - [Groovy 2.5.6](https://github.com/apache/groovy){: external}
 - [jsr305](http://central.maven.org/maven2/com/google/code/findbugs/jsr305){: external}
 - [JCIP-ANNOTATIONS (HttpCore)](http://search.maven.org/remotecontent?filepath=org/apache/httpcomponents/httpcore/){: external}
 		
-The Program includes some or all of the following works licensed under the [Creative Commons Attribution 3.0 Generic license](https://creativecommons.org/licenses/by/3.0/legalcode){: external}:
+The offering includes some or all of the following works licensed under the [Creative Commons Attribution 3.0 Generic license](https://creativecommons.org/licenses/by/3.0/legalcode){: external}:
 
 - [NodeJS v8.15.1](https://github.com/nodejs/node/tree/v8.15.1){: external}
 - [spdx-expression-parse v3.0.0](http://registry.npmjs.org/spdx-expression-parse/-/spdx-expression-parse-3.0.0.tgz){: external}
@@ -53,7 +53,7 @@ The Program includes some or all of the following works licensed under the [Crea
 - [pillow v5.3.0](https://pypi.org/project/Pillow/5.3.0/){: external}
 - [spdx-exceptions](https://www.npmjs.com/package/spdx-exceptions){: external}
 		
-The Program includes some or all of the following works licensed under the [Creative Commons Attribution 4.0 Generic license](https://creativecommons.org/licenses/by/4.0/legalcode){: external}:
+The offering includes some or all of the following works licensed under the [Creative Commons Attribution 4.0 Generic license](https://creativecommons.org/licenses/by/4.0/legalcode){: external}:
 
 - [Ipython 7.7.0](https://files.pythonhosted.org/packages/6c/dd/dd19a446528a6b10b1e322303916a28b73820e76f1c93c2580f05557210d/ipython-7.7.0.tar.gz){: external}
 - [Ipython 7.9.0](https://pypi.io/packages/source/i/ipython/ipython-7.9.0.tar.gz){: external}
@@ -65,17 +65,17 @@ The Program includes some or all of the following works licensed under the [Crea
 - [ibm-design-colors v2.0.4](http://registry.npmjs.org/ibm-design-colors/-/ibm-design-colors-2.0.4.tgz){: external}
 - [node-releases v1.0.2](http://registry.npmjs.org/node-releases/-/node-releases-1.0.2.tgz){: external}
 		
-The Program includes some or all of the following works licensed under the [Creative Commons Attribution SHARE ALIKE 2.0 Generic license](https://creativecommons.org/licenses/by-sa/2.0/legalcode){: external}:
+The offering includes some or all of the following works licensed under the [Creative Commons Attribution SHARE ALIKE 2.0 Generic license](https://creativecommons.org/licenses/by-sa/2.0/legalcode){: external}:
 
 - [eslint v5.6.1](http://registry.npmjs.org/eslint/-/eslint-5.6.1.tgz){: external}
 
-The Program includes some or all of the following works licensed under the [Creative Commons Attribution SHARE ALIKE 2.5 Generic license](https://creativecommons.org/licenses/by-sa/2.5/legalcode){: external}:
+The offering includes some or all of the following works licensed under the [Creative Commons Attribution SHARE ALIKE 2.5 Generic license](https://creativecommons.org/licenses/by-sa/2.5/legalcode){: external}:
 
 - [NodeJS v8.15.1](https://github.com/nodejs/node/tree/v8.15.1){: external}
 - [postcss-reduce-initial](https://www.npmjs.com/package/postcss-reduce-initial){: external}
 - [chardet](https://github.com/chardet/chardet){: external}
 		
-The Program includes some or all of the following works licensed under the [Creative Commons Attribution SHARE ALIKE 3.0 Generic license](https://creativecommons.org/licenses/by-sa/3.0/legalcode){: external}:
+The offering includes some or all of the following works licensed under the [Creative Commons Attribution SHARE ALIKE 3.0 Generic license](https://creativecommons.org/licenses/by-sa/3.0/legalcode){: external}:
 
 - [networkx v2.3](https://files.pythonhosted.org/packages/85/08/f20aef11d4c343b557e5de6b9548761811eb16e438cee3d32b1c66c8566b/networkx-2.3.zip){: external}
 - [networkx v2.4](https://pypi.io/packages/source/n/networkx/networkx-2.4.tar.gz){: external}
@@ -85,14 +85,14 @@ The Program includes some or all of the following works licensed under the [Crea
 - [pillow v6.2.1](https://files.pythonhosted.org/packages/5b/bb/cdc8086db1f15d0664dd22a62c69613cdc00f1dd430b5b19df1bea83f2a3/Pillow-6.2.1.tar.gz){: external}
 - [pillow v7.0.0](https://pypi.io/packages/source/p/pillow/pillow-7.0.0.tar.gz){: external}
 		
-The Program includes some or all of the following works licensed under the [Creative Commons Attribution SHARE ALIKE 4.0 Generic license](https://creativecommons.org/licenses/by-sa/4.0/legalcode){: external}:
+The offering includes some or all of the following works licensed under the [Creative Commons Attribution SHARE ALIKE 4.0 Generic license](https://creativecommons.org/licenses/by-sa/4.0/legalcode){: external}:
 
 - [glob v7.1.3](http://registry.npmjs.org/glob/-/glob-7.1.3.tgz){: external}
 - [glob v7.1.4](http://registry.npmjs.org/glob/-/glob-7.1.4.tgz){: external}
 - [Gnome Symbolic Icons (gdk-pixbuf)](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer){: external}
 
 
-The Program includes some or all of the following works licensed under the [SIL Open Font license 1.1](https://opensource.org/licenses/OFL-1.1){: external}
+The offering includes some or all of the following works licensed under the [SIL Open Font license 1.1](https://opensource.org/licenses/OFL-1.1){: external}
 
 - STIX FONT [matplotlib]
 - AMSFONTS [matplotlib]
@@ -104,7 +104,7 @@ The Program includes some or all of the following works licensed under the [SIL 
 - CARLOGO [matplotlib]
 
 
-The Program includes some or all of the following works licensed under the [Ubuntu Font license Version 1.0](https://ubuntu.com/legal/font-licence){: external}
+The offering includes some or all of the following works licensed under the [Ubuntu Font license Version 1.0](https://ubuntu.com/legal/font-licence){: external}
 
 - Font_license (Werkzeug){: external}
 
