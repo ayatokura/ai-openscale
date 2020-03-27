@@ -94,14 +94,14 @@ The offering includes some or all of the following works licensed under the [Cre
 
 The offering includes some or all of the following works licensed under the [SIL Open Font license 1.1](https://opensource.org/licenses/OFL-1.1){: external}
 
-- STIX FONT [matplotlib]
-- AMSFONTS [matplotlib]
-- FONT-AWESOME-IE7.MIN.CSS [Jetty]
-- FONTS [pillow]
+- STIX FONT (matplotlib)
+- AMSFONTS (matplotlib)
+- FONT-AWESOME-IE7.MIN.CSS (Jetty)
+- FONTS (pillow)
 - IBM/PLEX
 - NotoNastaliqUrdu-Regular.ttf (pillow)
-- AMSFONTS [matplotlib]
-- CARLOGO [matplotlib]
+- AMSFONTS (matplotlib)
+- CARLOGO (matplotlib)
 
 
 The offering includes some or all of the following works licensed under the [Ubuntu Font license Version 1.0](https://ubuntu.com/legal/font-licence){: external}
