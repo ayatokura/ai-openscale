@@ -171,7 +171,8 @@ Watson OpenScale
     cloud-openscale-recovery.md
     wos-FAQs.md
     cloud-known-wos-issues.md
-
+    wos-notices.md
+    
     {: .topicgroup}
     Developer community
         [IBM Developer](https://developer.ibm.com/?s=openscale)
