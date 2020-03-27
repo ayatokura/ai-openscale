@@ -40,7 +40,7 @@ The offering includes some or all of the following works licensed under the [Cre
 The offering includes some or all of the following works licensed under the [Creative Commons Attribution 2.5 Generic license](https://creativecommons.org/licenses/by/2.5/legalcode){: external}:
 
 - [Groovy 2.5.6](https://github.com/apache/groovy){: external}
-- [jsr305](http://central.maven.org/maven2/com/google/code/findbugs/jsr305){: external}
+- [jsr305](https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305){: external}
 - [JCIP-ANNOTATIONS (HttpCore)](http://search.maven.org/remotecontent?filepath=org/apache/httpcomponents/httpcore/){: external}
 		
 The offering includes some or all of the following works licensed under the [Creative Commons Attribution 3.0 Generic license](https://creativecommons.org/licenses/by/3.0/legalcode){: external}:
@@ -79,11 +79,11 @@ The offering includes some or all of the following works licensed under the [Cre
 
 - [networkx v2.3](https://files.pythonhosted.org/packages/85/08/f20aef11d4c343b557e5de6b9548761811eb16e438cee3d32b1c66c8566b/networkx-2.3.zip){: external}
 - [networkx v2.4](https://pypi.io/packages/source/n/networkx/networkx-2.4.tar.gz){: external}
-- [NumPy v1.15.4](https://pypi.io/packages/source/n/numpy/numpy-1.15.4.tar.gz){: external}
-- [NumPy v1.16.4](https://pypi.io/packages/source/n/numpy/numpy-1.16.4.tar.gz){: external}
-- [NumPy v1.18.1](https://pypi.io/packages/source/n/numpy/numpy-1.18.1.tar.gz){: external}
-- [pillow v6.2.1](https://files.pythonhosted.org/packages/5b/bb/cdc8086db1f15d0664dd22a62c69613cdc00f1dd430b5b19df1bea83f2a3/Pillow-6.2.1.tar.gz){: external}
-- [pillow v7.0.0](https://pypi.io/packages/source/p/pillow/pillow-7.0.0.tar.gz){: external}
+- [NumPy v1.15.4](https://pypi.org/project/numpy/1.15.4/){: external}
+- [NumPy v1.16.4](https://pypi.org/project/numpy/1.16.4/){: external}
+- [NumPy v1.18.1](https://pypi.org/project/numpy/1.18.1){: external}
+- [pillow v6.2.1](https://pypi.org/project/Pillow/6.2.1/){: external}
+- [pillow v7.0.0](https://pypi.org/project/Pillow/7.0.0/){: external}
 		
 The offering includes some or all of the following works licensed under the [Creative Commons Attribution SHARE ALIKE 4.0 Generic license](https://creativecommons.org/licenses/by-sa/4.0/legalcode){: external}:
 
