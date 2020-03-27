@@ -31,7 +31,7 @@ subcollection: ai-openscale
 
 
 
-The Program includes some or all of the following works licensed under the [The Program includes some or all of the following works licensed under the [Creative Commons Attribution 2.0 Generic license](https://creativecommons.org/licenses/by/2.0/legalcode):
+The Program includes some or all of the following works licensed under the [Creative Commons Attribution 2.0 Generic license](https://creativecommons.org/licenses/by/2.0/legalcode):
 
 - [scikit_learn (python) v0.20.2](https://pypi.io/packages/source/s/scikit_learn/scikit_learn-0.20.2.tar.gz)
 - [pillow v5.4.1](https://pypi.io/packages/source/p/pillow/pillow-5.4.1.tar.gz)
@@ -39,7 +39,7 @@ The Program includes some or all of the following works licensed under the [The 
 		
 The Program includes some or all of the following works licensed under the [Creative Commons Attribution 2.5 Generic license](https://creativecommons.org/licenses/by/2.5/legalcode):
 
-- [Groovy 2.5.6	https://github.com/apache/groovy	
+- [Groovy 2.5.6](https://github.com/apache/groovy)
 - [jsr305](http://central.maven.org/maven2/com/google/code/findbugs/jsr305)
 - [JCIP-ANNOTATIONS (HttpCore)](http://search.maven.org/remotecontent?filepath=org/apache/httpcomponents/httpcore/)
 		
