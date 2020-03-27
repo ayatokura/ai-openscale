@@ -63,11 +63,11 @@ To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud
 1. Launch {{site.data.keyword.aios_short}}.
    
    1. From the IBM Cloud Dashboard, click Services.
-   2. Click {{site.data.keyword.aios_short}}
-   3. Click the Launch Application button.
+   2. Click {{site.data.keyword.aios_short}}.
+   3. Click the **Launch Application** button.
 
-2. When prompted about running automatic setup, click the Auto setup button.
-3. From the Insights dashboard, click the **Show beta features** button.
+2. When prompted about running automatic setup, click the **Auto setup** button.
+3. From the **Insights** dashboard, click the **Show beta features** button.
 
 
 ## Set up your environment by using a Python noteobok
@@ -123,7 +123,11 @@ You can manually set up your entire {{site.data.keyword.aios_short}} model risk 
 1. [Provision prerequisite IBM Cloud services](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-prps). You must set up two instances of Watson Machine Learning.
 2. [Set up Watson Studio projects](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-setup). You must set up projects for both pre-production and production models.
 2. [Configure {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
-1. Set up model governance by entering the IBM OpenPages credentials.
+1. Set up model governance by entering the IBM OpenPages credentials and associating an OpenPages model to your {{site.data.keyword.aios_short}} model.
+   
+   1. From the **Insights** dashboard, click **Configure** > **Integrations** > **Edit** to add credentials.
+   1. From the model configuration, click **Configure** > **Model governance** > **Edit** to associate an OpenPages model.
+
 2. [Next steps: Continue setting up the monitors and data logging](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-next-steps-config).
 
 
