@@ -59,31 +59,22 @@ By setting a minimum sample size, you prevent measuring drift until a minimum nu
 
 If you use {{site.data.keyword.pm_full}}, you have the option of using the {{site.data.keyword.aios_short}} user interface to configure drift detection.
 
-1. From the **Drift** tab, on the **What is Drift**? page, click **Begin** to start the configuration process.
+To start the configuration process, from the **Drift** tab, in the **Drift model** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon. Use the **Analyze and train in {{site.data.keyword.aios_short}}** option.
 
-   ![What is Drift? page](images/wos-drift-config-1.png)
+Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** icon for that section, otherwise, save your work.
 
-2. Click the **Analyze and train in Watson OpenScale** tile.
 
-   ![What is Drift? page](images/wos-drift-config-1a.png)
-
-5. Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
 
 ## Steps to configure drift without retraining
 {: #behavior-drift-config-steps-no-training}
 
 Reconfigure the drift monitor without retraining the drift model to update parameters without more processing. You update the minimum sample size and threshold to produce more data on the currently trained model without incurring more processing costs. It is one way to avoid intensive CPU usage when the underlying data is stable and you want to view drift magnitude with different thresholds. Your drift model requires retraining only when training data or schema changes.
 
-1. From the **Drift** tab, on the summary page, click **Edit**.
-2. On the **What is Drift**? page, click **Begin** to start the configuration process.
 
-   ![What is Drift? page](images/wos-drift-config-1.png)
+To start the configuration process, from the **Drift** tab, in the **Drift model** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon. Use the **Use the existing drift model** option.
 
-2. Click the **Use the existing drift model** tile.
+Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** icon for that section, otherwise, save your work.
 
-   ![What is Drift? page](images/wos-drift-config-2.png)
-
-5. Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
 
 ## Steps to configure drift by using a notebook
 {: #behavior-drift-config-steps-ntbk}
@@ -98,27 +89,13 @@ This option is useful if the training data is not stored in Db2 or {{site.data.k
 To generate the drift detection model, you must use scikit-learn version 0.20.2 in notebooks. 
 {: note}
 
-1. Create a notebook to generate the drift detection model. Use [the sample notebook](https://github.com/IBM-Watson/aios-data-distribution/blob/master/training_statistics_notebook.ipynb){: external} that is available from the {{site.data.keyword.aios_short}} UI.
-   
-   The drift detection model is converted into a .tar.gz file for you.
-   
-1. From the **Drift** tab, on the **What is Drift**? page, click **Begin** to start the configuration process.
+Create a notebook to generate the drift detection model. Use [the sample notebook](https://github.com/IBM-Watson/aios-data-distribution/blob/master/training_statistics_notebook.ipynb){: external} that is available from the {{site.data.keyword.aios_short}} UI. The drift detection model is converted into a .tar.gz file for you.
 
-   ![What is Drift? page](images/wos-drift-config-1.png)
+To start the configuration process, from the **Drift** tab, in the **Drift model** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon. Use the **Analyze and train in a notebook** option. You can drag your compressed drift detection model to the drop zone.
 
-2. Click the **Analyze and train in a notebook** tile.
+Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** icon for that section, otherwise, save your work.
 
-   ![What is Drift? page](images/wos-drift-config-1a.png)
 
-3. Drag the compressed model file into the target zone, or browse to select it and click **Next**.
-
-   ![What is Drift? page](images/wos-drift-config-2b.png)
-   
-3. Upload the drift detection model and click **Next**.
-
-   ![What is Drift? page](images/wos-drift-config-upload.png)
-   
-5. Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
 
 ## Next steps
 {: #behavior-drift-config-next-steps}

@@ -64,5 +64,5 @@ The following example of explainability shows a classification model that evalua
 
 Use the following notebook to see detailed code samples and develop your own {{site.data.keyword.aios_short}} deployments:
 
-- [Tutorial on generating an explanation for a tabular model on Watson OpenScale](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20Explanation%20for%20Tabular%20Model.ipynb){: external}
+- [Tutorial on generating an explanation for a tabular model on {{site.data.keyword.aios_short}}](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20Explanation%20for%20Tabular%20Model.ipynb){: external}
 

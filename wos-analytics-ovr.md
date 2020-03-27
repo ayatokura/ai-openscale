@@ -37,5 +37,5 @@ You can analyze the scoring payload that is sent to your deployment in the selec
 ## Go further
 {: #anlz_metrics_payload-further}
 
-- [Model Behavioural Insights using IBM Watson OpenScale](https://medium.com/trusted-ai/model-behavioural-insights-using-ibm-watson-openscale-f8bcd2311f4e){: external}
+- [Model Behavioural Insights using {{site.data.keyword.aios_full}}](https://medium.com/trusted-ai/model-behavioural-insights-using-ibm-watson-openscale-f8bcd2311f4e){: external}
 

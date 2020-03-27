@@ -48,7 +48,7 @@ Get a quick overview of {{site.data.keyword.aios_short}} by watching the followi
 
 <p>
   <div class="embed-responsive embed-responsive-16by9">
-     <iframe class="embed-responsive-item" id="WOS-bias-vid" title="Watson OpenScale Drift-Bias-Explainability Videos" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_22otz5jl&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+     <iframe class="embed-responsive-item" id="WOS-bias-vid" title="{{site.data.keyword.aios_short}} Drift-Bias-Explainability Videos" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_22otz5jl&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
   </div>
 </p>
 
@@ -222,4 +222,4 @@ After you finish the tour and the application setup, you can perform one of the 
 
 - Learn more about [viewing and interpreting the data](/docs/services/ai-openscale?topic=ai-openscale-it-ov) and [monitoring explainability](/docs/services/ai-openscale?topic=ai-openscale-ie-ov).
 
-- To learn more about Watson OpenScale in action, see [How AI picks the highlights from Wimbledon fairly and fast](https://www.ibmbigdatahub.com/blog/ai-picks-highlights-wimbledon-fairly-fast){: external}
+- To learn more about {{site.data.keyword.aios_short}} in action, see [How AI picks the highlights from Wimbledon fairly and fast](https://www.ibmbigdatahub.com/blog/ai-picks-highlights-wimbledon-fairly-fast){: external}

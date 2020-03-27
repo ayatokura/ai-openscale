@@ -75,8 +75,8 @@ For the closed beta, the typical workflow rules are relaxed to enable the same u
 In IBM Watson Studio, you will create a project and run a notebook to perform most of the set-up tasks, including the following steps:
 
 •	create 2 machine models
-•	connect Watson OpenScale to IBM OpenPages
-•	create model deployments and configure monitors in Watson OpenScale
+•	connect {{site.data.keyword.aios_short}} to IBM OpenPages
+•	create model deployments and configure monitors in {{site.data.keyword.aios_short}}
 
 ### Step 1: Create the pre-prod project in Watson Studio
 {: #mrm-risk-openpages-mrg-dsxsteps1}
@@ -103,7 +103,7 @@ Now you need to associate your pre-prod instance of Watson Machine Learning to y
 ### Step 3: Add the sample beta notebook to the project
 {: #mrm-risk-openpages-mrg-dsxsteps3}
 
-As part of your closed beta information package, you were given access to a Watson Studio notebook. You’ll use it to set up your connection between Watson OpenScale and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in Watson OpenScal5. 
+As part of your closed beta information package, you were given access to a Watson Studio notebook. You’ll use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in Watson OpenScal5. 
 1.	From the project page, click the Add to project button.
 2.	Click the Notebook tile.
 3.	Click the From file tab, click the Choose file button and then, select the **OpenScale and OpenPages model risk management on IBM Cloud**.ipynb** notebook file that you can download from the https://github.com/pmservice/ai-openscale-tutorials GitHub repository.
@@ -138,42 +138,42 @@ The newly created notebook is opened in Watson Studio in the integrated notebook
 4. In the corresponding code box, paste the model_id number from the model that you created in IBM OpenPages.
 5. To restart the notebook and clear the output, from the Kernel menu, click Restart & Clear Output.
 6. Run the notebook one cell at a time by using the Run option. Ensure that a cell completes before running the next cell. Be sure to read directions for steps that must be taken during the intervening cells. For example, at one point, you are directed to move your model into production before continuing running the notebook.
-Congratulations! You have used a notebook to create a pre-prod model. You can check inside Watson Studio, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to IBM Watson OpenScale to add the model ther5.  
+Congratulations! You have used a notebook to create a pre-prod model. You can check inside Watson Studio, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to {{site.data.keyword.aios_full}} to add the model ther5.  
 
-## Work in IBM Watson OpenScale
+## Work in {{site.data.keyword.aios_full}}
 {: #mrm-risk-openpages-mrg-wos}
 
-You’ll use IBM Watson OpenScale to validate and monitor your models and to process metrics. First, you need to do some set up.
+You’ll use {{site.data.keyword.aios_full}} to validate and monitor your models and to process metrics. First, you need to do some set up.
 
 ### Step 1: Activate model risk management features
 {: #mrm-risk-openpages-mrg-wosstep1}
 
-As part of the closed beta cohort, you can activate the model risk management beta features on IBM Watson OpenScal5. To work with IBM Watson OpenScale, you must already have an IBM Cloud instance and you must have provisioned an IBM Watson OpenScale instance.
+As part of the closed beta cohort, you can activate the model risk management beta features on IBM Watson OpenScal5. To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud instance and you must have provisioned an {{site.data.keyword.aios_full}} instance.
 
-1. Launch Watson OpenScale.
+1. Launch {{site.data.keyword.aios_short}}.
    
    1. From the IBM Cloud Dashboard, click Services.
-   2. Click Watson OpenScale
+   2. Click {{site.data.keyword.aios_short}}
    3. Click the Launch Application button.
 
 2. When prompted about running automatic setup, click the No thanks button.
 3. From the Insights dashboard, click the **Show beta features** button.
 
-Ensure that whenever you work inside IBM OpenPages that your profile indicates that you are integrating your work with OpenScale. Also, be sure to select the option Monitored with Watson OpenScale when creating your model recor4.
+Ensure that whenever you work inside IBM OpenPages that your profile indicates that you are integrating your work with OpenScale. Also, be sure to select the option Monitored with {{site.data.keyword.aios_short}} when creating your model recor4.
 {: note}
 
-### Step 2: Connect Watson OpenScale to IBM OpenPages
+### Step 2: Connect {{site.data.keyword.aios_short}} to IBM OpenPages
 {: #mrm-risk-openpages-mrg-wosstep2}
 
-So that the two services can be fully integrated, you must add your IBM OpenPages URL and authentication credentials to Watson OpenScale.
+So that the two services can be fully integrated, you must add your IBM OpenPages URL and authentication credentials to {{site.data.keyword.aios_short}}.
 
-1. From the Watson OpenScale side bar, click the **Configure** ![configure icon is displayed](images/wos-configure-tab.png) icon.
+1. From the {{site.data.keyword.aios_short}} side bar, click the **Configure** ![configure icon is displayed](images/wos-configure-tab.png) icon.
 2. Click **Integrations** and then in the IBM OpenPages tile, click the **Edit** ![the edit icon is displayed](images/wos-edit-icon.png) icon.
-3. Type the URL, username, and password for the IBM OpenPages instance that you use with Watson OpenScale and click **Save**.
+3. Type the URL, username, and password for the IBM OpenPages instance that you use with {{site.data.keyword.aios_short}} and click **Save**.
 
 ![the OpenPages configuration screen with URL, username and password fields](images/wos-openpages-config.png).
 
-### Step 3: Perform analysis in Watson OpenScale
+### Step 3: Perform analysis in {{site.data.keyword.aios_short}}
 {: #mrm-risk-openpages-mrg-wosstep3}
 
 After you run the set-up notebook and activate the MRM beta features, you can both see and compare the sample evaluations in Watson OpenScal5. There is a downloadable report, the Model Summary Report, that includes all the quality measures, fairness measures, and drift magnitude.
@@ -195,10 +195,10 @@ After you run the set-up notebook and activate the MRM beta features, you can bo
 After you send metrics to IBM OpenPages, you are able to review the metrics in OpenPages as part of the Pre-Implementation Review. HINT: You can use the notebook to go directly to the model in OpenPages. Go to the Create an OpenPages Model section (code cell 12) and find the Model Name = <model name> and OpenPages Model Id = <model ID> output. Use them to search for your model in OpenPages.
 
 1. Find the model in IBM OpenPages by using the model name, such as MOD_0000206.
-2. Review the metrics from Watson OpenScale by expanding the OpenScale Metrics twisty:
+2. Review the metrics from {{site.data.keyword.aios_short}} by expanding the OpenScale Metrics twisty:
 3. In addition to a list of metrics, you can view metrics by type in a graphical format by expanding the OpenScale Metrics Summary twisty:
 4. The Associations view provides relationships in the form of a tree:
-5. The Supporting files and artifacts pane gives you access to all the Watson OpenScale model risk management reports that are run:  
+5. The Supporting files and artifacts pane gives you access to all the {{site.data.keyword.aios_short}} model risk management reports that are run:  
 
 ### Change the model status in IBM OpenPages
 {: #mrm-risk-openpages-mrg-ops-review2}
@@ -210,10 +210,10 @@ To do this, you must open the model and use the Actions drop-down   box to set t
 2. From the Actions drop-down   box, click Approve4. 
 If for some reason, you don’t see the Approved option, you might need to move the model through other steps, such as Submit for Pre Implementation Review or Submit for Approval.
 
-## Deploy a new model to production in Watson OpenScale
+## Deploy a new model to production in {{site.data.keyword.aios_short}}
 {: #mrm-risk-openpages-mrg-ops-review3}
 
-Push the best model to production. Create a production record by importing from a pre-production model. After the model is approved for deployment in IBM OpenPages, you can send the model to production in Watson OpenScale.
+Push the best model to production. Create a production record by importing from a pre-production model. After the model is approved for deployment in IBM OpenPages, you can send the model to production in {{site.data.keyword.aios_short}}.
 
 1. Review the status of the model deployment:
 2. Return to the sample beta notebook and run the cells to send the model to production.
@@ -224,8 +224,8 @@ Push the best model to production. Create a production record by importing from 
 {: #mrm-risk-openpages-mrg-next}
 
 Use the analysis of fairness to redefine the model, possibly by using a different algorithm. 
-Watson OpenScale enables you to compare models by looking at the key metrics in a side-by-side comparison. Use this feature to determine which version of a model is the best one to send to production or which model might need work:
+{{site.data.keyword.aios_short}} enables you to compare models by looking at the key metrics in a side-by-side comparison. Use this feature to determine which version of a model is the best one to send to production or which model might need work:
 
-Because of the connection to Watson OpenScale, you can get alerts in IBM OpenPages for items that require attention or missing pieces of information: 
+Because of the connection to {{site.data.keyword.aios_short}}, you can get alerts in IBM OpenPages for items that require attention or missing pieces of information: 
 
 You can set up a regular schedule for sending metrics to IBM OpenPages.

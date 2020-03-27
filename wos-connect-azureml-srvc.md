@@ -34,7 +34,7 @@ Your first step in the {{site.data.keyword.aios_short}} tool is to specify a Mic
 You can also add your machine learning provider by using the Python SDK. For more information on performing this programmatically, see [Bind your Microsoft Azure Service machine learning engine](/docs/services/ai-openscale?topic=ai-openscale-cml-azsrvconfig#cml-azsrvbind).
 
 ## Connect your Azure ML Service instance
-{: #ca-connect}
+{: #ca-connect-azureservice}
 
 {{site.data.keyword.aios_short}} connects to AI models and deployments in a Azure ML Service instance. To connect your service to {{site.data.keyword.aios_short}}, go to the **Configure** ![The configuration tab icon](/images/wos-config-tab.png) tab, add a machine learning provider, and click the **Edit** ![The configuration tab icon](/images/wos-edit-icon.png) icon. In addition to a name and description and whether this is a **Pre-production** or **Production** environment type, you must provide the following information that is specific to this type of service instance:
 

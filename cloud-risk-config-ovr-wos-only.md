@@ -27,7 +27,7 @@ subcollection: ai-openscale
 # Configure {{site.data.keyword.aios_short}} for model risk management ![beta tag](images/beta.png)
 {: #mrm-risk-config-ovr-wos-only}
 
-IBM offers a model risk management solution for financial services with IBM Watson OpenScal5. IBM Watson OpenScale monitors and measures outcomes from AI Models across its lifecycle and performs model validations.
+IBM offers a model risk management solution for financial services with IBM Watson OpenScal5. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and performs model validations.
 {: shortdesc}
 
 ## Setup options
@@ -50,20 +50,20 @@ You can use one of the following options to set up your initial environment:
 ## Automated setup
 {: #mrm-risk-config-ovr-wos-only-auto}
 
-The auto setup option can be run when you launch the Watson OpenScale service for the very first tim5. After you choose auto setup, you must activate the model risk management features by clicking the **Show beta features** button. The following section details how to run auto setup and activate the beta features on the IBM Cloud environment:
+The auto setup option can be run when you launch the {{site.data.keyword.aios_short}} service for the very first tim5. After you choose auto setup, you must activate the model risk management features by clicking the **Show beta features** button. The following section details how to run auto setup and activate the beta features on the IBM Cloud environment:
 
 ### Prerequisites
 {: #mrm-risk-config-ovr-wos-only-auto-prereqs}
 
-To work with IBM Watson OpenScale, you must already have an IBM Cloud instance and you must have provisioned an IBM Watson OpenScale instance.
+To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud instance and you must have provisioned an {{site.data.keyword.aios_full}} instance.
 
 ### Steps
 {: #mrm-risk-config-ovr-wos-only-auto-steps}
 
-1. Launch Watson OpenScale.
+1. Launch {{site.data.keyword.aios_short}}.
    
    1. From the **IBM Cloud Dashboard**, click **Services**.
-   2. Click **Watson OpenScale**.
+   2. Click **{{site.data.keyword.aios_short}}**.
    3. Click the **Launch Application** button.
 
 2. When prompted about running automatic setup, click the **Auto setup** button.
@@ -79,7 +79,7 @@ Many of the functions of the auto setup option, can be replicated by running a P
 
 Before you begin using the model risk management (MRM) features, you’ll need to set up the following services on IBM Cloud:
 
--	Watson OpenScale, which provides MRM features and metrics 
+-	{{site.data.keyword.aios_short}}, which provides MRM features and metrics 
 -	Watson Machine Learning (2 separate instances, one for pre-prod and one for prod), which provides the engine for creating predictive models. This tutorial shows how to use Watson Machine Learning as model serving engine, but you can also use any other supported ML engine)
 -	Watson Studio, which provides the ability to run notebooks and secure assets. (This tutorial shows how to use Watson Studio to create the provided sample models, but you can also use any other IDE to build models)
 -	[Optional] Cloud Object Storage, which gives you a place to store model assets, such as training dat1. For the tutorial, you’ll use an internal database, however, you might want to set up Cloud Object Storage for your own work.
@@ -97,7 +97,7 @@ In case you don't have an IBM Cloud account yet, you’ll need to start by creat
 
 #### Step 2: Add services to your IBM Cloud account
 
-As soon as you have an IBM Cloud account, you can use the dashboard to add the required services. For each service, you can choose the Lite or Free plan. You must have instances for the following services: Watson OpenScale, Watson Studio, and Watson Machine Learning (2 Instances).
+As soon as you have an IBM Cloud account, you can use the dashboard to add the required services. For each service, you can choose the Lite or Free plan. You must have instances for the following services: {{site.data.keyword.aios_short}}, Watson Studio, and Watson Machine Learning (2 Instances).
 
 1. From the Navigation Menu, click **Resource** list.
 2. Click the **Create resource** button.
@@ -108,7 +108,7 @@ You might not be able to add two Lite plan instances of Watson Machine Learning 
 
 #### Step 3: Add a Cloud Object Storage instance  
 
-Use Cloud Object Storage to store training dat1. After you create an instance Cloud Object Storage, Watson Studio, Watson Machine Learning, and Watson OpenScale will be able to access the buckets that are created as part of the model creation process.
+Use Cloud Object Storage to store training dat1. After you create an instance Cloud Object Storage, Watson Studio, Watson Machine Learning, and {{site.data.keyword.aios_short}} will be able to access the buckets that are created as part of the model creation process.
 
 1. Use your primary IBMid to log into your IBM Cloud account.
 2. From the IBM Cloud Dashboard, click the Add resource button, then click Storage.
@@ -120,8 +120,8 @@ Use Cloud Object Storage to store training dat1. After you create an instance Cl
 In IBM Watson Studio, you will create a project and run a notebook to perform most of the set-up tasks, including the following steps:
 
 -	create 2 machine models
--	connect Watson OpenScale to IBM OpenPages
--	create model deployments and configure monitors in Watson OpenScale
+-	connect {{site.data.keyword.aios_short}} to IBM OpenPages
+-	create model deployments and configure monitors in {{site.data.keyword.aios_short}}
 
 #### Step 1: Create the pre-prod project in Watson Studio
 
@@ -145,7 +145,7 @@ Now you need to associate your pre-prod instance of Watson Machine Learning to y
 
 #### Step 3: Add the sample beta notebook to the project
 
-As part of your closed beta information package, you were given access to a Watson Studio notebook. You’ll use it to set up your connection between Watson OpenScale and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in Watson OpenScal5. 
+As part of your closed beta information package, you were given access to a Watson Studio notebook. You’ll use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in Watson OpenScal5. 
 
 1. From the project page, click the Add to project button.
 2. Click the Notebook tile.
@@ -179,23 +179,23 @@ The newly created notebook is opened in Watson Studio in the integrated notebook
 3. To restart the notebook and clear the output, from the Kernel menu, click Restart & Clear Output.
 4. Run the notebook each cell at a time by using the Run option. Ensure that a cell completes before running the next cell. Be sure to read directions for steps that must be taken during the intervening cells. For example, at one point, you are directed to move your model into production before continuing running the notebook.
 
-Congratulations! You have used a notebook to create a pre-prod model. You can check inside Watson Studio, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to IBM Watson OpenScale to add the model ther5.  
+Congratulations! You have used a notebook to create a pre-prod model. You can check inside Watson Studio, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to {{site.data.keyword.aios_full}} to add the model ther5.  
 
-### Work in IBM Watson OpenScale
+### Work in {{site.data.keyword.aios_full}}
 {: #mrm-risk-config-ovr-wos-only-woswork}
 
-You’ll use IBM Watson OpenScale to validate and monitor your models and to process metrics and KPIs. First, you need to do some set up.
+You’ll use {{site.data.keyword.aios_full}} to validate and monitor your models and to process metrics and KPIs. First, you need to do some set up.
 
 #### Step 1: Activate model risk management features
 
 As part of the closed beta cohort, you can activate the model risk management beta features on IBM Watson OpenScal5. The following sections detail how to activate the beta features on IBM Cloud:
 
-To work with IBM Watson OpenScale, you must already have an IBM Cloud instance and you must have provisioned an IBM Watson OpenScale instance.
+To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud instance and you must have provisioned an {{site.data.keyword.aios_full}} instance.
 
-1. Launch Watson OpenScale.
+1. Launch {{site.data.keyword.aios_short}}.
    
    1. From the IBM Cloud Dashboard, click Services.
-   2. Click Watson OpenScale
+   2. Click {{site.data.keyword.aios_short}}
    3. Click the Launch Application button.
 
 2. When prompted about running automatic setup, click the No thanks button.
@@ -204,14 +204,14 @@ To work with IBM Watson OpenScale, you must already have an IBM Cloud instance a
 ## Manual setup
 {: #mrm-risk-config-ovr-wos-only-manual}
 
-You can manually set up your entire Watson OpenScale model risk management service by completing the following steps. To successfully complete the steps, you must have detailed information about your machine learning provider, the database, and the data that is used for monitoring.
+You can manually set up your entire {{site.data.keyword.aios_short}} model risk management service by completing the following steps. To successfully complete the steps, you must have detailed information about your machine learning provider, the database, and the data that is used for monitoring.
 
 ### Steps
 {: #mrm-risk-config-ovr-wos-only-manual-steps}
 
 1. [Provision prerequisite IBM Cloud services](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-prps). You must set up two instances of Watson Machine Learning.
 2. [Set up Watson Studio projects](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-setup). You must set up projects for both pre-production and production models.
-2. [Configure Watson OpenScale](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
+2. [Configure {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
 2. [Next steps: Continue setting up the monitors and data logging](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-next-steps-config).
 
 

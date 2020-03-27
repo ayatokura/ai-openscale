@@ -39,7 +39,7 @@ Drift is the degradation of predictive performance over time because of hidden c
 <p>
   <div class="embed-responsive embed-responsive-16by9">
 
-<iframe class="embed-responsive-item" id="WOS-ibm-drift-vid" title="Watch Watson OpenScale detect and mitigate drift" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&playerId=ibm-dynid-1_playercontainer&entry_id=1_8tp11bp7&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+<iframe class="embed-responsive-item" id="WOS-ibm-drift-vid" title="Watch {{site.data.keyword.aios_short}} detect and mitigate drift" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&playerId=ibm-dynid-1_playercontainer&entry_id=1_8tp11bp7&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
 
   </div>
 </p>
@@ -64,6 +64,6 @@ After {{site.data.keyword.aios_short}} creates the drift detection model, at run
 ## Next steps
 
 - For information on how to set up drift detection, see [Configuring the drift detection monitor](/docs/services/ai-openscale?topic=ai-openscale-behavior-drift-config).
-- To mitigate drift, after it has been detected by Watson OpenScale, you must build a new version of the model that fixes the problem. A good place to start is with the data points that are highlighted as reasons for the drift. Introduce the new data to the predictive model after you have manually labeled the drifted transactions and use them to re-train the model.
+- To mitigate drift, after it has been detected by {{site.data.keyword.aios_short}}, you must build a new version of the model that fixes the problem. A good place to start is with the data points that are highlighted as reasons for the drift. Introduce the new data to the predictive model after you have manually labeled the drifted transactions and use them to re-train the model.
 
 

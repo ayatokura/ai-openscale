@@ -71,7 +71,7 @@ To activate the application, along with any of the KPIs that you created, you mu
 
 1. To start the configuration process, from the **Add monitor** screen, click **KPIs** > **Add KPI**.
 2. Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
-3. A summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section. Otherwise, click **Save** to complete your configuration.
+3. A summary of your selections is presented for review. If you want to change anything, click the **Edit** icon for that section. Otherwise, click **Save** to complete your configuration.
 
 
 ### Continue with the interactive tutorial: Add KPIs for the German Credit Risk application monitor

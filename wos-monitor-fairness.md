@@ -76,13 +76,10 @@ By setting a minimum sample size, you prevent measuring fairness until a minimum
 {: help} 
 {: support}
 
-To start the configuration process, from the **Fairness** tab, on the **What is the Fairness monitor?** page, click **Begin**.
+To start the configuration process, from the **Fairness** tab, in the **Favorable outcomes** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon.
 
-![What is fairness? page](images/wos-fair-what-is.png)
+Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** icon for that section, otherwise, save your work.
 
-Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
-
-You can also click **Add another feature** to return to the feature selection screen and add more features, such as `City`,  , or `Account Balance` to the Fairness monitor.
 
 ### Understanding how de-biasing works
 {: #mf-debias}

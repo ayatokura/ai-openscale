@@ -47,7 +47,7 @@ For a model that is not equivalent to {{site.data.keyword.pm_full}}, you must cr
 
 The following image shows the custom environment support:
 
-![How Custom works chart is displayed. It shows boxes for the custom environment with the client API and the Watson OpenScale API](images/wos-custom-how-works.png)
+![How Custom works chart is displayed. It shows boxes for the custom environment with the client API and the {{site.data.keyword.aios_short}} API](images/wos-custom-how-works.png)
 
 You can also reference the following links:
 
@@ -59,7 +59,7 @@ You can also reference the following links:
 
 [Working with Custom machine Learning engine](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/AI%20OpenScale%20and%20Custom%20ML%20Engine.ipynb){: external}
 
-[Python SDK for IBM Watson OpenScale](https://pypi.org/project/ibm-ai-openscale/){: external}
+[Python SDK for {{site.data.keyword.aios_full}}](https://pypi.org/project/ibm-ai-openscale/){: external}
 
 - **Input criteria for model to support monitors**
 
@@ -160,7 +160,7 @@ You can configure {{site.data.keyword.aios_short}} to work with a custom machine
 ## Explore further
 {: #frmwrks-custom-mediumblogs}
 
-[Monitor custom machine learning engine with Watson OpenScale](https://developer.ibm.com/patterns/monitor-custom-machine-learning-engine-with-ai-openscale/){: external}
+[Monitor custom machine learning engine with {{site.data.keyword.aios_short}}](https://developer.ibm.com/patterns/monitor-custom-machine-learning-engine-with-ai-openscale/){: external}
 
 
 

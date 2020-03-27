@@ -63,34 +63,15 @@ The following notebooks show how to work with Amazon SageMaker:
 ## Specifying an Amazon SageMaker ML service instance
 {: #csm-connect}
 
-Your first step in the {{site.data.keyword.aios_short}} tool is to specify an Amazon SageMaker service instance. Your Amazon SageMaker service instance is where you store your AI models and deployments.
+Your first step in the {{site.data.keyword.aios_short}} tool is to [specify an Amazon SageMaker service instance](/docs/services/ai-openscale?topic=ai-openscale-csm-config). Your Amazon SageMaker service instance is where you store your AI models and deployments.
 {: shortdesc}
 
 You can also add your machine learning provider by using the Python SDK. For more information on performing this programmatically, see [Bind your Amazon SageMaker machine learning engine](/docs/services/ai-openscale?topic=ai-openscale-cml-smbind).
 
-### Connect your Amazon SageMaker service instance
-{: #csm-config}
 
-{{site.data.keyword.aios_short}} connects to AI models and deployments in an Amazon SageMaker service instance.
-
-1.  From the **Configure** tab, in the navigation pane, click **Machine learning providers**.
-
-    ![the select your machine learning service provider screen is shown with tiles for the supported machine learning engines](images/wos-machine-learning-providers-selection.png)
-
-1.  Click the **Add machine learning provider** button, and then click the **Amazon SageMaker** radio button.
-
-    ![Enter Amazon SageMaker service credentials](images/wos-connect-sage-cred.png)
-
-1.  Enter and save your credentials:
-
-    - Access Key ID: Your AWS access key ID, `aws_access_key_id`, which verifies who you are and authenticates and authorizes calls that you make to AWS.
-    - Secret Access Key: Your AWS secret access key, `aws_secret_access_key`, which is required to verify who you are and to authenticate and authorize calls that you make to AWS.
-    - Region: Enter the region where your Access Key ID was created. Keys are stored and used in the region in which they were created and cannot be transferred to another region. 
-
-1.  {{site.data.keyword.aios_short}} lists your deployed models; select the ones you want to monitor.
 
 ## Next steps
 {: #csm-next}
 
 - {{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
-- [Monitor Sagemaker machine learning with Watson OpenScale](https://developer.ibm.com/patterns/monitor-amazon-sagemaker-machine-learning-models-with-ai-openscale//){: external}
+- [Monitor Sagemaker machine learning with {{site.data.keyword.aios_short}}](https://developer.ibm.com/patterns/monitor-amazon-sagemaker-machine-learning-models-with-ai-openscale//){: external}

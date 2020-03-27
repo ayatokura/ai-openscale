@@ -60,7 +60,7 @@ Get a quick overview of {{site.data.keyword.aios_short}} by watching the followi
 
 <p>
   <div class="embed-responsive embed-responsive-16by9">
-     <iframe class="embed-responsive-item" id="WOS-bias-vid" title="Mitigating AI Bias with IBM Watson OpenScale" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_1shu3261&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
+     <iframe class="embed-responsive-item" id="WOS-bias-vid" title="Mitigating AI Bias with {{site.data.keyword.aios_full}}" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_1shu3261&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
   </div>
 </p>
 

@@ -62,15 +62,15 @@ Tests to be run on machine learning and deep learning models differ from straigh
 {: help} 
 {: support}
 
-IBM offers a model risk management solution for financial services with IBM Watson OpenScale. IBM Watson OpenScale monitors and measures outcomes from AI Models across its lifecycle and validates models. Specifically, you can use the following configurations:
+IBM offers a model risk management solution for financial services with {{site.data.keyword.aios_full}}. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and validates models. Specifically, you can use the following configurations:
 
-- [Model risk management with Watson OpenScale](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-wos-only)
+- [Model risk management with {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-wos-only)
 
-  Use Watson OpenScale as a stand-alone solution. Enable the model risk management features to create pre-production and production repositories and compare models.
+  Use {{site.data.keyword.aios_short}} as a stand-alone solution. Enable the model risk management features to create pre-production and production repositories and compare models.
 
-- [Model governance with Watson OpenScale and IBM OpenPages MRG](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-openpages-mrg)
+- [Model governance with {{site.data.keyword.aios_short}} and IBM OpenPages MRG](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-openpages-mrg)
   
-  Use Watson OpenScale as part of an overall model risk governance solution by integrating with IBM OpenPages MRG.
+  Use {{site.data.keyword.aios_short}} as part of an overall model risk governance solution by integrating with IBM OpenPages MRG.
 
 ## Known issues and limitations for the open beta
 {: #mrm-ovr-limits}
@@ -85,7 +85,7 @@ Selected monitor is not applicable for this subscription. It requires `input_dat
 
 ### You cannot create a second free instance of Watson Machine Learning on IBM Cloud
 
-Although you are welcome to use lite plans or free instances of the IBM Cloud services, it is impossible to create two free instances of Watson Machine Learning. Without a paid account, you cannot create the second instance in the same IBM Cloud account. As a workaround, you can create a second IBMid and a second IBM Cloud instance so that you can then create a second free Watson Machine Learning instance. You must ensure that one is designated as your pre-production and the other as your production system consistently within Watson Studio and Watson OpenScale.
+Although you are welcome to use lite plans or free instances of the IBM Cloud services, it is impossible to create two free instances of Watson Machine Learning. Without a paid account, you cannot create the second instance in the same IBM Cloud account. As a workaround, you can create a second IBMid and a second IBM Cloud instance so that you can then create a second free Watson Machine Learning instance. You must ensure that one is designated as your pre-production and the other as your production system consistently within Watson Studio and {{site.data.keyword.aios_short}}.
 
 ### Payload logging requires extra submissions for Amazon Web Services binary, Microsoft Azure binary and multiclass, and Native XGBoost binary problem types
 

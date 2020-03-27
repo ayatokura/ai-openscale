@@ -165,7 +165,7 @@ If you have a paid {{site.data.keyword.cloud_notm}} account, you can provision a
 
 - Access the following file. If you have a GitHub account, you can sign in to clone and download the file. Otherwise, you can view the raw version, by clicking the **Raw** button and copy the text of the file into a new file with the extension `.ipynb`.
 
-    - [Working with Watson Machine Learning (Watson OpenScale and Watson ML Engine.ipynb)](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20and%20Watson%20ML%20Engine.ipynb){: external}
+    - [Working with Watson Machine Learning ({{site.data.keyword.aios_short}} and Watson ML Engine.ipynb)](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20and%20Watson%20ML%20Engine.ipynb){: external}
 
 - From the **Assets** tab in your {{site.data.keyword.DSX}} project, click the **Add to project** button and select **Notebook** from the dropdown:
 
@@ -221,7 +221,7 @@ The net result is that you have created, trained, and deployed the **Spark Germa
 ### View insights for your deployment
 {: #crt-view-insights}
 
-Using the [Watson OpenScale dashboard](https://aiopenscale.cloud.ibm.com/aiopenscale/){: external}, click the **Insights** ![Insights icon is displayed](images/wos_insight-dash-tab.png) tab:
+Using the [{{site.data.keyword.aios_short}} dashboard](https://aiopenscale.cloud.ibm.com/aiopenscale/){: external}, click the **Insights** ![Insights icon is displayed](images/wos_insight-dash-tab.png) tab:
 
 The Insights page provides an overview of metrics for your deployed models and KPI applications. You can easily see alerts for Fairness or Accuracy metrics that exceed the threshold set through the notebook. The data and settings that are used in this tutorial create Accuracy and Fairness metrics similar to the ones shown here.
 

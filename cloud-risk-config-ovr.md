@@ -30,8 +30,8 @@ subcollection: ai-openscale
 Before you can use either the model risk managment or model governance features, you must set up your environment.
 {: shortdesc}
 
-- To set up model risk management using Watson OpenScale, see [Configure Watson OpenScale for model risk management](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only).
-- To set up model governance using Watson OpenScale and IBM OpenPages, see [Configure model governance with IBM OpenPages MRG](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-openpages).
+- To set up model risk management using {{site.data.keyword.aios_short}}, see [Configure {{site.data.keyword.aios_short}} for model risk management](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only).
+- To set up model governance using {{site.data.keyword.aios_short}} and IBM OpenPages, see [Configure model governance with IBM OpenPages MRG](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-openpages).
 
 ## Turning beta features on and off
 {: #mrm-risk-config-ovr-beta-toggling}

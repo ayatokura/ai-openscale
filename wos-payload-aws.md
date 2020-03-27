@@ -153,4 +153,4 @@ subcollection: ai-openscale
 {: #csm-next-qws}
 
 - {{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
-- [Monitor SageMaker machine learning with Watson OpenScale](https://developer.ibm.com/patterns/monitor-amazon-sagemaker-machine-learning-models-with-ai-openscale//){: external}
+- [Monitor SageMaker machine learning with {{site.data.keyword.aios_short}}](https://developer.ibm.com/patterns/monitor-amazon-sagemaker-machine-learning-models-with-ai-openscale//){: external}

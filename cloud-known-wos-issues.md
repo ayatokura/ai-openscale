@@ -56,7 +56,7 @@ The following limitations and known issues are common to both {{site.data.keywor
 ### Limit on the number of features for a model
 {: #wos-limitations-feat-col-size-limit}
 
-Scoring payloads for a model must fit within the maximum width that is allowed for the table that is created by payload logging in the data mart database (with some buffer for the internal-use columns that Watson OpenScale itself adds). In addition, apart from the width there is also a hardcoded limit of 1012 features.
+Scoring payloads for a model must fit within the maximum width that is allowed for the table that is created by payload logging in the data mart database (with some buffer for the internal-use columns that {{site.data.keyword.aios_short}} itself adds). In addition, apart from the width there is also a hardcoded limit of 1012 features.
 
 The following table summarizes what this limit means for models with different sizes of features:
 

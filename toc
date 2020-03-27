@@ -2,11 +2,11 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="ai-openscale" category="ai" audience="service" arm="4109554"  href="/docs/services/ai-openscale/getting-started.html" path="services/ai-openscale"}
-Watson OpenScale
+{{site.data.keyword.aios_short}}
 
     {: .navgroup id="learn"}
     getting-started.md
-    [Learn about Watson OpenScale](https://www.ibm.com/cloud/watson-openscale/)
+    [Learn about {{site.data.keyword.aios_short}}](https://www.ibm.com/cloud/watson-openscale/)
     wos-accessibility.md
     cloud-interactive-setup.md
     cloud-alt-setup.md
@@ -29,7 +29,7 @@ Watson OpenScale
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Configuring Watson OpenScale
+    Configuring {{site.data.keyword.aios_short}}
         wos-creds.md
         wos-connect-deploy.md
         cloud-connect-db.md
@@ -148,7 +148,7 @@ Watson OpenScale
     cloud-openscale-recovery.md
 
     {: .topicgroup}
-    Enhancing security for Watson OpenScale
+    Enhancing security for {{site.data.keyword.aios_short}}
         wos-information-security.md
         iam.md
         service-connection.md

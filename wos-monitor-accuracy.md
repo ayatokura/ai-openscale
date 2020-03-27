@@ -55,13 +55,9 @@ The maximum sample size helps better manage the time and effort it takes to eval
 {: help} 
 {: support}
 
-To start the configuration process, from the **Quality** tab, on the **What the Quality monitor?** page, click **Begin**.
+To start the configuration process, from the **Quality** tab, in the **Quality threshold** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon.
 
-![The What is the Quality monitor? page is shown and it explains that the quality monitor evaluates how well your model predicts accurate outcomes](images/wos-quality-what-is.png)
-
-Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section, otherwise, save your work.
-
-A summary of your selections is presented for review. If you want to change anything, click the **Edit** link for that section. Otherwise, click **Save** to complete your configuration.
+Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** icon for that section, otherwise, save your work.
 
 ### Next steps
 {: #acc-next}

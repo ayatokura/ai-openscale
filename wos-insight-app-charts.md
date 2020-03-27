@@ -35,7 +35,7 @@ From the Insights dashboard, on the Applications monitor tab, click an applicati
 
 For each Business KPI (on the example below: Number Accepted and Daily Revenue), on the Correlation tab there is a list of model metrics influencing selected KPI.
 
-Watson OpenScale discovers if the relationship between selected KPI and associated models metrics exists. Such evaluation happens once a day. It requires minimum 7 Business KPIs measurements (for daily calculated KPIs it means 7 days, for weekly - 7 weeks, etc...) and same number of model metric measurements. Please note that model metrics measurements included in such evaluation are calculated using the only scoring transactions with the same transaction_id as theses included in business events for KPI calculation.
+{{site.data.keyword.aios_short}} discovers if the relationship between selected KPI and associated models metrics exists. Such evaluation happens once a day. It requires minimum 7 Business KPIs measurements (for daily calculated KPIs it means 7 days, for weekly - 7 weeks, etc...) and same number of model metric measurements. Please note that model metrics measurements included in such evaluation are calculated using the only scoring transactions with the same transaction_id as theses included in business events for KPI calculation.
 
 ## Step
 {: #app-perform-vdet-steps}
