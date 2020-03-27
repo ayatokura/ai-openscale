@@ -36,25 +36,15 @@ You can also add your machine learning provider by using the Python SDK. For mor
 ## Connect your Amazon SageMaker service instance
 {: #csm-config}
 
-{{site.data.keyword.aios_short}} connects to AI models and deployments in an Amazon SageMaker service instance.
+{{site.data.keyword.aios_short}} connects to AI models and deployments in an Amazon SageMaker service instance. To connect your service to {{site.data.keyword.aios_short}}, go to the **Configure** ![The configuration tab icon](/images/wos-config-tab.png) tab, add a machine learning provider, and click the **Edit** ![The configuration tab icon](/images/wos-edit-icon.png) icon. In addition to a name and description and whether this is a **Pre-production** or **Production** environment type, you must provide the following information that is specific to this type of service instance:
 
-1.  From the **Configure** tab, click **Machine learning provider**.
-
-    ![the select your machine learning service provider screen is shown with tiles for the supported machine learning engines](images/wos-machine-learning-providers-selection.png)
-
-1.  Click the **Amazon SageMaker** radio button.
-
-    ![Enter Amazon SageMaker service credentials](images/wos-connect-sage-cred.png)
-
-1.  Enter and save your credentials:
-
-    - Access Key ID: Your AWS access key ID, `aws_access_key_id`, which verifies who you are and authenticates and authorizes calls that you make to AWS.
-    - Secret Access Key: Your AWS secret access key, `aws_secret_access_key`, which is required to verify who you are and to authenticate and authorize calls that you make to AWS.
-    - Region: Enter the region where your Access Key ID was created. Keys are stored and used in the region in which they were created and cannot be transferred to another region. 
-
-1.  {{site.data.keyword.aios_short}} lists your deployed models; select the ones you want to monitor.
+- Access Key ID: Your AWS access key ID, `aws_access_key_id`, which verifies whoyou are and authenticates and authorizes calls that you make to AWS.
+- Secret Access Key: Your AWS secret access key, `aws_secret_access_key`, whichis required to verify who you are and to authenticate and authorize calls thatyou make to AWS.
+- Region: Enter the region where your Access Key ID was created. Keys are storedand used in the region in which they were created and cannot be transferred toanother region. 
 
 ### Next steps
 {: #csm-next}
 
-{{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+You are now ready to select deployed models and configure your monitors. {{site.data.keyword.aios_short}} lists your deployed models on the **Insights** dashboard where you can click the **Add to dashboard** button. Select the deployments you want to monitor and click **Configure**.
+
+For more information, see [Configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).

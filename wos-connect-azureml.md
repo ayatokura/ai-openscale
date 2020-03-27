@@ -39,31 +39,18 @@ You can also add your machine learning provider by using the Python SDK. For mor
 {: help} 
 {: support}
 
-{{site.data.keyword.aios_short}} connects to AI models and deployments in a Azure ML Studio instance.
+{{site.data.keyword.aios_short}} connects to AI models and deployments in a Azure ML Studio instance. To connect your service to {{site.data.keyword.aios_short}}, go to the **Configure** ![The configuration tab icon](/images/wos-config-tab.png) tab, add a machine learning provider, and click the **Edit** ![The configuration tab icon](/images/wos-edit-icon.png) icon. In addition to a name and description and whether this is a **Pre-production** or **Production** environment type, you must provide the following information that is specific to this type of service instance:
 
-1.  From the **Configure** tab, click **Machine learning provider**.
-
-    ![the select your machine learning service provider screen is shown with tiles for the supported machine learning engines](images/wos-machine-learning-providers-selection.png)
-
-1.  Click the **Microsoft Azure ML Studio** tile.
-
-    ![Enter Azure ML Studio credentials](images/wos-connect-azure-cred.png)
-
-1.  Enter and save your credentials:
-
-    - Client ID: The actual string value of your client ID, which verifies who you are and authenticates and authorizes calls that you make to Azure Studio.
-    - Client Secret: The actual string value of the secret, which verifies who you are and authenticates and authorizes calls that you make to Azure Studio.
-    - Tenant: Your tenant ID corresponds to your organization and is a dedicated instance of Azure AD. To find the tenant ID, hover over your account name to get the directory / tenant ID, or select Azure Active Directory > Properties > Directory ID in the Azure portal.
-    - Subscription ID: Subscription credentials which uniquely identify your Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
-
-    See [How to: Use the portal to create an Azure AD application and service principal that can access resources](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal){: external} for instructions about how to get your Microsoft Azure credentials.
-    {: note}
-
-1.  {{site.data.keyword.aios_short}} lists your deployed models; select the ones you want to monitor and click **Configure**.
-
-You have successfully selected deployments.
+- Client ID: The actual string value of your client ID, whichverifies who you are and authenticates and authorizes callsthat you make to Azure Studio.
+- Client Secret: The actual string value of the secret, whichverifies who you are and authenticates and authorizes callsthat you make to Azure Studio.
+- Tenant: Your tenant ID corresponds to your organization andis a dedicated instance of Azure AD. To find the tenant ID,hover over your account name to get the directory / tenant ID,or select Azure Active Directory > Properties > Directory ID inthe Azure portal.
+- Subscription ID: Subscription credentials which uniquelyidentify your Microsoft Azure subscription. The subscription IDforms part of the URI for every service call.
+See [How to: Use the portal to create an Azure AD applicationand service principal that can access resources](https://docsmicrosoft.com/en-us/azure/active-directory/develophowto-create-service-principal-portal){: external} forinstructions about how to get your Microsoft Azure credentials.
+{: note}
 
 ## Next steps
 {: #ca-next-azure}
 
-{{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+You are now ready to select deployed models and configure your monitors. {{site.data.keyword.aios_short}} lists your deployed models on the **Insights** dashboard where you can click the **Add to dashboard** button. Select the deployments you want to monitor and click **Configure**.
+
+For more information, see [Configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).

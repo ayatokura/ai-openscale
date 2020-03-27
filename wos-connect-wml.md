@@ -38,26 +38,15 @@ You should have provisioned an {{site.data.keyword.pm_full}} instance in the sam
 ## Connect your {{site.data.keyword.pm_short}} service instance
 {: #wml-config}
 
-{{site.data.keyword.aios_short}} connects to AI models and deployments in an {{site.data.keyword.pm_full}} instance.
+{{site.data.keyword.aios_short}} connects to AI models and deployments in an {{site.data.keyword.pm_full}} instance. To connect your service to {{site.data.keyword.aios_short}}, go to the **Configure** ![The configuration tab icon](/images/wos-config-tab.png) tab, add a machine learning provider, and click the **Edit** ![The configuration tab icon](/images/wos-edit-icon.png) icon. In addition to a name and description and whether this is a **Pre-production** or **Production** environment type, you must provide the following information that is specific to this type of service instance:
 
-1.  From the **Configure** tab, click **Machine learning provider**.
+- If you have an instance of {{site.data.keyword.pm_full}}, {{site.data.keyword.aios_short}} detects it, along with the configuration information.
+- To specify a machine learning location outside of your {{site.data.keyword.Bluemix_notm}} account, choose the **Other** option. Provide credentials for your location by pasting valid JSON credentials.
 
-    ![the select your machine learning service provider screen is shown with tiles for the supported machine learning engines](images/wos-machine-learning-providers-selection.png)
-
-2.  Select the {{site.data.keyword.pm_full}} tile. {{site.data.keyword.aios_short}} checks your {{site.data.keyword.Bluemix_notm}} account to locate any existing {{site.data.keyword.pm_full}} instances. 
-3. Select an instance from the **Watson Machine Learning service** drop-down menu.
-
-    ![Select {{site.data.keyword.pm_short}} service](images/wos-gs-set-wml.png)
-
-4.  (Optional) You also have the option to **Select a different location**, to specify a machine learning location outside of your {{site.data.keyword.Bluemix_notm}} account. Provide credentials for your location as valid JSON:
-
-    ![Set {{site.data.keyword.pm_short}} instance](images/wos-gs-get-wml.png)
-
-    Click **Save**.
-
-1.  {{site.data.keyword.aios_short}} lists your deployed models; select the ones you want to monitor and click **Configure**.
 
 ### Next steps
 {: #wml-next}
 
-{{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+You are now ready to select deployed models and configure your monitors. {{site.data.keyword.aios_short}} lists your deployed models on the **Insights** dashboard where you can click the **Add to dashboard** button. Select the deployments you want to monitor and click **Configure**.
+
+For more information, see [Configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
