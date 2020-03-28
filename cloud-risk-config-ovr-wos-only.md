@@ -199,7 +199,7 @@ To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud
    3. Click the Launch Application button.
 
 2. When prompted about running automatic setup, click the No thanks button.
-3. From the Insights dashboard, click the **Show beta features** ![Show beta features button](/images/wos-show-beta.png) button.
+3. From the **Insights** ![The insights dashboard icon](/images/wos_insight-dash-tab.png) dashboard, click the **Show beta features** ![Show beta features button](/images/wos-show-beta.png) button.
 
 ## Manual setup
 {: #mrm-risk-config-ovr-wos-only-manual}
