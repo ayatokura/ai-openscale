@@ -52,7 +52,7 @@ There are many challenges with machine learning and deep learning models. For ex
 
 Tests to be run on machine learning and deep learning models differ from straightforward application testing: 
 
-- Drift: Any change in input data also known as Drift can cause the model to make inaccurate decisions, impacting business KPIs 
+- Drift: Any change in input data also known as Drift can cause the model to make inaccurate decisions, impacting business predictions
 - Bias: Training data can be cleaned to be free from bias but runtime data might induce biased behavior of model 
 - Explainability: Traditional statistical models are simpler to interpret and explain 
 - Missing Validation or Test Data: Model training data sets might not capture the range of data or combinations that are encountered in runtime. Validation and monitoring of AI models is necessary in addition to govern and manage risk.

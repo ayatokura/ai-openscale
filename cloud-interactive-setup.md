@@ -196,11 +196,7 @@ Continue with this tutorial by completing the following steps:
 
    To enable monitoring for quality, you must provide your model with feedback data. Quality data will not appear in the dashboard until that is done. You can generate the requests all at once by adding sample feedback data to the model for scoring. For this task, you'll download a CSV file that contains sample feedback data.
 
-6. [Configure the application monitor](/docs/services/ai-openscale?topic=ai-openscale-app-monitor).
-
-   After you configure drift monitoring, you are ready to set up the application monitor and any corresponding KPIs that you might want to correlate with your predictive model.
-
-7. [Get insights](/docs/services/ai-openscale?topic=ai-openscale-io-ov).
+6. [Get insights](/docs/services/ai-openscale?topic=ai-openscale-io-ov).
 
    After you configure accuracy monitoring, the accuracy check runs after one hour. In a production system, this makes sense so that your dashboard can accumulate feedback data. For the purposes of this tutorial, you'll probably want to trigger the accuracy check manually after you add your feedback data, so that you can see results in the **Insights** dashboard.
 

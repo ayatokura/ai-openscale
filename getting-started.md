@@ -168,54 +168,13 @@ For information about finding and explaining transactions, see [Monitoring expla
    ![Demo Lets go](images/cloud-fastpath_demo_11.35.50.png)
 
 
-## Viewing insights in the application monitor
-{: #wos-open-config-appmon-insights}
-
-To view insights into the business application - performance of business KPIs and their correlation with deployed models, open the {{site.data.keyword.aios_short}} **Insights dashboard**. Each application displays as a tile. The tour configured an application called **GermanCreditRiskModel**, as shown in the following screen capture:
-
-![an application tile that shows loan application KPIs](images/wos-insights-dashboard-application-monitors-tile.png)
-
-### View insights
-{: #wos-open-config-appmon-insights-dets}
-
-At a glance, the Insights page shows any issues with business KPIs, as determined by the thresholds that are configured.
-
-![The insights dashboard is shown with one tile on the applications monitor tab](images/wos-insights-dashboard-application-monitors.png)
-
-### View model metrics influencing KPI
-{: #wos-open-config-appmon-insights-kpi-dets}
-
-1. From the **Insights** page, click the **German Credit Risk Application** tile to view details about the KPIs.
-1. Click **KPI**.
-1. Click the **Correlations** tab.
-   
-   Correlations are calculated once per day; information on the **Correlations** tab usually appears within 24 hours.
-   {: note}
-   
-1. Review list of model metrics that influence the selected KPI.
-
-For information about interpreting the time series chart, see [Getting application insights](/docs/services/ai-openscale?topic=ai-openscale-io-app-ov).
-
-### View KPI performance
-{: #wos-open-config-appmon-insights-kpi-perf}
-
-1. From the **Insights dashboard**, on the **Applications monitor** tab, click the **GermanCreditRiskModel** tile to view details about the KPIs.
-1. Select **KPI**.
-1. Select the **Performance** tab
-1. Click and drag the marker across the chart to view a day and time period that shows data and then click the View details link. Alternatively, you can click different time periods in the chart to change the data that you see.
-
-For information about interpreting the time series chart, see [Getting application insights](/docs/services/ai-openscale?topic=ai-openscale-io-app-ov).
-
-
 ## Finishing the tour
 {: #wos-done-demo}
 
 After you finish the tour and the application setup, you can perform one of the following tasks: 
 
 - To add your own model to the dashboard, from the **Model monitors** tab, click the **Add to dashboard** button.
-- To add your own application to the dashboard, from the **Application monitors** tab, click the **Add to dashboard** button.
 - To continue exploring the tutorial model, from the **Model monitors** tab, click the **German Credit Risk** tile.
-- To continue exploring the application, from the **Application monitors** tab, click the **German Credit Risk application** tile.
 
 ## Next steps
 {: #gs-next}

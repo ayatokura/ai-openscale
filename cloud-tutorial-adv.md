@@ -223,7 +223,7 @@ The net result is that you have created, trained, and deployed the **Spark Germa
 
 Using the [{{site.data.keyword.aios_short}} dashboard](https://aiopenscale.cloud.ibm.com/aiopenscale/){: external}, click the **Insights** ![Insights icon is displayed](images/wos_insight-dash-tab.png) tab:
 
-The Insights page provides an overview of metrics for your deployed models and KPI applications. You can easily see alerts for Fairness or Accuracy metrics that exceed the threshold set through the notebook. The data and settings that are used in this tutorial create Accuracy and Fairness metrics similar to the ones shown here.
+The Insights page provides an overview of metrics for your deployed models. You can easily see alerts for Fairness or Accuracy metrics that exceed the threshold set through the notebook. The data and settings that are used in this tutorial create Accuracy and Fairness metrics similar to the ones shown here.
 
   ![Insight overview dashboard displays with a tile for the German Credit Risk model](images/wos-insights-dashboard-model-monitors.png)
 

@@ -51,12 +51,6 @@ Watson OpenScale
         wos-metrics.md
 
     {: .topicgroup}
-    Configuring application monitors
-        wos-monitor-app-overview.md
-        wos-monitor-event-details.md
-        wos-monitor-bkpi.md
-
-    {: .topicgroup}
     Configuring model risk manager
         cloud-risk-config-ovr.md
         cloud-risk-config-ovr-wos-only.md
@@ -74,12 +68,6 @@ Watson OpenScale
         wos-insight-unstructmodel.md
         wos-insight-tabularmodel.md        
         wos-insight-contrastive.md
-
-    {: .topicgroup}
-    Get application insights
-        wos-insight-app-overview.md
-        wos-insight-app-performance_metrics.md
-        wos-insight-app-charts.md
 
     {: .topicgroup}
     Model risk and governance

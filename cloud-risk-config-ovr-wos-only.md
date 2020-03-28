@@ -184,7 +184,7 @@ Congratulations! You have used a notebook to create a pre-prod model. You can ch
 ### Work in {{site.data.keyword.aios_full}}
 {: #mrm-risk-config-ovr-wos-only-woswork}
 
-You’ll use {{site.data.keyword.aios_full}} to validate and monitor your models and to process metrics and KPIs. First, you need to do some set up.
+You’ll use {{site.data.keyword.aios_full}} to validate and monitor your models and to process metrics. First, you need to do some set up.
 
 #### Step 1: Activate model risk management features
 
