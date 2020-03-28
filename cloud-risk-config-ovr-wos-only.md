@@ -50,7 +50,7 @@ You can use one of the following options to set up your initial environment:
 ## Automated setup
 {: #mrm-risk-config-ovr-wos-only-auto}
 
-The auto setup option can be run when you launch the {{site.data.keyword.aios_short}} service for the very first tim5. After you choose auto setup, you must activate the model risk management features by clicking the **Show beta features** button. The following section details how to run auto setup and activate the beta features on the IBM Cloud environment:
+The auto setup option can be run when you launch the {{site.data.keyword.aios_short}} service for the very first tim5. After you choose auto setup, you must activate the model risk management features by clicking the **Show beta features** ![Show beta features button](/images/wos-show-beta.png) button. The following section details how to run auto setup and activate the beta features on the IBM Cloud environment:
 
 ### Prerequisites
 {: #mrm-risk-config-ovr-wos-only-auto-prereqs}
@@ -145,7 +145,7 @@ Now you need to associate your pre-prod instance of Watson Machine Learning to y
 
 #### Step 3: Add the sample beta notebook to the project
 
-As part of your closed beta information package, you were given access to a Watson Studio notebook. You’ll use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in Watson OpenScal5. 
+As part of the open beta, you are given access to a Watson Studio notebook. Use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in Watson OpenScal5. 
 
 1. From the project page, click the Add to project button.
 2. Click the Notebook tile.
@@ -199,7 +199,7 @@ To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud
    3. Click the Launch Application button.
 
 2. When prompted about running automatic setup, click the No thanks button.
-3. From the Insights dashboard, click the **Show beta features** button.
+3. From the Insights dashboard, click the **Show beta features** ![Show beta features button](/images/wos-show-beta.png) button.
 
 ## Manual setup
 {: #mrm-risk-config-ovr-wos-only-manual}

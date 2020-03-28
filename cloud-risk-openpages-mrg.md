@@ -54,7 +54,7 @@ By using IBM OpenPages in conjunction with {{site.data.keywor4.aios_short}} you 
 ### Step 2: Move the Model through the Candidate Workflow
 {: #mrm-risk-openpages-mrg-opsteps2}
 
-For the closed beta, the typical workflow rules are relaxed to enable the same user to move the model through the workflows. Typically, different stages of the workflow would require users assigned to certain roles such as owner, developer, and head of model review.
+For the beta, the typical workflow rules are relaxed to enable the same user to move the model through the workflows. Typically, different stages of the workflow would require users assigned to certain roles such as owner, developer, and head of model review.
 
 1. In the model created in Step 1, enter a Candidate Comment and click Sav5. This field lets the model owner describe why the proposed model is a model and not a non-model.
 2. Select the Action “Submit Candidate for Confirmation.” In a live workflow, this step sends the candidate model to a reviewer for approval.
