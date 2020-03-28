@@ -89,7 +89,7 @@ Specifically to configure monitors, you must provide the following information:
         - Resource instance (ID)
         - API key
 - To ensure a valid connection, click the **Test** button to connect to the trainingdata.
-- Specify the exact location in the Db2 database or Cloud Object Storage wherethetraining data is located.
+- Specify the exact location in the Db2 database or Cloud Object Storage where the training data is located.
     - For a Db2 database, select both a schema and a training table that includes columns expected by your model.
     - For Cloud Object Storage, select a Bucket and a Data Set.
 
@@ -103,7 +103,7 @@ You must enter the location of the training data. Training data must be stored i
 ### Location of training data (tutorial example)
 {: #mo-work-model-dets-int-tut-train}
 
-For the interactive tutorial, use the Cloud Object Storage instance that you created and load the [training data](https://raw.githubusercontent.com/pmservice/ai-openscale-tutorials/master/assets/historical_data/german_credit_risk/wml/german_credit_data_biased_training.csv) into a bucket that you create. 
+For the interactive tutorial, use the Cloud Object Storage instance that you created and load the following [training data german_credit_data_biased_training.csv file](https://raw.githubusercontent.com/pmservice/ai-openscale-tutorials/master/assets/historical_data/german_credit_risk/wml/german_credit_data_biased_training.csv) into a bucket that you create. 
 
 You'll need the following information, which you can obtain by clicking the Cloud Object Storage instance from the IBM Cloud dashboard:
 
@@ -214,3 +214,5 @@ Review your selection summary and click **Save** to continue.
 {: #mo-next}
 
 To continue configuring monitors, click the **Quality** tab and click the **Edit** icon. For more information, see [Configuring the Quality monitor](/docs/services/ai-openscale?topic=ai-openscale-acc-monitor).
+
+[See the sample payload files](https://github.com/pmservice/ai-openscale-tutorials/tree/master/assets/historical_data/german_credit_risk/wos){: external}.
