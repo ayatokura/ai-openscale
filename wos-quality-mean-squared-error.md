@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-01-28"
+lastupdated: "2020-04-08"
 
 keywords: metrics, monitoring, custom metrics, thresholds, Mean squared error, score, schedule, recommendation
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-01-28"
+lastupdated: "2020-04-08"
 
 keywords: machine learning engines, frameworks, Microsoft Azure, Amazone SageMaker, custom ML engine 
 
