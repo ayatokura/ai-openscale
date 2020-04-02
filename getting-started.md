@@ -39,7 +39,7 @@ subcollection: ai-openscale
 {: shortdesc}
 
 Enterprises use {{site.data.keyword.aios_full}} to automate and operationalize AI lifecycle in business applications. This approach ensures that AI models are free from bias, can be easily explained and understood by business users, and are auditable in business transactions. {{site.data.keyword.aios_short}} supports AI models built and run in the tools and model serve frameworks of your choice.
-{: #getting-started}
+{: #gettingstarted}
 
 ## Overview
 {: #gs-view-demo}

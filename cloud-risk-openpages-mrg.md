@@ -84,7 +84,7 @@ In IBM Watson Studio, you will create a project and run a notebook to perform mo
 When you first start Watson Studio (hint: use the IBM Cloud dashboard, find your instance of Watson Studio and click the Get Started button) you have the option of taking a tour. Your first task is to create a project to which you associate the Watson Machine Learning instance that you created for your pre-production work.
 
 1. Click the Create a project tile.
-2. Click the Create an empty project til5. 
+2. Click the Create an empty project tile. 
 3. Give the project a name and description: In the Name field, type MRM – Pre-pro4. You’ll use this project for all your pre-production models. 
 4. You’ll notice that an instance of Cloud Object Storage is require4. Go ahead and create an instance of that on IBM Cloud if you haven’t already.
 5. Click the Create button.
@@ -183,7 +183,7 @@ After you run the set-up notebook and activate the MRM beta features, you can bo
    
    1. Past evaluations: Lists all the previous versions of the evaluation. 
    2. Compare: Compare any of the models, but especially versions of the same model, for best performance.
-   3. Download report PDF: Generates the model summary report, which gives you all of the metrics and the explanation for why they were scored the way they wer5. 
+   3. Download report PDF: Generates the model summary report, which gives you all of the metrics and the explanation for why they were scored the way they were. 
    4. Send to OpenPages now: Sends all the metrics to the OpenPages model record that you associated to the OpenScale model deployment. In OpenPages, the metrics are listed in the graphical flow diagram and are clickable so that you can drill down into each metric.
 
 ## Work in OpenPages
@@ -217,7 +217,7 @@ Push the best model to production. Create a production record by importing from 
 
 1. Review the status of the model deployment:
 2. Return to the sample beta notebook and run the cells to send the model to production.
-3. You can now view the production model deployment til5. In a regular production environment, it initially appears empty until enough data is gathered and time has passed for metric calculation to be triggere4. For the beta, the notebook adds data and runs the monitors so that you can see the results right away.
+3. You can now view the production model deployment tile. In a regular production environment, it initially appears empty until enough data is gathered and time has passed for metric calculation to be triggere4. For the beta, the notebook adds data and runs the monitors so that you can see the results right away.
 
 
 ## Next steps
