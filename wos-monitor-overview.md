@@ -47,27 +47,6 @@ For example, if you are using the **German Credit Risk** sample model for the in
 
 2. To get started, click **Configure monitors**.
 
-## Provide payload logging details
-{: #mo-work-data}
-
-You must provide information about your model and training data. For more information about training data, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/services/ai-openscale?topic=ai-openscale-trainingdata#trainingdata) For the tutorial, in the **Data type** field, select **Numeric/categorical** and for the **Algorithm type**, select **Binary classification**.
-
-![The specify type of input screen is shown with selections for data type and algorithm type](images/wos-config-what-monitor.png)
-
-- If you use an {{site.data.keyword.pm_full}} instance that is in the same region as your {{site.data.keyword.aios_short}} instance, although you must select Data type and Algorithm type, some payload logging information is configured automatically for you. 
-- Otherwise from the **Payload logging** tab and windows, you must enter information about your data and algorithm types and your payload logging. 
-
-- There are specific requirements depending on your selections. For more information, see [Numeric/categorical data](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
-
-- Before you configure your monitors, copy one of the code snippets to run to establish the connection to Watson Machine Learning. Run the cURL command in your client application or the Python command in your data science notebook. This provides a way to log model deployment requests and write response data into the payload database.
-   
-After you send the payload logging details, either by using the local {{site.data.keyword.pm_full}} method or by using the API, you must return to the **Payload logging** screen and click **I'm finished**.
-
-![payload logging screen is pictured](images/wos-payload-logging-gosales001.png)
-
-If the scoring is sent correctly to {{site.data.keyword.aios_short}}, the following screen is shown after you click the **I'm finished** button. The button is hidden and you see the message, **Logging activated successfully**.
-
-![payload logging screen is pictured after a successful upload of data](images/wos-payload-logging-gosales002.png)
 
 
 ## Provide model details
@@ -77,21 +56,57 @@ Provide information about your model so that {{site.data.keyword.aios_short}} ca
 
 Specifically to configure monitors, you must provide the following information:
 
-- Specify the Location (either `Db2` or `Cloud Object Storage`), then:
-    - For a Db2 database, enter the following information:
-        - Host name or IP address
-        - Port
-        - Database (name)
-        - Username
-        - Password
-    - For Cloud Object Storage, enter the following information:
-        - Login URL: The Login URL must match the region setting of the bucket where your training data is located. You will specify the training data bucket in the next step.
-        - Resource instance (ID)
-        - API key
-- To ensure a valid connection, click the **Test** button to connect to the trainingdata.
-- Specify the exact location in the Db2 database or Cloud Object Storage where the training data is located.
-    - For a Db2 database, select both a schema and a training table that includes columns expected by your model.
-    - For Cloud Object Storage, select a Bucket and a Data Set.
+### Model input
+{: #mo-work-model-dets-input}
+
+Select the data type and algorithm type.
+
+### Training data
+{: #mo-work-model-dets-training-data}
+
+If you do not use a notebook to provide a training data summary, you must enter the location of the training data. Specify the exact location in the Db2 database or Cloud Object Storage where the training data is located. After you select the storage type (either `Db2` or `Cloud Object Storage`), you must complete the following information:
+
+- For a Db2 database, enter the following information:
+  
+  - Host name or IP address
+  - Port
+  - Database (name)
+  - Username
+  - Password
+  
+- For Cloud Object Storage, enter the following information:
+  
+  - Login URL: The Login URL must match the region setting of the bucket where your training data is located. You will specify the training data bucket in the next step.
+  - Resource instance (ID)
+  - API key
+
+To ensure a valid connection, click the **Connect** button to connect to the training data. After you successfully connect, you must make additional selections and save your work:
+
+- For a Db2 database, select both a schema and a training table that includes columns expected by your model.
+- For Cloud Object Storage, select a Bucket and a Data Set.
+
+### Training data label
+{: #mo-work-model-dets-training-data-label}
+
+You must select a single unique feature from the data to serve as the label column. This is what the model was designed to predict.
+
+### Training features
+{: #mo-work-model-dets-training-data-features}
+
+Select all the features that were used to train the model before it was deployed.
+
+
+### Model transaction
+{: #mo-work-model-dets-mtrxn}
+
+{{site.data.keyword.aios_short}} checks the payload logging automatically for models that you create with {{site.data.keyword.pm_full}}. For external machine learning providers, you must send a sample payload either by pasting a JSON file into the JSON payload box or by using the API to send a request.
+
+### Model output details
+{: #mo-work-model-dets-output-dets}
+
+Select model output details and save your work. Specifically, you must select a prediction column and a prediction probability column. {{site.data.keyword.aios_short}} might detect these values for you.
+
+
 
 ## Continuing the interactive tutorial
 {: #mo-work-model-dets-int-tut}
