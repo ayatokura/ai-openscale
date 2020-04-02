@@ -34,6 +34,7 @@ subcollection: ai-openscale
 
 # Getting started tutorial (automated setup)
 {: #getting-started}
+{: #gettingstarted}
 
 {{site.data.keyword.aios_full}} tracks and measures outcomes from your AI models, and helps ensure they remain fair, explainable, and compliant wherever your models were built or are running. {{site.data.keyword.aios_short}} also detects and helps correct the drift in accuracy when an AI model is in production
 {: shortdesc}
