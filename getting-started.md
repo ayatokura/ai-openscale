@@ -32,14 +32,13 @@ subcollection: ai-openscale
 {:python: .ph data-hd-programlang='python'}
 {:swift: .ph data-hd-programlang='swift'}
 
-# Getting started tutorial (automated setup)
+# Getting started tutorial
 {: #getting-started}
 
 {{site.data.keyword.aios_full}} tracks and measures outcomes from your AI models, and helps ensure they remain fair, explainable, and compliant wherever your models were built or are running. {{site.data.keyword.aios_short}} also detects and helps correct the drift in accuracy when an AI model is in production
 {: shortdesc}
 
 Enterprises use {{site.data.keyword.aios_full}} to automate and operationalize AI lifecycle in business applications. This approach ensures that AI models are free from bias, can be easily explained and understood by business users, and are auditable in business transactions. {{site.data.keyword.aios_short}} supports AI models built and run in the tools and model serve frameworks of your choice.
-{: #gettingstarted}
 
 ## Overview
 {: #gs-view-demo}
@@ -56,8 +55,8 @@ Get a quick overview of {{site.data.keyword.aios_short}} by watching the followi
 <p>&nbsp;</p>
 
 
-## Use case of {{site.data.keyword.aios_short}}
-{: #gs-use}
+## Getting started with {{site.data.keyword.aios_short}}  (automated setup)
+{: #gettingstarted}
 
 Traditional lenders are under pressure to expand their digital portfolio of financial services to a larger and more diverse audience, which requires a new approach to credit risk modeling. Their data science teams currently rely on standard modeling techniques - like decision trees and logistic regression - which work well for moderate data sets, and make recommendations that can be easily explained. This approach satisfies regulatory requirements that credit lending decisions must be transparent and explainable.
 
