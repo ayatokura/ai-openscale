@@ -38,7 +38,7 @@ if you use {{site.data.keyword.pm_full}} and your data does not exceed 500 MB. O
 ## Requirements
 {: #behavior-drift-config-steps-wos-reqs}
 
-Throughout this process, {{site.data.keyword.aios_full}} analyzes your model and makes recommendations based on the most logical outcome. For the drift monitor to work properly, the data type of your prediction column in the training data must match the data type of the same column in the payload data. Assign matching string or numeric types to the prediction and label columns. To confirm data types, go to **Model details** > **Edit** > **Select the label column from the training data** or **Select the deployment prediction column**. These selections ensure that you have accurate information for the following configuration steps. If for some reason you must change data types, you must redeploy the monitor to effect the changes.
+Throughout this process, {{site.data.keyword.aios_full}} analyzes your model and makes recommendations based on the most logical outcome. For the drift monitor to work properly, the data type of your prediction column in the training data must match the data type of the same column in the payload data. Assign matching string or numeric types to the prediction and label columns. To confirm data types, click **Model details** > **Model output details** > **Edit**. These selections ensure that you have accurate information for the following configuration steps. If for some reason you must change data types, you must redeploy the monitor to effect the changes.
 
 On the successive pages of the **Drift** tab, you must provide the following information:
 
@@ -59,7 +59,7 @@ By setting a minimum sample size, you prevent measuring drift until a minimum nu
 
 If you use {{site.data.keyword.pm_full}}, you have the option of using the {{site.data.keyword.aios_short}} user interface to configure drift detection.
 
-To start the configuration process, from the **Drift** tab, in the **Drift model** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon. Use the **Analyze and train in {{site.data.keyword.aios_short}}** option.
+To start the configuration process, from the **Drift** tab, in the **Drift model** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon. Use the **Train in {{site.data.keyword.aios_short}}** option.
 
 Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** icon for that section, otherwise, save your work.
 
@@ -91,7 +91,7 @@ To generate the drift detection model, you must use scikit-learn version 0.20.2 
 
 Create a notebook to generate the drift detection model. Use [the sample notebook](https://github.com/IBM-Watson/aios-data-distribution/blob/master/training_statistics_notebook.ipynb){: external} that is available from the {{site.data.keyword.aios_short}} UI. The drift detection model is converted into a .tar.gz file for you.
 
-To start the configuration process, from the **Drift** tab, in the **Drift model** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon. Use the **Analyze and train in a notebook** option. You can drag your compressed drift detection model to the drop zone.
+To start the configuration process, from the **Drift** tab, in the **Drift model** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon. Use the **Train in a data science notebook** option. You can drag your compressed drift detection model to the drop zone.
 
 Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** icon for that section, otherwise, save your work.
 
@@ -100,4 +100,5 @@ Follow the prompts and enter required information. When you finish, a summary of
 ## Next steps
 {: #behavior-drift-config-next-steps}
 
+- Continue with configuration by [configuring the endpoint monitor]().
 - For more information about interpreting drift, see [Drift](/docs/services/ai-openscale?topic=ai-openscale-behavior-drift-ovr)

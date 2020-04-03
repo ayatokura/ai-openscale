@@ -78,29 +78,11 @@ By setting a minimum sample size, you prevent measuring fairness until a minimum
 
 To start the configuration process, from the **Fairness** tab, in the **Favorable outcomes** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon.
 
-Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** icon for that section, otherwise, save your work.
+Follow the prompts and enter required information. When you finish, save your work. 
 
+After you save your settings for the fairness monitor, you can add features to monitor by clicking the **Add feature** button. You can remove features by clicking the **Delete** ![the delete icon is displayed](images/wos-delete-icon.png) icon. You can update the feature groups and thresholds by clicking the **Edit** ![the edit icon is displayed](images/wos-edit-icon.png) icon.
+{: tip}
 
-### Understanding how de-biasing works
-{: #mf-debias}
-
-To check the debias endpoint, click the **Debias Endpoint** button. You can then view and copy the endpoint in different formats, such as cURL, Java, or Python. 
-
-The de-biased scoring endpoint can be used exactly as the normal scoring endpoint of your deployed model. In addition to returning the response of your deployed model, it also returns the `debiased_prediction` and `debiased_probability` columns.
-
-- The `debiased_prediction` column contains the debiased prediction value. In {{site.data.keyword.pm_full}}, this column is an encoded representation of the prediction. For example, if the model prediction is either "Loan Granted" or "Loan Denied", {{site.data.keyword.pm_full}} can encode these two values to "0.0" and "1.0". The `debiased_prediction` column contains such an encoded representation of the debiased prediction. If you specify a string column as prediction column, `debiased_prediction` column can also contain a string value.
-
-- The `debiased_probability` column represents the probability of the debiased prediction. This is an array of double value, where each value represents the probability of the de-biased prediction that belongs to one of the prediction classes.
-
-- The `debiased_decoded_target` column still exists in the response, but it contains the same value as the one in the `debiased_prediction` column. Because there is no mapping set in the **Model details** wizard, you can now directly specify the string column as a prediction column.
-
-- The `debiased_decoded_target` column contains the string representation of the debiased prediction. In the previous example, where the prediction value was either "0.0" or "1.0", the `debiased_decoded_target` contains either "Loan Granted" or "Loan Denied".
-
-Ideally, you would directly call this endpoint from your production application, instead of directly calling the scoring endpoint of your model that is deployed in your machine learning provider ({{site.data.keyword.pm_full}}, Amazon Sagemaker, Microsoft Azure ML Studio, etc.) This way, {{site.data.keyword.aios_short}} also stores the `debiased` values in the payload logging table of your model deployment. Then, all scoring done via this endpoint would be automatically de-biased.
-
-Because this endpoint deals with runtime bias, it continues to run background checks for the scoring data from the payload logging table. It keeps updating the bias mitigation model, which is used to debias the scoring requests sent. In this way, {{site.data.keyword.aios_short}} is always up to date with the incoming data, and with its behavior to detect and mitigate bias.
-
-Finally, {{site.data.keyword.aios_short}} uses a threshold to decide that data is now acceptable and is deemed to be unbiased. That threshold is taken as the least value from the thresholds set in the Fairness monitor for all the fairness attributes configured.
 
 ## Next steps
 {: #mf-next}

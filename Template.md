@@ -17,7 +17,8 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
@@ -26,12 +27,13 @@ subcollection: ai-openscale
 {:faq: data-hd-content-type='faq'}
 
 # TITLE
-{: #hashtagtext}
+{: #type-your-topic-id-here}
 
-Introductory text
+Type your short description here.
 {: shortdesc}
 
-More text.
+A paragraph
 
-- bullets
-- bullets
+- with bullets
+- with more bullets
+

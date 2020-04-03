@@ -32,6 +32,8 @@ Set up and enable monitors for each deployment that you are tracking with {{site
 
 For example, if you are using the **German Credit Risk** sample model for the interactive tutorial, select the model deployment, set the data type for payload logging, and confirm the settings that are presented as part of the model details section.
 
+<p>&nbsp;</p>
+
 ## Selecting a deployment
 {: #mo-select-deploy}
 
@@ -47,7 +49,7 @@ For example, if you are using the **German Credit Risk** sample model for the in
 
 2. To get started, click **Configure monitors**.
 
-
+<p>&nbsp;</p>
 
 ## Provide model details
 {: #mo-work-model-dets}
@@ -106,7 +108,7 @@ Select all the features that were used to train the model before it was deployed
 
 Select model output details and save your work. Specifically, you must select a prediction column and a prediction probability column. {{site.data.keyword.aios_short}} might detect these values for you.
 
-
+<p>&nbsp;</p>
 
 ## Continuing the interactive tutorial
 {: #mo-work-model-dets-int-tut}
@@ -164,6 +166,8 @@ If there is no transaction ID column on the list, please either score your model
 The following sections give some specific information that you encounter depending on the type of model, either [Numeric/categorical data](#mo-nuca) or [Images and Unstructured text](#mo-imun).
 
 
+<p>&nbsp;</p>
+
 ## Numeric/categorical data
 {: #mo-nuca}
 
@@ -204,6 +208,8 @@ For numeric or categorical data, you need to provide information about the train
 - Select the columns used to train the model - these are the features that your model deployment expects in a request. Do not select the label column.
 - You can choose either a string column or a numeric column as the prediction column.
 
+<p>&nbsp;</p>
+
 ## Images and Unstructured text
 {: #mo-imun}
 
@@ -218,10 +224,12 @@ For numeric or categorical data, you need to provide information about the train
 Fairness and drift metrics are not supported for unstructured (image or text) data types.
 {: note}
 
+<p>&nbsp;</p>
+
 ## Review and save configuration
 {: #mo-save}
 
-Review your selection summary and click **Save** to continue.
+Save your work and review your selection summary to continue.
 
   ![Select data table](images/wos-config-summary-monitor.png)
 
