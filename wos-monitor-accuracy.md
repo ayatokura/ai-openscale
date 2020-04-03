@@ -62,4 +62,4 @@ Follow the prompts and enter required information. When you finish, a summary of
 ### Next steps
 {: #acc-next}
 
-To continue configuring monitors, click the **Fairness** tab and click **Begin**. For more information, see [Configuring the fairness monitor](/docs/services/ai-openscale?topic=ai-openscale-mf-monitor).
+To continue configuring monitors, click the **Fairness** tab and click the **Edit** icon. For more information, see [Configuring the fairness monitor](/docs/services/ai-openscale?topic=ai-openscale-mf-monitor).
