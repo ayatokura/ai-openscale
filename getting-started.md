@@ -29,7 +29,7 @@ subcollection: ai-openscale
 {:screen: .screen}
 {:javascript: .ph data-hd-programlang='javascript'}
 {:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
+{:note: .note}
 {:swift: .ph data-hd-programlang='swift'}
 
 # Getting started tutorial

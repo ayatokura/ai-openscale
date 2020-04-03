@@ -19,10 +19,6 @@ subcollection: ai-openscale
 {:codeblock: .codeblock}
 
 {:screen: .screen}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:swift: .ph data-hd-programlang='swift'}
 {:faq: data-hd-content-type='faq'}
 
 # Installing a Python module to set up {{site.data.keyword.aios_short}}

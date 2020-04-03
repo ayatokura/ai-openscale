@@ -19,10 +19,6 @@ subcollection: ai-openscale
 {:codeblock: .codeblock}
 
 {:screen: .screen}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:swift: .ph data-hd-programlang='swift'}
 {:faq: data-hd-content-type='faq'}
 
 # Payload logging for non-{{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.pm_short}} service instances
