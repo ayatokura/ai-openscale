@@ -20,10 +20,10 @@ subcollection: ai-openscale
 {:codeblock: .codeblock}
 
 {:screen: .screen}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:java: .ph data-hd-programlang='java'}
 {:note: .note}
-{:swift: .ph data-hd-programlang='swift'}
+{:note: .note}
+{:note: .note}
+{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # Select deployments to monitor

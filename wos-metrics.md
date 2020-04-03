@@ -17,12 +17,7 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:java: .ph data-hd-programlang='java'}
-{:note: .note}
-{:swift: .ph data-hd-programlang='swift'}
 {:faq: data-hd-content-type='faq'}
 
 # Creating custom monitors and metrics
