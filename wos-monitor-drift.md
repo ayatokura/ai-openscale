@@ -71,10 +71,7 @@ Follow the prompts and enter required information. When you finish, a summary of
 Reconfigure the drift monitor without retraining the drift model to update parameters without more processing. You update the minimum sample size and threshold to produce more data on the currently trained model without incurring more processing costs. It is one way to avoid intensive CPU usage when the underlying data is stable and you want to view drift magnitude with different thresholds. Your drift model requires retraining only when training data or schema changes.
 
 
-To start the configuration process, from the **Drift** tab, in the **Drift model** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon. Use the **Use the existing drift model** option.
-
-Follow the prompts and enter required information. When you finish, a summary of your selections is presented for review. If you want to change anything, click the **Edit** icon for that section, otherwise, save your work.
-
+To start the configuration process, from the **Drift** tab, in the **Drift threshold** box or **Sample size** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon. Update the current setting and save it.
 
 ## Steps to configure drift by using a notebook
 {: #behavior-drift-config-steps-ntbk}
