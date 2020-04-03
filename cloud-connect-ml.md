@@ -52,7 +52,6 @@ You need to have the training data of your model available in Db2 or {{site.data
     client = APIClient(service_credentials)
     ```
     {: codeblock}
-    {: python}
 
   Credentials can be found by following the steps that are shown in the "[Creating credentials](/docs/services/ai-openscale?topic=ai-openscale-cred-create)" topic.
 
@@ -66,8 +65,6 @@ You need to have the training data of your model available in Db2 or {{site.data
     client.data_mart.get_details()
     ```
     {: codeblock}
-    {: python}
-
 
 ## Next steps
 {: #cml-next}

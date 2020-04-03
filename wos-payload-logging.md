@@ -47,7 +47,7 @@ For an example of full working code, see the [AI OpenScale and Custom ML Engine]
 
 The following code sample shows how to log the payload by using the Python SDK:
 
-```
+```python
 records_list = [
    PayloadRecord(request=request_data, 
                  response=response_data,
@@ -58,7 +58,6 @@ records_list = [
 subscription.payload_logging.store(records=records_list)
 ```
 {: codeblock}
-{: python}
 
 ### Previewing the payload logging table
 
@@ -74,7 +73,7 @@ You can preview the content of your payload logging table either by directly con
 
 The following code sample shows how to log the payload by using the REST API:
 
-```
+```python
 PAYLOAD_STORING_HREF_PATTERN ='{}/v1/data_marts/{}/scoring_payloads'
 endpoint = PAYLOAD_STORING_HREF_PATTERN.format(
                                 AIOS_CREDENTIALS['url'], 
@@ -92,7 +91,6 @@ req_response = requests.post(endpoint,
                              headers = headers)
 ```
 {: codeblock}
-{: python}
 
 ## Next steps
 

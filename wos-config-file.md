@@ -40,18 +40,17 @@ For this example, the file `sagemaker_native_multiclass_breast-cancer_all_monito
 
 - Load the file in Python
 
-    ```
+    ```python
     configuration_file_path = 'sagemaker_native_multiclass_breast-cancer_all_monitors_sub_configuration.json'
 
   with open(configuration_file_path, 'r') as fp:
       subscription_configuration = json.load(fp)
     ```
     {: codeblock}
-    {: python}
     
 The file contains configuration data. Refer to the following example. See the notebook for a complete example of the configuration content.
 
-  ```
+  ```python
   {'asset': {'asset_id': '0530ab0cd4f4dd5486b19c08df8b6914',
   'asset_type': 'model',
   'created_at': '2018-10-10T14:31:44.348Z',
@@ -150,7 +149,6 @@ The file contains configuration data. Refer to the following example. See the no
   'timestamp': '2019-02-11T11:41:01.613Z'}}
   ```
   {: codeblock}
-  {: python}
 
 ## Import from the configuration file
 {: #cf-subscribe}
@@ -161,7 +159,6 @@ The file contains configuration data. Refer to the following example. See the no
     subscription = client.data_mart.subscriptions.import_configuration(binding_uid=binding_uid, configuration_data=subscription_configuration)
     ```
     {: codeblock}
-    {: python}
 
   The `binding_uid` parameter is optional if only one ML engine is bound.
   {: note}
@@ -175,7 +172,6 @@ The file contains configuration data. Refer to the following example. See the no
     exported_configuration = client.data_mart.subscriptions.export_configuration(binding_uid=binding_uid, subscription_uid=subscription.uid)
     ```
     {: codeblock}
-    {: python}
 
 ## Results
 {: #cf-results}

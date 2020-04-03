@@ -63,7 +63,7 @@ Before you can start using custom metrics, you must register the custom monitor,
 
 The following code is from the working sample notebook that was previously mentioned:
 
-```
+```python
 from ibm_ai_openscale.supporting_classes import Metric, Tag
 
 metrics = [Metric(name='sensitivity', lower_limit_default=0.8), Metric(name='specificity', lower_limit_default=0.75)]
@@ -72,7 +72,6 @@ tags = [Tag(name='region', description='customer geographical region')]
 my_monitor = client.data_mart.monitors.add(name='model performance', metrics=metrics, tags=tags)
 ```
 {: codeblock}
-{: python}
 
 To check how you're doing, run the `client.data_mart.monitors.list()
 ` command to see if your newly-created monitor and metrics are configured properly.
@@ -80,22 +79,20 @@ To check how you're doing, run the `client.data_mart.monitors.list()
 
 You can also get the monitor ID by running the following command:
 
-```
+```python
 monitor_uid = my_monitor['metadata']['guid']
 
 print(monitor_uid)
 ```
 {: codeblock}
-{: python}
 
 For a more detailed look, run the following command:
 
-```
+```python
 my_monitor = client.data_mart.monitors.get_details(monitor_uid=monitor_uid)
 print('monitor definition details', my_monitor)
 ```
 {: codeblock}
-{: python}
 
 
 ### Step 2: Enable custom monitor.
@@ -108,14 +105,13 @@ Next, you must enable the custom monitor for subscription. This activates the mo
 
 The following code is from the working sample notebook that was previously mentioned:
 
-```
+```python
 from ibm_ai_openscale.supporting_classes import Threshold
 
 thresholds = [Threshold(metric_uid='sensitivity', lower_limit=0.9)]
 subscription.monitoring.enable(monitor_uid=monitor_uid, thresholds=thresholds)
 ```
 {: codeblock}
-{: python}
 
 To check on your configuration details, use the `subscription.monitoring.get_details(monitor_uid=monitor_uid)` command.
 
@@ -129,13 +125,12 @@ You must store, or save, your custom metrics to the region where your {{site.dat
 
 The following code is from the working sample notebook that was previously mentioned:
 
-```
+```python
 metrics = {"specificity": 0.78, "sensitivity": 0.67, "region": "us-south"}
 
 subscription.monitoring.store_metrics(monitor_uid=monitor_uid, metrics=metrics)
 ```
 {: codeblock}
-{: python}
 
 ## Accessing and visualizing custom metrics
 {: #cst_mtrcs_viz}

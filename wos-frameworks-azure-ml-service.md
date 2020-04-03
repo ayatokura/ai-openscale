@@ -203,20 +203,18 @@ bindings_details = client.data_mart.bindings.get_details()
 
 You can see your service binding with the following command:
 
-```
+```python
 client.data_mart.bindings.list()
 ```
 {: codeblock}
-{: python}
 
 The sample output:
 
-```
+```python
 uid	                                   name	                      service_type	                   created
 410e730f-8462-45fe-8b41-a029d6d6043a	My Azure ML Service engine azure_machine_learning_service2019-06-10T22:10:29.398Z
 ```
 {: codeblock}
-{: python}
     
     
 ### Add Microsoft Azure ML Service subscription
@@ -224,7 +222,7 @@ uid	                                   name	                      service_type	 
 
 Add subscription
 
-```
+```python
 client.data_mart.subscriptions.add(
    AzureMachineLearningAsset(source_uid=source_uid,
                                 binding_uid=binding_uid,
@@ -234,37 +232,33 @@ client.data_mart.subscriptions.add(
                                 prediction_column='Scored Labels'))
 ```
 {: codeblock}
-{: python}
 
 Get subscription list
 
-```
+```python
 subscriptions = client.data_mart.subscriptions.get_details()
 
 subscriptions_uids = client.data_mart.subscriptions.get_uids()
 print(subscriptions_uids)
 ```
 {: codeblock}
-{: python}
 
 ### Enable payload logging
 {: #cml-azsrvenlog}
 
 Enable payload logging in subscription
 
-```
+```python
 subscription.payload_logging.enable()
 ```
 {: codeblock}
-{: python}
 
 Get logging details
 
-```
+```python
 subscription.payload_logging.get_details()
 ```
 {: codeblock}
-{: python}
 
 ### Scoring and payload logging
 {: #cml-azsrvscore}
@@ -273,7 +267,7 @@ Score your model. For a full example, see the [Working with Azure Machine Learni
 
 Store the request and response in the payload logging table:
 
-```
+```python
 records_list = [PayloadRecord(request=request_data, response=response_data, response_time=response_time),
                      PayloadRecord(request=request_data, response=response_data, response_time=response_time)]
 
@@ -283,7 +277,6 @@ for i in range(1, 10):
 subscription.payload_logging.store(records=records_list)
 ```
 {: codeblock}
-{: python}
    
 For languages other than Python, you can also perform payload logging directly, using a REST API.
    
@@ -306,7 +299,7 @@ token = req.json()['access_token']
 {: json}
 
 
-```
+```python
 import requests, uuid
    
 PAYLOAD_STORING_HREF_PATTERN = '{}/v1/data_marts/{}/scoring_payloads'
@@ -326,8 +319,6 @@ req_response = requests.post(endpoint, json=payload, headers = headers)
 print("Request OK: " + str(req_response.ok))
 ```
 {: codeblock}
-{: python}
-
 
 
 ## Next steps

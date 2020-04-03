@@ -49,11 +49,10 @@ To automate the provisioning and configuration of the required {{site.data.keywo
 
 3. Install the `ibm-ai-openscale-cli` package by running the following command:
 
-    ```
+    ```python
     pip install -U ibm-ai-openscale-cli
     ```
     {: codeblock}
-    {: python}
 
     If more than one version of pip is installed on your system, you might need to run `pip3` instead of `pip`, as in, `pip3 install -U ibm-ai-openscale-cli`.
     {: tip}
@@ -67,11 +66,10 @@ To automate the provisioning and configuration of the required {{site.data.keywo
 
 Run the following command:
 
-```
+```python
 ibm-ai-openscale-cli -a <Your API key>
 ```
 {: codeblock}
-{: python}
 
 ## Viewing results in the {{site.data.keyword.aios_short}} model monitor
 {: #as-open}
