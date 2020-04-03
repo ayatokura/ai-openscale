@@ -46,3 +46,8 @@ Ideally, you would directly call this endpoint from your production application,
 Because this endpoint deals with runtime bias, it continues to run background checks for the scoring data from the payload logging table. It keeps updating the bias mitigation model, which is used to debias the scoring requests sent. In this way, {{site.data.keyword.aios_short}} is always up to date with the incoming data, and with its behavior to detect and mitigate bias.
 
 Finally, {{site.data.keyword.aios_short}} uses a threshold to decide that data is now acceptable and is deemed to be unbiased. That threshold is taken as the least value from the thresholds set in the Fairness monitor for all the fairness attributes configured.
+
+## Next steps
+{: #wos-debias-next-steps}
+
+For more information, see [Debiasing options](/docs/ai-openscale?topic=ai-openscale-it-dbo)

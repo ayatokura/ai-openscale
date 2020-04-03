@@ -41,5 +41,5 @@ From the **Endpoints** tab, click **Endpoints**, and then in the **Endpoint** dr
 ## Next steps
 {: #mf-endpoints-nxt-steps}
 
-- For more information about payload or feedback logging, see []().
-- For more information about debiased transactions, see []().
+- For more information about payload or feedback logging, see [Payload and feedback logging in {{site.data.keyword.aios_short}}](/docs/ai-openscale?topic=ai-openscale-cdb-payload).
+- For more information about debiased transactions, see [Understanding how de-biasing works](/docs/ai-openscale?topic=ai-openscale-mf-debias).

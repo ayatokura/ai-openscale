@@ -34,6 +34,7 @@ Watson OpenScale
         wos-scoring.md
         wos-payload-logging.md
         wos-payload-auto.md
+        wos-debias-ovr.md
         wos-config-file.md
         wos-feedback.md
         wos-training-data-schema.md
