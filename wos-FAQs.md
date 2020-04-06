@@ -46,7 +46,7 @@ Here you'll find some of the most frequently-asked questions from users of {{sit
 - [What internet browser does {{site.data.keyword.aios_short}} support?](#in-brw)
 - [Is there a command line tool that I can use?](#in-mop)
 - [What version of Python can I use with {{site.data.keyword.aios_short}}?](#in-pyc)
-
+- [What does it mean if my fairness score is greater than 100 percent?](#fairness-score-over100)
 <p>&nbsp;</p>
 
 
@@ -182,4 +182,10 @@ Yes! It's commonly referred to as the ModelOps CLI tool, but its official name i
 Because {{site.data.keyword.aios_short}} is designed to be independent of your model-creation process, it supports whatever Python versions your machine learning provider supports. The [{{site.data.keyword.aios_short}} Python client](http://ai-openscale-python-client.mybluemix.net/){: external} is a Python library that allows you to work directly with the {{site.data.keyword.aios_short}} service on {{site.data.keyword.cloud_notm}}. For the most up-to-date version information, see [the Requirements section](http://ai-openscale-python-client.mybluemix.net/#requirements){: external}. You can use the Python client, instead of the {{site.data.keyword.aios_short}} client UI, to directly configure a logging database, bind your machine learning engine, and select and monitor deployments. For examples using the Python client in this way, see the [{{site.data.keyword.aios_short}} sample notebooks](https://github.com/pmservice/ai-openscale-tutorials/tree/master/notebooks){: external}.
 
 <p>&nbsp;</p>
+
+## What does it mean if my fairness score is greater than 100 percent?
+{: #fairness-score-over100}
+
+Depending on your fairness configuration, your fairness score can exceed 100 percent. It means that your monitored group is getting relatively more “fair” outcomes as compared to the reference group. Technically, it means that the model is unfair in the opposite direction.
+
 

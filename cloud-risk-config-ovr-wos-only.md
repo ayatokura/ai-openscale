@@ -27,7 +27,7 @@ subcollection: ai-openscale
 # Configure {{site.data.keyword.aios_short}} for model risk management ![beta tag](images/beta.png)
 {: #mrm-risk-config-ovr-wos-only}
 
-IBM offers a model risk management solution for financial services with IBM Watson OpenScal5. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and performs model validations.
+IBM offers a model risk management solution for financial services with IBM Watson OpenScale. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and performs model validations.
 {: shortdesc}
 
 ## Setup options
@@ -145,7 +145,7 @@ Now you need to associate your pre-prod instance of Watson Machine Learning to y
 
 #### Step 3: Add the sample beta notebook to the project
 
-As part of the open beta, you are given access to a Watson Studio notebook. Use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in Watson OpenScal5. 
+As part of the open beta, you are given access to a Watson Studio notebook. Use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in {{site.data.keyword.aios_short}}. 
 
 1. From the project page, click the Add to project button.
 2. Click the Notebook tile.
@@ -179,7 +179,7 @@ The newly created notebook is opened in Watson Studio in the integrated notebook
 3. To restart the notebook and clear the output, from the Kernel menu, click Restart & Clear Output.
 4. Run the notebook each cell at a time by using the Run option. Ensure that a cell completes before running the next cell. Be sure to read directions for steps that must be taken during the intervening cells. For example, at one point, you are directed to move your model into production before continuing running the notebook.
 
-Congratulations! You have used a notebook to create a pre-prod model. You can check inside Watson Studio, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to {{site.data.keyword.aios_full}} to add the model ther5.  
+Congratulations! You have used a notebook to create a pre-prod model. You can check inside Watson Studio, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to {{site.data.keyword.aios_full}} to add the model there.  
 
 ### Work in {{site.data.keyword.aios_full}}
 {: #mrm-risk-config-ovr-wos-only-woswork}
@@ -188,7 +188,7 @@ You’ll use {{site.data.keyword.aios_full}} to validate and monitor your models
 
 #### Step 1: Activate model risk management features
 
-As part of the closed beta cohort, you can activate the model risk management beta features on IBM Watson OpenScal5. The following sections detail how to activate the beta features on IBM Cloud:
+As part of the closed beta cohort, you can activate the model risk management beta features on {{site.data.keyword.aios_short}}. The following sections detail how to activate the beta features on IBM Cloud:
 
 To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud instance and you must have provisioned an {{site.data.keyword.aios_full}} instance.
 

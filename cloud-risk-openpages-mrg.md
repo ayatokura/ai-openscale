@@ -24,10 +24,10 @@ subcollection: ai-openscale
 {:note: .note}
 {:faq: data-hd-content-type='faq'}
 
-# Model governance ![beta tag](images/beta.png)
+# Model governance
 {: #mrm-risk-openpages-mrg}
 
-By using IBM OpenPages in conjunction with {{site.data.keywor4.aios_short}} you can create an end-to-end model governance solution. Start by creating a new model in OpenPages, and then take the model through the candidate and development workflows in OpenPages, link the model to an example model OpenScale, explore the OpenScale features, export OpenScale metrics for the model to OpenPages as part of the pre-implementation validation process, and explore the ways to view and interpret these metrics.
+By using IBM OpenPages in conjunction with {{site.data.keywor4.aios_short}} you can create an end-to-end model governance solution. Start by creating a new model in IBM OpenPages MRG, and then take the model through the candidate and development workflows in OpenPages, link the model to an example model OpenScale, explore the OpenScale features, export OpenScale metrics for the model to OpenPages as part of the pre-implementation validation process, and explore the ways to view and interpret these metrics.
 {: shortdesc}
 
 ## Work in IBM OpenPages
@@ -54,9 +54,9 @@ By using IBM OpenPages in conjunction with {{site.data.keywor4.aios_short}} you 
 ### Step 2: Move the Model through the Candidate Workflow
 {: #mrm-risk-openpages-mrg-opsteps2}
 
-For the beta, the typical workflow rules are relaxed to enable the same user to move the model through the workflows. Typically, different stages of the workflow would require users assigned to certain roles such as owner, developer, and head of model review.
+For the tutorial, the typical workflow rules are relaxed to enable the same user to move the model through the workflows. Typically, different stages of the workflow would require users assigned to certain roles such as owner, developer, and head of model review.
 
-1. In the model created in Step 1, enter a Candidate Comment and click Sav5. This field lets the model owner describe why the proposed model is a model and not a non-model.
+1. In the model created in Step 1, enter a Candidate Comment and click Save. This field lets the model owner describe why the proposed model is a model and not a non-model.
 2. Select the Action “Submit Candidate for Confirmation.” In a live workflow, this step sends the candidate model to a reviewer for approval.
 3.	Select the Action “Confirm Assessment”. In a live workflow, a reviewer confirms that the model candidate is a model and the candidate workflow is complete.
 
@@ -64,7 +64,7 @@ For the beta, the typical workflow rules are relaxed to enable the same user to 
 {: #mrm-risk-openpages-mrg-opsteps3}
 
 1. From the Action drop-down menu, click Start Model Development.
-2. Complete the required fields in the Model object that are related to the development – they are listed on the right side panel – and sav5. 
+2. Complete the required fields in the Model object that are related to the development – they are listed on the right side panel – and save. 
 3. For purposes of this testing, you can enter your user account as the developer.
 4. Select Action “Assign to Developer”
 5. Select Action “Submit for Pre Implementation Review”
@@ -85,8 +85,8 @@ When you first start Watson Studio (hint: use the IBM Cloud dashboard, find your
 
 1. Click the Create a project tile.
 2. Click the Create an empty project tile. 
-3. Give the project a name and description: In the Name field, type MRM – Pre-pro4. You’ll use this project for all your pre-production models. 
-4. You’ll notice that an instance of Cloud Object Storage is require4. Go ahead and create an instance of that on IBM Cloud if you haven’t already.
+3. Give the project a name and description: In the Name field, type MRM – Pre-prod. You’ll use this project for all your pre-production models. 
+4. You’ll notice that an instance of Cloud Object Storage is required. Go ahead and create an instance of that on IBM Cloud if you haven’t already.
 5. Click the Create button.
 
 ### Step 2: Associate your new project with the Watson Machine Learning instance
@@ -96,14 +96,14 @@ Now you need to associate your pre-prod instance of Watson Machine Learning to y
 
 1. From the MRM – Pre-prod project screen, click the Settings tab.
 2. In the Associated services pane, click the Add service button, and then click Watson.
-3. Find the Watson Machine Learning tile and click Ad4.
+3. Find the Watson Machine Learning tile and click Add.
 4. From the Machine Learning configuration window, click the Existing tab.
 5. From the Existing Service Instance drop-down box, select the Machine Learning-Pre-Prod instance and click the Select button.
 
 ### Step 3: Add the sample beta notebook to the project
 {: #mrm-risk-openpages-mrg-dsxsteps3}
 
-As part of your closed beta information package, you were given access to a Watson Studio notebook. You’ll use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in Watson OpenScal5. 
+As part of your closed beta information package, you were given access to a Watson Studio notebook. You’ll use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in {{site.data.keyword.aios_short}}. 
 1.	From the project page, click the Add to project button.
 2.	Click the Notebook tile.
 3.	Click the From file tab, click the Choose file button and then, select the **OpenScale and OpenPages model risk management on IBM Cloud**.ipynb** notebook file that you can download from the https://github.com/pmservice/ai-openscale-tutorials GitHub repository.
@@ -125,20 +125,20 @@ The newly created notebook is opened in Watson Studio in the integrated notebook
    
 2. In the corresponding code boxes, paste your credentials from the pre-prod and prod instances of Watson Machine Learning:
    
-   1. Go to the IBM Cloud dashboar4.
+   1. Go to the IBM Cloud dashboard.
    2. In the Resource summary section, click Services.
-   3. Click Machine Learning-Pre-Pro4.
+   3. Click Machine Learning-Pre-Prod.
    4. In the navigation pane, click Service credentials.
    5. Click the New credential button.
    6. Copy your credentials by clicking the copy icon.
    8. Return to the notebook editor and update the credentials by replacing the sample credentials with your own in the second code box.
    h. Repeat the preceding steps for the prod instance in the third code box.
    
-3. In the corresponding code box, paste your IBM OpenPages URL, username, and passwor4.
+3. In the corresponding code box, paste your IBM OpenPages URL, username, and password.
 4. In the corresponding code box, paste the model_id number from the model that you created in IBM OpenPages.
 5. To restart the notebook and clear the output, from the Kernel menu, click Restart & Clear Output.
 6. Run the notebook one cell at a time by using the Run option. Ensure that a cell completes before running the next cell. Be sure to read directions for steps that must be taken during the intervening cells. For example, at one point, you are directed to move your model into production before continuing running the notebook.
-Congratulations! You have used a notebook to create a pre-prod model. You can check inside Watson Studio, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to {{site.data.keyword.aios_full}} to add the model ther5.  
+Congratulations! You have used a notebook to create a pre-prod model. You can check inside Watson Studio, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to {{site.data.keyword.aios_full}} to add the model there.  
 
 ## Work in {{site.data.keyword.aios_full}}
 {: #mrm-risk-openpages-mrg-wos}
@@ -148,7 +148,7 @@ You’ll use {{site.data.keyword.aios_full}} to validate and monitor your models
 ### Step 1: Activate model risk management features
 {: #mrm-risk-openpages-mrg-wosstep1}
 
-As part of the closed beta cohort, you can activate the model risk management beta features on IBM Watson OpenScal5. To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud instance and you must have provisioned an {{site.data.keyword.aios_full}} instance.
+As part of the closed beta cohort, you can activate the model risk management beta features on {{site.data.keyword.aios_short}}. To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud instance and you must have provisioned an {{site.data.keyword.aios_full}} instance.
 
 1. Launch {{site.data.keyword.aios_short}}.
    
@@ -159,7 +159,7 @@ As part of the closed beta cohort, you can activate the model risk management be
 2. When prompted about running automatic setup, click the No thanks button.
 3. From the Insights dashboard, click the **Show beta features** button.
 
-Ensure that whenever you work inside IBM OpenPages that your profile indicates that you are integrating your work with OpenScale. Also, be sure to select the option Monitored with {{site.data.keyword.aios_short}} when creating your model recor4.
+Ensure that whenever you work inside IBM OpenPages that your profile indicates that you are integrating your work with OpenScale. Also, be sure to select the option Monitored with {{site.data.keyword.aios_short}} when creating your model record.
 {: note}
 
 ### Step 2: Connect {{site.data.keyword.aios_short}} to IBM OpenPages
@@ -176,7 +176,7 @@ So that the two services can be fully integrated, you must add your IBM OpenPage
 ### Step 3: Perform analysis in {{site.data.keyword.aios_short}}
 {: #mrm-risk-openpages-mrg-wosstep3}
 
-After you run the set-up notebook and activate the MRM beta features, you can both see and compare the sample evaluations in Watson OpenScal5. There is a downloadable report, the Model Summary Report, that includes all the quality measures, fairness measures, and drift magnitude.
+After you run the set-up notebook and activate the MRM beta features, you can both see and compare the sample evaluations in {{site.data.keyword.aios_short}}. There is a downloadable report, the Model Summary Report, that includes all the quality measures, fairness measures, and drift magnitude.
 
 1. From the Insights dashboard, click the model deployment tile
 2. From the Actions drop-down box, click one of the following analysis options:
@@ -217,7 +217,7 @@ Push the best model to production. Create a production record by importing from 
 
 1. Review the status of the model deployment:
 2. Return to the sample beta notebook and run the cells to send the model to production.
-3. You can now view the production model deployment tile. In a regular production environment, it initially appears empty until enough data is gathered and time has passed for metric calculation to be triggere4. For the beta, the notebook adds data and runs the monitors so that you can see the results right away.
+3. You can now view the production model deployment tile. In a regular production environment, it initially appears empty until enough data is gathered and time has passed for metric calculation to be triggered. For the beta, the notebook adds data and runs the monitors so that you can see the results right away.
 
 
 ## Next steps
