@@ -65,6 +65,7 @@ If the Fairness threshold is set to 80%, then the algorithm flags the model as b
 
 You must enter the values that are sent to the model scoring endpoint (and consequently are added to the payload table). If the data is manipulated before it is sent to the scoring endpoint, then enter the manipulated values. For example, if the original data had values of `Male` and `Female` for *Gender* and it was changed to `M` and `F`, then enter `M` and `F` on this screen.
 
+Depending on your fairness configuration, your fairness score can exceed 100 percent. It means that your monitored group is getting relatively more fair outcomes as compared to the reference group. Technically, it means that the model is unfair in the opposite direction.
 
 ### Minimum sample size
 {: #mf-monitor-reqs-min}
