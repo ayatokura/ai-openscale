@@ -25,7 +25,7 @@ subcollection: ai-openscale
 {:note: .note}
 {:faq: data-hd-content-type='faq'}
 
-# Getting application insights with {{site.data.keyword.aios_short}} ![beta tag](images/beta.png)
+# Getting application insights with {{site.data.keyword.aios_short}}
 {: #io-app-ov}
 
 You can track all the business processes and applications that you are monitoring through the **Applications monitor** tab of the {{site.data.keyword.aios_full}} dashboard.

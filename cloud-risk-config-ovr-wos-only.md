@@ -24,7 +24,7 @@ subcollection: ai-openscale
 {:note: .note}
 {:faq: data-hd-content-type='faq'}
 
-# Configure {{site.data.keyword.aios_short}} for model risk management ![beta tag](images/beta.png)
+# Configure {{site.data.keyword.aios_short}} for model risk management
 {: #mrm-risk-config-ovr-wos-only}
 
 IBM offers a model risk management solution for financial services with IBM Watson OpenScale. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and performs model validations.
@@ -50,7 +50,7 @@ You can use one of the following options to set up your initial environment:
 ## Automated setup
 {: #mrm-risk-config-ovr-wos-only-auto}
 
-The auto setup option can be run when you launch the {{site.data.keyword.aios_short}} service for the very first tim5. After you choose auto setup, you must activate the model risk management features by clicking the **Show beta features** ![Show beta features button](/images/wos-show-beta.png) button. The following section details how to run auto setup and activate the beta features on the IBM Cloud environment:
+The auto setup option can be run when you launch the {{site.data.keyword.aios_short}} service for the very first tim5. 
 
 ### Prerequisites
 {: #mrm-risk-config-ovr-wos-only-auto-prereqs}
@@ -67,9 +67,8 @@ To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud
    3. Click the **Launch Application** button.
 
 2. When prompted about running automatic setup, click the **Auto setup** button.
-3. From the **Insights** dashboard, click the **Show beta features** button.
 
-## Set up your beta environment by using a Python notebook
+## Set up your environment by using a Python notebook
 {: #mrm-risk-config-ovr-wos-only-notebook}
 
 Many of the functions of the auto setup option, can be replicated by running a Python notebook in Watson Studio. Although the results are the same, by choosing to run a notebook, you can gain experience that can more readily be applied to your own data, models, and pre-prod or prod systems.
@@ -143,16 +142,16 @@ Now you need to associate your pre-prod instance of Watson Machine Learning to y
 4. From the Machine Learning configuration window, click the Existing tab.
 5. From the Existing Service Instance drop-down box, select the Machine Learning-Pre-Prod instance and click the Select button.
 
-#### Step 3: Add the sample beta notebook to the project
+#### Step 3: Add the sample notebook to the project
 
-As part of the open beta, you are given access to a Watson Studio notebook. Use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in {{site.data.keyword.aios_short}}. 
+As part of this tutorial, you are given access to a Watson Studio notebook. Use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in {{site.data.keyword.aios_short}}. 
 
 1. From the project page, click the Add to project button.
 2. Click the Notebook tile.
 3. Click the From file tab, click the Choose file button and then, select the **OpenScale model risk management on IBM Cloud.ipynb** notebook file that you can download from the https://github.com/pmservice/ai-openscale-tutorials GitHub repository.
 4. Add a name and description and click the Create notebook button.
 
-#### Step 4: Run the sample beta notebook
+#### Step 4: Run the sample notebook
 
 The newly created notebook is opened in Watson Studio in the integrated notebook editor. You need to update some of the credentials and then run the notebook to create your pre-prod model.
 
@@ -188,7 +187,7 @@ You’ll use {{site.data.keyword.aios_full}} to validate and monitor your models
 
 #### Step 1: Activate model risk management features
 
-As part of the closed beta cohort, you can activate the model risk management beta features on {{site.data.keyword.aios_short}}. The following sections detail how to activate the beta features on IBM Cloud:
+As part of this tutorial, you can automatically set up the model risk management features on {{site.data.keyword.aios_short}}. The following sections detail how to activate the features on IBM Cloud:
 
 To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud instance and you must have provisioned an {{site.data.keyword.aios_full}} instance.
 
@@ -199,7 +198,7 @@ To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud
    3. Click the Launch Application button.
 
 2. When prompted about running automatic setup, click the No thanks button.
-3. From the **Insights** ![The insights dashboard icon](/images/wos_insight-dash-tab.png) dashboard, click the **Show beta features** ![Show beta features button](/images/wos-show-beta.png) button.
+
 
 ## Manual setup
 {: #mrm-risk-config-ovr-wos-only-manual}

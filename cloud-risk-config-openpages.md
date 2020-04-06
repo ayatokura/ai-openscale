@@ -24,7 +24,7 @@ subcollection: ai-openscale
 {:note: .note}
 {:faq: data-hd-content-type='faq'}
 
-# Configure model governance with IBM OpenPages MRG ![beta tag](images/beta.png)
+# Configure model governance with IBM OpenPages MRG
 {: #mrm-risk-config-openpages}
 
 IBM offers an end-to-end model risk management solution for financial services with {{site.data.keyword.aios_full}} and IBM OpenPages with Watson. IBM OpenPages MRG offers model risk governance that enables you to store and manage a comprehensive model inventory. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and performs model validations. What is IBM OpenPages Model Risk Governance (MRG)? For more information, see the [IBM OpenPages with Watson product page](https://www.ibm.com/us-en/marketplace/governance-risk-and-compliance){: external} and the [IBM OpenPages online help](https://www.ibm.com/support/knowledgecenter/SSFUEU_8.0.0/op_grc_user/c_oppm_mrg_intr_module_description.html){: external}.
@@ -50,7 +50,7 @@ You can use one of the following options to set up your initial environment:
 ## Automated setup
 {: #mrm-risk-config-openpages-auto}
 
-The auto setup option can be run when you launch the {{site.data.keyword.aios_short}} service for the very first time. After you choose auto setup, you must activate the model risk management features by clicking the **Show beta features** ![Show beta features button](/images/wos-show-beta.png) button. The following section details how to run auto setup and activate the beta features on the IBM Cloud environment:
+The auto setup option can be run when you launch the {{site.data.keyword.aios_short}} service for the very first time.
 
 ### Prerequisites
 {: #mrm-risk-config-openpages-auto-prereqs}
@@ -67,7 +67,7 @@ To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud
    3. Click the **Launch Application** button.
 
 2. When prompted about running automatic setup, click the **Auto setup** button.
-3. From the **Insights** ![The insights dashboard icon](/images/wos_insight-dash-tab.png) dashboard, click the **Show beta features** ![Show beta features button](/images/wos-show-beta.png) button.
+
 
 
 ## Set up your environment by using a Python noteobok

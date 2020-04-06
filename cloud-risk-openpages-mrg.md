@@ -100,16 +100,17 @@ Now you need to associate your pre-prod instance of Watson Machine Learning to y
 4. From the Machine Learning configuration window, click the Existing tab.
 5. From the Existing Service Instance drop-down box, select the Machine Learning-Pre-Prod instance and click the Select button.
 
-### Step 3: Add the sample beta notebook to the project
+### Step 3: Add the sample notebook to the project
 {: #mrm-risk-openpages-mrg-dsxsteps3}
 
-As part of your closed beta information package, you were given access to a Watson Studio notebook. You’ll use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in {{site.data.keyword.aios_short}}. 
+As part of this tutorial, you have access to a Watson Studio notebook. You’ll use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in {{site.data.keyword.aios_short}}. 
+
 1.	From the project page, click the Add to project button.
 2.	Click the Notebook tile.
 3.	Click the From file tab, click the Choose file button and then, select the **OpenScale and OpenPages model risk management on IBM Cloud**.ipynb** notebook file that you can download from the https://github.com/pmservice/ai-openscale-tutorials GitHub repository.
 4.	Add a name and description and click the Create notebook button.
 
-### Step 4: Run the sample beta notebook
+### Step 4: Run the sample notebook
 {: #mrm-risk-openpages-mrg-dsxsteps4}
 
 The newly created notebook is opened in Watson Studio in the integrated notebook editor. You need to update some of the credentials and then run the notebook to create your pre-prod model.
@@ -148,7 +149,7 @@ You’ll use {{site.data.keyword.aios_full}} to validate and monitor your models
 ### Step 1: Activate model risk management features
 {: #mrm-risk-openpages-mrg-wosstep1}
 
-As part of the closed beta cohort, you can activate the model risk management beta features on {{site.data.keyword.aios_short}}. To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud instance and you must have provisioned an {{site.data.keyword.aios_full}} instance.
+As part of this tutorial, you can use the model risk management features on {{site.data.keyword.aios_short}}. To work with {{site.data.keyword.aios_full}}, you must already have an IBM Cloud instance and you must have provisioned an {{site.data.keyword.aios_full}} instance.
 
 1. Launch {{site.data.keyword.aios_short}}.
    
@@ -157,7 +158,6 @@ As part of the closed beta cohort, you can activate the model risk management be
    3. Click the Launch Application button.
 
 2. When prompted about running automatic setup, click the No thanks button.
-3. From the Insights dashboard, click the **Show beta features** button.
 
 Ensure that whenever you work inside IBM OpenPages that your profile indicates that you are integrating your work with OpenScale. Also, be sure to select the option Monitored with {{site.data.keyword.aios_short}} when creating your model record.
 {: note}
@@ -176,7 +176,7 @@ So that the two services can be fully integrated, you must add your IBM OpenPage
 ### Step 3: Perform analysis in {{site.data.keyword.aios_short}}
 {: #mrm-risk-openpages-mrg-wosstep3}
 
-After you run the set-up notebook and activate the MRM beta features, you can both see and compare the sample evaluations in {{site.data.keyword.aios_short}}. There is a downloadable report, the Model Summary Report, that includes all the quality measures, fairness measures, and drift magnitude.
+After you run the set-up notebook, you can both see and compare the sample evaluations in {{site.data.keyword.aios_short}}. There is a downloadable report, the Model Summary Report, that includes all the quality measures, fairness measures, and drift magnitude.
 
 1. From the Insights dashboard, click the model deployment tile
 2. From the Actions drop-down box, click one of the following analysis options:
@@ -203,7 +203,8 @@ After you send metrics to IBM OpenPages, you are able to review the metrics in O
 ### Change the model status in IBM OpenPages
 {: #mrm-risk-openpages-mrg-ops-review2}
 
-As part of the overall model risk governance workflow, the models you create are typically worked on by several different personas or job roles. For example, there might be a data scientist who is the model owner, a model validator, and model reviewer. For the purposes of the beta, you will act in all of these roles to see how the model can progress from one status to the next.
+As part of the overall model risk governance workflow, the models you create are typically worked on by several different personas or job roles. For example, there might be a data scientist who is the model owner, a model validator, and model reviewer. For the purposes of the tutorial, you will act in all of these roles to see how the model can progress from one status to the next.
+
 To do this, you must open the model and use the Actions drop-down   box to set the model status. Use the ID, such as OpenPagesAdministrator that was given to you to be the model owner, validator, and final approver. For the next part of the tutorial, you’ll want the status to be Approved for Deployment.
 
 1. In IBM OpenPages, locate the model you want to promote.
@@ -216,8 +217,8 @@ If for some reason, you don’t see the Approved option, you might need to move 
 Push the best model to production. Create a production record by importing from a pre-production model. After the model is approved for deployment in IBM OpenPages, you can send the model to production in {{site.data.keyword.aios_short}}.
 
 1. Review the status of the model deployment:
-2. Return to the sample beta notebook and run the cells to send the model to production.
-3. You can now view the production model deployment tile. In a regular production environment, it initially appears empty until enough data is gathered and time has passed for metric calculation to be triggered. For the beta, the notebook adds data and runs the monitors so that you can see the results right away.
+2. Return to the sample notebook and run the cells to send the model to production.
+3. You can now view the production model deployment tile. In a regular production environment, it initially appears empty until enough data is gathered and time has passed for metric calculation to be triggered. For the tutorial, the notebook adds data and runs the monitors so that you can see the results right away.
 
 
 ## Next steps

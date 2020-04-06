@@ -24,7 +24,7 @@ subcollection: ai-openscale
 {:note: .note}
 {:faq: data-hd-content-type='faq'}
 
-# Manage model risk ![beta tag](images/beta.png)
+# Manage model risk
 {: #mrm-risk-wos-only}
 
 IBM offers a model risk management solution for financial services with {{site.data.keyword.aios_full}}. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and performs model validations.
@@ -46,8 +46,8 @@ After you set up and activate the model risk management features, you can both s
 Push the best model to production. Create a production record by importing from a pre-production model. After the model is approved for deployment in IBM OpenPages, you can send the model to production in {{site.data.keyword.aios_short}}. 
 
 1. Review the status of the model deployment:
-2. Return to the sample beta notebook and run the cells to send the model to production.
-3. You can now view the production model deployment tile. In a regular production environment, it initially appears empty until enough data is gathered and time has passed for metric calculation to be triggered. For the beta, the notebook adds data and runs the monitors so that you can see the results right away.
+2. Return to the sample notebook and run the cells to send the model to production.
+3. You can now view the production model deployment tile. In a regular production environment, it initially appears empty until enough data is gathered and time has passed for metric calculation to be triggered. For the tutorial, the notebook adds data and runs the monitors so that you can see the results right away.
 
 ## Next steps
 {: #mrm-risk-wos-only-next}
