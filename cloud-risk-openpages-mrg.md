@@ -115,7 +115,7 @@ As part of this tutorial, you have access to a Watson Studio notebook. You’ll 
 
 The newly created notebook is opened in Watson Studio in the integrated notebook editor. You need to update some of the credentials and then run the notebook to create your pre-prod model.
 
-1. In the corresponding code box, paste your IBM Cloud API:
+1. In the corresponding code box, paste your IBM Cloud API key:
    
    1. From the IBM Cloud toolbar, click your Account name, such as <Your user name>’s Account.
    2. From the Manage menu, click Access (IAM).
