@@ -30,12 +30,12 @@ Bring your own key (BYOK) or bring your own encryption (BYOE) refers to the infr
 ## How your data is stored and encrypted in {{site.data.keyword.aios_short}}
 {: #data-storage}
 
-{{site.data.keyword.keymanagementservicefull}} helps secure your sensitive data from unauthorized access or inadvertent employee release while meeting compliance auditing standards. It provides mandatory control of user access requests to encryption keys and manages the entire lifecycle of keys from creation through application use, key archival, and key destruction. Offered as a Platform as a Service on the {{site.data.keyword. Bluemix_notm}}™, Key Protect provisions and stores cryptographic keys using FIPS 140-2 Level 3 certified (Federal Information Processing Standard) hardware security module (HSM) devices located within secure IBM data centers.
+{{site.data.keyword.keymanagementservicefull}} helps secure your sensitive data from unauthorized access or inadvertent employee release while meeting compliance auditing standards. It provides mandatory control of user access requests to encryption keys and manages the entire lifecycle of keys from creation through application use, key archival, and key destruction. Offered as a Platform as a Service on the {{site.data.keyword.Bluemix_notm}}™, Key Protect provisions and stores cryptographic keys using FIPS 140-2 Level 3 certified (Federal Information Processing Standard) hardware security module (HSM) devices located within secure IBM data centers.
 
 ## Protecting your sensitive data in {{site.data.keyword.aios_short}}
 {: #data-encryption}
 
-You can add a higher level of encryption protection and control to your data at rest (when it is stored) and data in motion (when it is transported) by enabling integration with IBM® Key Protect for {{site.data.keyword. Bluemix_notm}}™.
+You can add a higher level of encryption protection and control to your data at rest (when it is stored) and data in motion (when it is transported) by enabling integration with IBM® Key Protect for {{site.data.keyword.Bluemix_notm}}™.
 
 The data that you store in {{site.data.keyword.cloud_notm}} is encrypted at rest by using a randomly generated key. If you need to control the encryption keys, you can integrate Key Protect. This process is commonly referred to as Bring your own keys (BYOK). With Key Protect you can create, import, and manage encryption keys. You can assign access policies to the keys, assign users or service IDs to the keys, or give the key access only to a specific service. The first 20 keys are free.
 
@@ -50,7 +50,7 @@ The data that you store in {{site.data.keyword.cloud_notm}} is encrypted at rest
 ### Enabling customer-managed keys for {{site.data.keyword.aios_short}}
 {: #using-byok}
 
-Integrating Key Protect with Watson Premium services involves the following steps in the {{site.data.keyword. Bluemix_notm}} console.
+Integrating Key Protect with Watson Premium services involves the following steps in the {{site.data.keyword.Bluemix_notm}} console.
 
 1. Create an instance of Key Protect.
 2. Add a root key to the Key Protect instance.
@@ -106,17 +106,17 @@ For more details, see the following topics:
 
 - [Getting started tutorial](/docs/key-protect?topic=key-protect-getting-started-tutorial).
   
-  {{site.data.keyword.keymanagementservicefull}} helps you provision encrypted keys for apps across {{site.data.keyword. Bluemix_notm}} services. This tutorial shows you how to create and add existing cryptographic keys by using the Key Protect dashboard, so you can manage data encryption from one central location.
+  {{site.data.keyword.keymanagementservicefull}} helps you provision encrypted keys for apps across {{site.data.keyword.Bluemix_notm}} services. This tutorial shows you how to create and add existing cryptographic keys by using the Key Protect dashboard, so you can manage data encryption from one central location.
   
 - [Integrating services](/docs/key-protect?topic=key-protect-integrate-services).
   
-  {{site.data.keyword.keymanagementservicefull}} integrates with a number of {{site.data.keyword. Bluemix_notm}} services to enable encryption with customer-managed keys for those services. Encryption with customer-managed encryption keys is sometimes called Bring Your Own Key (BYOK).
+  {{site.data.keyword.keymanagementservicefull}} integrates with a number of {{site.data.keyword.Bluemix_notm}} services to enable encryption with customer-managed keys for those services. Encryption with customer-managed encryption keys is sometimes called Bring Your Own Key (BYOK).
   
-- [Integrating with {{site.data.keyword. cos_full_notm}}](/docs/key-protect?topic=key-protect-integrate-cos).
+- [Integrating with {{site.data.keyword.cos_full_notm}}](/docs/key-protect?topic=key-protect-integrate-cos).
   
   {{site.data.keyword.keymanagementservicefull}} and IBM® Cloud Object Storage work together to help you own the security of your at-rest data. Learn how to add advanced encryption to your IBM® Cloud Object Storage resources by using the IBM Key Protect service.
   
 - [Provisioning the service](/docs/key-protect?topic=key-protect-provision).
   
-  You can create an instance of {{site.data.keyword.keymanagementservicefull}} by using the {{site.data.keyword. Bluemix_notm}} console or the {{site.data.keyword. Bluemix_notm}} CLI.
+  You can create an instance of {{site.data.keyword.keymanagementservicefull}} by using the {{site.data.keyword.Bluemix_notm}} console or the {{site.data.keyword.Bluemix_notm}} CLI.
   

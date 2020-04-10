@@ -69,64 +69,64 @@ For the tutorial, the typical workflow rules are relaxed to enable the same user
 4. Select Action “Assign to Developer”
 5. Select Action “Submit for Pre Implementation Review”
 
-## Work in {{site.data.keyword. DSX}}
+## Work in {{site.data.keyword.DSX}}
 {: #mrm-risk-openpages-mrg-dsx}
 
-In IBM {{site.data.keyword. DSX}}, you will create a project and run a notebook to perform most of the set-up tasks, including the following steps:
+In IBM {{site.data.keyword.DSX}}, you will create a project and run a notebook to perform most of the set-up tasks, including the following steps:
 
 •	create 2 machine models
 •	connect {{site.data.keyword.aios_short}} to IBM OpenPages
 •	create model deployments and configure monitors in {{site.data.keyword.aios_short}}
 
-### Step 1: Create the pre-prod project in {{site.data.keyword. DSX}}
+### Step 1: Create the pre-prod project in {{site.data.keyword.DSX}}
 {: #mrm-risk-openpages-mrg-dsxsteps1}
 
-When you first start {{site.data.keyword. DSX}} (hint: use the {{site.data.keyword. Bluemix_notm}} dashboard, find your instance of {{site.data.keyword. DSX}} and click the Get Started button) you have the option of taking a tour. Your first task is to create a project to which you associate the {{site.data.keyword. pm_full}} instance that you created for your pre-production work.
+When you first start {{site.data.keyword.DSX}} (hint: use the {{site.data.keyword.Bluemix_notm}} dashboard, find your instance of {{site.data.keyword.DSX}} and click the Get Started button) you have the option of taking a tour. Your first task is to create a project to which you associate the {{site.data.keyword.pm_full}} instance that you created for your pre-production work.
 
 1. Click the Create a project tile.
 2. Click the Create an empty project tile. 
 3. Give the project a name and description: In the Name field, type MRM – Pre-prod. You’ll use this project for all your pre-production models. 
-4. You’ll notice that an instance of Cloud Object Storage is required. Go ahead and create an instance of that on {{site.data.keyword. Bluemix_notm}} if you haven’t already.
+4. You’ll notice that an instance of Cloud Object Storage is required. Go ahead and create an instance of that on {{site.data.keyword.Bluemix_notm}} if you haven’t already.
 5. Click the Create button.
 
-### Step 2: Associate your new project with the {{site.data.keyword. pm_full}} instance
+### Step 2: Associate your new project with the {{site.data.keyword.pm_full}} instance
 {: #mrm-risk-openpages-mrg-dsxsteps2}
 
-Now you need to associate your pre-prod instance of {{site.data.keyword. pm_full}} to your project. You’ll do this by adding it as an associated service.
+Now you need to associate your pre-prod instance of {{site.data.keyword.pm_full}} to your project. You’ll do this by adding it as an associated service.
 
 1. From the MRM – Pre-prod project screen, click the Settings tab.
 2. In the Associated services pane, click the Add service button, and then click Watson.
-3. Find the {{site.data.keyword. pm_full}} option and click Add.
+3. Find the {{site.data.keyword.pm_full}} option and click Add.
 4. From the Machine Learning configuration window, click the Existing tab.
 5. From the Existing Service Instance drop-down box, select the Machine Learning-Pre-Prod instance and click the Select button.
 
 ### Step 3: Add the sample notebook to the project
 {: #mrm-risk-openpages-mrg-dsxsteps3}
 
-As part of this tutorial, you have access to a {{site.data.keyword. DSX}} notebook. You’ll use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in {{site.data.keyword.aios_short}}. 
+As part of this tutorial, you have access to a {{site.data.keyword.DSX}} notebook. You’ll use it to set up your connection between {{site.data.keyword.aios_short}} and IBM OpenPages, to create and deploy pre-prod models, and configure the model deployments in {{site.data.keyword.aios_short}}. 
 
 1.	From the project page, click the Add to project button.
 2.	Click the Notebook tile.
-3.	Click the From file tab, click the Choose file button and then, select the **OpenScale and OpenPages model risk management on {{site.data.keyword. Bluemix_notm}}**.ipynb** notebook file that you can download from the https://github.com/pmservice/ai-openscale-tutorials GitHub repository.
+3.	Click the From file tab, click the Choose file button and then, select the **OpenScale and OpenPages model risk management on {{site.data.keyword.Bluemix_notm}}**.ipynb** notebook file that you can download from the https://github.com/pmservice/ai-openscale-tutorials GitHub repository.
 4.	Add a name and description and click the Create notebook button.
 
 ### Step 4: Run the sample notebook
 {: #mrm-risk-openpages-mrg-dsxsteps4}
 
-The newly created notebook is opened in {{site.data.keyword. DSX}} in the integrated notebook editor. You need to update some of the credentials and then run the notebook to create your pre-prod model.
+The newly created notebook is opened in {{site.data.keyword.DSX}} in the integrated notebook editor. You need to update some of the credentials and then run the notebook to create your pre-prod model.
 
-1. In the corresponding code box, paste your {{site.data.keyword. Bluemix_notm}} API key:
+1. In the corresponding code box, paste your {{site.data.keyword.Bluemix_notm}} API key:
    
-   1. From the {{site.data.keyword. Bluemix_notm}} toolbar, click your Account name, such as <Your user name>’s Account.
+   1. From the {{site.data.keyword.Bluemix_notm}} toolbar, click your Account name, such as <Your user name>’s Account.
    2. From the Manage menu, click Access (IAM).
-   3. In the navigation bar, click {{site.data.keyword. Bluemix_notm}} API keys.
-   4. Click the Create an {{site.data.keyword. Bluemix_notm}} API key button.
+   3. In the navigation bar, click {{site.data.keyword.Bluemix_notm}} API keys.
+   4. Click the Create an {{site.data.keyword.Bluemix_notm}} API key button.
    5. Type a name and description and then click Save.
    6. Copy the newly created API key and paste it into your notebook in the CLOUD_API_KEY code box, which is the first code box.
    
-2. In the corresponding code boxes, paste your credentials from the pre-prod and prod instances of {{site.data.keyword. pm_full}}:
+2. In the corresponding code boxes, paste your credentials from the pre-prod and prod instances of {{site.data.keyword.pm_full}}:
    
-   1. Go to the {{site.data.keyword. Bluemix_notm}} dashboard.
+   1. Go to the {{site.data.keyword.Bluemix_notm}} dashboard.
    2. In the Resource summary section, click Services.
    3. Click Machine Learning-Pre-Prod.
    4. In the navigation pane, click Service credentials.
@@ -139,7 +139,7 @@ The newly created notebook is opened in {{site.data.keyword. DSX}} in the integr
 4. In the corresponding code box, paste the model_id number from the model that you created in IBM OpenPages.
 5. To restart the notebook and clear the output, from the Kernel menu, click Restart & Clear Output.
 6. Run the notebook one cell at a time by using the Run option. Ensure that a cell completes before running the next cell. Be sure to read directions for steps that must be taken during the intervening cells. For example, at one point, you are directed to move your model into production before continuing running the notebook.
-Congratulations! You have used a notebook to create a pre-prod model. You can check inside {{site.data.keyword. DSX}}, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to {{site.data.keyword.aios_full}} to add the model there.  
+Congratulations! You have used a notebook to create a pre-prod model. You can check inside {{site.data.keyword.DSX}}, where you will now see the model listed as one of the assets. You have also already deployed this model, which means that you can go to {{site.data.keyword.aios_full}} to add the model there.  
 
 ## Work in {{site.data.keyword.aios_full}}
 {: #mrm-risk-openpages-mrg-wos}
@@ -149,11 +149,11 @@ You’ll use {{site.data.keyword.aios_full}} to validate and monitor your models
 ### Step 1: Activate model risk management features
 {: #mrm-risk-openpages-mrg-wosstep1}
 
-As part of this tutorial, you can use the model risk management features on {{site.data.keyword.aios_short}}. To work with {{site.data.keyword.aios_full}}, you must already have an {{site.data.keyword. Bluemix_notm}} instance and you must have provisioned an {{site.data.keyword.aios_full}} instance.
+As part of this tutorial, you can use the model risk management features on {{site.data.keyword.aios_short}}. To work with {{site.data.keyword.aios_full}}, you must already have an {{site.data.keyword.Bluemix_notm}} instance and you must have provisioned an {{site.data.keyword.aios_full}} instance.
 
 1. Launch {{site.data.keyword.aios_short}}.
    
-   1. From the {{site.data.keyword. Bluemix_notm}} Dashboard, click Services.
+   1. From the {{site.data.keyword.Bluemix_notm}} Dashboard, click Services.
    2. Click {{site.data.keyword.aios_short}}
    3. Click the Launch Application button.
 
