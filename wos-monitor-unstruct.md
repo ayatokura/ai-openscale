@@ -37,7 +37,7 @@ subcollection: ai-openscale
       - `pandas`
       - `pyspark` (if not using {{site.data.keyword.DSX}})
 
-1. Create and deploy your image-based model.
+1. Create and deploy your text-based model.
    2. Load training data into a pandas frame.
    2. Train the model on the data.
    3. Publish the model.
@@ -50,3 +50,8 @@ subcollection: ai-openscale
 
 Fairness and drift metrics are not supported for unstructured (image or text) data types.
 {: note}
+
+## Next steps
+{: #ie-unstruct-text-next}
+
+[Explaining unstructured text models](/docs/services/ai-openscale?topic=ai-openscale-ie-unstruct)

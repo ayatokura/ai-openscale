@@ -33,26 +33,7 @@ subcollection: ai-openscale
 
 If you are using a Keras model that takes the input as byte array, you must create a deployable function in {{site.data.keyword.pm_full}} that accepts the entire text as a single feature in input (as opposed to text which is vectorised and represented as a tensor or split across multiple features). Creating a deployable function is part of the functionality that {{site.data.keyword.pm_full}} support. For more information, see [Passing payload data to model deployments](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-deploy-functions.html?linkInPage=true#models){: external}
 
-## Working with unstructured text models
-{: #ie-unstruct-steps}
-
-1. Set up your environment.
-   2. Install the {{site.data.keyword.aios_short}} and {{site.data.keyword.pm_full}} packages.
-   3. Configure your credentials.
-   4. Install the libraries that are needed for creating the models and doing analysis. These include the following libraries:
-      - `pandas`
-      - `pyspark` (if not using {{site.data.keyword.DSX}})
-
-1. Create and deploy your image-based model.
-   2. Load training data into a pandas frame.
-   2. Train the model on the data.
-   3. Publish the model.
-   4. Deploy and score the model.
-
-7. Configure {{site.data.keyword.aios_short}} by assigning the `APIClient`, sbuscribing the asset and scoring the model.
-8. Configure explainability.
-   9. Enable the explainability.
-   10. Get explanations for the transactions.
+For information about setting up your unstructured text models, see [Working with unstructured text models](/docs/services/ai-openscale?topic=ai-openscale-ie-unstruct-steps).
 
 ## Explaining unstructured text transactions
 {: #ie-unstruct-xplan}
