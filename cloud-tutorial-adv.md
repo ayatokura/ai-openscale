@@ -56,7 +56,7 @@ The credit risk model that is provided in this tutorial uses a training data set
 ## Prerequisites
 {: #crt-prereqs}
 
-This tutorial uses a Jupyter Notebook that must be run in a Watson Studio project, that uses a "Python 3.5 with Spark" runtime environment. It requires service credentials for the following {{site.data.keyword.cloud_notm}} services:
+This tutorial uses a Jupyter Notebook that must be run in a {{site.data.keyword. DSX}} project, that uses a "Python 3.5 with Spark" runtime environment. It requires service credentials for the following {{site.data.keyword.cloud_notm}} services:
 
 - Cloud Object Storage (to store your {{site.data.keyword.DSX}} project)
 - {{site.data.keyword.aios_short}}
@@ -69,7 +69,7 @@ The Jupyter Notebook does the following tasks:
 - Configures {{site.data.keyword.aios_short}} to monitor that deployment
 - Provides seven days' worth of historical records and measurements for viewing in the {{site.data.keyword.aios_short}} Insights dashboard. 
 
-You can also configure the model for continuous learning with Watson Studio and Spark.
+You can also configure the model for continuous learning with {{site.data.keyword. DSX}} and Spark.
 
 ## Introduction
 {: #crt-intro}
@@ -77,7 +77,7 @@ You can also configure the model for continuous learning with Watson Studio and 
 In this tutorial, you perform the following tasks:
 
 - [Provision {{site.data.keyword.cloud_notm}} machine learning and storage services](/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-services).
-- [Set up a Watson Studio project, and run a Python Notebook to create, train, and deploy a machine learning model](/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-set-wstudio).
+- [Set up a {{site.data.keyword. DSX}} project, and run a Python Notebook to create, train, and deploy a machine learning model](/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-set-wstudio).
 - [Provision {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-wos-adv).
 - [Run a Python Notebook to create a data mart, configure performance, accuracy, and fairness monitors, and create data to monitor](/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-edit-notebook).
 - [View results in the {{site.data.keyword.aios_short}} Insights tab](/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-view-results).
@@ -92,7 +92,7 @@ Log in to your [{{site.data.keyword.cloud_notm}} account](https://{DomainName}){
 
 - [Create a {{site.data.keyword.DSX}} instance](https://{DomainName}/catalog/services/watson-studio){: external} if you do not already have one associated with your account:
 
-  ![Watson Studio tile is displayed](images/wos-watson_studio.png)
+  ![{{site.data.keyword. DSX}} tile is displayed](images/wos-watson_studio.png)
 
 - Give your service a name, choose the Lite (free) plan, and click the **Create** button.
 
@@ -149,11 +149,11 @@ If you have a paid {{site.data.keyword.cloud_notm}} account, you can provision a
 
 1. In {{site.data.keyword.DSX}}, begin by creating a new project. Click the **Create a project** tile.
 
-  ![Watson Studio create project](images/cloud-studio_create_proj.png)
+  ![{{site.data.keyword. DSX}} create project](images/cloud-studio_create_proj.png)
 
 1. Click the **Create an empty project** tile.
 
-  ![Watson Studio Create an empty project tile is displayed](images/cloud-studio_create_standard.png)
+  ![{{site.data.keyword. DSX}} Create an empty project tile is displayed](images/cloud-studio_create_standard.png)
 
 1. Give your project a name and description, make sure that the {{site.data.keyword.cos_full_notm}} service that you created is selected in the **Storage** dropdown, and click **Create**.
 
@@ -192,7 +192,7 @@ If you have a paid {{site.data.keyword.cloud_notm}} account, you can provision a
 The `Working with Watson Machine Learning` notebook contains detailed instructions for each step in the Python code you run. As you work through the notebook, take some time to understand what each command is doing.
 {: tip}
 
-- From the **Assets** tab in your Watson Studio project, click the **Edit** icon next to the `Working with Watson Machine Learning` notebook to edit it.
+- From the **Assets** tab in your {{site.data.keyword. DSX}} project, click the **Edit** icon next to the `Working with Watson Machine Learning` notebook to edit it.
 
 - In the "Provision services and configure credentials" section, make the following changes:
 

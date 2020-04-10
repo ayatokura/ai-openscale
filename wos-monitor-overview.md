@@ -115,14 +115,14 @@ Select model output details and save your work. Specifically, you must select a 
 
 If you use the Lite plan option, the Db2 configuration information is provided within the sample model metadata. Optionally, if you want to use your own Db2 or Cloud Object Storage, you can continue with the following section, which shows how to set up the Cloud Object Storage instance that you created previously. 
 
-You must enter the location of the training data. Training data must be stored in a Db2 database or Cloud Object Storage. Enter your connection information, then click **Test** to verify the connection. You do this by entering the location, hostname or IP address, the database name, and the authentication information from IBM Cloud.
+You must enter the location of the training data. Training data must be stored in a Db2 database or Cloud Object Storage. Enter your connection information, then click **Test** to verify the connection. You do this by entering the location, hostname or IP address, the database name, and the authentication information from {{site.data.keyword. Bluemix_notm}}.
 
 ### Location of training data (tutorial example)
 {: #mo-work-model-dets-int-tut-train}
 
 For the interactive tutorial, use the Cloud Object Storage instance that you created and load the following [training data german_credit_data_biased_training.csv file](https://raw.githubusercontent.com/pmservice/ai-openscale-tutorials/master/assets/historical_data/german_credit_risk/wml/german_credit_data_biased_training.csv) into a bucket that you create. 
 
-You'll need the following information, which you can obtain by clicking the Cloud Object Storage instance from the IBM Cloud dashboard:
+You'll need the following information, which you can obtain by clicking the Cloud Object Storage instance from the {{site.data.keyword. Bluemix_notm}} dashboard:
 
 - **Login URL**: This is the Service Endpoint. From the Navigation pane click **Endpoint**. Copy the `us-geo` public service endpoint and paste it into the Login URL box. Be sure to include the HTTPS:// at the beginning of your URL.  
 

@@ -35,7 +35,7 @@ Specify a database for your {{site.data.keyword.aios_short}} instance to use.
 
     ![Select your database screen displays with two options to use the free lite plan or use an existing database](images/cloud-gs-set-lite-db2.png)
 
-    If you have a paid {{site.data.keyword.cloud_notm}} account, you can provision a `Databases for PostgreSQL` or `Db2 Warehouse` service to take full advantage of integration with Watson Studio and continuous learning services. If you choose not to provision a paid service, you can use the free internal PostgreSQL storage with {{site.data.keyword.aios_short}}, but you are not able to configure continuous learning for your model.
+    If you have a paid {{site.data.keyword.cloud_notm}} account, you can provision a `Databases for PostgreSQL` or `Db2 Warehouse` service to take full advantage of integration with {{site.data.keyword. DSX}} and continuous learning services. If you choose not to provision a paid service, you can use the free internal PostgreSQL storage with {{site.data.keyword.aios_short}}, but you are not able to configure continuous learning for your model.
     {: note}
 
 ### Free Lite plan database

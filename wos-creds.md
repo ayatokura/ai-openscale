@@ -36,11 +36,11 @@ For enterprise accounts, an administrator can create the data mart, invite users
 ## Creating the platform API key
 {: #cred-create-apikey}
 
-To create an IBM Cloud API key, complete the following steps:
+To create an {{site.data.keyword. Bluemix_notm}} API key, complete the following steps:
 
 - Log into [{{site.data.keyword.cloud_notm}}](https://{DomainName}){: external}.
 - Select **Manage** --> **Access (IAM)** --> **{{site.data.keyword.cloud_notm}} API Keys**
-- Click the **Create an IBM Cloud API key** button.
+- Click the **Create an {{site.data.keyword. Bluemix_notm}} API key** button.
 - Give your key a name and description and click **Create**.
 
 ## Finding service IDs:
@@ -129,7 +129,7 @@ To create credentials for {{site.data.keyword.aios_short}}, complete the followi
 
 Specify your machine learning provider:
 
-- [Specifying an IBM Watson Machine Learning service instance](/docs/services/ai-openscale?topic=ai-openscale-wml-connect)
+- [Specifying an {{site.data.keyword. pm_full}} service instance](/docs/services/ai-openscale?topic=ai-openscale-wml-connect)
 - [Specifying a Microsoft Azure ML Studio instance](/docs/services/ai-openscale?topic=ai-openscale-connect-azure)
 - [Specifying a Microsoft Azure ML Service instance](/docs/services/ai-openscale?topic=ai-openscale-connect-azureservice)
 - [Specifying an Amazon SageMaker ML service instance](/docs/services/ai-openscale?topic=ai-openscale-csm-connect)

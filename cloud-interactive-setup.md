@@ -24,11 +24,11 @@ subcollection: ai-openscale
 # The interactive setup tutorial
 {: #gs-obj}
 
-In this tutorial, you learn how to provision the required {{site.data.keyword.Bluemix_notm}} services, set up a project and deploy a sample model in Watson Studio, and configure monitors in {{site.data.keyword.aios_short}}.
+In this tutorial, you learn how to provision the required {{site.data.keyword.Bluemix_notm}} services, set up a project and deploy a sample model in {{site.data.keyword. DSX}}, and configure monitors in {{site.data.keyword.aios_short}}.
 {: shortdesc}
 
 1. [Provision {{site.data.keyword.Bluemix_notm}} machine learning and storage services](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-prps).
-2. [Set up a Watson Studio project, and create, train, and deploy a machine learning model](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-setup).
+2. [Set up a {{site.data.keyword. DSX}} project, and create, train, and deploy a machine learning model](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-setup).
 3. [Configure and explore trust, transparency, and explainability for your model](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
 
 ## Provision prerequisite {{site.data.keyword.Bluemix_notm}} services
@@ -43,7 +43,7 @@ In addition to {{site.data.keyword.aios_short}}, to complete this tutorial, you 
 
     - [{{site.data.keyword.DSX}}](https://{DomainName}/catalog/services/watson-studio){: external}
 
-      ![Watson Studio](images/wos-watson_studio.png)
+      ![{{site.data.keyword. DSX}}](images/wos-watson_studio.png)
 
     - [{{site.data.keyword.pm_full}}](https://{DomainName}/catalog/services/machine-learning){: external}
 
@@ -54,16 +54,16 @@ In addition to {{site.data.keyword.aios_short}}, to complete this tutorial, you 
       ![Object Storage](images/cloud-object_storage.png)
 
 
-## Set up a Watson Studio project
+## Set up a {{site.data.keyword. DSX}} project
 {: #gs-setup}
 
-1.  Log in to your [Watson Studio account](https://dataplatform.ibm.com/){: external} and begin by creating a new project. Click **Create a project**.
+1.  Log in to your [{{site.data.keyword. DSX}} account](https://dataplatform.ibm.com/){: external} and begin by creating a new project. Click **Create a project**.
 
-    ![Watson Studio create project](images/cloud-studio_create_proj.png)
+    ![{{site.data.keyword. DSX}} create project](images/cloud-studio_create_proj.png)
 
 1. Click the **Create an empty project** tile.
 
-  ![Watson Studio Create an empty project tile is displayed](images/cloud-studio_create_standard.png)
+  ![{{site.data.keyword. DSX}} Create an empty project tile is displayed](images/cloud-studio_create_standard.png)
 
 1. Give your project a name and description, make sure that the {{site.data.keyword.cos_full_notm}} service that you created is selected in the **Storage** dropdown, and click **Create**.
 
@@ -132,7 +132,7 @@ Next, you need to choose a database. You have two options: the free database, or
 {: #gs-ctmod}
 
 
-1.  Click the **Watson Machine Learning** tile, and then click **Save**.
+1.  Click the **Watson Machine Learning** option, and then click **Save**.
 
 1.  For this tutorial, select your {{site.data.keyword.pm_full}} instance from the menu and click **Next**.
 
@@ -147,11 +147,11 @@ You are now able to select the deployed models that you want to monitor by using
 ### Provide a set of sample data to your model
 {: #gs-samp}
 
-Before you configure your monitors, you can generate a scoring request against your model to test payload logging that the monitors can consume. In this section, you will provide sample data to Watson Studio in the form of a JSON file to generate a scoring request. You'll repeat this again, later in the tutorial, to provide the actual data to the {{site.data.keyword.aios_short}} monitors.
+Before you configure your monitors, you can generate a scoring request against your model to test payload logging that the monitors can consume. In this section, you will provide sample data to {{site.data.keyword. DSX}} in the form of a JSON file to generate a scoring request. You'll repeat this again, later in the tutorial, to provide the actual data to the {{site.data.keyword.aios_short}} monitors.
 
 1.  Download the [credit_payload_data.json](https://raw.githubusercontent.com/watson-developer-cloud/doc-tutorial-downloads/master/ai-openscale/credit_payload_data.json){: external} file.
 
-1.  From the **Deployments** tab of your Watson Studio project, click the **credit-risk-deploy** link, click the **Test** tab, and select the JSON input icon.
+1.  From the **Deployments** tab of your {{site.data.keyword. DSX}} project, click the **credit-risk-deploy** link, click the **Test** tab, and select the JSON input icon.
 
     ![JSON test](images/wos-json_test02.png)
 

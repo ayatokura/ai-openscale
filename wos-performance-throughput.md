@@ -40,7 +40,7 @@ Throughput measures the average scoring requests per minute in a specific timefr
 - **Chart values**: Average value in the timeframe
 - **Metrics details available**: None
 
-Throughput is not supported for the Watson Machine Learning models with automatic payload logging.
+Throughput is not supported for the {{site.data.keyword. pm_full}} models with automatic payload logging.
 {: note}
 
 ## Interpreting the display
