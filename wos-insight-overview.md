@@ -51,28 +51,28 @@ Each tile provides a summary of monitoring activity for that deployment. Note th
 
 Select any of the individual deployment tiles to view more details about that deployment. Monitoring data for individual deployments displays in a series of charts. The charts track metrics, such as fairness, average requests per minute, and accuracy over days, weeks, or months.
 
-- [Viewing data for a deployment](/docs/services/ai-openscale?topic=ai-openscale-it-vdep)
-- [Visualizing data for a specific hour](/docs/services/ai-openscale?topic=ai-openscale-it-vdet)
-- [Fairness](/docs/services/ai-openscale?topic=ai-openscale-anlz_metrics_fairness)
-- [Quality](/docs/services/ai-openscale?topic=ai-openscale-anlz_metrics)
-- [Drift](/docs/services/ai-openscale?topic=ai-openscale-behavior-drift-ovr)
-- [Performance](/docs/services/ai-openscale?topic=ai-openscale-anlz_metrics_performance)
-- [Analytics](/docs/services/ai-openscale?topic=ai-openscale-anlz_metrics_payload)
-- [De-biasing options](/docs/services/ai-openscale?topic=ai-openscale-it-dbo)
+- [Viewing data for a deployment](/docs/ai-openscale?topic=ai-openscale-it-vdep)
+- [Visualizing data for a specific hour](/docs/ai-openscale?topic=ai-openscale-it-vdet)
+- [Fairness](/docs/ai-openscale?topic=ai-openscale-anlz_metrics_fairness)
+- [Quality](/docs/ai-openscale?topic=ai-openscale-anlz_metrics)
+- [Drift](/docs/ai-openscale?topic=ai-openscale-behavior-drift-ovr)
+- [Performance](/docs/ai-openscale?topic=ai-openscale-anlz_metrics_performance)
+- [Analytics](/docs/ai-openscale?topic=ai-openscale-anlz_metrics_payload)
+- [De-biasing options](/docs/ai-openscale?topic=ai-openscale-it-dbo)
 
 ## Explainability
 {: #io-tran}
 
 Use the **Explain a transaction** ![Explain a transaction tab](images/wos-insight-transact-tab.png) tab to search a specific transaction ID to explain a particular transaction record.
 
-- [Explaining transactions](/docs/services/ai-openscale?topic=ai-openscale-ie-ov)
-- [Explaining categorical models](/docs/services/ai-openscale?topic=ai-openscale-ie-class)
-- [Explaining image models](/docs/services/ai-openscale?topic=ai-openscale-ie-image)
-- [Explaining unstructured text models](/docs/services/ai-openscale?topic=ai-openscale-ie-unstruct)
-- [Contrastive explanations](/docs/services/ai-openscale?topic=ai-openscale-ie-pp-pn)
+- [Explaining transactions](/docs/ai-openscale?topic=ai-openscale-ie-ov)
+- [Explaining categorical models](/docs/ai-openscale?topic=ai-openscale-ie-class)
+- [Explaining image models](/docs/ai-openscale?topic=ai-openscale-ie-image)
+- [Explaining unstructured text models](/docs/ai-openscale?topic=ai-openscale-ie-unstruct)
+- [Contrastive explanations](/docs/ai-openscale?topic=ai-openscale-ie-pp-pn)
 
 ## Next steps
 {: #io-next}
 
-- [Add more deployments to monitor](/docs/services/ai-openscale?topic=ai-openscale-dpl-select).
+- [Add more deployments to monitor](/docs/ai-openscale?topic=ai-openscale-dpl-select).
 

@@ -108,7 +108,7 @@ To see KPI transactions right away, you must click **Evaluate now**.
 ## Next steps
 {: #kpi-next}
 
-- [Configure event details](/docs/services/ai-openscale?topic=ai-openscale-event-dets-monitor)
-- Get insights into how your KPIs correlate to model drift. See [Getting application insights](/docs/services/ai-openscale?topic=ai-openscale-io-app-ov).
-- [View correlation charts](/docs/services/ai-openscale?topic=ai-openscale-app-perform-vdet).
-- [View KPI performance](/docs/services/ai-openscale?topic=ai-openscale-it-appkpi-vdet).
+- [Configure event details](/docs/ai-openscale?topic=ai-openscale-event-dets-monitor)
+- Get insights into how your KPIs correlate to model drift. See [Getting application insights](/docs/ai-openscale?topic=ai-openscale-io-app-ov).
+- [View correlation charts](/docs/ai-openscale?topic=ai-openscale-app-perform-vdet).
+- [View KPI performance](/docs/ai-openscale?topic=ai-openscale-it-appkpi-vdet).

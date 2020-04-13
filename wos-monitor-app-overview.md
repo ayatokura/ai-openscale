@@ -100,8 +100,8 @@ For the following tutorial scenario, we provide a .csv file with a week's worth 
 ## Next steps
 {: #app-next}
 
-- [Configure KPI metrics](/docs/services/ai-openscale?topic=ai-openscale-kpi-monitor)
-- [Configure event details](/docs/services/ai-openscale?topic=ai-openscale-event-dets-monitor)
-- Get insights into how your KPIs correlate to model drift. See [Getting application insights](/docs/services/ai-openscale?topic=ai-openscale-io-app-ov).
-- [View correlation charts](/docs/services/ai-openscale?topic=ai-openscale-app-perform-vdet).
-- [View KPI performance](/docs/services/ai-openscale?topic=ai-openscale-it-appkpi-vdet).
+- [Configure KPI metrics](/docs/ai-openscale?topic=ai-openscale-kpi-monitor)
+- [Configure event details](/docs/ai-openscale?topic=ai-openscale-event-dets-monitor)
+- Get insights into how your KPIs correlate to model drift. See [Getting application insights](/docs/ai-openscale?topic=ai-openscale-io-app-ov).
+- [View correlation charts](/docs/ai-openscale?topic=ai-openscale-app-perform-vdet).
+- [View KPI performance](/docs/ai-openscale?topic=ai-openscale-it-appkpi-vdet).

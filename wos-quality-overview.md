@@ -59,38 +59,38 @@ The following quality metrics are supported by {{site.data.keyword.aios_short}}:
 
 For binary models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level. For binary classification models, it will check the **Area under ROC** score which measures the model's ability to distinguish two classes. The higher the Area under ROC score, the better the model is at identifying class A as class A and class B as class B.
 
-- [Area under ROC](/docs/services/ai-openscale?topic=ai-openscale-quality_roc)
-- [True positive rate (TPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_tpr)
-- [Precision](/docs/services/ai-openscale?topic=ai-openscale-quality_precision)
-- [F1-Measure](/docs/services/ai-openscale?topic=ai-openscale-quality_f1-measr)
-- [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-quality_log_loss)
-- [False positive rate (FPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_fpr_false)
-- [Area under PR](/docs/services/ai-openscale?topic=ai-openscale-quality-area-pr)
-- [Recall](/docs/services/ai-openscale?topic=ai-openscale-quality_recall)
+- [Area under ROC](/docs/ai-openscale?topic=ai-openscale-quality_roc)
+- [True positive rate (TPR)](/docs/ai-openscale?topic=ai-openscale-quality_tpr)
+- [Precision](/docs/ai-openscale?topic=ai-openscale-quality_precision)
+- [F1-Measure](/docs/ai-openscale?topic=ai-openscale-quality_f1-measr)
+- [Logarithmic loss](/docs/ai-openscale?topic=ai-openscale-quality_log_loss)
+- [False positive rate (FPR)](/docs/ai-openscale?topic=ai-openscale-quality_fpr_false)
+- [Area under PR](/docs/ai-openscale?topic=ai-openscale-quality-area-pr)
+- [Recall](/docs/ai-openscale?topic=ai-openscale-quality_recall)
 
 ### Regression classification problems
 {: #anlz_metrics_supqualdets-regression}
 
 For regression models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level and checks the **R squared** score. R squared measures correlation between predicted values and actual values. The higher the R squared score, the better the model fits to the actual values.
 
-- [R squared](/docs/services/ai-openscale?topic=ai-openscale-quality_r_squared)
-- [Proportion explained variance](/docs/services/ai-openscale?topic=ai-openscale-quality_var)
-- [Root of mean squared error](/docs/services/ai-openscale?topic=ai-openscale-supqualdets_squ_errors_mean)
-- [Mean absolute error](/docs/services/ai-openscale?topic=ai-openscale-quality_abserror)
-- [Mean squared error](/docs/services/ai-openscale?topic=ai-openscale-quality_squerror)
+- [R squared](/docs/ai-openscale?topic=ai-openscale-quality_r_squared)
+- [Proportion explained variance](/docs/ai-openscale?topic=ai-openscale-quality_var)
+- [Root of mean squared error](/docs/ai-openscale?topic=ai-openscale-supqualdets_squ_errors_mean)
+- [Mean absolute error](/docs/ai-openscale?topic=ai-openscale-quality_abserror)
+- [Mean squared error](/docs/ai-openscale?topic=ai-openscale-quality_squerror)
 
 ### Mutliclass classification problems
 {: #anlz_metrics_supqualdets-multiclass}
 
 For multi-classification models, {{site.data.keyword.aios_short}} tracks when the quality of the model falls below an acceptable level and checks the **Accuracy** score which is the percentage of predictions the model got right.
 
-- [Accuracy](/docs/services/ai-openscale?topic=ai-openscale-accuracy-opener)
-- [Weighted True Positive Rate (wTPR)](/docs/services/ai-openscale?topic=ai-openscale-quality-wtpr)
-- [Weighted False Positive Rate (wFPR)](/docs/services/ai-openscale?topic=ai-openscale-quality_wfpr_weighted)
-- [Weighted recall](/docs/services/ai-openscale?topic=ai-openscale-quality_weighted_recall)
-- [Weighted precision](/docs/services/ai-openscale?topic=ai-openscale-quality_wgth_prec)
-- [Weighted F1-Measure](/docs/services/ai-openscale?topic=ai-openscale-quality_wght_f1-measure)
-- [Logarithmic loss](/docs/services/ai-openscale?topic=ai-openscale-quality_log_loss)
+- [Accuracy](/docs/ai-openscale?topic=ai-openscale-accuracy-opener)
+- [Weighted True Positive Rate (wTPR)](/docs/ai-openscale?topic=ai-openscale-quality-wtpr)
+- [Weighted False Positive Rate (wFPR)](/docs/ai-openscale?topic=ai-openscale-quality_wfpr_weighted)
+- [Weighted recall](/docs/ai-openscale?topic=ai-openscale-quality_weighted_recall)
+- [Weighted precision](/docs/ai-openscale?topic=ai-openscale-quality_wgth_prec)
+- [Weighted F1-Measure](/docs/ai-openscale?topic=ai-openscale-quality_wght_f1-measure)
+- [Logarithmic loss](/docs/ai-openscale?topic=ai-openscale-quality_log_loss)
 
 
 ## Supported quality details
@@ -103,7 +103,7 @@ The following details for quality metrics are supported by {{site.data.keyword.a
 
 Confusion matrix helps you to understand for which of your feedback data the monitored deployment response is correct and for which it is not.
 
-For more information, see [Confusion matrix](/docs/services/ai-openscale?topic=ai-openscale-it-conf-mtx).
+For more information, see [Confusion matrix](/docs/ai-openscale?topic=ai-openscale-it-conf-mtx).
 
 ## Next steps
 

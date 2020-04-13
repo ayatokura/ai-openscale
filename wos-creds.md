@@ -129,8 +129,8 @@ To create credentials for {{site.data.keyword.aios_short}}, complete the followi
 
 Specify your machine learning provider:
 
-- [Specifying an {{site.data.keyword.pm_full}} service instance](/docs/services/ai-openscale?topic=ai-openscale-wml-connect)
-- [Specifying a Microsoft Azure ML Studio instance](/docs/services/ai-openscale?topic=ai-openscale-connect-azure)
-- [Specifying a Microsoft Azure ML Service instance](/docs/services/ai-openscale?topic=ai-openscale-connect-azureservice)
-- [Specifying an Amazon SageMaker ML service instance](/docs/services/ai-openscale?topic=ai-openscale-csm-connect)
-- [Specifying a Custom ML service instance](/docs/services/ai-openscale?topic=ai-openscale-co-connect)
+- [Specifying an {{site.data.keyword.pm_full}} service instance](/docs/ai-openscale?topic=ai-openscale-wml-connect)
+- [Specifying a Microsoft Azure ML Studio instance](/docs/ai-openscale?topic=ai-openscale-connect-azure)
+- [Specifying a Microsoft Azure ML Service instance](/docs/ai-openscale?topic=ai-openscale-connect-azureservice)
+- [Specifying an Amazon SageMaker ML service instance](/docs/ai-openscale?topic=ai-openscale-csm-connect)
+- [Specifying a Custom ML service instance](/docs/ai-openscale?topic=ai-openscale-co-connect)

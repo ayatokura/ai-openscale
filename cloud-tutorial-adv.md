@@ -49,7 +49,7 @@ To provide credit access to a wider and riskier population, applicant credit his
 
 The data science techniques that are most suited to these diverse data sets, such as gradient boosted trees and neural networks, can generate highly accurate risk models, but at a cost. Such "black box" models generate opaque predictions that must somehow become transparent. You must ensure regulatory approval, such as Article 22 of the General Data Protection Regulation (GDPR) or the federal Fair Credit Reporting Act (FCRA) that is managed by the Consumer Financial Protection Bureau.
 
-The credit risk model that is provided in this tutorial uses a training data set that contains 20 attributes about each loan applicant. Two of those attributes - age and sex - can be tested for bias. For this tutorial, the focus is on bias against sex and age. For more information about training data, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/services/ai-openscale?topic=ai-openscale-trainingdata#trainingdata)
+The credit risk model that is provided in this tutorial uses a training data set that contains 20 attributes about each loan applicant. Two of those attributes - age and sex - can be tested for bias. For this tutorial, the focus is on bias against sex and age. For more information about training data, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/ai-openscale?topic=ai-openscale-trainingdata#trainingdata)
 
 {{site.data.keyword.aios_short}} monitors the deployed model's propensity for a favorable outcome ("No Risk") for one group (the Reference Group) over another (the Monitored Group). In this tutorial, the Monitored Group for sex is `female`, while the Monitored Group for age is `18 to 25`.
 
@@ -76,11 +76,11 @@ You can also configure the model for continuous learning with {{site.data.keywor
 
 In this tutorial, you perform the following tasks:
 
-- [Provision {{site.data.keyword.cloud_notm}} machine learning and storage services](/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-services).
-- [Set up a {{site.data.keyword.DSX}} project, and run a Python Notebook to create, train, and deploy a machine learning model](/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-set-wstudio).
-- [Provision {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-wos-adv).
-- [Run a Python Notebook to create a data mart, configure performance, accuracy, and fairness monitors, and create data to monitor](/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-edit-notebook).
-- [View results in the {{site.data.keyword.aios_short}} Insights tab](/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-view-results).
+- [Provision {{site.data.keyword.cloud_notm}} machine learning and storage services](/docs/ai-openscale?topic=ai-openscale-crt-ov#crt-services).
+- [Set up a {{site.data.keyword.DSX}} project, and run a Python Notebook to create, train, and deploy a machine learning model](/docs/ai-openscale?topic=ai-openscale-crt-ov#crt-set-wstudio).
+- [Provision {{site.data.keyword.aios_short}}](/docs/ai-openscale?topic=ai-openscale-crt-ov#crt-wos-adv).
+- [Run a Python Notebook to create a data mart, configure performance, accuracy, and fairness monitors, and create data to monitor](/docs/ai-openscale?topic=ai-openscale-crt-ov#crt-edit-notebook).
+- [View results in the {{site.data.keyword.aios_short}} Insights tab](/docs/ai-openscale?topic=ai-openscale-crt-ov#crt-view-results).
 
 ## Provision {{site.data.keyword.cloud_notm}} Services
 {: #crt-services}
@@ -268,4 +268,4 @@ You will now see an explanation of how the model arrived at its conclusion, incl
 ## Next steps
 {: #crt-next-steps}
 
-- Learn more about [viewing and interpreting the data](/docs/services/ai-openscale?topic=ai-openscale-it-ov) and [monitoring explainability](/docs/services/ai-openscale?topic=ai-openscale-ie-ov).
+- Learn more about [viewing and interpreting the data](/docs/ai-openscale?topic=ai-openscale-it-ov) and [monitoring explainability](/docs/ai-openscale?topic=ai-openscale-ie-ov).

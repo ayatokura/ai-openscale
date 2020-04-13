@@ -34,9 +34,9 @@ For {{site.data.keyword.aios_short}}, all transactions that are sent to the depl
 
 {{site.data.keyword.aios_short}} supports payload and feedback logging through the following methods:
 
-- [Using the Python Client](/docs/services/ai-openscale?topic=ai-openscale-cdb-payload#cdb-payload-log-pythonsdk)
-- [Using the REST API](/docs/services/ai-openscale?topic=ai-openscale-cdb-payload#cdb-payload-log-rest-api)
-- [Automatically for supported machine learning providers](/docs/services/ai-openscale?topic=ai-openscale-fmrk-workaround-pyld-lg)
+- [Using the Python Client](/docs/ai-openscale?topic=ai-openscale-cdb-payload#cdb-payload-log-pythonsdk)
+- [Using the REST API](/docs/ai-openscale?topic=ai-openscale-cdb-payload#cdb-payload-log-rest-api)
+- [Automatically for supported machine learning providers](/docs/ai-openscale?topic=ai-openscale-fmrk-workaround-pyld-lg)
 
 ## Logging the payload with Python SDK
 {: #cdb-payload-log-pythonsdk}
@@ -94,7 +94,7 @@ req_response = requests.post(endpoint,
 
 ## Next steps
 
-After you set up payload logging, you can continue configuring monitors by entering model details. For more information, see [Provide model details](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets).
+After you set up payload logging, you can continue configuring monitors by entering model details. For more information, see [Provide model details](/docs/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets).
 
 [See the sample payload files](https://github.com/pmservice/ai-openscale-tutorials/tree/master/assets/historical_data/german_credit_risk/wos){: external}.
 

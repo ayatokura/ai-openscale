@@ -72,14 +72,14 @@ Table 1. Framework support details
 ## AutoAI models and training data
 {: #wml-framework-autoai}
 
-AutoAI automatically prepares data, applies algorithms, or estimators, and builds model pipelines best suited for your data and use case. {{site.data.keyword.aios_short}} requires access to the training data to analyze the model, for more information, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/services/ai-openscale?topic=ai-openscale-wos-faqs#trainingdata). 
+AutoAI automatically prepares data, applies algorithms, or estimators, and builds model pipelines best suited for your data and use case. {{site.data.keyword.aios_short}} requires access to the training data to analyze the model, for more information, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/ai-openscale?topic=ai-openscale-wos-faqs#trainingdata). 
 
 Because {{site.data.keyword.aios_short}} cannot detect the training data location for an AutoAI model like it can for a regular model, you must explicitly provide the needed details to access the training data location:
 
 - For the online path, where you manually configuring monitors, you must provide the database details from which training data can be accessed .
 - For the custom notebook path, where you upload training data distribution, you can use the JSON file that is produced by running the notebook.
 
-For more information, see [Provide model details](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets) and [Numeric/categorical data](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-nuca).
+For more information, see [Provide model details](/docs/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets) and [Numeric/categorical data](/docs/ai-openscale?topic=ai-openscale-mo-config#mo-nuca).
 
 
 ## Specifying an {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.pm_short}} service instance
@@ -106,4 +106,4 @@ You should have provisioned an {{site.data.keyword.pm_full}} instance in the sam
 
 You are now ready to select deployed models and configure your monitors. {{site.data.keyword.aios_short}} lists your deployed models on the **Insights** dashboard where you can click the **Add to dashboard** button. Select the deployments you want to monitor and click **Configure**.
 
-For more information, see [Configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+For more information, see [Configure monitors](/docs/ai-openscale?topic=ai-openscale-mo-config).

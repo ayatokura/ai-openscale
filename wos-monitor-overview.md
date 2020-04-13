@@ -237,6 +237,6 @@ Save your work and review your selection summary to continue.
 ## Next steps
 {: #mo-next}
 
-To continue configuring monitors, click the **Quality** tab and click the **Edit** icon. For more information, see [Configuring the Quality monitor](/docs/services/ai-openscale?topic=ai-openscale-acc-monitor).
+To continue configuring monitors, click the **Quality** tab and click the **Edit** icon. For more information, see [Configuring the Quality monitor](/docs/ai-openscale?topic=ai-openscale-acc-monitor).
 
 [See the sample payload files](https://github.com/pmservice/ai-openscale-tutorials/tree/master/assets/historical_data/german_credit_risk/wos){: external}.

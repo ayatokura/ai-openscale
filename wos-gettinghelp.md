@@ -53,6 +53,6 @@ For information about opening an IBM support ticket, or about support levels and
 ## Still looking for more?
 {: #looking}
 
-Check out [What's new](/docs/services/ai-openscale?topic=ai-openscale-rn-relnotes) to see new features and functions organized by date.
+Check out [What's new](/docs/ai-openscale?topic=ai-openscale-rn-relnotes) to see new features and functions organized by date.
 
-If you have questions, see the [FAQs](/docs/services/ai-openscale?topic=ai-openscale-wos-faqs) for answers.
+If you have questions, see the [FAQs](/docs/ai-openscale?topic=ai-openscale-wos-faqs) for answers.

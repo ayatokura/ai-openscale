@@ -35,15 +35,15 @@ IBM offers a model risk management solution for financial services with IBM Wats
 
 You can use one of the following options to set up your initial environment:
 
-- [Automated setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only#mrm-risk-config-ovr-wos-only-auto)
+- [Automated setup](/docs/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only#mrm-risk-config-ovr-wos-only-auto)
   
   Takes just a few minutes to create a workable system with sample data on a publically hosted lite system
 
-- [Notebook setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only#mrm-risk-config-ovr-wos-only-notebook)
+- [Notebook setup](/docs/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only#mrm-risk-config-ovr-wos-only-notebook)
   
   Enables you to control some of the setup parameters and can be used later for managing your own models
 
-- [Manual setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only#mrm-risk-config-ovr-wos-only-manual)
+- [Manual setup](/docs/ai-openscale?topic=ai-openscale-mrm-risk-config-ovr-wos-only#mrm-risk-config-ovr-wos-only-manual)
   
   Gives you the most control over resources and options
 
@@ -208,15 +208,15 @@ You can manually set up your entire {{site.data.keyword.aios_short}} model risk 
 ### Steps
 {: #mrm-risk-config-ovr-wos-only-manual-steps}
 
-1. [Provision prerequisite {{site.data.keyword.Bluemix_notm}} services](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-prps). You must set up two instances of {{site.data.keyword.pm_full}}.
-2. [Set up {{site.data.keyword.DSX}} projects](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-setup). You must set up projects for both pre-production and production models.
-2. [Configure {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
-2. [Next steps: Continue setting up the monitors and data logging](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-next-steps-config).
+1. [Provision prerequisite {{site.data.keyword.Bluemix_notm}} services](/docs/ai-openscale?topic=ai-openscale-gs-obj#gs-prps). You must set up two instances of {{site.data.keyword.pm_full}}.
+2. [Set up {{site.data.keyword.DSX}} projects](/docs/ai-openscale?topic=ai-openscale-gs-obj#gs-setup). You must set up projects for both pre-production and production models.
+2. [Configure {{site.data.keyword.aios_short}}](/docs/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
+2. [Next steps: Continue setting up the monitors and data logging](/docs/ai-openscale?topic=ai-openscale-gs-obj#gs-next-steps-config).
 
 
 
 ## Next steps
 {: #mrm-risk-config-ovr-wos-only-next}
 
-- [Model risk management and model governance](/docs/services/ai-openscale?topic=ai-openscale-mrm-ovr)
-- [Model risk management](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-wos-only)
+- [Model risk management and model governance](/docs/ai-openscale?topic=ai-openscale-mrm-ovr)
+- [Model risk management](/docs/ai-openscale?topic=ai-openscale-mrm-risk-wos-only)

@@ -30,7 +30,7 @@ To automate the provisioning and configuration of the required {{site.data.keywo
 ## About this module
 {: #as-about}
 
-- The module provides an alternate way for technical users to see an instance of {{site.data.keyword.aios_short}} running without needing to provision and configure the services yourself, as described in the [Getting started](/docs/services/ai-openscale?topic=ai-openscale-getting-started) tutorial.
+- The module provides an alternate way for technical users to see an instance of {{site.data.keyword.aios_short}} running without needing to provision and configure the services yourself, as described in the [Getting started](/docs/ai-openscale?topic=ai-openscale-getting-started) tutorial.
 - The Python module runs through the process of checking the services that you have and creating the ones that are necessary, including {{site.data.keyword.aios_short}}. After the module runs successfully, from the {{site.data.keyword.cloud_notm}} dashboard you can launch {{site.data.keyword.aios_short}} to see how it monitors a model.
 
 ## Before you begin
@@ -72,7 +72,7 @@ ibm-ai-openscale-cli -a <Your API key>
 
 To view insights into the fairness and accuracy of the model, details of data that is monitored, and explainability for an individual transaction, open the [{{site.data.keyword.aios_short}} dashboard](https://aiopenscale.cloud.ibm.com/aiopenscale/){: external}.
 
-- To understand the scenario for the sample data, read [Use case and the value of {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-getting-started#gs-use).
+- To understand the scenario for the sample data, read [Use case and the value of {{site.data.keyword.aios_short}}](/docs/ai-openscale?topic=ai-openscale-getting-started#gs-use).
 
 ### View insights
 {: #as-insights}
@@ -94,7 +94,7 @@ From the [{{site.data.keyword.aios_short}} dashboard](https://aiopenscale.cloud.
 
    - For example, the following screen shows data for a specific date and time. The dates and times vary, depending on when you run the module.
 
-   - For information about interpreting the time series chart, see [Getting insights](/docs/services/ai-openscale?topic=ai-openscale-it-ov).
+   - For information about interpreting the time series chart, see [Getting insights](/docs/ai-openscale?topic=ai-openscale-it-ov).
 
     ![Monitor data is shown](images/wos-fairness-age-payload-perturbed.png)
 
@@ -102,7 +102,7 @@ From the [{{site.data.keyword.aios_short}} dashboard](https://aiopenscale.cloud.
 
   - Notice that in the following screen capture, no bias exists.
 
-  - For information about interpreting the chart of the data points at a specific hour, see [Visualizing data for a specific hour](/docs/services/ai-openscale?topic=ai-openscale-it-vdet).
+  - For information about interpreting the chart of the data points at a specific hour, see [Visualizing data for a specific hour](/docs/ai-openscale?topic=ai-openscale-it-vdet).
 
     ![View details are shown](images/wos-fairness-age-debiased.png)
 
@@ -115,12 +115,12 @@ Transaction IDs for the past hour are listed for those transactions that have bi
 
   ![Transaction list with no transactions](images/cloud-setup06-0206.png)
 
-For information about finding and explaining transactions, see [Explaining transactions](/docs/services/ai-openscale?topic=ai-openscale-ie-ov#ie-view).
+For information about finding and explaining transactions, see [Explaining transactions](/docs/ai-openscale?topic=ai-openscale-ie-ov#ie-view).
 
 ## Related information
 {: #as-info}
 
-- To learn about biases, see [Fairness](/docs/services/ai-openscale?topic=ai-openscale-mf-monitor).
-- To learn about how well your model predicts outcomes, see [Accuracy](/docs/services/ai-openscale?topic=ai-openscale-acc-monitor).
-- To learn about interpreting charts and data, see [Getting insights](/docs/services/ai-openscale?topic=ai-openscale-it-ov).
-- To learn how underlying factors influence outcomes, see [Monitoring explainability](/docs/services/ai-openscale?topic=ai-openscale-ie-ov).
+- To learn about biases, see [Fairness](/docs/ai-openscale?topic=ai-openscale-mf-monitor).
+- To learn about how well your model predicts outcomes, see [Accuracy](/docs/ai-openscale?topic=ai-openscale-acc-monitor).
+- To learn about interpreting charts and data, see [Getting insights](/docs/ai-openscale?topic=ai-openscale-it-ov).
+- To learn how underlying factors influence outcomes, see [Monitoring explainability](/docs/ai-openscale?topic=ai-openscale-ie-ov).

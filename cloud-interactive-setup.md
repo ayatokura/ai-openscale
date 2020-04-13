@@ -27,9 +27,9 @@ subcollection: ai-openscale
 In this tutorial, you learn how to provision the required {{site.data.keyword.Bluemix_notm}} services, set up a project and deploy a sample model in {{site.data.keyword.DSX}}, and configure monitors in {{site.data.keyword.aios_short}}.
 {: shortdesc}
 
-1. [Provision {{site.data.keyword.Bluemix_notm}} machine learning and storage services](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-prps).
-2. [Set up a {{site.data.keyword.DSX}} project, and create, train, and deploy a machine learning model](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-setup).
-3. [Configure and explore trust, transparency, and explainability for your model](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
+1. [Provision {{site.data.keyword.Bluemix_notm}} machine learning and storage services](/docs/ai-openscale?topic=ai-openscale-gs-obj#gs-prps).
+2. [Set up a {{site.data.keyword.DSX}} project, and create, train, and deploy a machine learning model](/docs/ai-openscale?topic=ai-openscale-gs-obj#gs-setup).
+3. [Configure and explore trust, transparency, and explainability for your model](/docs/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
 
 ## Provision prerequisite {{site.data.keyword.Bluemix_notm}} services
 {: #gs-prps}
@@ -121,7 +121,7 @@ Next, you need to choose a database. You have two options: the free database, or
 
 2. For this tutorial, select the **Use the free Lite plan database** tile.
 
-   The free database has some important limitations. It is a hosted database that does not give you separate access to it. It gives {{site.data.keyword.aios_short}} access to your database and data. It is not GDPR-compliant. See complete details about each of these options in the [Specifying a database](/docs/services/ai-openscale?topic=ai-openscale-connect-db) topic. The existing database can be a PostgreSQL database or a Db2 database.
+   The free database has some important limitations. It is a hosted database that does not give you separate access to it. It gives {{site.data.keyword.aios_short}} access to your database and data. It is not GDPR-compliant. See complete details about each of these options in the [Specifying a database](/docs/ai-openscale?topic=ai-openscale-connect-db) topic. The existing database can be a PostgreSQL database or a Db2 database.
     {: tip}
 
    ![Select database](images/cloud-gs-set-lite-db2.png)
@@ -136,7 +136,7 @@ Next, you need to choose a database. You have two options: the free database, or
 
 1.  For this tutorial, select your {{site.data.keyword.pm_full}} instance from the menu and click **Next**.
 
-    You also have the option to select a different {{site.data.keyword.pm_short}} location. See [Specifying an {{site.data.keyword.pm_full}} service instance](/docs/services/ai-openscale?topic=ai-openscale-wml-connect) for additional information.
+    You also have the option to select a different {{site.data.keyword.pm_short}} location. See [Specifying an {{site.data.keyword.pm_full}} service instance](/docs/ai-openscale?topic=ai-openscale-wml-connect) for additional information.
     {: note}
 
     ![Set {{site.data.keyword.pm_short}} instance](images/wos-gs-set-wml.png)
@@ -164,35 +164,35 @@ Before you configure your monitors, you can generate a scoring request against y
 
 Continue with this tutorial by completing the following steps:
 
-1. [Prepare monitors for deployment](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-select-deploy).
+1. [Prepare monitors for deployment](/docs/ai-openscale?topic=ai-openscale-mo-config#mo-select-deploy).
 
    To prepare monitors, you must select one of the deployed models and add it to the dashboard. From the **Insights** tab, click a deployment tile, or click the **Add to dashboard** button to select a deployed model and click **Configure**.
 
-2. [Set up payload logging](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-work-data).
+2. [Set up payload logging](/docs/ai-openscale?topic=ai-openscale-mo-config#mo-work-data).
 
    In the **Payload logging** section, you must specify the type of input.
 
-3. [Set up model details](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets).
+3. [Set up model details](/docs/ai-openscale?topic=ai-openscale-mo-config#mo-work-model-dets).
 
    In the **Model details** section, you must record the model details. For this tutorial select **Manually configure monitors**.
 
-4. [Configure quality monitoring](/docs/services/ai-openscale?topic=ai-openscale-acc-monitor).
+4. [Configure quality monitoring](/docs/ai-openscale?topic=ai-openscale-acc-monitor).
 
    In the **Quality** section, you set the quality alert threshold and sample sizes.
 
-5. [Configure Fairness monitoring](/docs/services/ai-openscale?topic=ai-openscale-mf-monitor).
+5. [Configure Fairness monitoring](/docs/ai-openscale?topic=ai-openscale-mf-monitor).
 
    In the **Fairness** section, choose which features to monitor for fairness. For each feature you select, {{site.data.keyword.aios_short}} will monitor the deployed model's propensity for a favorable outcome for one group over the other. Although, features are monitored individually, debiasing corrects issues for all features together.
 
-6. [Configure the drift detection monitor](/docs/services/ai-openscale?topic=ai-openscale-behavior-drift-config).
+6. [Configure the drift detection monitor](/docs/ai-openscale?topic=ai-openscale-behavior-drift-config).
 
    In the **Drift** section, you set up a drift detection model.
    
-5. [Provide a set of sample feedback data to your model](/docs/services/ai-openscale?topic=ai-openscale-fmt-upld-fdbk-data#fmt-upld-fdbk-data-upld-csv).
+5. [Provide a set of sample feedback data to your model](/docs/ai-openscale?topic=ai-openscale-fmt-upld-fdbk-data#fmt-upld-fdbk-data-upld-csv).
 
    To enable monitoring for quality, you must provide your model with feedback data. Quality data will not appear in the dashboard until that is done. You can generate the requests all at once by adding sample feedback data to the model for scoring. For this task, you'll download a CSV file that contains sample feedback data.
 
-6. [Get insights](/docs/services/ai-openscale?topic=ai-openscale-io-ov).
+6. [Get insights](/docs/ai-openscale?topic=ai-openscale-io-ov).
 
    After you configure accuracy monitoring, the accuracy check runs after one hour. In a production system, this makes sense so that your dashboard can accumulate feedback data. For the purposes of this tutorial, you'll probably want to trigger the accuracy check manually after you add your feedback data, so that you can see results in the **Insights** dashboard.
 

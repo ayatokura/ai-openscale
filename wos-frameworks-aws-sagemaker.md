@@ -78,7 +78,7 @@ Your first step in the {{site.data.keyword.aios_short}} tool is to specify an Am
 
 You are now ready to select deployed models and configure your monitors. {{site.data.keyword.aios_short}} lists your deployed models on the **Insights** dashboard where you can click the **Add to dashboard** button. Select the deployments you want to monitor and click **Configure**.
 
-For more information, see [Configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+For more information, see [Configure monitors](/docs/ai-openscale?topic=ai-openscale-mo-config).
 
 
 ## Payload logging with the Amazon SageMaker machine learning engine
@@ -207,5 +207,5 @@ For more information, see [Configure monitors](/docs/services/ai-openscale?topic
 ## Next steps
 {: #csm-next-qws}
 
-- {{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+- {{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/ai-openscale?topic=ai-openscale-mo-config).
 - [Monitor SageMaker machine learning with {{site.data.keyword.aios_short}}](https://developer.ibm.com/patterns/monitor-amazon-sagemaker-machine-learning-models-with-ai-openscale//){: external}

@@ -98,4 +98,4 @@ Follow the prompts and enter required information. When you finish, a summary of
 {: #behavior-drift-config-next-steps}
 
 - Continue with configuration by [configuring the endpoint monitor](/docs/ai-openscale?topic=ai-openscale-mf-endpoints).
-- For more information about interpreting drift, see [Drift](/docs/services/ai-openscale?topic=ai-openscale-behavior-drift-ovr)
+- For more information about interpreting drift, see [Drift](/docs/ai-openscale?topic=ai-openscale-behavior-drift-ovr)

@@ -64,11 +64,11 @@ Tests to be run on machine learning and deep learning models differ from straigh
 
 IBM offers a model risk management solution for financial services with {{site.data.keyword.aios_full}}. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and validates models. Specifically, you can use the following configurations:
 
-- [Model risk management with {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-wos-only)
+- [Model risk management with {{site.data.keyword.aios_short}}](/docs/ai-openscale?topic=ai-openscale-mrm-risk-wos-only)
 
   Use {{site.data.keyword.aios_short}} as a stand-alone solution. Enable the model risk management features to create pre-production and production repositories and compare models.
 
-- [Model governance with {{site.data.keyword.aios_short}} and IBM OpenPages MRG](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-openpages-mrg)
+- [Model governance with {{site.data.keyword.aios_short}} and IBM OpenPages MRG](/docs/ai-openscale?topic=ai-openscale-mrm-risk-openpages-mrg)
   
   Use {{site.data.keyword.aios_short}} as part of an overall model risk governance solution by integrating with IBM OpenPages MRG.
 

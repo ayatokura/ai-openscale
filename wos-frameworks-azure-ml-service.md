@@ -175,7 +175,7 @@ See [How to: Use the portal to create an Azure AD applicationand service princip
 
 You are now ready to select deployed models and configure your monitors. {{site.data.keyword.aios_short}} lists your deployed models on the **Insights** dashboard where you can click the **Add to dashboard** button. Select the deployments you want to monitor and click **Configure**.
 
-For more information, see [Configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+For more information, see [Configure monitors](/docs/ai-openscale?topic=ai-openscale-mo-config).
 
 
 ## Payload logging with the Microsoft Azure ML Service engine
@@ -324,6 +324,6 @@ print("Request OK: " + str(req_response.ok))
 ## Next steps
 {: #ca-next-azure-service}
 
--{{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+-{{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/ai-openscale?topic=ai-openscale-mo-config).
 - [How does Azure Machine Learning service differ from Studio?](https://docs.microsoft.com/en-us/azure/machine-learning/service/overview-what-is-azure-ml#how-does-azure-machine-learning-service-differ-from-studio){: external}
 

@@ -40,7 +40,7 @@ Throughout this process, {{site.data.keyword.aios_full}} analyzes your model and
 ### Values that represent a favorable outcome for the model
 {: #mf-monitor-reqs-fave}
 
-Values are derived from the `label` column in the [training data](/docs/services/ai-openscale?topic=ai-openscale-trainingdata#trainingdata). By default the `predictedLabel` column is set as the `prediction` column.
+Values are derived from the `label` column in the [training data](/docs/ai-openscale?topic=ai-openscale-trainingdata#trainingdata). By default the `predictedLabel` column is set as the `prediction` column.
 
 Favorable and Unfavorable values need to be specified by using the value of the `prediction` column as a string data type, such as `0` or `1`.
 
@@ -88,4 +88,4 @@ After you save your settings for the fairness monitor, you can add features to m
 ## Next steps
 {: #mf-next}
 
-To continue configuring monitors, click the **Drift** tab and click the **Edit** icon. For more information, see [Configuring the drift detection monitor](/docs/services/ai-openscale?topic=ai-openscale-behavior-drift-config).
+To continue configuring monitors, click the **Drift** tab and click the **Edit** icon. For more information, see [Configuring the drift detection monitor](/docs/ai-openscale?topic=ai-openscale-behavior-drift-config).

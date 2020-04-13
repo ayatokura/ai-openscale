@@ -33,7 +33,7 @@ To configure monitors, you must send a scoring payload to log the data to be mon
 {: shortdesc}
 
 - For models deployed in {{site.data.keyword.pm_full}}, you must score your model by using {{site.data.keyword.pm_full}} API. The scoring payload is automatically sent to {{site.data.keyword.aios_short}} when you score the model.
-- For other machine learning engines, such as Microsoft Azure, Amazon SageMaker, or a custom machine learning engine the scoring payload must be sent by using the Payload Logging API. For more information, see [Payload logging for non-{{site.data.keyword.pm_full}} service instances](/docs/services/ai-openscale?topic=ai-openscale-cml-connect).
+- For other machine learning engines, such as Microsoft Azure, Amazon SageMaker, or a custom machine learning engine the scoring payload must be sent by using the Payload Logging API. For more information, see [Payload logging for non-{{site.data.keyword.pm_full}} service instances](/docs/ai-openscale?topic=ai-openscale-cml-connect).
 
 ## Steps for payload logging
 {: #cdb-score-apisteps}
@@ -44,7 +44,7 @@ To configure monitors, you must send a scoring payload to log the data to be mon
 2. Click **Configure monitors**. 
 3. In the navigation pane, click **Payload logging**.
 2. Choose whether to use the `cURL` or `Python` code by clicking the `cURL` or `Python` tab.
-3. Click **Copy to clipboard** and paste it into to log model deployment request and response data. For more information, see [Payload logging for non-{{site.data.keyword.pm_full}} service instances](/docs/services/ai-openscale?topic=ai-openscale-cml-connect).
+3. Click **Copy to clipboard** and paste it into to log model deployment request and response data. For more information, see [Payload logging for non-{{site.data.keyword.pm_full}} service instances](/docs/ai-openscale?topic=ai-openscale-cml-connect).
 
 The fields and values in the code snippets need to be substituted with your real values, as the ones provided are only examples.
 {: important}
@@ -73,4 +73,4 @@ Scoring requests are a part of {{site.data.keyword.aios_short}} processing. Each
 ## Next steps
 {: #cdb-score-next-steps-scoringreq}
 
-[Configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+[Configure monitors](/docs/ai-openscale?topic=ai-openscale-mo-config).

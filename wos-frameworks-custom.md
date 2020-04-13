@@ -217,7 +217,7 @@ Your first step in the {{site.data.keyword.aios_short}} tool is to specify a ser
 - Password
 - API endpoint
 
-Choose whether to connect to your deployments [by requesting a list](/docs/services/ai-openscale?topic=ai-openscale-co-connect#co-config-request-list) or [by entering individual scoring endpoints](/docs/services/ai-openscale?topic=ai-openscale-co-connect#co-config-scoring-endpoints).
+Choose whether to connect to your deployments [by requesting a list](/docs/ai-openscale?topic=ai-openscale-co-connect#co-config-request-list) or [by entering individual scoring endpoints](/docs/ai-openscale?topic=ai-openscale-co-connect#co-config-scoring-endpoints).
 
 
 ### Requesting the list of deployments
@@ -233,7 +233,7 @@ If you selected the **Enter individual scoring endpoints** tile, enter your cred
 
 You are now ready to select deployed models and configure your monitors. {{site.data.keyword.aios_short}} lists your deployed models on the **Insights** dashboard where you can click the **Add to dashboard** button. Select the deployments you want to monitor and click **Configure**.
 
-For more information, see [Configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+For more information, see [Configure monitors](/docs/ai-openscale?topic=ai-openscale-mo-config).
 
 ## Custom machine learning engine examples
 {: #fmrk-workaround-cstmmlsengex}
@@ -383,5 +383,5 @@ For more information, see [Payload logging]().
 ## Next steps
 {: #fmrk-workaround-nxt-steps-over}
 
-{{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+{{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/ai-openscale?topic=ai-openscale-mo-config).
 

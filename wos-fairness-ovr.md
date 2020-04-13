@@ -47,7 +47,7 @@ Recommended bias monitors help to speed up configuration and ensure that you are
 ## Understanding Fairness
 {: #mf-understand}
 
-{{site.data.keyword.aios_short}} checks your deployed model for bias at runtime. To detect bias for a deployed model, you must define fairness attributes, such as `Age` or `Sex`, as detailed in the [Configuring the Fairness monitor](/docs/services/ai-openscale?topic=ai-openscale-mf-monitor#mf-config) section.
+{{site.data.keyword.aios_short}} checks your deployed model for bias at runtime. To detect bias for a deployed model, you must define fairness attributes, such as `Age` or `Sex`, as detailed in the [Configuring the Fairness monitor](/docs/ai-openscale?topic=ai-openscale-mf-monitor#mf-config) section.
 
 It is mandatory to specify the output schema for a model or function in {{site.data.keyword.pm_short}}, for bias checking to be enabled in {{site.data.keyword.aios_short}}. The output schema can be specified using the `client.repository.ModelMetaNames.OUTPUT_DATA_SCHEMA` property in the metadata part of the `store_model` API. For more information, see the [{{site.data.keyword.pm_full}} client documentation](http://wml-api-pyclient-dev.mybluemix.net/#repository){: external}.
 
@@ -181,15 +181,15 @@ You can view the recommended debiased scoring endpoint:
 
 The following fairness metrics are supported by {{site.data.keyword.aios_short}}:
 
-- [Fairness for a group](/docs/services/ai-openscale?topic=ai-openscale-quality_group)
+- [Fairness for a group](/docs/ai-openscale?topic=ai-openscale-quality_group)
 
 The following protected attributes are supported by {{site.data.keyword.aios_short}}: 
 
-- [sex](/docs/services/ai-openscale?topic=ai-openscale-quality_group#quality_group-sex)
-- [ethnicity](/docs/services/ai-openscale?topic=ai-openscale-quality_group#quality_group-ethnicity)
-- [marital status](/docs/services/ai-openscale?topic=ai-openscale-quality_group#quality_group-marital)
-- [age](/docs/services/ai-openscale?topic=ai-openscale-quality_group#quality_group-age)
-- [zip code](/docs/services/ai-openscale?topic=ai-openscale-quality_group#quality_group-zip)
+- [sex](/docs/ai-openscale?topic=ai-openscale-quality_group#quality_group-sex)
+- [ethnicity](/docs/ai-openscale?topic=ai-openscale-quality_group#quality_group-ethnicity)
+- [marital status](/docs/ai-openscale?topic=ai-openscale-quality_group#quality_group-marital)
+- [age](/docs/ai-openscale?topic=ai-openscale-quality_group#quality_group-age)
+- [zip code](/docs/ai-openscale?topic=ai-openscale-quality_group#quality_group-zip)
 
 
 ### Supported fairness details

@@ -52,5 +52,5 @@ Drift is the degradation of predictive performance over time because of hidden c
 ## Next steps
 {: #behavior-anomalies-ns}
 
-- For information on how to set up drift detection, see [Configuring the drift detection monitor](/docs/services/ai-openscale?topic=ai-openscale-behavior-drift-config).
+- For information on how to set up drift detection, see [Configuring the drift detection monitor](/docs/ai-openscale?topic=ai-openscale-behavior-drift-config).
 - To mitigate drift, after it has been detected by {{site.data.keyword.aios_short}}, you must build a new version of the model that fixes the problem. A good place to start is with the data points that are highlighted as reasons for the drift. Introduce the new data to the predictive model after you have manually labeled the drifted transactions and use them to re-train the model.

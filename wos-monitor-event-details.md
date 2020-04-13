@@ -91,6 +91,6 @@ Type a free-form label, such as USD or Euros to provide context to the data.
 ### Next steps
 {: #event-dets-next}
 
-- Get insights into how your KPIs correlate to model drift. See [Getting application insights](/docs/services/ai-openscale?topic=ai-openscale-io-app-ov).
-- [View correlation charts](/docs/services/ai-openscale?topic=ai-openscale-app-perform-vdet).
-- [View KPI performance](/docs/services/ai-openscale?topic=ai-openscale-it-appkpi-vdet).
+- Get insights into how your KPIs correlate to model drift. See [Getting application insights](/docs/ai-openscale?topic=ai-openscale-io-app-ov).
+- [View correlation charts](/docs/ai-openscale?topic=ai-openscale-app-perform-vdet).
+- [View KPI performance](/docs/ai-openscale?topic=ai-openscale-it-appkpi-vdet).

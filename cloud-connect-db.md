@@ -45,7 +45,7 @@ Specify a database for your {{site.data.keyword.aios_short}} instance to use.
 
 - The free database is hosted, and is not directly accessible to you.
 - {{site.data.keyword.aios_full}} has full access to your database, and thus has full access to your data.
-- The free database is not GDPR-compliant. If your model processes personally identifiable information (PII), you cannot use the free database. You must purchase a new database, or use an existing database that conforms to GDPR rules. See [Information security](/docs/services/ai-openscale?topic=ai-openscale-is-ov) to learn more.
+- The free database is not GDPR-compliant. If your model processes personally identifiable information (PII), you cannot use the free database. You must purchase a new database, or use an existing database that conforms to GDPR rules. See [Information security](/docs/ai-openscale?topic=ai-openscale-is-ov) to learn more.
 
 To proceed with using the free database, click **Use the free Lite plan database** tile, and then click **Save**.
 
@@ -60,7 +60,7 @@ You can upgrade to another database from the free database. It is not possible t
 
 1.  Select your existing database type (Compose for Postgres, database for Postgres, or Db2), then a database from the **database** drop-down menu, and then a **schema**:
 
-    {{site.data.keyword.aios_short}} uses a PostgreSQL or Db2 database to store model-related data (feedback data, scoring payload) and calculated metrics. Lite Db2 plans are not currently supported. For more information about training data, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/services/ai-openscale?topic=ai-openscale-trainingdata#trainingdata)
+    {{site.data.keyword.aios_short}} uses a PostgreSQL or Db2 database to store model-related data (feedback data, scoring payload) and calculated metrics. Lite Db2 plans are not currently supported. For more information about training data, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/ai-openscale?topic=ai-openscale-trainingdata#trainingdata)
     {: note}
 
     ![Select your database screen displays with fields for you to enter database type, database name and schema.](images/cloud-gs-set-lite-db2.png)
@@ -105,4 +105,4 @@ You can upgrade to another database from the free database. It is not possible t
 ## Next steps
 {: #cdb-next}
 
-{{site.data.keyword.aios_short}} is now ready for you to [send a scoring payload](/docs/services/ai-openscale?topic=ai-openscale-cdb-score) and [configure monitors for your deployments](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+{{site.data.keyword.aios_short}} is now ready for you to [send a scoring payload](/docs/ai-openscale?topic=ai-openscale-cdb-score) and [configure monitors for your deployments](/docs/ai-openscale?topic=ai-openscale-mo-config).

@@ -69,6 +69,6 @@ To view details about a KPI, click the application tile, which displays the foll
 
 Get more insights by performing the following tasks:
 
-- [View correlation charts](/docs/services/ai-openscale?topic=ai-openscale-app-perform-vdet).
-- [View KPI performance](/docs/services/ai-openscale?topic=ai-openscale-it-appkpi-vdet).
+- [View correlation charts](/docs/ai-openscale?topic=ai-openscale-app-perform-vdet).
+- [View KPI performance](/docs/ai-openscale?topic=ai-openscale-it-appkpi-vdet).
 

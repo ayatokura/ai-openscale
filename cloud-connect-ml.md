@@ -32,7 +32,7 @@ See additional information in the [{{site.data.keyword.aios_short}} Python clien
 ## Before you begin
 {: #cml-prereq}
 
-You need to have the training data of your model available in Db2 or {{site.data.keyword.cos_full}} to monitor bias for your model. Explainability and accuracy are not supported for Python functions. For more information about training data, see. Why does {{site.data.keyword.aios_short}} need access to training data?](/docs/services/ai-openscale?Topic=ai-openscale-trainingdata#trainingdata)
+You need to have the training data of your model available in Db2 or {{site.data.keyword.cos_full}} to monitor bias for your model. Explainability and accuracy are not supported for Python functions. For more information about training data, see. Why does {{site.data.keyword.aios_short}} need access to training data?](/docs/ai-openscale?Topic=ai-openscale-trainingdata#trainingdata)
 
 - Import and initiate {{site.data.keyword.aios_short}}
 
@@ -49,7 +49,7 @@ You need to have the training data of your model available in Db2 or {{site.data
     ```
     {: codeblock}
 
-  Credentials can be found by following the steps that are shown in the "[Creating credentials](/docs/services/ai-openscale?topic=ai-openscale-cred-create)" topic.
+  Credentials can be found by following the steps that are shown in the "[Creating credentials](/docs/ai-openscale?topic=ai-openscale-cred-create)" topic.
 
 - Create a schema name in your PostgreSQL database
 
@@ -65,5 +65,5 @@ You need to have the training data of your model available in Db2 or {{site.data
 ## Next steps
 {: #cml-next}
 
-- To continue with the {{site.data.keyword.aios_short}} client, see [Configuring the Accuracy or Quality monitor](/docs/services/ai-openscale?topic=ai-openscale-acc-monitor).
+- To continue with the {{site.data.keyword.aios_short}} client, see [Configuring the Accuracy or Quality monitor](/docs/ai-openscale?topic=ai-openscale-acc-monitor).
 - To continue with the Python command library, refer to the [Python client documentation](http://ai-openscale-python-client.mybluemix.net/){: external}.

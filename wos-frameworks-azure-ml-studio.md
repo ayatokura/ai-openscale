@@ -73,7 +73,7 @@ The following notebooks show how to work with Microsoft Azure ML Studio:
 Your first step in the {{site.data.keyword.aios_short}} tool is to specify a Microsoft Azure ML Studio instance. Your Azure ML Studio instance is where you store your AI models and deployments.
 {: shortdesc}
 
-You can also add your machine learning provider by using the Python SDK. For more information on performing this programmatically, see [Bind your Microsoft Azure machine learning engine](/docs/services/ai-openscale?topic=ai-openscale-cml-azbind).
+You can also add your machine learning provider by using the Python SDK. For more information on performing this programmatically, see [Bind your Microsoft Azure machine learning engine](/docs/ai-openscale?topic=ai-openscale-cml-azbind).
 
 ## Connect your Azure ML Studio instance
 {: #ca-connect-azure-stud-inst}
@@ -215,5 +215,5 @@ See [How to: Use the portal to create an Azure AD applicationand service princip
 
 You are now ready to select deployed models and configure your monitors. {{site.data.keyword.aios_short}} lists your deployed models on the **Insights** dashboard where you can click the **Add to dashboard** button. Select the deployments you want to monitor and click **Configure**.
 
-For more information, see [Configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+For more information, see [Configure monitors](/docs/ai-openscale?topic=ai-openscale-mo-config).
 

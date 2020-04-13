@@ -54,4 +54,4 @@ Fairness and drift metrics are not supported for unstructured (image or text) da
 ## Next steps
 {: #ie-unstruct-text-next}
 
-[Explaining unstructured text models](/docs/services/ai-openscale?topic=ai-openscale-ie-unstruct)
+[Explaining unstructured text models](/docs/ai-openscale?topic=ai-openscale-ie-unstruct)

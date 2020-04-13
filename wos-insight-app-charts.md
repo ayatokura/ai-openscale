@@ -75,5 +75,5 @@ To visually review correlation strength, from the **Influence on KPI** column, f
 ## Next steps
 {: #app-perform-vdet-ns}
 
-- [View correlation charts](/docs/services/ai-openscale?topic=ai-openscale-app-perform-vdet).
-- [View KPI performance](/docs/services/ai-openscale?topic=ai-openscale-it-appkpi-vdet).
+- [View correlation charts](/docs/ai-openscale?topic=ai-openscale-app-perform-vdet).
+- [View KPI performance](/docs/ai-openscale?topic=ai-openscale-it-appkpi-vdet).

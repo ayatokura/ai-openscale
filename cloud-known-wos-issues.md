@@ -155,7 +155,7 @@ If you are using a different load balancer, other than HAProxy, you might need t
 ### Custom machine learning service instance
 {: #wos-common-issues-custom}
 
-- The [{{site.data.keyword.aios_short}} Python Client SDK](/docs/services/ai-openscale-icp?topic=ai-openscale-as-module) does not currently support explainability features for the custom engine. This is because the Custom serve engine requires a numerical prediction in the response data, which is not included with the module script.
+- The [{{site.data.keyword.aios_short}} Python Client SDK](/docs/ai-openscale-icp?topic=ai-openscale-as-module) does not currently support explainability features for the custom engine. This is because the Custom serve engine requires a numerical prediction in the response data, which is not included with the module script.
 
 <p>&nbsp;</p>
 
@@ -311,7 +311,7 @@ Drift configuration is started but never finishes and continues to show the spin
 ## Next steps
 {: #abt-next}
 
-- [Getting started](/docs/services/ai-openscale?topic=ai-openscale-getting-started)
+- [Getting started](/docs/ai-openscale?topic=ai-openscale-getting-started)
 - View the [API Reference material](https://cloud.ibm.com/apidocs/ai-openscale){: external}.
-- [What's new in {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-rn-relnotes)
+- [What's new in {{site.data.keyword.aios_short}}](/docs/ai-openscale?topic=ai-openscale-rn-relnotes)
 - [Contact IBM](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-watson){: external}.

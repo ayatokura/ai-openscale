@@ -53,8 +53,8 @@ You can integrate {{site.data.keyword.aios_short}} with 3rd-party engines in the
 ## Steps to implement this solution
 {: #fmrk-workaround-steps}
 
-1. [Learn about custom machine learning engines](/docs/services/ai-openscale?topic=ai-openscale-fmrk-workaround-customengine).
-2. [Set up payload logging](/docs/services/ai-openscale?topic=ai-openscale-cdb-payload).
-3. [Automate payload logging](/docs/services/ai-openscale?topic=ai-openscale-fmrk-workaround-pyld-lg).
-4. Set up a custom machine learning engine by using one of these [Custom machine learning engine examples](/docs/services/ai-openscale?topic=ai-openscale-fmrk-workaround-cstmmlsengex).
+1. [Learn about custom machine learning engines](/docs/ai-openscale?topic=ai-openscale-fmrk-workaround-customengine).
+2. [Set up payload logging](/docs/ai-openscale?topic=ai-openscale-cdb-payload).
+3. [Automate payload logging](/docs/ai-openscale?topic=ai-openscale-fmrk-workaround-pyld-lg).
+4. Set up a custom machine learning engine by using one of these [Custom machine learning engine examples](/docs/ai-openscale?topic=ai-openscale-fmrk-workaround-cstmmlsengex).
 

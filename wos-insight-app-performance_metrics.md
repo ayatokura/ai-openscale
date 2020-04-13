@@ -90,4 +90,4 @@ To drill down from a business event to related scoring payload, click **Details*
 ## Next steps
 {: #it-appkpi-next-steps-done}
 
-- [View correlation charts](/docs/services/ai-openscale?topic=ai-openscale-app-perform-vdet).
+- [View correlation charts](/docs/ai-openscale?topic=ai-openscale-app-perform-vdet).

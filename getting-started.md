@@ -64,7 +64,7 @@ To provide credit access to a wider and riskier population, applicant credit his
 
 The data science techniques that are most suited to these diverse data sets, such as gradient boosted trees and neural networks, can generate highly accurate risk models, but at a cost. Such "black box" models generate opaque predictions that must somehow become transparent. You must ensure regulatory approval, such as Article 22 of the General Data Protection Regulation (GDPR) or the federal Fair Credit Reporting Act (FCRA) that is managed by the Consumer Financial Protection Bureau.
 
-The credit risk model that is provided in this tutorial uses a training data set that contains 20 attributes about each loan applicant. Two of those attributes - age and sex - can be tested for bias. For this tutorial, the focus is on bias against sex and age. For more information about training data, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/services/ai-openscale?topic=ai-openscale-trainingdata#trainingdata)
+The credit risk model that is provided in this tutorial uses a training data set that contains 20 attributes about each loan applicant. Two of those attributes - age and sex - can be tested for bias. For this tutorial, the focus is on bias against sex and age. For more information about training data, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/ai-openscale?topic=ai-openscale-trainingdata#trainingdata)
 
 {{site.data.keyword.aios_short}} monitors the deployed model's propensity for a favorable outcome ("No Risk") for one group (the Reference Group) over another (the Monitored Group). In this tutorial, the Monitored Group for sex is `female`, while the Monitored Group for age is `19 to 25`.
 
@@ -73,19 +73,19 @@ The credit risk model that is provided in this tutorial uses a training data set
 
 There are several setup options, depending on your preference and level of expertise.
 
-- [The following automated setup](/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start#wos-fast-start) guides you through the process by performing tasks for you in the background.
+- [The following automated setup](/docs/ai-openscale?topic=ai-openscale-wos-fast-start#wos-fast-start) guides you through the process by performing tasks for you in the background.
 
    Use of a tour means that you can watch and click through to the next part of the tour.
    
-- [The interactive setup](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-obj) lets you take control with an easy-to-follow script.
+- [The interactive setup](/docs/ai-openscale?topic=ai-openscale-gs-obj#gs-obj) lets you take control with an easy-to-follow script.
 
    Use the interface to perform common tasks with a sample model and injected data.
    
-- [The advanced tutorial](/docs/services/ai-openscale?topic=ai-openscale-crt-ov) enables more technical users to install a Python module that automates the provisioning and configuration of prerequisite services. This advanced tutorial is for data scientists or users who are comfortable with coding, Python and Notebooks. It's an example of how the {{site.data.keyword.aios_short}} client can be used to perform functionality programatically. The notebook that is used in this tutorial results in the same place as following the [automated setup](/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start#wos-fast-start).
+- [The advanced tutorial](/docs/ai-openscale?topic=ai-openscale-crt-ov) enables more technical users to install a Python module that automates the provisioning and configuration of prerequisite services. This advanced tutorial is for data scientists or users who are comfortable with coding, Python and Notebooks. It's an example of how the {{site.data.keyword.aios_short}} client can be used to perform functionality programatically. The notebook that is used in this tutorial results in the same place as following the [automated setup](/docs/ai-openscale?topic=ai-openscale-wos-fast-start#wos-fast-start).
 
-   This module requires that Python 3 is installed, which includes the pip package management system. For instructions, see, [Installing a Python module to set up {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-as-module).
+   This module requires that Python 3 is installed, which includes the pip package management system. For instructions, see, [Installing a Python module to set up {{site.data.keyword.aios_short}}](/docs/ai-openscale?topic=ai-openscale-as-module).
 
-For additional tutorial links, see [Additional resources](/docs/services/ai-openscale?topic=ai-openscale-arsc-ov).
+For additional tutorial links, see [Additional resources](/docs/ai-openscale?topic=ai-openscale-arsc-ov).
 
 ## Automated setup
 {: #wos-fast-start}
@@ -99,7 +99,7 @@ To quickly see how {{site.data.keyword.aios_short}} monitors a model, run the de
 Before you begin the tour, you must have the following resources set up:
 
 - [{{site.data.keyword.ibmid}}](/docs/account?topic=account-signup){: external}
-- [{{site.data.keyword.aios_full}}](/docs/services/ai-openscale?topic=ai-openscale-getting-started#crt-wos-faststart)
+- [{{site.data.keyword.aios_full}}](/docs/ai-openscale?topic=ai-openscale-getting-started#crt-wos-faststart)
 
 The automated setup tour is designed to work with the least possible user interaction. It automatically makes the following decisions for you:
 
@@ -150,7 +150,7 @@ At a glance, the Insights page shows any issues with fairness and accuracy, as d
 1.  From the Insights page, click the `GermanCreditRiskModelICP` tile to view details about the monitored data.
 1.  Click and drag the marker across the chart to view a day and time period that shows data and then click the **View details** link. Alternatively, you can click different time periods in the chart to change the data that you see. 
 
-For information about interpreting the time series chart, see [Getting insights](/docs/services/ai-openscale?topic=ai-openscale-it-ov).
+For information about interpreting the time series chart, see [Getting insights](/docs/ai-openscale?topic=ai-openscale-it-ov).
 
 ### View explainability
 {: #wos-explain}
@@ -163,7 +163,7 @@ Transaction IDs for the past hour are listed for those transactions that have bi
 
    ![Demo Lets go](images/cloud-fastpath_demo_11.35.12.png)
 
-For information about finding and explaining transactions, see [Monitoring explainability](/docs/services/ai-openscale?topic=ai-openscale-ie-ov).
+For information about finding and explaining transactions, see [Monitoring explainability](/docs/ai-openscale?topic=ai-openscale-ie-ov).
 
    ![Demo Lets go](images/cloud-fastpath_demo_11.35.50.png)
 
@@ -179,6 +179,6 @@ After you finish the tour and the application setup, you can perform one of the 
 ## Next steps
 {: #gs-next}
 
-- Learn more about [viewing and interpreting the data](/docs/services/ai-openscale?topic=ai-openscale-it-ov) and [monitoring explainability](/docs/services/ai-openscale?topic=ai-openscale-ie-ov).
+- Learn more about [viewing and interpreting the data](/docs/ai-openscale?topic=ai-openscale-it-ov) and [monitoring explainability](/docs/ai-openscale?topic=ai-openscale-ie-ov).
 
 - To learn more about {{site.data.keyword.aios_short}} in action, see [How AI picks the highlights from Wimbledon fairly and fast](https://www.ibmbigdatahub.com/blog/ai-picks-highlights-wimbledon-fairly-fast){: external}

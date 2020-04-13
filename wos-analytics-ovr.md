@@ -31,8 +31,8 @@ subcollection: ai-openscale
 You can analyze the scoring payload that is sent to your deployment in the selected data range by either of the following methods:
 {: shortdesc}
 
-- Review prediction classes and confidence distribution in each class. For more information, see [Predictions by confidence](/docs/services/ai-openscale?topic=ai-openscale-anlz_metrics_payload-confidence).
-- Create a custom chart by selecting among features, prediction classes, confidence, and time. For more information, see [Chart builder](/docs/services/ai-openscale?topic=ai-openscale-chart_builder).
+- Review prediction classes and confidence distribution in each class. For more information, see [Predictions by confidence](/docs/ai-openscale?topic=ai-openscale-anlz_metrics_payload-confidence).
+- Create a custom chart by selecting among features, prediction classes, confidence, and time. For more information, see [Chart builder](/docs/ai-openscale?topic=ai-openscale-chart_builder).
 
 ## Go further
 {: #anlz_metrics_payload-further}

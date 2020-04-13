@@ -35,15 +35,15 @@ IBM offers an end-to-end model risk management solution for financial services w
 
 You can use one of the following options to set up your initial environment:
 
-- [Automated setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-openpages#mrm-risk-config-openpages-auto)
+- [Automated setup](/docs/ai-openscale?topic=ai-openscale-mrm-risk-config-openpages#mrm-risk-config-openpages-auto)
   
   Takes just a few minutes to create a workable system with sample data on a publically hosted lite system
 
-- [Notebook setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-openpages#mrm-risk-config-openpages-notebook)
+- [Notebook setup](/docs/ai-openscale?topic=ai-openscale-mrm-risk-config-openpages#mrm-risk-config-openpages-notebook)
   
   Enables you to control some of the setup parameters and can be used later for managing your own models
 
-- [Manual setup](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-config-openpages#mrm-risk-config-openpages-manual)
+- [Manual setup](/docs/ai-openscale?topic=ai-openscale-mrm-risk-config-openpages#mrm-risk-config-openpages-manual)
   
   Gives you the most control over resources and options
 
@@ -120,20 +120,20 @@ You can manually set up your entire {{site.data.keyword.aios_short}} model risk 
 ### Steps
 {: #mrm-risk-config-openpages-manual-steps}
 
-1. [Provision prerequisite {{site.data.keyword.Bluemix_notm}} services](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-prps). You must set up two instances of {{site.data.keyword.pm_full}}.
-2. [Set up {{site.data.keyword.DSX}} projects](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-setup). You must set up projects for both pre-production and production models.
-2. [Configure {{site.data.keyword.aios_short}}](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
+1. [Provision prerequisite {{site.data.keyword.Bluemix_notm}} services](/docs/ai-openscale?topic=ai-openscale-gs-obj#gs-prps). You must set up two instances of {{site.data.keyword.pm_full}}.
+2. [Set up {{site.data.keyword.DSX}} projects](/docs/ai-openscale?topic=ai-openscale-gs-obj#gs-setup). You must set up projects for both pre-production and production models.
+2. [Configure {{site.data.keyword.aios_short}}](/docs/ai-openscale?topic=ai-openscale-gs-obj#gs-confaios).
 1. Set up model governance by entering the IBM OpenPages credentials and associating an OpenPages model to your {{site.data.keyword.aios_short}} model.
    
    1. From the **Insights** dashboard, click **Configure** > **Integrations** > **Edit** to add credentials.
    1. From the model configuration, click **Configure** > **Model governance** > **Edit** to associate an OpenPages model.
 
-2. [Next steps: Continue setting up the monitors and data logging](/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-next-steps-config).
+2. [Next steps: Continue setting up the monitors and data logging](/docs/ai-openscale?topic=ai-openscale-gs-obj#gs-next-steps-config).
 
 
 
 ## Next steps
 {: #mrm-risk-config-openpages-next}
 
-- [Model risk management and model governance](/docs/services/ai-openscale?topic=ai-openscale-mrm-ovr)
-- [Model governance](/docs/services/ai-openscale?topic=ai-openscale-mrm-risk-openpages-mrg)
+- [Model risk management and model governance](/docs/ai-openscale?topic=ai-openscale-mrm-ovr)
+- [Model governance](/docs/ai-openscale?topic=ai-openscale-mrm-risk-openpages-mrg)

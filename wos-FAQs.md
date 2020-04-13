@@ -91,7 +91,7 @@ When your ready to transition from the Lite plan, there's a **Standard** pricing
 {: faq}
 {: support}
 
-{{site.data.keyword.aios_short}} supports both Microsoft Azure ML Studio and Microsoft Azure ML Service engines. For more information, see [Microsoft Azure ML Studio frameworks](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-azure) and [Microsoft Azure ML Service frameworks](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-azureservice).
+{{site.data.keyword.aios_short}} supports both Microsoft Azure ML Studio and Microsoft Azure ML Service engines. For more information, see [Microsoft Azure ML Studio frameworks](/docs/ai-openscale?topic=ai-openscale-frmwrks-azure) and [Microsoft Azure ML Service frameworks](/docs/ai-openscale?topic=ai-openscale-frmwrks-azureservice).
 
 <p>&nbsp;</p>
 
@@ -101,7 +101,7 @@ When your ready to transition from the Lite plan, there's a **Standard** pricing
 {: faq}
 {: support}
 
-{{site.data.keyword.aios_short}} supports Amazon SageMaker ML engine. For more information, see [Amazon SageMaker frameworks](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-aws-sage).
+{{site.data.keyword.aios_short}} supports Amazon SageMaker ML engine. For more information, see [Amazon SageMaker frameworks](/docs/ai-openscale?topic=ai-openscale-frmwrks-aws-sage).
 
 <p>&nbsp;</p>
 

@@ -33,7 +33,7 @@ subcollection: ai-openscale
 
 If you are using a Keras model that takes the input as byte array, you must create a deployable function in {{site.data.keyword.pm_full}} that accepts the entire text as a single feature in input (as opposed to text which is vectorised and represented as a tensor or split across multiple features). Creating a deployable function is part of the functionality that {{site.data.keyword.pm_full}} support. For more information, see [Passing payload data to model deployments](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-deploy-functions.html?linkInPage=true#models){: external}
 
-For information about setting up your unstructured text models, see [Working with unstructured text models](/docs/services/ai-openscale?topic=ai-openscale-ie-unstruct-steps).
+For information about setting up your unstructured text models, see [Working with unstructured text models](/docs/ai-openscale?topic=ai-openscale-ie-unstruct-steps).
 
 ## Explaining unstructured text transactions
 {: #ie-unstruct-xplan}

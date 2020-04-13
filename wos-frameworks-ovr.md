@@ -31,27 +31,27 @@ subcollection: ai-openscale
 
 The {{site.data.keyword.aios_short}} service supports the following machine learning engines. Each runtime supports models that are created in the following frameworks:
 
-- [{{site.data.keyword.pm_full}}](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-wml#frmwrks-wml)
+- [{{site.data.keyword.pm_full}}](/docs/ai-openscale?topic=ai-openscale-frmwrks-wml#frmwrks-wml)
 
    You can use {{site.data.keyword.pm_full}} to perform payload logging, feedback logging, and to measure performance accuracy, run-time bias detection, explainability, and auto-debias function in {{site.data.keyword.aios_full}}.
 
-- [Azure ML Studio](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-azure#frmwrks-azure)
+- [Azure ML Studio](/docs/ai-openscale?topic=ai-openscale-frmwrks-azure#frmwrks-azure)
 
    You can use Microsoft Azure ML Studio to perform payload logging, feedback logging, and to measure performance accuracy, run-time bias detection, explainability, and auto-debias function in {{site.data.keyword.aios_full}}.
 
-- [Azure ML Service](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-azureservice#frmwrks-azureservice)
+- [Azure ML Service](/docs/ai-openscale?topic=ai-openscale-frmwrks-azureservice#frmwrks-azureservice)
 
    You can use Microsoft Azure ML Service to perform payload logging, feedback logging, and to measure performance accuracy, run-time bias detection, explainability, and auto-debias function in {{site.data.keyword.aios_full}}.
 
-- [AWS SageMaker](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-aws-sage#frmwrks-aws-sage)
+- [AWS SageMaker](/docs/ai-openscale?topic=ai-openscale-frmwrks-aws-sage#frmwrks-aws-sage)
 
    You can use Amazon SageMaker to perform payload logging, feedback logging, and to measure performance accuracy, run-time bias detection, explainability, and auto-debias function in {{site.data.keyword.aios_full}}.
 
-- [Custom](/docs/services/ai-openscale?topic=ai-openscale-frmwrks-custom#frmwrks-custom)
+- [Custom](/docs/ai-openscale?topic=ai-openscale-frmwrks-custom#frmwrks-custom)
 
    You can use your custom machine learning framework to perform payload logging, feedback logging, and to measure performance accuracy, run-time bias detection, explainability, and auto-debias function in {{site.data.keyword.aios_full}}. The custom machine learning framework must have equivalency to {{site.data.keyword.pm_full}}.
 
-- [SPSS C&DS](/docs/services/ai-openscale-icp?topic=ai-openscale-icp-frmwrks-spss#frmwrks-spss) (only available in {{site.data.keyword.wos4d_full}})
+- [SPSS C&DS](/docs/ai-openscale-icp?topic=ai-openscale-icp-frmwrks-spss#frmwrks-spss) (only available in {{site.data.keyword.wos4d_full}})
 
    You can use IBM SPSS C&DS to perform payload logging, feedback logging, and to measure performance accuracy, run-time bias detection, explainability, and auto-debias function in {{site.data.keyword.wos4d_full}}.
 
@@ -136,10 +136,10 @@ To view a list of all the bindings, run the `list` method:
 
 For information about specific machine learning engines, see the following topics:
 
-- [Bind your Custom machine learning engine](/docs/services/ai-openscale?topic=ai-openscale-cml-cusconfig#cml-cusbind).
-- [Bind your Microsoft Azure machine learning studio engine](/docs/services/ai-openscale?topic=ai-openscale-cml-azbind)
-- [Bind your Microsoft Azure machine learning service engine](/docs/services/ai-openscale?topic=ai-openscale-cml-azsrvconfig#cml-azsrvbind)
-- [Bind your Amazon SageMaker machine learning engine](/docs/services/ai-openscale?topic=ai-openscale-cml-smbind)
+- [Bind your Custom machine learning engine](/docs/ai-openscale?topic=ai-openscale-cml-cusconfig#cml-cusbind).
+- [Bind your Microsoft Azure machine learning studio engine](/docs/ai-openscale?topic=ai-openscale-cml-azbind)
+- [Bind your Microsoft Azure machine learning service engine](/docs/ai-openscale?topic=ai-openscale-cml-azsrvconfig#cml-azsrvbind)
+- [Bind your Amazon SageMaker machine learning engine](/docs/ai-openscale?topic=ai-openscale-cml-smbind)
 
 
 For a working example of an actual notebook, see [the {{site.data.keyword.aios_short}} sample notebooks](https://github.com/pmservice/ai-openscale-tutorials/tree/master/notebooks){: external}.
@@ -147,10 +147,10 @@ For a working example of an actual notebook, see [the {{site.data.keyword.aios_s
 ## Next steps
 {: #fmrk-workaround-multmleng-next-steps}
 
-- {{site.data.keyword.aios_short}} is now ready for you to [add deployments to your dashboard](/docs/services/ai-openscale?topic=ai-openscale-mo-config#mo-select-deploy) and [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+- {{site.data.keyword.aios_short}} is now ready for you to [add deployments to your dashboard](/docs/ai-openscale?topic=ai-openscale-mo-config#mo-select-deploy) and [configure monitors](/docs/ai-openscale?topic=ai-openscale-mo-config).
 - View the [API Reference material](https://cloud.ibm.com/apidocs/ai-openscale){: external}.
 
 Still have questions? 
 
-- [FAQs](/docs/services/ai-openscale?topic=ai-openscale-wos-faqs)
+- [FAQs](/docs/ai-openscale?topic=ai-openscale-wos-faqs)
 - [Contact IBM](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-watson){: external}.

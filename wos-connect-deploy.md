@@ -47,4 +47,4 @@ You have successfully selected deployments to monitor. You must now configure th
 ## Next steps
 {: #dpl-next}
 
-{{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/services/ai-openscale?topic=ai-openscale-mo-config).
+{{site.data.keyword.aios_short}} is now ready for you to [configure monitors](/docs/ai-openscale?topic=ai-openscale-mo-config).
