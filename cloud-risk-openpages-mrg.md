@@ -167,7 +167,7 @@ Ensure that whenever you work inside IBM OpenPages that your profile indicates t
 
 So that the two services can be fully integrated, you must add your IBM OpenPages URL and authentication credentials to {{site.data.keyword.aios_short}}.
 
-1. From the {{site.data.keyword.aios_short}} side bar, click the **Configure** ![configure icon is displayed](images/wos-configure-tab.png) icon.
+1. From the {{site.data.keyword.aios_short}} side bar, click the **Configure** ![configure icon is displayed](images/wos-config-tab.png) icon.
 2. Click **Integrations** and then in the IBM OpenPages tile, click the **Edit** ![the edit icon is displayed](images/wos-edit-icon.png) icon.
 3. Type the URL, username, and password for the IBM OpenPages instance that you use with {{site.data.keyword.aios_short}} and click **Save**.
 
