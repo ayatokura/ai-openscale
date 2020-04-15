@@ -27,7 +27,7 @@ subcollection: ai-openscale
 # Model governance
 {: #mrm-risk-openpages-mrg}
 
-By using IBM OpenPages in conjunction with {{site.data.keywor4.aios_short}} you can create an end-to-end model governance solution. Start by creating a new model in IBM OpenPages MRG, and then take the model through the candidate and development workflows in OpenPages, link the model to an example model OpenScale, explore the OpenScale features, export OpenScale metrics for the model to OpenPages as part of the pre-implementation validation process, and explore the ways to view and interpret these metrics.
+By using IBM OpenPages in conjunction with {{site.data.keyword.aios_short}} you can create an end-to-end model governance solution. Start by creating a new model in IBM OpenPages MRG, and then take the model through the candidate and development workflows in OpenPages, link the model to an example model OpenScale, explore the OpenScale features, export OpenScale metrics for the model to OpenPages as part of the pre-implementation validation process, and explore the ways to view and interpret these metrics.
 {: shortdesc}
 
 ## Work in IBM OpenPages
@@ -107,7 +107,7 @@ As part of this tutorial, you have access to a {{site.data.keyword.DSX}} noteboo
 
 1.	From the project page, click the Add to project button.
 2.	Click the Notebook tile.
-3.	Click the From file tab, click the Choose file button and then, select the **OpenScale and OpenPages model risk management on {{site.data.keyword.Bluemix_notm}}**.ipynb** notebook file that you can download from the https://github.com/pmservice/ai-openscale-tutorials GitHub repository.
+3.	Click the From file tab, click the Choose file button and then, select the **OpenScale and OpenPages model risk management on {{site.data.keyword.Bluemix_notm}}.ipynb** notebook file that you can download from the https://github.com/pmservice/ai-openscale-tutorials GitHub repository.
 4.	Add a name and description and click the Create notebook button.
 
 ### Step 4: Run the sample notebook
