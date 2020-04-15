@@ -10,7 +10,7 @@ takeaways:
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-04-08"
+lastupdated: "2020-04-18"
 
 keywords: ai, getting started, tutorial, understanding, video
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-04-08"
+lastupdated: "2020-04-18"
 
 keywords: getting help, help, release notes, what's new, developer resources 
 
