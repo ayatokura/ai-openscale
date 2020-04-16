@@ -259,5 +259,5 @@ The following new features, changes, and known issues with the service are avail
 
 Still have questions?
 
-- [Limitations](/docs/ai-openscale?topic=ai-openscale-wos-limitations)
-- [Known issues](/docs/ai-openscale?topic=ai-openscale-cloud-known-unknowns-issues)
+- [Limitations](/docs/ai-openscale?topic=ai-openscale-rn-12ki&locale=en#wos-limitations)
+- [Known issues](/docs/ai-openscale?topic=ai-openscale-rn-12ki&locale=en#cloud-known-unknowns-issues)
