@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-04-18"
 
-keywords: fairness, monitoring, charts, de-biasing, bias, accuracy
+keywords: fairness, monitoring, charts, de-biasing, bias, accuracy, tests run, tests failed, tests passed
 
 subcollection: ai-openscale
 
@@ -27,8 +27,17 @@ subcollection: ai-openscale
 # Viewing data for a deployment
 {: #it-vdep}
 
-Select a deployment from the dashboard to see monitoring data for that deployment. The heading displays information about the deployed model, such as the **Model ID** and **Created date** fields.
+Select a deployment from the dashboard to see monitoring data for that deployment. The heading displays information about the deployed model, such as the **Model ID**, **Description**. amd **Evaluation date** fields.
 {: shortdesc}
+
+![Model deployment evaluation chart is displayed with fairness, quality, and drift monitors each showing details for how the model is performing](images/wos-mrm-preprod.png)
+
+The **Evaluation** window displays details for the fairness, quality, and drift monitors. Depending on the type of model, either pre-production or production, the **Tests run**, **Tests passed**, and **Tests failed** display the following results:
+
+- For a pre-production model deployment, the results of your test run are displayed
+- For a production model deployment, the results of the latest regularly scheduled hourly fairness and quality checks and that latest 3-hourly drift check are displayed.
+
+Click one of the tiles, for example the Fairness tile to view the fairness timeline view:
 
 ![Time series chart is displayed with hours for one day and a fairness score](images/wos-insight-time-chart.png)
 
