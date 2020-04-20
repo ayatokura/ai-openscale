@@ -40,6 +40,7 @@ Watson OpenScale
         wos-training-data-schema.md
         wos-schema-definition.md
         cloud-upgrading.md
+        wos-alerts.md
 
     {: .topicgroup}
     Configuring model monitors
