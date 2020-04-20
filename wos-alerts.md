@@ -34,3 +34,7 @@ You can enable alerts from the **Actions** menu. After you enable alerts, you ca
 
 {{site.data.keyword.aios_short}} uses the time that the alert is set to determine the time of day of the alert itself. When you choose either the daily or weekly option, you should make sure that you are setting the alert at the same time that you wish to receive the email message in your inbox.
 {: note}
+
+The alert comes in the form of an email message that displays the monitors and details about any of the threshold violations:
+
+![The alert sample email message shows information about each of the monitors and details for the threshold violations in the fairness monitor](images/wos-alerts-email.png)
