@@ -148,3 +148,18 @@ When this happens, it can be resolved by restarting the following pods:
 - aiopenscale-ibm-aios-configuration
 - aiopenscale-ibm-aios-datamart
 
+## Missing deployments
+{: #ts-trouble-icp4d-missing-deployment}
+
+A deployed model does not show up as a deployment that can be selected to create a subscription.
+{: tsSymptoms}
+
+There are different reasons that a deployment does not show up in the list of available deployed modes. If the model is not a supported type of model because it uses an unsupported algorithm or framework, it won't appear. Your machine learning provider might not be configured properly. It could also be that there are issues with permissions.
+{: tsCauses}
+
+Use the following steps to resolve this issue:
+{: tsResolve}
+
+1. Check that the model is a supported type. Not sure? For more information, see [Supported machine learning engines, frameworks, and models](/docs/ai-openscale-icp?topic=ai-openscale-icp-in-ov).
+2. Check that a machine learning provider exists in the {{site.data.keyword.aios_short}} configuration for the specific deployment space. For more information, see [Deployment spaces](https://www.ibm.com/support/producthub/icpdata/docs/content/SSQNUZ_current/wsj/analyze-data/ml-spaces_local.html){: external}.
+3. Check that the `admin` user has permission to see the space. 
