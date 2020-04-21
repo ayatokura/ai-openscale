@@ -20,10 +20,6 @@ subcollection: ai-openscale
 {:support: data-reuse='support'}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # Microsoft Azure ML Service frameworks
@@ -102,7 +98,7 @@ The following sample JSON file meets the preceding requirements and can be used 
   ]
 }
 ```
-
+{: codeblock}
 
 ### Required web service JSON response format
 {: #frmwrks-azureservice-JSON-sample-response}
@@ -148,6 +144,8 @@ The following sample JSON file meets the preceding requirements and can be used 
   ]
 }
 ```
+{: codeblock}
+
 
 ## Sample notebooks
 {: #frmwrks-azureservice-smpl-ntbks}
@@ -280,7 +278,7 @@ subscription.payload_logging.store(records=records_list)
    
 For languages other than Python, you can also perform payload logging directly, using a REST API.
    
-```
+```json
 token_endpoint = "https://iam.cloud.ibm.com/identity/token"
 headers = {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -296,8 +294,6 @@ req = requests.post(token_endpoint, data=data, headers=headers)
 token = req.json()['access_token']
 ```
 {: codeblock}
-{: json}
-
 
 ```python
 import requests, uuid
