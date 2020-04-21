@@ -19,10 +19,6 @@ subcollection: ai-openscale
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
@@ -31,7 +27,7 @@ subcollection: ai-openscale
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 
-# Troubleshooting
+# Troubleshooting the {{site.data.keyword.aios_short}} service
 {: #ts-trouble}
 
 You can use the following techniques to work around problems with {{site.data.keyword.aios_full}}.
