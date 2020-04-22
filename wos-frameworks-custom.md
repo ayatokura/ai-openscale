@@ -20,10 +20,6 @@ subcollection: ai-openscale
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # Custom ML frameworks
@@ -200,7 +196,9 @@ You can configure {{site.data.keyword.aios_short}} to work with a custom machine
 ## Explore further
 {: #frmwrks-custom-mediumblogs}
 
-[Monitor custom machine learning engine with {{site.data.keyword.aios_short}}](https://developer.ibm.com/patterns/monitor-custom-machine-learning-engine-with-ai-openscale/){: external}
+Use a custom machine learning monitor to create a way to interact with other services, such as {{site.data.keyword.conversationfull}}.
+- [Monitor custom machine learning engine with {{site.data.keyword.aios_short}}](https://developer.ibm.com/patterns/monitor-custom-machine-learning-engine-with-ai-openscale/){: external}
+- [Explaining your {{site.data.keyword.conversationshort}} chatbot using {{site.data.keyword.aios_short}} ](https://medium.com/@prempiyush/explaining-your-watson-assistant-chatbot-using-watson-openscale-9515e90cbdab){: external}
 
 
 ## Specifying a Custom ML service instance
