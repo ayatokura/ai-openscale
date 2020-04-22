@@ -33,6 +33,13 @@ To automate the provisioning and configuration of the required {{site.data.keywo
 - The module provides an alternate way for technical users to see an instance of {{site.data.keyword.aios_short}} running without needing to provision and configure the services yourself, as described in the [Getting started](/docs/ai-openscale?topic=ai-openscale-getting-started) tutorial.
 - The Python module runs through the process of checking the services that you have and creating the ones that are necessary, including {{site.data.keyword.aios_short}}. After the module runs successfully, from the {{site.data.keyword.cloud_notm}} dashboard you can launch {{site.data.keyword.aios_short}} to see how it monitors a model.
 
+### {{site.data.keyword.aios_short}} Python Client
+{: #abt-python}
+
+The [{{site.data.keyword.aios_short}} Python Client](http://ai-openscale-python-client.mybluemix.net/){: external} is a Python library that works directly with the {{site.data.keyword.aios_short}} service. For development and automation purposes, you can optionally use the Python client to directly configure the datamart database, bind your machine learning engine, and select and monitor deployments. For examples using the Python client in this way, see the [{{site.data.keyword.aios_short}} sample notebooks](https://github.com/pmservice/ai-openscale-tutorials/tree/master/notebooks){: external}.
+
+<p>&nbsp;</p>
+
 ## Before you begin
 {: #as-prereqs}
 

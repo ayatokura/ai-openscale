@@ -270,12 +270,6 @@ The {{site.data.keyword.aios_short}} service requires the same level of browser 
 <p>&nbsp;</p>
 
 
-### {{site.data.keyword.aios_short}} Python Client
-{: #abt-python}
-
-The [{{site.data.keyword.aios_short}} Python Client](http://ai-openscale-python-client.mybluemix.net/){: external} is a Python library that works directly with the {{site.data.keyword.aios_short}} service. For development and automation purposes, you can optionally use the Python client to directly configure the datamart database, bind your machine learning engine, and select and monitor deployments. For examples using the Python client in this way, see the [{{site.data.keyword.aios_short}} sample notebooks](https://github.com/pmservice/ai-openscale-tutorials/tree/master/notebooks){: external}.
-
-<p>&nbsp;</p>
 
 ## Issues specific to {{site.data.keyword.aios_short}}
 {: #cloud-issues}
