@@ -31,7 +31,7 @@ subcollection: ai-openscale
 To see details behind a particular Fairness statistic, click the chart for a specific time. A visualization opens of the data points for a monitored feature at the selected hour. Following the previous example the Age feature is shown in the following example.
 {: shortdesc}
 
-Note the three filters at the top of the page (Feature, Date, and Hour) that let you select a different feature or time to review details.
+There are filters, such as **Feature**, **Date**, and **Hour** that you can use to select a different feature or time to review details.
 
 ![Time series chart is displayed with columns representing payload and perturbed data for age and the number of favorable outcomes](images/wos-insight-data-detail.png)
 
