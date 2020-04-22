@@ -101,7 +101,7 @@ Two different datasets are used for computing fairness and accuracy. Fairness is
 
 The results of these determinations are available in the bias visualization, which includes the following views. (You only see the views if there is data to support
 
-- **Payload + Perturbed**: Includes the scoring request received for the selected hour plus additional records from previous hours if the minimum number of records required for evaluation was not met. Includes additional perturbed/synthesized records used to test the model's response when the value of the monitored feature changes.
+- **Payload + Perturbed**: This balanced calculation includes the scoring request received for the selected hour plus additional records from previous hours if the minimum number of records required for evaluation was not met. Includes additional perturbed/synthesized records used to test the model's response when the value of the monitored feature changes.
 
    Take note of the following payload and perturbed details:
 
