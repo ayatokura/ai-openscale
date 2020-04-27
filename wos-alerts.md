@@ -38,3 +38,9 @@ You can enable alerts from the **Actions** menu. After you enable alerts, you ca
 The alert comes in the form of an email message that displays the monitors and details about any of the threshold violations:
 
 ![The alert sample email message shows information about each of the monitors and details for the threshold violations in the fairness monitor](images/wos-alerts-email.png)
+
+## Using Slack with {{site.data.keyword.aios_short}} alerts
+{: #alerts-slack}
+
+You can deliver {{site.data.keyword.aios_short}} alerts to Slack by using the email Slack app. Select a channel and look for the custom email address. Use that email address as the recipient when setting up the email alerts in {{site.data.keyword.aios_short}}.
+{: tip}
