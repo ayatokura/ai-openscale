@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-04-18"
 
-keywords: supported frameworks, models, model types, limitations, limits, custom machine learning engine, custom
+keywords: supported frameworks, models, model types, limitations, limits, custom machine learning engine, custom wrapper, Watson Assistant, chatbot
 
 subcollection: ai-openscale
 
@@ -197,8 +197,10 @@ You can configure {{site.data.keyword.aios_short}} to work with a custom machine
 {: #frmwrks-custom-mediumblogs}
 
 Use a custom machine learning monitor to create a way to interact with other services, such as {{site.data.keyword.conversationfull}}.
+
 - [Monitor custom machine learning engine with {{site.data.keyword.aios_short}}](https://developer.ibm.com/patterns/monitor-custom-machine-learning-engine-with-ai-openscale/){: external}
 - [Explaining your {{site.data.keyword.conversationshort}} chatbot using {{site.data.keyword.aios_short}} ](https://medium.com/@prempiyush/explaining-your-watson-assistant-chatbot-using-watson-openscale-9515e90cbdab){: external}
+- For a working example of a custom wrapper, see [Custom Wrapper to {{site.data.keyword.conversationshort}} to interact with {{site.data.keyword.aios_short}}](https://github.com/prempiyush/custom-wa-wrapper){: external}
 
 
 ## Specifying a Custom ML service instance
