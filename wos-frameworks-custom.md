@@ -213,7 +213,7 @@ Your first step in the {{site.data.keyword.aios_short}} tool is to specify a ser
 
 - Username
 - Password
-- API endpoint
+- API endpoint, that uses the format `https://host:port`, such as https://custom-serve-engine.mybluemix.net:8443
 
 Choose whether to connect to your deployments [by requesting a list](/docs/ai-openscale?topic=ai-openscale-co-connect#co-config-request-list) or [by entering individual scoring endpoints](/docs/ai-openscale?topic=ai-openscale-co-connect#co-config-scoring-endpoints).
 
