@@ -70,7 +70,7 @@ If you do not use a notebook to provide a training data summary, you must enter 
 
 - For a Db2 database, enter the following information:
   
-  - Host name or IP address
+  - Host name or IP address, excluding the initial `https://` prefix and the final forward slash (/)
   - Port
   - Database (name)
   - Username
@@ -87,6 +87,11 @@ To ensure a valid connection, click the **Connect** button to connect to the tra
 - For a Db2 database, select both a schema and a training table that includes columns expected by your model.
 - For Cloud Object Storage, select a Bucket and a Data Set.
 
+### Model transaction
+{: #mo-work-model-dets-mtrxn}
+
+{{site.data.keyword.aios_short}} checks the payload logging automatically for models that you create with {{site.data.keyword.pm_full}}. For external machine learning providers, you must send a sample payload either by pasting a JSON file into the JSON payload box or by using the API to send a request.
+
 ### Training data label
 {: #mo-work-model-dets-training-data-label}
 
@@ -98,10 +103,6 @@ You must select a single unique feature from the data to serve as the label colu
 Select all the features that were used to train the model before it was deployed.
 
 
-### Model transaction
-{: #mo-work-model-dets-mtrxn}
-
-{{site.data.keyword.aios_short}} checks the payload logging automatically for models that you create with {{site.data.keyword.pm_full}}. For external machine learning providers, you must send a sample payload either by pasting a JSON file into the JSON payload box or by using the API to send a request.
 
 ### Model output details
 {: #mo-work-model-dets-output-dets}
