@@ -97,6 +97,20 @@ For proper processing of payload analytics, {{site.data.keyword.aios_short}} doe
 Remove double quotation marks (") from the column names of the payload file.
 {: tsResolve}
 
+
+## Error: An error occurred while computing feature importance
+{: #ts-trouble-wos-equals-sign-explainability}
+
+You receive the following error message during processing: `Error: An error occurred while computing feature importance`.
+{: tsSymptoms}
+
+Having an equals sign (=) in the column name of a dataset causes an issue with explainability.
+{: tsCauses}
+
+Remove the equals sign (=) from the column name and send the dataset through processing again.
+{: tsResolve}
+
+
 ## Why are some of my active debias records missing?
 {: #ts-trouble-common-payloadlogging-1000k-limit}
 {: troubleshoot}
@@ -163,4 +177,6 @@ Use the following steps to resolve this issue:
 1. Check that the model is a supported type. Not sure? For more information, see [Supported machine learning engines, frameworks, and models](/docs/ai-openscale-icp?topic=ai-openscale-icp-in-ov).
 2. Check that a machine learning provider exists in the {{site.data.keyword.aios_short}} configuration for the specific deployment space. For more information, see [Deployment spaces](https://www.ibm.com/support/producthub/icpdata/docs/content/SSQNUZ_current/wsj/analyze-data/ml-spaces_local.html){: external}.
 3. Check that the CP4D `admin` user has permission to access the deployment space. 
+
+
 
