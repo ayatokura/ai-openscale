@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-04-18"
+lastupdated: "2020-05-18"
 
 keywords: notices, legal, creative commons, licenses, fonts, packages
 
