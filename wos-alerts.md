@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-05-05"
+lastupdated: "2020-05-18"
 
 keywords: alerts, threshold violations, email
 
