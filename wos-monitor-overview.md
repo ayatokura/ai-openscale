@@ -147,23 +147,9 @@ For the following two items, from the Navigation pane, click **Service credentia
 - The features that were used to train the AI deployment: For example, for the tutorial,select all features.
 - The text and categorical features: For example, for the tutorial, click CheckingStatus, CreditHistory, EmploymentDuration, ExistingSavings, ForeignWorker, Housing, InstallmentPlans, Job, LoanPurpose, OthersOnLoan, OwnsProperty, Sex, and Telephone.
 - The deployment prediction column: For example, for the tutorial, click the **predictedLabel** tile.
-<!--
-- The transaction ID column: Not required for the interactive setup tutorial (click Next to bypass this step)
 
 
-, but required for the Application monitor tutorial. 
-   
-   For example, for the Application monitor tutorial, click the **transaction_id** tile. The `transaction_id` value is required to connect a machine learning model with business applications and KPIs. Without a matching `transaction_id` column, it is impossible to track correlation between the two monitors.
-
--->
 When you finish providing all the required information, a summary of your selections is presented for review. If you want to change anything, click the **Edit** icon for that section, otherwise, save your work.
-
-<!--
-To understand the impact of the monitored model along with business applications, business events must be matched with related scoring payload data. For this reason, one column from a scoring payload that is logged to {{site.data.keyword.aios_short}} must contain a unique business transaction ID. The same transaction ID must be available in business events. For more details about applications, see [Configuring applications]().
-
-If there is no transaction ID column on the list, please either score your models or log scoring payload to {{site.data.keyword.aios_short}}, including meta information that contains the `transaction_id` field.
-{: note}
--->
 
 The following sections give some specific information that you encounter depending on the type of model, either [Numeric/categorical data](#mo-nuca) or [Images and Unstructured text](#mo-imun).
 
