@@ -168,7 +168,7 @@ When this happens, it can be resolved by restarting the following pods:
 A deployed model does not show up as a deployment that can be selected to create a subscription.
 {: tsSymptoms}
 
-There are different reasons that a deployment does not show up in the list of available deployed modes. If the model is not a supported type of model because it uses an unsupported algorithm or framework, it won't appear. Your machine learning provider might not be configured properly. It could also be that there are issues with permissions.
+There are different reasons that a deployment does not show up in the list of available deployed models. If the model is not a supported type of model because it uses an unsupported algorithm or framework, it won't appear. Your machine learning provider might not be configured properly. It could also be that there are issues with permissions.
 {: tsCauses}
 
 Use the following steps to resolve this issue:
