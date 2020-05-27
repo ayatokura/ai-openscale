@@ -55,7 +55,7 @@ The {{site.data.keyword.aios_short}} service supports the following machine lear
 
    You can use IBM SPSS C&DS to perform payload logging, feedback logging, and to measure performance accuracy, run-time bias detection, explainability, and auto-debias function in {{site.data.keyword.wos4d_full}}.
 
-
+[](/docs/ai-openscale?topic=ai-openscale-rn-12ki#wos-limitations-feat-col-size-limit)
 <p>&nbsp;</p>
 
 ## Support for multiple machine learning engines
