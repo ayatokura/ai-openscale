@@ -7,7 +7,7 @@ Watson OpenScale
     {: .navgroup id="learn"}
     getting-started.md
     [Learn about Watson OpenScale](https://www.ibm.com/cloud/watson-openscale/)
-    wos-accessibility.md
+    cloud-accessibility.md
     cloud-interactive-setup.md
     cloud-alt-setup.md
     cloud-tutorial-adv.md

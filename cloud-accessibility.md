@@ -26,6 +26,7 @@ subcollection: ai-openscale
 {:faq: data-hd-content-type='faq'}
 
 # Accessibility features in {{site.data.keyword.aios_short}} content and documentation
+{: #wos-accessibility}
 
 IBM is committed to accessibility. Accessibility features that follow compliance guidelines are included in {{site.data.keyword.aios_full}} content and documentation to benefit users with disabilities. Parts of the user interface of {{site.data.keyword.aios_short}} are accessible, but not entirely. Only documentation is compliant, with a subset of parts of the overall product.
 {: shortdesc}
@@ -42,12 +43,14 @@ With the accessibility features of {{site.data.keyword.aios_short}}, you can do 
 For more information about the commitment that IBM has to accessibility, see [IBM Accessibility](http://www.ibm.com/able){: external}.
 
 ## TTY service
+{: #wos-accessibility-tty}
 
 In addition to standard IBM help desk and support websites, IBM has established a TTY telephone service for use by deaf or hard of hearing customers to access sales and support services:
 
 800-IBM-3383 (800-426-3383) within North America
 
 ## Additional interface information
+{: #wos-accessibility-additional-info}
 
 The {{site.data.keyword.aios_short}} user interfaces do not have content that flashes 2 - 55 times per second.
 
