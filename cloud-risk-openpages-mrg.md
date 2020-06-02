@@ -18,10 +18,6 @@ subcollection: ai-openscale
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # Model governance
@@ -178,7 +174,7 @@ So that the two services can be fully integrated, you must add your IBM OpenPage
 
 After you run the set-up notebook, you can both see and compare the sample evaluations in {{site.data.keyword.aios_short}}. There is a downloadable report, the Model Summary Report, that includes all the quality measures, fairness measures, and drift magnitude.
 
-1. From the Insights dashboard, click the model deployment tile
+1. From the Insights dashboard, click the model deployment tile.
 2. From the Actions drop-down box, click one of the following analysis options:
    
    1. Past evaluations: Lists all the previous versions of the evaluation. 
