@@ -62,7 +62,7 @@ Tests to be run on machine learning and deep learning models differ from straigh
 {: help} 
 {: support}
 
-IBM offers a model risk management solution for financial services with {{site.data.keyword.aios_full}}. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and validates models. Specifically, you can use the following configurations:
+IBM offers a model risk management solution with {{site.data.keyword.aios_full}}. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and validates models. Specifically, you can use the following configurations:
 
 - [Model risk management with {{site.data.keyword.aios_short}}](/docs/ai-openscale?topic=ai-openscale-mrm-risk-wos-only)
 

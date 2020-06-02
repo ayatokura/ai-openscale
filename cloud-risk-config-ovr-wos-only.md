@@ -27,7 +27,7 @@ subcollection: ai-openscale
 # Configure {{site.data.keyword.aios_short}} for model risk management
 {: #mrm-risk-config-ovr-wos-only}
 
-IBM offers a model risk management solution for financial services with IBM Watson OpenScale. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and performs model validations.
+IBM offers a model risk management solution with IBM Watson OpenScale. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and performs model validations.
 {: shortdesc}
 
 ## Setup options

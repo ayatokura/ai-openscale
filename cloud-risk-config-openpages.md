@@ -27,7 +27,7 @@ subcollection: ai-openscale
 # Configure model governance with IBM OpenPages MRG
 {: #mrm-risk-config-openpages}
 
-IBM offers an end-to-end model risk management solution for financial services with {{site.data.keyword.aios_full}} and IBM OpenPages with Watson. IBM OpenPages MRG offers model risk governance that enables you to store and manage a comprehensive model inventory. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and performs model validations. What is IBM OpenPages Model Risk Governance (MRG)? For more information, see the [IBM OpenPages with Watson product page](https://www.ibm.com/us-en/marketplace/governance-risk-and-compliance){: external} and the [IBM OpenPages online help](https://www.ibm.com/support/knowledgecenter/SSFUEU_8.0.0/op_grc_user/c_oppm_mrg_intr_module_description.html){: external}.
+IBM offers an end-to-end model risk management solution with {{site.data.keyword.aios_full}} and IBM OpenPages with Watson. IBM OpenPages MRG offers model risk governance that enables you to store and manage a comprehensive model inventory. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and performs model validations. What is IBM OpenPages Model Risk Governance (MRG)? For more information, see the [IBM OpenPages with Watson product page](https://www.ibm.com/us-en/marketplace/governance-risk-and-compliance){: external} and the [IBM OpenPages online help](https://www.ibm.com/support/knowledgecenter/SSFUEU_8.0.0/op_grc_user/c_oppm_mrg_intr_module_description.html){: external}.
 {: shortdesc}
 
 ## Setup options

@@ -27,7 +27,7 @@ subcollection: ai-openscale
 # Manage model risk
 {: #mrm-risk-wos-only}
 
-IBM offers a model risk management solution for financial services with {{site.data.keyword.aios_full}}. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and performs model validations.
+IBM offers a model risk management solution with {{site.data.keyword.aios_full}}. {{site.data.keyword.aios_full}} monitors and measures outcomes from AI Models across its lifecycle and performs model validations.
 {: shortdesc}
 
 ## Perform analysis in {{site.data.keyword.aios_short}}
