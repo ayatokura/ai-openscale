@@ -101,7 +101,7 @@ From the [{{site.data.keyword.aios_short}} dashboard](https://aiopenscale.cloud.
 
    - For example, the following screen shows data for a specific date and time. The dates and times vary, depending on when you run the module.
 
-   - For information about interpreting the time series chart, see [Getting insights](/docs/ai-openscale?topic=ai-openscale-it-ov).
+   - For information about interpreting the time series chart, see [Getting insights](/docs/ai-openscale?topic=ai-openscale-io-ov).
 
     ![Monitor data is shown](images/wos-fairness-age-payload-perturbed.png)
 
@@ -129,5 +129,5 @@ For information about finding and explaining transactions, see [Explaining trans
 
 - To learn about biases, see [Fairness](/docs/ai-openscale?topic=ai-openscale-mf-monitor).
 - To learn about how well your model predicts outcomes, see [Accuracy](/docs/ai-openscale?topic=ai-openscale-acc-monitor).
-- To learn about interpreting charts and data, see [Getting insights](/docs/ai-openscale?topic=ai-openscale-it-ov).
+- To learn about interpreting charts and data, see [Getting insights](/docs/ai-openscale?topic=ai-openscale-io-ov).
 - To learn how underlying factors influence outcomes, see [Monitoring explainability](/docs/ai-openscale?topic=ai-openscale-ie-ov).

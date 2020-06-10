@@ -150,7 +150,7 @@ At a glance, the Insights page shows any issues with fairness and accuracy, as d
 1.  From the Insights page, click the `GermanCreditRiskModelICP` tile to view details about the monitored data.
 1.  Click and drag the marker across the chart to view a day and time period that shows data and then click the **View details** link. Alternatively, you can click different time periods in the chart to change the data that you see. 
 
-For information about interpreting the time series chart, see [Getting insights](/docs/ai-openscale?topic=ai-openscale-it-ov).
+For information about interpreting the time series chart, see [Getting insights](/docs/ai-openscale?topic=ai-openscale-io-ov).
 
 ### View explainability
 {: #wos-explain}
@@ -179,6 +179,6 @@ After you finish the tour and the application setup, you can perform one of the 
 ## Next steps
 {: #gs-next}
 
-- Learn more about [viewing and interpreting the data](/docs/ai-openscale?topic=ai-openscale-it-ov) and [monitoring explainability](/docs/ai-openscale?topic=ai-openscale-ie-ov).
+- Learn more about [viewing and interpreting the data](/docs/ai-openscale?topic=ai-openscale-io-ov) and [monitoring explainability](/docs/ai-openscale?topic=ai-openscale-ie-ov).
 
 - To learn more about {{site.data.keyword.aios_short}} in action, see [How AI picks the highlights from Wimbledon fairly and fast](https://www.ibmbigdatahub.com/blog/ai-picks-highlights-wimbledon-fairly-fast){: external}

@@ -267,4 +267,4 @@ You will now see an explanation of how the model arrived at its conclusion, incl
 ## Next steps
 {: #crt-next-steps}
 
-- Learn more about [viewing and interpreting the data](/docs/ai-openscale?topic=ai-openscale-it-ov) and [monitoring explainability](/docs/ai-openscale?topic=ai-openscale-ie-ov).
+- Learn more about [viewing and interpreting the data](/docs/ai-openscale?topic=ai-openscale-io-ov) and [monitoring explainability](/docs/ai-openscale?topic=ai-openscale-ie-ov).
