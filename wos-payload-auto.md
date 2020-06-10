@@ -18,16 +18,12 @@ subcollection: ai-openscale
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # Automating payload logging
 {: #fmrk-workaround-pyld-lg}
 
-Automatic payload logging exists between {{site.data.keyword.aios_full}} and {{site.data.keyword.pm_full}} when they are provisioned in the same {{site.data.keyword.Bluemix_notm}} account. You can also automate payload logging for other machine learning providers, or for an {{site.data.keyword.pm_full}} instance that is not in the same account, by using one of the following cases and options:
+Automatic payload logging exists between {{site.data.keyword.aios_full}} and {{site.data.keyword.pm_full}} when they are provisioned in the same {{site.data.keyword.Bluemix_notm}} account, or for {{site.data.keyword.wos4d_full}} the same cluster. You can also automate payload logging for other machine learning providers, or for an {{site.data.keyword.pm_full}} instance that is not in the same account, by using one of the following cases and options:
 {: shortdesc}
 
 ### Case 1: Keep the original format of scoring input and output (different than one required by {{site.data.keyword.aios_short}})
