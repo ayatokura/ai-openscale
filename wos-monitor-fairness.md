@@ -40,7 +40,7 @@ Throughout this process, {{site.data.keyword.aios_full}} analyzes your model and
 ### Values that represent a favorable outcome for the model
 {: #mf-monitor-reqs-fave}
 
-Values are derived from the `label` column in the [training data](/docs/ai-openscale?topic=ai-openscale-trainingdata#trainingdata). By default the `predictedLabel` column is set as the `prediction` column.
+Values are derived from the `label` column in the [training data](/docs/ai-openscale?topic=ai-openscale-fmt-upld-training_data_schema-ovr). By default the `predictedLabel` column is set as the `prediction` column.
 
 Favorable and Unfavorable values need to be specified by using the value of the `prediction` column as a string data type, such as `0` or `1`.
 

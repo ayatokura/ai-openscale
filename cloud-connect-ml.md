@@ -32,7 +32,7 @@ See additional information in the [{{site.data.keyword.aios_short}} Python clien
 ## Before you begin
 {: #cml-prereq}
 
-You need to have the training data of your model available in Db2 or {{site.data.keyword.cos_full}} to monitor bias for your model. Explainability and accuracy are not supported for Python functions. For more information about training data, see. Why does {{site.data.keyword.aios_short}} need access to training data?](/docs/ai-openscale?Topic=ai-openscale-trainingdata#trainingdata)
+You need to have the training data of your model available in Db2 or {{site.data.keyword.cos_full}} to monitor bias for your model. Explainability and accuracy are not supported for Python functions. For more information about training data, see. Why does {{site.data.keyword.aios_short}} need access to training data?](/docs/ai-openscale?topic=ai-openscale-fmt-upld-training_data_schema-ovr)
 
 - Import and initiate {{site.data.keyword.aios_short}}
 

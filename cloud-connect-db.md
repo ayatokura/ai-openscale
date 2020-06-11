@@ -60,7 +60,7 @@ You can upgrade to another database from the free database. It is not possible t
 
 1.  Select your existing database type (Compose for Postgres, database for Postgres, or Db2), then a database from the **database** drop-down menu, and then a **schema**:
 
-    {{site.data.keyword.aios_short}} uses a PostgreSQL or Db2 database to store model-related data (feedback data, scoring payload) and calculated metrics. Lite Db2 plans are not currently supported. For more information about training data, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/ai-openscale?topic=ai-openscale-trainingdata#trainingdata)
+    {{site.data.keyword.aios_short}} uses a PostgreSQL or Db2 database to store model-related data (feedback data, scoring payload) and calculated metrics. Lite Db2 plans are not currently supported. For more information about training data, see [Why does {{site.data.keyword.aios_short}} need access to my training data?](/docs/ai-openscale?topic=ai-openscale-fmt-upld-training_data_schema-ovr)
     {: note}
 
     ![Select your database screen displays with fields for you to enter database type, database name and schema.](images/cloud-gs-set-lite-db2.png)
