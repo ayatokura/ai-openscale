@@ -5,7 +5,7 @@ copyright:
 lastupdated: "2020-05-18"
 
 
-keywords: identity and access management, authentication, security
+keywords: identity and access management, authentication, security, IAM, RBAC, roles, users, access, permissions, 
 
 subcollection: ai-openscale
 
@@ -20,10 +20,6 @@ subcollection: ai-openscale
 {:codeblock: .codeblock}
 {:table: .aria-labeledby="caption"}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # {{site.data.keyword.aios_short}} Identity and Access Management 
@@ -33,6 +29,7 @@ Access to {{site.data.keyword.aios_full}} service instances for users in your ac
 {: shortdesc}
 
 ## Identity and Access Management roles and actions
+{: #iam-docs-wos}
 
 Policies enable access to be granted at different levels. Some of the options include the following: 
 
@@ -62,6 +59,39 @@ The following table provides examples for some of the platform management action
 {: caption="Table 1. Example platform management roles and actions for services in an account" caption-side="top"}
 {: summary="The first row of the table describes separate options that you can choose from when creating a policy, and the first column describes the selected roles for the policy. The remaining cells map to which role is selected from the first column, and which type of policy has been selected from the options in the first row."}
 {: #platformrolestable1}
+
+## Users and roles for {{site.data.keyword.aios_short}}
+{: #iam-docs-wos-rolematrix}
+
+Table 1: Operations by role
+
+Operations | Admin role | Editor role | Viewer role
+|:---:|:---:|:---:|:---:|
+Add machine learning engine configuration | ✔ |  | 
+Remove machine learning engine configuration | ✔ |   | 
+Update machine learning configuration | ✔ |   | 
+View machine learning configuration | ✔ |   | 
+Add database configuration | ✔ |   | 
+Remove database configuration | ✔ |   | 
+Update database configuration | ✔ |   | 
+View database configuration | ✔ |   | 
+IBM OpenPages configuration | ✔ |   | 
+Model approval | ✔ | ✔ | ✔
+Evaluation | ✔ | ✔ | ✔
+View users and roles | ✔ |   | 
+Add subscription to dashboard | ✔ | ✔ | 
+Remove subscription from dashboard | ✔ | ✔ | 
+View subscription | ✔ | ✔ | ✔
+Configure monitoring condition | ✔ | ✔ | 
+View monitoring condition | ✔ | ✔ | ✔
+Upload payload logging record | ✔ | ✔ | 
+Upload feedback data | ✔ | ✔ | 
+Upload training data CSV file in model risk management | ✔ | ✔ | 
+Run auto setup | ✔ |   | 
+API calls to update the system | ✔ | ✔ | 
+API calls to query the subscriptions and monitoring | ✔ | ✔ | ✔
+{: caption="Operations by role" caption-side="top"}
+
 
 
 For service access roles, which enable users access to {{site.data.keyword.aios_short}} as well as the ability to call the REST API, {{site.data.keyword.aios_short}} defers to the platform management roles that are listed in the preceding table. For information about assigning user roles in the UI, see [Managing access to resources](/docs/iam?topic=iam-iammanidaccser#iammanidaccser){: external}.
