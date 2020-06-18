@@ -66,7 +66,7 @@ The following table provides examples for some of the platform management action
 Table 1: Operations by role
 
 Operations | Admin role | Editor role | Viewer role |
-|:---:|:---:|:---:|:---:|
+|:---|:---:|:---:|:---:|
 Add machine learning engine configuration | ✔ |  |   |  
 Remove machine learning engine configuration | ✔ |   |   |
 Update machine learning configuration | ✔ |   |   |
