@@ -94,6 +94,6 @@ API calls to query the subscriptions and monitoring | ✔ | ✔ | ✔ |
 
 
 
-For service access roles, which enable users access to {{site.data.keyword.aios_short}} as well as the ability to call the REST API, {{site.data.keyword.aios_short}} defers to the platform management roles that are listed in the preceding table. For information about assigning user roles in the UI, see [Managing access to resources](/docs/iam?topic=iam-iammanidaccser#iammanidaccser){: external}.
+For service access roles, which enable user access to {{site.data.keyword.aios_short}} as well as the ability to call the REST API, {{site.data.keyword.aios_short}} defers to the platform management roles that are listed in the preceding table. For information about assigning user roles in the UI, see [Managing access to resources](/docs/iam?topic=iam-iammanidaccser#iammanidaccser){: external}.
 
  
