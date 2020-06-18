@@ -65,31 +65,32 @@ The following table provides examples for some of the platform management action
 
 Table 1: Operations by role
 
-Operations | Admin role | Editor role | Viewer role |
+| Operations | Admin role | Editor role | Viewer role |
 |:---|:---:|:---:|:---:|
-Add machine learning engine configuration | ✔ |  |   |  
-Remove machine learning engine configuration | ✔ |   |   |
-Update machine learning configuration | ✔ |   |   |
-View machine learning configuration | ✔ |   |   |
-Add database configuration | ✔ |   |   |
-Remove database configuration | ✔ |   |   |
-Update database configuration | ✔ |   |   |
-View database configuration | ✔ |   |    |
-IBM OpenPages configuration | ✔ |   |    |
-Model approval | ✔ | ✔ | ✔ |
-Evaluation | ✔ | ✔ | ✔ |
-View users and roles | ✔ |   |   |
-Add subscription to dashboard | ✔ | ✔ |    |
-Remove subscription from dashboard | ✔ | ✔ |    |
-View subscription | ✔ | ✔ | ✔ |
-Configure monitoring condition | ✔ | ✔ |    |
-View monitoring condition | ✔ | ✔ | ✔ |
-Upload payload logging record | ✔ | ✔ |    |
-Upload feedback data | ✔ | ✔ |    |
-Upload training data CSV file in model risk management | ✔ | ✔ |    |
-Run auto setup | ✔ |   |    |
-API calls to update the system | ✔ | ✔ |    |
-API calls to query the subscriptions and monitoring | ✔ | ✔ | ✔ |
+| Add machine learning engine configuration | ✔ |  |   |  
+| Remove machine learning engine configuration | ✔ |   |   |
+| Update machine learning configuration | ✔ |   |   |
+| View machine learning configuration | ✔ |   |   |
+| Add database configuration | ✔ |   |   |
+| Remove database configuration | ✔ |   |   |
+| Update database configuration | ✔ |   |   |
+| View database configuration | ✔ |   |    |
+| IBM OpenPages configuration | ✔ |   |    |
+| Model approval | ✔ | ✔ | ✔ |
+| Evaluation | ✔ | ✔ | ✔ |
+| View users and roles | ✔ |   |   |
+| Add subscription to dashboard | ✔ | ✔ |    |
+| Remove subscription from dashboard | ✔ | ✔ |    |
+| View subscription | ✔ | ✔ | ✔ |
+| Configure monitoring condition | ✔ | ✔ |    |
+| View monitoring condition | ✔ | ✔ | ✔ |
+| Upload payload logging record | ✔ | ✔ |    |
+| Upload feedback data | ✔ | ✔ |    |
+| Upload training data CSV file in model risk management | ✔ | ✔ |    |
+| Run auto setup | ✔ |   |    |
+| API calls to update the system | ✔ | ✔ |    |
+| API calls to query the subscriptions and monitoring | ✔ | ✔ | ✔ |
+
 {: caption="Operations by role" caption-side="top"}
 
 
