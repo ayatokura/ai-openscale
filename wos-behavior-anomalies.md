@@ -17,12 +17,7 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # Drift in data
@@ -41,7 +36,30 @@ Drift is the degradation of predictive performance over time because of hidden c
 
 {{site.data.keyword.aios_short}} analyzes all transactions to find the ones that contribute to drift. It then groups the records based on the similarity of data inconsistency patterns that were significant in contributing to drift.
 
+### Single feature constraints
+distribution constraints
 
+### Double feature constraints
+
+situations where the expected constraint cannot be generated
+how is clustering done?
+transactions show clustered events
+how are we calculating the effect size?
+1hotencoding: wrapper technique, REST API, needs for explainability (generic, required for payload logging, etc) Check with DSE team for notebook sample 
+Mike: email Manish
+
+larger dataset, how to configure? dividing columns into smaller datasets
+What is the technique for larger datasets? (more than 1K columns)
+1012, see the GitHub issue
+also needs columns to make its analysis
+payload column issue 
+
+### Working with large datasets
+
+Example of 4K columns, divided into separate subscriptions of 1K columns each
+
+Mention limits:
+https://cloud.ibm.com/docs/ai-openscale?topic=ai-openscale-rn-12ki#wos-limitations-feat-col-size-limit
 
 ### Do the math
 {: #behavior-anomalies-math}
