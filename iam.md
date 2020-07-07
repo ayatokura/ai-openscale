@@ -76,8 +76,8 @@ Table 1: Operations by role
 | Update database configuration | ✔ |   |   |
 | View database configuration | ✔ |   |    |
 | IBM OpenPages configuration | ✔ |   |    |
-| Model approval | ✔ | ✔ | ✔ |
-| Evaluation | ✔ | ✔ | ✔ |
+| Model approval | ✔ | ✔ |  |
+| Evaluation | ✔ | ✔ |  |
 | View users and roles | ✔ |   |   |
 | Add subscription to dashboard | ✔ | ✔ |    |
 | Remove subscription from dashboard | ✔ | ✔ |    |
