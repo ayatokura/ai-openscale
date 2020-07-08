@@ -42,6 +42,7 @@ To start the configuration process, from the **Explainability** tab, in the **Co
 
 For each of the features, select whether it is controllable. 
 
+![The explainability configuration window with CheckingStatus, LoanDuration, LoanPurpose, LoanAmount, and OtherOnLoan features set to controllable](images/wos-explainability-controllable-features.png)
 
 ## Next steps
 {: #mf-next}

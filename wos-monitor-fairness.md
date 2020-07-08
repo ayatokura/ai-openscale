@@ -84,4 +84,4 @@ After you save your settings for the fairness monitor, you can add features to m
 ## Next steps
 {: #mf-next}
 
-To continue configuring monitors, click the **Drift** tab and click the **Edit** icon. For more information, see [Configuring the drift detection monitor](/docs/ai-openscale?topic=ai-openscale-behavior-drift-config).
+To continue configuring monitors, click the **Drift** tab and click the **Edit** icon. For more information, see [Configuring the explainability monitor](/docs/ai-openscale?topic=ai-openscale-explainability-monitor).
