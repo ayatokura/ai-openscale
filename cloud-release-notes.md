@@ -18,10 +18,6 @@ subcollection: ai-openscale
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # What's new
@@ -29,6 +25,36 @@ subcollection: ai-openscale
 
 This document outlines new features for {{site.data.keyword.aios_full_notm}}.
 {: shortdesc}
+
+## 9 July 2020
+{: #rn-09jul2020}
+
+The following new features and changes to {{site.data.keyword.aios_short}} are available.
+
+- __*Explainability highlights controllable features*__: {{site.data.keyword.aios_short}} now supports explainability detailed analysis that is based on features that are controllable.
+
+   For more information, see [Explaining transactions](/docs/ai-openscale?topic=ai-openscale-ie-ov).
+
+
+## 15 May 2020
+{: #rn-14may2020}
+
+The following new features and changes to {{site.data.keyword.aios_short}} are available.
+
+- __*Role-based user access*__: {{site.data.keyword.aios_short}} now supports access to functionality based on user roles.
+
+   For more information, see [Watson OpenScale Identity and Access Management](/docs/ai-openscale?topic=ai-openscale-iam-docs-template).
+
+
+## 14 March 2020
+{: #rn-14mar2020}
+
+The following new features and changes to {{site.data.keyword.aios_short}} are available.
+
+- __*Model Risk Management and Governance*__: {{site.data.keyword.aios_short}} now supports model risk management either with or without IBM OpenPages integration.
+
+   For more information, see [Model risk management and model governance](/docs/ai-openscale?topic=ai-openscale-mrm-ovr).
+
 
 ## 20 January 2020
 {: #rn-20jan2020}
