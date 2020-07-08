@@ -47,6 +47,9 @@ By using IBM OpenPages in conjunction with {{site.data.keyword.aios_short}} you 
    
 4. Click Save
 
+{{site.data.keyword.aios_short}} monitors deployed models. The non-model designation is for regulatory compliance where you want to experiment with data analysis without deployment and reporting requirements.
+{: note}
+
 ### Step 2: Move the Model through the Candidate Workflow
 {: #mrm-risk-openpages-mrg-opsteps2}
 
