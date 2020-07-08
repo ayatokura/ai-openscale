@@ -47,4 +47,5 @@ For each of the features, select whether it is controllable.
 ## Next steps
 {: #mf-next}
 
-To continue configuring monitors, click the **Drift** tab and click the **Edit** icon. For more information, see [Configuring the drift detection monitor](/docs/ai-openscale?topic=ai-openscale-behavior-drift-config).
+- To see the results of your controllable features settings, see [Viewing explanations by transaction ID](/docs/ai-openscale?topic=ai-openscale-ie-ov#ie-view).
+- To continue configuring monitors, click the **Drift** tab and click the **Edit** icon. For more information, see [Configuring the drift detection monitor](/docs/ai-openscale?topic=ai-openscale-behavior-drift-config).
