@@ -45,6 +45,9 @@ Get a quick overview of explainability in {{site.data.keyword.aios_short}} by wa
 
 2. Click the **Explain a transaction** tab ( ![Explain a transaction tab](images/wos-insight-transact-tab.png) ) in the navigator.
 3. Type a transaction ID.
+4. To analyze results further, click the **Inspect** tab, choose whether to analyze controllable feature only, and click the **Run analysis** button.
+
+   The results of this analysis show how different values can change the outcome of this specific transaction. You must designate which features are controllable. For more information, see [Configuring the explainability monitor](/docs/ai-openscale?topic=ai-openscale-explainability-monitor)
 
 Whenever data is sent to the model for scoring, {{site.data.keyword.pm_full}} sets a transaction ID in the HTTP header by setting the `X-Global-Transaction-Id` field. This transaction ID gets stored in the payload table. To find an explanation of the model behavior for a particular scoring, specify the transaction ID associated with that scoring request. Please note that this behavior applies only to {{site.data.keyword.pm_full}} transactions, and is not applicable for non-WML transactions.
 {: note}
