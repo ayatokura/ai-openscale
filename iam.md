@@ -46,7 +46,6 @@ Select all roles that apply when creating a policy. Each role allows separate ac
 
 The following table provides examples for some of the platform management actions that users can take within the context of catalog resources and resource groups. See the documentation for each catalog offering to understand how the roles apply to users within the context of the service that is being used.
 
-
 |  | One or all IAM-enabled services | Selected service in a resource group | Selected resource group |
 |:--------------|:------------|:-------------|:-------------|
 | Viewer role | View instances, aliases, bindings, and credentials | View only specified instances in the resource group | View resource group |
@@ -63,7 +62,6 @@ The following table provides examples for some of the platform management action
 ## Users and roles for {{site.data.keyword.aios_short}}
 {: #iam-docs-wos-rolematrix}
 
-Table 1: Operations by role
 
 | Operations | Admin role | Editor role | Viewer role |
 |:---|:---:|:---:|:---:|
@@ -90,9 +88,23 @@ Table 1: Operations by role
 | Run auto setup | ✔ |   |    |
 | API calls to update the system | ✔ | ✔ |    |
 | API calls to query the subscriptions and monitoring | ✔ | ✔ | ✔ |
+{: row-headers}
+{: class="comparison-table"}
+{: caption="Table 2. Operations by role" caption-side="top"}
+{: summary="The first row of the table describes separate roles that you can choose from when creating a user. Each column provides a checkmark in the role category for the capability associated with that role."}
 
-{: caption="Operations by role" caption-side="top"}
 
+## Steps
+{: #iam-docs-wos-steps}
+
+1. To add the access policy to existing users, from the IBM Cloud dashboard click **Manage** > **Access (IAM)** > **Users** > **Manage user** > **Access policies**.
+2. To invite new users, from the IBM Cloud dashboard click **Manage** > **Access (IAM)** > **Users** > **Invite user**.
+
+To find your {{site.data.keyword.aios_short}} **datamart ID**, from the **Configuration** tab, go to the **Endpoints** tab for a deployment.
+{: note}
+
+## Next steps
+{: #iam-docs-wos-next-steps}
 
 
 For service access roles, which enable user access to {{site.data.keyword.aios_short}} as well as the ability to call the REST API, {{site.data.keyword.aios_short}} defers to the platform management roles that are listed in the preceding table. For information about assigning user roles in the UI, see [Managing access to resources](/docs/iam?topic=iam-iammanidaccser#iammanidaccser){: external}.
