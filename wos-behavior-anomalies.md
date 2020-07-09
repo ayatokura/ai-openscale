@@ -37,9 +37,12 @@ Drift is the degradation of predictive performance over time because of hidden c
 {{site.data.keyword.aios_short}} analyzes all transactions to find the ones that contribute to drift. It then groups the records based on the similarity of data inconsistency patterns that were significant in contributing to drift.
 
 ### Single feature constraints
+{: #behavior-anomalies-sing-feat}
+
 distribution constraints
 
 ### Double feature constraints
+{: #behavior-anomalies-dbl-feat}
 
 situations where the expected constraint cannot be generated
 how is clustering done?
@@ -55,6 +58,7 @@ also needs columns to make its analysis
 payload column issue 
 
 ### Working with large datasets
+{: #behavior-anomalies-large-datasets}
 
 Example of 4K columns, divided into separate subscriptions of 1K columns each
 
