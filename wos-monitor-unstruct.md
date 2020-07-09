@@ -43,7 +43,7 @@ subcollection: ai-openscale
    3. Publish the model.
    4. Deploy and score the model.
 
-7. Configure {{site.data.keyword.aios_short}} by assigning the `APIClient`, sbuscribing the asset and scoring the model.
+7. Configure {{site.data.keyword.aios_short}} by assigning the `APIClient`, subscribing the asset and scoring the model.
 8. Configure explainability.
    9. Enable the explainability.
    10. Get explanations for the transactions.

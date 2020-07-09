@@ -51,7 +51,7 @@ You can use {{site.data.keyword.aios_short}} to work with image models. You must
   5. Store the model.
   6. Deploy the model.
 
-7. Configure {{site.data.keyword.aios_short}} by assigning the `APIClient`, sbuscribing the asset and scoring the model.
+7. Configure {{site.data.keyword.aios_short}} by assigning the `APIClient`, subscribing the asset and scoring the model.
 8. Configure explainability.
    9. Enable the explainability.
    10. Get explanations for the transactions.
