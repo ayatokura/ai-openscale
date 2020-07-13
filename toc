@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="ai-openscale" category="ai" audience="service" href="/docs/ai-openscale?topic=ai-openscale-getting-started" console-page="/services/aiopenscale" product-page="https://www.ibm.com/cloud/watson-openscale/" path="ai-openscale"}
+{: .toc subcollection="ai-openscale" category="ai" audience="service" href="/docs/ai-openscale?topic=ai-openscale-getting-started" console-page="/services/aiopenscale/" product-page="https://www.ibm.com/cloud/watson-openscale/" path="ai-openscale"}
 Watson OpenScale
 
     {: .navgroup id="learn"}
