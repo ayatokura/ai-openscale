@@ -7,9 +7,6 @@ Watson OpenScale
     {: .navgroup id="learn"}
     getting-started.md
     cloud-accessibility.md
-    cloud-interactive-setup.md
-    cloud-alt-setup.md
-    cloud-tutorial-adv.md
     cloud-addl-rsc.md
 
     {: .topicgroup}
@@ -21,6 +18,12 @@ Watson OpenScale
         wos-frameworks-aws-sagemaker.md
         wos-frameworks-custom.md
         wos-framework-workaround.md
+    {: .navgroup-end}
+
+    {: .navgroup id="tutorial"}
+    cloud-interactive-setup.md
+    cloud-alt-setup.md
+    cloud-tutorial-adv.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
