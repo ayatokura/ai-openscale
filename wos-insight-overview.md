@@ -17,12 +17,7 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # Getting insights with {{site.data.keyword.aios_short}}
@@ -70,6 +65,11 @@ Use the **Explain a transaction** ![Explain a transaction tab](images/wos-insigh
 - [Explaining image models](/docs/ai-openscale?topic=ai-openscale-ie-image)
 - [Explaining unstructured text models](/docs/ai-openscale?topic=ai-openscale-ie-unstruct)
 - [Contrastive explanations](/docs/ai-openscale?topic=ai-openscale-ie-pp-pn)
+
+## Model risk analysis and governance
+{: #io-mrm-insights}
+
+Use the model risk and governance features to create pre-production and production repositories and compare models. For more information, see [Model risk management and model governance](/docs/ai-openscale?topic=ai-openscale-mrm-ovr).
 
 ## Next steps
 {: #io-next}

@@ -7,7 +7,6 @@ Watson OpenScale
     {: .navgroup id="learn"}
     getting-started.md
     cloud-accessibility.md
-    cloud-addl-rsc.md
 
     {: .topicgroup}
     Framework & model support
@@ -24,108 +23,116 @@ Watson OpenScale
     cloud-interactive-setup.md
     cloud-alt-setup.md
     cloud-tutorial-adv.md
+    cloud-addl-rsc.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Configuring Watson OpenScale
-        wos-creds.md
-        wos-connect-deploy.md
-        cloud-connect-db.md
-        cloud-connect-ml.md
-        wos-scoring.md
-        wos-payload-logging.md
-        wos-payload-auto.md
-        wos-debias-ovr.md
-        wos-config-file.md
-        wos-feedback.md
-        wos-training-data-schema.md
-        wos-schema-definition.md
-        cloud-upgrading.md
-        wos-alerts.md
+    Configure Watson OpenScale
+        wos-config-ovr.md
+
+        {: .topicgroup}
+        Configuring the service
+            wos-creds.md
+            wos-connect-deploy.md
+            cloud-connect-db.md
+            cloud-connect-ml.md
+            wos-scoring.md
+            wos-payload-logging.md
+            wos-payload-auto.md
+            wos-debias-ovr.md
+            wos-config-file.md
+            wos-feedback.md
+            wos-training-data-schema.md
+            wos-schema-definition.md
+            cloud-upgrading.md
+            wos-alerts.md
+
+        {: .topicgroup}
+        Configuring model monitors
+            wos-monitor-overview.md
+            wos-monitor-accuracy.md
+            wos-monitor-fairness.md
+            wos-monitor-explainability.md
+            wos-monitor-drift.md
+            wos-monitor-endpoint.md
+            wos-monitor-unstruct.md
+            wos-monitor-imagemodel.md
+            wos-metrics.md
+
+        {: .topicgroup}
+        Configuring model risk manager
+            cloud-risk-config-ovr.md
+            cloud-risk-config-ovr-wos-only.md
+            cloud-risk-config-openpages.md
 
     {: .topicgroup}
-    Configuring model monitors
-        wos-monitor-overview.md
-        wos-monitor-accuracy.md
-        wos-monitor-fairness.md
-        wos-monitor-explainability.md
-        wos-monitor-drift.md
-        wos-monitor-endpoint.md
-        wos-monitor-unstruct.md
-        wos-monitor-imagemodel.md
-        wos-metrics.md
-
-    {: .topicgroup}
-    Configuring model risk manager
-        cloud-risk-config-ovr.md
-        cloud-risk-config-ovr-wos-only.md
-        cloud-risk-config-openpages.md
-
-    {: .topicgroup}
-    Get model insights
+    Get insights
         wos-insight-overview.md
-        wos-insight-timechart.md
-        wos-insight-viz-data-by-time.md
-        wos-insight-debias.md
-        wos-insight-explain.md
-        wos-insight-categorical.md
-        wos-insight-imagemodel.md
-        wos-insight-unstructmodel.md
-        wos-insight-tabularmodel.md        
-        wos-insight-contrastive.md
 
-    {: .topicgroup}
-    Model risk and governance
-        cloud-risk-overview.md
-        cloud-risk-wos-only.md
-        cloud-risk-openpages-mrg.md
+        {: .topicgroup}
+        Get model insights
+            wos-insight-timechart.md
+            wos-insight-viz-data-by-time.md
+            wos-insight-debias.md
+            wos-insight-explain.md
+            wos-insight-categorical.md
+            wos-insight-imagemodel.md
+            wos-insight-unstructmodel.md
+            wos-insight-tabularmodel.md        
+            wos-insight-contrastive.md
 
-    {: .topicgroup}
-    Fairness
-        wos-fairness-ovr.md
-        wos-fairness-group.md
+        {: .topicgroup}
+        Model risk and governance
+            cloud-risk-overview.md
+            cloud-risk-wos-only.md
+            cloud-risk-openpages-mrg.md
 
-    {: .topicgroup}
-    Quality
-        wos-quality-overview.md
-        wos-quality-confusion-matrix.md
-        wos-quality-area-under-roc.md
-        wos-quality-area-under-pr.md
-        wos-quality-accuracy.md
-        wos-quality-tpr.md
-        wos-quality-fpr.md
-        wos-quality-recall.md
-        wos-quality-precision.md
-        wos-quality-f1-measure.md
-        wos-quality-logarithmic-loss.md
-        wos-quality-prop-expl-variance.md
-        wos-quality-mean-abs-error.md
-        wos-quality-mean-squared-error.md
-        wos-quality-r-squared.md
-        wos-quality-root-of-mean-sq-error.md
-        wos-quality-wtpr.md
-        wos-quality-wfpr.md
-        wos-quality-wrecall.md
-        wos-quality-wprecision.md
-        wos-quality-wf1-measure.md
+        {: .topicgroup}
+        Fairness
+            wos-fairness-ovr.md
+            wos-fairness-group.md
 
-    {: .topicgroup}
-    Drift
-        wos-behavior-overview.md
-        wos-behavior-drift.md
-        wos-behavior-anomalies.md
+        {: .topicgroup}
+        Quality
+            wos-quality-overview.md
+            wos-quality-confusion-matrix.md
+            wos-quality-area-under-roc.md
+            wos-quality-area-under-pr.md
+            wos-quality-accuracy.md
+            wos-quality-tpr.md
+            wos-quality-fpr.md
+            wos-quality-recall.md
+            wos-quality-precision.md
+            wos-quality-f1-measure.md
+            wos-quality-logarithmic-loss.md
+            wos-quality-prop-expl-variance.md
+            wos-quality-mean-abs-error.md
+            wos-quality-mean-squared-error.md
+            wos-quality-r-squared.md
+            wos-quality-root-of-mean-sq-error.md
+            wos-quality-wtpr.md
+            wos-quality-wfpr.md
+            wos-quality-wrecall.md
+            wos-quality-wprecision.md
+            wos-quality-wf1-measure.md
 
-    {: .topicgroup}
-    Performance
-        cloud-performance_metrics.md
-        cloud-performance-throughput.md
+        {: .topicgroup}
+        Drift
+            wos-behavior-overview.md
+            wos-behavior-drift.md
+            wos-behavior-anomalies.md
 
-    {: .topicgroup}
-    Analytics
-        wos-analytics-ovr.md
-        wos-analytics-confidence.md
-        wos-analytics-chart-builder.md
+        {: .topicgroup}
+        Performance
+            cloud-performance_metrics.md
+            cloud-performance-throughput.md
+
+        {: .topicgroup}
+        Analytics
+            wos-analytics-ovr.md
+            wos-analytics-confidence.md
+            wos-analytics-chart-builder.md
 
     cloud-openscale-recovery.md
 
