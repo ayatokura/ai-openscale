@@ -57,7 +57,7 @@ Whenever data is sent to the model for scoring, {{site.data.keyword.pm_full}} se
 ## Finding a transaction ID in {{site.data.keyword.aios_short}}
 {: #ie-find}
 
-1.  From the time chart for your deployment, slide the marker across the chart and click the **View details** link to [visualize data for a specific hour](/docs/ai-openscale?topic=ai-openscale-it-vdet).
+1.  From the chart, slide the marker across the chart and click the **View details** link to [visualize data for a specific hour](/docs/ai-openscale?topic=ai-openscale-it-vdet).
 1.  Click the **View transactions** button to [view the list of transaction IDs](/docs/ai-openscale?topic=ai-openscale-it-tra).
 1.  Click the **Explain** link in the Action column for any transaction ID, which will open that transaction in the Explainability tab.
 
@@ -68,11 +68,12 @@ Whenever data is sent to the model for scoring, {{site.data.keyword.pm_full}} se
 ## Finding explanations through chart details
 {: #ie-view-ui}
 
-Because explanations exist for fairness, drift, and performance you can click the charts to get a detailed view of the data set and then click the **View transactions** button.
+Because explanations exist for model risk, fairness, drift, and performance you can click one of the following links to view detailed transactions:
 
-- For one of the fairness attributes, such as sex or age click the attribute, then click the chart, and then click the **View transactions** button.
-- For the drift monitor, click **Drift magnitude**, click the chart, and then click a tile to see the transactions associated with that particular drift group.
-- For a performance chart, click the chart, and then click **Explain**.
+- From the **Evaluations** page, in the **Number of explanations** section, click the number link. In the **Select an explanation** window, click a transaction and then click the **View** button. 
+- For one of the fairness attributes, from the **Evaluations** page, click the fairness percentage link. Click the attribute, such as sex or age, click the chart, and then click the **View transactions** button.
+- For the drift monitor, from the **Evaluations** page, click the drift percentage link. Click the chart, click the drift type, then click a tile to see the transactions associated with that particular drift group.
+- For a performance chart, from the **Evaluations** page, click any of the percentage links. In the **Performance** section, click **Throughput**, click the chart, and then click the **Explain** link that follows the transaction you want to view.
 
 ## Understanding the difference between contrastive explanations and LIME
 {: #ie-contrastive.v.lime}

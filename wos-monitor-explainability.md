@@ -25,20 +25,23 @@ subcollection: ai-openscale
 # Configuring the explainability monitor
 {: #explainability-monitor}
 
-In {{site.data.keyword.aios_full}}, the explainability monitor sets whether a feature is controllable or not. 
+In {{site.data.keyword.aios_full}}, the explainability monitor sets whether a feature in a classification model is controllable or not. 
 {: shortdesc}
+
+Regression, unstructured text, and image classification models do not support controllable features.
+{: note}
 
 ## Requirements for controllable features
 {: #explainability-reqs}
 
-A controllable feature is one that can be changed and have a meaningful impact on the outcome. For example, a loan amount would be a controllable feature that might affect whether an applicant is approved or not. An example of an uncontrollable feature would be something inherent, such as sex or age, which are characteristic attributes that would be beyond the ability of someone to adjust in a transient manner.
+A controllable feature is one that can be changed and have a meaningful impact on the outcome. For example, a loan amount would be a controllable feature that might affect whether an applicant is approved or not. An example of an uncontrollable feature would be something inherent, such as sex or age. These characteristics are attributes that would be beyond the ability of someone to adjust in a transient manner.
 
 ## Steps
 {: #explainability-config}
 {: help} 
 {: support}
 
-To start the configuration process, from the **Explainability** tab, in the **Controllable features** box, click the **Edit** ![The edit icon](images/wos-edit-icon.png) icon.
+To start the configuration process, from the **Explainability** tab, in the **Controllable features** box, click the **Edit** ![The edit icon is displayed](images/wos-edit-icon.png) icon.
 
 For each of the features, select whether it is controllable. 
 
