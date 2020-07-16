@@ -135,7 +135,7 @@ The following issues are specific to {{site.data.keyword.wos4d_full}}.
 {: troubleshoot}
 {: support}
 
-The following error applies to {{site.data.keyword.wos4d_full}} version 2.1.0.2 and version 2.5.0. You may see the following error display: **Action Create Payload Tables has failed: Invalid token**.
+The following error applies to the following {{site.data.keyword.wos4d_full}} versions: 2.1.0.2, 2.5.0, 3.0.0, 3.0.1, and 3.0.2. You may see the following error display: **Action Create Payload Tables has failed: Invalid token**.
 {: tsSymptoms}
 
 In addition to that UI message, the dashboard service log might contain the following entry:
@@ -157,10 +157,13 @@ The access token used by the payload logging, configuration, and datamart proces
 When this happens, it can be resolved by restarting the following pods:
 {: tsResolve}
 
+- aiopenscale-ibm-aios-bkpicombined
 - aiopenscale-ibm-aios-payload-logging
 - aiopenscale-ibm-aios-payload-logging-api
 - aiopenscale-ibm-aios-configuration
 - aiopenscale-ibm-aios-datamart
+- aiopenscale-ibm-aios-feedback
+
 
 ## Missing deployments
 {: #ts-trouble-icp4d-missing-deployment}
