@@ -37,7 +37,7 @@ The following example of explainability shows a classification model that evalua
 
 ![Explainability image classification chart is displayed. it shows confidence levels for the unstructured text](images/wos-insight-explain-text.png)
 
-Unstructured text models present the importance of words or tokens. To change the language, click the edit ![The edit icon](/images/wos-edit-icon.png) icon, which follows the language. The explanation runs again by using a different tokenizer.
+Unstructured text models present the importance of words or tokens. To change the language, select a different language from the drop-down menu. The explanation runs again by using a different tokenizer.
 
 ## Enabling non-space-delimited language support
 {: #ie-unstruct-xplan-langsupport}
