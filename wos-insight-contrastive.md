@@ -20,26 +20,16 @@ subcollection: ai-openscale
 {:screen: .screen}
 {:faq: data-hd-content-type='faq'}
 
-# Contrastive explanations use pertinent positives and pertinent negatives
+# Contrastive explanations
 {: #ie-pp-pn}
 
-For contrastive explanations, {{site.data.keyword.aios_short}} displays pertinent positive and pertinent negative values. These help explain the behavior of the model in the vicinity of the data point for which an explanation is generated.
+For contrastive explanations, {{site.data.keyword.aios_short}} displays the maximum changes for the same outcome and the minimum changes for a changed outcome. These categories are also known as pertinent positive and pertinent negative values. These values help explain the behavior of the model in the vicinity of the data point for which an explanation is generated.
 {: shortdesc}
 
-- Pertinent positives (PP) are feature values obtained by changing the value of each feature towards its median such that the model prediction remains the same.
+- **Maximum changes allowed for the same outcome**: Pertinent positives are feature values that are obtained by changing the value of each feature towards its median such that the model prediction remains the same.
+- **Minimum changes for a changed outcome**: Pertinent negatives are feature values that are obtained by changing the value of each feature away from its median such that the model prediction changes.
 
-  ![pertinent positive panel is displayed and shows features and maximum values that allow for the same outcome](images/wos-contrastive-pp.png)
+Consider an example of a model used for loan processing. It can have the following predictions: **Loan Approved**, **Loan Partially Approved**, and **Loan Denied**. For the sake of simplicity, assume that the model takes only one feature in input: salary. Consider a data point where the salary=150000 and the model predicts Loan Partially Approved. Assume that the median value of salary is 90000. A pertinent positive might be: Even if the salary of the person was 100000, the model still predicts Loan Partially Approved. Alternatively, the pertinent negative is: If the salary of the person was 200000, the model prediction would change to Loan Approved. Thus pertinent positive and pertinent negative together explain the behavior of the model in the vicinity of the data point for which the explanation is generated.
 
-- Pertinent negatives (PN) are feature values obtained by changing the value of each feature away from its median such that the model prediction changes.
-
-  ![pertinent negative panel is displayed and shows features and minimum values that allow for a different outcome](images/wos-contrastive-pn.png)
-
-
-
-Consider an example of a model used for loan processing. It can have one of three predictions: Loan Approved, Loan Partially Approved and Loan Denied. For the sake of simplicity, let us assume that the model takes only one feature in input: salary. Let us consider a data point where the salary=150000 and the model predicts Loan Partially Approved. Let the median value of salary be 90000. A pertinent positive could be: Even if the salary of the person was 100000, the model would have still predicted Loan Partially Approved. On the other hand, the pertinent negative will be: If the salary of the person was 200000, the model prediction would have changed to Loan Approved. Thus PP and PN together are explaining the behaviour of the model in the vicinity of the data point for which explanation is to be generated.
-
-{{site.data.keyword.aios_short}} always displays a pertinent positive, however, sometimes there are no pertinent negatives to be displayed. To understand this better, consider that when {{site.data.keyword.aios_short}} calculates the pertinent negative value, it changes the values of all the features away from their median value. If even after changing the value away from median, the prediction does not change, then there are no pertinent negatives to display. In case of pertinent positives, {{site.data.keyword.aios_short}} finds the maximum change in the feature values towards the median such that the prediction does not change. Practically, this means that there is almost always a pertinent positive to explain a transaction (and it could be the feature value of the input data point itself).
-
-![no pertinent negative displays, instead there is a message that explains that values are already at the median or the prediction has not changed as a rsult of moving values from the median](images/wos-contrastive-no-pn.png)
-
+{{site.data.keyword.aios_short}} always displays a pertinent positive sometimes there are no pertinent negatives to be displayed. When {{site.data.keyword.aios_short}} calculates the pertinent negative value, it changes the values of all the features away from their median value. If the value changes away from median, the prediction does not change, then there are no pertinent negatives to display. For pertinent positives, {{site.data.keyword.aios_short}} finds the maximum change in the feature values towards the median such that the prediction does not change. Practically, there is almost always a pertinent positive to explain a transaction (and it might be the feature value of the input data point itself).
 
