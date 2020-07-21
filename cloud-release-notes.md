@@ -53,7 +53,7 @@ The following new features and changes to {{site.data.keyword.aios_short}} are a
 
 The following new features and changes to {{site.data.keyword.aios_short}} are available.
 
-- __*Role-based user access*__: {{site.data.keyword.aios_short}} now supports access to functionality based on user roles.
+- __*Role-based user access*__: {{site.data.keyword.aios_short}} now supports access to functions based on user roles.
 
    For more information, see [Watson OpenScale Identity and Access Management](/docs/ai-openscale?topic=ai-openscale-iam-docs-template).
 
@@ -83,7 +83,7 @@ The following new features and changes to {{site.data.keyword.aios_short}} are a
 
 The following new features and changes to {{site.data.keyword.aios_short}} are available.
 
-- __*{{site.data.keyword.pm_full}} framework enhancements*__: {{site.data.keyword.aios_short}} now supports the native XGBoost frameworks on the {{site.data.keyword.pm_full}} engine.
+- __*{{site.data.keyword.pm_full}} framework enhancements*__: {{site.data.keyword.aios_short}} now supports XGBoost frameworks on the {{site.data.keyword.pm_full}} engine.
 
    For more information, see [{{site.data.keyword.pm_full}} frameworks](/docs/ai-openscale?topic=ai-openscale-frmwrks-wml).
 
@@ -102,200 +102,15 @@ The following new features and changes to {{site.data.keyword.aios_short}} are a
   Drift detection is now in GA and includes both drift in accuracy and drift in data.
   For more information, see [Drift detection](/docs/ai-openscale?topic=ai-openscale-behavior-ovr).
   
-## 9 July 2019
-{: #rn-9jul2019}
 
-The following new features and changes to {{site.data.keyword.aios_short}} are available.
 
-- __*Updated and expanded online help*__: The {{site.data.keyword.aios_short}} online help was recently reorganized to make it easier to find topics by using the contents pane. In addition, many new topics were written and expanded.
-
-   For more information, see [Getting insights](/docs/ai-openscale?topic=ai-openscale-io-ov) and [Updating {{site.data.keyword.aios_short}} from a lite to a paid plan](/docs/ai-openscale?topic=ai-openscale-cf-upgrade).
-   
-## 2 July 2019
-{: #rn-2jul2019}
-
-The following new features and changes to {{site.data.keyword.aios_short}} are available.
-
-- __*Drift detection*__: ![Beta tag](images/beta.png)
-
-  {{site.data.keyword.aios_short}} now supports drift detection.
-
-   For more information, see [Drift detection](/docs/ai-openscale?topic=ai-openscale-behavior-drift-ovr).
-
-- __*Microsoft Azure ML Service support*__: {{site.data.keyword.aios_short}} now supports Microsoft Azure ML Service, which provides a means for integrating your Azure ML service AI models with the fairness, accuracy, and explainability of {{site.data.keyword.aios_short}}.
-
-   For more information, see [Microsoft Azure ML Service frameworks](/docs/ai-openscale?topic=ai-openscale-frmwrks-azureservice).
-
-- __*Improved work flow*__: {{site.data.keyword.aios_short}} is busy improving the workflow so that you can speed through your work with fewer clicks and more explainability. The navigation pane displays where you are and makes it easy to jump back and forth between configuration tasks.
-
-   For more information, see [Prepare model for monitoring](/docs/ai-openscale?topic=ai-openscale-mo-config).
-
-- __*Multiple machine learning providers*__: Why be tied down to just one machine learning provider or engine? With the newest version of {{site.data.keyword.aios_short}}, you can add multiple providers so that you can take advantage of their unique features or provide continuity with legacy apps.
-
-   For more information, see [Support for multiple machine learning engines](/docs/ai-openscale?topic=ai-openscale-fmrk-workaround-multmleng).
-
-- __*More out-of-the-box metrics*__: With this version of {{site.data.keyword.aios_short}}, there are many new metrics for fairness, quality, behavior, performance, and analytics. We're going to need a bigger box!
-
-   For more information, see [Quality metrics overview](/docs/ai-openscale?topic=ai-openscale-anlz_metrics) and then start clicking around to visit the others: [Fairness](/docs/ai-openscale?topic=ai-openscale-anlz_metrics_fairness), [Performance](/docs/ai-openscale?topic=ai-openscale-performance_mets_through), [Analytics](/docs/ai-openscale?topic=ai-openscale-anlz_metrics_payload), and [Behavior](/docs/ai-openscale?topic=ai-openscale-behavior-ovr).
-
-- __*Speeding along the bias*__: With suggested fairness attributes and automatic values for bias configuration, it's easy to see where {{site.data.keyword.aios_short}} detects the potential for violation of fairness thresholds in the deployed model. You have the choice to accept the recommended features to monitor and to change the values.
-
-   For more information, see [Fairness metrics overview](/docs/ai-openscale?topic=ai-openscale-anlz_metrics_fairness).
-
-## 11 June 2019
-{: #rn-11June2019}
-
-The following new features and changes to the service are available.
-
-- __*Updated Dashboard functions*__: The {{site.data.keyword.aios_short}} Dashboard has several revisions. This new version contains the following improvements:
-
-    - A new help pane gives you quick access to resources, such as StackOverflow, IBM Support, and 
-    - Globalization is enabled for the dashboard
-    - Usability enhancements
-
-## 7 June 2019
-{: #rn-7June2019}
-
-The following new features and changes to the service are available.
-
-- __*Enhanced command-line interface*__: The command-line interface, ibm-ai-openscale-cli, has an update and version 0.2.148 is now released. This new version contains the following improvements:
-
-    - Updated the quality metrics history to include the full range of new quality metrics supported by OpenScale
-    - Support for specifying an SSL certificate directly when you use IBM Db2
-    - Support for the new ibm-ai-openscale 2.1.8 Python SDK
-    - Other bug fixes and stability improvements
-
-   Install from PyPI by running the `pip install -U ibm-ai-openscale-cli` command, and get usage help by running the  `ibm-ai-openscale-cli --help` command. For more information, see the [PyPI project page](https://pypi.org/project/ibm-ai-openscale-cli){: external}.
-
-## 29 May 2019
-{: #rn-29May2019}
-
-The following new features and changes to the service are available.
-
-- __*Bias Visualization Enhancements*__: ![Beta tag](images/beta.png) The bias visualization includes the following views: 
-
-    - Payload + Perturbed: Includes the scoring request that is received for the selected hour plus records from previous hours if the minimum number of records that are required for evaluation was not met. Includes more perturbed and synthesized records that were used to test the model's response when the value of the monitored feature changes.
-    - Payload: The actual scoring requests received by the model for the selected hour.
-    - Training: The training data records used to train the model.
-    - Debiased: The output of the debiasing algorithm after the runtime and perturbed data is processed.
-
-   For more information, see [Bias visualization](/docs/ai-openscale?topic=ai-openscale-mf-monitor-bias-viz).
-
-- __*Accuracy computation for de-biased output*__: Accuracy computation includes de-biased output. You can compare the accuracy of the de-biased model with the accuracy of a production model
-
-   For more information, see [Accuracy](/docs/ai-openscale?topic=ai-openscale-acc-debias-view).
-
-- __*Support for multiple machine learning engines*__: {{site.data.keyword.aios_short}} supports multiple machine learning engines within a single instance provided that provisioning is performed through the [Python SDK](http://ai-openscale-python-client.mybluemix.net/?cm_mc_uid=70732728440115575086192&cm_mc_sid_50200000=62539451560175957820){: external}.
-
-   For more information, see [Support for multiple machine learning engines](/docs/ai-openscale?topic=ai-openscale-fmrk-workaround-multmleng).
-
-- __*Internationalization Support*__: {{site.data.keyword.aios_short}} supports localized versions and includes processing data in supported languages. The {{site.data.keyword.aios_short}} user interface, documentation, and error messages are currently available in the following languages: 
-    - German
-    - French
-    - Italian
-    - Spanish
-    - Brazilian Portuguese
-    - Japanese
-    - Simplified Chinese
-    - Traditional Chinese
-    - Korean
-
-   For more information (including limitations), see [Supported languages for {{site.data.keyword.aios_short}}](/docs/ai-openscale?topic=ai-openscale-sl-langs).
-
-- __*{{site.data.keyword.pm_full}} framework enhancements*__: {{site.data.keyword.aios_short}} now supports the scikit-learn and XGBoost frameworks on the {{site.data.keyword.pm_full}} engine.
-
-   For more information, see [{{site.data.keyword.pm_full}} frameworks](/docs/ai-openscale?topic=ai-openscale-frmwrks-wml).
-
-## 25 April 2019
-{: #rn-25April2019}
-
-The following new features and changes to the service are available.
-
-In addition to usability improvements and security updates, our developers have been busy with new features. {{site.data.keyword.aios_short}} features that have been added or enhanced over the preceding several weeks include:
-
-- __*Automated setup tour*__: A new tour-led way to set up your {{site.data.keyword.aios_short}} environment. Use the [Automated setup](/docs/ai-openscale?topic=ai-openscale-wos-fast-start) to provision services and download and configure a model. You will notice this option when you have a new instance of {{site.data.keyword.aios_short}}.
-- __*Switch to beta*__: ![Beta tag](images/beta.png) A new toggle, **Explore the new beta version**, enables you to work in our beta environment, where you can check out all the latest features and new functionality. Don't like what you see? Just switch back by clicking **Go back to the original version**. Your configuration and monitors are unaffected. The following capabilities are part of the current beta program:
-    - __*Confusion matrix*__: A [confusion matrix displays](/docs/ai-openscale?topic=ai-openscale-it-conf-mtx) the false positives and false negatives. Click a cell to view the subset of feedback records.
-
-## 10 April 2019
-{: #rn-10April2019}
-
-- __*Express Path tool now supports customer models*__: Automates the onboarding process to {{site.data.keyword.aios_short}}.
-
-   For more information, see [ibm-ai-openscale-cli](https://pypi.org/project/ibm-ai-openscale-cli/){: external}.
-
-
-## 5 March 2019
-{: #rn-5March2019}
-
-The following new features and changes to the service are available.
-
-{{site.data.keyword.aios_short}} features that are added or enhanced since the previous release include:
-
-- __*New Credit Risk model*__: A new Credit Risk model example/tutorial is supported for all scoring engines. For more information see the [Getting started](/docs/ai-openscale?topic=ai-openscale-getting-started) and [Additional resources](/docs/ai-openscale?topic=ai-openscale-arsc-ov#arsc-ov) topics.
-
-- __*Computing debias*__: You can toggle between your production model and a de-biased model created by {{site.data.keyword.aios_short}}. See [Production model and De-biased model](/docs/ai-openscale?topic=ai-openscale-io-ov) and [Understanding how de-biasing works](/docs/ai-openscale?topic=ai-openscale-mf-monitor#mf-debias) for more information.
-
-## 22 February 2019
-{: #rn-22February2019}
-
-The following new features and changes to the service are available.
-
-{{site.data.keyword.aios_short}} features that have been added or enhanced since the previous release include:
-
-- __*UI updates*__: You can import a JSON file to programmatically configure all monitors and features during subscription creation. You can also export the configuration file. See the [Configure deployment subscription using JSON files](/docs/ai-openscale?topic=ai-openscale-cf-ov) topic for more information.
-
-## 7 February 2019
-{: #rn-7February2019}
-
-The following new features and changes to the service are available.
-
-{{site.data.keyword.aios_short}} features that have been added or enhanced since the previous release include:
-
-- __*UI updates*__: Several improvements have been made to the {{site.data.keyword.aios_short}} user interface, including a way to [check fairness and accuracy on demand](/docs/ai-openscale?topic=ai-openscale-it-vdep), and the ability to see a list of transactions from the [fairness details chart](/docs/ai-openscale?topic=ai-openscale-it-tra).
-
-- __*Explainability enhancements*__: All numbers now have the same precision/scale across Pertinent Positive (PP) and Pertinent Negative (PN) values.
-
-- __*Db2 SSL support*__: {{site.data.keyword.aios_short}} supports passing self-signed certificates (Base-64 encoded) with DB2 credentials.
-
-- __*{{site.data.keyword.Bluemix}} Database support*__: {{site.data.keyword.aios_short}} now supports Databases for PostgreSQL, in addition to Compose for PostgreSQL and Db2)
-
-## 14 December 2018
-{: #rn-14December2018}
-
-The following new features, changes, and known issues with the service are available.
-
-{{site.data.keyword.aios_short}} features that have been added or enhanced since the beta release include:
-
-- __*General availability*__: The General Availability (GA) release of {{site.data.keyword.aios_full_notm}} as an {{site.data.keyword.Bluemix}} Standard (paid) plan.
-
-- __*{{site.data.keyword.icp4dfull_notm}} V1.2*__: If you are using {{site.data.keyword.wos4d_full}} V1.2, see the documentation, including installation instructions, here: [Installation checklist](https://cloud.ibm.com/docs/ai-openscale-icp?topic=ai-openscale-icp-inst-install-icp){: external}
-
-- __*Support for your model type*__: In addition to AI model deployments in {{site.data.keyword.pm_full}}, {{site.data.keyword.aios_short}} supports model deployments in Microsoft Azure, Amazon SageMaker, and Custom environments. See [Supported model types](/docs/ai-openscale?topic=ai-openscale-in-ov) for more information.
-
-- __*Free "lite" database*__: A free "lite" managed database provides everything you need to begin using {{site.data.keyword.aios_short}}. See the [{{site.data.keyword.aios_short}} pricing plans](https://{DomainName}/catalog/services/watson-openscale){: external} for details.
-
-- __*Bias monitoring*__: Support for protected attributes of type `float` and `double`, and bias detection on linear regression models. And {{site.data.keyword.aios_short}} can automatically de-bias your AI model for you. See [Understanding fairness](/docs/ai-openscale?topic=ai-openscale-mf-monitor) for more information.
-
-- __*Explainability*__: Support for regression models, Python functions, and complementary contrastive explanations. See [Monitoring explainability](/docs/ai-openscale?topic=ai-openscale-ie-ov) for more information.
-
-- __*Data Store*__: Quality monitoring without reliance on {{site.data.keyword.pm_full}}, and the ability to use your own database, whether it's Db2, Postgres or Db2 on Cloud.
-
-- __*Enhanced UI*__: The {{site.data.keyword.aios_short}} UI has been improved to include a runtime histogram distribution with toggle for training data, Model ID & Versioning, and a Transaction ID table from the histogram. See [Visualizing data for a specific hour](/docs/ai-openscale?topic=ai-openscale-it-vdet) for more information.
-
-- __*Alternate tutorial set-up option*__: To automate the provisioning and configuration of the required {{site.data.keyword.Bluemix}} services, and to see an IBM {{site.data.keyword.aios_full}} application, including sample data, you can install and run a Python module. See [Installing a Python module to set up {{site.data.keyword.aios_short}}](/docs/ai-openscale?topic=ai-openscale-as-module)
-
-## 17 September 2018
-{: #rn-17September2018}
-
-- **Beta preview release** - Welcome to the beta preview release of {{site.data.keyword.aios_full_notm}}.
 
 <p>&nbsp;</p>
 
 ## Next steps
 {: #relnotes-in-next}
 
-Still have questions?
+More questions?
 
 - [Limitations](/docs/ai-openscale?topic=ai-openscale-rn-12ki&locale=en#wos-limitations)
 - [Known issues](/docs/ai-openscale?topic=ai-openscale-rn-12ki&locale=en#cloud-known-unknowns-issues)
