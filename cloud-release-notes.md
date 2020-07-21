@@ -26,6 +26,18 @@ subcollection: ai-openscale
 This document outlines new features for {{site.data.keyword.aios_full_notm}}.
 {: shortdesc}
 
+## 21 July 2020
+{: #rn-21jul2020}
+
+- __*Explainability UI enhancements*__: {{site.data.keyword.aios_short}} now supports the following views:
+
+- A landing page that lists all recently viewed transactions
+- A summary view that shows the LIME explanation with features importance
+- A contrastive explanation view that enables users to explore how the model responds to various scenarios
+
+   For more information, see [Explaining transactions](/docs/ai-openscale?topic=ai-openscale-ie-ov).
+
+
 ## 9 July 2020
 {: #rn-09jul2020}
 
