@@ -18,10 +18,6 @@ subcollection: ai-openscale
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # High availability and disaster recovery
