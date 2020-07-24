@@ -183,3 +183,76 @@ Use the following steps to resolve this issue:
 
 
 
+## Connection issue from {{site.data.keyword.wos4d_full}} to {{site.data.keyword.pm_full}}
+{: #ts-trouble-icp4d-connection-wml}
+
+
+You receive the following error message while attempting to establish a connection between {{site.data.keyword.wos4d_full}} and {{site.data.keyword.pm_full}}: `Error: Unable to connect to local Watson Machine Learning from OpenScale:`
+{: tsSymptoms}
+
+You cannot connect to the Watson Machine Learning instance because of an issue with the token.
+{: tsCauses}
+
+Use the following steps to resolve this issue:
+{: tsResolve}
+
+1. Check whether the `ICP_WML_TOKEN` value in the discovery instance is populated by running the following command:
+   
+   ```
+   kubectl -n <namespace> exec -it aiopenscale-ibm-aios-ml-gateway-discovery-755f4d859b-vlc9s -- env | grep ICP_WML_TOKEN
+   ```
+   
+   output:
+   
+   ```
+   ICP_WML_TOKEN=tsG3UMLF7esl4oDWfMGbIhm6IkrlkmYSirYy2UgzNhiItv8xofkj0bbj8zSxR27FTa1AG9R6bxWernMBrtUNuJVw6vJBd5HANyOiW6NHGZf1RgtcMEXxlhc7tpfJtQ0W
+   ```
+
+   Important: If the `ICP_WML_TOKEN` value is empty (`ICP_WML_TOKEN=`), continue with the following steps. Otherwise, you must reach out to IBM Support for guidance.
+   
+2. Generate a new Watson Machine Learning token by running the following command:
+   
+   ```
+   user_pwd_token=`printf %s user:pwd | base64`
+   curl -k --request GET --url https://namespace1-cpd-namespace1.apps.ap14-lb-1.fyre.ibm.com/v1/preauth/validateAuth --header "authorization: Basic $user_pwd_token"
+   
+3. Use the accessToken from the previous output to run the following command:
+   
+   ```
+   curl -k --request POST --url https://namespace1-cpd-namespace1.apps.ap14-lb-1.fyre.ibm.com/api/v1/usermgmt/v1/usermgmt/getTimedToken --header 'authorization: Bearer accessToken_from_previous_step' --header 'lifetime: 87600'
+   ```
+   
+4. Encode the `accessToken` value from previous step to base64 format:
+   
+   ```
+   printf $s 'accessToken_from_previous_step' | base64
+   ```
+
+5. Edit the secret and use the encoded value:
+   
+   ```
+   kubectl -n <namespace> edit secret ibm-aios-icp4d-token
+   ```
+
+6. Edit the file to add the encoded value to the following field:
+   
+   ```
+   data:
+     token: "encoded_value_from previous_step"
+   ```
+
+7. Restart all openscale pods by running the following command:
+   
+   ```
+   kubectl -n <namespace> delete pods <podname>
+   ```
+   
+8. Check whether the `ICP_WML_TOKEN` value in the discovery instance is populated by running the following command:
+   
+   ```
+   kubectl -n <namespace> exec -it aiopenscale-ibm-aios-ml-gateway-discovery-755f4d859b-vlc9s -- env | grep ICP_WML_TOKEN
+   ```
+
+
+
+
