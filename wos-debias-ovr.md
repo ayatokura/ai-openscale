@@ -104,9 +104,18 @@ Meta values must be in the format of an array of arrays:
 
 ```
 
+### Configuring the {{site.data.keyword.aios_short}} service for indirect bias
+{: #mf-debias-indirect-steps}
+
+When you set up the fairness monitor, select the fields to monitor. This can include both training features and fields excluded from model training. If you select a field excluded from model training, {{site.data.keyword.aios_short}} finds correlations between values in that field and values in the training features. The correlated features will be used as proxies for the fields that were excluded from model training.
+
+![Indirect bias displays](images/wos-indirect-bias.png)
+
+Some fields are training features. Others fields that are not training features are identified as meta fields. For the selected meta fields, {{site.data.keyword.aios_short}} checks for indirect bias.
 
 
 ## Next steps
 {: #wos-debias-next-steps}
 
-For more information, see [Debiasing options](/docs/ai-openscale?topic=ai-openscale-it-dbo)
+- For more information, see [Debiasing options](/docs/ai-openscale?topic=ai-openscale-it-dbo).
+- For a sample notebook that tests for indirect bias, see [Mitigating Indirect Bias with Watson Openscale](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20indirect%20bias.ipynb){: external}.

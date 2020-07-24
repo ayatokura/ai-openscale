@@ -185,6 +185,8 @@ Use the following steps to resolve this issue:
 
 ## Connection issue from {{site.data.keyword.wos4d_full}} to {{site.data.keyword.pm_full}}
 {: #ts-trouble-icp4d-connection-wml}
+{: troubleshoot}
+{: support}
 
 
 You receive the following error message while attempting to establish a connection between {{site.data.keyword.wos4d_full}} and {{site.data.keyword.pm_full}}: `Error: Unable to connect to local Watson Machine Learning from OpenScale:`
@@ -214,12 +216,12 @@ Use the following steps to resolve this issue:
    
    ```
    user_pwd_token=`printf %s user:pwd | base64`
-   curl -k --request GET --url https://namespace1-cpd-namespace1.apps.ap14-lb-1.fyre.ibm.com/v1/preauth/validateAuth --header "authorization: Basic $user_pwd_token"
+   curl -k --request GET --url http://icpd-aios-cluster1.cpolab.ibm.com/v1/preauth/validateAuth --header "authorization: Basic $user_pwd_token"
    
 3. Use the accessToken from the previous output to run the following command:
    
    ```
-   curl -k --request POST --url https://namespace1-cpd-namespace1.apps.ap14-lb-1.fyre.ibm.com/api/v1/usermgmt/v1/usermgmt/getTimedToken --header 'authorization: Bearer accessToken_from_previous_step' --header 'lifetime: 87600'
+   curl -k --request POST --url http://icpd-aios-cluster1.cpolab.ibm.com/api/v1/usermgmt/v1/usermgmt/getTimedToken --header 'authorization: Bearer accessToken_from_previous_step' --header 'lifetime: 87600'
    ```
    
 4. Encode the `accessToken` value from previous step to base64 format:
