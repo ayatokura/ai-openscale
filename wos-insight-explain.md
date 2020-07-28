@@ -63,8 +63,6 @@ Whenever data is sent to the model for scoring, {{site.data.keyword.pm_full}} se
 
   See the following sections for examples of explanations for different types of models.
 
-  ![Explainability transaction ID](images/wos-insight-explain-trans-id.png)
-
 ## Finding explanations through chart details
 {: #ie-view-ui}
 
