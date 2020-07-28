@@ -47,7 +47,7 @@ The following limitations and known issues are common to both {{site.data.keywor
 - {{site.data.keyword.aios_short}} does not support models where the data type of the model prediction is binary. You must change such models so that the data type of their prediction is a string or integer data type.
 - Support for the XGBoost framework has the following limitations for classification problems: For binary classification, {{site.data.keyword.aios_short}} supports the `binary:logistic` logistic regression function with an output as a probability of `True`. For multiclass classification, {{site.data.keyword.aios_short}} supports the `multi:softprob` function where the result contains the predicted probability of each data point belonging to each class.
 - Fairness and drift metrics are not supported for unstructured (image or text) data types.
-- Having an equals sign (=) in the column name of a dataset causes an issue with explainability and generates the following error message: `Error: An error occurred while computing feature importance`.  Do not use an equals sign (=) in a column name. It is not supported.
+- Having an equals sign (=) in the column name of a data set causes an issue with explainability and generates the following error message: `Error: An error occurred while computing feature importance`. Do not use an equals sign (=) in a column name. It is not supported.
 
 
 
@@ -56,7 +56,7 @@ The following limitations and known issues are common to both {{site.data.keywor
 ### Limit on the number of features for a model
 {: #wos-limitations-feat-col-size-limit}
 
-Scoring payloads for a model must fit within the maximum width that is allowed for the table that is created by payload logging in the data mart database (with some buffer for the internal-use columns that {{site.data.keyword.aios_short}} itself adds). In addition, apart from the width there is also a hardcoded limit of 1012 features.
+Scoring payloads for a model must fit within the maximum width that is allowed for the table that is created by the payload logging process in the data mart database. The maximum width includes some buffer for the internal-use columns that {{site.data.keyword.aios_short}} itself adds. In addition, apart from the width there is also a hardcoded limit of 1012 features.
 
 The following table summarizes what this limit means for models with different sizes of features:
 
@@ -73,9 +73,9 @@ string length 2059-32K | 28
 Because many models have features of mixed types, the following sample configurations can be used for planning purposes:
 
 - For int64 or float64 or strings of length 64 or less, count as 64.
-- For strings from 65 to 2048, count as 2048.
-- For strings from 2048 to 32 K, count as 32 K.
-- The total length of all features must not exceed ~900K.
+- For strings in the range of 65 - 2048, count as 2048.
+- For strings in the range of 2048 - 32 K, count as 32 K.
+- The total length of all features must not exceed ~900 K.
 
 <p>&nbsp;</p>
 
@@ -125,7 +125,7 @@ For proper processing of payload analytics, {{site.data.keyword.aios_short}} doe
 
   If your Azure web service does not use the default name, change the input field name to `"input1"`, then redeploy your web service and reconfigure your OpenScale machine learning provider settings.
 
-- If calls to Microsoft Azure ML Studio to list the machine learning models causes the response to timeout, for example when you have many web services, you must increase timeout values. You might need to work around this issue by changing the `/etc/haproxy/haproxy.cfg` configuration setting:
+- If calls to Microsoft Azure ML Studio to list the machine learning models causes the response to time out, for example when you have many web services, you must increase timeout values. You might need to work around this issue by changing the `/etc/haproxy/haproxy.cfg` configuration setting:
 
    - Log in to the load balancer node and update `/etc/haproxy/haproxy.cfg` to set the client and server timeout from `1m` to `5m`:
 
@@ -155,7 +155,7 @@ If you are using a different load balancer, other than HAProxy, you might need t
 ### Custom machine learning service instance
 {: #wos-common-issues-custom}
 
-- The [{{site.data.keyword.aios_short}} Python Client SDK](/docs/ai-openscale-icp?topic=ai-openscale-as-module) does not currently support explainability features for the custom engine. This is because the Custom serve engine requires a numerical prediction in the response data, which is not included with the module script.
+- The [{{site.data.keyword.aios_short}} Python Client SDK](/docs/ai-openscale-icp?topic=ai-openscale-as-module) does not currently support explainability features for the custom engine. The custom serve engine requires a numerical prediction in the response data, which is not included with the module script.
 
 <p>&nbsp;</p>
 
@@ -229,7 +229,7 @@ If you are using a different load balancer, other than HAProxy, you might need t
       ```
       {: codeblock}
 
-    - Java code snippet provided for debiasing endpoint is invalid. Correct code snippet is provided here:
+    - Java code snippet that is provided for debiasing endpoint is invalid. Correct code snippet is provided here:
 
       *Debias endpoint*
 
@@ -250,7 +250,7 @@ If you are using a different load balancer, other than HAProxy, you might need t
       import org.apache.http.entity.ContentType;
 
       String bearerToken = "Bearer <TOKEN>";
-      String URL = "https://$HOSTNAME/v1/data_marts/$DATA_MART_ID/service_bindings/$SERVICE_BINDING_ID/subscriptions/$ASSET_ID/deployments/$DEPLOYMENT_ID/online";
+      String URL = "https://{hostname}/openscale/{service_instance_id}/v2/subscriptions/{subscription_id}/predictions";
 
       String payload = "{ \"fields\": [ \"field1\", \"field2\", \"field3\" ], \"values\": [ [ \"field1Value1\", \"field2Value1\", \"field3Value1\" ], [ \"field1Value2\", \"field2Value2\", \"field3Value2\" ]] }";
 
@@ -281,7 +281,7 @@ The following limitations and known issues are specific to {{site.data.keyword.a
 ### Limitations
 {: #cloud-limitations}
 
-- The current release only supports one database, one {{site.data.keyword.pm_full}} instance, and one instance of {{site.data.keyword.aios_short}}. 
+- The current release supports one database, one {{site.data.keyword.pm_full}} instance, and one instance of {{site.data.keyword.aios_short}}. 
 
 - The database and {{site.data.keyword.pm_full}} instance must be deployed in the same {{site.data.keyword.cloud_notm}} account.
 
@@ -297,7 +297,7 @@ The following limitations and known issues are specific to {{site.data.keyword.a
 #### Drift configuration is started but never finishes
 {: #wos-common-issues-timeout}
 
-Drift configuration is started but never finishes and continues to show the spinner icon. Typically drift config takes about ten minutes but in cases when you see the spinner running for a very long time it is possible that the system is left in an inconsistent state. There is a workaround to this behavior: Edit the drift configuration. Then, save it. The system should come out of this state and complete configuration. Contact IBM Support if this does not rectify the situation.
+Drift configuration is started but never finishes and continues to show the spinner icon. If you see the spinner run for more than 10 minutes, it is possible that the system is left in an inconsistent state. There is a workaround to this behavior: Edit the drift configuration. Then, save it. The system might come out of this state and complete configuration. If drift reconfiguration does not rectify the situation, contact IBM Support.
 
 
 

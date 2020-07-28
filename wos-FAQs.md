@@ -189,3 +189,6 @@ Because {{site.data.keyword.aios_short}} is designed to be independent of your m
 Depending on your fairness configuration, your fairness score can exceed 100 percent. It means that your monitored group is getting relatively more “fair” outcomes as compared to the reference group. Technically, it means that the model is unfair in the opposite direction.
 
 
+## When configuring a model, it requires information about the location of the training data and the options are COS and Db2. The data is in Netezza.  Can {{site.data.keyword.aios_short}} use Netezza?
+
+You can make use of this [{{site.data.keyword.aios_short}} notebook](https://github.com/IBM-Watson/aios-data-distribution/blob/master/training_statistics_notebook.ipynb) to read the data from Netezza and generate the training statistics and also the drift detection model.
