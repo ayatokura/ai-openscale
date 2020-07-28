@@ -39,17 +39,6 @@ The following example of explainability shows a classification model that evalua
 
 Unstructured text models present the importance of words or tokens. To change the language, select a different language from the drop-down menu. The explanation runs again by using a different tokenizer.
 
-## Enabling non-space-delimited language support
-{: #ie-unstruct-xplan-langsupport}
-
-Explainability and the use of word highlighting is supported even for languages, such as Japanese, Chinese, and Korean that are not space-delimited. You have the ability to turn this feature on or off. You must enable this feature manually. Optionally, you can have the system auto-detect the language. With this feature enabled, expanations that are generated for languages without delimiters between words, such as Japanese, Chinese, or Korean properly indicate which characters influence the model's prediction. 
-
-1. From the **Configure** window, click **Explainability**.
-2. In the **Language support** panel, click the **Edit** ![The edit icon](/images/wos-edit-icon.png) icon, and then set the **Word segmentation** to **On**. 
-3. After you enable word segementation, the **Language** drop-down field is enabled and the "Automatically detect" option is selected by default. To manually set the language, click the drop-down box and select the language from the list.
-4. Click the **Save** button.
-
-After you save your changes, the tile in the **Explainability** configuration reflects the changed state.
 
 ## Unstructured text model example
 {: #ie-unstruct-ntbkssample}

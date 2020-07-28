@@ -47,6 +47,19 @@ For each of the features, select whether it is controllable.
 
 ![The explainability configuration window with CheckingStatus, LoanDuration, LoanPurpose, LoanAmount, and OtherOnLoan features set to controllable](images/wos-explainability-controllable-features.png)
 
+
+## Enabling non-space-delimited language support
+{: #ie-unstruct-xplan-langsupport}
+
+Explainability and the use of word highlighting is supported even for languages, such as Japanese, Chinese, and Korean that are not space-delimited. You have the ability to turn this feature on or off. You must enable this feature manually. Optionally, you can have the system auto-detect the language. With this feature enabled, expanations that are generated for languages without delimiters between words, such as Japanese, Chinese, or Korean properly indicate which characters influence the model's prediction. 
+
+1. From the **Configure** window, click **Explainability**.
+2. In the **Language support** panel, click the **Edit** ![The edit icon](/images/wos-edit-icon.png) icon, and then set the **Word segmentation** to **On**. 
+3. After you enable word segementation, the **Language** drop-down field is enabled and the "Automatically detect" option is selected by default. To manually set the language, click the drop-down box and select the language from the list.
+4. Click the **Save** button.
+
+After you save your changes, the tile in the **Explainability** configuration reflects the changed state.
+
 ## Next steps
 {: #mf-next}
 
