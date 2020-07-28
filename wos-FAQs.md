@@ -28,25 +28,10 @@ subcollection: ai-openscale
 # FAQs
 {: #wos-faqs}
 
-Here you'll find some of the most frequently-asked questions from users of {{site.data.keyword.aios_full}}.
+Here are some of the most frequently asked questions from users of {{site.data.keyword.aios_full}}.
 {: shortdesc}
 
-## Questions
-{: #wos-faqs-questions}
 
-- [What is {{site.data.keyword.aios_short}}?](#faq-whatsa)
-- [How is {{site.data.keyword.aios_short}} priced?](#faq-pricing)
-- [Is there a free trial for {{site.data.keyword.aios_short}}?](#faq-freetrial)
-- [All of my AI models are in Azure. Can I use Microsoft Azure ML engine with {{site.data.keyword.aios_short}}?](#faq-azure)
-- [All of my AI models are in Amazon. Can I use Amazon SageMaker ML engine with {{site.data.keyword.aios_short}}?](#faq-sagemaker)
-- [Is {{site.data.keyword.aios_short}} available on {{site.data.keyword.icp4dfull_notm}}?](#faq-icp)
-- [I want to run {{site.data.keyword.aios_short}} on my own servers. How much computer processing power should I allocate?](#faq-sizing)
-- [How do I convert a prediction column from an integer data type to a categorical data type?](#wos-faqs-convert-data-types)
-- [Why does {{site.data.keyword.aios_short}} need access to my training data?](#trainingdata)
-- [What internet browser does {{site.data.keyword.aios_short}} support?](#in-brw)
-- [Is there a command line tool that I can use?](#in-mop)
-- [What version of Python can I use with {{site.data.keyword.aios_short}}?](#in-pyc)
-- [What does it mean if my fairness score is greater than 100 percent?](#fairness-score-over100)
 <p>&nbsp;</p>
 
 
@@ -54,7 +39,7 @@ Here you'll find some of the most frequently-asked questions from users of {{sit
 {: #faq-whatsa}
 {: faq}
 
-{{site.data.keyword.aios_full}} tracks and measures outcomes from your AI models, and helps ensure they remain fair, explainable and compliant wherever your models were built or are running. {{site.data.keyword.aios_short}} also detects and helps correct the drift in accuracy when an AI model is in production
+{{site.data.keyword.aios_full}} tracks and measures outcomes from your AI models, and helps ensure they remain fair, explainable, and compliant wherever your models were built or are running. {{site.data.keyword.aios_short}} also detects and helps correct the drift in accuracy when an AI model is in production
 
 Get a quick overview of {{site.data.keyword.aios_short}} by watching the following video:
 
@@ -72,7 +57,7 @@ Get a quick overview of {{site.data.keyword.aios_short}} by watching the followi
 {: #faq-pricing}
 {: faq}
 
-When your ready to transition from the Lite plan, there's a **Standard** pricing plan that includes monitoring of up to 24 deployed models, with no restrictions on the number of payload, feedback rows or transactions for Explainability. The up-to-date information is availabe in the [{{site.data.keyword.Bluemix}} catalog](https://cloud.ibm.com/catalog/services/watson-openscale?cm_sp=WatsonPlatform-WatsonPlatform-_-OnPageNavCTA-IBMWatson_OpenScale-_-AIOSProductPage){: external}.
+There's a **Standard** pricing plan that includes monitoring of up to 24 deployed models, with no restrictions on the number of payload, feedback rows, or transactions for Explainability. The up-to-date information is available in the [{{site.data.keyword.Bluemix}} catalog](https://cloud.ibm.com/catalog/services/watson-openscale?cm_sp=WatsonPlatform-WatsonPlatform-_-OnPageNavCTA-IBMWatson_OpenScale-_-AIOSProductPage){: external}.
 
 <p>&nbsp;</p>
 
@@ -81,12 +66,12 @@ When your ready to transition from the Lite plan, there's a **Standard** pricing
 {: #faq-freetrial}
 {: faq}
 
-{{site.data.keyword.aios_short}} offers a free trial through the Lite plan. To sign up, visit the [{{site.data.keyword.aios_short}} web page](https://www.ibm.com/cloud/watson-openscale/){: external} and click **Get started now**. You'll be able to use the Lite plan for as long as you want (subject to monthly usage limits which refresh every month).
+{{site.data.keyword.aios_short}} offers a free trial plan. To sign up, see [{{site.data.keyword.aios_short}} web page](https://www.ibm.com/cloud/watson-openscale/){: external} and click **Get started now**. You can use the free plan if you want (subject to monthly usage limits that refresh every month).
 
 <p>&nbsp;</p>
 
 
-## All of my AI models are in Azure. Can I use Microsoft Azure ML engine with {{site.data.keyword.aios_short}}?
+## Does {{site.data.keyword.aios_short}} work with Microsoft Azure ML engine?
 {: #faq-azure}
 {: faq}
 {: support}
@@ -96,7 +81,7 @@ When your ready to transition from the Lite plan, there's a **Standard** pricing
 <p>&nbsp;</p>
 
 
-## All of my AI models are in Amazon. Can I use Amazon SageMaker ML engine with {{site.data.keyword.aios_short}}?
+## Does {{site.data.keyword.aios_short}} work with Amazon SageMaker ML engine?
 {: #faq-sagemaker}
 {: faq}
 {: support}
@@ -116,7 +101,7 @@ When your ready to transition from the Lite plan, there's a **Standard** pricing
 <p>&nbsp;</p>
 
 
-## I want to run {{site.data.keyword.aios_short}} on my own servers. How much computer processing power should I allocate?
+## To run {{site.data.keyword.aios_short}} on my own servers, how much computer processing power is required?
 {: #faq-sizing}
 {: faq}
 {: support}
@@ -131,27 +116,27 @@ There are specific guidelines for hardware configuration for three-node and six-
 {: faq}
 {: support}
 
-When configuring fairness monitoring for a model, the prediction column only allows for integer numerical value even though the prediction label is categorical How do I configure this for categorical feature (that is not integer)? is a manual conversion required? 
+For fairness monitoring, the prediction column allows only an integer numerical value even though the prediction label is categorical. How do I configure a categorical feature that is not an integer? Is a manual conversion required? 
 
-The training data could have class labels such as “Loan Denied”, “Loan Granted”. The prediction value returned by {{site.data.keyword.pm_full}} scoring end point has values such as “0.0”, “1.0", etc. The scoring end point also has an optional column which contains the text representation of prediction. E.g., if prediction=1.0, the predictionLabel column could have a value “Loan Granted”. If such a column is available, then while configuring the favourable and unfavourable outcome for the model, you can specify the string values “Loan Granted” and “Loan Denied”. If such a column is not available then you need to specify the integer/double values of 1.0, 0.0 for the favourable/unfavourable class.
+The training data might have class labels such as “Loan Denied”, “Loan Granted”. The prediction value that is returned by {{site.data.keyword.pm_full}} scoring end point has values such as “0.0”, “1.0". The scoring end point also has an optional column that contains the text representation of prediction. For example, if prediction=1.0, the predictionLabel column might have a value “Loan Granted”. If such a column is available, when you configure the favorable and unfavorable outcome for the model, specify the string values “Loan Granted” and “Loan Denied”. If such a column is not available, then you need to specify the integer and double values of 1.0, 0.0 for the favorable, and unfavorable classes.
 
-{{site.data.keyword.pm_full}} has a concept of output schema which defines the schema of the output of {{site.data.keyword.pm_full}} scoring end point and the role for the different columns. The roles are used to identify which column contains the prediction value, which column contains the prediction probability, and the class label value, etc. The output schema is automatically set for models created using model builder. It can also be set using the {{site.data.keyword.pm_full}} Python client. Users can use the output schema to define a column which contains the string representation of the prediction. This is done by setting the modeling_role for the column to ‘decoded-target’. The documentation for the {{site.data.keyword.pm_full}} Python client is available at: http://wml-api-pyclient-dev.mybluemix.net/#repository. Search for “OUTPUT_DATA_SCHEMA” to understand the output schema and the API to use is to store_model API which accepts the OUTPUT_DATA_SCHEMA as a parameter.
+{{site.data.keyword.pm_full}} has a concept of output schema that defines the schema of the output of {{site.data.keyword.pm_full}} scoring end point and the role for the different columns. The roles are used to identify which column contains the prediction value, which column contains the prediction probability, and the class label value, etc. The output schema is automatically set for models that are created by using model builder. It can also be set by using the {{site.data.keyword.pm_full}} Python client. Users can use the output schema to define a column that contains the string representation of the prediction. Set the `modeling_role` for the column to ‘decoded-target’. The documentation for the {{site.data.keyword.pm_full}} Python client is available at: http://wml-api-pyclient-dev.mybluemix.net/#repository. Search for “OUTPUT_DATA_SCHEMA” to understand the output schema and the API to use is to store_model API that accepts the OUTPUT_DATA_SCHEMA as a parameter.
 
 <p>&nbsp;</p>
 
 
-## Why does {{site.data.keyword.aios_short}} need access to my training data?
+## Why does {{site.data.keyword.aios_short}} need access to training data?
 {: #trainingdata}
 {: faq}
 {: support}
 
-You must either provide {{site.data.keyword.aios_short}} access to training data that is stored in Db2 or {{site.data.keyword.cos_full_notm}}, or you must run a notebook that can access the training data. {{site.data.keyword.aios_short}} needs access to your training data for the following reasons:
+You must either provide {{site.data.keyword.aios_short}} access to training data that is stored in Db2 or {{site.data.keyword.cos_full_notm}}, or you must run a Notebook to access the training data. {{site.data.keyword.aios_short}} needs access to your training data for the following reasons:
 
 - To generate contrastive explanations: To create explanations, access to statistics, such as median value, standard deviation, and distinct values from the training data is required.
 - To display training data statistics: To populate the bias details page, {{site.data.keyword.aios_short}} must have training data from which to generate statistics.
 - To build a drift detection model: The Drift monitor uses training data to create and calibrate drift detection.
 
-In the notebook-based approach, you are expected to upload the statistics and other information when configuring a deployment in {{site.data.keyword.aios_short}}. This implies that {{site.data.keyword.aios_short}} no longer has access to the training data outside the notebook, which is run in your environment. It only has access to the information uploaded during the configuration.
+In the Notebook-based approach, you are expected to upload the statistics and other information when you configure a deployment in {{site.data.keyword.aios_short}}. {{site.data.keyword.aios_short}} no longer has access to the training data outside of the Notebook, which is run in your environment. It has access only to the information uploaded during the configuration.
 
 <p>&nbsp;</p>
 
@@ -161,16 +146,16 @@ In the notebook-based approach, you are expected to upload the statistics and ot
 {: faq}
 {: support}
 
-The {{site.data.keyword.aios_short}} service tooling requires the same level of browser software as is required by {{site.data.keyword.cloud_notm}}. See the {{site.data.keyword.cloud_notm}} [Prerequisites](https://cloud.ibm.com/docs/overview?topic=overview-prereqs-platform#browsers-platform){: external} topic for details.
+The {{site.data.keyword.aios_short}} service requires the same level of browser software as is required by {{site.data.keyword.cloud_notm}}. See the {{site.data.keyword.cloud_notm}} [Prerequisites](https://cloud.ibm.com/docs/overview?topic=overview-prereqs-platform#browsers-platform){: external} topic for details.
 
 <p>&nbsp;</p>
 
-## Is there a command line tool that I can use? 
+## Is there a command-line tool to use? 
 {: #in-mop}
 {: faq}
 {: support}
 
-Yes! It's commonly referred to as the ModelOps CLI tool, but its official name is the [{{site.data.keyword.aios_short}} CLI model operations tool](https://github.com/IBM-Watson/aiopenscale-modelops-cli){: external}. Use it to execute tasks related to the lifecycle management of machine learning models. This tool is complementary to the {{site.data.keyword.cloud_notm}} CLI tool, augmented with the [machine learning plugin](https://www.ibm.com/support/knowledgecenter/DSXDOC/analyze-data/ml_dlaas_environment.html){: external}.
+Yes! There is a ModelOps CLI tool, whose official name is the [{{site.data.keyword.aios_short}} CLI model operations tool](https://github.com/IBM-Watson/aiopenscale-modelops-cli){: external}. Use it to run tasks related to the lifecycle management of machine learning models. This tool is complementary to the {{site.data.keyword.cloud_notm}} CLI tool, augmented with the [machine learning plug-in](https://www.ibm.com/support/knowledgecenter/DSXDOC/analyze-data/ml_dlaas_environment.html){: external}.
 
 <p>&nbsp;</p>
 
@@ -179,16 +164,16 @@ Yes! It's commonly referred to as the ModelOps CLI tool, but its official name i
 {: faq}
 {: support}
 
-Because {{site.data.keyword.aios_short}} is designed to be independent of your model-creation process, it supports whatever Python versions your machine learning provider supports. The [{{site.data.keyword.aios_short}} Python client](http://ai-openscale-python-client.mybluemix.net/){: external} is a Python library that allows you to work directly with the {{site.data.keyword.aios_short}} service on {{site.data.keyword.cloud_notm}}. For the most up-to-date version information, see [the Requirements section](http://ai-openscale-python-client.mybluemix.net/#requirements){: external}. You can use the Python client, instead of the {{site.data.keyword.aios_short}} client UI, to directly configure a logging database, bind your machine learning engine, and select and monitor deployments. For examples using the Python client in this way, see the [{{site.data.keyword.aios_short}} sample notebooks](https://github.com/pmservice/ai-openscale-tutorials/tree/master/notebooks){: external}.
+Because {{site.data.keyword.aios_short}} is independent of your model-creation process, it supports whatever Python versions your machine learning provider supports. The [{{site.data.keyword.aios_short}} Python client](http://ai-openscale-python-client.mybluemix.net/){: external} is a Python library that works directly with the {{site.data.keyword.aios_short}} service on {{site.data.keyword.cloud_notm}}. For the most up-to-date version information, see [the Requirements section](http://ai-openscale-python-client.mybluemix.net/#requirements){: external}. You can use the Python client, instead of the {{site.data.keyword.aios_short}} client UI, to directly configure a logging database, bind your machine learning engine, and select and monitor deployments. For examples by using the Python client in this way, see the [{{site.data.keyword.aios_short}} sample Notebooks](https://github.com/pmservice/ai-openscale-tutorials/tree/master/notebooks){: external}.
 
 <p>&nbsp;</p>
 
-## What does it mean if my fairness score is greater than 100 percent?
+## What does it mean if the fairness score is greater than 100 percent?
 {: #fairness-score-over100}
 
 Depending on your fairness configuration, your fairness score can exceed 100 percent. It means that your monitored group is getting relatively more “fair” outcomes as compared to the reference group. Technically, it means that the model is unfair in the opposite direction.
 
 
-## When configuring a model, it requires information about the location of the training data and the options are COS and Db2. The data is in Netezza.  Can {{site.data.keyword.aios_short}} use Netezza?
+## Configuring a model requires information about the location of the training data and the options are Cloud Object Storage and Db2. If the data is in Netezza, can {{site.data.keyword.aios_short}} use Netezza?
 
-You can make use of this [{{site.data.keyword.aios_short}} notebook](https://github.com/IBM-Watson/aios-data-distribution/blob/master/training_statistics_notebook.ipynb) to read the data from Netezza and generate the training statistics and also the drift detection model.
+Use this [{{site.data.keyword.aios_short}} Notebook](https://github.com/IBM-Watson/aios-data-distribution/blob/master/training_statistics_notebook.ipynb) to read the data from Netezza and generate the training statistics and also the drift detection model.
