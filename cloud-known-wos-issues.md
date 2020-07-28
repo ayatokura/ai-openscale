@@ -238,11 +238,8 @@ If you are using a different load balancer, other than HAProxy, you might need t
       At runtime you need to replace values for the following variables:
 
       $HOSTNAME - Host Name, for example "aiopenscale.test.cloud.ibm.com"
-      $DATA_MART_ID - DataMart ID
-      $SERVICE_BINDING_ID - Service Binding ID
-      $ASSET_ID - Asset ID or the model ID
-      $DEPLOYMENT_ID - Deployment ID
-      $TOKEN - Bearer token
+      $SERVICE_INSTANCE_ID - Service instance ID
+      $SUBSCRIPTION_ID- Subscription ID
 
       */
       import org.apache.http.HttpVersion;
@@ -250,7 +247,7 @@ If you are using a different load balancer, other than HAProxy, you might need t
       import org.apache.http.entity.ContentType;
 
       String bearerToken = "Bearer <TOKEN>";
-      String URL = "https://{hostname}/openscale/{service_instance_id}/v2/subscriptions/{subscription_id}/predictions";
+      String URL = "https://$HOSTNAME/openscale/$SERVICE_INSTANCE_ID/v2/subscriptions/$SUBSCRIPTION_ID/predictions";
 
       String payload = "{ \"fields\": [ \"field1\", \"field2\", \"field3\" ], \"values\": [ [ \"field1Value1\", \"field2Value1\", \"field3Value1\" ], [ \"field1Value2\", \"field2Value2\", \"field3Value2\" ]] }";
 
