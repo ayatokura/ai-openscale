@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-05-18"
 
-keywords: accuracy, 
+keywords: accuracy, text, unstructured, unstructured text, pandas, explainability
 
 subcollection: ai-openscale
 
@@ -23,7 +23,8 @@ subcollection: ai-openscale
 # Working with unstructured text models
 {: #ie-unstruct-steps}
 
-{{site.data.keyword.aios_short}} supports explainability for unstructured text data. You must complete the following steps to set up your environment.
+{{site.data.keyword.aios_short}} supports explainability for unstructured text data. You must complete the following steps to set up your environment. For information about configuring support for non-space-delimited languages, such as Japanese, Chinese, and Korean, see [Enabling non-space-delimited language support](/docs/ai-openscale?topic=ai-openscale-explainability-monitor#ie-unstruct-xplan-langsupport)
+
 {: shortdesc}
 
 1. Set up your environment.

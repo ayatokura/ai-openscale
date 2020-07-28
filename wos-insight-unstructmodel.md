@@ -30,6 +30,8 @@ If you are using a Keras model that takes the input as byte array, you must crea
 
 For information about setting up your unstructured text models, see [Working with unstructured text models](/docs/ai-openscale?topic=ai-openscale-ie-unstruct-steps).
 
+For information about configuring support for non-space-delimited languages, such as Japanese, Chinese, and Korean, see [Enabling non-space-delimited language support](/docs/ai-openscale?topic=ai-openscale-explainability-monitor#ie-unstruct-xplan-langsupport)
+
 ## Explaining unstructured text transactions
 {: #ie-unstruct-xplan}
 

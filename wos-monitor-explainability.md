@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-05-18"
 
-keywords: explainability, configuration, configure, controllable, feature
+keywords: explainability, configuration, configure, controllable, feature, text, non-space-delimited, Korean, Chinese, Japanese
 
 subcollection: ai-openscale
 
