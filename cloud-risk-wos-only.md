@@ -60,7 +60,10 @@ From the **Actions** menu, select a model to compare to the currently displayed 
 ## Evaluate Now 
 {: #mrm-risk-wos-only-evaluate-now-opt}
 
-In the pre-production environment, you can upload test data in the form of a CSV file. After you upload the data, you can immediately see results by evaluating the new data against the model.
+In the pre-production environment, you can upload test data in the form of a CSV file, a database table, or a cloud object storage file. To use the CSV option, drag the CSV file to the drop box. To use the Db2 or cloud storage options, you must supply credentials. After you upload the data, you can immediately see results by evaluating the new data against the model.
+
+Connections to the database options are transient. To perform the evaluation a subsequent time, you must reenter the connection information.
+{: note}
 
 ## Copy configuration from a pre-production subscription to a production subscription
 {: #mrm-risk-wos-only-copy-configuration}
