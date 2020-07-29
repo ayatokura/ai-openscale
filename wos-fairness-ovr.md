@@ -95,7 +95,7 @@ In {{site.data.keyword.aios_short}}, the positive outcomes are designated as the
 ### Bias visualization
 {: #mf-monitor-bias-viz}
 
-When potential bias is detected, {{site.data.keyword.aios_short}} performs several functions to confirm whether the bias is real. {{site.data.keyword.aios_short}} perturbs the data by flipping the monitored value to the reference value and then running this new record through the model. It then surfaces the resulting output as the de-biased output. {{site.data.keyword.aios_short}} also trains a shadow de-biased model that it then uses to detect when a model is going to make a biased prediction. 
+When potential bias is detected, {{site.data.keyword.aios_short}} performs several functions to confirm whether the bias is real. {{site.data.keyword.aios_short}} perturbs the data by flipping the monitored value to the reference value and then running this new record through the model. It then surfaces the resulting output as the debiased output. {{site.data.keyword.aios_short}} also trains a shadow debiased model that it then uses to detect when a model is going to make a biased prediction. 
 
 Two different datasets are used for computing fairness and accuracy. Fairness is computed by using the payload + perturbed data. Accuracy is computed by using the feedback data. To compute accuracy, {{site.data.keyword.aios_short}} needs manually labelled data, which is only present in feedback table.
 
@@ -130,7 +130,7 @@ The results of these determinations are available in the bias visualization, whi
 
   ![example of training data](images/wos-fairness-age-training.png)
 
-- **Debiased**: The output of the debiasing algorithm after processing the runtime and perturbed data. Selecting the **De-biased** radio button shows you the changes in the de-biased model, versus the model in production. The chart reflects the improved outcome status for groups.
+- **Debiased**: The output of the debiasing algorithm after processing the runtime and perturbed data. Selecting the **debiased** radio button shows you the changes in the debiased model, versus the model in production. The chart reflects the improved outcome status for groups.
 
    Take note of the following debiased details:
    

@@ -17,12 +17,7 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 
@@ -32,4 +27,4 @@ subcollection: ai-openscale
 You can analyze the scoring payload that is sent to your deployment in the selected data range by reviewing prediction classes and confidence distribution in each class
 {: shortdesc}
 
-   ![a chart that maps prediction by confidence distribution](images/wos_by_confidence.png)
+   ![A chart that maps prediction by confidence distribution](images/wos_by_confidence.png)

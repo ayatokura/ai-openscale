@@ -20,10 +20,6 @@ subcollection: ai-openscale
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # Amazon SageMaker frameworks

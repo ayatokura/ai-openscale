@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-05-18"
 
-keywords: fairness, monitoring, charts, de-biasing, bias, accuracy, tabular model, table
+keywords: fairness, monitoring, charts, debiasing, bias, accuracy, tabular model, table
 
 subcollection: ai-openscale
 

@@ -83,9 +83,9 @@ Accuracy =   ___________________________________________________________________
 You need to add manually-labelled feedback data through the {{site.data.keyword.aios_short}} UI as shown in the following examples, using a [Python client](http://ai-openscale-python-client.mybluemix.net/#feedbacklogging){: external} or [Rest API](https://cloud.ibm.com/apidocs/ai-openscale#post-feedback-payload){: external}.
 
 
-### De-biased accuracy
+### debiased accuracy
 {: #acc-debias-view}
 
-When there is data to support it, the accuracy is computed on both the original and de-biased model. {{site.data.keyword.aios_full_notm}} computes the accuracy for the de-biased output and stores it in the payload logging table as an additional column.
+When there is data to support it, the accuracy is computed on both the original and debiased model. {{site.data.keyword.aios_full_notm}} computes the accuracy for the debiased output and stores it in the payload logging table as an additional column.
 
 ![a model visualization appears with accuracy calculated for both the original and debiased models](images/wos-debiased-accuracy.png)

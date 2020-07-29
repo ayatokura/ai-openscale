@@ -53,7 +53,7 @@ Select any of the individual deployment tiles to view more details about that de
 - [Drift](/docs/ai-openscale?topic=ai-openscale-behavior-drift-ovr)
 - [Performance](/docs/ai-openscale?topic=ai-openscale-anlz_metrics_performance)
 - [Analytics](/docs/ai-openscale?topic=ai-openscale-anlz_metrics_payload)
-- [De-biasing options](/docs/ai-openscale?topic=ai-openscale-it-dbo)
+- [Debiasing options](/docs/ai-openscale?topic=ai-openscale-it-dbo)
 
 ## Explainability
 {: #io-tran}
