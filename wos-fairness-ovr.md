@@ -18,10 +18,6 @@ subcollection: ai-openscale
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # Fairness metrics overview
@@ -71,6 +67,18 @@ A model is deemed to be biased if, across this combined dataset, the percentage 
 Fairness values can be more than 100%. This means that the Monitored group received more favorable outcomes than the Reference group. In addition, if no new scoring requests are sent, then the Fairness value will remain constant.
 {: note}
 
+For balanced data sets the following concepts apply:
+
+- To determine the perfect equality value, reference group transactions are synthesized by changing the monitored feature value of every monitored group transaction to all reference group values. These new synthesized transactions are added to the set of reference group transactions and evaluated by the model.
+  
+  If the monitored feature is `SEX` and the monitored group is `FEMALE`, all `FEMALE` transactions are duplicated as `MALE` transactions. Other features values remain unchanged. These new synthesized `MALE` transactions are added to the set of original `MALE` reference group transactions.
+  
+- From the new reference group, the percentage of favorable outcomes is determined. This percentage represents perfect fairness for the monitored group.
+- The monitored group transactions are also synthesized by changing the reference feature value of every reference group transaction to the monitored group value. These new synthesized transactions are added to the set of monitored group transactions and evaluated by the model.
+  
+ If the monitored feature is `SEX` and the monitored group is `FEMALE`, all `MALE` transactions are duplicated as `FEMALE` transactions. Other features values remain unchanged. These new synthesized `FEMALE` transactions are added to the set of original `FEMALE` monitored group transactions.
+
+
 ### Do the math
 {: #mf-bias-math}
 
@@ -91,6 +99,27 @@ The resulting number will be a percentage, which is the percentage that the rate
 
 In {{site.data.keyword.aios_short}}, the positive outcomes are designated as the favorable outcomes, and the negative outcomes are designated as the unfavorable outcomes. The privileged group is designated as the reference group, and the unprivileged group is designated as the monitored group.
 
+The following mathematical formula is used for calculating perfect equality:
+
+```
+                     Percentage of favorable outcomes for the monitored group, 
+                     including the synthesized transactions from the reference group
+Perfect equality =   ______________________________________________________________________
+
+                     Percentage of favorable outcomes for all reference transactions, 
+                     including the synthesized transactions from the monitored group
+```
+
+For example, if the monitored feature is `SEX` and the monitored group is `FEMALE`, the following formula shows the equation for perfect equality:
+
+```
+                                 Percentage of favorable outcomes for `FEMALE` transactions, 
+                                 including synthesized transaction that were initially `MALE` but changed to `FEMALE`
+Perfect equality for `SEX` =   ___________________________________________________________________________________________
+
+                                 Percentage of favorable outcomes for `MALE` transactions, 
+                                 including the synthesized transactions that were initially `FEMALE` but changed to `MALE`
+```
 
 ### Bias visualization
 {: #mf-monitor-bias-viz}
