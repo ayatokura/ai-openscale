@@ -113,6 +113,36 @@ When you set up the fairness monitor, select the fields to monitor. This can inc
 
 Some fields are training features. Others fields that are not training features are identified as meta fields. For the selected meta fields, {{site.data.keyword.aios_short}} checks for indirect bias.
 
+## Debias endpoint
+{: #mf-debias-endpoint}
+
+
+The following Java code snippet is provided for debiasing. The debiasing endpoint is available from the UI for you to use as part of your application code or Notebook:
+
+
+```java
+/**
+At runtime you need to replace values for the following variables:
+
+$HOSTNAME - Host Name, for example "aiopenscale.test.cloud.ibm.com"
+$SERVICE_INSTANCE_ID - Service instance ID
+$SUBSCRIPTION_ID - Subscription ID
+
+*/
+
+import org.apache.http.HttpVersion;
+import org.apache.http.client.fluent.Request;
+import org.apache.http.entity.ContentType;
+
+String bearerToken = "Bearer <TOKEN>";
+String URL = "https://$HOSTNAME/openscale/$SERVICE_INSTANCE_ID/v2/subscriptions/$SUBSCRIPTION_ID/predictions";
+
+String payload = "{ \"fields\": [ \"field1\", \"field2\", \"field3\" ], \"values\": [ [ \"field1Value1\", \"field2Value1\",\"field3Value1\" ], [ \"field1Value2\", \"field2Value2\", \"field3Value2\" ]] }";
+
+byte[] res = Request.Post(URL).addHeader("Authorization", bearerToken).useExpectContinue().version(HttpVersion.HTTP_1_1)
+          .bodyString(payload, ContentType.APPLICATION_JSON).execute().returnContent().asBytes();
+```
+{: codeblock}
 
 ## Next steps
 {: #wos-debias-next-steps}
