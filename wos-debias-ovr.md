@@ -52,19 +52,19 @@ Finally, {{site.data.keyword.aios_short}} uses a threshold to decide that data i
 ## Indirect bias
 {: #mf-debias-indirect}
 
-Indirect bias occurs when one feature substitutes for another. For example, one feature in a model might approximate another feature that is a protected attribute. However, it would be illegal to discriminate based on race, however because race can sometimes track closely with postal code this might be the cause of indirect bias. In like manner, if you had access to a person's music tastes you might be able to determine a person's age. Or, if you had access to purchase history, you might determine a person's sex. Even if your predictive model had none of the protected attributes, such as race, age, or sex by using proxies your model might produce biased results.
+Indirect bias occurs when one feature can be used to stand for another. For example, one feature in a model might approximate another feature that is a protected attribute. However, it would be illegal to discriminate based on race because race can sometimes track closely with postal code, it might be the cause of indirect bias. In like manner, if you had access to a person's music tastes you might be able to determine a person's age. Or, if you had access to purchase history, you might determine a person's sex. Even if your predictive model had none of the protected attributes, such as race, age, or sex by using proxies your model might produce biased results.
 
 {{site.data.keyword.aios_short}} analyzes indirect bias when the following conditions are met:
 
 - To find correlations, the data set must be sufficiently large (more than 4000 records).
-- The training data must include the meta fields. This means that you must train the model on a subset of data fields. These additional fields, the meta fields, are for determining indirect bias. (Include the meta fields, but don't use them in model training.)
-- Payload logging must contain meta fields and be run before the fairness monitor is configured. You must use this method to upload the meta fields to the {{site.data.keyword.aios_short}} service. This requires two types of input: 1) training features with values and 2) meta fields with values.
-- While configuring fairness, the additional fields are selected as fields to monitor.
+- The training data must include the meta fields. You must train the model on a subset of data fields. These additional fields, the meta fields, are for determining indirect bias. (Include the meta fields, but don't use them in model training.)
+- Payload logging must contain meta fields and be run before the fairness monitor is configured. You must use this method to upload the meta fields to the {{site.data.keyword.aios_short}} service. Payload logging for indirect bias requires two types of input: 1) training features with values and 2) meta fields with values.
+- When you configure the fairness monitor, select the additional fields to monitor.
 
 ### Sample JSON payload file with meta fields
 {: #mf-debias-indirect-sample-json}
 
-The following sample file shows a JSON payload with the fields and values that are used to train the model and the meta fields and values that are used for the indirect bias analysis. The meta fields are not used to train the model, instead they are reserved for a different kind of analysis that attempts to correlate them to bias in the model. Although the meta fields can be any type of data, they are usually protected attributes, such as sex, race, or age.
+The following sample file shows a JSON payload with the fields and values that are used to train the model. The meta fields and values that are used for the indirect bias analysis are also included. The meta fields are not used to train the model, instead they are reserved for a different kind of analysis that attempts to correlate them to bias in the model. Although the meta fields can be any type of data, they are usually protected attributes, such as sex, race, or age.
 
 ```
 [{
@@ -107,7 +107,7 @@ Meta values must be in the format of an array of arrays:
 ### Configuring the {{site.data.keyword.aios_short}} service for indirect bias
 {: #mf-debias-indirect-steps}
 
-When you set up the fairness monitor, select the fields to monitor. This can include both training features and fields excluded from model training. If you select a field excluded from model training, {{site.data.keyword.aios_short}} finds correlations between values in that field and values in the training features. The correlated features will be used as proxies for the fields that were excluded from model training.
+When you set up the fairness monitor, select the fields to monitor. Include both training features and fields that are excluded from model training. If you select a field that is excluded from model training, {{site.data.keyword.aios_short}} finds correlations between values in that field and values in the training features. The correlated features are used as proxies for the fields that were excluded from model training.
 
 ![Indirect bias displays](images/wos-indirect-bias.png)
 
@@ -118,4 +118,4 @@ Some fields are training features. Others fields that are not training features 
 {: #wos-debias-next-steps}
 
 - For more information, see [Debiasing options](/docs/ai-openscale?topic=ai-openscale-it-dbo).
-- For a sample notebook that tests for indirect bias, see [Mitigating Indirect Bias with Watson Openscale](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20indirect%20bias.ipynb){: external}.
+- For a Notebook for indirect bias, see [Mitigating Indirect Bias with Watson OpenScale](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20indirect%20bias.ipynb){: external}.
