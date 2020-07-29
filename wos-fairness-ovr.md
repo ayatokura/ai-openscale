@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-05-18"
 
-keywords: metrics, monitoring, custom metrics, thresholds
+keywords: metrics, monitoring, custom metrics, thresholds, protected attributes, sex, ethnicity, race, age, zip code, postal code, marital status, fairness, balanced data sets, perfect equality, disparate impact, payload, perturbed, debiased, training
 
 subcollection: ai-openscale
 
@@ -34,7 +34,7 @@ Currently, {{site.data.keyword.aios_short}} detects and recommends monitors for 
 - ethnicity
 - marital status
 - age
-- zip code
+- zip code or postal code
 
 In addition to detecting protected attributes, {{site.data.keyword.aios_short}} recommends which values within each attribute should be set as the monitored and the reference values. For example, {{site.data.keyword.aios_short}} recommends that within the `Sex` attribute, the bias monitor be configured such that `Female` and `Non-Binary` are the monitored values, and `Male` is the reference value. If you want to change any of the recommendations, you can edit them via the bias configuration panel. 
 
