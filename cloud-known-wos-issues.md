@@ -55,7 +55,7 @@ The following limitations and known issues are common to both {{site.data.keywor
 ### Unexpected data type causes automatic payload logging to fail
 {: #wos-limitations-float-not-vector-error}
 
-If your model output includes a field with a probability value, it must be a vector. Otherwise, automatic payload scoring is disabled.
+If your model output includes a field with a probability value, it must be a vector. Otherwise, automatic payload scoring is disabled even for {{site.data.keyword.pm_full}}.
 
 
 
