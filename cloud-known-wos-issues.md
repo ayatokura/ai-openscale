@@ -33,6 +33,7 @@ The following list contains the known issues and limitation that are common for 
 {: shortdesc}
 
 <p>&nbsp;</p>
+
 ## Common issues
 {: #wos-common-issues}
 
@@ -48,6 +49,13 @@ The following limitations and known issues are common to both {{site.data.keywor
 - Support for the XGBoost framework has the following limitations for classification problems: For binary classification, {{site.data.keyword.aios_short}} supports the `binary:logistic` logistic regression function with an output as a probability of `True`. For multiclass classification, {{site.data.keyword.aios_short}} supports the `multi:softprob` function where the result contains the predicted probability of each data point belonging to each class.
 - Fairness and drift metrics are not supported for unstructured (image or text) data types.
 - Having an equals sign (=) in the column name of a data set causes an issue with explainability and generates the following error message: `Error: An error occurred while computing feature importance`. Do not use an equals sign (=) in a column name. It is not supported.
+
+<p>&nbsp;</p>
+
+### Unexpected data type causes automatic payload logging to fail
+{: #wos-limitations-float-not-vector-error}
+
+If your model output includes a field with a probability value, it must be a vector. Otherwise, automatic payload scoring is disabled.
 
 
 
