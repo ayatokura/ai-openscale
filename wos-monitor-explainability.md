@@ -34,7 +34,7 @@ Regression, unstructured text, and image classification models do not support co
 ## Requirements for controllable features
 {: #explainability-reqs}
 
-A controllable feature is one that can be changed and have a meaningful impact on the outcome. For example, a loan amount would be a controllable feature that might affect whether an applicant is approved or not. An example of an uncontrollable feature would be something inherent, such as sex or age. These characteristics are attributes that would be beyond the ability of someone to adjust in a transient manner.
+A controllable feature is one that can be changed and have a meaningful impact on the outcome. For example, a loan amount would be a controllable feature that might affect whether an applicant is approved or not. An example of an uncontrollable feature would be something inherent, such as sex or age. These characteristics are attributes that would be beyond the ability of someone to adjust in a transient manner. 
 
 ## Steps
 {: #explainability-config}

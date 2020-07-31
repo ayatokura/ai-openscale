@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-05-18"
 
-keywords: supported frameworks, models, model types, limitations, limits
+keywords: supported frameworks, models, model types, limitations, limits, data types
 
 subcollection: ai-openscale
 

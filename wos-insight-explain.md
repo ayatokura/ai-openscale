@@ -25,6 +25,7 @@ subcollection: ai-openscale
 For each deployment, you can see explainability data for specific transactions.
 {: shortdesc}
 
+
 Get a quick overview of explainability in {{site.data.keyword.aios_short}} by watching the following video:
 
 
@@ -58,7 +59,7 @@ Whenever data is sent to the model for scoring, {{site.data.keyword.pm_full}} se
 {: #ie-find}
 
 1.  From the chart, slide the marker across the chart and click the **View details** link to [visualize data for a specific hour](/docs/ai-openscale?topic=ai-openscale-it-vdet).
-1.  Click the **View transactions** button to [view the list of transaction IDs](/docs/ai-openscale?topic=ai-openscale-it-tra).
+1.  Click the **View transactions** button to [view the list of transaction IDs](/docs/ai-openscale?topic=ai-openscale-it-vdep#it-tra).
 1.  Click the **Explain** link in the Action column for any transaction ID, which will open that transaction in the Explainability tab.
 
   See the following sections for examples of explanations for different types of models.

@@ -23,7 +23,7 @@ subcollection: ai-openscale
 # Explaining image models
 {: #ie-image}
 
-{{site.data.keyword.aios_short}} supports explainability for image data.
+{{site.data.keyword.aios_short}} supports explainability for image data. 
 {: shortdesc}
 
 ## Explaining image model transactions
