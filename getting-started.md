@@ -161,7 +161,7 @@ Transaction IDs for the past hour are listed for those transactions that have bi
 
 For information about finding and explaining transactions, see [Monitoring explainability](/docs/ai-openscale?topic=ai-openscale-ie-ov).
 
-   ![Demo Lets go](images/cloud-fastpath_demo_11.35.50.png)
+   ![Explainability image classification chart is displayed. it shows confidence levels for the tabular data model](images/wos-tabular-transactions.png)
 
 
 ## Finishing the tour
