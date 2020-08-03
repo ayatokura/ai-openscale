@@ -61,10 +61,10 @@ Select any of the individual deployment tiles to view more details about that de
 Use the **Explain a transaction** ![Explain a transaction tab](images/wos-insight-transact-tab.png) tab to search a specific transaction ID to explain a particular transaction record.
 
 - [Explaining transactions](/docs/ai-openscale?topic=ai-openscale-ie-ov)
-- [Explaining categorical models](/docs/ai-openscale?topic=ai-openscale-ie-class)
-- [Explaining image models](/docs/ai-openscale?topic=ai-openscale-ie-image)
-- [Explaining unstructured text models](/docs/ai-openscale?topic=ai-openscale-ie-unstruct)
-- [Contrastive explanations](/docs/ai-openscale?topic=ai-openscale-ie-pp-pn)
+- [Explaining categorical models](/docs/ai-openscale?topic=ai-openscale-ie-ov#ie-class)
+- [Explaining image models](/docs/ai-openscale?topic=ai-openscale-ie-ov#ie-image)
+- [Explaining unstructured text models](/docs/ai-openscale?topic=ai-openscale-ie-ov#ie-unstruct)
+- [Contrastive explanations](/docs/ai-openscale?topic=ai-openscale-ie-ov#ie-contrastive.v.lime)
 
 ## Model risk analysis and governance
 {: #io-mrm-insights}
