@@ -50,4 +50,4 @@ subcollection: ai-openscale
 ## Next steps
 {: #ie-tabular-nextsteps}
 
-
+View transaction details, where you can see how the prediction was determined. For more information, see [Explaining tabular transactions](/docs/ai-openscale?topic=ai-openscale-ie-ov#ie-tabular-xplan).

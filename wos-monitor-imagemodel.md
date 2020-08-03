@@ -60,3 +60,4 @@ You can use {{site.data.keyword.aios_short}} to work with image models. You must
 ## Next steps
 {: #ie-image-next-steps}
 
+View transaction details, where you can see how the prediction was determined. For more information, see [Explaining image models](/docs/ai-openscale?topic=ai-openscale-ie-ov#ie-image).
