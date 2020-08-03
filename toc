@@ -59,6 +59,7 @@ Watson OpenScale
             wos-monitor-endpoint.md
             wos-monitor-unstruct.md
             wos-monitor-imagemodel.md
+            wos-insight-tabularmodel.md
             wos-metrics.md
 
         {: .topicgroup}
@@ -77,11 +78,6 @@ Watson OpenScale
             wos-insight-viz-data-by-time.md
             wos-insight-debias.md
             wos-insight-explain.md
-            wos-insight-categorical.md
-            wos-insight-imagemodel.md
-            wos-insight-unstructmodel.md
-            wos-insight-tabularmodel.md        
-            wos-insight-contrastive.md
 
         {: .topicgroup}
         Model risk and governance

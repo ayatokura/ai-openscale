@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-05-18"
 
-keywords: explainability, monitoring, explain, explaining, transactions, transaction ID
+keywords: explainability, monitoring, explain, explaining, transactions, transaction ID, LIME, contrastive, pertinent positives, pertinent negatives
 
 subcollection: ai-openscale
 
@@ -82,10 +82,125 @@ Local Interpretable Model-Agnostic Explanations (LIME) is a Python library that 
 For proper processing of LIME explanations, {{site.data.keyword.aios_short}} does not support column names with equals sign (=) in the dataset.
 {: important} 
 
+## Contrastive explanations
+{: #ie-pp-pn}
+
+For contrastive explanations, {{site.data.keyword.aios_short}} displays the maximum changes for the same outcome and the minimum changes for a changed outcome. These categories are also known as pertinent positive and pertinent negative values. These values help explain the behavior of the model in the vicinity of the data point for which an explanation is generated. You can use the **Explain** tab to see how the model made the prediction and you can use the **Inspect** tab to experiment with features by changing the values to see how you can change the outcome.
+{: shortdesc}
+
+While the charts are useful in showing the most significant factors in determining the outcome of a transaction, classification models can also include advanced explanations on the **Explain** and **Inspect** tabs.
+
+- The **Explain** tab, in addition to basic information about the transaction and model, displays the following information:
+  
+  - Predicted outcome: The outcomes are set in the model.
+  - How this prediction was determined: 
+  - Confidence level: 
+  - Features influencing this prediction: 
+  
+- The **Inspect** tab displays the following information:
+  
+  - Feature: The feature from the model. If the model was created with additional meta fields that were not used in training, you have the option of viewing only those features by selecting the **Analyze controllable features only** option.
+  - Original value: The original value used in training the model.
+  - New value: You can enter a new value for one or more features to see how it might change the outcome. Change a value and click the **Score new values** button.
+  - Value for a different outcome: After you run an analysis, you can see what are the mostly likely settings to change the outcome.
+  - Importance: After you run an analsysis, you can see what the relative importance is for each changed feature value.
+
+
+Consider an example of a model used for loan processing. It can have the following predictions: **Loan Approved**, **Loan Partially Approved**, and **Loan Denied**. For the sake of simplicity, assume that the model takes only one feature in input: salary. Consider a data point where the salary=150000 and the model predicts Loan Partially Approved. Assume that the median value of salary is 90000. A pertinent positive might be: Even if the salary of the person was 100000, the model still predicts Loan Partially Approved. Alternatively, the pertinent negative is: If the salary of the person was 200000, the model prediction would change to Loan Approved. Thus pertinent positive and pertinent negative together explain the behavior of the model in the vicinity of the data point for which the explanation is generated.
+ 
+{{site.data.keyword.aios_short}} always displays a pertinent positive sometimes there are no pertinent negatives to be displayed. When {{site.data.keyword.aios_short}} calculates the pertinent negative value, it changes the values of all the features away from their median value. If the value changes away from median, the prediction does not change, then there are no pertinent negatives to display. For pertinent positives, {{site.data.keyword.aios_short}} finds the maximum change in the feature values towards the median such that the prediction does not change. Practically, there is almost always a pertinent positive to explain a transaction (and it might be the feature value of the input data point itself).
+
+## Explaining image models
+{: #ie-image}
+
+{{site.data.keyword.aios_short}} supports explainability for image data. 
+{: shortdesc}
+
+## Explaining image model transactions
+{: #ie-image-workingviewing}
+
+For an image classification model example of explainability, you can see which parts of an image contributed positively to the predicted outcome and which contributed negatively. In the following example, the image in the positive pane shows the parts which impacted positively to the prediction. The image in the negative pane shows the parts of images that had a negative impact on the outcome.
+
+![Explainability image classification confidence detail displays with an image of a tree frog. Different parts of the picture are highlighted in separate frames. Each part shows the extent to which it did or did not help to determine that the image is a frog.](images/wos-insight-explain-image.png)
+
+See the image zones that contributed to the model output and the zones that did not contribute. Click an image for a larger view.
+
+## Image model examples
+{: #ie-image-working-ntbks}
+
+Use the following two Notebooks to see detailed code samples and develop your own {{site.data.keyword.aios_short}} deployments:
+
+- [Tutorial on generating an explanation for an image-based model](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20Explanation%20for%20Image%20Multiclass%20Classification%20Model.ipynb){: external}
+- [Tutorial on generating an explanation for an image-based binary classifier model](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20Explanation%20for%20Image%20Binary%20Classification%20Model.ipynb){: external}
+
+## Explaining a categorical model
+{: #ie-class}
+
+A categorical model, such as a binary classification model categorizes data into distinct groups. Unlike regression, image, and unstructured text models, {{site.data.keyword.aios_short}} generates advanced explanations for binary classification models. You can use the **Inspect** tab to experiment with features by changing the values to see whether the outcome changes.
+{: shortdesc}
+
+While the charts are useful in showing the most significant factors in determining the outcome of a transaction, classification models can also include advanced explanations on the `Explain` and `Inspect` tabs.
+
+- The `Explain` tab, in addition to basic information about the transaction and model, displays the following information:
+  
+  - Predicted outcome: The outcomes are set in the model.
+  - How this prediction was determined: 
+  - Confidence level: 
+  - Features influencing this prediction: 
+  
+- The `Inspect` tab displays the following information:
+  
+  - Feature: The feature from the model. If the model was created with additional meta fields that were not used in training, you have the option of viewing only those features by selecting the **Analyze controllable features only** option.
+  - Original value: The original value used in training the model.
+  - New value: You can enter a new value for one or more features to see how it might change the outcome.
+  - Value for a different outcome: After you run an analysis, you can see what are the mostly likely settings to change the outcome.
+  - Importance: After you run an analsysis, you can see what the relative importance is for each changed feature value.
+
+## Explaining unstructured text models
+{: #ie-unstruct}
+
+{{site.data.keyword.aios_short}} supports explainability for unstructured text data.
+{: shortdesc}
+
+If you are using a Keras model that takes the input as byte array, you must create a deployable function in {{site.data.keyword.pm_full}} that accepts the entire text as a single feature in input (as opposed to text which is vectorised and represented as a tensor or split across multiple features). Creating a deployable function is part of the functionality that {{site.data.keyword.pm_full}} support. For more information, see [Passing payload data to model deployments](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-deploy-functions.html?linkInPage=true#models){: external}
+
+For information about setting up your unstructured text models, see [Working with unstructured text models](/docs/ai-openscale?topic=ai-openscale-ie-unstruct-steps).
+
+For information about configuring support for non-space-delimited languages, such as Japanese, Chinese, and Korean, see [Enabling non-space-delimited language support](/docs/ai-openscale?topic=ai-openscale-explainability-monitor#ie-unstruct-xplan-langsupport)
+
+## Explaining unstructured text transactions
+{: #ie-unstruct-xplan}
+
+The following example of explainability shows a classification model that evaluates unstructured text. The explanation shows the keywords that had a positive as well as a negative impact on the model prediction. We also show the position of the identified keywords in the original text which was fed as input to the model.  
+
+![Explainability image classification chart is displayed. it shows confidence levels for the unstructured text](images/wos-insight-explain-text.png)
+
+Unstructured text models present the importance of words or tokens. To change the language, select a different language from the drop-down menu. The explanation runs again by using a different tokenizer.
+
+
+## Unstructured text model example
+{: #ie-unstruct-ntbkssample}
+
+Use the following notebook to see detailed code samples and develop your own {{site.data.keyword.aios_short}} deployments:
+
+- [Tutorial on generating an explanation for a text-based model](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20Explanation%20for%20Text%20Model.ipynb){: external}
+
+## Explaining tabular transactions
+{: #ie-tabular-xplan}
+
+The following example of explainability shows a classification model that evaluates tabular data.
+
+![Explainability image classification chart is displayed. it shows confidence levels for the tabular data model](images/wos-tabular-transactions.png)
+
+## Tabular model example
+{: #ie-tabular-ntbkssample}
+
+Use the following notebook to see detailed code samples and develop your own {{site.data.keyword.aios_short}} deployments:
+
+- [Tutorial on generating an explanation for a tabular model on {{site.data.keyword.aios_short}}](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20Explanation%20for%20Tabular%20Model.ipynb){: external}
+
+
+
 ## Next steps
 {: #ie-trans-id-next}
 
-- [Explaining categorical models](/docs/ai-openscale?topic=ai-openscale-ie-class)
-- [Explaining image models](/docs/ai-openscale?topic=ai-openscale-ie-image)
-- [Explaining unstructured text models](/docs/ai-openscale?topic=ai-openscale-ie-unstruct)
-- [Contrastive explanations](/docs/ai-openscale?topic=ai-openscale-ie-pp-pn)

@@ -70,4 +70,6 @@ Select the **Biased transactions** view to see only the subset of transactions t
 
 ![Transaction lists only biased transactions](images/wos-explain-debias-transactions.png)
 
+## Next steps
+{: #it-tra-nextsteps}
 

@@ -17,21 +17,16 @@ subcollection: ai-openscale
 {:note: .note}
 {:pre: .pre}
 {:codeblock: .codeblock}
-
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
-# Explaining tabular models
+# Working with tabular models
 {: #ie-tabular}
 
-{{site.data.keyword.aios_short}} supports explainability for tabular data.
+{{site.data.keyword.aios_short}} supports explainability for tabular data. You must complete the following steps to set up you environment:
 {: shortdesc}
 
-## Working with tabular models
+## Steps
 {: #ie-tabular-steps}
 
 1. Set up your environment.
@@ -52,17 +47,7 @@ subcollection: ai-openscale
    9. Enable the explainability.
    10. Get explanations for the transactions.
 
-## Explaining tabular transactions
-{: #ie-tabular-xplan}
+## Next steps
+{: #ie-tabular-nextsteps}
 
-The following example of explainability shows a classification model that evaluates tabular data.
-
-![Explainability image classification chart is displayed. it shows confidence levels for the tabular data model](images/wos-tabular-transactions.png)
-
-## Tabular model example
-{: #ie-tabular-ntbkssample}
-
-Use the following notebook to see detailed code samples and develop your own {{site.data.keyword.aios_short}} deployments:
-
-- [Tutorial on generating an explanation for a tabular model on {{site.data.keyword.aios_short}}](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20Explanation%20for%20Tabular%20Model.ipynb){: external}
 

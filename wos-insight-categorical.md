@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-05-18"
 
-keywords: fairness, monitoring, charts, debiasing, bias, accuracy
+keywords: fairness, monitoring, charts, debiasing, bias, accuracy,
 
 subcollection: ai-openscale
 

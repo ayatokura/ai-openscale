@@ -27,6 +27,10 @@ subcollection: ai-openscale
 You can use {{site.data.keyword.aios_short}} to work with image models. You must complete the following steps to set up you environment:
 {: shortdesc}
 
+## Steps
+{: #ie-image-steps}
+
+
 1. Set up your environment.
    2. Install the {{site.data.keyword.aios_short}} and {{site.data.keyword.pm_full}} packages.
    3. Configure your credentials.
@@ -52,4 +56,7 @@ You can use {{site.data.keyword.aios_short}} to work with image models. You must
    9. Enable the explainability.
    10. Get explanations for the transactions.
    11. Display the explained images. 
+
+## Next steps
+{: #ie-image-next-steps}
 
