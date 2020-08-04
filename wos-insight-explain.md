@@ -72,9 +72,9 @@ Because explanations exist for model risk, fairness, drift, and performance you 
 ## Understanding the difference between contrastive explanations and LIME
 {: #ie-contrastive.v.lime}
 
-Local Interpretable Model-Agnostic Explanations (LIME) is a Python library that {{site.data.keyword.aios_short}} uses to analyze the input and ouput values of a model to create human-understandable interpretations of the model. Both LIME and contrastive explanation are valuable tools for making sense of a model, however, they offer very different perspectives. Contrastive explanations reveal how much values need to change to either change the prediction or still have the same prediction. The factors which need the maximum change are considered more important in this type of explanation. In other words the features with highest importance in contrastive explanations are those where the model is least sensitive. On the other hand, LIME reveals which features are most important for a specific data point. The 5000 perturbations that are typically done for analysis are very close to the data point and in an ideal setting the features with high importance in LIME are those which are most important for that specific data point. For these reasons, the features with high importance for LIME and those for contrastive explanations can be very different.
+Local Interpretable Model-Agnostic Explanations (LIME) are a Python library that {{site.data.keyword.aios_short}} uses to analyze the input and output values of a model to create human-understandable interpretations of the model. However, both LIME and contrastive explanation are valuable tools for making sense of a model they offer different perspectives. Contrastive explanations reveal how much values need to change to either change the prediction or still have the same prediction. The factors that need the maximum change are considered more important in this type of explanation. In other words, the features with highest importance in contrastive explanations are the features where the model is least sensitive. Alternatively, LIME reveals which features are most important for a specific data point. The 5000 perturbations that are typically done for analysis are close to the data point. In an ideal setting, the features with high importance in LIME are the features that are most important for that specific data point. For these reasons, the features with high importance for LIME are different than the features with high importance for contrastive explanations.
 
-For proper processing of LIME explanations, {{site.data.keyword.aios_short}} does not support column names with equals sign (=) in the dataset.
+For proper processing of LIME explanations, {{site.data.keyword.aios_short}} does not support column names with equals sign (=) in the data set.
 {: important} 
 
 For contrastive explanations, {{site.data.keyword.aios_short}} displays the maximum changes for the same outcome and the minimum changes for a changed outcome. These categories are also known as pertinent positive and pertinent negative values. These values help explain the behavior of the model in the vicinity of the data point for which an explanation is generated. 
@@ -97,15 +97,15 @@ While the charts are useful in showing the most significant factors in determini
   - Predicted outcome: The outcomes are set in the model.
   - How this prediction was determined: Displays the LIME explanation.
   - Confidence level: How confident, as a percentage, the {{site.data.keyword.aios_short}} service is about the analysis.
-  - Features influencing this prediction: For this transaction, each feature in the model has been assigned a percentage of relative weight indicating how strongly the feature has influenced the model’s predicted outcome. A negative relative weight percentage indicates the feature influenced the model towards a different predicted outcome.
+  - Features influencing this prediction: For this transaction, each feature in the model is assigned a percentage of relative weight that indicates how strongly the feature influences the model’s predicted outcome. A negative relative weight percentage indicates that the feature influenced the model towards a different predicted outcome.
   
 - The `Inspect` tab displays the following information as part of the contrastive explanation:
   
-  - Feature: The feature from the model. If the model was created with additional meta fields that were not used in training, you have the option of viewing only those features by selecting the **Analyze controllable features only** option.
-  - Original value: The original value used in training the model.
+  - Feature: The feature from the model. If the model was created with meta fields that were not used in training, you have the option of viewing only those features by selecting the **Analyze controllable features only** option.
+  - Original value: The original value that is used in training the model.
   - New value: You can enter a new value for one or more features to see how it might change the outcome.
   - Value for a different outcome: After you run an analysis, you can see what are the mostly likely settings to change the outcome.
-  - Importance: After you run an analsysis, you can see what the relative importance is for each changed feature value.
+  - Importance: After you run an analysis, you can see what the relative importance is for each changed feature value.
 
 <p>&nbsp;</p>
 
@@ -139,26 +139,24 @@ Use the following two Notebooks to see detailed code samples and develop your ow
 
 {{site.data.keyword.aios_short}} supports explainability for unstructured text data.
 
-If you are using a Keras model that takes the input as byte array, you must create a deployable function in {{site.data.keyword.pm_full}} that accepts the entire text as a single feature in input (as opposed to text which is vectorised and represented as a tensor or split across multiple features). Creating a deployable function is part of the functionality that {{site.data.keyword.pm_full}} support. For more information, see [Passing payload data to model deployments](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-deploy-functions.html?linkInPage=true#models){: external}
+If you use a Keras model that takes the input as byte array, you must create a deployable function in {{site.data.keyword.pm_full}}. The function must accept the entire text as a single feature in input and not as text that is vectorized and represented as a tensor or split across multiple features. {{site.data.keyword.pm_full}} supports the creation of deployable functions. For more information, see [Passing payload data to model deployments](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-deploy-functions.html?linkInPage=true#models){: external}
 
-For information about setting up your unstructured text models, see [Working with unstructured text models](/docs/ai-openscale?topic=ai-openscale-ie-unstruct-steps).
-
-For information about configuring support for non-space-delimited languages, such as Japanese, Chinese, and Korean, see [Enabling non-space-delimited language support](/docs/ai-openscale?topic=ai-openscale-explainability-monitor#ie-unstruct-xplan-langsupport)
+For more information, see [Working with unstructured text models](/docs/ai-openscale?topic=ai-openscale-ie-unstruct-steps) and [Enabling non-space-delimited language support](/docs/ai-openscale?topic=ai-openscale-explainability-monitor#ie-unstruct-xplan-langsupport).
 
 ### Explaining unstructured text transactions
 {: #ie-unstruct-xplan}
 
-The following example of explainability shows a classification model that evaluates unstructured text. The explanation shows the keywords that had a positive as well as a negative impact on the model prediction. We also show the position of the identified keywords in the original text which was fed as input to the model.  
+The following example of explainability shows a classification model that evaluates unstructured text. The explanation shows the keywords that had either a positive or a negative impact on the model prediction. The explanation also shows the position of the identified keywords in the original text that was fed as input to the model.  
 
-![Explainability image classification chart is displayed. it shows confidence levels for the unstructured text](images/wos-insight-explain-text.png)
+![Explainability image classification chart is displayed. It shows confidence levels for the unstructured text](images/wos-insight-explain-text.png)
 
-Unstructured text models present the importance of words or tokens. To change the language, select a different language from the drop-down menu. The explanation runs again by using a different tokenizer.
+Unstructured text models present the importance of words or tokens. To change the language, select a different language from the list. The explanation runs again by using a different tokenizer.
 
 
 ### Unstructured text model example
 {: #ie-unstruct-ntbkssample}
 
-Use the following notebook to see detailed code samples and develop your own {{site.data.keyword.aios_short}} deployments:
+Use the following Notebook to see detailed code samples and develop your own {{site.data.keyword.aios_short}} deployments:
 
 - [Tutorial on generating an explanation for a text-based model](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20Explanation%20for%20Text%20Model.ipynb){: external}
 
@@ -169,12 +167,12 @@ Use the following notebook to see detailed code samples and develop your own {{s
 
 The following example of explainability shows a classification model that evaluates tabular data.
 
-![Explainability image classification chart is displayed. it shows confidence levels for the tabular data model](images/wos-tabular-transactions.png)
+![Explainability image classification chart is displayed. It shows confidence levels for the tabular data model](images/wos-tabular-transactions.png)
 
 ### Tabular model example
 {: #ie-tabular-ntbkssample}
 
-Use the following notebook to see detailed code samples and develop your own {{site.data.keyword.aios_short}} deployments:
+Use the following Notebook to see detailed code samples and develop your own {{site.data.keyword.aios_short}} deployments:
 
 - [Tutorial on generating an explanation for a tabular model on {{site.data.keyword.aios_short}}](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20Explanation%20for%20Tabular%20Model.ipynb){: external}
 
