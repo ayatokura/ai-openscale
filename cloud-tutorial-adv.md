@@ -8,6 +8,12 @@ keywords: tutorial, Jupyter notebooks, Watson Studio projects, projects, models,
 
 subcollection: ai-openscale
 
+content-type: tutorial
+services: containers, Registry, <subcollection names from toc> <!-- Only if the tutorial includes multiple services. If it only uses your service, don't specify. -->
+account-plan: lite <!-- Only if tutorial can be completed using only Lite plan services --> 
+completion-time: 10m <!-- Estimated time to complete the steps in this tutorial. Minute values are supported up to 90 minutes. Whole hours are also supported; for example: 2h -->
+
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -18,21 +24,18 @@ subcollection: ai-openscale
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
+{:step: data-tutorial-type='step'} <!-- Apply to steps for automatic numbering -->
 
-# Python SDK Tutorial (Advanced)
-{: #crt-ov}
 
-In this tutorial, you learn to do the following tasks:
+# Run a Python notebook to generate results in {{site.data.keyword.aios_short}}
+{: #tutorial-crt-ov}
+{: toc-content-type="tutorial"} <!-- Always use this value -->
+{: toc-services="containers, Registry"} <!-- Only if multi-service - use same values from services metadata above-->
+{: toc-completion-time="10m"} <!-- Use same value from completion-time metadata above-->
 
-- Run a Python notebook to create, train, and deploy a machine learning model.
-- Create a data mart, configure performance, accuracy, and fairness monitors, and create data to monitor.
-- View results in the {{site.data.keyword.aios_short}} Insights tab.
-
+In this tutorial, you learn to run a Python notebook to create, train, and deploy a machine learning model. Then, you create a data mart, configure performance, accuracy, and fairness monitors, and create data to monitor. Finally, you will be able to view results in the {{site.data.keyword.aios_short}} Insights tab.
+{: shortdesc}
 
 ## Python client
 {: #in-pyc}
@@ -52,7 +55,7 @@ The credit risk model that is provided in this tutorial uses a training data set
 
 {{site.data.keyword.aios_short}} monitors the deployed model's propensity for a favorable outcome ("No Risk") for one group (the Reference Group) over another (the Monitored Group). In this tutorial, the Monitored Group for sex is `female`, while the Monitored Group for age is `18 to 25`.
 
-## Prerequisites
+## Before you begin
 {: #crt-prereqs}
 
 This tutorial uses a Jupyter Notebook that must be run in a {{site.data.keyword.DSX}} project, that uses a "Python 3.5 with Spark" runtime environment. It requires service credentials for the following {{site.data.keyword.cloud_notm}} services:
@@ -83,6 +86,7 @@ In this tutorial, you perform the following tasks:
 
 ## Provision {{site.data.keyword.cloud_notm}} Services
 {: #crt-services}
+{: step}
 
 Log in to your [{{site.data.keyword.cloud_notm}} account](https://{DomainName}){: external} with your {{site.data.keyword.ibmid}}. When provisioning services, particularly if you use Db2 Warehouse, verify that your selected organization and space are the same for all services.
 
@@ -141,6 +145,7 @@ If you have a paid {{site.data.keyword.cloud_notm}} account, you can provision a
 
 ## Set up a {{site.data.keyword.DSX}} project
 {: #crt-set-wstudio}
+{: step}
 
 1. Log in to your [{{site.data.keyword.DSX}} account](https://dataplatform.ibm.com/){: external}. Click the {{site.data.keyword.avatar}} and verify that the account you are using is the same account you used to create your {{site.data.keyword.cloud_notm}} services:
 
@@ -158,6 +163,7 @@ If you have a paid {{site.data.keyword.cloud_notm}} account, you can provision a
 
 ## Create and deploy a {{site.data.keyword.pm_short}} model
 {: #crt-make-model}
+{: step}
 
 ### Add the `Working with Watson Machine Learning` notebook to your {{site.data.keyword.DSX}} project
 {: #crt-add-notebook}
@@ -214,8 +220,9 @@ The `Working with Watson Machine Learning` notebook contains detailed instructio
 
 The net result is that you have created, trained, and deployed the **Spark German Risk Deployment** model to your {{site.data.keyword.aios_short}} service instance. {{site.data.keyword.aios_short}} is configured to check the model for bias against sex (in this case, Female) or age (in this case, 18-25 years old).
 
-## Viewing results
+## View results
 {: #crt-view-results}
+{: step}
 
 ### View insights for your deployment
 {: #crt-view-insights}
