@@ -10,11 +10,11 @@ subcollection: ai-openscale
 
 content-type: tutorial
 
-services: DSX, ai-openscale, PredictiveModeling
+services: cloud-object-storage
 
 account-plan: lite 
 
-completion-time: 10m
+completion-time: 20m
 
 
 ---
