@@ -9,9 +9,12 @@ keywords: tutorial, Jupyter notebooks, Watson Studio projects, projects, models,
 subcollection: ai-openscale
 
 content-type: tutorial
-services: containers, Registry, <subcollection names from toc> <!-- Only if the tutorial includes multiple services. If it only uses your service, don't specify. -->
-account-plan: lite <!-- Only if tutorial can be completed using only Lite plan services --> 
-completion-time: 10m <!-- Estimated time to complete the steps in this tutorial. Minute values are supported up to 90 minutes. Whole hours are also supported; for example: 2h -->
+
+services: DSX, ai-openscale, PredictiveModeling
+
+account-plan: lite 
+
+completion-time: 10m
 
 
 ---
@@ -25,14 +28,14 @@ completion-time: 10m <!-- Estimated time to complete the steps in this tutorial.
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:faq: data-hd-content-type='faq'}
-{:step: data-tutorial-type='step'} <!-- Apply to steps for automatic numbering -->
+{:step: data-tutorial-type='step'}
 
 
 # Run a Python notebook to generate results in {{site.data.keyword.aios_short}}
 {: #tutorial-crt-ov}
-{: toc-content-type="tutorial"} <!-- Always use this value -->
-{: toc-services="containers, Registry"} <!-- Only if multi-service - use same values from services metadata above-->
-{: toc-completion-time="10m"} <!-- Use same value from completion-time metadata above-->
+{: toc-content-type="tutorial"}
+{: toc-services="containers, Registry"}
+{: toc-completion-time="10m"}
 
 In this tutorial, you learn to run a Python notebook to create, train, and deploy a machine learning model. Then, you create a data mart, configure performance, accuracy, and fairness monitors, and create data to monitor. Finally, you will be able to view results in the {{site.data.keyword.aios_short}} Insights tab.
 {: shortdesc}
