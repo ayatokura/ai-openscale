@@ -34,8 +34,8 @@ completion-time: 20m
 # Run a Python notebook to generate results in {{site.data.keyword.aios_short}}
 {: #tutorial-crt-ov}
 {: toc-content-type="tutorial"}
-{: toc-services="containers, Registry"}
-{: toc-completion-time="10m"}
+{: toc-services="cloud-object-storage"}
+{: toc-completion-time="20m"}
 
 In this tutorial, you learn to run a Python notebook to create, train, and deploy a machine learning model. Then, you create a data mart, configure performance, accuracy, and fairness monitors, and create data to monitor. Finally, you will be able to view results in the {{site.data.keyword.aios_short}} Insights tab.
 {: shortdesc}
