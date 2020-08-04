@@ -24,7 +24,7 @@ subcollection: ai-openscale
 # Explaining transactions
 {: #ie-ov}
 
-For each deployment, you can see explainability data for specific transactions. Depending on the type of mode, it can include 
+For each deployment, you can see explainability data for specific transactions. Depending on the type of model, it can include different types of analysis, such as LIME, contrastive explanations, or the ability to test what if scenarios.
 {: shortdesc}
 
 
@@ -35,15 +35,15 @@ For each deployment, you can see explainability data for specific transactions. 
 ## Viewing explanations by transaction ID
 {: #ie-view}
 
-2. Click the **Explain a transaction** tab ( ![Explain a transaction tab](images/wos-insight-transact-tab.png) ) in the navigator.
+2. Click the **Explain a transaction** tab (![Explain a transaction tab](images/wos-insight-transact-tab.png)) in the navigator.
 3. Type a transaction ID.
-4. To analyze results further, click the **Inspect** tab, choose whether to analyze controllable feature only, and click the **Run analysis** button.
+4. To analyze results further, click the **Inspect** tab, choose whether to analyze controllable feature only, and click **Run analysis**.
 
    The results of this analysis show how different values can change the outcome of this specific transaction. You must designate which features are controllable. For more information, see [Configuring the explainability monitor](/docs/ai-openscale?topic=ai-openscale-explainability-monitor)
 
-   ![Transaction details on the inspect tab show values that could produce a different outcome](images/wos-explainability-inspect.png)
+   ![Transaction details on the inspect tab show values that might produce a different outcome](images/wos-explainability-inspect.png)
 
-Whenever data is sent to the model for scoring, {{site.data.keyword.pm_full}} sets a transaction ID in the HTTP header by setting the `X-Global-Transaction-Id` field. This transaction ID gets stored in the payload table. To find an explanation of the model behavior for a particular scoring, specify the transaction ID associated with that scoring request. Please note that this behavior applies only to {{site.data.keyword.pm_full}} transactions, and is not applicable for non-WML transactions.
+Whenever data is sent to the model for scoring, {{site.data.keyword.pm_full}} sets a transaction ID in the HTTP header by setting the `X-Global-Transaction-Id` field. This transaction ID gets stored in the payload table. To find an explanation of the model behavior for a particular scoring, specify the transaction ID associated with that scoring request. This behavior applies only to {{site.data.keyword.pm_full}} transactions, and is not applicable for non-WML transactions.
 {: note}
 
 <p>&nbsp;</p>
@@ -52,8 +52,8 @@ Whenever data is sent to the model for scoring, {{site.data.keyword.pm_full}} se
 {: #ie-find}
 
 1.  From the chart, slide the marker across the chart and click the **View details** link to [visualize data for a specific hour](/docs/ai-openscale?topic=ai-openscale-it-vdet).
-1.  Click the **View transactions** button to [view the list of transaction IDs](/docs/ai-openscale?topic=ai-openscale-it-vdep#it-tra).
-1.  Click the **Explain** link in the Action column for any transaction ID, which will open that transaction in the Explainability tab.
+1.  Click **View transactions** to [view the list of transaction IDs](/docs/ai-openscale?topic=ai-openscale-it-vdep#it-tra).
+1.  Click the **Explain** link in the Action column for any transaction ID, which opens that transaction in the **Explain** tab.
 
 <p>&nbsp;</p>
 
@@ -62,8 +62,8 @@ Whenever data is sent to the model for scoring, {{site.data.keyword.pm_full}} se
 
 Because explanations exist for model risk, fairness, drift, and performance you can click one of the following links to view detailed transactions:
 
-- From the **Evaluations** page, in the **Number of explanations** section, click the number link. In the **Select an explanation** window, click a transaction and then click the **View** button. 
-- For one of the fairness attributes, from the **Evaluations** page, click the fairness percentage link. Click the attribute, such as sex or age, click the chart, and then click the **View transactions** button.
+- From the **Evaluations** page, in the **Number of explanations** section, click the number link. In the **Select an explanation** window, click a transaction, and then, click **View**. 
+- For one of the fairness attributes, from the **Evaluations** page, click the fairness percentage link. Click the attribute, such as sex or age, click the chart, and then click **View transactions**.
 - For the drift monitor, from the **Evaluations** page, click the drift percentage link. Click the chart, click the drift type, then click a tile to see the transactions associated with that particular drift group.
 - For a performance chart, from the **Evaluations** page, click any of the percentage links. In the **Performance** section, click **Throughput**, click the chart, and then click the **Explain** link that follows the transaction you want to view.
 
