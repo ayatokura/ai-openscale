@@ -19,10 +19,6 @@ subcollection: ai-openscale
 {:codeblock: .codeblock}
 {:support: data-reuse='support'}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # FAQs
@@ -177,3 +173,8 @@ Depending on your fairness configuration, your fairness score can exceed 100 per
 ## Configuring a model requires information about the location of the training data and the options are Cloud Object Storage and Db2. If the data is in Netezza, can {{site.data.keyword.aios_short}} use Netezza?
 
 Use this [{{site.data.keyword.aios_short}} Notebook](https://github.com/IBM-Watson/aios-data-distribution/blob/master/training_statistics_notebook.ipynb) to read the data from Netezza and generate the training statistics and also the drift detection model.
+
+## Why doesn't {{site.data.keyword.aios_short}} see the updates that were made to the model?
+{: #new-model-missing}
+
+{{site.data.keyword.aios_short}} works on a deployment of a model, not on the model itself. You must create a new deployment and then configure this new deployment as a new subscription in {{site.data.keyword.aios_short}}. With this arrangement, you are able to compare the two versions of the model.
