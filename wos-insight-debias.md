@@ -26,13 +26,21 @@ subcollection: ai-openscale
 {{site.data.keyword.aios_short}} uses two types of debiasing: passive and active. Passive debiasing reveals bias, while active debiasing prevents you from carrying that bias forward by changing the model in real time for the current application. In addition to direct bias, {{site.data.keyword.aios_short}} can determine indirect bias.
 {: shortdesc}
 
+## Video overview
+{: #it-dbo-video}
+
 Get a quick overview of debiasing in {{site.data.keyword.aios_short}} by watching the following video.
 
-<p>
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" id="WOS-bias-vid" title="Mitigating AI Bias" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_1shu3261&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
-  </div>
-</p>
+![Mitigating AI Bias](https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_1shu3261&flashvars[streamerType]=auto){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+
+### Video transcript
+{: #video-transcript-ui-it-dbo-video}
+{: notoc}
+
+Here's my transcript text that will be displayed underneath my video.
+
+More text here...
+
 
 <p>&nbsp;</p>
 
