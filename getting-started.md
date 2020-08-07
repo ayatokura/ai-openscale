@@ -27,6 +27,7 @@ subcollection: ai-openscale
 {:pre: .pre}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:video: .video}
 
 # Getting started tutorial
 {: #getting-started}

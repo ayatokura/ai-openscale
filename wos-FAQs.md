@@ -20,6 +20,7 @@ subcollection: ai-openscale
 {:support: data-reuse='support'}
 {:screen: .screen}
 {:faq: data-hd-content-type='faq'}
+{:video: .video}
 
 # FAQs
 {: #wos-faqs}

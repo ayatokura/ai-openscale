@@ -19,6 +19,7 @@ subcollection: ai-openscale
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:faq: data-hd-content-type='faq'}
+{:video: .video}
 
 # Debiasing options
 {: #it-dbo}
