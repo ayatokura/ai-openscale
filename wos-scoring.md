@@ -53,6 +53,35 @@ The fields and values in the code snippets need to be substituted with your real
 
 After you run your payload logging, a check mark appears in the **Ready to Monitor** column for the selected deployment. Click **Configure Monitors** to continue.
 
+## Payload logging fields
+{: #cdb-score-fields-values}
+
+The following table describes the fields that make up a typical payload logging request.
+
+|:----|:-----|
+| Field | Description |
+| scoring_id |   |
+| response_time |   |
+| request | The `request` section specifies fields and values for both the training data and the meta data, which are features that you can use to measure indirect bias |
+| ---- fields |   |
+| ---- values |   |
+| ---- meta |   |
+| ------- fields |   |
+| ------- values |   |
+| response |   |
+| ---- fields |   |
+| ---- values |   |
+| binding_id |   |
+| subscription_id |   |
+| deployment_id |   |
+{: row-headers}
+{: class="comparison-table"}
+{: caption="Table 1. Payload logging fields" caption-side="top"}
+{: summary="The table provides detailed descriptions of the fields that you find in a typical payload logging request."}
+{: #payloadloggingfieldstable1}
+
+
+
 ## Understanding the number of scoring requests
 {: #cdb-score-capacity}
 {: help} 
