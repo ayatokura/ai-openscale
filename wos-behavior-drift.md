@@ -31,15 +31,9 @@ Over time, the importance and impact of certain features in a model change. This
 
 Drift is the degradation of predictive performance over time because of hidden context. As your data changes over time, the ability of your model to make accurate predictions may deteriorate. {{site.data.keyword.aios_short}} both detects and highlights drift so that you can take corrective action. Watch the following video to see drift detection in action:
 
-![Video title](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=<video-ID>){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+![Watch {{site.data.keyword.aios_short}} detect and mitigate drift](https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&playerId=ibm-dynid-1_playercontainer&entry_id=1_8tp11bp7&flashvars[streamerType]=auto){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
-<p>
-  <div class="embed-responsive embed-responsive-16by9">
 
-<iframe class="embed-responsive-item" id="WOS-ibm-drift-vid" title="Watch {{site.data.keyword.aios_short}} detect and mitigate drift" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&playerId=ibm-dynid-1_playercontainer&entry_id=1_8tp11bp7&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
-
-  </div>
-</p>
 <p>&nbsp;</p>
 
 
