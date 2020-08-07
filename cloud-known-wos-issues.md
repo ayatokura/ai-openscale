@@ -12,6 +12,7 @@ subcollection: ai-openscale
 
 {:shortdesc: .shortdesc}
 {:external: target="_blank" .external}
+{:table: .aria-labeledby="caption"}
 {:tip: .tip}
 {:important: .important}
 {:note: .note}

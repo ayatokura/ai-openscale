@@ -16,14 +16,11 @@ subcollection: ai-openscale
 {:important: .important}
 {:note: .note}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
 {:codeblock: .codeblock}
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 {:screen: .screen}
-{:note: .note}
-{:note: .note}
-{:note: .note}
-{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 # Sending a scoring request
@@ -58,8 +55,8 @@ After you run your payload logging, a check mark appears in the **Ready to Monit
 
 The following table describes the fields that make up a typical payload logging request.
 
-|:----|:-----|
 | Field | Description |
+|:----|:-----|
 | scoring_id | ID of the scoring transaction. |
 | response_time | The time (ms) taken to make prediction (for performance monitoring). |
 | request | The `request` section specifies fields and values for both the training data and the meta data, which are features that you can use to measure indirect bias |
