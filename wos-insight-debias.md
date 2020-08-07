@@ -37,9 +37,9 @@ Get a quick overview of debiasing in {{site.data.keyword.aios_short}} by watchin
 {: #video-transcript-ui-it-dbo-video}
 {: notoc}
 
-Here's my transcript text that will be displayed underneath my video.
+Transcript text that will be displayed underneath this video is coming soon.
 
-More text here...
+Thanks for your patience.
 
 
 <p>&nbsp;</p>

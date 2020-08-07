@@ -39,14 +39,16 @@ Here are some of the most frequently asked questions from users of {{site.data.k
 
 Get a quick overview of {{site.data.keyword.aios_short}} by watching the following video:
 
-![Video title](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=<video-ID>){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+![Mitigating AI Bias with {{site.data.keyword.aios_full}}](https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_1shu3261&flashvars[streamerType]=auto){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 
-<p>
-  <div class="embed-responsive embed-responsive-16by9">
-     <iframe class="embed-responsive-item" id="WOS-bias-vid" title="Mitigating AI Bias with {{site.data.keyword.aios_full}}" type="text/html" src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_1shu3261&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe>
-  </div>
-</p>
+### Video transcript
+{: #video-transcript-ui-faq-whatsa}
+{: notoc}
+
+Transcript text that will be displayed underneath this video is coming soon.
+
+Thanks for your patience.
 
 
 <p>&nbsp;</p>
