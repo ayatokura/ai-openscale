@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-05-18"
+lastupdated: "2020-08-08"
 
 
 keywords: identity and access management, authentication, security, IAM, RBAC, roles, users, access, permissions, 

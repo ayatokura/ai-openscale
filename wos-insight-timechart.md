@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-05-18"
+lastupdated: "2020-08-08"
 
 keywords: fairness, monitoring, charts, debiasing, bias, accuracy, tests run, tests failed, tests passed
 

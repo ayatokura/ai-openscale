@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-05-18"
+lastupdated: "2020-08-08"
 
 keywords: metrics, monitoring, custom metrics, thresholds, precision, score, schedule, recommendation
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-05-18"
+lastupdated: "2020-08-08"
 
 keywords: metrics, monitoring, custom metrics, thresholds, protected attributes, sex, ethnicity, race, age, zip code, postal code, marital status, fairness, balanced data sets, perfect equality, disparate impact, payload, perturbed, debiased, training
 
