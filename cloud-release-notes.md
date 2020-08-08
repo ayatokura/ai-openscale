@@ -26,6 +26,18 @@ subcollection: ai-openscale
 This document outlines new features for {{site.data.keyword.aios_full_notm}}.
 {: shortdesc}
 
+## 7 August 2020
+{: #rn-07aug2020}
+
+The following new features and changes to {{site.data.keyword.aios_short}} are available.
+
+- __*Indirect bias*__: {{site.data.keyword.aios_short}} now supports analysis of indirect bias:
+  
+  - Use of meta fields for analysis.
+  - Fairness monitoring includes data not used in training.
+  
+    For more information, see [Indirect bias](/docs/ai-openscale?topic=ai-openscale-mf-debias#mf-debias-indirect).
+
 ## 21 July 2020
 {: #rn-21jul2020}
 
