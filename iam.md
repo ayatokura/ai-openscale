@@ -48,7 +48,7 @@ The following table provides examples for some of the platform management action
 
 |  | One or all IAM-enabled services | Selected service in a resource group | Selected resource group |
 |:--------------|:------------|:-------------|:-------------|
-| Viewer role | View instances, aliases, bindings, and credentials | View only specified instances in the resource group | View resource group |
+| Viewer/Operator role | View instances, aliases, bindings, and credentials | View only specified instances in the resource group | View resource group |
 | Operator role |  View instances and manage aliases, bindings, and credentials |  Not applicable | Not applicable |
 | Editor role |  Create, delete, edit, and view instances. Manage aliases, bindings, and credentials | Create, delete, edit, suspend, resume, view, and bind only specified instances in the resource group | View and edit name of resource group |
 | Administrator role |  All management actions for services | All management actions for the specified instances in the resource group | View, edit, and manage access for the resource group |
@@ -62,9 +62,10 @@ The following table provides examples for some of the platform management action
 ## Users and roles for {{site.data.keyword.aios_short}}
 {: #iam-docs-wos-rolematrix}
 
+For {{site.data.keyword.aios_short}}, the **Operator** and **Viewer** roles are equivalent.
+{: note}
 
-
-| Operations | Admin role | Editor role | Viewer role |
+| Operations | Admin role | Editor role | Viewer/Operator role |
 |:---|:---:|:---:|:---:|
 | Add machine learning engine configuration | ✔ |  |   |  
 | Remove machine learning engine configuration | ✔ |   |   |
