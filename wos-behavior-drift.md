@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-05-18"
 
-keywords: drift, behavior, metrics
+keywords: drift, behavior, metrics, video
 
 subcollection: ai-openscale
 

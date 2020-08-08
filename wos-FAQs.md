@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-05-18"
 
-keywords: FAQs, frequently asked questions, questions
+keywords: FAQs, frequently asked questions, questions, video
 
 subcollection: ai-openscale
 
