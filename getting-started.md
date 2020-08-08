@@ -42,7 +42,7 @@ Enterprises use {{site.data.keyword.aios_full}} to automate and operationalize A
 
 Get a quick overview of {{site.data.keyword.aios_short}} by watching the following video.
 
-![{{site.data.keyword.aios_short}} Drift-Bias-Explainability Videos](https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_22otz5jl&flashvars[streamerType]=auto){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+![{{site.data.keyword.aios_short}} Drift-Bias-Explainability Videos](https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_22otz5jl&flashvars[streamerType]=auto){: video output="iframe" data-script="#video-transcript-ui-gs-view-demo" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 ## Video transcript
 {: #video-transcript-ui-gs-view-demo}

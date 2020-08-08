@@ -40,7 +40,7 @@ Here are some of the most frequently asked questions from users of {{site.data.k
 
 Get a quick overview of {{site.data.keyword.aios_short}} by watching the following video:
 
-![Mitigating AI Bias with {{site.data.keyword.aios_full}}](https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_1shu3261&flashvars[streamerType]=auto){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+![Mitigating AI Bias with {{site.data.keyword.aios_full}}](https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kplayer&entry_id=1_1shu3261&flashvars[streamerType]=auto){: video output="iframe" data-script="#video-transcript-ui-faq-whatsa" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 
 ### Video transcript
