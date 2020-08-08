@@ -60,23 +60,27 @@ The following table describes the fields that make up a typical payload logging 
 | scoring_id | ID of the scoring transaction. |
 | response_time | The time (ms) taken to make prediction (for performance monitoring). |
 | request | The `request` section specifies fields and values for both the training data and the meta data, which are features that you can use to measure indirect bias |
-| fields |   |
-| values |   |
+| fields | An array of field names |
+| values | An array of field values |
 | meta | The `meta` section specifies fields and values for the meta data. |
 | fields | Lists the fields for the meta data. |
 | values | Lists the values for the meta data. |
 | response | The `response` section specifies the fields and values of the result. |
-| fields |   |
-| values |   |
-| binding_id |   |
-| subscription_id |   |
-| deployment_id |   |
+| fields | An array of field names |
+| values | An array of field values |
+| binding_id | The unique ID of the machine learning engine |
+| subscription_id | The unique ID of the subscription |
+| deployment_id | The unique ID of the deployment in {{site.data.keyword.aios_short}} |
 {: row-headers}
 {: class="comparison-table"}
 {: caption="Table 1. Payload logging fields" caption-side="top"}
 {: summary="The table provides detailed descriptions of the fields that you find in a typical payload logging request."}
 {: #payloadloggingfieldstable1}
 
+## Payload logging cURL sample
+{: #cdb-score-fields-values-sample1}
+
+The following sample shows the cURL payload logging command:
 
 ```
 # Generate an IAM access token by passing an API key as $APIKEY in the request below
@@ -119,6 +123,11 @@ SCORING_PAYLOAD='[{
 curl -X POST https://aiopenscale-dev.us-south.containers.appdomain.cloud/v1/data_marts/5d2949f3-6ca1-44c8-940b-1609e29c80cc/scoring_payloads -d "$SCORING_PAYLOAD" \
 --header 'Content-Type: application/json' --header 'Accept: application/json' --header "Authorization: Bearer $IAM_TOKEN"
 ```
+
+## Payload logging Python sample
+{: #cdb-score-fields-values-sample2}
+
+The following file shows a sample Python payload logging command:
 
 
 ```
