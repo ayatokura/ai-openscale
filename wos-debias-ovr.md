@@ -61,6 +61,17 @@ Indirect bias occurs when one feature can be used to stand for another. For exam
 - Payload logging must contain meta fields and be run before the fairness monitor is configured. You must use this method to upload the meta fields to the {{site.data.keyword.aios_short}} service. Payload logging for indirect bias requires two types of input: 1) training features with values and 2) meta fields with values.
 - When you configure the fairness monitor, select the additional fields to monitor.
 
+### Typical workflow for indirect bias
+{: #mf-debias-indirect-workflow}
+
+Use of the meta fields for determining indirect bias is currently reserved for pre-production models. A typical workflow, might include the following steps:
+
+1. Create training data that contains both feature columns and meta columns. The meta columns contain data that is not used to train the model.
+2. In {{site.data.keyword.aios_short}}, configure the fairness monitor with the meta columns.
+3. During preproduction, upload test data that contains both the feature columns and the meta columns.
+4. During pre-production, you might interate on different versions of the model while using the indirect bias measures to ensure that your final model will be free of bias.
+4. After you send the model to production, the feedback data does not use any of the meta columns, only the feature columns that were used to train the model.
+
 ### Sample JSON payload file with meta fields
 {: #mf-debias-indirect-sample-json}
 
