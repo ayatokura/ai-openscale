@@ -67,6 +67,9 @@ A model is deemed to be biased if, across this combined dataset, the percentage 
 Fairness values can be more than 100%. This means that the Monitored group received more favorable outcomes than the Reference group. In addition, if no new scoring requests are sent, then the Fairness value will remain constant.
 {: note}
 
+### Balanced data and perfect equality
+{: #mf-works-perfect-equality}
+
 For balanced data sets the following concepts apply:
 
 - To determine the perfect equality value, reference group transactions are synthesized by changing the monitored feature value of every monitored group transaction to all reference group values. These new synthesized transactions are added to the set of reference group transactions and evaluated by the model.
