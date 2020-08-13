@@ -53,29 +53,25 @@ After you run your payload logging, a check mark appears in the **Ready to Monit
 ## Payload logging fields
 {: #cdb-score-fields-values}
 
-The following table describes the fields that make up a typical payload logging request.
+The following fields make up a typical payload logging request:
 
-| Field | Description |
-|:----|:-----|
-| scoring_id | ID of the scoring transaction. |
-| response_time | The time (ms) taken to make prediction (for performance monitoring). |
-| request | The `request` section specifies fields and values for both the training data and the meta data, which are features that you can use to measure indirect bias |
-| fields | An array of field names |
-| values | An array of field values |
-| meta | The `meta` section specifies fields and values for the meta data. |
-| fields | Lists the fields for the meta data. |
-| values | Lists the values for the meta data. |
-| response | The `response` section specifies the fields and values of the result. |
-| fields | An array of field names |
-| values | An array of field values |
-| binding_id | The unique ID of the machine learning engine |
-| subscription_id | The unique ID of the subscription |
-| deployment_id | The unique ID of the deployment in {{site.data.keyword.aios_short}} |
-{: row-headers}
-{: class="comparison-table"}
-{: caption="Table 1. Payload logging fields" caption-side="top"}
-{: summary="The table provides detailed descriptions of the fields that you find in a typical payload logging request."}
-{: #payloadloggingfieldstable1}
+- **`scoring_id`**: ID of the scoring transaction.
+- **`response_time`**: The time (ms) taken to make prediction (for performance monitoring).
+- **`request`**: The `request` section specifies fields and values for both the training data and the meta data, which are features that you can use to measure indirect bias.
+   - **`fields`**: An array of field names.
+   - **`values`**: An array of field values.
+- **`meta`**: The `meta` section specifies fields and values for the meta data.
+   - **`fields`**: Lists the fields for the meta data.
+   - **`values`**: Lists the values for the meta data.
+- **`response`**: The `response` section specifies the fields and values of the result.
+   - **`fields`**: An array of field names.
+   - **`values`**: An array of field values.
+- **`binding_id`**: The unique ID of the machine learning engine.
+- **`subscription_id`**: The unique ID of the subscription.
+- **`deployment_id`**: The unique ID of the deployment in {{site.data.keyword.aios_short}}.
+
+Meta fields and values are not processed or known by the model but can be passed to {{site.data.keyword.aios_short}} to log additional details or sensitive attributes related to a model transaction. Meta fields should be included in the training data set identified when configuring model settings. When a meta field is selected for fairness evaluation, {{site.data.keyword.aios_short}} finds correlated training features and evaluates the model for indirect bias.
+
 
 ## Payload logging cURL sample
 {: #cdb-score-fields-values-sample1}
