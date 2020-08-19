@@ -129,6 +129,7 @@ See the image zones that contributed to the model output and the zones that did 
 Use the following two Notebooks to see detailed code samples and develop your own {{site.data.keyword.aios_short}} deployments:
 
 - [Tutorial on generating an explanation for an image-based model](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20Explanation%20for%20Image%20Multiclass%20Classification%20Model.ipynb){: external}
+- [Tutorial on generating an explanation for an image-based model on Cloud Pak for Data v. 2.5.0](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20Explanation%20for%20Image%20Multiclass%20Classification%20Model%20CP4D.ipynb){: external}
 - [Tutorial on generating an explanation for an image-based binary classifier model](https://github.com/pmservice/ai-openscale-tutorials/blob/master/notebooks/Watson%20OpenScale%20Explanation%20for%20Image%20Binary%20Classification%20Model.ipynb){: external}
 
 <p>&nbsp;</p>
