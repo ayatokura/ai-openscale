@@ -215,8 +215,9 @@ Use the following steps to resolve this issue:
 2. Generate a new Watson Machine Learning token by running the following command:
    
    ```
-   user_pwd_token=`printf %s user:pwd | base64`
-   curl -k --request GET --url http://icpd-aios-cluster1.cpolab.ibm.com/v1/preauth/validateAuth --header "authorization: Basic $user_pwd_token"
+   user_pwd_token=$(printf %s user:password | base64)
+   curl -k --request GET --url https://namespace1-cpd-namespace1.apps.ap14-lb-1.fyre.ibm.com/v1/preauth/validateAuth --header "authorization: Basic $user_pwd_token"
+   ```
    
 3. Use the accessToken from the previous output to run the following command:
    
