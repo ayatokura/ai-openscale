@@ -64,7 +64,7 @@ Indirect bias occurs when one feature can be used to stand for another. For exam
 ### Typical workflow for indirect bias
 {: #mf-debias-indirect-workflow}
 
-You can determine indirect bias for preproduction and production models, however, the models require different columns. The test data that is used to evaluate preproduction models and the feedback data that is used to evaluate production models differ on the use of meta columns. Meta columns are required for the test data for preproduction and cannot be included in the feedback data that is used for production models. A typical workflow, might include the following steps:
+You can determine indirect bias for preproduction and production models, however, the models require different columns. The test data that is used to evaluate preproduction models and the feedback data that is used to evaluate either preproduction or production models differ on the use of meta columns. Meta columns are required for the test data for preproduction and cannot be included in the feedback data that is used for production models. A typical workflow, might include the following steps:
 
 1. Create training data that contains both feature columns and meta columns. The meta columns contain data that is not used to train the model.
 2. In {{site.data.keyword.aios_short}}, configure the fairness monitor with the meta columns.

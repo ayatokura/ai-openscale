@@ -6,6 +6,9 @@ lastupdated: "2020-08-08"
 
 keywords: isolation for {{site.data.keyword.aios_short}}, service endpoints for {{site.data.keyword.aios_short}}, private network for {{site.data.keyword.aios_short}}, network isolation in {{site.data.keyword.aios_short}}, non-public routes for {{site.data.keyword.aios_short}}, private connection for {{site.data.keyword.aios_short}}
 
+subcollection: ai-openscale
+
+
 ---
 
 {:external: target="_blank" .external}

@@ -6,6 +6,9 @@ lastupdated: "2020-08-08"
 
 keywords: data encryption in {{site.data.keyword.aios_short}}, data storage for {{site.data.keyword.aios_short}}, bring your own keys for {{site.data.keyword.aios_short}}, BYOK for {{site.data.keyword.aios_short}}, key management for {{site.data.keyword.aios_short}}, key encryption for {{site.data.keyword.aios_short}}, personal data in {{site.data.keyword.aios_short}}, data deletion for {{site.data.keyword.aios_short}}, data in {{site.data.keyword.aios_short}}, data security in {{site.data.keyword.aios_short}}, {{site.data.keyword.aios_short}}
 
+subcollection: ai-openscale
+
+
 ---
 
 {:external: target="_blank" .external}
